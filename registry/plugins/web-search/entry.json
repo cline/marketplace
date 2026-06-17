@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/plugin.schema.json",
+  "id": "web-search",
+  "type": "plugin",
+  "name": "Web Search",
+  "tagline": "Exa-backed web search as a Cline tool",
+  "description": "Adds a web_search tool backed by Exa so the agent can discover current URLs, docs, and recent facts mid-task.",
+  "author": { "name": "Cline", "url": "https://cline.bot" },
+  "homepage": "https://github.com/cline/cline-plugins/tree/main/plugins/web-search",
+  "repo": "https://github.com/cline/cline-plugins/tree/main/plugins/web-search",
+  "icon": "./icon.svg",
+  "tags": ["search", "research"],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": ["web-search"],
+    "env": [
+      {
+        "name": "EXA_API_KEY",
+        "required": true,
+        "description": "Exa API key used for search.",
+        "url": "https://exa.ai"
+      }
+    ]
+  }
+}
