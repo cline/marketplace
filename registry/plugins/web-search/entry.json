@@ -9,7 +9,7 @@
   "homepage": "https://github.com/cline/cline-plugins/tree/main/plugins/web-search",
   "repo": "https://github.com/cline/cline-plugins/tree/main/plugins/web-search",
   "icon": "./icon.svg",
-  "tags": ["search", "research"],
+  "tags": ["research", "software"],
   "license": "Apache-2.0",
   "verified": true,
   "featured": false,

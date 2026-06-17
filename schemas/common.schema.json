@@ -37,7 +37,13 @@
       "type": "string",
       "description": "Relative path to an icon next to entry.json, or an absolute https URL. Relative paths are copied and rewritten to absolute URLs at generation time."
     },
-    "tags": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "tags": {
+      "type": "array",
+      "description": "One or more tag ids from the canonical vocabulary in tags.json (e.g. \"productivity\", \"software\"). Validated against that list at build time.",
+      "items": { "type": "string" },
+      "uniqueItems": true,
+      "minItems": 1
+    },
     "license": { "type": "string" },
     "verified": {
       "type": "boolean",
@@ -83,5 +89,5 @@
       "additionalProperties": false
     }
   },
-  "required": ["id", "type", "name", "tagline", "description", "install"]
+  "required": ["id", "type", "name", "tagline", "description", "tags", "install"]
 }

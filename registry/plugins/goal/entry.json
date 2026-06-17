@@ -9,7 +9,7 @@
   "homepage": "https://github.com/cline/cline-plugins/tree/main/plugins/goal",
   "repo": "https://github.com/cline/cline-plugins/tree/main/plugins/goal",
   "icon": "./icon.svg",
-  "tags": ["productivity", "workflow"],
+  "tags": ["productivity"],
   "license": "Apache-2.0",
   "verified": true,
   "featured": false,
