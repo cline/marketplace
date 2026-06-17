@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cline.bot/marketplace/schemas/common.schema.json",
+  "title": "Marketplace entry (common fields)",
+  "description": "Fields shared by every marketplace primitive (plugin, skill, mcp). Type schemas pin `type` and reuse this.",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": {
+      "type": "string",
+      "description": "Stable kebab-case identifier. Must match the entry's directory name.",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "type": { "type": "string", "enum": ["plugin", "skill", "mcp"] },
+    "name": { "type": "string", "description": "Display name shown in the marketplace." },
+    "tagline": {
+      "type": "string",
+      "description": "One short sentence shown under the name in list views.",
+      "maxLength": 120
+    },
+    "description": {
+      "type": "string",
+      "description": "Full description shown on the detail view. Markdown is allowed."
+    },
+    "author": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "url": { "type": "string", "format": "uri" }
+      },
+      "required": ["name"],
+      "additionalProperties": false
+    },
+    "homepage": { "type": "string", "format": "uri" },
+    "repo": { "type": "string", "format": "uri" },
+    "icon": {
+      "type": "string",
+      "description": "Relative path to an icon next to entry.json, or an absolute https URL. Relative paths are copied and rewritten to absolute URLs at generation time."
+    },
+    "tags": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "license": { "type": "string" },
+    "verified": {
+      "type": "boolean",
+      "description": "True for entries reviewed and trusted by Cline.",
+      "default": false
+    },
+    "featured": {
+      "type": "boolean",
+      "description": "Surface this entry in featured placements.",
+      "default": false
+    },
+    "install": {
+      "type": "object",
+      "description": "Drives the `cline <type> install ...` one-liner. `args` is everything after the subcommand; the verb is derived from `type`.",
+      "properties": {
+        "args": {
+          "type": "array",
+          "description": "Tokens passed after `cline <verb> install`. Example (mcp): [\"context7\", \"--transport\", \"http\", \"https://mcp.context7.com/mcp\"].",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "env": {
+          "type": "array",
+          "description": "Secrets / environment variables the primitive needs at runtime that are not part of the install command (e.g. EXA_API_KEY).",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "required": { "type": "boolean", "default": true },
+              "description": { "type": "string" },
+              "url": { "type": "string", "format": "uri" }
+            },
+            "required": ["name"],
+            "additionalProperties": false
+          }
+        },
+        "notes": {
+          "type": "string",
+          "description": "Optional post-install guidance shown on the detail view."
+        }
+      },
+      "required": ["args"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["id", "type", "name", "tagline", "description", "install"]
+}

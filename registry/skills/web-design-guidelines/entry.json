@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "web-design-guidelines",
+  "type": "skill",
+  "name": "Web Design Guidelines",
+  "tagline": "Opinionated rules for building polished web UIs",
+  "description": "A skill that gives the agent a strong point of view on layout, spacing, typography, and component design so generated web UIs look intentional instead of generic.",
+  "author": { "name": "Vercel", "url": "https://vercel.com" },
+  "homepage": "https://github.com/vercel-labs/agent-skills",
+  "repo": "https://github.com/vercel-labs/agent-skills",
+  "icon": "./icon.svg",
+  "tags": ["frontend", "design", "ui"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["vercel-labs/agent-skills", "--skill", "web-design-guidelines"]
+  }
+}

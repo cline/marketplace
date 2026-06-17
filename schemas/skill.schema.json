@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cline.bot/marketplace/schemas/skill.schema.json",
+  "title": "Agent skill entry",
+  "description": "An agent skill. Installs via `cline skill install <args...>` (aliases `npx skills add`).",
+  "allOf": [{ "$ref": "./common.schema.json" }],
+  "properties": {
+    "type": { "const": "skill" }
+  }
+}

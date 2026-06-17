@@ -1,0 +1,11 @@
+{
+  "name": "@cline/marketplace",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/generate.mjs --check",
+    "generate": "node scripts/generate.mjs",
+    "build": "node scripts/generate.mjs"
+  }
+}

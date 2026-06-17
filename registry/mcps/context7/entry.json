@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "context7",
+  "type": "mcp",
+  "name": "Context7",
+  "tagline": "Up-to-date code docs for any library, fetched on demand",
+  "description": "A remote MCP server that pulls version-accurate documentation and code examples for thousands of libraries directly into the model's context, reducing hallucinated APIs.",
+  "author": { "name": "Upstash", "url": "https://upstash.com" },
+  "homepage": "https://context7.com",
+  "repo": "https://github.com/upstash/context7",
+  "icon": "./icon.svg",
+  "tags": ["docs", "context", "remote"],
+  "license": "MIT",
+  "verified": false,
+  "featured": true,
+  "install": {
+    "args": ["context7", "--transport", "http", "https://mcp.context7.com/mcp"],
+    "env": [
+      {
+        "name": "CONTEXT7_API_KEY",
+        "required": false,
+        "description": "Optional API key for higher rate limits.",
+        "url": "https://context7.com/dashboard"
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cline.bot/marketplace/schemas/plugin.schema.json",
+  "title": "Cline plugin entry",
+  "description": "A Cline plugin. Installs via `cline plugin install <args...>`.",
+  "allOf": [{ "$ref": "./common.schema.json" }],
+  "properties": {
+    "type": { "const": "plugin" }
+  }
+}
