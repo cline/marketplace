@@ -23,7 +23,7 @@ Notes for the consuming app:
 
 - **CORS works.** GitHub Pages sends `Access-Control-Allow-Origin: *`, so a browser `fetch` from any origin works without a proxy.
 - **It is CDN cached** (Pages sits behind Fastly, roughly 10 minutes). Fine for a listing. If the app wants fresher data or no runtime dependency on GitHub, it can pull `catalog.json` at its own build or deploy time and bake it in. Nothing changes on this side.
-- **The shape is stable.** Top level `version`, `generatedAt`, `counts`, `entries[]`. Each entry exposes `install.command` (ready to display) and `install.args` / `install.env` (structured, if the app wants to build its own install UI).
+- **The shape is stable.** Top level `version`, `generatedAt`, `counts`, `tags[]`, `entries[]`. The `tags[]` array is the full filter vocabulary with counts. Each entry exposes `tags` (filter), `install.command` (ready to display), and `install.args` / `install.env` (structured, if the app wants to build its own install UI).
 
 ## How it works
 
@@ -54,6 +54,25 @@ Every entry stores the argv that comes after `cline <type> install`. The verb is
 
 Secrets and environment variables that are not part of the command (for example `EXA_API_KEY`) go in `install.env` so the website can prompt for them.
 
+## Tags
+
+There is a single canonical tag vocabulary in [`tags.json`](./tags.json). Every entry's `tags` array must use only the `id`s from that file (lowercase), and each entry needs at least one tag. The build fails on an unknown tag, so the vocabulary stays the single source of truth.
+
+```json
+{ "id": "productivity", "label": "Productivity" }
+```
+
+The generator publishes the full vocabulary into `catalog.json` as a top-level `tags` array, each with a `count` of how many entries use it, in `tags.json` order. The website filter component can render this list directly (and grey out or hide `count: 0` tags as it likes) without scanning every entry.
+
+```json
+"tags": [
+  { "id": "productivity", "label": "Productivity", "count": 1 },
+  { "id": "software", "label": "Software", "count": 3 }
+]
+```
+
+To add a new category, add an entry to `tags.json`. Order in that file defines display order in the filter.
+
 ## Published catalog shape
 
 ```json
@@ -62,6 +81,10 @@ Secrets and environment variables that are not part of the command (for example 
   "generatedAt": "2026-06-16T00:00:00.000Z",
   "baseUrl": "https://cline.github.io/marketplace",
   "counts": { "total": 3, "plugins": 1, "skills": 1, "mcps": 1 },
+  "tags": [
+    { "id": "productivity", "label": "Productivity", "count": 1 },
+    { "id": "software", "label": "Software", "count": 3 }
+  ],
   "entries": [
     {
       "id": "context7",
@@ -69,6 +92,7 @@ Secrets and environment variables that are not part of the command (for example 
       "name": "Context7",
       "tagline": "Up-to-date code docs for any library, fetched on demand",
       "icon": "https://cline.github.io/marketplace/icons/mcp/context7.svg",
+      "tags": ["software", "research"],
       "install": {
         "args": ["context7", "--transport", "http", "https://mcp.context7.com/mcp"],
         "command": "cline mcp install context7 --transport http https://mcp.context7.com/mcp"

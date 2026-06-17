@@ -1,0 +1,17 @@
+{
+  "$comment": "Canonical tag vocabulary for the marketplace. Entry `tags` arrays must only use these ids. Add new tags here; order defines display order in the website filter.",
+  "tags": [
+    { "id": "productivity", "label": "Productivity" },
+    { "id": "marketing", "label": "Marketing" },
+    { "id": "research", "label": "Research" },
+    { "id": "data", "label": "Data" },
+    { "id": "software", "label": "Software" },
+    { "id": "business", "label": "Business" },
+    { "id": "sales", "label": "Sales" },
+    { "id": "finance", "label": "Finance" },
+    { "id": "creative", "label": "Creative" },
+    { "id": "memory", "label": "Memory" },
+    { "id": "security", "label": "Security" },
+    { "id": "databases", "label": "Databases" }
+  ]
+}

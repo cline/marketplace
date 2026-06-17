@@ -41,6 +41,18 @@ Put secrets and runtime environment variables that are not part of the command i
 }
 ```
 
+## Tags
+
+Every entry needs at least one tag, and tags must come from the canonical vocabulary in [`tags.json`](./tags.json). Use the lowercase `id` (for example `productivity`, `software`, `research`), not the display label. Validation fails on an unknown tag.
+
+If your entry needs a category that does not exist yet, add it to `tags.json` in the same PR:
+
+```json
+{ "id": "devops", "label": "DevOps" }
+```
+
+Order in `tags.json` is the display order in the website filter, so place new tags thoughtfully.
+
 ## Review bar
 
 - Entries should be high quality, maintained, and safe to install.

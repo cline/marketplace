@@ -20,6 +20,7 @@ import { basename, extname, join, relative } from "node:path";
 const root = new URL("..", import.meta.url).pathname;
 const registryRoot = join(root, "registry");
 const distRoot = join(root, "dist");
+const tagsPath = join(root, "tags.json");
 
 // Where published assets will be served from. Override in CI for a custom domain.
 const BASE = (process.env.MARKETPLACE_BASE_URL || "https://cline.github.io/marketplace").replace(/\/+$/, "");
@@ -37,6 +38,18 @@ const checkOnly = process.argv.includes("--check");
 const errors = [];
 const entries = [];
 const seenIds = new Set();
+
+// Canonical tag vocabulary. Entries may only use these ids.
+let vocab = [];
+let validTags = new Set();
+try {
+  const parsed = JSON.parse(readFileSync(tagsPath, "utf8"));
+  vocab = Array.isArray(parsed.tags) ? parsed.tags : [];
+  validTags = new Set(vocab.map((t) => t.id));
+} catch (err) {
+  console.error(`Failed to read tags.json: ${err.message}`);
+  process.exit(1);
+}
 
 function fail(where, msg) {
   errors.push(`${where}: ${msg}`);
@@ -63,6 +76,16 @@ function validateEntry(type, slug, dir, entry) {
   }
   if (seenIds.has(entry.id)) fail(where, `duplicate id "${entry.id}"`);
   seenIds.add(entry.id);
+
+  if (!isStringArray(entry.tags) || entry.tags.length === 0) {
+    fail(where, "tags must be a non-empty array of tag ids from tags.json");
+  } else {
+    for (const tag of entry.tags) {
+      if (!validTags.has(tag)) {
+        fail(where, `unknown tag "${tag}" (add it to tags.json or fix the entry)`);
+      }
+    }
+  }
 
   const install = entry.install;
   if (!install || typeof install !== "object") {
@@ -162,11 +185,19 @@ entries.sort((a, b) => a.type.localeCompare(b.type) || a.id.localeCompare(b.id))
 const counts = { total: entries.length };
 for (const e of entries) counts[`${e.type}s`] = (counts[`${e.type}s`] || 0) + 1;
 
+// Tag vocabulary with how many entries use each tag, in tags.json order.
+const tagCounts = new Map();
+for (const e of entries) {
+  for (const tag of e.tags || []) tagCounts.set(tag, (tagCounts.get(tag) || 0) + 1);
+}
+const tags = vocab.map((t) => ({ ...t, count: tagCounts.get(t.id) || 0 }));
+
 const catalog = {
   version: 1,
   generatedAt: new Date().toISOString(),
   baseUrl: BASE,
   counts,
+  tags,
   entries,
 };
 
