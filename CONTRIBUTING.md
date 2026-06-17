@@ -25,7 +25,8 @@ Thanks for adding to the Cline Marketplace. Each contribution is a single new fo
 Store the tokens exactly as a user would type them after the subcommand. The verb comes from `type`, so you never repeat `cline ... install` in the entry.
 
 - plugin: `["goal"]`
-- skill: `["owner/repo", "--skill", "name"]`
+- skill (whole repo): `["owner/repo"]`
+- skill (one skill from a repo): `["owner/repo", "--skill", "name"]`
 - mcp (remote, OAuth): `["name", "--transport", "http", "https://host/mcp"]`
 - mcp (remote, static header): `["name", "--transport", "http", "https://host/mcp", "--header", "Authorization: Bearer <token>"]`
 - mcp (stdio): `["name", "--", "npx", "-y", "some-mcp-server"]`
@@ -51,7 +52,7 @@ If your entry needs a category that does not exist yet, add it to `tags.json` in
 { "id": "devops", "label": "DevOps" }
 ```
 
-Order in `tags.json` is the display order in the website filter, so place new tags thoughtfully.
+Order in `tags.json` is the display order for a filter UI, so place new tags thoughtfully.
 
 ## Review bar
 
