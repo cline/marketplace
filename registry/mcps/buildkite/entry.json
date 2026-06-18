@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "Buildkite",
   "tagline": "Connect Cline to Buildkite",
-  "description": "Connect Cline to Buildkite through this MCP server configuration from the imported plugin marketplace bundle.",
+  "description": "Connect Cline to Buildkite through this MCP server.",
   "author": {
     "name": "Buildkite"
   },
@@ -19,7 +19,6 @@
       "--transport",
       "http",
       "https://mcp.buildkite.com/mcp"
-    ],
-    "notes": "Imported from plugin bundle config `buildkite/mcp.json`."
+    ]
   }
 }

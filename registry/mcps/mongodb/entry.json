@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "MongoDB",
   "tagline": "Connect Cline to MongoDB",
-  "description": "Connect Cline to MongoDB through this MCP server configuration from the imported plugin marketplace bundle.",
+  "description": "Connect Cline to MongoDB through this MCP server.",
   "author": {
     "name": "MongoDB"
   },
@@ -21,8 +21,7 @@
       "npx",
       "-y",
       "mongodb-mcp-server@<3"
-    ],
-    "notes": "Imported from plugin bundle config `mongodb/mcp.json`."
+    ]
   },
   "homepage": "https://www.mongodb.com/docs/codex/",
   "repo": "https://github.com/mongodb/agent-skills",

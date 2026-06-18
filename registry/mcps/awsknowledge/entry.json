@@ -20,8 +20,7 @@
       "--transport",
       "http",
       "https://knowledge-mcp.global.api.aws"
-    ],
-    "notes": "Imported from plugin bundle config `migration-to-aws/.mcp.json`."
+    ]
   },
   "homepage": "https://github.com/awslabs/startups/tree/main/migrate",
   "repo": "https://github.com/awslabs/startups",

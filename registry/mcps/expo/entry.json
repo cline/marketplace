@@ -19,8 +19,7 @@
       "--transport",
       "http",
       "https://mcp.expo.dev/mcp"
-    ],
-    "notes": "Imported from plugin bundle config `expo/.mcp.json`."
+    ]
   },
   "homepage": "https://docs.expo.dev/skills/",
   "repo": "https://github.com/expo/skills/tree/main/plugins/expo",

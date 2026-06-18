@@ -20,7 +20,6 @@
       "--transport",
       "http",
       "https://mcp.prisma.io/mcp"
-    ],
-    "notes": "Imported from plugin bundle config `prisma/.mcp.json`."
+    ]
   }
 }

@@ -20,8 +20,7 @@
       "--transport",
       "sse",
       "https://mcp.webflow.com/sse"
-    ],
-    "notes": "Transport from source catalog: SSE/HTTP. Auth from source catalog: OAuth remote; API token local. Official Webflow GitHub repo."
+    ]
   },
   "homepage": "https://github.com/webflow/mcp-server",
   "repo": "https://github.com/webflow/mcp-server"

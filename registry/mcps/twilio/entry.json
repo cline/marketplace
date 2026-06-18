@@ -39,8 +39,7 @@
         "required": true,
         "description": "Twilio API secret."
       }
-    ],
-    "notes": "Transport from source catalog: stdio. Auth from source catalog: Twilio Account SID/API key/secret. Official Twilio Labs repo exposes Twilio APIs as MCP tools."
+    ]
   },
   "homepage": "https://github.com/twilio-labs/mcp",
   "repo": "https://github.com/twilio-labs/mcp"

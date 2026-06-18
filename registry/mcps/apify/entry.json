@@ -28,8 +28,7 @@
         "description": "Apify API token for local server usage.",
         "url": "https://console.apify.com/account/integrations"
       }
-    ],
-    "notes": "Transport from source catalog: Streamable HTTP; local stdio. Auth from source catalog: OAuth or Apify API token; x402/Skyfire payment options. Official Apify repo and hosted server; legacy SSE removed in favor of streamable HTTP."
+    ]
   },
   "homepage": "https://github.com/apify/apify-mcp-server",
   "repo": "https://github.com/apify/apify-mcp-server"

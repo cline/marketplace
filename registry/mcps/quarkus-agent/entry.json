@@ -19,8 +19,7 @@
       "--",
       "jbang",
       "quarkus-agent-mcp@quarkusio"
-    ],
-    "notes": "Imported from plugin bundle config `quarkus-agent/.mcp.json`."
+    ]
   },
   "homepage": "https://github.com/quarkusio/quarkus-agent-mcp",
   "repo": "https://github.com/quarkusio/quarkus-agent-mcp",

@@ -19,8 +19,7 @@
       "--transport",
       "http",
       "https://api.githubcopilot.com/mcp/"
-    ],
-    "notes": "Transport from source catalog: remote HTTP or local stdio. Auth from source catalog: GitHub OAuth or PAT. Official GitHub org repo and hosted remote MCP server."
+    ]
   },
   "homepage": "https://github.com/github/github-mcp-server",
   "repo": "https://github.com/github/github-mcp-server"

@@ -19,8 +19,7 @@
       "--transport",
       "http",
       "https://adobe-creativity.adobe.io/mcp"
-    ],
-    "notes": "Imported from plugin bundle config `adobe-for-creativity/.mcp.json`."
+    ]
   },
   "repo": "https://github.com/adobe/skills",
   "license": "Apache-2.0"

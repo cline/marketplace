@@ -28,8 +28,7 @@
         "required": true,
         "description": "Discourse API key for writes or private content access."
       }
-    ],
-    "notes": "Transport from source catalog: stdio; optional HTTP. Auth from source catalog: None by default; Discourse API keys for writes/private access. Official Discourse GitHub repo; supports selecting/tethering to a Discourse site."
+    ]
   },
   "homepage": "https://github.com/discourse/discourse-mcp",
   "repo": "https://github.com/discourse/discourse-mcp"

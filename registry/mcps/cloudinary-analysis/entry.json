@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "Cloudinary Analysis",
   "tagline": "Connect Cline to Cloudinary Analysis",
-  "description": "Connect Cline to Cloudinary Analysis through this MCP server configuration from the imported plugin marketplace bundle.",
+  "description": "Connect Cline to Cloudinary Analysis through this MCP server.",
   "author": {
     "name": "Cloudinary"
   },
@@ -19,8 +19,7 @@
       "--transport",
       "sse",
       "https://analysis.mcp.cloudinary.com/sse"
-    ],
-    "notes": "Imported from plugin bundle config `cloudinary/mcp.json`."
+    ]
   },
   "homepage": "https://cloudinary.com",
   "repo": "https://github.com/cloudinary-devs/cloudinary-plugin",

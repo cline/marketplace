@@ -20,8 +20,7 @@
       "--transport",
       "http",
       "https://huggingface.co/mcp?login"
-    ],
-    "notes": "Imported from plugin bundle config `huggingface-skills/.mcp.json`."
+    ]
   },
   "homepage": "https://github.com/huggingface/skills",
   "repo": "https://github.com/huggingface/skills",

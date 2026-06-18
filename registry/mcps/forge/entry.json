@@ -19,7 +19,6 @@
       "--transport",
       "http",
       "https://mcp.atlassian.com/v1/forge/mcp"
-    ],
-    "notes": "Imported from plugin bundle config `forge-skills/.mcp.json`."
+    ]
   }
 }

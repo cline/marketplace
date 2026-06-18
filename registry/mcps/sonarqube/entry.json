@@ -22,7 +22,7 @@
       "run",
       "mcp"
     ],
-    "notes": "Imported from plugin bundle config `sonarqube/mcp.json`. The `sonar` CLI must be available on PATH before starting this MCP server."
+    "notes": "The `sonar` CLI must be available on PATH before starting this MCP server."
   },
   "homepage": "https://www.sonarsource.com",
   "repo": "https://github.com/SonarSource/sonarqube-agent-plugins",

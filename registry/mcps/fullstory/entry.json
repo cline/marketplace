@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "Fullstory",
   "tagline": "Connect Cline to Fullstory",
-  "description": "Connect Cline to Fullstory through this MCP server configuration from the imported plugin marketplace bundle.",
+  "description": "Connect Cline to Fullstory through this MCP server.",
   "author": {
     "name": "Fullstory"
   },
@@ -19,8 +19,7 @@
       "--transport",
       "http",
       "https://api.fullstory.com/mcp/fullstory"
-    ],
-    "notes": "Imported from plugin bundle config `fullstory/.mcp.json`."
+    ]
   },
   "homepage": "https://www.fullstory.com",
   "license": "MIT"

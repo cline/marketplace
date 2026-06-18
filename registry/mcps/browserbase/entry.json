@@ -33,8 +33,7 @@
         "description": "Browserbase project ID for local stdio usage.",
         "url": "https://www.browserbase.com/settings"
       }
-    ],
-    "notes": "Transport from source catalog: Streamable HTTP; local stdio via npx. Auth from source catalog: Browserbase API key and project ID for local; hosted auth via remote endpoint. Official Browserbase GitHub repo; remote config uses https://mcp.browserbase.com/mcp."
+    ]
   },
   "homepage": "https://github.com/browserbase/mcp-server-browserbase",
   "repo": "https://github.com/browserbase/mcp-server-browserbase"

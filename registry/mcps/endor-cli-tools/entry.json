@@ -22,8 +22,7 @@
       "endorctl",
       "ai-tools",
       "mcp-server"
-    ],
-    "notes": "Imported from plugin bundle config `ai-plugins/.mcp.json`."
+    ]
   },
   "repo": "https://github.com/endorlabs/ai-plugins",
   "license": "MIT"

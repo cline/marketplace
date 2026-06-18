@@ -20,7 +20,6 @@
       "--transport",
       "http",
       "https://app.circleback.ai/api/mcp"
-    ],
-    "notes": "Imported from plugin bundle config `circleback/.mcp.json`."
+    ]
   }
 }

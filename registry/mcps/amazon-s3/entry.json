@@ -36,8 +36,7 @@
         "required": true,
         "description": "AWS region for the target S3 resources."
       }
-    ],
-    "notes": "Transport from source catalog: stdio via uvx/docker; remote AWS Knowledge MCP also listed. Auth from source catalog: AWS credentials/IAM; server-specific env vars. Official AWS Labs MCP repository includes AWS API MCP for all AWS services and AWS S3 Tables MCP Server for S3 Tables."
+    ]
   },
   "homepage": "https://github.com/awslabs/mcp",
   "repo": "https://github.com/awslabs/mcp"

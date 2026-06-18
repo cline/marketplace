@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "Pinecone",
   "tagline": "Connect Cline to Pinecone",
-  "description": "Connect Cline to Pinecone through this MCP server configuration from the imported plugin marketplace bundle.",
+  "description": "Connect Cline to Pinecone through this MCP server.",
   "author": {
     "name": "Pinecone"
   },
@@ -28,7 +28,6 @@
         "required": true,
         "description": "Pinecone value for pinecone api key."
       }
-    ],
-    "notes": "Imported from plugin bundle config `pinecone/.mcp.json`."
+    ]
   }
 }

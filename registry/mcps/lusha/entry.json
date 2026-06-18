@@ -28,7 +28,6 @@
       "X-Lusha-Plugin: claude",
       "--header",
       "X-Lusha-Plugin-Version: 0.1.0"
-    ],
-    "notes": "Imported from plugin bundle config `lusha/.claude-plugin/plugin.json`."
+    ]
   }
 }

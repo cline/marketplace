@@ -42,6 +42,6 @@
         "description": "Zscaler value for zscaler vanity domain."
       }
     ],
-    "notes": "Imported from plugin bundle config `zscaler/mcp.json`. The `zscaler-mcp-server` CLI must be available on PATH before starting this MCP server."
+    "notes": "The `zscaler-mcp-server` CLI must be available on PATH before starting this MCP server."
   }
 }

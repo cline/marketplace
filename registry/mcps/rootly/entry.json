@@ -20,8 +20,7 @@
       "--transport",
       "http",
       "https://mcp.rootly.com/mcp"
-    ],
-    "notes": "Imported from plugin bundle config `rootly/.mcp.json`."
+    ]
   },
   "homepage": "https://rootly.com/integrations/claude",
   "repo": "https://github.com/Rootly-AI-Labs/rootly-claude-plugin",

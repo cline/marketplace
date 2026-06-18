@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "Zoom Docs",
   "tagline": "Connect Cline to Zoom Docs",
-  "description": "Connect Cline to Zoom Docs through this MCP server configuration from the imported plugin marketplace bundle.",
+  "description": "Connect Cline to Zoom Docs through this MCP server.",
   "author": {
     "name": "Zoom"
   },
@@ -29,8 +29,7 @@
         "required": true,
         "description": "Zoom Docs value for zoom docs mcp access token."
       }
-    ],
-    "notes": "Imported from plugin bundle config `zoom-plugin/.mcp.json`. The remote server requires the configured HTTP header values at runtime."
+    ]
   },
   "homepage": "https://developers.zoom.us/",
   "repo": "https://github.com/zoom/zoom-plugin",

@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "Cloudinary Mediaflows",
   "tagline": "Connect Cline to Cloudinary Mediaflows",
-  "description": "Connect Cline to Cloudinary Mediaflows through this MCP server configuration from the imported plugin marketplace bundle.",
+  "description": "Connect Cline to Cloudinary Mediaflows through this MCP server.",
   "author": {
     "name": "Cloudinary"
   },
@@ -25,8 +25,7 @@
       "cld-api-key: api_key",
       "--header",
       "cld-secret: api_secret"
-    ],
-    "notes": "Imported from plugin bundle config `cloudinary/mcp.json`. The remote server requires the configured HTTP header values at runtime."
+    ]
   },
   "homepage": "https://cloudinary.com",
   "repo": "https://github.com/cloudinary-devs/cloudinary-plugin",

@@ -22,7 +22,6 @@
       "git+https://github.com/oraios/serena",
       "serena",
       "start-mcp-server"
-    ],
-    "notes": "Imported from plugin bundle config `serena/.mcp.json`."
+    ]
   }
 }

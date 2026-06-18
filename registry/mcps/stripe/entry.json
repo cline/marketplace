@@ -22,8 +22,7 @@
       "-y",
       "@stripe/mcp@latest",
       "--api-key=<key>"
-    ],
-    "notes": "Transport from source catalog: HTTP. Auth from source catalog: OAuth or restricted API key. Official Stripe docs; local repo: https://github.com/stripe/ai/tree/main/tools/modelcontextprotocol"
+    ]
   },
   "homepage": "https://docs.stripe.com/mcp"
 }

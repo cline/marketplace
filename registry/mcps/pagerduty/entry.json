@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "PagerDuty",
   "tagline": "Connect Cline to PagerDuty",
-  "description": "Connect Cline to PagerDuty through this MCP server configuration from the imported plugin marketplace bundle.",
+  "description": "Connect Cline to PagerDuty through this MCP server.",
   "author": {
     "name": "PagerDuty"
   },
@@ -29,7 +29,6 @@
         "required": true,
         "description": "PagerDuty API key for the remote MCP server."
       }
-    ],
-    "notes": "Imported from plugin bundle config `pagerduty/.mcp.json`. The remote server requires the configured HTTP header values at runtime."
+    ]
   }
 }

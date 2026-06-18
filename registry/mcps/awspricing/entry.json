@@ -32,8 +32,7 @@
         "required": true,
         "description": "AWS Pricing value for aws region."
       }
-    ],
-    "notes": "Imported from plugin bundle config `migration-to-aws/.mcp.json`."
+    ]
   },
   "homepage": "https://github.com/awslabs/startups/tree/main/migrate",
   "repo": "https://github.com/awslabs/startups",

@@ -20,8 +20,7 @@
       "--transport",
       "http",
       "https://mcp.eu.vanta.com/mcp"
-    ],
-    "notes": "Imported from plugin bundle config `vanta/.mcp.json`."
+    ]
   },
   "homepage": "https://github.com/VantaInc/vanta-mcp-plugin",
   "repo": "https://github.com/VantaInc/vanta-mcp-plugin",

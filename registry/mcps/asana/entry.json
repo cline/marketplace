@@ -20,8 +20,7 @@
       "--transport",
       "http",
       "https://mcp.asana.com/v2/mcp"
-    ],
-    "notes": "Transport from source catalog: Streamable HTTP. Auth from source catalog: OAuth with Asana account; client ID/secret may be needed for some clients. Official Asana developer docs; beta SSE endpoint https://mcp.asana.com/sse is deprecated/shutting down 2026-05-11."
+    ]
   },
   "homepage": "https://developers.asana.com/docs/using-asanas-mcp-server"
 }

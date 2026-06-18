@@ -29,8 +29,7 @@
         "description": "Firecrawl API key for crawling and scraping.",
         "url": "https://www.firecrawl.dev/app/api-keys"
       }
-    ],
-    "notes": "Transport from source catalog: stdio; optional streamable HTTP. Auth from source catalog: Firecrawl API key or OAuth bearer. Official Firecrawl org repo; docs show local HTTP mode at http://localhost:3000/mcp."
+    ]
   },
   "homepage": "https://github.com/firecrawl/firecrawl-mcp-server",
   "repo": "https://github.com/firecrawl/firecrawl-mcp-server"

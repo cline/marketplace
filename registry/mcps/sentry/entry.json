@@ -19,8 +19,7 @@
       "--transport",
       "http",
       "https://mcp.sentry.dev"
-    ],
-    "notes": "Transport from source catalog: Remote MCP service; stdio supported via npm package. Auth from source catalog: OAuth for remote flow; Sentry user auth token for stdio/self-hosted. Screenshot-only row. Official getsentry/sentry-mcp repo; stdio requires Sentry auth token with org/project/team/event scopes; remote production service is mcp.sentry.dev."
+    ]
   },
   "homepage": "https://github.com/getsentry/sentry-mcp",
   "repo": "https://github.com/getsentry/sentry-mcp"

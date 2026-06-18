@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "ZoomInfo",
   "tagline": "Connect Cline to ZoomInfo",
-  "description": "Connect Cline to ZoomInfo through this MCP server configuration from the imported plugin marketplace bundle.",
+  "description": "Connect Cline to ZoomInfo through this MCP server.",
   "author": {
     "name": "ZoomInfo"
   },
@@ -20,8 +20,7 @@
       "--transport",
       "http",
       "https://mcp.zoominfo.com/mcp"
-    ],
-    "notes": "Imported from plugin bundle config `zoominfo/.mcp.json`."
+    ]
   },
   "homepage": "https://www.zoominfo.com",
   "repo": "https://github.com/Zoominfo/zoominfo-mcp-plugin",

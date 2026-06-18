@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "Sanity",
   "tagline": "Connect Cline to Sanity",
-  "description": "Connect Cline to Sanity through this MCP server configuration from the imported plugin marketplace bundle.",
+  "description": "Connect Cline to Sanity through this MCP server.",
   "author": {
     "name": "Sanity"
   },
@@ -20,8 +20,7 @@
       "--transport",
       "http",
       "https://mcp.sanity.io"
-    ],
-    "notes": "Imported from plugin bundle config `sanity/.mcp.json`."
+    ]
   },
   "homepage": "https://github.com/sanity-io/agent-toolkit",
   "repo": "https://github.com/sanity-io/agent-toolkit",

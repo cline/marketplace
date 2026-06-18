@@ -19,8 +19,7 @@
       "--transport",
       "http",
       "https://mcp.neon.tech/mcp"
-    ],
-    "notes": "Imported from plugin bundle config `neon/mcp.json`."
+    ]
   },
   "homepage": "https://neon.com",
   "repo": "https://github.com/neondatabase/agent-skills",

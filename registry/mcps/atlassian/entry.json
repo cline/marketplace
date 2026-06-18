@@ -19,7 +19,6 @@
       "--transport",
       "http",
       "https://mcp.atlassian.com/v1/mcp/authv2"
-    ],
-    "notes": "Imported from plugin bundle config `atlassian/.mcp.json`."
+    ]
   }
 }

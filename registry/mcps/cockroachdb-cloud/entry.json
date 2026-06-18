@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "Cockroachdb Cloud",
   "tagline": "Connect Cline to Cockroachdb Cloud",
-  "description": "Connect Cline to Cockroachdb Cloud through this MCP server configuration from the imported plugin marketplace bundle.",
+  "description": "Connect Cline to Cockroachdb Cloud through this MCP server.",
   "author": {
     "name": "Cockroach Labs"
   },
@@ -29,8 +29,7 @@
         "required": true,
         "description": "Cockroachdb Cloud value for cockroachdb cluster id."
       }
-    ],
-    "notes": "Imported from plugin bundle config `cockroachdb/.mcp.json`. The remote server requires the configured HTTP header values at runtime."
+    ]
   },
   "homepage": "https://github.com/cockroachdb/claude-plugin",
   "repo": "https://github.com/cockroachdb/claude-plugin",

@@ -32,8 +32,7 @@
         "required": true,
         "description": "Bearer token required when exposing ClickHouse MCP over HTTP or SSE."
       }
-    ],
-    "notes": "Transport from source catalog: stdio by default; HTTP/SSE supported. Auth from source catalog: ClickHouse credentials; HTTP/SSE requires bearer token/OAuth unless disabled locally. Official ClickHouse GitHub repo; connects to ClickHouse cluster and supports chDB."
+    ]
   },
   "homepage": "https://github.com/ClickHouse/mcp-clickhouse",
   "repo": "https://github.com/ClickHouse/mcp-clickhouse"

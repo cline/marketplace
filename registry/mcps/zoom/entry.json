@@ -19,8 +19,7 @@
       "--transport",
       "http",
       "https://mcp.zoom.us/mcp/zoom/streamable"
-    ],
-    "notes": "Transport from source catalog: Streamable HTTP. Auth from source catalog: Zoom account/OAuth via remote MCP. Official Zoom GitHub registry metadata lists Zoom Workspace, Docs, Whiteboard, Revenue Accelerator, and Team Chat MCP remote URLs."
+    ]
   },
   "homepage": "https://github.com/zoom/mcp-registry",
   "repo": "https://github.com/zoom/mcp-registry"

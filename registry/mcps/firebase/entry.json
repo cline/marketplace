@@ -22,7 +22,6 @@
       "-y",
       "firebase-tools@latest",
       "mcp"
-    ],
-    "notes": "Imported from plugin bundle config `firebase/.mcp.json`."
+    ]
   }
 }

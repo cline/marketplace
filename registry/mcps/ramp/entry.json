@@ -40,8 +40,7 @@
         "required": true,
         "description": "Ramp environment, usually demo or prd."
       }
-    ],
-    "notes": "Transport from source catalog: stdio. Auth from source catalog: client credentials. Ramp public repo; README copyright Ramp Business Corporation."
+    ]
   },
   "homepage": "https://github.com/ramp-public/ramp_mcp",
   "repo": "https://github.com/ramp-public/ramp_mcp"

@@ -20,8 +20,7 @@
       "npx",
       "-y",
       "@sap/mdk-mcp-server"
-    ],
-    "notes": "Imported from plugin bundle config `sap-mdk-server/.mcp.json`."
+    ]
   },
   "homepage": "https://help.sap.com/docs/MDK",
   "repo": "https://github.com/SAP/mdk-mcp-server",

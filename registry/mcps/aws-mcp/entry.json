@@ -24,8 +24,7 @@
       "--skip-auth",
       "--metadata",
       "INSTALL_SOURCE=agent-toolkit"
-    ],
-    "notes": "Imported from plugin bundle config `aws-data-analytics/.mcp.json`."
+    ]
   },
   "homepage": "https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/",
   "repo": "https://github.com/aws/agent-toolkit-for-aws",

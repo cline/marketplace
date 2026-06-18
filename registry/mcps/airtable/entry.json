@@ -28,8 +28,7 @@
         "description": "Airtable personal access token used by local Airtable MCP configuration.",
         "url": "https://airtable.com/create/tokens"
       }
-    ],
-    "notes": "Transport from source catalog: HTTPS remote MCP. Auth from source catalog: Airtable personal access token. Official Airtable GitHub repo; README says endpoint defaults to https://mcp.airtable.com/mcp."
+    ]
   },
   "homepage": "https://github.com/Airtable/airtable-mcp-cli",
   "repo": "https://github.com/Airtable/airtable-mcp-cli"

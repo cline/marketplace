@@ -23,8 +23,7 @@
       "convex@latest",
       "mcp",
       "start"
-    ],
-    "notes": "Imported from plugin bundle config `convex/.mcp.json`."
+    ]
   },
   "homepage": "https://github.com/get-convex/convex-backend-skill",
   "repo": "https://github.com/get-convex/convex-backend-skill",

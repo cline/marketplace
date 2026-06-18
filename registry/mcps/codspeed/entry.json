@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "Codspeed",
   "tagline": "Connect Cline to Codspeed",
-  "description": "Connect Cline to Codspeed through this MCP server configuration from the imported plugin marketplace bundle.",
+  "description": "Connect Cline to Codspeed through this MCP server.",
   "author": {
     "name": "CodSpeed"
   },
@@ -19,8 +19,7 @@
       "--transport",
       "http",
       "https://mcp.codspeed.io/mcp"
-    ],
-    "notes": "Imported from plugin bundle config `codspeed/.mcp.json`."
+    ]
   },
   "homepage": "https://codspeed.io",
   "repo": "https://github.com/CodSpeedHQ/codspeed",

@@ -24,7 +24,6 @@
       "npx",
       "-y",
       "@wonderwhy-er/desktop-commander@latest"
-    ],
-    "notes": "Imported from plugin bundle config `desktop-commander/.claude-plugin/plugin.json`."
+    ]
   }
 }

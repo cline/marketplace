@@ -21,6 +21,6 @@
       "artisan",
       "boost:mcp"
     ],
-    "notes": "Imported from plugin bundle config `laravel-boost/.mcp.json`. The `php` CLI must be available on PATH before starting this MCP server."
+    "notes": "The `php` CLI must be available on PATH before starting this MCP server."
   }
 }

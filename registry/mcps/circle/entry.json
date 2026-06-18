@@ -19,8 +19,7 @@
       "--transport",
       "http",
       "https://api.circle.com/v1/codegen/mcp"
-    ],
-    "notes": "Imported from plugin bundle config `circle-skills/.mcp.json`."
+    ]
   },
   "homepage": "https://developers.circle.com",
   "repo": "https://github.com/circlefin/skills",

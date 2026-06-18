@@ -29,8 +29,7 @@
         "required": true,
         "description": "Sonatype Guide value for sonatype guide token."
       }
-    ],
-    "notes": "Imported from plugin bundle config `sonatype-guide/.mcp.json`. The remote server requires the configured HTTP header values at runtime."
+    ]
   },
   "homepage": "https://guide.sonatype.com",
   "repo": "https://github.com/sonatype/guide-claude-plugin"

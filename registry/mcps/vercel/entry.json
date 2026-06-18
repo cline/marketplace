@@ -19,8 +19,7 @@
       "--transport",
       "http",
       "https://mcp.vercel.com"
-    ],
-    "notes": "Imported from plugin bundle config `vercel/.mcp.json`."
+    ]
   },
   "repo": "https://github.com/vercel/vercel-plugin",
   "license": "Apache-2.0"

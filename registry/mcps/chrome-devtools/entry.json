@@ -21,7 +21,6 @@
       "--",
       "npx",
       "chrome-devtools-mcp@1.2.0"
-    ],
-    "notes": "Imported from plugin bundle config `chrome-devtools-mcp/.claude-plugin/plugin.json`."
+    ]
   }
 }

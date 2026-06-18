@@ -19,8 +19,7 @@
       "--transport",
       "http",
       "https://mcp-devkit.mapbox.com/mcp"
-    ],
-    "notes": "Imported from plugin bundle config `mapbox/.mcp.json`."
+    ]
   },
   "homepage": "https://github.com/mapbox/mapbox-agent-skills",
   "repo": "https://github.com/mapbox/mapbox-agent-skills",

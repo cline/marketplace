@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "UI5",
   "tagline": "Connect Cline to UI5",
-  "description": "Connect Cline to UI5 through this MCP server configuration from the imported plugin marketplace bundle.",
+  "description": "Connect Cline to UI5 through this MCP server.",
   "author": {
     "name": "SAP"
   },
@@ -20,7 +20,6 @@
       "npx",
       "-y",
       "@ui5/mcp-server"
-    ],
-    "notes": "Imported from plugin bundle config `ui5/.mcp.json`."
+    ]
   }
 }

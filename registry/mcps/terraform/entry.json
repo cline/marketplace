@@ -31,7 +31,6 @@
         "required": true,
         "description": "Terraform value for tfe token."
       }
-    ],
-    "notes": "Imported from plugin bundle config `terraform/.mcp.json`."
+    ]
   }
 }

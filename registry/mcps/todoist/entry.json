@@ -19,8 +19,7 @@
       "--transport",
       "http",
       "https://ai.todoist.net/mcp"
-    ],
-    "notes": "Transport from source catalog: Streamable HTTP; local stdio via npm package; mcp-remote bridge supported. Auth from source catalog: OAuth for hosted MCP; TODOIST_API_KEY for local/direct tool use. Screenshot-only row. Official Doist repo; hosted MCP endpoint supports OAuth and can be bridged with npx -y mcp-remote https://ai.todoist.net/mcp."
+    ]
   },
   "homepage": "https://github.com/doist/todoist-mcp",
   "repo": "https://github.com/doist/todoist-mcp"

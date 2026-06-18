@@ -26,8 +26,7 @@
         "required": true,
         "description": "AWS IaC value for fastmcp log level."
       }
-    ],
-    "notes": "Imported from plugin bundle config `aws-dev-toolkit/.mcp.json`."
+    ]
   },
   "homepage": "https://github.com/aws-samples/sample-claude-code-plugins-for-startups/tree/main/plugins/aws-dev-toolkit",
   "repo": "https://github.com/aws-samples/sample-claude-code-plugins-for-startups",

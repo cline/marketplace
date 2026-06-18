@@ -26,8 +26,7 @@
       "start",
       "--api-key",
       "<key>"
-    ],
-    "notes": "Transport from source catalog: stdio; optional local SSE via Docker. Auth from source catalog: LaunchDarkly API key. Official LaunchDarkly GitHub repo."
+    ]
   },
   "homepage": "https://github.com/launchdarkly/mcp-server",
   "repo": "https://github.com/launchdarkly/mcp-server"

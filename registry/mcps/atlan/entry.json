@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "Atlan",
   "tagline": "Connect Cline to Atlan",
-  "description": "Connect Cline to Atlan through this MCP server configuration from the imported plugin marketplace bundle.",
+  "description": "Connect Cline to Atlan through this MCP server.",
   "author": {
     "name": "Atlan"
   },
@@ -20,8 +20,7 @@
       "--transport",
       "http",
       "https://mcp.atlan.com/mcp"
-    ],
-    "notes": "Imported from plugin bundle config `atlan/.mcp.json`."
+    ]
   },
   "homepage": "https://atlan.com/docs",
   "repo": "https://github.com/atlanhq/agent-toolkit",

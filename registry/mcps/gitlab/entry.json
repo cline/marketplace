@@ -19,8 +19,7 @@
       "--transport",
       "http",
       "https://gitlab.com/api/v4/mcp"
-    ],
-    "notes": "Transport from source catalog: HTTP recommended; stdio via mcp-remote. Auth from source catalog: OAuth 2.0 Dynamic Client Registration. Official GitLab MCP server, beta, Premium/Ultimate."
+    ]
   },
   "homepage": "https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server/"
 }

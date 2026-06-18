@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "Appwrite API",
   "tagline": "Connect Cline to Appwrite API",
-  "description": "Connect Cline to Appwrite API through this MCP server configuration from the imported plugin marketplace bundle.",
+  "description": "Connect Cline to Appwrite API through this MCP server.",
   "author": {
     "name": "Appwrite"
   },
@@ -36,8 +36,7 @@
         "required": true,
         "description": "Appwrite API value for appwrite api key."
       }
-    ],
-    "notes": "Imported from plugin bundle config `appwrite/.mcp.json`."
+    ]
   },
   "homepage": "https://appwrite.io/docs/tooling/ai/ai-dev-tools/claude-code",
   "repo": "https://github.com/appwrite/claude-plugin",

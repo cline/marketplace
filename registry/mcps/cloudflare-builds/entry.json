@@ -19,7 +19,6 @@
       "--transport",
       "http",
       "https://builds.mcp.cloudflare.com/mcp"
-    ],
-    "notes": "Imported from plugin bundle config `cloudflare/.mcp.json`."
+    ]
   }
 }

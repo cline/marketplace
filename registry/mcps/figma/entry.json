@@ -19,8 +19,7 @@
       "--transport",
       "http",
       "https://mcp.figma.com/mcp"
-    ],
-    "notes": "Transport from source catalog: Remote MCP / Streamable HTTP; desktop MCP server also available through Figma desktop app. Auth from source catalog: Figma account authorization; remote server available on all seats/plans; desktop server requires Dev or Full seat on paid plans. Official Figma MCP server. Remote endpoint is preferred; desktop server runs locally through the Figma desktop app for specific org/enterprise use cases."
+    ]
   },
   "homepage": "https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server"
 }

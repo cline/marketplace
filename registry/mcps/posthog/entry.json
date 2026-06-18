@@ -19,8 +19,7 @@
       "--transport",
       "http",
       "https://mcp.posthog.com/mcp"
-    ],
-    "notes": "Transport from source catalog: HTTP. Auth from source catalog: OAuth/login. Official PostHog docs and repo: https://github.com/PostHog/mcp"
+    ]
   },
   "homepage": "https://posthog.com/docs/model-context-protocol"
 }

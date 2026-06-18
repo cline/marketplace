@@ -19,8 +19,7 @@
       "--transport",
       "http",
       "https://logfire-us.pydantic.dev/mcp"
-    ],
-    "notes": "Imported from plugin bundle config `logfire/.mcp.json`."
+    ]
   },
   "homepage": "https://github.com/pydantic/skills/tree/main/plugins/logfire",
   "repo": "https://github.com/pydantic/skills",

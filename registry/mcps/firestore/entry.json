@@ -20,8 +20,7 @@
       "--transport",
       "http",
       "https://firestore.googleapis.com/mcp"
-    ],
-    "notes": "Transport from source catalog: remote HTTP. Auth from source catalog: Google IAM/OAuth. Google Cloud supported-products page lists Firestore MCP endpoint."
+    ]
   },
   "homepage": "https://docs.cloud.google.com/mcp/supported-products"
 }

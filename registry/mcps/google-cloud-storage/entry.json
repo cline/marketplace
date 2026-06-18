@@ -19,8 +19,7 @@
       "--transport",
       "http",
       "https://storage.googleapis.com/storage/mcp"
-    ],
-    "notes": "Transport from source catalog: remote HTTP. Auth from source catalog: Google IAM/OAuth. Google Cloud supported-products page lists Cloud Storage MCP endpoint."
+    ]
   },
   "homepage": "https://docs.cloud.google.com/mcp/supported-products"
 }

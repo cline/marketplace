@@ -27,8 +27,7 @@
         "description": "Exa API key for hosted or local search access.",
         "url": "https://exa.ai"
       }
-    ],
-    "notes": "Transport from source catalog: Streamable HTTP / remote MCP; local stdio wrapper. Auth from source catalog: Optional Exa API key / hosted connector. Official Exa docs and provider-owned repo: https://github.com/exa-labs/exa-mcp-server"
+    ]
   },
   "homepage": "https://exa.ai/docs/reference/exa-mcp"
 }

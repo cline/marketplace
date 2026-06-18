@@ -67,7 +67,6 @@
         "required": true,
         "description": "AlloyDB PostgreSQL Toolbox value for alloydb postgres user."
       }
-    ],
-    "notes": "Imported from plugin bundle config `data-agent-kit-starter-pack/.mcp.json`."
+    ]
   }
 }

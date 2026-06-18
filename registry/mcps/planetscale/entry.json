@@ -19,7 +19,6 @@
       "--transport",
       "http",
       "https://mcp.pscale.dev/mcp/planetscale"
-    ],
-    "notes": "Imported from plugin bundle config `planetscale/.mcp.json`."
+    ]
   }
 }

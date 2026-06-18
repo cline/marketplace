@@ -19,8 +19,7 @@
       "--transport",
       "http",
       "https://{shop}.myshopify.com/api/mcp"
-    ],
-    "notes": "Transport from source catalog: HTTP. Auth from source catalog: None for Storefront MCP. Server details: https://shopify.dev/docs/apps/build/storefront-mcp/servers/storefront"
+    ]
   },
   "homepage": "https://shopify.dev/docs/apps/build/storefront-mcp"
 }

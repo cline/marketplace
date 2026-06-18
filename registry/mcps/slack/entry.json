@@ -20,8 +20,7 @@
       "--transport",
       "http",
       "https://mcp.slack.com/mcp"
-    ],
-    "notes": "Imported from plugin bundle config `slack/.mcp.json`."
+    ]
   },
   "homepage": "https://github.com/slackapi/slack-mcp-cursor-plugin",
   "license": "MIT"

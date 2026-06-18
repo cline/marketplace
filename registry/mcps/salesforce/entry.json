@@ -25,8 +25,7 @@
       "DEFAULT_TARGET_ORG",
       "--toolsets",
       "orgs,metadata,data,users"
-    ],
-    "notes": "Transport from source catalog: stdio. Auth from source catalog: Salesforce CLI authorized org. Official Salesforce docs; official repo: https://github.com/salesforcecli/mcp."
+    ]
   },
   "homepage": "https://developer.salesforce.com/docs/ai/agentforce/guide/mcp.html"
 }

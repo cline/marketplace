@@ -21,6 +21,6 @@
       "semgrep",
       "mcp"
     ],
-    "notes": "Imported from plugin bundle config `semgrep/.mcp.json`. The `semgrep` CLI must be available on PATH before starting this MCP server."
+    "notes": "The `semgrep` CLI must be available on PATH before starting this MCP server."
   }
 }

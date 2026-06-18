@@ -20,7 +20,6 @@
       "--transport",
       "http",
       "https://qt-docs-mcp.qt.io/mcp"
-    ],
-    "notes": "Imported from plugin bundle config `qt-development-skills/.mcp.json`."
+    ]
   }
 }

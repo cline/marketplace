@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "Mintlify",
   "tagline": "Connect Cline to Mintlify",
-  "description": "Connect Cline to Mintlify through this MCP server configuration from the imported plugin marketplace bundle.",
+  "description": "Connect Cline to Mintlify through this MCP server.",
   "author": {
     "name": "Mintlify"
   },
@@ -19,7 +19,6 @@
       "--transport",
       "http",
       "https://mintlify.com/docs/mcp"
-    ],
-    "notes": "Imported from plugin bundle config `mintlify/.mcp.json`."
+    ]
   }
 }

@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "Cloudinary Asset Mgmt",
   "tagline": "Connect Cline to Cloudinary Asset Mgmt",
-  "description": "Connect Cline to Cloudinary Asset Mgmt through this MCP server configuration from the imported plugin marketplace bundle.",
+  "description": "Connect Cline to Cloudinary Asset Mgmt through this MCP server.",
   "author": {
     "name": "Cloudinary"
   },
@@ -19,8 +19,7 @@
       "--transport",
       "http",
       "https://asset-management.mcp.cloudinary.com/mcp"
-    ],
-    "notes": "Imported from plugin bundle config `cloudinary/mcp.json`."
+    ]
   },
   "homepage": "https://cloudinary.com",
   "repo": "https://github.com/cloudinary-devs/cloudinary-plugin",

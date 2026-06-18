@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "Aikido",
   "tagline": "Connect Cline to Aikido",
-  "description": "Connect Cline to Aikido through this MCP server configuration from the imported plugin marketplace bundle.",
+  "description": "Connect Cline to Aikido through this MCP server.",
   "author": {
     "name": "Aikido Security"
   },
@@ -21,8 +21,7 @@
       "npx",
       "-y",
       "@aikidosec/mcp@1.0.9"
-    ],
-    "notes": "Imported from plugin bundle config `aikido/.mcp.json`."
+    ]
   },
   "homepage": "https://help.aikido.dev/ide-plugins/aikido-mcp",
   "repo": "https://github.com/AikidoSec/aikido-claude-plugin",

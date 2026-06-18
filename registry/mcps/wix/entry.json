@@ -20,8 +20,7 @@
       "--transport",
       "http",
       "https://mcp.wix.com/mcp"
-    ],
-    "notes": "Imported from plugin bundle config `wix/.mcp.json`."
+    ]
   },
   "homepage": "https://dev.wix.com/docs/api-reference/articles/ai-tools/about-wix-skills",
   "repo": "https://github.com/wix/skills",

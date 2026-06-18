@@ -20,8 +20,7 @@
       "--transport",
       "http",
       "https://api.fathom.ai/mcp"
-    ],
-    "notes": "Transport from source catalog: Streamable HTTP. Auth from source catalog: Fathom auth not parsed from public registry entry. Official MCP registry latest entry uses ai.fathom.api/mcp and api.fathom.ai domain."
+    ]
   },
   "homepage": "https://registry.modelcontextprotocol.io/v0/servers/ai.fathom.api%2Fmcp/versions/latest"
 }

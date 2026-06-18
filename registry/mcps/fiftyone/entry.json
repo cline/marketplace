@@ -20,7 +20,7 @@
       "--",
       "fiftyone-mcp"
     ],
-    "notes": "Imported from plugin bundle config `fiftyone/.mcp.json`. The `fiftyone-mcp` CLI must be available on PATH before starting this MCP server."
+    "notes": "The `fiftyone-mcp` CLI must be available on PATH before starting this MCP server."
   },
   "homepage": "https://docs.voxel51.com/",
   "repo": "https://github.com/voxel51/fiftyone-skills",

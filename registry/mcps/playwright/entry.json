@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "Playwright",
   "tagline": "Connect Cline to Playwright",
-  "description": "Connect Cline to Playwright through this MCP server configuration from the imported plugin marketplace bundle.",
+  "description": "Connect Cline to Playwright through this MCP server.",
   "author": {
     "name": "Microsoft"
   },
@@ -19,7 +19,6 @@
       "--",
       "npx",
       "@playwright/mcp@latest"
-    ],
-    "notes": "Imported from plugin bundle config `playwright/.mcp.json`."
+    ]
   }
 }

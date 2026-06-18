@@ -22,8 +22,7 @@
       "https://mcp.miro.com/",
       "--header",
       "X-AI-Source: claude-code-plugin"
-    ],
-    "notes": "Imported from plugin bundle config `miro/.mcp.json`. The remote server requires the configured HTTP header values at runtime."
+    ]
   },
   "homepage": "https://miro.com",
   "repo": "https://github.com/miroapp/miro-ai",

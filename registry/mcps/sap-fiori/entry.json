@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "SAP Fiori",
   "tagline": "Connect Cline to SAP Fiori",
-  "description": "Connect Cline to SAP Fiori through this MCP server configuration from the imported plugin marketplace bundle.",
+  "description": "Connect Cline to SAP Fiori through this MCP server.",
   "author": {
     "name": "SAP"
   },
@@ -22,8 +22,7 @@
       "--yes",
       "@sap-ux/fiori-mcp-server@latest",
       "fiori-mcp"
-    ],
-    "notes": "Imported from plugin bundle config `sap-fiori-mcp-server/.mcp.json`."
+    ]
   },
   "homepage": "https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server",
   "repo": "https://github.com/SAP/open-ux-tools",

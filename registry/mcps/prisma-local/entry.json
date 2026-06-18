@@ -22,7 +22,6 @@
       "-y",
       "prisma",
       "mcp"
-    ],
-    "notes": "Imported from plugin bundle config `prisma/.mcp.json`."
+    ]
   }
 }

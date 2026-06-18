@@ -21,8 +21,7 @@
       "@toolbox-sdk/server",
       "--prebuilt=looker",
       "--stdio"
-    ],
-    "notes": "Transport from source catalog: local stdio or HTTP via MCP Toolbox. Auth from source catalog: Google/application credentials. Google mcp-toolbox docs list Looker using MCP."
+    ]
   },
   "homepage": "https://mcp-toolbox.dev/documentation/configuration/prebuilt-configs/",
   "repo": "https://github.com/googleapis/mcp-toolbox"

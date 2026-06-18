@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "Amplitude",
   "tagline": "Connect Cline to Amplitude",
-  "description": "Connect Cline to Amplitude through this MCP server configuration from the imported plugin marketplace bundle.",
+  "description": "Connect Cline to Amplitude through this MCP server.",
   "author": {
     "name": "Amplitude"
   },
@@ -20,8 +20,7 @@
       "--transport",
       "http",
       "https://mcp.amplitude.com/mcp"
-    ],
-    "notes": "Imported from plugin bundle config `amplitude/.mcp.json`."
+    ]
   },
   "homepage": "https://github.com/amplitude/mcp-marketplace",
   "repo": "https://github.com/amplitude/mcp-marketplace",

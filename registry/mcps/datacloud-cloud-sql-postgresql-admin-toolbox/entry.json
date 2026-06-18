@@ -25,7 +25,6 @@
       "--stdio",
       "--user-agent-metadata",
       "datacloud.codex"
-    ],
-    "notes": "Imported from plugin bundle config `data-agent-kit-starter-pack/.mcp.json`."
+    ]
   }
 }

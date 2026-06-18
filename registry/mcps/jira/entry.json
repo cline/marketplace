@@ -20,8 +20,7 @@
       "--transport",
       "http",
       "https://mcp.atlassian.com/v1/mcp/authv2"
-    ],
-    "notes": "Transport from source catalog: Streamable HTTP. Auth from source catalog: OAuth 2.1; optional API token. Atlassian Rovo MCP supports Jira, Confluence, and Compass; old SSE endpoint deprecated after 2026-06-30."
+    ]
   },
   "homepage": "https://support.atlassian.com/atlassian-rovo-mcp-server/docs/getting-started-with-the-atlassian-remote-mcp-server/"
 }
