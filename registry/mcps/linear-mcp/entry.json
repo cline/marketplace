@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schemas/mcp.schema.json",
-  "id": "linear",
+  "id": "linear-mcp",
   "type": "mcp",
   "name": "Linear",
   "tagline": "Handle Linear project issues",
