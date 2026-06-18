@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "cline-automation-recommender",
+  "type": "skill",
+  "name": "Cline Automation Recommender",
+  "tagline": "Recommend Cline automations for a codebase",
+  "description": "Audits a codebase and recommends useful Cline automations such as skills, MCP servers, workflow rules, and project instructions.",
+  "author": {
+    "name": "Anthropic"
+  },
+  "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-code-setup",
+  "repo": "https://github.com/anthropics/claude-plugins-official",
+  "icon": "./icon.svg",
+  "tags": [
+    "software",
+    "productivity"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/marketplace",
+      "--skill",
+      "cline-automation-recommender",
+      "--full-depth"
+    ]
+  }
+}

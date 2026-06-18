@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "sonatype-guide",
+  "type": "skill",
+  "name": "Sonatype Guide",
+  "tagline": "Use Sonatype guidance for software supply-chain security",
+  "description": "Guidance for applying Sonatype software supply-chain security workflows, dependency intelligence, and remediation practices.",
+  "author": {
+    "name": "Sonatype"
+  },
+  "homepage": "https://github.com/sonatype/sonatype-guide-claude-plugin",
+  "repo": "https://github.com/sonatype/sonatype-guide-claude-plugin",
+  "icon": "./icon.svg",
+  "tags": [
+    "security",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/marketplace",
+      "--skill",
+      "sonatype-guide",
+      "--full-depth"
+    ]
+  }
+}

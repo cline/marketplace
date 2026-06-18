@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "skill-creator",
+  "type": "skill",
+  "name": "Skill Creator",
+  "tagline": "Create, improve, and evaluate agent skills",
+  "description": "Guidance for creating new skills, editing existing skills, and evaluating skill quality and behavior.",
+  "author": {
+    "name": "Anthropic"
+  },
+  "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/skill-creator",
+  "repo": "https://github.com/anthropics/claude-plugins-official",
+  "icon": "./icon.svg",
+  "tags": [
+    "software",
+    "productivity"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/marketplace",
+      "--skill",
+      "skill-creator",
+      "--full-depth"
+    ]
+  }
+}

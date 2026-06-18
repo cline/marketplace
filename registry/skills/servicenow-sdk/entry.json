@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "servicenow-sdk",
+  "type": "skill",
+  "name": "ServiceNow SDK",
+  "tagline": "Work with ServiceNow fluent applications and now-sdk",
+  "description": "Guidance for explaining and editing ServiceNow fluent applications that use the now-sdk and related development patterns.",
+  "author": {
+    "name": "ServiceNow"
+  },
+  "homepage": "https://servicenow.github.io/sdk/",
+  "icon": "./icon.svg",
+  "tags": [
+    "software",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/marketplace",
+      "--skill",
+      "now-sdk-explain",
+      "--full-depth"
+    ]
+  }
+}

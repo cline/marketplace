@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "exa-search",
+  "type": "skill",
+  "name": "Exa Search",
+  "tagline": "Run deep research and web discovery with Exa",
+  "description": "Search and research workflows for lead generation, literature reviews, competitive analysis, and deep web discovery powered by Exa.",
+  "author": {
+    "name": "Exa Labs"
+  },
+  "homepage": "https://github.com/exa-labs/exa-mcp-server",
+  "repo": "https://github.com/exa-labs/exa-mcp-server",
+  "icon": "./icon.svg",
+  "tags": [
+    "research",
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/marketplace",
+      "--skill",
+      "exa-search",
+      "--full-depth"
+    ]
+  }
+}

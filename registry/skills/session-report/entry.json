@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "session-report",
+  "type": "skill",
+  "name": "Session Report",
+  "tagline": "Generate HTML reports from Claude Code session usage",
+  "description": "Generates explorable HTML reports from Claude Code transcript exports, including token usage, cache behavior, expensive prompts, and skill activity.",
+  "author": {
+    "name": "Anthropic"
+  },
+  "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/session-report",
+  "repo": "https://github.com/anthropics/claude-plugins-official",
+  "icon": "./icon.svg",
+  "tags": [
+    "productivity",
+    "data"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/marketplace",
+      "--skill",
+      "session-report",
+      "--full-depth"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "sourcegraph-search",
+  "type": "skill",
+  "name": "Sourcegraph Search",
+  "tagline": "Search and navigate code with Sourcegraph",
+  "description": "Disciplined Sourcegraph search workflows for finding implementations, references, examples, and cross-repository code context.",
+  "author": {
+    "name": "Sourcegraph"
+  },
+  "homepage": "https://sourcegraph.com",
+  "icon": "./icon.svg",
+  "tags": [
+    "software",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/marketplace",
+      "--skill",
+      "searching-sourcegraph",
+      "--full-depth"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "math-olympiad",
+  "type": "skill",
+  "name": "Math Olympiad",
+  "tagline": "Solve olympiad-style math problems rigorously",
+  "description": "Problem-solving guidance for olympiad-style math, including proof strategy, structured reasoning, and careful verification.",
+  "author": {
+    "name": "Math Olympiad"
+  },
+  "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/math-olympiad",
+  "repo": "https://github.com/anthropics/claude-plugins-official",
+  "icon": "./icon.svg",
+  "tags": [
+    "research",
+    "productivity"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/marketplace",
+      "--skill",
+      "math-olympiad",
+      "--full-depth"
+    ]
+  }
+}

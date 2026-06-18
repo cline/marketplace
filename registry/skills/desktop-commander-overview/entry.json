@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "desktop-commander-overview",
+  "type": "skill",
+  "name": "Desktop Commander Overview",
+  "tagline": "Use Desktop Commander MCP capabilities effectively",
+  "description": "Overview guidance for Desktop Commander MCP capabilities including shell sessions, process management, filesystem access, editing, and search workflows.",
+  "author": {
+    "name": "Desktop Commander"
+  },
+  "homepage": "https://desktopcommander.app",
+  "icon": "./icon.svg",
+  "tags": [
+    "software",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/marketplace",
+      "--skill",
+      "desktop-commander-overview",
+      "--full-depth"
+    ]
+  }
+}

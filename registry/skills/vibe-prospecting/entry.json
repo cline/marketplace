@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "vibe-prospecting",
+  "type": "skill",
+  "name": "Vibe Prospecting",
+  "tagline": "Find company and contact data for prospecting",
+  "description": "Prospecting guidance for finding company and contact data, roles, technology stacks, business events, websites, and outreach context.",
+  "author": {
+    "name": "Vibe Prospecting"
+  },
+  "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/vibe-prospecting",
+  "repo": "https://github.com/anthropics/claude-plugins-official",
+  "icon": "./icon.svg",
+  "tags": [
+    "sales",
+    "marketing"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/marketplace",
+      "--skill",
+      "vibe-prospecting",
+      "--full-depth"
+    ]
+  }
+}

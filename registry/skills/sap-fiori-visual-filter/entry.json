@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "sap-fiori-visual-filter",
+  "type": "skill",
+  "name": "SAP Fiori Visual Filter",
+  "tagline": "Add visual filters to SAP Fiori Elements apps",
+  "description": "Guidance for adding chart-based visual filters to SAP Fiori Elements filter bars and value help using CAP or ABAP RAP.",
+  "author": {
+    "name": "SAP SE"
+  },
+  "homepage": "https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server",
+  "repo": "https://github.com/SAP/open-ux-tools",
+  "icon": "./icon.svg",
+  "tags": [
+    "software",
+    "business"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/marketplace",
+      "--skill",
+      "sap-fiori-add-visual-filter",
+      "--full-depth"
+    ]
+  }
+}

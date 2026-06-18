@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "dataproc",
+  "type": "skill",
+  "name": "Dataproc",
+  "tagline": "Interact with Dataproc clusters and jobs",
+  "description": "Data and operations guidance for discovering Dataproc clusters, listing jobs, and working with Dataproc resources.",
+  "author": {
+    "name": "Google"
+  },
+  "homepage": "https://github.com/gemini-cli-extensions/dataproc",
+  "repo": "https://github.com/gemini-cli-extensions/dataproc",
+  "icon": "./icon.svg",
+  "tags": [
+    "data",
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/marketplace",
+      "--skill",
+      "dataproc-skills",
+      "--full-depth"
+    ]
+  }
+}
