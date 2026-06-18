@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "box",
+  "type": "mcp",
+  "name": "Box",
+  "tagline": "Connect Cline to Box",
+  "description": "Search, read, and manage Box content, build Box Platform integrations, and use Box AI for retrieval workflows.",
+  "author": {
+    "name": "Box"
+  },
+  "homepage": "https://developer.box.com/",
+  "repo": "https://github.com/box/box-for-ai",
+  "license": "MIT",
+  "tags": [
+    "research",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "box",
+      "--transport",
+      "http",
+      "https://mcp.box.com"
+    ],
+    "env": [
+      {
+        "name": "CLIENT_ID",
+        "required": true,
+        "description": "Box app OAuth client ID."
+      },
+      {
+        "name": "CLIENT_SECRET",
+        "required": true,
+        "description": "Box app OAuth client secret."
+      }
+    ],
+    "notes": "Imported from plugin bundle config snippet `box/.codex-plugin/README.md`."
+  }
+}
