@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/plugin.schema.json",
+  "id": "custom-compaction",
+  "type": "plugin",
+  "name": "Custom Compaction",
+  "tagline": "Provider message compaction through a plugin message builder",
+  "description": "Registers a message builder that preserves the first user message and recent context, then summarizes older middle history before the model request is sent. Keeps long sessions within context while retaining the original task and recent state.",
+  "author": {
+    "name": "Cline",
+    "url": "https://cline.bot"
+  },
+  "homepage": "https://github.com/cline/plugins/tree/main/plugins/custom-compaction",
+  "repo": "https://github.com/cline/plugins/tree/main/plugins/custom-compaction",
+  "icon": "./icon.svg",
+  "tags": [
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": true,
+  "install": {
+    "args": [
+      "custom-compaction"
+    ]
+  }
+}

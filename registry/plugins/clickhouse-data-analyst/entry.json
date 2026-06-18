@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/plugin.schema.json",
+  "id": "clickhouse-data-analyst",
+  "type": "plugin",
+  "name": "ClickHouse Data Analyst",
+  "tagline": "ClickHouse data analyst skill with supporting analysis and ClickHouse sub-skills",
+  "description": "Bundles the `data-analyst` skill and its supporting ClickHouse sub-skills. Provides an elicitation-first workflow for answering analytics questions against ClickHouse: connection setup, data dictionary lookup, safe SQL, analysis, plotting, and artifact management, including local file analysis with chDB.",
+  "author": {
+    "name": "Cline",
+    "url": "https://cline.bot"
+  },
+  "homepage": "https://github.com/cline/plugins/tree/main/plugins/clickhouse-data-analyst",
+  "repo": "https://github.com/cline/plugins/tree/main/plugins/clickhouse-data-analyst",
+  "icon": "./icon.svg",
+  "tags": [
+    "data",
+    "databases"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": true,
+  "install": {
+    "args": [
+      "clickhouse-data-analyst"
+    ]
+  }
+}

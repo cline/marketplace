@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/plugin.schema.json",
+  "id": "weather-metrics",
+  "type": "plugin",
+  "name": "Weather Metrics",
+  "tagline": "Demo weather tool plus runtime metrics hooks",
+  "description": "Registers a mock `get_weather` tool and logs run, tool, token, and cost metrics through lifecycle hooks. A starting point for plugin authors learning tool registration and runtime metrics.",
+  "author": {
+    "name": "Cline",
+    "url": "https://cline.bot"
+  },
+  "homepage": "https://github.com/cline/plugins/tree/main/plugins/weather-metrics",
+  "repo": "https://github.com/cline/plugins/tree/main/plugins/weather-metrics",
+  "icon": "./icon.svg",
+  "tags": [
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": true,
+  "install": {
+    "args": [
+      "weather-metrics"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/plugin.schema.json",
+  "id": "agents-squad",
+  "type": "plugin",
+  "name": "Agents Squad",
+  "tagline": "Background subagents with presets, skills, and shared handoffs",
+  "description": "Registers tools for starting, listing, messaging, polling, and coordinating background subagents. Ships agent presets, bundled skills, and a handoff store so subagents can pass notes back to the parent session.",
+  "author": {
+    "name": "Cline",
+    "url": "https://cline.bot"
+  },
+  "homepage": "https://github.com/cline/plugins/tree/main/plugins/agents-squad",
+  "repo": "https://github.com/cline/plugins/tree/main/plugins/agents-squad",
+  "icon": "./icon.svg",
+  "tags": [
+    "software",
+    "productivity"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": true,
+  "install": {
+    "args": [
+      "agents-squad"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/plugin.schema.json",
+  "id": "env-blocker",
+  "type": "plugin",
+  "name": "Env Blocker",
+  "tagline": "A hook that blocks reads of secret .env files",
+  "description": "Registers a `beforeTool` hook that blocks `read_files` and `run_commands` attempts to read `.env` style secret files, while leaving template files such as `.env.example`, `.env.sample`, and `.env.template` readable.",
+  "author": {
+    "name": "Cline",
+    "url": "https://cline.bot"
+  },
+  "homepage": "https://github.com/cline/plugins/tree/main/plugins/env-blocker",
+  "repo": "https://github.com/cline/plugins/tree/main/plugins/env-blocker",
+  "icon": "./icon.svg",
+  "tags": [
+    "security",
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": true,
+  "install": {
+    "args": [
+      "env-blocker"
+    ]
+  }
+}

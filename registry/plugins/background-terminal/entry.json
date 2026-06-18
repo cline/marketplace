@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/plugin.schema.json",
+  "id": "background-terminal",
+  "type": "plugin",
+  "name": "Background Terminal",
+  "tagline": "Long-running shell jobs with polling and cleanup tools",
+  "description": "Registers `start_background_command`, `get_background_command`, and `delete_background_command`. Jobs write metadata and logs under the Cline data directory so an agent can start long-lived work, poll output, and clean up later.",
+  "author": {
+    "name": "Cline",
+    "url": "https://cline.bot"
+  },
+  "homepage": "https://github.com/cline/plugins/tree/main/plugins/background-terminal",
+  "repo": "https://github.com/cline/plugins/tree/main/plugins/background-terminal",
+  "icon": "./icon.svg",
+  "tags": [
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": true,
+  "install": {
+    "args": [
+      "background-terminal"
+    ]
+  }
+}

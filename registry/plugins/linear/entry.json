@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schemas/plugin.schema.json",
+  "id": "linear",
+  "type": "plugin",
+  "name": "Linear",
+  "tagline": "Linear SDK scripting skill for issue, project, team, cycle, and comment workflows",
+  "description": "Bundles the `linear-sdk-scripting` skill, which guides agents through Linear work from the terminal by writing small Node scripts against the official `@linear/sdk`: reading, creating, updating, closing, and commenting on issues across teams, projects, and cycles.",
+  "author": {
+    "name": "Cline",
+    "url": "https://cline.bot"
+  },
+  "homepage": "https://github.com/cline/plugins/tree/main/plugins/linear",
+  "repo": "https://github.com/cline/plugins/tree/main/plugins/linear",
+  "icon": "./icon.svg",
+  "tags": [
+    "productivity",
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": true,
+  "install": {
+    "args": [
+      "linear"
+    ],
+    "env": [
+      {
+        "name": "LINEAR_API_KEY",
+        "required": true,
+        "description": "Linear personal API key used when executing Linear actions.",
+        "url": "https://linear.app/settings/api"
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "../../../schemas/plugin.schema.json",
+  "id": "intercom-support-triage-slack",
+  "type": "plugin",
+  "name": "Intercom Support Triage",
+  "tagline": "Intercom conversation triage tools for support workflows",
+  "description": "Registers `fetch_intercom_conversations` and `post_slack_summary`. Fetch recent Intercom conversations, classify them, then post grouped Slack blocks with links back to Intercom. Built for support triage workflows.",
+  "author": {
+    "name": "Cline",
+    "url": "https://cline.bot"
+  },
+  "homepage": "https://github.com/cline/plugins/tree/main/plugins/intercom-support-triage-slack",
+  "repo": "https://github.com/cline/plugins/tree/main/plugins/intercom-support-triage-slack",
+  "icon": "./icon.svg",
+  "tags": [
+    "business",
+    "productivity"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": true,
+  "install": {
+    "args": [
+      "intercom-support-triage-slack"
+    ],
+    "env": [
+      {
+        "name": "INTERCOM_API_TOKEN",
+        "required": true,
+        "description": "Intercom access token used to fetch conversations.",
+        "url": "https://developers.intercom.com"
+      },
+      {
+        "name": "SLACK_BOT_TOKEN",
+        "required": true,
+        "description": "Slack bot token used to post triage summaries.",
+        "url": "https://api.slack.com/apps"
+      },
+      {
+        "name": "SLACK_CHANNEL",
+        "required": false,
+        "description": "Default Slack channel to post to, unless a tool call overrides it."
+      }
+    ]
+  }
+}
