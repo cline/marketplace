@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "carta",
+  "type": "mcp",
+  "name": "Carta",
+  "tagline": "Connect Cline to Carta",
+  "description": "Query Carta cap tables, investors data, CRM records, grants, valuations, and related equity workflows through the Carta MCP server.",
+  "author": {
+    "name": "Carta"
+  },
+  "homepage": "https://github.com/carta/plugins",
+  "repo": "https://github.com/carta/plugins",
+  "tags": [
+    "finance",
+    "business",
+    "sales"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "carta",
+      "--transport",
+      "http",
+      "https://mcp.app.carta.com/mcp"
+    ],
+    "notes": "Imported from plugin bundle configs `carta-cap-table/.claude-plugin/plugin.json`, `carta-crm/.claude-plugin/plugin.json`, and `carta-investors/.claude-plugin/plugin.json`."
+  }
+}

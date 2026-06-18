@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "chrome-devtools",
+  "type": "mcp",
+  "name": "Chrome DevTools",
+  "tagline": "Connect Cline to Chrome DevTools",
+  "description": "Reliable browser automation, debugging, and performance analysis in Chrome using Chrome DevTools and Puppeteer.",
+  "author": {
+    "name": "Chrome DevTools"
+  },
+  "homepage": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+  "repo": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "chrome-devtools",
+      "--",
+      "npx",
+      "chrome-devtools-mcp@1.2.0"
+    ],
+    "notes": "Imported from plugin bundle config `chrome-devtools-mcp/.claude-plugin/plugin.json`."
+  }
+}
