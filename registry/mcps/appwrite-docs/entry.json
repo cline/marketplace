@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "appwrite-docs",
+  "type": "mcp",
+  "name": "Appwrite Docs",
+  "tagline": "Connect Cline to Appwrite Docs",
+  "description": "Connect Cline to Appwrite Docs through this MCP server configuration from the imported plugin marketplace bundle.",
+  "author": {
+    "name": "Appwrite"
+  },
+  "tags": [
+    "software",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "appwrite-docs",
+      "--transport",
+      "http",
+      "https://mcp-for-docs.appwrite.io"
+    ],
+    "notes": "Imported from plugin bundle config `appwrite/.mcp.json`."
+  },
+  "homepage": "https://appwrite.io/docs/tooling/ai/ai-dev-tools/claude-code",
+  "repo": "https://github.com/appwrite/claude-plugin",
+  "license": "MIT"
+}

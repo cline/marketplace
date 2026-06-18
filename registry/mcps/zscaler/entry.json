@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "zscaler",
+  "type": "mcp",
+  "name": "Zscaler",
+  "tagline": "Connect Cline to Zscaler",
+  "description": "Manage Zscaler cloud security platform including ZPA (private access), ZIA (internet access), ZDX (digital experience), ZCC (client connector), EASM (attack surface), and Z-Insights (analytics). Create and manage policies, troubleshoot connectivity, audit security configurations, and investigate incidents across the full Zscaler ecosystem.",
+  "author": {
+    "name": "Zscaler"
+  },
+  "tags": [
+    "security",
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "zscaler",
+      "--",
+      "zscaler-mcp-server"
+    ],
+    "env": [
+      {
+        "name": "ZSCALER_CLIENT_ID",
+        "required": true,
+        "description": "Zscaler value for zscaler client id."
+      },
+      {
+        "name": "ZSCALER_CLIENT_SECRET",
+        "required": true,
+        "description": "Zscaler value for zscaler client secret."
+      },
+      {
+        "name": "ZSCALER_CUSTOMER_ID",
+        "required": true,
+        "description": "Zscaler value for zscaler customer id."
+      },
+      {
+        "name": "ZSCALER_VANITY_DOMAIN",
+        "required": true,
+        "description": "Zscaler value for zscaler vanity domain."
+      }
+    ],
+    "notes": "Imported from plugin bundle config `zscaler/mcp.json`. The `zscaler-mcp-server` CLI must be available on PATH before starting this MCP server."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "nimble",
+  "type": "mcp",
+  "name": "Nimble",
+  "tagline": "Connect Cline to Nimble",
+  "description": "Real-time web search and data extraction for AI agents - powered by Nimble. Search, extract, map, and crawl any site on the web with built-in stealth, JS rendering, and retries. Get clean, structured web data from any public webpage with pre-built Web Search Agents, or build your own reusable extraction templates. The definitive web data toolkit for AI-native development.",
+  "author": {
+    "name": "Nimble"
+  },
+  "tags": [
+    "data",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "nimble",
+      "--transport",
+      "http",
+      "https://mcp.nimbleway.com/mcp"
+    ],
+    "notes": "Imported from plugin bundle config `nimble/.mcp.json`."
+  },
+  "homepage": "https://www.nimbleway.com",
+  "repo": "https://github.com/Nimbleway/agent-skills",
+  "license": "MIT"
+}

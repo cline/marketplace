@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "intercom",
+  "type": "mcp",
+  "name": "Intercom",
+  "tagline": "Connect Cline to Intercom",
+  "description": "Connect Cline to Intercom through this MCP server configuration from the imported plugin marketplace bundle.",
+  "author": {
+    "name": "Intercom"
+  },
+  "tags": [
+    "data",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "intercom",
+      "--transport",
+      "http",
+      "https://mcp.intercom.com/mcp"
+    ],
+    "notes": "Imported from plugin bundle config `intercom/.mcp.json`."
+  },
+  "homepage": "https://developers.intercom.com",
+  "repo": "https://github.com/intercom/claude-plugin-external",
+  "license": "MIT"
+}

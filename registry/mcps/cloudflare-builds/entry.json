@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "cloudflare-builds",
+  "type": "mcp",
+  "name": "Cloudflare Builds",
+  "tagline": "Connect Cline to Cloudflare Builds",
+  "description": "Skills for the Cloudflare developer platform: Workers, Durable Objects, Agents SDK, MCP servers, Wrangler CLI, and web performance",
+  "author": {
+    "name": "Cloudflare"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cloudflare-builds",
+      "--transport",
+      "http",
+      "https://builds.mcp.cloudflare.com/mcp"
+    ],
+    "notes": "Imported from plugin bundle config `cloudflare/.mcp.json`."
+  }
+}

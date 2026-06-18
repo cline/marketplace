@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "serena",
+  "type": "mcp",
+  "name": "Serena",
+  "tagline": "Connect Cline to Serena",
+  "description": "Semantic code analysis MCP server providing intelligent code understanding, refactoring suggestions, and codebase navigation through language server protocol integration.",
+  "author": {
+    "name": "Oraios"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "serena",
+      "--",
+      "uvx",
+      "--from",
+      "git+https://github.com/oraios/serena",
+      "serena",
+      "start-mcp-server"
+    ],
+    "notes": "Imported from plugin bundle config `serena/.mcp.json`."
+  }
+}

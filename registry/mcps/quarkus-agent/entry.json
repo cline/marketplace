@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "quarkus-agent",
+  "type": "mcp",
+  "name": "Quarkus Agent",
+  "tagline": "Connect Cline to Quarkus Agent",
+  "description": "MCP server for AI coding agents to create, manage, and interact with Quarkus applications. Provides tools for project scaffolding, dev mode lifecycle, extension skills, Dev MCP proxy, and documentation search.",
+  "author": {
+    "name": "Quarkus"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "quarkus-agent",
+      "--",
+      "jbang",
+      "quarkus-agent-mcp@quarkusio"
+    ],
+    "notes": "Imported from plugin bundle config `quarkus-agent/.mcp.json`."
+  },
+  "homepage": "https://github.com/quarkusio/quarkus-agent-mcp",
+  "repo": "https://github.com/quarkusio/quarkus-agent-mcp",
+  "license": "Apache-2.0"
+}

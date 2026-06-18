@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "amplitude",
+  "type": "mcp",
+  "name": "Amplitude",
+  "tagline": "Connect Cline to Amplitude",
+  "description": "Connect Cline to Amplitude through this MCP server configuration from the imported plugin marketplace bundle.",
+  "author": {
+    "name": "Amplitude"
+  },
+  "tags": [
+    "data",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "amplitude",
+      "--transport",
+      "http",
+      "https://mcp.amplitude.com/mcp"
+    ],
+    "notes": "Imported from plugin bundle config `amplitude/.mcp.json`."
+  },
+  "homepage": "https://github.com/amplitude/mcp-marketplace",
+  "repo": "https://github.com/amplitude/mcp-marketplace",
+  "license": "MIT"
+}

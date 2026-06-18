@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "legalzoom",
+  "type": "mcp",
+  "name": "Legalzoom",
+  "tagline": "Connect Cline to Legalzoom",
+  "description": "LegalZoom Plugin - AI-powered business legal assistance with contract review and attorney consultation",
+  "author": {
+    "name": "LegalZoom"
+  },
+  "tags": [
+    "productivity",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "legalzoom",
+      "--transport",
+      "http",
+      "https://www.legalzoom.com/mcp/claude/v1"
+    ],
+    "notes": "Imported from plugin bundle config `legalzoom/.mcp.json`."
+  },
+  "homepage": "https://github.com/legalzoom/claude-plugins",
+  "repo": "https://github.com/legalzoom/claude-plugins",
+  "license": "PROPRIETARY"
+}

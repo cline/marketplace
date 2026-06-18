@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "shopify-dev",
+  "type": "mcp",
+  "name": "Shopify Dev",
+  "tagline": "Connect Cline to Shopify Dev",
+  "description": "Connect Cline to Shopify Dev through this MCP server configuration from the imported plugin marketplace bundle.",
+  "author": {
+    "name": "Shopify"
+  },
+  "tags": [
+    "software",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "shopify-dev",
+      "--",
+      "npx",
+      "-y",
+      "@shopify/dev-mcp@latest"
+    ],
+    "notes": "Imported from plugin bundle config `shopify/.mcp.json`."
+  },
+  "license": "MIT"
+}

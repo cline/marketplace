@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "revenuecat",
+  "type": "mcp",
+  "name": "RevenueCat",
+  "tagline": "Connect Cline to RevenueCat",
+  "description": "Configure your RevenueCat integration and access data from your RevenueCat projects.",
+  "author": {
+    "name": "RevenueCat"
+  },
+  "tags": [
+    "data",
+    "finance"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "revenuecat",
+      "--transport",
+      "http",
+      "https://mcp.revenuecat.ai/mcp"
+    ],
+    "notes": "Imported from plugin bundle config `revenuecat/.mcp.json`."
+  },
+  "homepage": "https://www.revenuecat.com/docs/tools/mcp/overview",
+  "repo": "https://github.com/RevenueCat/ai-toolkit",
+  "license": "MIT"
+}

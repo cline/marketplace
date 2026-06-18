@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "bigdata-com",
+  "type": "mcp",
+  "name": "Bigdata.com",
+  "tagline": "Connect Cline to Bigdata.com",
+  "description": "Financial research and market intelligence on stocks, companies, sectors, and economies. Run valuation snapshots, peer comparables, and investment memos; preview, digest, and analyze earnings (quality, reactions, surprises); assess risk, monitor catalysts, and review competitive moats and governance. Covers thematic and sector research, cross-sector and regional comparisons, country and macro analysis, G7 benchmar...",
+  "author": {
+    "name": "RavenPack"
+  },
+  "tags": [
+    "data",
+    "finance"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "bigdata-com",
+      "--transport",
+      "http",
+      "https://mcp.bigdata.com"
+    ],
+    "notes": "Imported from plugin bundle config `bigdata-com/.mcp.json`."
+  }
+}

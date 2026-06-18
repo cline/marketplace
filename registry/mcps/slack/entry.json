@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "slack",
+  "type": "mcp",
+  "name": "Slack",
+  "tagline": "Connect Cline to Slack",
+  "description": "Slack integration for searching messages, sending communications, managing canvases, and more",
+  "author": {
+    "name": "Slack"
+  },
+  "tags": [
+    "marketing",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "slack",
+      "--transport",
+      "http",
+      "https://mcp.slack.com/mcp"
+    ],
+    "notes": "Imported from plugin bundle config `slack/.mcp.json`."
+  },
+  "homepage": "https://github.com/slackapi/slack-mcp-cursor-plugin",
+  "license": "MIT"
+}

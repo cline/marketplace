@@ -1,0 +1,53 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "datacloud-spanner-toolbox",
+  "type": "mcp",
+  "name": "Spanner Toolbox",
+  "tagline": "Connect Cline to Spanner Toolbox",
+  "description": "This plugin provides a specialized suite of skills for data engineers and database practitioners working on Google Cloud. It acts as an expert assistant, allowing you to use natural language prompts in your preferred coding agent to architect complex data pipelines, transform data with dbt, write Spark and BigQuery SQL notebooks, and orchestrate end-to-end workflows across GCP's data ecosystem.",
+  "author": {
+    "name": "Google Cloud"
+  },
+  "tags": [
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "datacloud-spanner-toolbox",
+      "--",
+      "npx",
+      "-y",
+      "@toolbox-sdk/server@>=1.1.0",
+      "--prebuilt",
+      "spanner",
+      "--stdio",
+      "--user-agent-metadata",
+      "datacloud.codex"
+    ],
+    "env": [
+      {
+        "name": "SPANNER_DATABASE",
+        "required": true,
+        "description": "Spanner Toolbox value for spanner database."
+      },
+      {
+        "name": "SPANNER_DIALECT",
+        "required": true,
+        "description": "Spanner Toolbox value for spanner dialect."
+      },
+      {
+        "name": "SPANNER_INSTANCE",
+        "required": true,
+        "description": "Spanner Toolbox value for spanner instance."
+      },
+      {
+        "name": "SPANNER_PROJECT",
+        "required": true,
+        "description": "Spanner Toolbox value for spanner project."
+      }
+    ],
+    "notes": "Imported from plugin bundle config `data-agent-kit-starter-pack/.mcp.json`."
+  }
+}

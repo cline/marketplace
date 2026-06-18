@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "codspeed",
+  "type": "mcp",
+  "name": "Codspeed",
+  "tagline": "Connect Cline to Codspeed",
+  "description": "Connect Cline to Codspeed through this MCP server configuration from the imported plugin marketplace bundle.",
+  "author": {
+    "name": "CodSpeed"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "codspeed",
+      "--transport",
+      "http",
+      "https://mcp.codspeed.io/mcp"
+    ],
+    "notes": "Imported from plugin bundle config `codspeed/.mcp.json`."
+  },
+  "homepage": "https://codspeed.io",
+  "repo": "https://github.com/CodSpeedHQ/codspeed",
+  "license": "MIT"
+}

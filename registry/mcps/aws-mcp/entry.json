@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "aws-mcp",
+  "type": "mcp",
+  "name": "AWS Data Analytics",
+  "tagline": "Connect Cline to AWS Data Analytics",
+  "description": "Data lake, analytics, and ETL workflows with S3 Tables, AWS Glue, and Athena. Covers managed Iceberg tables on S3 Tables, ingestion from JDBC databases (Oracle, SQL Server, PostgreSQL, MySQL, RDS), Amazon Redshift, Snowflake, BigQuery, and DynamoDB, AWS Glue Data Catalog inventory and asset discovery, federated Athena queries, and vector storage and semantic search on Amazon S3 Vectors.",
+  "author": {
+    "name": "AWS"
+  },
+  "tags": [
+    "data",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "aws-mcp",
+      "--",
+      "uvx",
+      "mcp-proxy-for-aws@1.6.0",
+      "https://aws-mcp.us-east-1.api.aws/mcp",
+      "--skip-auth",
+      "--metadata",
+      "INSTALL_SOURCE=agent-toolkit"
+    ],
+    "notes": "Imported from plugin bundle config `aws-data-analytics/.mcp.json`."
+  },
+  "homepage": "https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/",
+  "repo": "https://github.com/aws/agent-toolkit-for-aws",
+  "license": "Apache-2.0"
+}

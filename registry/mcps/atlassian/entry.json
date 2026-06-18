@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "atlassian",
+  "type": "mcp",
+  "name": "Atlassian",
+  "tagline": "Connect Cline to Atlassian",
+  "description": "Connect to Atlassian products including Jira and Confluence. Search and create issues, access documentation, manage sprints, and integrate your development workflow with Atlassian's collaboration tools.",
+  "author": {
+    "name": "Atlassian"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "atlassian",
+      "--transport",
+      "http",
+      "https://mcp.atlassian.com/v1/mcp/authv2"
+    ],
+    "notes": "Imported from plugin bundle config `atlassian/.mcp.json`."
+  }
+}

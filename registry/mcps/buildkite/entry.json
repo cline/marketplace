@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "buildkite",
+  "type": "mcp",
+  "name": "Buildkite",
+  "tagline": "Connect Cline to Buildkite",
+  "description": "Connect Cline to Buildkite through this MCP server configuration from the imported plugin marketplace bundle.",
+  "author": {
+    "name": "Buildkite"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "buildkite",
+      "--transport",
+      "http",
+      "https://mcp.buildkite.com/mcp"
+    ],
+    "notes": "Imported from plugin bundle config `buildkite/mcp.json`."
+  }
+}

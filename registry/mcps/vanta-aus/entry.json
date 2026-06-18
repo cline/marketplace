@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "vanta-aus",
+  "type": "mcp",
+  "name": "Vanta AUS",
+  "tagline": "Connect Cline to Vanta AUS",
+  "description": "Connect Cline to the Vanta AUS regional MCP server.",
+  "author": {
+    "name": "Vanta"
+  },
+  "tags": [
+    "security",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "vanta-aus",
+      "--transport",
+      "http",
+      "https://mcp.aus.vanta.com/mcp"
+    ],
+    "notes": "Imported from plugin bundle config `vanta/.mcp.json`."
+  },
+  "homepage": "https://github.com/VantaInc/vanta-mcp-plugin",
+  "repo": "https://github.com/VantaInc/vanta-mcp-plugin",
+  "license": "MIT"
+}

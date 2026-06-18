@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "playwright",
+  "type": "mcp",
+  "name": "Playwright",
+  "tagline": "Connect Cline to Playwright",
+  "description": "Connect Cline to Playwright through this MCP server configuration from the imported plugin marketplace bundle.",
+  "author": {
+    "name": "Microsoft"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "playwright",
+      "--",
+      "npx",
+      "@playwright/mcp@latest"
+    ],
+    "notes": "Imported from plugin bundle config `playwright/.mcp.json`."
+  }
+}

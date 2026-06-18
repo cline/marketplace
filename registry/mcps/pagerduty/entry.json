@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "pagerduty",
+  "type": "mcp",
+  "name": "PagerDuty",
+  "tagline": "Connect Cline to PagerDuty",
+  "description": "Connect Cline to PagerDuty through this MCP server configuration from the imported plugin marketplace bundle.",
+  "author": {
+    "name": "PagerDuty"
+  },
+  "tags": [
+    "software",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "pagerduty",
+      "--transport",
+      "http",
+      "https://mcp.pagerduty.com/mcp",
+      "--header",
+      "Authorization: Token token=${PAGERDUTY_API_KEY}"
+    ],
+    "env": [
+      {
+        "name": "PAGERDUTY_API_KEY",
+        "required": true,
+        "description": "PagerDuty API key for the remote MCP server."
+      }
+    ],
+    "notes": "Imported from plugin bundle config `pagerduty/.mcp.json`. The remote server requires the configured HTTP header values at runtime."
+  }
+}

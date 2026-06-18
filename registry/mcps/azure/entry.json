@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "azure",
+  "type": "mcp",
+  "name": "Azure",
+  "tagline": "Connect Cline to Azure",
+  "description": "Connect Cline to Azure through this MCP server configuration from the imported plugin marketplace bundle.",
+  "author": {
+    "name": "Microsoft"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "azure",
+      "--",
+      "npx",
+      "-y",
+      "@azure/mcp@latest",
+      "server",
+      "start"
+    ],
+    "notes": "Imported from plugin bundle config `azure/.mcp.json`."
+  },
+  "homepage": "https://github.com/microsoft/azure-skills",
+  "repo": "https://github.com/microsoft/azure-skills",
+  "license": "MIT"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "hunter",
+  "type": "mcp",
+  "name": "Hunter",
+  "tagline": "Connect Cline to Hunter",
+  "description": "Find and verify professional email addresses, search contacts by domain, and enrich company data.",
+  "author": {
+    "name": "Hunter.io"
+  },
+  "tags": [
+    "data",
+    "sales"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "hunter",
+      "--transport",
+      "http",
+      "https://mcp.hunter.io/mcp"
+    ],
+    "notes": "Imported from plugin bundle config `hunter/.mcp.json`."
+  },
+  "homepage": "https://hunter.io",
+  "repo": "https://github.com/hunter-io/claude-plugin",
+  "license": "MIT"
+}

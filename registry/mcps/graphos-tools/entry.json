@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "graphos-tools",
+  "type": "mcp",
+  "name": "Graphos Tools",
+  "tagline": "Connect Cline to Graphos Tools",
+  "description": "Agent skills for AI coding agents working with Apollo GraphQL tools and technologies",
+  "author": {
+    "name": "Apollo GraphQL"
+  },
+  "tags": [
+    "sales"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "graphos-tools",
+      "--transport",
+      "http",
+      "https://mcp.apollographql.com"
+    ],
+    "notes": "Imported from plugin bundle config `apollo-skills/.mcp.json`."
+  },
+  "homepage": "https://www.apollographql.com",
+  "repo": "https://github.com/apollographql/skills",
+  "license": "MIT"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "sap-mdk",
+  "type": "mcp",
+  "name": "SAP Mobile Development Kit",
+  "tagline": "Connect Cline to SAP Mobile Development Kit",
+  "description": "Model Context Protocol (MCP) server for AI-assisted development of MDK applications.",
+  "author": {
+    "name": "SAP"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "sap-mdk",
+      "--",
+      "npx",
+      "-y",
+      "@sap/mdk-mcp-server"
+    ],
+    "notes": "Imported from plugin bundle config `sap-mdk-server/.mcp.json`."
+  },
+  "homepage": "https://help.sap.com/docs/MDK",
+  "repo": "https://github.com/SAP/mdk-mcp-server",
+  "license": "Apache-2.0"
+}

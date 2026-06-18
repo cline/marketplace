@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "greptile",
+  "type": "mcp",
+  "name": "Greptile",
+  "tagline": "Connect Cline to Greptile",
+  "description": "Connect Cline to Greptile through this MCP server configuration from the imported plugin marketplace bundle.",
+  "author": {
+    "name": "Greptile"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "greptile",
+      "--transport",
+      "http",
+      "https://api.greptile.com/mcp",
+      "--header",
+      "Authorization: Bearer ${GREPTILE_API_KEY}"
+    ],
+    "env": [
+      {
+        "name": "GREPTILE_API_KEY",
+        "required": true,
+        "description": "Greptile value for greptile api key."
+      }
+    ],
+    "notes": "Imported from plugin bundle config `greptile/.mcp.json`. The remote server requires the configured HTTP header values at runtime."
+  },
+  "homepage": "https://greptile.com/docs"
+}

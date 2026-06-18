@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "cloudflare-observability",
+  "type": "mcp",
+  "name": "Cloudflare Observability",
+  "tagline": "Connect Cline to Cloudflare Observability",
+  "description": "Skills for the Cloudflare developer platform: Workers, Durable Objects, Agents SDK, MCP servers, Wrangler CLI, and web performance",
+  "author": {
+    "name": "Cloudflare"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cloudflare-observability",
+      "--transport",
+      "http",
+      "https://observability.mcp.cloudflare.com/mcp"
+    ],
+    "notes": "Imported from plugin bundle config `cloudflare/.mcp.json`."
+  }
+}

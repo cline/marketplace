@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "fiftyone",
+  "type": "mcp",
+  "name": "FiftyOne Skills",
+  "tagline": "Connect Cline to FiftyOne Skills",
+  "description": "Agent Context Protocol (ACP) skills for computer vision workflows using FiftyOne.",
+  "author": {
+    "name": "Voxel51"
+  },
+  "tags": [
+    "data",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "fiftyone",
+      "--",
+      "fiftyone-mcp"
+    ],
+    "notes": "Imported from plugin bundle config `fiftyone/.mcp.json`. The `fiftyone-mcp` CLI must be available on PATH before starting this MCP server."
+  },
+  "homepage": "https://docs.voxel51.com/",
+  "repo": "https://github.com/voxel51/fiftyone-skills",
+  "license": "Apache-2.0"
+}

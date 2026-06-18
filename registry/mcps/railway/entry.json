@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "railway",
+  "type": "mcp",
+  "name": "Railway",
+  "tagline": "Connect Cline to Railway",
+  "description": "Connect Cline to Railway through this MCP server configuration from the imported plugin marketplace bundle.",
+  "author": {
+    "name": "Railway"
+  },
+  "tags": [
+    "data",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "railway",
+      "--",
+      "railway",
+      "mcp"
+    ],
+    "notes": "Imported from plugin bundle config `railway/.mcp.json`. The `railway` CLI must be available on PATH before starting this MCP server."
+  },
+  "homepage": "https://docs.railway.com/agents",
+  "repo": "https://github.com/railwayapp/railway-skills",
+  "license": "MIT"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "windsor-ai",
+  "type": "mcp",
+  "name": "Windsor AI",
+  "tagline": "Connect Cline to Windsor AI",
+  "description": "Connect Cline to Windsor AI through this MCP server configuration from the imported plugin marketplace bundle.",
+  "author": {
+    "name": "Windsor.ai"
+  },
+  "tags": [
+    "data",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "windsor-ai",
+      "--transport",
+      "http",
+      "https://mcp.windsor.ai"
+    ],
+    "notes": "Imported from plugin bundle config `windsor-ai/.mcp.json`."
+  },
+  "homepage": "https://windsor.ai",
+  "repo": "https://github.com/windsor-ai/claude-windsor-ai-plugin",
+  "license": "MIT"
+}

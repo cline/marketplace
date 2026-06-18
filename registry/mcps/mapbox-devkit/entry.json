@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "mapbox-devkit",
+  "type": "mcp",
+  "name": "Mapbox Devkit",
+  "tagline": "Connect Cline to Mapbox Devkit",
+  "description": "Mapbox skills and MCP servers for building location-aware applications with AI. Includes geospatial tools, style management, and patterns for web, iOS, Android, and AI agent frameworks.",
+  "author": {
+    "name": "Mapbox"
+  },
+  "tags": [
+    "creative"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "mapbox-devkit",
+      "--transport",
+      "http",
+      "https://mcp-devkit.mapbox.com/mcp"
+    ],
+    "notes": "Imported from plugin bundle config `mapbox/.mcp.json`."
+  },
+  "homepage": "https://github.com/mapbox/mapbox-agent-skills",
+  "repo": "https://github.com/mapbox/mapbox-agent-skills",
+  "license": "MIT"
+}

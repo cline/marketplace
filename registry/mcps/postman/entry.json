@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "postman",
+  "type": "mcp",
+  "name": "Postman",
+  "tagline": "Connect Cline to Postman",
+  "description": "Connect Cline to Postman through this MCP server configuration from the imported plugin marketplace bundle.",
+  "author": {
+    "name": "Postman"
+  },
+  "tags": [
+    "security",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "postman",
+      "--transport",
+      "http",
+      "https://mcp.postman.com/mcp",
+      "--header",
+      "X-Source: claude-code-plugin",
+      "--header",
+      "X-Plugin-Version: 1.1.0",
+      "--header",
+      "User-Agent: postman-claude-code-plugin/1.1.0"
+    ],
+    "notes": "Imported from plugin bundle config `postman/.mcp.json`. The remote server requires the configured HTTP header values at runtime."
+  },
+  "homepage": "https://learning.postman.com/docs/developer/postman-mcp-server/",
+  "repo": "https://github.com/Postman-Devrel/postman-claude-code-plugin",
+  "license": "Apache-2.0"
+}

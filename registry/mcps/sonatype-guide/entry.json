@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "sonatype-guide",
+  "type": "mcp",
+  "name": "Sonatype Guide",
+  "tagline": "Connect Cline to Sonatype Guide",
+  "description": "Sonatype Guide MCP server for software supply chain intelligence and dependency security analysis. Scan dependencies for vulnerabilities, get version recommendations, and check component quality metrics.",
+  "author": {
+    "name": "Sonatype"
+  },
+  "tags": [
+    "security",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "sonatype-guide",
+      "--transport",
+      "http",
+      "https://mcp.guide.sonatype.com/mcp",
+      "--header",
+      "Authorization: Bearer ${SONATYPE_GUIDE_TOKEN}"
+    ],
+    "env": [
+      {
+        "name": "SONATYPE_GUIDE_TOKEN",
+        "required": true,
+        "description": "Sonatype Guide value for sonatype guide token."
+      }
+    ],
+    "notes": "Imported from plugin bundle config `sonatype-guide/.mcp.json`. The remote server requires the configured HTTP header values at runtime."
+  },
+  "homepage": "https://guide.sonatype.com",
+  "repo": "https://github.com/sonatype/guide-claude-plugin"
+}

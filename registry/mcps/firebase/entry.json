@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "firebase",
+  "type": "mcp",
+  "name": "Firebase",
+  "tagline": "Connect Cline to Firebase",
+  "description": "Google Firebase MCP integration. Manage Firestore databases, authentication, cloud functions, hosting, and storage. Build and manage your Firebase backend directly from your development workflow.",
+  "author": {
+    "name": "Google"
+  },
+  "tags": [
+    "data",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "firebase",
+      "--",
+      "npx",
+      "-y",
+      "firebase-tools@latest",
+      "mcp"
+    ],
+    "notes": "Imported from plugin bundle config `firebase/.mcp.json`."
+  }
+}

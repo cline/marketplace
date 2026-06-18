@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "cloudinary-smd",
+  "type": "mcp",
+  "name": "Cloudinary Structured Metadata",
+  "tagline": "Connect Cline to Cloudinary Structured Metadata",
+  "description": "Connect Cline to Cloudinary Structured Metadata through this MCP server configuration from the imported plugin marketplace bundle.",
+  "author": {
+    "name": "Cloudinary"
+  },
+  "tags": [
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cloudinary-smd",
+      "--transport",
+      "http",
+      "https://structured-metadata.mcp.cloudinary.com/mcp"
+    ],
+    "notes": "Imported from plugin bundle config `cloudinary/mcp.json`."
+  },
+  "homepage": "https://cloudinary.com",
+  "repo": "https://github.com/cloudinary-devs/cloudinary-plugin",
+  "license": "MIT"
+}

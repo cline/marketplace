@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "resend",
+  "type": "mcp",
+  "name": "Resend",
+  "tagline": "Connect Cline to Resend",
+  "description": "Skills and MCP server for the Resend email platform \u2014 sending, receiving, templates, CLI, React Email, and deliverability best practices.",
+  "author": {
+    "name": "Resend"
+  },
+  "tags": [
+    "marketing"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "resend",
+      "--",
+      "npx",
+      "-y",
+      "resend-mcp"
+    ],
+    "env": [
+      {
+        "name": "RESEND_API_KEY",
+        "required": true,
+        "description": "Resend value for resend api key."
+      }
+    ],
+    "notes": "Imported from plugin bundle config `resend/.mcp.json`."
+  },
+  "homepage": "https://resend.com",
+  "repo": "https://github.com/resend/resend-skills",
+  "license": "MIT"
+}

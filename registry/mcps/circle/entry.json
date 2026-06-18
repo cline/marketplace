@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "circle",
+  "type": "mcp",
+  "name": "Circle",
+  "tagline": "Connect Cline to Circle",
+  "description": "Ship stablecoin apps faster with Circle skills for USDC payments, cross-chain transfers, wallets, and smart contracts.",
+  "author": {
+    "name": "Circle Technology Services"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "circle",
+      "--transport",
+      "http",
+      "https://api.circle.com/v1/codegen/mcp"
+    ],
+    "notes": "Imported from plugin bundle config `circle-skills/.mcp.json`."
+  },
+  "homepage": "https://developers.circle.com",
+  "repo": "https://github.com/circlefin/skills",
+  "license": "Apache-2.0"
+}

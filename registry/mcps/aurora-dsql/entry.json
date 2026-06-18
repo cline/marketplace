@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "aurora-dsql",
+  "type": "mcp",
+  "name": "Aurora DSQL",
+  "tagline": "Connect Cline to Aurora DSQL",
+  "description": "Expert database guidance for the AWS database portfolio. Design schemas, execute queries, handle migrations, and choose the right database for your workload.",
+  "author": {
+    "name": "AWS"
+  },
+  "tags": [
+    "data",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "aurora-dsql",
+      "--",
+      "uvx",
+      "awslabs.aurora-dsql-mcp-server@latest"
+    ],
+    "env": [
+      {
+        "name": "FASTMCP_LOG_LEVEL",
+        "required": true,
+        "description": "Aurora DSQL value for fastmcp log level."
+      }
+    ],
+    "notes": "Imported from plugin bundle config `databases-on-aws/.mcp.json`."
+  },
+  "homepage": "https://github.com/awslabs/agent-plugins",
+  "repo": "https://github.com/awslabs/agent-plugins",
+  "license": "Apache-2.0"
+}

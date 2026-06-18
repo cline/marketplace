@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "datacloud-bigquery-toolbox",
+  "type": "mcp",
+  "name": "BigQuery Toolbox",
+  "tagline": "Connect Cline to BigQuery Toolbox",
+  "description": "This plugin provides a specialized suite of skills for data engineers and database practitioners working on Google Cloud. It acts as an expert assistant, allowing you to use natural language prompts in your preferred coding agent to architect complex data pipelines, transform data with dbt, write Spark and BigQuery SQL notebooks, and orchestrate end-to-end workflows across GCP's data ecosystem.",
+  "author": {
+    "name": "Google Cloud"
+  },
+  "tags": [
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "datacloud-bigquery-toolbox",
+      "--",
+      "npx",
+      "-y",
+      "@toolbox-sdk/server@>=1.1.0",
+      "--prebuilt",
+      "bigquery",
+      "--stdio",
+      "--user-agent-metadata",
+      "datacloud.codex"
+    ],
+    "env": [
+      {
+        "name": "BIGQUERY_LOCATION",
+        "required": true,
+        "description": "BigQuery Toolbox value for bigquery location."
+      },
+      {
+        "name": "BIGQUERY_PROJECT",
+        "required": true,
+        "description": "BigQuery Toolbox value for bigquery project."
+      }
+    ],
+    "notes": "Imported from plugin bundle config `data-agent-kit-starter-pack/.mcp.json`."
+  }
+}

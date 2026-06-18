@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "adobe-for-creativity",
+  "type": "mcp",
+  "name": "Adobe for Creativity",
+  "tagline": "Connect Cline to Adobe for Creativity",
+  "description": "Brings together Adobe Creative Cloud tools for images, vectors, design, and video. Edit multiple assets at once, adapt for different platforms, and complete multi-step creative workflows for polished results.",
+  "author": {
+    "name": "Adobe"
+  },
+  "tags": [
+    "creative"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "adobe-for-creativity",
+      "--transport",
+      "http",
+      "https://adobe-creativity.adobe.io/mcp"
+    ],
+    "notes": "Imported from plugin bundle config `adobe-for-creativity/.mcp.json`."
+  },
+  "repo": "https://github.com/adobe/skills",
+  "license": "Apache-2.0"
+}

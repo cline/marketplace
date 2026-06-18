@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "datacloud-knowledge-catalog-toolbox",
+  "type": "mcp",
+  "name": "Dataplex Knowledge Catalog Toolbox",
+  "tagline": "Connect Cline to Dataplex Knowledge Catalog Toolbox",
+  "description": "This plugin provides a specialized suite of skills for data engineers and database practitioners working on Google Cloud. It acts as an expert assistant, allowing you to use natural language prompts in your preferred coding agent to architect complex data pipelines, transform data with dbt, write Spark and BigQuery SQL notebooks, and orchestrate end-to-end workflows across GCP's data ecosystem.",
+  "author": {
+    "name": "Google Cloud"
+  },
+  "tags": [
+    "data",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "datacloud-knowledge-catalog-toolbox",
+      "--",
+      "npx",
+      "-y",
+      "@toolbox-sdk/server@>=1.1.0",
+      "--prebuilt",
+      "dataplex",
+      "--stdio",
+      "--user-agent-metadata",
+      "datacloud.codex"
+    ],
+    "env": [
+      {
+        "name": "DATAPLEX_PROJECT",
+        "required": true,
+        "description": "Dataplex Knowledge Catalog Toolbox value for dataplex project."
+      }
+    ],
+    "notes": "Imported from plugin bundle config `data-agent-kit-starter-pack/.mcp.json`."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "cds-mcp",
+  "type": "mcp",
+  "name": "SAP CDS",
+  "tagline": "Connect Cline to SAP CDS",
+  "description": "Model Context Protocol (MCP) server for AI-assisted development of CAP applications.",
+  "author": {
+    "name": "SAP"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cds-mcp",
+      "--",
+      "npx",
+      "-y",
+      "@cap-js/mcp-server"
+    ],
+    "notes": "Imported from plugin bundle config `cds-mcp/.mcp.json`."
+  },
+  "homepage": "https://cap.cloud.sap/",
+  "repo": "https://github.com/cap-js/mcp-server",
+  "license": "Apache-2.0"
+}

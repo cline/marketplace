@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "circleback",
+  "type": "mcp",
+  "name": "Circleback",
+  "tagline": "Connect Cline to Circleback",
+  "description": "Circleback conversational context integration. Search and access meetings, emails, calendar events, and more.",
+  "author": {
+    "name": "Circleback"
+  },
+  "tags": [
+    "marketing",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "circleback",
+      "--transport",
+      "http",
+      "https://app.circleback.ai/api/mcp"
+    ],
+    "notes": "Imported from plugin bundle config `circleback/.mcp.json`."
+  }
+}

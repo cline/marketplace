@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "cloudflare-bindings",
+  "type": "mcp",
+  "name": "Cloudflare Bindings",
+  "tagline": "Connect Cline to Cloudflare Bindings",
+  "description": "Skills for the Cloudflare developer platform: Workers, Durable Objects, Agents SDK, MCP servers, Wrangler CLI, and web performance",
+  "author": {
+    "name": "Cloudflare"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cloudflare-bindings",
+      "--transport",
+      "http",
+      "https://bindings.mcp.cloudflare.com/mcp"
+    ],
+    "notes": "Imported from plugin bundle config `cloudflare/.mcp.json`."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "convex",
+  "type": "mcp",
+  "name": "Convex",
+  "tagline": "Connect Cline to Convex",
+  "description": "Bundled design skill, code-writing subagent, typecheck-on-edit hook, runtime-error monitor, and MCP server for live deployment introspection. Reactive, type-safe backends on one platform \u2014 schema, real-time, auth, file storage, scheduled jobs, and AI agents.",
+  "author": {
+    "name": "Convex"
+  },
+  "tags": [
+    "data",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "convex",
+      "--",
+      "npx",
+      "-y",
+      "convex@latest",
+      "mcp",
+      "start"
+    ],
+    "notes": "Imported from plugin bundle config `convex/.mcp.json`."
+  },
+  "homepage": "https://github.com/get-convex/convex-backend-skill",
+  "repo": "https://github.com/get-convex/convex-backend-skill",
+  "license": "Apache-2.0"
+}

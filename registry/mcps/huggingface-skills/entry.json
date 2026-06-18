@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "huggingface-skills",
+  "type": "mcp",
+  "name": "Huggingface Skills",
+  "tagline": "Connect Cline to Huggingface Skills",
+  "description": "Agent Skills for AI/ML tasks including dataset creation, model training, evaluation, and research paper publishing on Hugging Face Hub",
+  "author": {
+    "name": "Hugging Face"
+  },
+  "tags": [
+    "data",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "huggingface-skills",
+      "--transport",
+      "http",
+      "https://huggingface.co/mcp?login"
+    ],
+    "notes": "Imported from plugin bundle config `huggingface-skills/.mcp.json`."
+  },
+  "homepage": "https://github.com/huggingface/skills",
+  "repo": "https://github.com/huggingface/skills",
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "terraform",
+  "type": "mcp",
+  "name": "Terraform",
+  "tagline": "Connect Cline to Terraform",
+  "description": "The Terraform MCP Server provides seamless integration with Terraform ecosystem, enabling advanced automation and interaction capabilities for Infrastructure as Code (IaC) development.",
+  "author": {
+    "name": "HashiCorp"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "terraform",
+      "--",
+      "docker",
+      "run",
+      "-i",
+      "--rm",
+      "-e",
+      "TFE_TOKEN=${TFE_TOKEN}",
+      "hashicorp/terraform-mcp-server:0.4.0"
+    ],
+    "env": [
+      {
+        "name": "TFE_TOKEN",
+        "required": true,
+        "description": "Terraform value for tfe token."
+      }
+    ],
+    "notes": "Imported from plugin bundle config `terraform/.mcp.json`."
+  }
+}

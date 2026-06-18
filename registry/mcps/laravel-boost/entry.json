@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "laravel-boost",
+  "type": "mcp",
+  "name": "Laravel Boost",
+  "tagline": "Connect Cline to Laravel Boost",
+  "description": "Laravel development toolkit MCP server. Provides intelligent assistance for Laravel applications including Artisan commands, Eloquent queries, routing, migrations, and framework-specific code generation.",
+  "author": {
+    "name": "Laravel"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "laravel-boost",
+      "--",
+      "php",
+      "artisan",
+      "boost:mcp"
+    ],
+    "notes": "Imported from plugin bundle config `laravel-boost/.mcp.json`. The `php` CLI must be available on PATH before starting this MCP server."
+  }
+}
