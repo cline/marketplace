@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "zoom",
+  "type": "mcp",
+  "name": "Zoom",
+  "tagline": "Manage Zoom meetings and webinars",
+  "description": "Official Zoom MCP server for Manage Zoom meetings and webinars. Transport: Streamable HTTP. Authentication: Zoom account/OAuth via remote MCP.",
+  "author": {
+    "name": "Zoom"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "zoom",
+      "--transport",
+      "streamable-http",
+      "https://mcp.zoom.us/mcp/zoom/streamable"
+    ]
+  },
+  "homepage": "https://github.com/zoom/mcp-registry",
+  "repo": "https://github.com/zoom/mcp-registry"
+}

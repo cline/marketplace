@@ -1,0 +1,48 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "ramp",
+  "type": "mcp",
+  "name": "Ramp",
+  "tagline": "Manage corporate spend with Ramp",
+  "description": "Official Ramp MCP server for Manage corporate spend with Ramp. Transport: stdio. Authentication: client credentials.",
+  "author": {
+    "name": "Ramp"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "finance",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "ramp",
+      "--",
+      "uv",
+      "run",
+      "ramp-mcp",
+      "-s",
+      "<scopes>"
+    ],
+    "env": [
+      {
+        "name": "RAMP_CLIENT_ID",
+        "required": true,
+        "description": "Ramp credential used by the MCP server."
+      },
+      {
+        "name": "RAMP_CLIENT_SECRET",
+        "required": true,
+        "description": "Ramp credential used by the MCP server."
+      },
+      {
+        "name": "RAMP_ENV",
+        "required": true,
+        "description": "Ramp credential used by the MCP server."
+      }
+    ]
+  },
+  "homepage": "https://github.com/ramp-public/ramp_mcp",
+  "repo": "https://github.com/ramp-public/ramp_mcp"
+}

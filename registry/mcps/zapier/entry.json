@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "zapier",
+  "type": "mcp",
+  "name": "Zapier",
+  "tagline": "Trigger Zapier automations",
+  "description": "Official Zapier MCP server for Trigger Zapier automations. Transport: HTTP. Authentication: API key or OAuth.",
+  "author": {
+    "name": "Zapier"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "zapier",
+      "--transport",
+      "http",
+      "https://mcp.zapier.com"
+    ]
+  },
+  "homepage": "https://github.com/zapier/zapier-mcp",
+  "repo": "https://github.com/zapier/zapier-mcp"
+}

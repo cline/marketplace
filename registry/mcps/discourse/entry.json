@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "discourse",
+  "type": "mcp",
+  "name": "Discourse",
+  "tagline": "Interact with Discourse",
+  "description": "Official Discourse MCP server for Interact with Discourse. Transport: stdio; optional HTTP. Authentication: None by default; Discourse API keys for writes/private access.",
+  "author": {
+    "name": "Discourse"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "research",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "discourse",
+      "--",
+      "npx",
+      "-y",
+      "@discourse/mcp@latest"
+    ],
+    "env": [
+      {
+        "name": "DISCOURSE_API_KEY",
+        "required": true,
+        "description": "Discourse credential used by the MCP server."
+      }
+    ]
+  },
+  "homepage": "https://github.com/discourse/discourse-mcp",
+  "repo": "https://github.com/discourse/discourse-mcp"
+}

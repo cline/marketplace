@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "confluence",
+  "type": "mcp",
+  "name": "Confluence",
+  "tagline": "Interact with Confluence projects",
+  "description": "Official Atlassian MCP server for Interact with Confluence projects. Transport: Streamable HTTP. Authentication: OAuth 2.1; optional API token.",
+  "author": {
+    "name": "Atlassian"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "research",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "confluence",
+      "--transport",
+      "streamable-http",
+      "https://mcp.atlassian.com/v1/mcp/authv2"
+    ]
+  },
+  "homepage": "https://support.atlassian.com/atlassian-rovo-mcp-server/docs/getting-started-with-the-atlassian-remote-mcp-server/"
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "onedrive",
+  "type": "mcp",
+  "name": "OneDrive",
+  "tagline": "Manage files in OneDrive",
+  "description": "Official Microsoft MCP server for Manage files in OneDrive. Transport: Streamable HTTP. Authentication: Microsoft Entra tenant/auth.",
+  "author": {
+    "name": "Microsoft"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "research",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "onedrive",
+      "--transport",
+      "streamable-http",
+      "https://agent365.svc.cloud.microsoft/agents/tenants/{tenant_id}/servers/mcp_ODSPRemoteServer"
+    ]
+  },
+  "homepage": "https://registry.modelcontextprotocol.io/v0/servers/com.microsoft%2Fworkiq-odspremoteserver/versions/latest"
+}

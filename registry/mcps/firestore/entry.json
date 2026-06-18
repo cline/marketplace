@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "firestore",
+  "type": "mcp",
+  "name": "Firestore",
+  "tagline": "Write data to Firestore databases",
+  "description": "Official Google Cloud MCP server for Write data to Firestore databases. Transport: remote HTTP. Authentication: Google IAM/OAuth.",
+  "author": {
+    "name": "Google Cloud"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "data",
+    "databases"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "firestore",
+      "--transport",
+      "http",
+      "https://firestore.googleapis.com/mcp"
+    ]
+  },
+  "homepage": "https://docs.cloud.google.com/mcp/supported-products"
+}

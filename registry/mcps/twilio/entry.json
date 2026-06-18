@@ -1,0 +1,51 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "twilio",
+  "type": "mcp",
+  "name": "Twilio",
+  "tagline": "Send SMS and voice messages",
+  "description": "Official Twilio Labs MCP server for Send SMS and voice messages. Transport: stdio. Authentication: Twilio Account SID/API key/secret.",
+  "author": {
+    "name": "Twilio Labs"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "twilio",
+      "--",
+      "npx",
+      "-y",
+      "@twilio-alpha/mcp",
+      "YOUR_ACCOUNT_SID/YOUR_API_KEY:YOUR_API_SECRET"
+    ],
+    "env": [
+      {
+        "name": "SID",
+        "required": true,
+        "description": "Twilio credential used by the MCP server."
+      },
+      {
+        "name": "YOUR_ACCOUNT_SID",
+        "required": true,
+        "description": "Twilio credential used by the MCP server."
+      },
+      {
+        "name": "YOUR_API_KEY",
+        "required": true,
+        "description": "Twilio credential used by the MCP server."
+      },
+      {
+        "name": "YOUR_API_SECRET",
+        "required": true,
+        "description": "Twilio credential used by the MCP server."
+      }
+    ]
+  },
+  "homepage": "https://github.com/twilio-labs/mcp",
+  "repo": "https://github.com/twilio-labs/mcp"
+}

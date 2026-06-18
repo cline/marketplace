@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "google-bigquery",
+  "type": "mcp",
+  "name": "Google BigQuery",
+  "tagline": "Query and retrieve data from BigQuery",
+  "description": "Official Google Cloud MCP server for Query and retrieve data from BigQuery. Transport: remote HTTP. Authentication: Google IAM/OAuth.",
+  "author": {
+    "name": "Google Cloud"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "data",
+    "databases"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "google-bigquery",
+      "--transport",
+      "http",
+      "https://bigquery.googleapis.com/mcp"
+    ]
+  },
+  "homepage": "https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp"
+}

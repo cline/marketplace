@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "exa",
+  "type": "mcp",
+  "name": "Exa",
+  "tagline": "Interact with Exa",
+  "description": "Official Exa MCP server for Interact with Exa. Transport: Streamable HTTP / remote MCP; local stdio wrapper. Authentication: Optional Exa API key / hosted connector.",
+  "author": {
+    "name": "Exa"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "exa",
+      "--transport",
+      "streamable-http",
+      "https://mcp.exa.ai/mcp"
+    ],
+    "env": [
+      {
+        "name": "YOUR_EXA_API_KEY",
+        "required": true,
+        "description": "Exa credential used by the MCP server."
+      }
+    ]
+  },
+  "homepage": "https://exa.ai/docs/reference/exa-mcp"
+}

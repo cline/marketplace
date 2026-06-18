@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "supabase-management-api",
+  "type": "mcp",
+  "name": "Supabase Management API",
+  "tagline": "Provision Supabase projects",
+  "description": "Official Supabase MCP server for Provision Supabase projects. Transport: HTTP / Streamable HTTP; local dev via Supabase CLI. Authentication: OAuth/Dynamic Client Registration; PAT bearer token for CI/manual auth.",
+  "author": {
+    "name": "Supabase"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "data",
+    "databases"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "supabase-management-api",
+      "--transport",
+      "streamable-http",
+      "https://mcp.supabase.com/mcp"
+    ],
+    "env": [
+      {
+        "name": "SUPABASE_ACCESS_TOKEN",
+        "required": true,
+        "description": "Supabase Management API credential used by the MCP server."
+      }
+    ]
+  },
+  "homepage": "https://supabase.com/docs/guides/ai-tools/mcp"
+}

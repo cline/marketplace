@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "launchdarkly",
+  "type": "mcp",
+  "name": "LaunchDarkly",
+  "tagline": "Manage feature flags, segments, and environments",
+  "description": "Official LaunchDarkly MCP server for Manage feature flags, segments, and environments. Transport: stdio; optional local SSE via Docker. Authentication: LaunchDarkly API key.",
+  "author": {
+    "name": "LaunchDarkly"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "launchdarkly",
+      "--",
+      "npx",
+      "-y",
+      "--package",
+      "@launchdarkly/mcp-server",
+      "--",
+      "mcp",
+      "start",
+      "--api-key",
+      "<key>"
+    ]
+  },
+  "homepage": "https://github.com/launchdarkly/mcp-server",
+  "repo": "https://github.com/launchdarkly/mcp-server"
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "amazon-s3",
+  "type": "mcp",
+  "name": "Amazon S3",
+  "tagline": "Store files in S3 buckets",
+  "description": "Official AWS MCP server for Store files in S3 buckets. Transport: stdio via uvx/docker; remote AWS Knowledge MCP also listed. Authentication: AWS credentials/IAM; server-specific env vars.",
+  "author": {
+    "name": "AWS"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "amazon-s3",
+      "--",
+      "uvx",
+      "awslabs.aws-api-mcp-server@latest"
+    ],
+    "env": [
+      {
+        "name": "AWS_ACCESS_KEY_ID",
+        "required": true,
+        "description": "Amazon S3 credential used by the MCP server."
+      },
+      {
+        "name": "AWS_REGION",
+        "required": true,
+        "description": "Amazon S3 credential used by the MCP server."
+      },
+      {
+        "name": "AWS_SECRET_ACCESS_KEY",
+        "required": true,
+        "description": "Amazon S3 credential used by the MCP server."
+      },
+      {
+        "name": "AWS_SESSION_TOKEN",
+        "required": true,
+        "description": "Amazon S3 credential used by the MCP server."
+      }
+    ]
+  },
+  "homepage": "https://github.com/awslabs/mcp",
+  "repo": "https://github.com/awslabs/mcp"
+}

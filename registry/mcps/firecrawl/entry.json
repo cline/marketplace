@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "firecrawl",
+  "type": "mcp",
+  "name": "Firecrawl",
+  "tagline": "Web scraping and data extraction",
+  "description": "Official Firecrawl MCP server for Web scraping and data extraction. Transport: stdio; optional streamable HTTP. Authentication: Firecrawl API key or OAuth bearer.",
+  "author": {
+    "name": "Firecrawl"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "firecrawl",
+      "--",
+      "npx",
+      "-y",
+      "firecrawl-mcp"
+    ],
+    "env": [
+      {
+        "name": "FIRECRAWL_API_KEY",
+        "required": true,
+        "description": "Firecrawl credential used by the MCP server."
+      }
+    ]
+  },
+  "homepage": "https://github.com/firecrawl/firecrawl-mcp-server",
+  "repo": "https://github.com/firecrawl/firecrawl-mcp-server"
+}

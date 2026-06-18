@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "supabase",
+  "type": "mcp",
+  "name": "Supabase",
+  "tagline": "Manage data in Supabase databases",
+  "description": "Official Supabase MCP server for Manage data in Supabase databases. Transport: HTTP. Authentication: OAuth/DCR; PAT for CI.",
+  "author": {
+    "name": "Supabase"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "data",
+    "databases"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "supabase",
+      "--transport",
+      "http",
+      "https://mcp.supabase.com/mcp"
+    ],
+    "env": [
+      {
+        "name": "SUPABASE_ACCESS_TOKEN",
+        "required": true,
+        "description": "Supabase credential used by the MCP server."
+      }
+    ]
+  },
+  "homepage": "https://supabase.com/docs/guides/ai-tools/mcp"
+}

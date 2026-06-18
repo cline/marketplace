@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "sharepoint",
+  "type": "mcp",
+  "name": "SharePoint",
+  "tagline": "Manage SharePoint sites and documents",
+  "description": "Official Microsoft MCP server for Manage SharePoint sites and documents. Transport: Streamable HTTP. Authentication: Microsoft Entra tenant/auth.",
+  "author": {
+    "name": "Microsoft"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "research",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "sharepoint",
+      "--transport",
+      "streamable-http",
+      "https://agent365.svc.cloud.microsoft/agents/tenants/{tenant_id}/servers/mcp_SharePointListsTools"
+    ]
+  },
+  "homepage": "https://registry.modelcontextprotocol.io/v0/servers/com.microsoft%2Fworkiq-sharepointliststools/versions/latest"
+}

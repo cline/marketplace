@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "jira",
+  "type": "mcp",
+  "name": "Jira",
+  "tagline": "Interact with Jira projects",
+  "description": "Official Atlassian MCP server for Interact with Jira projects. Transport: Streamable HTTP. Authentication: OAuth 2.1; optional API token.",
+  "author": {
+    "name": "Atlassian"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "jira",
+      "--transport",
+      "streamable-http",
+      "https://mcp.atlassian.com/v1/mcp/authv2"
+    ]
+  },
+  "homepage": "https://support.atlassian.com/atlassian-rovo-mcp-server/docs/getting-started-with-the-atlassian-remote-mcp-server/"
+}

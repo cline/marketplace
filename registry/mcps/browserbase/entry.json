@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "browserbase",
+  "type": "mcp",
+  "name": "BrowserBase",
+  "tagline": "Browser automation and testing",
+  "description": "Official Browserbase MCP server for Browser automation and testing. Transport: Streamable HTTP; local stdio via npx. Authentication: Browserbase API key and project ID for local; hosted auth via remote endpoint.",
+  "author": {
+    "name": "Browserbase"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "browserbase",
+      "--transport",
+      "streamable-http",
+      "https://mcp.browserbase.com/mcp"
+    ],
+    "env": [
+      {
+        "name": "BROWSERBASE_API_KEY",
+        "required": true,
+        "description": "BrowserBase credential used by the MCP server."
+      },
+      {
+        "name": "BROWSERBASE_PROJECT_ID",
+        "required": true,
+        "description": "BrowserBase credential used by the MCP server."
+      }
+    ]
+  },
+  "homepage": "https://github.com/browserbase/mcp-server-browserbase",
+  "repo": "https://github.com/browserbase/mcp-server-browserbase"
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "apify",
+  "type": "mcp",
+  "name": "Apify",
+  "tagline": "Run Apify web scraping tasks",
+  "description": "Official Apify MCP server for Run Apify web scraping tasks. Transport: Streamable HTTP; local stdio. Authentication: OAuth or Apify API token; x402/Skyfire payment options.",
+  "author": {
+    "name": "Apify"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "apify",
+      "--transport",
+      "streamable-http",
+      "https://mcp.apify.com"
+    ],
+    "env": [
+      {
+        "name": "APIFY_TOKEN",
+        "required": true,
+        "description": "Apify credential used by the MCP server."
+      }
+    ]
+  },
+  "homepage": "https://github.com/apify/apify-mcp-server",
+  "repo": "https://github.com/apify/apify-mcp-server"
+}

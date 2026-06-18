@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "todoist",
+  "type": "mcp",
+  "name": "Todoist",
+  "tagline": "Manage tasks and projects",
+  "description": "Official Doist / Todoist MCP server for Manage tasks and projects. Transport: Streamable HTTP; local stdio via npm package; mcp-remote bridge supported. Authentication: OAuth for hosted MCP; TODOIST_API_KEY for local/direct tool use.",
+  "author": {
+    "name": "Doist / Todoist"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "todoist",
+      "--transport",
+      "streamable-http",
+      "https://ai.todoist.net/mcp"
+    ],
+    "env": [
+      {
+        "name": "TODOIST_API_KEY",
+        "required": true,
+        "description": "Todoist credential used by the MCP server."
+      }
+    ]
+  },
+  "homepage": "https://github.com/doist/todoist-mcp",
+  "repo": "https://github.com/doist/todoist-mcp"
+}

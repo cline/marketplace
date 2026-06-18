@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "asana",
+  "type": "mcp",
+  "name": "Asana",
+  "tagline": "Interact with Asana",
+  "description": "Official Asana MCP server for Interact with Asana. Transport: Streamable HTTP. Authentication: OAuth with Asana account; client ID/secret may be needed for some clients.",
+  "author": {
+    "name": "Asana"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "asana",
+      "--transport",
+      "streamable-http",
+      "https://mcp.asana.com/v2/mcp"
+    ]
+  },
+  "homepage": "https://developers.asana.com/docs/using-asanas-mcp-server"
+}

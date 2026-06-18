@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "gumloop",
+  "type": "mcp",
+  "name": "Gumloop",
+  "tagline": "Interact with Gumloop",
+  "description": "Official Gumloop MCP server for Interact with Gumloop. Transport: Remote MCP / SSE via mcp-remote for unsupported clients. Authentication: OAuth plus Gumloop API key.",
+  "author": {
+    "name": "Gumloop"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "gumloop",
+      "--transport",
+      "http",
+      "https://mcp.gumloop.com/gumloop/mcp"
+    ]
+  },
+  "homepage": "https://docs.gumloop.com/mcp-server/overview"
+}

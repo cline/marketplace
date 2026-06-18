@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "perplexity",
+  "type": "mcp",
+  "name": "Perplexity",
+  "tagline": "Perform web searches using Perplexity AI",
+  "description": "Official Perplexity MCP server for Perform web searches using Perplexity AI. Transport: stdio. Authentication: Perplexity API key.",
+  "author": {
+    "name": "Perplexity"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "perplexity",
+      "--",
+      "npx",
+      "-y",
+      "@perplexity-ai/mcp-server"
+    ],
+    "env": [
+      {
+        "name": "PERPLEXITY_API_KEY",
+        "required": true,
+        "description": "Perplexity credential used by the MCP server."
+      }
+    ]
+  },
+  "homepage": "https://docs.perplexity.ai/docs/getting-started/integrations/mcp-server",
+  "repo": "https://github.com/perplexityai/modelcontextprotocol"
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "stripe",
+  "type": "mcp",
+  "name": "Stripe",
+  "tagline": "Interact with Stripe",
+  "description": "Official Stripe MCP server for Interact with Stripe. Transport: HTTP. Authentication: OAuth or restricted API key.",
+  "author": {
+    "name": "Stripe"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "finance",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "stripe",
+      "--transport",
+      "http",
+      "https://mcp.stripe.com"
+    ]
+  },
+  "homepage": "https://docs.stripe.com/mcp"
+}

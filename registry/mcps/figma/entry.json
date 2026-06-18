@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "figma",
+  "type": "mcp",
+  "name": "Figma",
+  "tagline": "Design files, components, variables, and design-to-code context",
+  "description": "Official Figma MCP server for Design files, components, variables, and design-to-code context. Transport: Remote MCP / Streamable HTTP; desktop MCP server also available through Figma desktop app. Authentication: Figma account authorization; remote server available on all seats/plans; desktop server requires Dev or Full seat on paid plans.",
+  "author": {
+    "name": "Figma"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "creative"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "figma",
+      "--transport",
+      "streamable-http",
+      "https://mcp.figma.com/mcp"
+    ]
+  },
+  "homepage": "https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server"
+}

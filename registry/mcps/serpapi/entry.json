@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "serpapi",
+  "type": "mcp",
+  "name": "SerpAPI",
+  "tagline": "Search engine results data",
+  "description": "Official SerpApi MCP server for Search engine results data. Transport: HTTP. Authentication: API key.",
+  "author": {
+    "name": "SerpApi"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "marketing"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "serpapi",
+      "--transport",
+      "http",
+      "https://mcp.serpapi.com/YOUR_SERPAPI_API_KEY/mcp"
+    ],
+    "env": [
+      {
+        "name": "SERPAPI_API_KEY",
+        "required": true,
+        "description": "SerpAPI credential used by the MCP server."
+      },
+      {
+        "name": "YOUR_SERPAPI_API_KEY",
+        "required": true,
+        "description": "SerpAPI credential used by the MCP server."
+      }
+    ]
+  },
+  "homepage": "https://github.com/serpapi/serpapi-mcp",
+  "repo": "https://github.com/serpapi/serpapi-mcp"
+}

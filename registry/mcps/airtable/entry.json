@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "airtable",
+  "type": "mcp",
+  "name": "Airtable",
+  "tagline": "Manage data in Airtable bases",
+  "description": "Official Airtable MCP server for Manage data in Airtable bases. Transport: HTTPS remote MCP. Authentication: Airtable personal access token.",
+  "author": {
+    "name": "Airtable"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "data",
+    "databases"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "airtable",
+      "--transport",
+      "http",
+      "https://mcp.airtable.com/mcp"
+    ],
+    "env": [
+      {
+        "name": "AIRTABLE_TOKEN",
+        "required": true,
+        "description": "Airtable credential used by the MCP server."
+      }
+    ]
+  },
+  "homepage": "https://github.com/Airtable/airtable-mcp-cli",
+  "repo": "https://github.com/Airtable/airtable-mcp-cli"
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "webflow",
+  "type": "mcp",
+  "name": "Webflow",
+  "tagline": "Manage Webflow sites and content",
+  "description": "Official Webflow MCP server for Manage Webflow sites and content. Transport: SSE/HTTP. Authentication: OAuth remote; API token local.",
+  "author": {
+    "name": "Webflow"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "webflow",
+      "--transport",
+      "sse",
+      "https://mcp.webflow.com/sse"
+    ],
+    "env": [
+      {
+        "name": "WEBFLOW_TOKEN",
+        "required": true,
+        "description": "Webflow credential used by the MCP server."
+      }
+    ]
+  },
+  "homepage": "https://github.com/webflow/mcp-server",
+  "repo": "https://github.com/webflow/mcp-server"
+}

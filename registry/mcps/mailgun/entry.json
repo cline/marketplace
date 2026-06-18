@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "mailgun",
+  "type": "mcp",
+  "name": "Mailgun",
+  "tagline": "Send bulk emails via Mailgun",
+  "description": "Official Mailgun MCP server for Send bulk emails via Mailgun. Transport: stdio. Authentication: Mailgun API key.",
+  "author": {
+    "name": "Mailgun"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "marketing"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "mailgun",
+      "--",
+      "npx",
+      "-y",
+      "@mailgun/mcp-server"
+    ],
+    "env": [
+      {
+        "name": "MAILGUN_API_KEY",
+        "required": true,
+        "description": "Mailgun credential used by the MCP server."
+      }
+    ]
+  },
+  "homepage": "https://github.com/mailgun/mailgun-mcp-server",
+  "repo": "https://github.com/mailgun/mailgun-mcp-server"
+}

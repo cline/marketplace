@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "clickhouse",
+  "type": "mcp",
+  "name": "ClickHouse",
+  "tagline": "Query and manage ClickHouse Cloud services",
+  "description": "Official ClickHouse MCP server for Query and manage ClickHouse Cloud services. Transport: stdio by default; HTTP/SSE supported. Authentication: ClickHouse credentials; HTTP/SSE requires bearer token/OAuth unless disabled locally.",
+  "author": {
+    "name": "ClickHouse"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "data",
+    "databases"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "clickhouse",
+      "--",
+      "uv",
+      "run",
+      "--with",
+      "mcp-clickhouse",
+      "--python",
+      "3.10",
+      "mcp-clickhouse"
+    ],
+    "env": [
+      {
+        "name": "CLICKHOUSE_MCP_AUTH_TOKEN",
+        "required": true,
+        "description": "ClickHouse credential used by the MCP server."
+      }
+    ]
+  },
+  "homepage": "https://github.com/ClickHouse/mcp-clickhouse",
+  "repo": "https://github.com/ClickHouse/mcp-clickhouse"
+}

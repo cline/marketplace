@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "salesforce",
+  "type": "mcp",
+  "name": "Salesforce",
+  "tagline": "Access and modify Salesforce CRM data",
+  "description": "Official Salesforce MCP server for Access and modify Salesforce CRM data. Transport: stdio. Authentication: Salesforce CLI authorized org.",
+  "author": {
+    "name": "Salesforce"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "sales",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "salesforce",
+      "--",
+      "npx",
+      "-y",
+      "@salesforce/mcp",
+      "--orgs",
+      "DEFAULT_TARGET_ORG",
+      "--toolsets",
+      "orgs,metadata,data,users"
+    ]
+  },
+  "homepage": "https://developer.salesforce.com/docs/ai/agentforce/guide/mcp.html"
+}

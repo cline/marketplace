@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "databricks",
+  "type": "mcp",
+  "name": "Databricks",
+  "tagline": "Interact with Databricks",
+  "description": "Official Databricks MCP server for Interact with Databricks. Transport: HTTP. Authentication: OAuth or PAT.",
+  "author": {
+    "name": "Databricks"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "data",
+    "databases"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "databricks",
+      "--transport",
+      "http",
+      "https://<workspace-hostname>/api/2.0/mcp/{genie|genie/{genie_space_id}|ai-search/{catalog}/{schema}/{index_name}|sql|functions/{catalog}/{schema}/{function_name}}"
+    ]
+  },
+  "homepage": "https://docs.databricks.com/aws/en/generative-ai/mcp/"
+}

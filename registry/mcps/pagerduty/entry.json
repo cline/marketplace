@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "pagerduty",
+  "type": "mcp",
+  "name": "PagerDuty",
+  "tagline": "Incident management and alerts",
+  "description": "Official PagerDuty MCP server for incident management and alerts. Catalog install uses the remote HTTP endpoint from the exported PagerDuty MCP configuration. Authentication: PagerDuty API token.",
+  "author": {
+    "name": "PagerDuty"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "pagerduty",
+      "--transport",
+      "http",
+      "https://mcp.pagerduty.com/mcp"
+    ],
+    "env": [
+      {
+        "name": "PAGERDUTY_API_KEY",
+        "required": true,
+        "description": "PagerDuty credential used by the MCP server."
+      }
+    ]
+  },
+  "homepage": "https://github.com/PagerDuty/pagerduty-mcp-server",
+  "repo": "https://github.com/PagerDuty/pagerduty-mcp-server"
+}

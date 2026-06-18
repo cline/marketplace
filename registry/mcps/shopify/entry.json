@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "shopify",
+  "type": "mcp",
+  "name": "Shopify",
+  "tagline": "Manage Shopify store data",
+  "description": "Official Shopify MCP server for Manage Shopify store data. Transport: HTTP. Authentication: None for Storefront MCP.",
+  "author": {
+    "name": "Shopify"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "shopify",
+      "--transport",
+      "http",
+      "https://{shop}.myshopify.com/api/mcp"
+    ]
+  },
+  "homepage": "https://shopify.dev/docs/apps/build/storefront-mcp"
+}

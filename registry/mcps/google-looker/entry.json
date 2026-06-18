@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "google-looker",
+  "type": "mcp",
+  "name": "Google Looker",
+  "tagline": "Interact with Google Looker",
+  "description": "Official Google Cloud / Looker MCP server for Interact with Google Looker. Transport: local stdio or HTTP via MCP Toolbox. Authentication: Google/application credentials.",
+  "author": {
+    "name": "Google Cloud / Looker"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "data",
+    "databases"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "google-looker",
+      "--",
+      "npx",
+      "@toolbox-sdk/server",
+      "--prebuilt=looker",
+      "--stdio"
+    ]
+  },
+  "homepage": "https://mcp-toolbox.dev/documentation/configuration/prebuilt-configs/",
+  "repo": "https://github.com/googleapis/mcp-toolbox"
+}

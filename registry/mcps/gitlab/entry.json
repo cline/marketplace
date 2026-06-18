@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "gitlab",
+  "type": "mcp",
+  "name": "GitLab",
+  "tagline": "Manage GitLab projects, issues, MRs, and CI/CD",
+  "description": "Official GitLab MCP server for Manage GitLab projects, issues, MRs, and CI/CD. Transport: HTTP recommended; stdio via mcp-remote. Authentication: OAuth 2.0 Dynamic Client Registration.",
+  "author": {
+    "name": "GitLab"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "gitlab",
+      "--transport",
+      "http",
+      "https://<gitlab.example.com>/api/v4/mcp"
+    ]
+  },
+  "homepage": "https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server/"
+}

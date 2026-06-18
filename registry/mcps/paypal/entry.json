@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "paypal",
+  "type": "mcp",
+  "name": "PayPal",
+  "tagline": "Handle PayPal transactions",
+  "description": "Official PayPal MCP server for Handle PayPal transactions. Transport: Streamable HTTP; SSE also listed in registry; local stdio package. Authentication: OAuth bearer token / PayPal access token.",
+  "author": {
+    "name": "PayPal"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "finance",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "paypal",
+      "--transport",
+      "streamable-http",
+      "https://mcp.paypal.com/mcp"
+    ],
+    "env": [
+      {
+        "name": "PAYPAL_ACCESS_TOKEN",
+        "required": true,
+        "description": "PayPal credential used by the MCP server."
+      }
+    ]
+  },
+  "homepage": "https://github.com/paypal/paypal-mcp-server",
+  "repo": "https://github.com/paypal/paypal-mcp-server"
+}
