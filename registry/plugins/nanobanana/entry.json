@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../schemas/plugin.schema.json",
+  "id": "nanobanana",
+  "type": "plugin",
+  "name": "Nano Banana",
+  "tagline": "Image generation through OpenRouter and Gemini image models",
+  "description": "Registers `generate_image`, which sends a text prompt to an image-capable Gemini model through OpenRouter. Accepts an output path, aspect ratio, and image size, then writes the returned image files inside the workspace root. Paths that escape the workspace are refused.",
+  "author": {
+    "name": "Cline",
+    "url": "https://cline.bot"
+  },
+  "homepage": "https://github.com/cline/plugins/tree/main/plugins/nanobanana",
+  "repo": "https://github.com/cline/plugins/tree/main/plugins/nanobanana",
+  "icon": "./icon.svg",
+  "tags": [
+    "creative"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": true,
+  "install": {
+    "args": [
+      "nanobanana"
+    ],
+    "env": [
+      {
+        "name": "OPENROUTER_API_KEY",
+        "required": true,
+        "description": "OpenRouter API key used for image generation.",
+        "url": "https://openrouter.ai/keys"
+      },
+      {
+        "name": "IMAGE_MODEL",
+        "required": false,
+        "description": "Optional override for the default image model."
+      }
+    ]
+  }
+}

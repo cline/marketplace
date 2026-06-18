@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/plugin.schema.json",
+  "id": "agent-browser",
+  "type": "plugin",
+  "name": "Agent Browser",
+  "tagline": "Web and Electron browser automation via the agent-browser CLI skill",
+  "description": "Bundles the official `agent-browser` skill so agents can drive a real browser and Electron apps from the terminal: navigate pages, snapshot the accessibility tree into stable refs, click and type, extract DOM data, take screenshots, and do visual QA. The skill points at version-matched CLI docs so instructions never drift.",
+  "author": {
+    "name": "Cline",
+    "url": "https://cline.bot"
+  },
+  "homepage": "https://github.com/cline/plugins/tree/main/plugins/agent-browser",
+  "repo": "https://github.com/cline/plugins/tree/main/plugins/agent-browser",
+  "icon": "./icon.svg",
+  "tags": [
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": true,
+  "install": {
+    "args": [
+      "agent-browser"
+    ]
+  }
+}

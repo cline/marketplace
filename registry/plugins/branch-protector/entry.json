@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/plugin.schema.json",
+  "id": "branch-protector",
+  "type": "plugin",
+  "name": "Branch Protector",
+  "tagline": "A hook that blocks protected branch pushes unless explicitly allowed",
+  "description": "Registers a `beforeTool` hook that inspects `run_commands` calls. A `git push` on `main`, `master`, or `release/*` is skipped unless the command includes `--force-allow`. A guardrail, not a replacement for host-side branch protection.",
+  "author": {
+    "name": "Cline",
+    "url": "https://cline.bot"
+  },
+  "homepage": "https://github.com/cline/plugins/tree/main/plugins/branch-protector",
+  "repo": "https://github.com/cline/plugins/tree/main/plugins/branch-protector",
+  "icon": "./icon.svg",
+  "tags": [
+    "software",
+    "security"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": true,
+  "install": {
+    "args": [
+      "branch-protector"
+    ]
+  }
+}

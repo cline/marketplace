@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../schemas/plugin.schema.json",
+  "id": "speak",
+  "type": "plugin",
+  "name": "Speak",
+  "tagline": "Speaks completed Cline replies with ElevenLabs text to speech",
+  "description": "Registers a conversational response rule and an `afterRun` hook. When a Cline turn completes, the final assistant reply is handed to a detached local worker that sends it to ElevenLabs, plays the returned audio locally, and cleans up. Playback runs outside the hook timeout so it never blocks Cline.",
+  "author": {
+    "name": "Cline",
+    "url": "https://cline.bot"
+  },
+  "homepage": "https://github.com/cline/plugins/tree/main/plugins/speak",
+  "repo": "https://github.com/cline/plugins/tree/main/plugins/speak",
+  "icon": "./icon.svg",
+  "tags": [
+    "productivity"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": true,
+  "install": {
+    "args": [
+      "speak"
+    ],
+    "env": [
+      {
+        "name": "ELEVENLABS_API_KEY",
+        "required": true,
+        "description": "ElevenLabs API key used for text to speech.",
+        "url": "https://elevenlabs.io/app/settings/api-keys"
+      }
+    ]
+  }
+}

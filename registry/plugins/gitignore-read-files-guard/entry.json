@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/plugin.schema.json",
+  "id": "gitignore-read-files-guard",
+  "type": "plugin",
+  "name": "Gitignore Read Files Guard",
+  "tagline": "A hook that blocks file access to .gitignore ignored paths",
+  "description": "Registers a `beforeTool` hook for file-reading and file-editing tools. If a requested path matches workspace `.gitignore` rules, the hook skips the tool call. Applies only to Cline tool calls; it does not change filesystem permissions.",
+  "author": {
+    "name": "Cline",
+    "url": "https://cline.bot"
+  },
+  "homepage": "https://github.com/cline/plugins/tree/main/plugins/gitignore-read-files-guard",
+  "repo": "https://github.com/cline/plugins/tree/main/plugins/gitignore-read-files-guard",
+  "icon": "./icon.svg",
+  "tags": [
+    "security",
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": true,
+  "install": {
+    "args": [
+      "gitignore-read-files-guard"
+    ]
+  }
+}

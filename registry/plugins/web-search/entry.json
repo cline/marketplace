@@ -6,13 +6,13 @@
   "tagline": "Exa-backed web search as a Cline tool",
   "description": "Adds a web_search tool backed by Exa so the agent can discover current URLs, docs, and recent facts mid-task.",
   "author": { "name": "Cline", "url": "https://cline.bot" },
-  "homepage": "https://github.com/cline/cline-plugins/tree/main/plugins/web-search",
-  "repo": "https://github.com/cline/cline-plugins/tree/main/plugins/web-search",
+  "homepage": "https://github.com/cline/plugins/tree/main/plugins/web-search",
+  "repo": "https://github.com/cline/plugins/tree/main/plugins/web-search",
   "icon": "./icon.svg",
   "tags": ["research", "software"],
   "license": "Apache-2.0",
   "verified": true,
-  "featured": false,
+  "featured": true,
   "install": {
     "args": ["web-search"],
     "env": [

@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/plugin.schema.json",
+  "id": "mac-notify",
+  "type": "plugin",
+  "name": "Mac Notify",
+  "tagline": "macOS notifications when a Cline run completes",
+  "description": "Registers an `afterRun` hook. On macOS, successful runs trigger a native notification with a short completion summary. Other platforms no-op.",
+  "author": {
+    "name": "Cline",
+    "url": "https://cline.bot"
+  },
+  "homepage": "https://github.com/cline/plugins/tree/main/plugins/mac-notify",
+  "repo": "https://github.com/cline/plugins/tree/main/plugins/mac-notify",
+  "icon": "./icon.svg",
+  "tags": [
+    "productivity"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": true,
+  "install": {
+    "args": [
+      "mac-notify"
+    ]
+  }
+}

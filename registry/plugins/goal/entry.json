@@ -6,13 +6,13 @@
   "tagline": "Completion nudges for active goals",
   "description": "Adds a slash command and a completion tool that keep Cline focused on finishing the goals you set, nudging the agent when a goal is still open.",
   "author": { "name": "Cline", "url": "https://cline.bot" },
-  "homepage": "https://github.com/cline/cline-plugins/tree/main/plugins/goal",
-  "repo": "https://github.com/cline/cline-plugins/tree/main/plugins/goal",
+  "homepage": "https://github.com/cline/plugins/tree/main/plugins/goal",
+  "repo": "https://github.com/cline/plugins/tree/main/plugins/goal",
   "icon": "./icon.svg",
   "tags": ["productivity"],
   "license": "Apache-2.0",
   "verified": true,
-  "featured": false,
+  "featured": true,
   "install": {
     "args": ["goal"]
   }
