@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "aws-amplify",
+  "type": "skill",
+  "name": "AWS Amplify",
+  "tagline": "Build and deploy Amplify Gen 2 apps with guided workflows",
+  "description": "Guided workflows for AWS Amplify Gen 2 application development, including backend resources, sandbox deployments, frontend integration, and production release checks.",
+  "author": {
+    "name": "AWS Labs",
+    "url": "https://aws.amazon.com"
+  },
+  "homepage": "https://github.com/awslabs/agent-plugins/tree/main/plugins/aws-amplify",
+  "repo": "https://github.com/awslabs/agent-plugins",
+  "icon": "./icon.svg",
+  "tags": [
+    "software",
+    "databases"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/marketplace",
+      "--skill",
+      "amplify-workflow",
+      "--full-depth"
+    ]
+  }
+}

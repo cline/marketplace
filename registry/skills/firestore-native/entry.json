@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "firestore-native",
+  "type": "skill",
+  "name": "Firestore Native",
+  "tagline": "Explore and update Firestore databases from Cline",
+  "description": "A Firestore data skill for exploring collections and documents, querying data, and performing document create, update, and delete operations through bundled scripts.",
+  "author": {
+    "name": "Google"
+  },
+  "homepage": "https://github.com/gemini-cli-extensions/firestore-native",
+  "repo": "https://github.com/gemini-cli-extensions/firestore-native",
+  "icon": "./icon.svg",
+  "tags": [
+    "databases",
+    "data"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/marketplace",
+      "--skill",
+      "firestore-data",
+      "--full-depth"
+    ]
+  }
+}

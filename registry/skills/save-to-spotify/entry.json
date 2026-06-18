@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "save-to-spotify",
+  "type": "skill",
+  "name": "Save to Spotify",
+  "tagline": "Create audio episodes and save them to Spotify",
+  "description": "Guidance for producing polished audio episodes with narration, chapters, companion links or images, descriptions, and Spotify publishing workflows.",
+  "author": {
+    "name": "Spotify"
+  },
+  "homepage": "https://github.com/spotify/save-to-spotify",
+  "repo": "https://github.com/spotify/save-to-spotify",
+  "icon": "./icon.svg",
+  "tags": [
+    "productivity",
+    "creative"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/marketplace",
+      "--skill",
+      "save-to-spotify",
+      "--full-depth"
+    ]
+  }
+}

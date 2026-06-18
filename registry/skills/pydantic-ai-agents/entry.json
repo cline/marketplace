@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "pydantic-ai-agents",
+  "type": "skill",
+  "name": "Pydantic AI Agents",
+  "tagline": "Build Pydantic AI agents with tools and structured output",
+  "description": "Reference workflows for building Pydantic AI agents with tools, capabilities, structured output, streaming, testing, fallback models, and multi-agent patterns.",
+  "author": {
+    "name": "Pydantic"
+  },
+  "homepage": "https://github.com/pydantic/skills/tree/main/plugins/ai",
+  "repo": "https://github.com/pydantic/skills",
+  "icon": "./icon.svg",
+  "tags": [
+    "software",
+    "research"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/marketplace",
+      "--skill",
+      "building-pydantic-ai-agents",
+      "--full-depth"
+    ]
+  }
+}

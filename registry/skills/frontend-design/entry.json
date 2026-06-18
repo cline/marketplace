@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "frontend-design",
+  "type": "skill",
+  "name": "Frontend Design",
+  "tagline": "Create distinctive, production-grade web interfaces",
+  "description": "A frontend design skill that guides agents toward stronger visual direction, polished layouts, purposeful typography, and production-quality interface implementation.",
+  "author": {
+    "name": "Anthropic"
+  },
+  "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/frontend-design",
+  "repo": "https://github.com/anthropics/claude-plugins-public",
+  "icon": "./icon.svg",
+  "tags": [
+    "software",
+    "creative"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/marketplace",
+      "--skill",
+      "frontend-design",
+      "--full-depth"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "spanner",
+  "type": "skill",
+  "name": "Spanner",
+  "tagline": "Explore and query Google Cloud Spanner data",
+  "description": "A Spanner data skill for listing tables and graphs, exploring schemas, and executing SQL queries through bundled Toolbox-backed scripts.",
+  "author": {
+    "name": "Google"
+  },
+  "homepage": "https://github.com/gemini-cli-extensions/spanner",
+  "repo": "https://github.com/gemini-cli-extensions/spanner",
+  "icon": "./icon.svg",
+  "tags": [
+    "databases",
+    "data"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/marketplace",
+      "--skill",
+      "spanner-data",
+      "--full-depth"
+    ]
+  }
+}
