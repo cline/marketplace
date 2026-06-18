@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "atlan",
+  "type": "mcp",
+  "name": "Atlan",
+  "tagline": "Connect Cline to Atlan",
+  "description": "Connect Cline to Atlan through this MCP server.",
+  "author": {
+    "name": "Atlan"
+  },
+  "tags": [
+    "data",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "atlan",
+      "--transport",
+      "http",
+      "https://mcp.atlan.com/mcp"
+    ]
+  },
+  "homepage": "https://atlan.com/docs",
+  "repo": "https://github.com/atlanhq/agent-toolkit",
+  "license": "Apache-2.0"
+}

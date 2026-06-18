@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "desktop-commander",
+  "type": "mcp",
+  "name": "Desktop Commander",
+  "tagline": "Connect Cline to Desktop Commander",
+  "description": "Run terminal commands, manage processes, and work with files across text, code, PDF, DOCX, Excel, images, and structured data.",
+  "author": {
+    "name": "Desktop Commander"
+  },
+  "homepage": "https://desktopcommander.app",
+  "repo": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+  "license": "MIT",
+  "tags": [
+    "software",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "desktop-commander",
+      "--",
+      "npx",
+      "-y",
+      "@wonderwhy-er/desktop-commander@latest"
+    ]
+  }
+}

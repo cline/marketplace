@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "sentry",
+  "type": "mcp",
+  "name": "Sentry",
+  "tagline": "Inspect errors and releases",
+  "description": "Inspect errors and releases. This official Sentry MCP integration is installable through Cline.",
+  "author": {
+    "name": "Sentry"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "sentry",
+      "--transport",
+      "http",
+      "https://mcp.sentry.dev"
+    ]
+  },
+  "homepage": "https://github.com/getsentry/sentry-mcp",
+  "repo": "https://github.com/getsentry/sentry-mcp"
+}

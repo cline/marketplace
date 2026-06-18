@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "github",
+  "type": "mcp",
+  "name": "GitHub",
+  "tagline": "Interact with GitHub pull requests",
+  "description": "Interact with GitHub pull requests. This official GitHub MCP integration is installable through Cline.",
+  "author": {
+    "name": "GitHub"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "github",
+      "--transport",
+      "http",
+      "https://api.githubcopilot.com/mcp/"
+    ]
+  },
+  "homepage": "https://github.com/github/github-mcp-server",
+  "repo": "https://github.com/github/github-mcp-server"
+}

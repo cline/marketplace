@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "asana",
+  "type": "mcp",
+  "name": "Asana",
+  "tagline": "Interact with Asana",
+  "description": "Interact with Asana. This official Asana MCP integration is installable through Cline.",
+  "author": {
+    "name": "Asana"
+  },
+  "tags": [
+    "productivity",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "asana",
+      "--transport",
+      "http",
+      "https://mcp.asana.com/v2/mcp"
+    ]
+  },
+  "homepage": "https://developers.asana.com/docs/using-asanas-mcp-server"
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "lusha",
+  "type": "mcp",
+  "name": "Lusha",
+  "tagline": "Connect Cline to Lusha",
+  "description": "Prospect, enrich, and build call-ready lead lists using Lusha's B2B intelligence platform.",
+  "author": {
+    "name": "Lusha",
+    "url": "https://www.lusha.com"
+  },
+  "homepage": "https://www.lusha.com",
+  "repo": "https://github.com/lusha-oss/lusha-mcp-plugin",
+  "license": "MIT",
+  "tags": [
+    "sales",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "lusha",
+      "--transport",
+      "http",
+      "https://mcp.lusha.com/mcp/claude",
+      "--header",
+      "X-Lusha-Plugin: claude",
+      "--header",
+      "X-Lusha-Plugin-Version: 0.1.0"
+    ]
+  }
+}

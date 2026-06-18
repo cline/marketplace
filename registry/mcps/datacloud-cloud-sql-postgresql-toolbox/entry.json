@@ -1,0 +1,67 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "datacloud-cloud-sql-postgresql-toolbox",
+  "type": "mcp",
+  "name": "Cloud SQL PostgreSQL Toolbox",
+  "tagline": "Connect Cline to Cloud SQL PostgreSQL Toolbox",
+  "description": "This plugin provides a specialized suite of skills for data engineers and database practitioners working on Google Cloud. It acts as an expert assistant, allowing you to use natural language prompts in your preferred coding agent to architect complex data pipelines, transform data with dbt, write Spark and BigQuery SQL notebooks, and orchestrate end-to-end workflows across GCP's data ecosystem.",
+  "author": {
+    "name": "Data"
+  },
+  "tags": [
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "datacloud-cloud-sql-postgresql-toolbox",
+      "--",
+      "npx",
+      "-y",
+      "@toolbox-sdk/server@>=1.1.0",
+      "--prebuilt",
+      "cloud-sql-postgres",
+      "--stdio",
+      "--user-agent-metadata",
+      "datacloud.codex"
+    ],
+    "env": [
+      {
+        "name": "CLOUD_SQL_POSTGRES_DATABASE",
+        "required": true,
+        "description": "Data Agent Kit Starter Pack value for cloud sql postgres database."
+      },
+      {
+        "name": "CLOUD_SQL_POSTGRES_INSTANCE",
+        "required": true,
+        "description": "Data Agent Kit Starter Pack value for cloud sql postgres instance."
+      },
+      {
+        "name": "CLOUD_SQL_POSTGRES_IP_TYPE",
+        "required": true,
+        "description": "Data Agent Kit Starter Pack value for cloud sql postgres ip type."
+      },
+      {
+        "name": "CLOUD_SQL_POSTGRES_PASSWORD",
+        "required": true,
+        "description": "Data Agent Kit Starter Pack value for cloud sql postgres password."
+      },
+      {
+        "name": "CLOUD_SQL_POSTGRES_PROJECT",
+        "required": true,
+        "description": "Data Agent Kit Starter Pack value for cloud sql postgres project."
+      },
+      {
+        "name": "CLOUD_SQL_POSTGRES_REGION",
+        "required": true,
+        "description": "Data Agent Kit Starter Pack value for cloud sql postgres region."
+      },
+      {
+        "name": "CLOUD_SQL_POSTGRES_USER",
+        "required": true,
+        "description": "Data Agent Kit Starter Pack value for cloud sql postgres user."
+      }
+    ]
+  }
+}

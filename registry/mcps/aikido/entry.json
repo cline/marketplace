@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "aikido",
+  "type": "mcp",
+  "name": "Aikido",
+  "tagline": "Connect Cline to Aikido",
+  "description": "Connect Cline to Aikido through this MCP server.",
+  "author": {
+    "name": "Aikido Security"
+  },
+  "tags": [
+    "security",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "aikido",
+      "--",
+      "npx",
+      "-y",
+      "@aikidosec/mcp@1.0.9"
+    ]
+  },
+  "homepage": "https://help.aikido.dev/ide-plugins/aikido-mcp",
+  "repo": "https://github.com/AikidoSec/aikido-claude-plugin",
+  "license": "MIT"
+}

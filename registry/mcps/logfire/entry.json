@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "logfire",
+  "type": "mcp",
+  "name": "Logfire",
+  "tagline": "Connect Cline to Logfire",
+  "description": "Add Logfire observability to Python applications with auto-instrumentation for FastAPI, httpx, asyncpg, SQLAlchemy, and more",
+  "author": {
+    "name": "Pydantic"
+  },
+  "tags": [
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "logfire",
+      "--transport",
+      "http",
+      "https://logfire-us.pydantic.dev/mcp"
+    ]
+  },
+  "homepage": "https://github.com/pydantic/skills/tree/main/plugins/logfire",
+  "repo": "https://github.com/pydantic/skills",
+  "license": "MIT"
+}

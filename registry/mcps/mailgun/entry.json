@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "mailgun",
+  "type": "mcp",
+  "name": "Mailgun",
+  "tagline": "Send bulk emails via Mailgun",
+  "description": "Send bulk emails via Mailgun. This official Mailgun MCP integration is installable through Cline.",
+  "author": {
+    "name": "Mailgun"
+  },
+  "tags": [
+    "marketing"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "mailgun",
+      "--",
+      "npx",
+      "-y",
+      "@mailgun/mcp-server"
+    ]
+  },
+  "homepage": "https://github.com/mailgun/mailgun-mcp-server",
+  "repo": "https://github.com/mailgun/mailgun-mcp-server"
+}

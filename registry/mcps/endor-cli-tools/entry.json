@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "endor-cli-tools",
+  "type": "mcp",
+  "name": "Endor Labs",
+  "tagline": "Connect Cline to Endor Labs",
+  "description": "Set up endorctl and use Endor Labs to scan, prioritize, and fix security risks across your software supply chain",
+  "author": {
+    "name": "Endor Labs"
+  },
+  "tags": [
+    "security"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "endor-cli-tools",
+      "--",
+      "npx",
+      "-y",
+      "endorctl",
+      "ai-tools",
+      "mcp-server"
+    ]
+  },
+  "repo": "https://github.com/endorlabs/ai-plugins",
+  "license": "MIT"
+}

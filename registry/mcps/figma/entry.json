@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "figma",
+  "type": "mcp",
+  "name": "Figma",
+  "tagline": "Design files, components, variables, and design-to-code context",
+  "description": "Design files, components, variables, and design-to-code context. This official Figma MCP integration is installable through Cline.",
+  "author": {
+    "name": "Figma"
+  },
+  "tags": [
+    "creative"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "figma",
+      "--transport",
+      "http",
+      "https://mcp.figma.com/mcp"
+    ]
+  },
+  "homepage": "https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server"
+}

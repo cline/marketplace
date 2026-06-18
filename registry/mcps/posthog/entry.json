@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "posthog",
+  "type": "mcp",
+  "name": "PostHog",
+  "tagline": "Product analytics and user tracking",
+  "description": "Product analytics and user tracking. This official PostHog MCP integration is installable through Cline.",
+  "author": {
+    "name": "PostHog"
+  },
+  "tags": [
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "posthog",
+      "--transport",
+      "http",
+      "https://mcp.posthog.com/mcp"
+    ]
+  },
+  "homepage": "https://posthog.com/docs/model-context-protocol"
+}

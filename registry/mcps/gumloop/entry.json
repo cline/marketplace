@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "gumloop",
+  "type": "mcp",
+  "name": "Gumloop",
+  "tagline": "Interact with Gumloop",
+  "description": "Interact with Gumloop. This official Gumloop MCP integration is installable through Cline.",
+  "author": {
+    "name": "Gumloop"
+  },
+  "tags": [
+    "business",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "gumloop",
+      "--transport",
+      "http",
+      "https://mcp.gumloop.com/gumloop/mcp"
+    ]
+  },
+  "homepage": "https://docs.gumloop.com/mcp-server/overview"
+}

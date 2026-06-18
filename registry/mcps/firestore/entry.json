@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "firestore",
+  "type": "mcp",
+  "name": "Firestore",
+  "tagline": "Write data to Firestore databases",
+  "description": "Write data to Firestore databases. This official Google Cloud MCP integration is installable through Cline.",
+  "author": {
+    "name": "Google Cloud"
+  },
+  "tags": [
+    "data",
+    "databases"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "firestore",
+      "--transport",
+      "http",
+      "https://firestore.googleapis.com/mcp"
+    ]
+  },
+  "homepage": "https://docs.cloud.google.com/mcp/supported-products"
+}

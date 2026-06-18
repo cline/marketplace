@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "cloudflare-api",
+  "type": "mcp",
+  "name": "Cloudflare API",
+  "tagline": "Connect Cline to Cloudflare API",
+  "description": "Skills for the Cloudflare developer platform: Workers, Durable Objects, Agents SDK, MCP servers, Wrangler CLI, and web performance",
+  "author": {
+    "name": "Cloudflare"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cloudflare-api",
+      "--transport",
+      "http",
+      "https://mcp.cloudflare.com/mcp"
+    ]
+  }
+}

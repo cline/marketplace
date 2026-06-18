@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "cloudflare-docs",
+  "type": "mcp",
+  "name": "Cloudflare Docs",
+  "tagline": "Connect Cline to Cloudflare Docs",
+  "description": "Skills for the Cloudflare developer platform: Workers, Durable Objects, Agents SDK, MCP servers, Wrangler CLI, and web performance",
+  "author": {
+    "name": "Cloudflare"
+  },
+  "tags": [
+    "software",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cloudflare-docs",
+      "--transport",
+      "http",
+      "https://docs.mcp.cloudflare.com/mcp"
+    ]
+  }
+}

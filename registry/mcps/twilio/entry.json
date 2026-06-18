@@ -1,0 +1,46 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "twilio",
+  "type": "mcp",
+  "name": "Twilio",
+  "tagline": "Send SMS and voice messages",
+  "description": "Send SMS and voice messages. This official Twilio Labs MCP integration is installable through Cline.",
+  "author": {
+    "name": "Twilio Labs"
+  },
+  "tags": [
+    "marketing",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "twilio",
+      "--",
+      "npx",
+      "-y",
+      "@twilio-alpha/mcp",
+      "YOUR_ACCOUNT_SID/YOUR_API_KEY:YOUR_API_SECRET"
+    ],
+    "env": [
+      {
+        "name": "TWILIO_ACCOUNT_SID",
+        "required": true,
+        "description": "Twilio account SID."
+      },
+      {
+        "name": "TWILIO_API_KEY",
+        "required": true,
+        "description": "Twilio API key."
+      },
+      {
+        "name": "TWILIO_API_SECRET",
+        "required": true,
+        "description": "Twilio API secret."
+      }
+    ]
+  },
+  "homepage": "https://github.com/twilio-labs/mcp",
+  "repo": "https://github.com/twilio-labs/mcp"
+}

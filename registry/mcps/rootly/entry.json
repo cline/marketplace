@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "rootly",
+  "type": "mcp",
+  "name": "Rootly",
+  "tagline": "Connect Cline to Rootly",
+  "description": "Full-lifecycle incident management from your IDE. Prevent incidents before deploy, respond in real-time, and learn from post-mortems -- powered by Rootly.",
+  "author": {
+    "name": "Rootly AI Labs"
+  },
+  "tags": [
+    "software",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "rootly",
+      "--transport",
+      "http",
+      "https://mcp.rootly.com/mcp"
+    ]
+  },
+  "homepage": "https://rootly.com/integrations/claude",
+  "repo": "https://github.com/Rootly-AI-Labs/rootly-claude-plugin",
+  "license": "Apache-2.0"
+}

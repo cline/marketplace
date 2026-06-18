@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "google-cloud-storage",
+  "type": "mcp",
+  "name": "Google Cloud Storage",
+  "tagline": "Interact with Google Cloud Storage",
+  "description": "Interact with Google Cloud Storage. This official Google Cloud MCP integration is installable through Cline.",
+  "author": {
+    "name": "Google Cloud"
+  },
+  "tags": [
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "google-cloud-storage",
+      "--transport",
+      "http",
+      "https://storage.googleapis.com/storage/mcp"
+    ]
+  },
+  "homepage": "https://docs.cloud.google.com/mcp/supported-products"
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "neon",
+  "type": "mcp",
+  "name": "Neon",
+  "tagline": "Connect Cline to Neon",
+  "description": "Manage your Neon projects and databases with the neon-postgres agent skill and the Neon MCP Server",
+  "author": {
+    "name": "Neon"
+  },
+  "tags": [
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "neon",
+      "--transport",
+      "http",
+      "https://mcp.neon.tech/mcp"
+    ]
+  },
+  "homepage": "https://neon.com",
+  "repo": "https://github.com/neondatabase/agent-skills",
+  "license": "Apache-2.0"
+}

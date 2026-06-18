@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "webflow",
+  "type": "mcp",
+  "name": "Webflow",
+  "tagline": "Manage Webflow sites and content",
+  "description": "Manage Webflow sites and content. This official Webflow MCP integration is installable through Cline.",
+  "author": {
+    "name": "Webflow"
+  },
+  "tags": [
+    "creative",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "webflow",
+      "--transport",
+      "sse",
+      "https://mcp.webflow.com/sse"
+    ]
+  },
+  "homepage": "https://github.com/webflow/mcp-server",
+  "repo": "https://github.com/webflow/mcp-server"
+}

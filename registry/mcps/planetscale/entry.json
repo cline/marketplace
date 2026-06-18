@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "planetscale",
+  "type": "mcp",
+  "name": "Planetscale",
+  "tagline": "Connect Cline to Planetscale",
+  "description": "An authenticated hosted MCP server that accesses your PlanetScale organizations, databases, branches, schema, and Insights data.",
+  "author": {
+    "name": "PlanetScale"
+  },
+  "tags": [
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "planetscale",
+      "--transport",
+      "http",
+      "https://mcp.pscale.dev/mcp/planetscale"
+    ]
+  }
+}

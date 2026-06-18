@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "awspricing",
+  "type": "mcp",
+  "name": "AWS Pricing",
+  "tagline": "Connect Cline to AWS Pricing",
+  "description": "Migrate from GCP to AWS \u2014 including your entire AI stack. Moves infrastructure (Cloud Run \u2192 Fargate, Cloud SQL \u2192 RDS or Aurora, GKE \u2192 EKS), OpenAI/Gemini workloads to Amazon Bedrock, and agentic systems (LangChain, CrewAI, AutoGen, OpenAI Agents SDK) to AWS-native frameworks. Generates runnable Terraform, migration scripts, provider adapters, and deployment artifacts. Gives honest model-by-model pricing comparison...",
+  "author": {
+    "name": "AWS"
+  },
+  "tags": [
+    "data",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "awspricing",
+      "--",
+      "uvx",
+      "awslabs.aws-pricing-mcp-server@latest"
+    ],
+    "env": [
+      {
+        "name": "FASTMCP_LOG_LEVEL",
+        "required": true,
+        "description": "AWS Pricing value for fastmcp log level."
+      },
+      {
+        "name": "AWS_REGION",
+        "required": true,
+        "description": "AWS Pricing value for aws region."
+      }
+    ]
+  },
+  "homepage": "https://github.com/awslabs/startups/tree/main/migrate",
+  "repo": "https://github.com/awslabs/startups",
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "perplexity",
+  "type": "mcp",
+  "name": "Perplexity",
+  "tagline": "Perform web searches using Perplexity AI",
+  "description": "Perform web searches using Perplexity AI. This official Perplexity MCP integration is installable through Cline.",
+  "author": {
+    "name": "Perplexity"
+  },
+  "tags": [
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "perplexity",
+      "--",
+      "npx",
+      "-y",
+      "@perplexity-ai/mcp-server"
+    ]
+  },
+  "homepage": "https://docs.perplexity.ai/docs/getting-started/integrations/mcp-server",
+  "repo": "https://github.com/perplexityai/modelcontextprotocol"
+}

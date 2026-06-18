@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "zoom-whiteboard",
+  "type": "mcp",
+  "name": "Zoom Whiteboard",
+  "tagline": "Connect Cline to Zoom Whiteboard",
+  "description": "Connect Cline to Zoom Whiteboard through this MCP server.",
+  "author": {
+    "name": "Zoom"
+  },
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "zoom-whiteboard",
+      "--transport",
+      "http",
+      "https://mcp.zoom.us/mcp/whiteboard/streamable",
+      "--header",
+      "Authorization: Bearer ${ZOOM_WHITEBOARD_MCP_ACCESS_TOKEN}"
+    ],
+    "env": [
+      {
+        "name": "ZOOM_WHITEBOARD_MCP_ACCESS_TOKEN",
+        "required": true,
+        "description": "Zoom Whiteboard value for zoom whiteboard mcp access token."
+      }
+    ]
+  },
+  "homepage": "https://developers.zoom.us/",
+  "repo": "https://github.com/zoom/zoom-plugin",
+  "license": "MIT"
+}

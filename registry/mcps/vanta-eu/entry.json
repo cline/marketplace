@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "vanta-eu",
+  "type": "mcp",
+  "name": "Vanta EU",
+  "tagline": "Connect Cline to Vanta EU",
+  "description": "Connect Cline to the Vanta EU regional MCP server.",
+  "author": {
+    "name": "Vanta"
+  },
+  "tags": [
+    "security",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "vanta-eu",
+      "--transport",
+      "http",
+      "https://mcp.eu.vanta.com/mcp"
+    ]
+  },
+  "homepage": "https://github.com/VantaInc/vanta-mcp-plugin",
+  "repo": "https://github.com/VantaInc/vanta-mcp-plugin",
+  "license": "MIT"
+}

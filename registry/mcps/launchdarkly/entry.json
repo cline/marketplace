@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "launchdarkly",
+  "type": "mcp",
+  "name": "LaunchDarkly",
+  "tagline": "Manage feature flags, segments, and environments",
+  "description": "Manage feature flags, segments, and environments. This official LaunchDarkly MCP integration is installable through Cline.",
+  "author": {
+    "name": "LaunchDarkly"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "launchdarkly",
+      "--",
+      "npx",
+      "-y",
+      "--package",
+      "@launchdarkly/mcp-server",
+      "--",
+      "mcp",
+      "start",
+      "--api-key",
+      "<key>"
+    ]
+  },
+  "homepage": "https://github.com/launchdarkly/mcp-server",
+  "repo": "https://github.com/launchdarkly/mcp-server"
+}

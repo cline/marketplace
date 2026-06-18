@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "expo",
+  "type": "mcp",
+  "name": "Expo",
+  "tagline": "Connect Cline to Expo",
+  "description": "Official Expo skills for building, deploying, upgrading, and debugging Expo and React Native apps.",
+  "author": {
+    "name": "Expo Team"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "expo",
+      "--transport",
+      "http",
+      "https://mcp.expo.dev/mcp"
+    ]
+  },
+  "homepage": "https://docs.expo.dev/skills/",
+  "repo": "https://github.com/expo/skills/tree/main/plugins/expo",
+  "license": "MIT"
+}

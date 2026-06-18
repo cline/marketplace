@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "supabase",
+  "type": "mcp",
+  "name": "Supabase",
+  "tagline": "Manage data in Supabase databases",
+  "description": "Manage data in Supabase databases. This official Supabase MCP integration is installable through Cline.",
+  "author": {
+    "name": "Supabase"
+  },
+  "tags": [
+    "data",
+    "databases"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "supabase",
+      "--transport",
+      "http",
+      "https://mcp.supabase.com/mcp"
+    ]
+  },
+  "homepage": "https://supabase.com/docs/guides/ai-tools/mcp"
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "miro",
+  "type": "mcp",
+  "name": "Miro",
+  "tagline": "Connect Cline to Miro",
+  "description": "Secure access to Miro boards. Enables AI to read board context, create diagrams, and generate code with enterprise-grade security.",
+  "author": {
+    "name": "Miro"
+  },
+  "tags": [
+    "security",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "miro",
+      "--transport",
+      "http",
+      "https://mcp.miro.com/",
+      "--header",
+      "X-AI-Source: claude-code-plugin"
+    ]
+  },
+  "homepage": "https://miro.com",
+  "repo": "https://github.com/miroapp/miro-ai",
+  "license": "MIT"
+}

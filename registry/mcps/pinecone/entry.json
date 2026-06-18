@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "pinecone",
+  "type": "mcp",
+  "name": "Pinecone",
+  "tagline": "Connect Cline to Pinecone",
+  "description": "Connect Cline to Pinecone through this MCP server.",
+  "author": {
+    "name": "Pinecone"
+  },
+  "tags": [
+    "data",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "pinecone",
+      "--",
+      "npx",
+      "-y",
+      "@pinecone-database/mcp"
+    ],
+    "env": [
+      {
+        "name": "PINECONE_API_KEY",
+        "required": true,
+        "description": "Pinecone value for pinecone api key."
+      }
+    ]
+  }
+}

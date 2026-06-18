@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "exa",
+  "type": "mcp",
+  "name": "Exa",
+  "tagline": "Interact with Exa",
+  "description": "Interact with Exa. This official Exa MCP integration is installable through Cline.",
+  "author": {
+    "name": "Exa"
+  },
+  "tags": [
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "exa",
+      "--transport",
+      "http",
+      "https://mcp.exa.ai/mcp"
+    ],
+    "env": [
+      {
+        "name": "EXA_API_KEY",
+        "required": true,
+        "description": "Exa API key for hosted or local search access.",
+        "url": "https://exa.ai"
+      }
+    ]
+  },
+  "homepage": "https://exa.ai/docs/reference/exa-mcp"
+}

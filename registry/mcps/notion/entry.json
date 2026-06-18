@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "notion",
+  "type": "mcp",
+  "name": "Notion",
+  "tagline": "Interact with Notion databases and pages",
+  "description": "Interact with Notion databases and pages. This official Notion MCP integration is installable through Cline.",
+  "author": {
+    "name": "Notion"
+  },
+  "tags": [
+    "productivity",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "notion",
+      "--transport",
+      "http",
+      "https://mcp.notion.com/mcp"
+    ]
+  },
+  "homepage": "https://developers.notion.com/guides/mcp/overview"
+}

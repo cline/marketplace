@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "wix",
+  "type": "mcp",
+  "name": "Wix",
+  "tagline": "Connect Cline to Wix",
+  "description": "Build and deploy Wix apps and headless websites, and manage your Wix business. Includes CLI development skills, Wix Headless for any frontend framework, and Wix MCP server for eCommerce, CMS, dashboard extensions, and more.",
+  "author": {
+    "name": "Wix"
+  },
+  "tags": [
+    "software",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "wix",
+      "--transport",
+      "http",
+      "https://mcp.wix.com/mcp"
+    ]
+  },
+  "homepage": "https://dev.wix.com/docs/api-reference/articles/ai-tools/about-wix-skills",
+  "repo": "https://github.com/wix/skills",
+  "license": "MIT"
+}

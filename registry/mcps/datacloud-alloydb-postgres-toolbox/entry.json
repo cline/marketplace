@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "datacloud-alloydb-postgres-toolbox",
+  "type": "mcp",
+  "name": "AlloyDB PostgreSQL Toolbox",
+  "tagline": "Connect Cline to AlloyDB PostgreSQL Toolbox",
+  "description": "This plugin provides a specialized suite of skills for data engineers and database practitioners working on Google Cloud. It acts as an expert assistant, allowing you to use natural language prompts in your preferred coding agent to architect complex data pipelines, transform data with dbt, write Spark and BigQuery SQL notebooks, and orchestrate end-to-end workflows across GCP's data ecosystem.",
+  "author": {
+    "name": "Google Cloud"
+  },
+  "tags": [
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "datacloud-alloydb-postgres-toolbox",
+      "--",
+      "npx",
+      "-y",
+      "@toolbox-sdk/server@>=1.1.0",
+      "--prebuilt",
+      "alloydb-postgres",
+      "--stdio",
+      "--user-agent-metadata",
+      "datacloud.codex"
+    ],
+    "env": [
+      {
+        "name": "ALLOYDB_POSTGRES_CLUSTER",
+        "required": true,
+        "description": "AlloyDB PostgreSQL Toolbox value for alloydb postgres cluster."
+      },
+      {
+        "name": "ALLOYDB_POSTGRES_DATABASE",
+        "required": true,
+        "description": "AlloyDB PostgreSQL Toolbox value for alloydb postgres database."
+      },
+      {
+        "name": "ALLOYDB_POSTGRES_INSTANCE",
+        "required": true,
+        "description": "AlloyDB PostgreSQL Toolbox value for alloydb postgres instance."
+      },
+      {
+        "name": "ALLOYDB_POSTGRES_IP_TYPE",
+        "required": true,
+        "description": "AlloyDB PostgreSQL Toolbox value for alloydb postgres ip type."
+      },
+      {
+        "name": "ALLOYDB_POSTGRES_PASSWORD",
+        "required": true,
+        "description": "AlloyDB PostgreSQL Toolbox value for alloydb postgres password."
+      },
+      {
+        "name": "ALLOYDB_POSTGRES_PROJECT",
+        "required": true,
+        "description": "AlloyDB PostgreSQL Toolbox value for alloydb postgres project."
+      },
+      {
+        "name": "ALLOYDB_POSTGRES_REGION",
+        "required": true,
+        "description": "AlloyDB PostgreSQL Toolbox value for alloydb postgres region."
+      },
+      {
+        "name": "ALLOYDB_POSTGRES_USER",
+        "required": true,
+        "description": "AlloyDB PostgreSQL Toolbox value for alloydb postgres user."
+      }
+    ]
+  }
+}

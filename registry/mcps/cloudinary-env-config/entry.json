@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "cloudinary-env-config",
+  "type": "mcp",
+  "name": "Cloudinary Env Config",
+  "tagline": "Connect Cline to Cloudinary Env Config",
+  "description": "Connect Cline to Cloudinary Env Config through this MCP server.",
+  "author": {
+    "name": "Cloudinary"
+  },
+  "tags": [
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cloudinary-env-config",
+      "--transport",
+      "http",
+      "https://environment-config.mcp.cloudinary.com/mcp"
+    ]
+  },
+  "homepage": "https://cloudinary.com",
+  "repo": "https://github.com/cloudinary-devs/cloudinary-plugin",
+  "license": "MIT"
+}

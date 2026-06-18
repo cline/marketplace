@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "forge",
+  "type": "mcp",
+  "name": "Forge",
+  "tagline": "Connect Cline to Forge",
+  "description": "Forge app builder skill bundle with Forge MCP integration for Atlassian Forge workflows.",
+  "author": {
+    "name": "Atlassian Labs"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "forge",
+      "--transport",
+      "http",
+      "https://mcp.atlassian.com/v1/forge/mcp"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "zoominfo",
+  "type": "mcp",
+  "name": "ZoomInfo",
+  "tagline": "Connect Cline to ZoomInfo",
+  "description": "Connect Cline to ZoomInfo through this MCP server.",
+  "author": {
+    "name": "ZoomInfo"
+  },
+  "tags": [
+    "data",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "zoominfo",
+      "--transport",
+      "http",
+      "https://mcp.zoominfo.com/mcp"
+    ]
+  },
+  "homepage": "https://www.zoominfo.com",
+  "repo": "https://github.com/Zoominfo/zoominfo-mcp-plugin",
+  "license": "MIT"
+}

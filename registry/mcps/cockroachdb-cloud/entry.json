@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "cockroachdb-cloud",
+  "type": "mcp",
+  "name": "Cockroachdb Cloud",
+  "tagline": "Connect Cline to Cockroachdb Cloud",
+  "description": "Connect Cline to Cockroachdb Cloud through this MCP server.",
+  "author": {
+    "name": "Cockroach Labs"
+  },
+  "tags": [
+    "data",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cockroachdb-cloud",
+      "--transport",
+      "http",
+      "https://cockroachlabs.cloud/mcp",
+      "--header",
+      "mcp-cluster-id: ${COCKROACHDB_CLUSTER_ID}"
+    ],
+    "env": [
+      {
+        "name": "COCKROACHDB_CLUSTER_ID",
+        "required": true,
+        "description": "Cockroachdb Cloud value for cockroachdb cluster id."
+      }
+    ]
+  },
+  "homepage": "https://github.com/cockroachdb/claude-plugin",
+  "repo": "https://github.com/cockroachdb/claude-plugin",
+  "license": "Apache-2.0"
+}

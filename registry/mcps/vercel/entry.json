@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "vercel",
+  "type": "mcp",
+  "name": "Vercel",
+  "tagline": "Connect Cline to Vercel",
+  "description": "Build and deploy web apps and agents",
+  "author": {
+    "name": "Vercel"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "vercel",
+      "--transport",
+      "http",
+      "https://mcp.vercel.com"
+    ]
+  },
+  "repo": "https://github.com/vercel/vercel-plugin",
+  "license": "Apache-2.0"
+}

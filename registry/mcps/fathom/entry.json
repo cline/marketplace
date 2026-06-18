@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "fathom",
+  "type": "mcp",
+  "name": "Fathom",
+  "tagline": "Access meeting recordings, transcripts, and AI-generated summaries",
+  "description": "Access meeting recordings, transcripts, and AI-generated summaries. This official Fathom MCP integration is installable through Cline.",
+  "author": {
+    "name": "Fathom"
+  },
+  "tags": [
+    "productivity",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "fathom",
+      "--transport",
+      "http",
+      "https://api.fathom.ai/mcp"
+    ]
+  },
+  "homepage": "https://registry.modelcontextprotocol.io/v0/servers/ai.fathom.api%2Fmcp/versions/latest"
+}

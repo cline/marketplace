@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "confluence",
+  "type": "mcp",
+  "name": "Confluence",
+  "tagline": "Interact with Confluence projects",
+  "description": "Interact with Confluence projects. This official Atlassian MCP integration is installable through Cline.",
+  "author": {
+    "name": "Atlassian"
+  },
+  "tags": [
+    "research",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "confluence",
+      "--transport",
+      "http",
+      "https://mcp.atlassian.com/v1/mcp/authv2"
+    ]
+  },
+  "homepage": "https://support.atlassian.com/atlassian-rovo-mcp-server/docs/getting-started-with-the-atlassian-remote-mcp-server/"
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "clickhouse",
+  "type": "mcp",
+  "name": "ClickHouse",
+  "tagline": "Query and manage ClickHouse Cloud services",
+  "description": "Query and manage ClickHouse Cloud services. This official ClickHouse MCP integration is installable through Cline.",
+  "author": {
+    "name": "ClickHouse"
+  },
+  "tags": [
+    "data",
+    "databases"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "clickhouse",
+      "--",
+      "uv",
+      "run",
+      "--with",
+      "mcp-clickhouse",
+      "--python",
+      "3.10",
+      "mcp-clickhouse"
+    ],
+    "env": [
+      {
+        "name": "CLICKHOUSE_MCP_AUTH_TOKEN",
+        "required": true,
+        "description": "Bearer token required when exposing ClickHouse MCP over HTTP or SSE."
+      }
+    ]
+  },
+  "homepage": "https://github.com/ClickHouse/mcp-clickhouse",
+  "repo": "https://github.com/ClickHouse/mcp-clickhouse"
+}

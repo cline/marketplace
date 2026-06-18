@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "buildkite",
+  "type": "mcp",
+  "name": "Buildkite",
+  "tagline": "Connect Cline to Buildkite",
+  "description": "Connect Cline to Buildkite through this MCP server.",
+  "author": {
+    "name": "Buildkite"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "buildkite",
+      "--transport",
+      "http",
+      "https://mcp.buildkite.com/mcp"
+    ]
+  }
+}

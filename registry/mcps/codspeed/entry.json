@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "codspeed",
+  "type": "mcp",
+  "name": "Codspeed",
+  "tagline": "Connect Cline to Codspeed",
+  "description": "Connect Cline to Codspeed through this MCP server.",
+  "author": {
+    "name": "CodSpeed"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "codspeed",
+      "--transport",
+      "http",
+      "https://mcp.codspeed.io/mcp"
+    ]
+  },
+  "homepage": "https://codspeed.io",
+  "repo": "https://github.com/CodSpeedHQ/codspeed",
+  "license": "MIT"
+}

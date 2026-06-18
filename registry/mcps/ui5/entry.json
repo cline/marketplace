@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "ui5",
+  "type": "mcp",
+  "name": "UI5",
+  "tagline": "Connect Cline to UI5",
+  "description": "Connect Cline to UI5 through this MCP server.",
+  "author": {
+    "name": "SAP"
+  },
+  "tags": [
+    "creative"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "ui5",
+      "--",
+      "npx",
+      "-y",
+      "@ui5/mcp-server"
+    ]
+  }
+}

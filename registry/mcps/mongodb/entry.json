@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "mongodb",
+  "type": "mcp",
+  "name": "MongoDB",
+  "tagline": "Connect Cline to MongoDB",
+  "description": "Connect Cline to MongoDB through this MCP server.",
+  "author": {
+    "name": "MongoDB"
+  },
+  "tags": [
+    "data",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "mongodb",
+      "--",
+      "npx",
+      "-y",
+      "mongodb-mcp-server@<3"
+    ]
+  },
+  "homepage": "https://www.mongodb.com/docs/codex/",
+  "repo": "https://github.com/mongodb/agent-skills",
+  "license": "Apache-2.0"
+}

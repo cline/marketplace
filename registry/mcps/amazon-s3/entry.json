@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "amazon-s3",
+  "type": "mcp",
+  "name": "Amazon S3",
+  "tagline": "Store files in S3 buckets",
+  "description": "Store files in S3 buckets. This official AWS MCP integration is installable through Cline.",
+  "author": {
+    "name": "AWS"
+  },
+  "tags": [
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "amazon-s3",
+      "--",
+      "uvx",
+      "awslabs.aws-api-mcp-server@latest"
+    ],
+    "env": [
+      {
+        "name": "AWS_ACCESS_KEY_ID",
+        "required": true,
+        "description": "AWS access key for S3 access."
+      },
+      {
+        "name": "AWS_SECRET_ACCESS_KEY",
+        "required": true,
+        "description": "AWS secret access key for S3 access."
+      },
+      {
+        "name": "AWS_REGION",
+        "required": true,
+        "description": "AWS region for the target S3 resources."
+      }
+    ]
+  },
+  "homepage": "https://github.com/awslabs/mcp",
+  "repo": "https://github.com/awslabs/mcp"
+}

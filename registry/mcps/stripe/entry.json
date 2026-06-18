@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "stripe",
+  "type": "mcp",
+  "name": "Stripe",
+  "tagline": "Interact with Stripe",
+  "description": "Interact with Stripe. This official Stripe MCP integration is installable through Cline.",
+  "author": {
+    "name": "Stripe"
+  },
+  "tags": [
+    "finance",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "stripe",
+      "--",
+      "npx",
+      "-y",
+      "@stripe/mcp@latest",
+      "--api-key=<key>"
+    ]
+  },
+  "homepage": "https://docs.stripe.com/mcp"
+}

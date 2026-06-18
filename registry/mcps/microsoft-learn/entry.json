@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "microsoft-learn",
+  "type": "mcp",
+  "name": "Microsoft Learn",
+  "tagline": "Connect Cline to Microsoft Learn",
+  "description": "Access official Microsoft documentation, API references, and code samples for Azure, .NET, Windows, and more.",
+  "author": {
+    "name": "Microsoft"
+  },
+  "tags": [
+    "software",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "microsoft-learn",
+      "--transport",
+      "http",
+      "https://learn.microsoft.com/api/mcp"
+    ]
+  },
+  "homepage": "https://learn.microsoft.com",
+  "repo": "https://github.com/microsoftdocs/mcp",
+  "license": "MIT"
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "apollo",
+  "type": "mcp",
+  "name": "Apollo",
+  "tagline": "Connect Cline to Apollo",
+  "description": "Connect Cline to Apollo through this MCP server.",
+  "author": {
+    "name": "Apollo.io"
+  },
+  "tags": [
+    "data",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "apollo",
+      "--transport",
+      "http",
+      "https://mcp.apollo.io/mcp"
+    ]
+  },
+  "homepage": "https://www.apollo.io/",
+  "repo": "https://github.com/apolloio/apollo-mcp-plugin",
+  "license": "MIT"
+}

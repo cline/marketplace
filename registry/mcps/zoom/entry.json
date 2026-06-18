@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "zoom",
+  "type": "mcp",
+  "name": "Zoom",
+  "tagline": "Manage Zoom meetings and webinars",
+  "description": "Manage Zoom meetings and webinars. This official Zoom MCP integration is installable through Cline.",
+  "author": {
+    "name": "Zoom"
+  },
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "zoom",
+      "--transport",
+      "http",
+      "https://mcp.zoom.us/mcp/zoom/streamable"
+    ]
+  },
+  "homepage": "https://github.com/zoom/mcp-registry",
+  "repo": "https://github.com/zoom/mcp-registry"
+}

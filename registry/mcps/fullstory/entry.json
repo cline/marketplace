@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "fullstory",
+  "type": "mcp",
+  "name": "Fullstory",
+  "tagline": "Connect Cline to Fullstory",
+  "description": "Connect Cline to Fullstory through this MCP server.",
+  "author": {
+    "name": "Fullstory"
+  },
+  "tags": [
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "fullstory",
+      "--transport",
+      "http",
+      "https://api.fullstory.com/mcp/fullstory"
+    ]
+  },
+  "homepage": "https://www.fullstory.com",
+  "license": "MIT"
+}

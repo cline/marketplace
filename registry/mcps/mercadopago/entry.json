@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "mercadopago",
+  "type": "mcp",
+  "name": "Mercado Pago",
+  "tagline": "Connect Cline to Mercado Pago",
+  "description": "Mercado Pago full-product integration toolkit. One agent routes to four orchestration skills (mp-integrate, mp-webhooks, mp-test-setup, mp-review) that pull live data from the official Mercado Pago MCP server. The MCP must always be connected — there is no offline mode.",
+  "author": {
+    "name": "Mercado Pago Developer Experience"
+  },
+  "tags": [
+    "data",
+    "finance"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "mercadopago",
+      "--transport",
+      "http",
+      "https://mcp.mercadopago.com/mcp",
+      "--header",
+      "X-Plugin-Version: 4.0.0",
+      "--header",
+      "X-Invocation-Context: router"
+    ]
+  },
+  "repo": "https://github.com/mercadopago/mercadopago-claude-marketplace",
+  "license": "Apache-2.0"
+}

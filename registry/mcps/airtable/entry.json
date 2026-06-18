@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "airtable",
+  "type": "mcp",
+  "name": "Airtable",
+  "tagline": "Manage data in Airtable bases",
+  "description": "Manage data in Airtable bases. This official Airtable MCP integration is installable through Cline.",
+  "author": {
+    "name": "Airtable"
+  },
+  "tags": [
+    "data",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "airtable",
+      "--transport",
+      "http",
+      "https://mcp.airtable.com/mcp"
+    ],
+    "env": [
+      {
+        "name": "AIRTABLE_TOKEN",
+        "required": true,
+        "description": "Airtable personal access token used by local Airtable MCP configuration.",
+        "url": "https://airtable.com/create/tokens"
+      }
+    ]
+  },
+  "homepage": "https://github.com/Airtable/airtable-mcp-cli",
+  "repo": "https://github.com/Airtable/airtable-mcp-cli"
+}

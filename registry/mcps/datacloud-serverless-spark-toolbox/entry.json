@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "datacloud-serverless-spark-toolbox",
+  "type": "mcp",
+  "name": "Serverless Spark Toolbox",
+  "tagline": "Connect Cline to Serverless Spark Toolbox",
+  "description": "This plugin provides a specialized suite of skills for data engineers and database practitioners working on Google Cloud. It acts as an expert assistant, allowing you to use natural language prompts in your preferred coding agent to architect complex data pipelines, transform data with dbt, write Spark and BigQuery SQL notebooks, and orchestrate end-to-end workflows across GCP's data ecosystem.",
+  "author": {
+    "name": "Google Cloud"
+  },
+  "tags": [
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "datacloud-serverless-spark-toolbox",
+      "--",
+      "npx",
+      "-y",
+      "@toolbox-sdk/server@>=1.1.0",
+      "--prebuilt",
+      "serverless-spark",
+      "--stdio",
+      "--user-agent-metadata",
+      "datacloud.codex"
+    ],
+    "env": [
+      {
+        "name": "SERVERLESS_SPARK_PROJECT",
+        "required": true,
+        "description": "Serverless Spark Toolbox value for serverless spark project."
+      },
+      {
+        "name": "SERVERLESS_SPARK_LOCATION",
+        "required": true,
+        "description": "Serverless Spark Toolbox value for serverless spark location."
+      }
+    ]
+  }
+}

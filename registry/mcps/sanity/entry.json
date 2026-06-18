@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "sanity",
+  "type": "mcp",
+  "name": "Sanity",
+  "tagline": "Connect Cline to Sanity",
+  "description": "Connect Cline to Sanity through this MCP server.",
+  "author": {
+    "name": "Sanity"
+  },
+  "tags": [
+    "software",
+    "creative"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "sanity",
+      "--transport",
+      "http",
+      "https://mcp.sanity.io"
+    ]
+  },
+  "homepage": "https://github.com/sanity-io/agent-toolkit",
+  "repo": "https://github.com/sanity-io/agent-toolkit",
+  "license": "MIT"
+}

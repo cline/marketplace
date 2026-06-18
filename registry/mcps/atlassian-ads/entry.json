@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "atlassian-ads",
+  "type": "mcp",
+  "name": "Atlassian Ads",
+  "tagline": "Connect Cline to Atlassian Ads",
+  "description": "Forge app builder skill bundle with Forge MCP integration for Atlassian Forge workflows.",
+  "author": {
+    "name": "Atlassian Labs"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "atlassian-ads",
+      "--transport",
+      "http",
+      "https://mcp.atlassian.com/v1/ads/public/mcp"
+    ]
+  }
+}

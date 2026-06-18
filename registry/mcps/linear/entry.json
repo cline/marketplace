@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "linear",
+  "type": "mcp",
+  "name": "Linear",
+  "tagline": "Handle Linear project issues",
+  "description": "Handle Linear project issues. This official Linear MCP integration is installable through Cline.",
+  "author": {
+    "name": "Linear"
+  },
+  "tags": [
+    "productivity",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "linear",
+      "--transport",
+      "http",
+      "https://mcp.linear.app/mcp"
+    ]
+  },
+  "homepage": "https://linear.app/docs/mcp"
+}

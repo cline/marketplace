@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "aws-serverless-mcp",
+  "type": "mcp",
+  "name": "AWS Serverless",
+  "tagline": "Connect Cline to AWS Serverless",
+  "description": "Design, build, deploy, test, and debug serverless applications with AWS Serverless services.",
+  "author": {
+    "name": "AWS"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "aws-serverless-mcp",
+      "--",
+      "uvx",
+      "awslabs.aws-serverless-mcp-server@latest",
+      "--allow-write"
+    ],
+    "env": [
+      {
+        "name": "FASTMCP_LOG_LEVEL",
+        "required": true,
+        "description": "AWS Serverless value for fastmcp log level."
+      }
+    ]
+  },
+  "homepage": "https://github.com/awslabs/agent-plugins",
+  "repo": "https://github.com/awslabs/agent-plugins",
+  "license": "Apache-2.0"
+}

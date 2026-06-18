@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "zoom-docs",
+  "type": "mcp",
+  "name": "Zoom Docs",
+  "tagline": "Connect Cline to Zoom Docs",
+  "description": "Connect Cline to Zoom Docs through this MCP server.",
+  "author": {
+    "name": "Zoom"
+  },
+  "tags": [
+    "research",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "zoom-docs",
+      "--transport",
+      "http",
+      "https://mcp.zoom.us/mcp/docs/streamable",
+      "--header",
+      "Authorization: Bearer ${ZOOM_DOCS_MCP_ACCESS_TOKEN}"
+    ],
+    "env": [
+      {
+        "name": "ZOOM_DOCS_MCP_ACCESS_TOKEN",
+        "required": true,
+        "description": "Zoom Docs value for zoom docs mcp access token."
+      }
+    ]
+  },
+  "homepage": "https://developers.zoom.us/",
+  "repo": "https://github.com/zoom/zoom-plugin",
+  "license": "MIT"
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "playwright",
+  "type": "mcp",
+  "name": "Playwright",
+  "tagline": "Connect Cline to Playwright",
+  "description": "Connect Cline to Playwright through this MCP server.",
+  "author": {
+    "name": "Microsoft"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "playwright",
+      "--",
+      "npx",
+      "@playwright/mcp@latest"
+    ]
+  }
+}
