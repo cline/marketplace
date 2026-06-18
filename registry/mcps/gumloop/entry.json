@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "gumloop",
+  "type": "mcp",
+  "name": "Gumloop",
+  "tagline": "Interact with Gumloop",
+  "description": "Interact with Gumloop. This official Gumloop MCP integration is installable through Cline.",
+  "author": {
+    "name": "Gumloop"
+  },
+  "tags": [
+    "business",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "gumloop",
+      "--transport",
+      "http",
+      "https://mcp.gumloop.com/gumloop/mcp"
+    ],
+    "notes": "Transport from source catalog: Remote MCP / SSE via mcp-remote for unsupported clients. Auth from source catalog: OAuth plus Gumloop API key. Official Gumloop remote MCP server for workflows, agents, sessions, skills, artifacts, teams, connected MCP server management, documentation, and audit logs."
+  },
+  "homepage": "https://docs.gumloop.com/mcp-server/overview"
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "google-bigquery",
+  "type": "mcp",
+  "name": "Google BigQuery",
+  "tagline": "Query and retrieve data from BigQuery",
+  "description": "Query and retrieve data from BigQuery. This official Google Cloud MCP integration is installable through Cline.",
+  "author": {
+    "name": "Google Cloud"
+  },
+  "tags": [
+    "data",
+    "databases"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "google-bigquery",
+      "--transport",
+      "http",
+      "https://bigquery.googleapis.com/mcp"
+    ],
+    "notes": "Transport from source catalog: remote HTTP. Auth from source catalog: Google IAM/OAuth. Google Cloud docs list BigQuery MCP endpoint; OSS option also exists via googleapis/mcp-toolbox."
+  },
+  "homepage": "https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp"
+}

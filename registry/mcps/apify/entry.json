@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "apify",
+  "type": "mcp",
+  "name": "Apify",
+  "tagline": "Run Apify web scraping tasks",
+  "description": "Run Apify web scraping tasks. This official Apify MCP integration is installable through Cline.",
+  "author": {
+    "name": "Apify"
+  },
+  "tags": [
+    "software",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "apify",
+      "--transport",
+      "http",
+      "https://mcp.apify.com"
+    ],
+    "env": [
+      {
+        "name": "APIFY_TOKEN",
+        "required": true,
+        "description": "Apify API token for local server usage.",
+        "url": "https://console.apify.com/account/integrations"
+      }
+    ],
+    "notes": "Transport from source catalog: Streamable HTTP; local stdio. Auth from source catalog: OAuth or Apify API token; x402/Skyfire payment options. Official Apify repo and hosted server; legacy SSE removed in favor of streamable HTTP."
+  },
+  "homepage": "https://github.com/apify/apify-mcp-server",
+  "repo": "https://github.com/apify/apify-mcp-server"
+}

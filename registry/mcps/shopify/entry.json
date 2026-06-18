@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "shopify",
+  "type": "mcp",
+  "name": "Shopify",
+  "tagline": "Manage Shopify store data",
+  "description": "Manage Shopify store data. This official Shopify MCP integration is installable through Cline.",
+  "author": {
+    "name": "Shopify"
+  },
+  "tags": [
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "shopify",
+      "--transport",
+      "http",
+      "https://{shop}.myshopify.com/api/mcp"
+    ],
+    "notes": "Transport from source catalog: HTTP. Auth from source catalog: None for Storefront MCP. Server details: https://shopify.dev/docs/apps/build/storefront-mcp/servers/storefront"
+  },
+  "homepage": "https://shopify.dev/docs/apps/build/storefront-mcp"
+}

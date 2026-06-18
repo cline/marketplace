@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "supabase",
+  "type": "mcp",
+  "name": "Supabase",
+  "tagline": "Manage data in Supabase databases",
+  "description": "Manage data in Supabase databases. This official Supabase MCP integration is installable through Cline.",
+  "author": {
+    "name": "Supabase"
+  },
+  "tags": [
+    "data",
+    "databases"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "supabase",
+      "--transport",
+      "http",
+      "https://mcp.supabase.com/mcp"
+    ],
+    "notes": "Transport from source catalog: HTTP. Auth from source catalog: OAuth/DCR; PAT for CI. Official Supabase docs; local dev via Supabase CLI at http://localhost:54321/mcp."
+  },
+  "homepage": "https://supabase.com/docs/guides/ai-tools/mcp"
+}

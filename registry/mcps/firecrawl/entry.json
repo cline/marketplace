@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "firecrawl",
+  "type": "mcp",
+  "name": "Firecrawl",
+  "tagline": "Web scraping and data extraction",
+  "description": "Web scraping and data extraction. This official Firecrawl MCP integration is installable through Cline.",
+  "author": {
+    "name": "Firecrawl"
+  },
+  "tags": [
+    "research",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "firecrawl",
+      "--",
+      "npx",
+      "-y",
+      "firecrawl-mcp"
+    ],
+    "env": [
+      {
+        "name": "FIRECRAWL_API_KEY",
+        "required": true,
+        "description": "Firecrawl API key for crawling and scraping.",
+        "url": "https://www.firecrawl.dev/app/api-keys"
+      }
+    ],
+    "notes": "Transport from source catalog: stdio; optional streamable HTTP. Auth from source catalog: Firecrawl API key or OAuth bearer. Official Firecrawl org repo; docs show local HTTP mode at http://localhost:3000/mcp."
+  },
+  "homepage": "https://github.com/firecrawl/firecrawl-mcp-server",
+  "repo": "https://github.com/firecrawl/firecrawl-mcp-server"
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "notion",
+  "type": "mcp",
+  "name": "Notion",
+  "tagline": "Interact with Notion databases and pages",
+  "description": "Interact with Notion databases and pages. This official Notion MCP integration is installable through Cline.",
+  "author": {
+    "name": "Notion"
+  },
+  "tags": [
+    "productivity",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "notion",
+      "--transport",
+      "http",
+      "https://mcp.notion.com/mcp"
+    ],
+    "notes": "Transport from source catalog: Streamable HTTP. Auth from source catalog: OAuth. Official Notion hosted MCP docs."
+  },
+  "homepage": "https://developers.notion.com/guides/mcp/overview"
+}

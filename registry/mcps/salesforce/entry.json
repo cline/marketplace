@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "salesforce",
+  "type": "mcp",
+  "name": "Salesforce",
+  "tagline": "Access and modify Salesforce CRM data",
+  "description": "Access and modify Salesforce CRM data. This official Salesforce MCP integration is installable through Cline.",
+  "author": {
+    "name": "Salesforce"
+  },
+  "tags": [
+    "sales",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "salesforce",
+      "--",
+      "npx",
+      "-y",
+      "@salesforce/mcp",
+      "--orgs",
+      "DEFAULT_TARGET_ORG",
+      "--toolsets",
+      "orgs,metadata,data,users"
+    ],
+    "notes": "Transport from source catalog: stdio. Auth from source catalog: Salesforce CLI authorized org. Official Salesforce docs; official repo: https://github.com/salesforcecli/mcp."
+  },
+  "homepage": "https://developer.salesforce.com/docs/ai/agentforce/guide/mcp.html"
+}

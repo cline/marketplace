@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "paypal",
+  "type": "mcp",
+  "name": "PayPal",
+  "tagline": "Handle PayPal transactions",
+  "description": "Handle PayPal transactions. This official PayPal MCP integration is installable through Cline.",
+  "author": {
+    "name": "PayPal"
+  },
+  "tags": [
+    "finance",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "paypal",
+      "--transport",
+      "http",
+      "https://mcp.paypal.com/mcp"
+    ],
+    "notes": "Transport from source catalog: Streamable HTTP; SSE also listed in registry; local stdio package. Auth from source catalog: OAuth bearer token / PayPal access token. Official PayPal GitHub repo plus MCP registry entry for mcp.paypal.com."
+  },
+  "homepage": "https://github.com/paypal/paypal-mcp-server",
+  "repo": "https://github.com/paypal/paypal-mcp-server"
+}

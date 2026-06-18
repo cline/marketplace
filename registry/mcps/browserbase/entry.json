@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "browserbase",
+  "type": "mcp",
+  "name": "BrowserBase",
+  "tagline": "Browser automation and testing",
+  "description": "Browser automation and testing. This official Browserbase MCP integration is installable through Cline.",
+  "author": {
+    "name": "Browserbase"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "browserbase",
+      "--transport",
+      "http",
+      "https://mcp.browserbase.com/mcp"
+    ],
+    "env": [
+      {
+        "name": "BROWSERBASE_API_KEY",
+        "required": true,
+        "description": "Browserbase API key for local stdio usage.",
+        "url": "https://www.browserbase.com/settings"
+      },
+      {
+        "name": "BROWSERBASE_PROJECT_ID",
+        "required": true,
+        "description": "Browserbase project ID for local stdio usage.",
+        "url": "https://www.browserbase.com/settings"
+      }
+    ],
+    "notes": "Transport from source catalog: Streamable HTTP; local stdio via npx. Auth from source catalog: Browserbase API key and project ID for local; hosted auth via remote endpoint. Official Browserbase GitHub repo; remote config uses https://mcp.browserbase.com/mcp."
+  },
+  "homepage": "https://github.com/browserbase/mcp-server-browserbase",
+  "repo": "https://github.com/browserbase/mcp-server-browserbase"
+}

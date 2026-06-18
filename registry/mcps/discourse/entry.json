@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "discourse",
+  "type": "mcp",
+  "name": "Discourse",
+  "tagline": "Interact with Discourse",
+  "description": "Interact with Discourse. This official Discourse MCP integration is installable through Cline.",
+  "author": {
+    "name": "Discourse"
+  },
+  "tags": [
+    "research",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "discourse",
+      "--",
+      "npx",
+      "-y",
+      "@discourse/mcp@latest"
+    ],
+    "env": [
+      {
+        "name": "DISCOURSE_API_KEY",
+        "required": true,
+        "description": "Discourse API key for writes or private content access."
+      }
+    ],
+    "notes": "Transport from source catalog: stdio; optional HTTP. Auth from source catalog: None by default; Discourse API keys for writes/private access. Official Discourse GitHub repo; supports selecting/tethering to a Discourse site."
+  },
+  "homepage": "https://github.com/discourse/discourse-mcp",
+  "repo": "https://github.com/discourse/discourse-mcp"
+}

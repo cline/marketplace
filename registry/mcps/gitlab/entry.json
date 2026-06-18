@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "gitlab",
+  "type": "mcp",
+  "name": "GitLab",
+  "tagline": "Manage GitLab projects, issues, MRs, and CI/CD",
+  "description": "Manage GitLab projects, issues, MRs, and CI/CD. This official GitLab MCP integration is installable through Cline.",
+  "author": {
+    "name": "GitLab"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "gitlab",
+      "--transport",
+      "http",
+      "https://gitlab.com/api/v4/mcp"
+    ],
+    "notes": "Transport from source catalog: HTTP recommended; stdio via mcp-remote. Auth from source catalog: OAuth 2.0 Dynamic Client Registration. Official GitLab MCP server, beta, Premium/Ultimate."
+  },
+  "homepage": "https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server/"
+}

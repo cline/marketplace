@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "google-looker",
+  "type": "mcp",
+  "name": "Google Looker",
+  "tagline": "Interact with Google Looker",
+  "description": "Interact with Google Looker. This official Google Cloud / Looker MCP integration is installable through Cline.",
+  "author": {
+    "name": "Google Cloud / Looker"
+  },
+  "tags": [
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "google-looker",
+      "--",
+      "npx",
+      "@toolbox-sdk/server",
+      "--prebuilt=looker",
+      "--stdio"
+    ],
+    "notes": "Transport from source catalog: local stdio or HTTP via MCP Toolbox. Auth from source catalog: Google/application credentials. Google mcp-toolbox docs list Looker using MCP."
+  },
+  "homepage": "https://mcp-toolbox.dev/documentation/configuration/prebuilt-configs/",
+  "repo": "https://github.com/googleapis/mcp-toolbox"
+}

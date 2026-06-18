@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "todoist",
+  "type": "mcp",
+  "name": "Todoist",
+  "tagline": "Manage tasks and projects",
+  "description": "Manage tasks and projects. This official Doist / Todoist MCP integration is installable through Cline.",
+  "author": {
+    "name": "Doist / Todoist"
+  },
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "todoist",
+      "--transport",
+      "http",
+      "https://ai.todoist.net/mcp"
+    ],
+    "notes": "Transport from source catalog: Streamable HTTP; local stdio via npm package; mcp-remote bridge supported. Auth from source catalog: OAuth for hosted MCP; TODOIST_API_KEY for local/direct tool use. Screenshot-only row. Official Doist repo; hosted MCP endpoint supports OAuth and can be bridged with npx -y mcp-remote https://ai.todoist.net/mcp."
+  },
+  "homepage": "https://github.com/doist/todoist-mcp",
+  "repo": "https://github.com/doist/todoist-mcp"
+}

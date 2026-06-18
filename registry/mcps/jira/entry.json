@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "jira",
+  "type": "mcp",
+  "name": "Jira",
+  "tagline": "Interact with Jira projects",
+  "description": "Interact with Jira projects. This official Atlassian MCP integration is installable through Cline.",
+  "author": {
+    "name": "Atlassian"
+  },
+  "tags": [
+    "productivity",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "jira",
+      "--transport",
+      "http",
+      "https://mcp.atlassian.com/v1/mcp/authv2"
+    ],
+    "notes": "Transport from source catalog: Streamable HTTP. Auth from source catalog: OAuth 2.1; optional API token. Atlassian Rovo MCP supports Jira, Confluence, and Compass; old SSE endpoint deprecated after 2026-06-30."
+  },
+  "homepage": "https://support.atlassian.com/atlassian-rovo-mcp-server/docs/getting-started-with-the-atlassian-remote-mcp-server/"
+}

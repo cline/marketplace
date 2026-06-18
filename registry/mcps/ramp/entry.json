@@ -1,0 +1,48 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "ramp",
+  "type": "mcp",
+  "name": "Ramp",
+  "tagline": "Manage corporate spend with Ramp",
+  "description": "Manage corporate spend with Ramp. This official Ramp MCP integration is installable through Cline.",
+  "author": {
+    "name": "Ramp"
+  },
+  "tags": [
+    "finance",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "ramp",
+      "--",
+      "uv",
+      "run",
+      "ramp-mcp",
+      "-s",
+      "<scopes>"
+    ],
+    "env": [
+      {
+        "name": "RAMP_CLIENT_ID",
+        "required": true,
+        "description": "Ramp client ID for API access."
+      },
+      {
+        "name": "RAMP_CLIENT_SECRET",
+        "required": true,
+        "description": "Ramp client secret for API access."
+      },
+      {
+        "name": "RAMP_ENV",
+        "required": true,
+        "description": "Ramp environment, usually demo or prd."
+      }
+    ],
+    "notes": "Transport from source catalog: stdio. Auth from source catalog: client credentials. Ramp public repo; README copyright Ramp Business Corporation."
+  },
+  "homepage": "https://github.com/ramp-public/ramp_mcp",
+  "repo": "https://github.com/ramp-public/ramp_mcp"
+}
