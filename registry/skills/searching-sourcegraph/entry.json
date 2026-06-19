@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "searching-sourcegraph",
+  "type": "skill",
+  "name": "Searching Sourcegraph",
+  "tagline": "Search, navigate, debug, fix, and review code with Sourcegraph MCP tools",
+  "description": "Disciplined Sourcegraph search workflows for finding implementations, understanding systems, debugging issues, fixing bugs, navigating repositories, and reviewing code.",
+  "author": {
+    "name": "Sourcegraph"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/searching-sourcegraph",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "searching-sourcegraph"
+    ]
+  }
+}

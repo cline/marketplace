@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "review-team",
+  "type": "skill",
+  "name": "Review Team",
+  "tagline": "Run specialized reviewer agents for single-pass or iterative code reviews",
+  "description": "Launches focused review agents for correctness, security, architecture, conventions, simplicity, UX, reliability, telemetry, testing, compatibility, and documentation review.",
+  "author": {
+    "name": "Cline"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/review-team",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "review-team"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "skill-creator",
+  "type": "skill",
+  "name": "Skill Creator",
+  "tagline": "Create, improve, evaluate, benchmark, and tune agent skills",
+  "description": "Workflow for creating new skills, modifying existing skills, running evaluations, benchmarking performance, analyzing variance, and optimizing skill descriptions for trigger accuracy.",
+  "author": {
+    "name": "Cline"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/skill-creator",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "productivity",
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "skill-creator"
+    ]
+  }
+}

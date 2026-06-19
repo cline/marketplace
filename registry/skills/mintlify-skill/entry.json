@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "mintlify-skill",
+  "type": "skill",
+  "name": "Mintlify",
+  "tagline": "Build Mintlify documentation sites, pages, navigation, components, and API references",
+  "description": "Reference guidance for creating Mintlify documentation sites, configuring docs.json, adding pages and components, setting up navigation, and working with API references.",
+  "author": {
+    "name": "Mintlify"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/mintlify",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "research",
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "mintlify"
+    ]
+  }
+}

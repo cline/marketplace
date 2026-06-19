@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "attorney-assist",
+  "type": "skill",
+  "name": "Attorney Assist",
+  "tagline": "Route legal questions and risky contract reviews to LegalZoom attorneys",
+  "description": "Workflow guidance for connecting users with a LegalZoom attorney when they need legal consultation, attorney matching, or escalation from high-risk contract review findings.",
+  "author": {
+    "name": "LegalZoom"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/attorney-assist",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "business"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "attorney-assist"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "dr-bedrock",
+  "type": "skill",
+  "name": "Dr. Bedrock",
+  "tagline": "Troubleshoot AWS Bedrock auth, regions, model access, and Cline CLI provider setup",
+  "description": "Troubleshooting workflow for local AWS Bedrock authentication and region configuration in the Cline CLI, including AWS profiles, default credential chains, SSO, IAM, AccessDenied, model access, and provider config issues.",
+  "author": {
+    "name": "AWS"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/dr-bedrock",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "dr-bedrock"
+    ]
+  }
+}

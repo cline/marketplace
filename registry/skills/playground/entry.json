@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "playground",
+  "type": "skill",
+  "name": "Playground",
+  "tagline": "Create self-contained interactive HTML explorers with controls and live previews",
+  "description": "Workflow for creating single-file interactive HTML playgrounds that let users configure a topic visually, inspect a live preview, and copy out a prompt or generated result.",
+  "author": {
+    "name": "Cline"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/playground",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "creative",
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "playground"
+    ]
+  }
+}

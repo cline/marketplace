@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "dataproc-skills",
+  "type": "skill",
+  "name": "Dataproc Skills",
+  "tagline": "Inspect and operate Google Cloud Dataproc clusters and jobs",
+  "description": "Script-backed workflows for interacting with Google Cloud Dataproc clusters and jobs from an agent environment.",
+  "author": {
+    "name": "Google Cloud"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/dataproc-skills",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "data",
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "dataproc-skills"
+    ]
+  }
+}

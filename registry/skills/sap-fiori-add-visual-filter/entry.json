@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "sap-fiori-add-visual-filter",
+  "type": "skill",
+  "name": "SAP Fiori Visual Filter",
+  "tagline": "Add chart-based visual filters to SAP Fiori Elements with CAP or ABAP RAP",
+  "description": "Guidance for adding chart-based visual filters to SAP Fiori Elements filter bars and value helps using CAP or ABAP RAP.",
+  "author": {
+    "name": "SAP Fiori Tools"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/sap-fiori-add-visual-filter",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "software",
+    "business"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "sap-fiori-add-visual-filter"
+    ]
+  }
+}

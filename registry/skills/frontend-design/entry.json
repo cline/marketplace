@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "frontend-design",
+  "type": "skill",
+  "name": "Frontend Design",
+  "tagline": "Create distinctive, production-grade frontend interfaces with polished visual design",
+  "description": "Design guidance for building high-quality web components, pages, and applications with creative, polished frontend code that avoids generic AI aesthetics.",
+  "author": {
+    "name": "Cline"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/frontend-design",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "creative",
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "frontend-design"
+    ]
+  }
+}

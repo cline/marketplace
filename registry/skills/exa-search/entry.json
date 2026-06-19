@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "exa-search",
+  "type": "skill",
+  "name": "Exa Search",
+  "tagline": "Run deeper Exa-powered research for leads, literature, competitors, and broad searches",
+  "description": "Deep research workflow powered by Exa for lead generation, literature reviews, competitive analysis, and broad investigations that need more than a single search.",
+  "author": {
+    "name": "Exa"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/exa-search",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "research",
+    "sales"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "exa-search"
+    ]
+  }
+}

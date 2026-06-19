@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "teamcity-cli",
+  "type": "skill",
+  "name": "TeamCity CLI",
+  "tagline": "Inspect TeamCity builds, logs, jobs, queues, agents, pools, and pipelines",
+  "description": "Command-line guidance for working with TeamCity CI/CD, including builds, logs, jobs, queues, agents, pools, projects, pipelines, authentication, and troubleshooting build failures.",
+  "author": {
+    "name": "TeamCity"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/teamcity-cli",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "teamcity-cli"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "use-railway",
+  "type": "skill",
+  "name": "Use Railway",
+  "tagline": "Create, deploy, configure, and troubleshoot Railway infrastructure",
+  "description": "Operational guidance for Railway infrastructure, including signup, login, projects, services, databases, object storage buckets, deployments, environments, variables, domains, metrics, status checks, and agent tooling.",
+  "author": {
+    "name": "Railway"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/use-railway",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "use-railway"
+    ]
+  }
+}

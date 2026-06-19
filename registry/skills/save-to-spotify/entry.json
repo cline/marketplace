@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "save-to-spotify",
+  "type": "skill",
+  "name": "Save to Spotify",
+  "tagline": "Create polished audio episodes with narration, timelines, cover art, and Spotify cards",
+  "description": "Workflow for creating polished audio content and saving it to Spotify, including TTS narration, rich episode timelines, chapters, in-player images, external links, Spotify entity cards, cover images, and show management.",
+  "author": {
+    "name": "Spotify"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/save-to-spotify",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "creative"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "save-to-spotify"
+    ]
+  }
+}

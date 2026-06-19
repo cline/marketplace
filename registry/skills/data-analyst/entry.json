@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "data-analyst",
+  "type": "skill",
+  "name": "Data Analyst",
+  "tagline": "Run analyst-style ClickHouse investigations with SQL, charts, and exports",
+  "description": "Interactive data analyst workflow for ClickHouse-backed analytics, covering metric definition, schema discovery, bounded SQL, trend analysis, visualization, and data export.",
+  "author": {
+    "name": "Cline"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/data-analyst",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "data"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "data-analyst"
+    ]
+  }
+}

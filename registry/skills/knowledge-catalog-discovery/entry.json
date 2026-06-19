@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "knowledge-catalog-discovery",
+  "type": "skill",
+  "name": "Knowledge Catalog Discovery",
+  "tagline": "Discover data assets, entries, metadata, and aspect types in Knowledge Catalog",
+  "description": "Workflows for exploring Knowledge Catalog data assets, searching entries, looking up metadata, and inspecting aspect types to understand a data platform catalog.",
+  "author": {
+    "name": "Google Cloud"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/knowledge-catalog-discovery",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "data",
+    "memory"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "knowledge-catalog-discovery"
+    ]
+  }
+}

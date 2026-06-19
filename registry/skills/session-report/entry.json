@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "session-report",
+  "type": "skill",
+  "name": "Session Report",
+  "tagline": "Generate explorable HTML reports for Claude Code session usage",
+  "description": "Workflow for generating self-contained HTML reports from Claude Code transcripts, including token usage, cache behavior, subagents, skills, expensive prompts, and project-level breakdowns.",
+  "author": {
+    "name": "Cline"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/session-report",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "productivity",
+    "data"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "session-report"
+    ]
+  }
+}

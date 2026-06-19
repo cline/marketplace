@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "cosmosdb-best-practices",
+  "type": "skill",
+  "name": "Cosmos DB Best Practices",
+  "tagline": "Optimize Azure Cosmos DB data models, queries, SDK usage, and vector search",
+  "description": "Azure Cosmos DB performance and best-practice rules for NoSQL data modeling, partitioning, queries, SDK usage, vector search, and high-performance database operations.",
+  "author": {
+    "name": "Azure Cosmos DB"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/cosmosdb-best-practices",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "databases",
+    "software"
+  ],
+  "license": "MIT",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "cosmosdb-best-practices"
+    ]
+  }
+}

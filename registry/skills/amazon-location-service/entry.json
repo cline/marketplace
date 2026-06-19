@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "amazon-location-service",
+  "type": "skill",
+  "name": "Amazon Location Service",
+  "tagline": "Maps, places, routes, geocoding, geofences, and tracking for AWS apps",
+  "description": "Guidance for integrating Amazon Location Service into AWS applications, including MapLibre maps, geocoding, routing, places search, geofences, tracking, authentication, and SDK usage.",
+  "author": {
+    "name": "AWS Geospatial"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/amazon-location-service",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "software",
+    "data"
+  ],
+  "license": "MIT-0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "amazon-location-service"
+    ]
+  }
+}

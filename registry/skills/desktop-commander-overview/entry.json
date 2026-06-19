@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "desktop-commander-overview",
+  "type": "skill",
+  "name": "Desktop Commander Overview",
+  "tagline": "Use Desktop Commander for shells, files, REPLs, SSH, and local data workflows",
+  "description": "Overview guidance for Desktop Commander MCP capabilities, including persistent shells and REPLs, long-running processes, filesystem access, structured files, large local data files, ripgrep search, SSH, and cross-turn state.",
+  "author": {
+    "name": "Desktop Commander"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/desktop-commander-overview",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "productivity",
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "desktop-commander-overview"
+    ]
+  }
+}

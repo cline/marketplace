@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "firestore-data",
+  "type": "skill",
+  "name": "Firestore Data",
+  "tagline": "Explore Firestore collections and perform flexible NoSQL document operations",
+  "description": "Workflows for Firestore NoSQL document operations, collection hierarchy exploration, CRUD tasks, data retrieval, and structured querying.",
+  "author": {
+    "name": "Google Cloud"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/firestore-data",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "databases",
+    "data"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "firestore-data"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "sentry-cli",
+  "type": "skill",
+  "name": "Sentry CLI",
+  "tagline": "Investigate Sentry issues, events, traces, projects, and APIs from the terminal",
+  "description": "Agent guidance for using the Sentry CLI to inspect issues, events, traces, projects, organizations, authentication, and API schemas from the command line.",
+  "author": {
+    "name": "Sentry"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/sentry-cli",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "sentry-cli"
+    ]
+  }
+}
