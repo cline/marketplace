@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "gcp-to-aws",
+  "type": "skill",
+  "name": "GCP to AWS Migration",
+  "tagline": "Plan and generate migrations from Google Cloud and AI providers to AWS",
+  "description": "Six-phase migration workflow for moving workloads from Google Cloud Platform to AWS, including discovery, requirements, architecture, cost estimates, migration artifacts, Terraform, databases, containers, and AI provider migration guidance.",
+  "author": {
+    "name": "AWS"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/gcp-to-aws",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "software",
+    "business"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "gcp-to-aws"
+    ]
+  }
+}

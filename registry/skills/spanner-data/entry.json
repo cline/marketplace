@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "spanner-data",
+  "type": "skill",
+  "name": "Spanner Data",
+  "tagline": "Explore Spanner schemas and execute SQL against Google Cloud Spanner data",
+  "description": "Script-backed workflows for exploring Google Cloud Spanner database structure, discovering tables and graph schema objects, and executing custom SQL queries.",
+  "author": {
+    "name": "Google Cloud"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/spanner-data",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "databases",
+    "data"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "spanner-data"
+    ]
+  }
+}

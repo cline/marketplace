@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "building-pydantic-ai-agents",
+  "type": "skill",
+  "name": "Building Pydantic AI Agents",
+  "tagline": "Build, stream, test, and orchestrate agents with Pydantic AI",
+  "description": "Patterns for building production-grade Pydantic AI applications with tools, capabilities, deferred loading, structured output, streaming, testing, and multi-agent workflows.",
+  "author": {
+    "name": "Pydantic"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/building-pydantic-ai-agents",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "software"
+  ],
+  "license": "MIT",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "building-pydantic-ai-agents"
+    ]
+  }
+}

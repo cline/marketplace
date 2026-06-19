@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "site-specification",
+  "type": "skill",
+  "name": "Site Specification",
+  "tagline": "Extract site briefs, audience, tone, layout, and typography specs from simple prompts",
+  "description": "Guidance for turning a short website or theme request into a comprehensive site specification covering site type, audience, tone, brand keywords, layout requirements, and typography.",
+  "author": {
+    "name": "Cline"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/site-specification",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "creative",
+    "marketing"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "site-specification"
+    ]
+  }
+}

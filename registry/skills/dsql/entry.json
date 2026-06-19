@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "dsql",
+  "type": "skill",
+  "name": "Aurora DSQL",
+  "tagline": "Build, migrate, query, and tune applications on Amazon Aurora DSQL",
+  "description": "Guidance for building with Aurora DSQL, including schema management, migrations, query plans, data loading, IAM auth, multi-tenant patterns, compatibility validation, and application integration.",
+  "author": {
+    "name": "AWS"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/dsql",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "databases",
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "dsql"
+    ]
+  }
+}

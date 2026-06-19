@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "linear-sdk-scripting",
+  "type": "skill",
+  "name": "Linear SDK Scripting",
+  "tagline": "Automate Linear from the terminal with small Node scripts and @linear/sdk",
+  "description": "Guidance for reading, creating, updating, searching, and closing Linear issues, comments, projects, teams, cycles, labels, users, and workflow states by writing small Node scripts against the official @linear/sdk.",
+  "author": {
+    "name": "Linear"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/linear-sdk-scripting",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "productivity",
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "linear-sdk-scripting"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "oracledb",
+  "type": "skill",
+  "name": "Oracle DB",
+  "tagline": "Explore, query, manage, and monitor Oracle databases",
+  "description": "Script-backed workflows for Oracle databases, including SQL execution, schema metadata exploration, query performance analysis, active session monitoring, resource usage, storage, and object health.",
+  "author": {
+    "name": "Oracle"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/oracledb",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "databases",
+    "data"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "oracledb"
+    ]
+  }
+}

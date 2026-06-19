@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "math-olympiad",
+  "type": "skill",
+  "name": "Math Olympiad",
+  "tagline": "Solve and verify competition math problems with adversarial proof checking",
+  "description": "Workflow for solving IMO, Putnam, USAMO, AIME, olympiad, and competition math problems with fresh-context adversarial verification, calibrated confidence, and optional LaTeX output.",
+  "author": {
+    "name": "Cline"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/math-olympiad",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "research"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "math-olympiad"
+    ]
+  }
+}

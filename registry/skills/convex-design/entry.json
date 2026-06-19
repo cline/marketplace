@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "convex-design",
+  "type": "skill",
+  "name": "Convex Design",
+  "tagline": "Design reactive, type-safe backends on Convex",
+  "description": "Guidance for building production-grade Convex backends, covering schema design, queries, mutations, actions, indexes, auth, storage, scheduling, real-time features, mobile backends, and LLM workflows.",
+  "author": {
+    "name": "Convex"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/convex-design",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "software",
+    "databases"
+  ],
+  "license": "Complete terms in LICENSE.txt",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "convex-design"
+    ]
+  }
+}

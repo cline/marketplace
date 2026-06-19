@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "windsor-ai-business-data",
+  "type": "skill",
+  "name": "Windsor.ai Business Data",
+  "tagline": "Query marketing, sales, CRM, ecommerce, finance, and analytics connector data",
+  "description": "Business data workflow for Windsor.ai connectors, covering dashboards, reports, visualizations, schema exploration, marketing analytics, sales metrics, CRM, ecommerce, finance, and test data.",
+  "author": {
+    "name": "Windsor.ai"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/windsor-ai-business-data",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "data",
+    "business"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "windsor-ai-business-data"
+    ]
+  }
+}

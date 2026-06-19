@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "amplify-workflow",
+  "type": "skill",
+  "name": "AWS Amplify Gen2 Workflow",
+  "tagline": "Build full-stack web and mobile apps with AWS Amplify Gen2",
+  "description": "Validated AWS Amplify Gen2 patterns for auth, data, storage, functions, APIs, AI Kit, deployment workflows, and frontend integration across web and mobile frameworks.",
+  "author": {
+    "name": "Cline"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/amplify-workflow",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "amplify-workflow"
+    ]
+  }
+}

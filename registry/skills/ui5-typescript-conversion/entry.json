@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "ui5-typescript-conversion",
+  "type": "skill",
+  "name": "UI5 TypeScript Conversion",
+  "tagline": "Convert SAPUI5 and OpenUI5 projects to TypeScript",
+  "description": "Guidance for converting UI5, SAPUI5, and OpenUI5 projects to TypeScript while preserving comments, project setup, source code behavior, and tests.",
+  "author": {
+    "name": "SAP"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/ui5-typescript-conversion",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "ui5-typescript-conversion"
+    ]
+  }
+}

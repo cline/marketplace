@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "vibe-prospecting",
+  "type": "skill",
+  "name": "Vibe Prospecting",
+  "tagline": "Find company and contact data for lead lists, research, hiring, and sales workflows",
+  "description": "Prospecting workflow for finding company and contact data, roles, tech stacks, business events, website changes, intent data, lead lists, prospects, and talent across large business datasets.",
+  "author": {
+    "name": "Vibe Prospecting"
+  },
+  "homepage": "https://github.com/cline/skills/tree/main/skills/vibe-prospecting",
+  "repo": "https://github.com/cline/skills",
+  "tags": [
+    "sales",
+    "marketing"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": false,
+  "install": {
+    "args": [
+      "cline/skills",
+      "--skill",
+      "vibe-prospecting"
+    ]
+  }
+}
