@@ -3,27 +3,17 @@
   "id": "cline-sdk",
   "type": "skill",
   "name": "Cline SDK",
-  "tagline": "Build agents, custom tools, plugins, and production workflows with the Cline SDK",
-  "description": "Reference guidance for building with the Cline SDK, including Agent runtime, ClineCore sessions, custom tools, plugins, events, LLM providers, scheduling, multi-agent teams, and deployment.",
-  "author": {
-    "name": "Cline",
-    "url": "https://cline.bot"
-  },
+  "tagline": "Cline SDK reference docs for AI coding assistants",
+  "description": "Reference documentation for the Cline SDK: the Agent runtime, ClineCore sessions, custom tools, plugins, events, LLM providers, scheduling, multi-agent teams, and production deployment. Installs the whole skill from its GitHub repo.",
+  "author": { "name": "Cline", "url": "https://cline.bot" },
   "homepage": "https://docs.cline.bot/sdk",
-  "repo": "https://github.com/cline/skills",
+  "repo": "https://github.com/cline/sdk-skill",
   "icon": "./icon.svg",
-  "tags": [
-    "software",
-    "research"
-  ],
+  "tags": ["software", "research"],
   "license": "Apache-2.0",
   "verified": true,
   "featured": false,
   "install": {
-    "args": [
-      "cline/skills",
-      "--skill",
-      "cline-sdk"
-    ]
+    "args": ["cline/sdk-skill"]
   }
 }
