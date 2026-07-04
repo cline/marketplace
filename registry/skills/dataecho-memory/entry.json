@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "dataecho-memory",
+  "type": "skill",
+  "name": "DataEcho Memory",
+  "tagline": "Persistent agent memory across sessions, machines, and platforms",
+  "description": "Gives the agent durable memory on a private versioned cloud drive: a lightweight always-recalled index plus one fact per file, atomic concurrent-safe writes, full history with restore, and one-command scoped handoff of memory to another agent.",
+  "author": {
+    "name": "mohocp"
+  },
+  "homepage": "https://dataecho.ai",
+  "repo": "https://github.com/mohocp/dataecho",
+  "tags": [
+    "memory",
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "mohocp/dataecho",
+      "--skill",
+      "dataecho-memory"
+    ]
+  }
+}
