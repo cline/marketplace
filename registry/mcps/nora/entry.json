@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "nora",
+  "type": "mcp",
+  "name": "Nora",
+  "tagline": "Operate and monitor self-hosted AI agent fleets with Nora",
+  "description": "MCP server for Nora to deploy, monitor, and operate self-hosted OpenClaw and Hermes agent fleets on Docker or Kubernetes.",
+  "author": {
+    "name": "Nora",
+    "url": "https://github.com/solomon2773/nora"
+  },
+  "repo": "https://github.com/solomon2773/nora/tree/master/mcp-server",
+  "tags": [
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "nora",
+      "--",
+      "npx",
+      "-y",
+      "@noraai/mcp-server"
+    ],
+    "env": [
+      {
+        "name": "NORA_API_URL",
+        "required": true,
+        "description": "Base URL of the Nora deployment."
+      },
+      {
+        "name": "NORA_API_KEY",
+        "required": true,
+        "description": "Nora workspace API key."
+      }
+    ]
+  }
+}
