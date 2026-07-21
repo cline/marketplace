@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "route-github-agent-decisions",
+  "type": "skill",
+  "name": "Route GitHub Agent Decisions",
+  "tagline": "Route bounty, repository-agent, failed-CI, flake, and MCP drift decisions to evidence-backed checks",
+  "description": "Task-first router for six paid, read-only BountyVerdict decisions: check or rank public GitHub bounties, audit a repository's coding-agent instructions, diagnose a failed GitHub Actions run, decide whether to retry once or fix, and gate MCP tools/list schema changes. The skill contains no credentials and requires a valid unsigned selection preview before any explicitly authorized Base USDC payment.",
+  "author": {
+    "name": "Mimir's Lab",
+    "url": "https://github.com/Mimirs402"
+  },
+  "homepage": "https://github.com/Mimirs402/bountyverdict-mcp-skill/tree/main/skills/route-github-agent-decisions",
+  "repo": "https://github.com/Mimirs402/bountyverdict-mcp-skill",
+  "icon": "./icon.svg",
+  "tags": [
+    "software",
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "Mimirs402/bountyverdict-mcp-skill",
+      "--skill",
+      "route-github-agent-decisions"
+    ],
+    "notes": "Connects to the hosted BountyVerdict MCP. A wallet is only needed after a valid unsigned preview and explicit authorization for the displayed price."
+  }
+}
