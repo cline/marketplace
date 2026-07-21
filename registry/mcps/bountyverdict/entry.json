@@ -21,7 +21,7 @@
       "bountyverdict",
       "--transport",
       "http",
-      "https://bountyverdict-agent-production.mimirslab.workers.dev/mcp"
+      "https://bountyverdict-agent-production.mimirslab.workers.dev/mcp?source=cline-marketplace"
     ],
     "notes": "This server exposes six read-only tools. Connecting and listing tools are free. Valid unpaid calls return x402 v2 Base USDC payment requirements; invalid input is rejected before payment. A remote Cline connection does not provide a wallet: direct automatic payment requires an x402-aware MCP client, while standard hosts may use the versioned exact-HTTP handoff only through a separately installed and authorized x402 wallet."
   }
