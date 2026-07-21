@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "bountyverdict",
+  "type": "mcp",
+  "name": "BountyVerdict Agent Decision Tools",
+  "tagline": "Evidence-linked decision gates for coding agents, GitHub work, and MCP changes",
+  "description": "Remote, account-free MCP server for preflight decisions on public GitHub bounties, coding-agent repository instructions, GitHub Actions failures, flaky retries, and MCP tool-catalog changes. Six read-only tools return evidence-linked verdicts. A valid first unsigned call cannot charge and returns a structured selection preview plus the exact x402 USDC quote.",
+  "author": {
+    "name": "Mimir's Lab",
+    "url": "https://github.com/Mimirs402"
+  },
+  "homepage": "https://mimirs402.github.io/bountyverdict/",
+  "repo": "https://github.com/Mimirs402/bountyverdict",
+  "icon": "./icon.svg",
+  "tags": [
+    "software",
+    "security",
+    "research"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "bountyverdict",
+      "--transport",
+      "http",
+      "https://bountyverdict-agent-production.mimirslab.workers.dev/mcp?source=cline-marketplace"
+    ],
+    "notes": "Connecting and listing six read-only tools are free. A valid unsigned call cannot charge; it returns product, price, use boundaries, a free sample, and the exact x402 v2 Base USDC handoff. Only an explicitly authorized signed retry can settle. A standard remote Cline connection does not itself provide a wallet."
+  }
+}
