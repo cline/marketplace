@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "bountyverdict",
+  "type": "mcp",
+  "name": "BountyVerdict Agent Decision Tools",
+  "tagline": "Evidence-linked decision gates for coding agents, GitHub work, and MCP changes",
+  "description": "Remote, account-free MCP server for preflight decisions on public GitHub bounties, agent instructions, Actions failures, flaky retries, and MCP tool-catalog changes. Six read-only tools return evidence-linked verdicts and request x402 USDC payment only after valid input.",
+  "author": {
+    "name": "Cristian Moroaica",
+    "url": "https://github.com/cristianmoroaica"
+  },
+  "homepage": "https://github.com/cristianmoroaica/bountyverdict",
+  "repo": "https://github.com/cristianmoroaica/bountyverdict",
+  "icon": "./icon.svg",
+  "tags": ["software", "security", "research"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "bountyverdict",
+      "--transport",
+      "http",
+      "https://bountyverdict-agent-production.mimirslab.workers.dev/mcp"
+    ],
+    "notes": "This server exposes six read-only tools. Valid calls return x402 v2 payment requirements for $0.02-$0.40 USDC on Base; invalid input is rejected before payment. An authorized Agentic Wallet can execute the response's pinned payment.agentic_wallet argument vector after validating the exact URL, method, body, and atomic cap."
+  }
+}
