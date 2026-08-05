@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "outagedeck",
+  "type": "mcp",
+  "name": "OutageDeck",
+  "tagline": "Check provider status and incidents before debugging",
+  "description": "Check live status, active incidents, uptime history, and your provider stack across AI, cloud, developer, and SaaS services. Public read-only tools work without an account or API key.",
+  "author": { "name": "OutageDeck", "url": "https://outagedeck.com" },
+  "homepage": "https://outagedeck.com/?utm_source=cline&utm_medium=marketplace&utm_campaign=cline_marketplace",
+  "icon": "./icon.svg",
+  "tags": ["software", "data", "productivity"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["outagedeck", "--transport", "http", "https://outagedeck.com/api/mcp"],
+    "notes": "No API key is needed for public provider status, incident, and uptime tools. An optional OutageDeck account unlocks personalized stack and alert tools."
+  }
+}
