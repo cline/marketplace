@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "memory",
+  "type": "mcp",
+  "name": "Memory",
+  "tagline": "Persistent knowledge-graph memory across conversations",
+  "description": "The reference Memory MCP server maintains a local knowledge graph of entities, relations, and observations so the model can remember information across sessions.",
+  "author": {
+    "name": "Model Context Protocol",
+    "url": "https://modelcontextprotocol.io"
+  },
+  "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory",
+  "repo": "https://github.com/modelcontextprotocol/servers",
+  "tags": [
+    "memory"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "memory",
+      "--",
+      "npx",
+      "-y",
+      "@modelcontextprotocol/server-memory"
+    ]
+  }
+}
