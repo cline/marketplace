@@ -1,0 +1,46 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "obsidian",
+  "type": "mcp",
+  "name": "Obsidian",
+  "tagline": "Search, read, and edit notes in your Obsidian vault",
+  "description": "mcp-obsidian lets your AI client list, search, read, append to, and patch files in an Obsidian vault through the Local REST API community plugin.",
+  "author": {
+    "name": "Markus Pfundstein",
+    "url": "https://github.com/MarkusPfundstein"
+  },
+  "repo": "https://github.com/MarkusPfundstein/mcp-obsidian",
+  "tags": [
+    "memory",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "obsidian",
+      "--",
+      "uvx",
+      "mcp-obsidian"
+    ],
+    "env": [
+      {
+        "name": "OBSIDIAN_API_KEY",
+        "required": true,
+        "description": "API key from the Obsidian Local REST API plugin settings.",
+        "url": "https://github.com/coddingtonbear/obsidian-local-rest-api"
+      },
+      {
+        "name": "OBSIDIAN_HOST",
+        "required": false,
+        "description": "Obsidian Local REST API host (default: 127.0.0.1)."
+      },
+      {
+        "name": "OBSIDIAN_PORT",
+        "required": false,
+        "description": "Obsidian Local REST API port (default: 27124)."
+      }
+    ],
+    "notes": "Requires Obsidian with the Local REST API community plugin installed and enabled."
+  }
+}
