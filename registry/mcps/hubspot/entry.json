@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "hubspot",
+  "type": "mcp",
+  "name": "HubSpot",
+  "tagline": "Work with HubSpot CRM data from your AI client",
+  "description": "HubSpot's official remote MCP server gives your AI client access to CRM objects such as contacts, companies, deals, and tickets in your HubSpot account.",
+  "author": {
+    "name": "HubSpot",
+    "url": "https://www.hubspot.com"
+  },
+  "homepage": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+  "tags": [
+    "sales",
+    "marketing"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "hubspot",
+      "--transport",
+      "http",
+      "https://mcp.hubspot.com"
+    ]
+  }
+}
