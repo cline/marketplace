@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "ordinal",
+  "type": "mcp",
+  "name": "Ordinal",
+  "tagline": "Draft, schedule, and analyze social media content",
+  "description": "Ordinal's remote MCP server lets you draft posts, plan and schedule content, and analyze performance across your social channels from your AI tools.",
+  "author": {
+    "name": "Ordinal",
+    "url": "https://tryordinal.com"
+  },
+  "homepage": "https://docs.tryordinal.com/api/mcp",
+  "tags": [
+    "marketing"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "ordinal",
+      "--transport",
+      "http",
+      "https://app.tryordinal.com/api/mcp"
+    ]
+  }
+}
