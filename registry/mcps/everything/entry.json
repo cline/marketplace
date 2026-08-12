@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "everything",
+  "type": "mcp",
+  "name": "Everything",
+  "tagline": "Reference server that exercises every MCP feature",
+  "description": "The reference Everything MCP server demonstrates prompts, resources, tools, sampling, and the other MCP protocol features — useful for testing and developing MCP clients.",
+  "author": {
+    "name": "Model Context Protocol",
+    "url": "https://modelcontextprotocol.io"
+  },
+  "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/everything",
+  "repo": "https://github.com/modelcontextprotocol/servers",
+  "tags": [
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "everything",
+      "--",
+      "npx",
+      "-y",
+      "@modelcontextprotocol/server-everything"
+    ]
+  }
+}
