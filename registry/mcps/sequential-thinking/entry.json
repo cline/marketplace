@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "sequential-thinking",
+  "type": "mcp",
+  "name": "Sequential Thinking",
+  "tagline": "Structured, revisable step-by-step problem solving",
+  "description": "The reference Sequential Thinking MCP server gives the model a tool for breaking problems into numbered thoughts that can be revised and branched as reasoning progresses.",
+  "author": {
+    "name": "Model Context Protocol",
+    "url": "https://modelcontextprotocol.io"
+  },
+  "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking",
+  "repo": "https://github.com/modelcontextprotocol/servers",
+  "tags": [
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "sequential-thinking",
+      "--",
+      "npx",
+      "-y",
+      "@modelcontextprotocol/server-sequential-thinking"
+    ]
+  }
+}
