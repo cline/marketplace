@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "time",
+  "type": "mcp",
+  "name": "Time",
+  "tagline": "Current time and timezone conversion tools",
+  "description": "The reference Time MCP server provides the current time in any IANA timezone plus timezone conversion utilities.",
+  "author": {
+    "name": "Model Context Protocol",
+    "url": "https://modelcontextprotocol.io"
+  },
+  "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/time",
+  "repo": "https://github.com/modelcontextprotocol/servers",
+  "tags": [
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "time",
+      "--",
+      "uvx",
+      "mcp-server-time"
+    ]
+  }
+}
