@@ -1,0 +1,38 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "brave-search",
+  "type": "mcp",
+  "name": "Brave Search",
+  "tagline": "Web, local, image, video, and news search via Brave",
+  "description": "The official Brave Search MCP server provides web search, local business and place search, image, video, and news search, and AI-powered summarization through the Brave Search API.",
+  "author": {
+    "name": "Brave",
+    "url": "https://brave.com"
+  },
+  "repo": "https://github.com/brave/brave-search-mcp-server",
+  "tags": [
+    "research"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "brave-search",
+      "--",
+      "npx",
+      "-y",
+      "@brave/brave-search-mcp-server",
+      "--transport",
+      "stdio"
+    ],
+    "env": [
+      {
+        "name": "BRAVE_API_KEY",
+        "required": true,
+        "description": "Brave Search API key.",
+        "url": "https://brave.com/search/api/"
+      }
+    ]
+  }
+}
