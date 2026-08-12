@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "filesystem",
+  "type": "mcp",
+  "name": "Filesystem",
+  "tagline": "Read, write, and search files in allowed directories",
+  "description": "The reference Filesystem MCP server provides secure file operations — read, write, move, search, and directory listing — restricted to a configurable set of allowed directories.",
+  "author": {
+    "name": "Model Context Protocol",
+    "url": "https://modelcontextprotocol.io"
+  },
+  "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
+  "repo": "https://github.com/modelcontextprotocol/servers",
+  "tags": [
+    "software",
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "filesystem",
+      "--",
+      "npx",
+      "-y",
+      "@modelcontextprotocol/server-filesystem"
+    ],
+    "notes": "Append one or more allowed directories to the command (for example ~/projects) to grant the server access."
+  }
+}
