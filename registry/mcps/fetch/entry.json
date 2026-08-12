@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "fetch",
+  "type": "mcp",
+  "name": "Fetch",
+  "tagline": "Fetch web pages and convert them to markdown",
+  "description": "The reference Fetch MCP server retrieves a URL and converts its content to markdown so the model can read web pages efficiently, with pagination for long documents.",
+  "author": {
+    "name": "Model Context Protocol",
+    "url": "https://modelcontextprotocol.io"
+  },
+  "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch",
+  "repo": "https://github.com/modelcontextprotocol/servers",
+  "tags": [
+    "research",
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "fetch",
+      "--",
+      "uvx",
+      "mcp-server-fetch"
+    ]
+  }
+}
