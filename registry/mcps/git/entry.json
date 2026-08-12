@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "git",
+  "type": "mcp",
+  "name": "Git",
+  "tagline": "Read, search, and manipulate Git repositories",
+  "description": "The reference Git MCP server exposes tools to inspect status, diffs, logs, and branches, and to stage and commit changes in a Git repository.",
+  "author": {
+    "name": "Model Context Protocol",
+    "url": "https://modelcontextprotocol.io"
+  },
+  "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/git",
+  "repo": "https://github.com/modelcontextprotocol/servers",
+  "tags": [
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "git",
+      "--",
+      "uvx",
+      "mcp-server-git",
+      "--repository",
+      "<path>"
+    ],
+    "notes": "Replace <path> with the path to the Git repository the server should operate on."
+  }
+}
