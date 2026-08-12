@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "superhuman-mail",
+  "type": "mcp",
+  "name": "Superhuman Mail",
+  "tagline": "Work with your Superhuman Mail inbox",
+  "description": "Superhuman's remote MCP server lets your AI client work with your Superhuman Mail inbox, so you can triage, search, and draft email with your agent.",
+  "author": {
+    "name": "Superhuman",
+    "url": "https://www.superhuman.com"
+  },
+  "homepage": "https://www.superhuman.com",
+  "repo": "https://github.com/superhuman/mcp-mail",
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "superhuman-mail",
+      "--transport",
+      "http",
+      "https://mcp.mail.superhuman.com/mcp"
+    ]
+  }
+}
