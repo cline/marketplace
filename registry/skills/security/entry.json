@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "security",
+  "type": "skill",
+  "name": "Security",
+  "tagline": "Security best practices for secure coding, authentication, authorization, and data protection",
+  "description": "Security best practices for secure coding, authentication, authorization, and data protection.",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/security",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "security",
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "security"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "gitlab-skill",
+  "type": "skill",
+  "name": "GitLab",
+  "tagline": "Interact with GitLab repositories, merge requests, and APIs using the GITLAB_TOKEN environment variable",
+  "description": "Interact with GitLab repositories, merge requests, and APIs using the GITLAB_TOKEN environment variable.",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/gitlab",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "gitlab"
+    ],
+    "env": [
+      {
+        "name": "GITLAB_TOKEN",
+        "required": true,
+        "description": "GitLab personal access token",
+        "url": "https://gitlab.com/-/user_settings/personal_access_tokens"
+      }
+    ]
+  }
+}

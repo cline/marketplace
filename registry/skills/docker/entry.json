@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "docker",
+  "type": "skill",
+  "name": "Docker",
+  "tagline": "Run Docker commands within a container environment, including starting the Docker daemon and managing containers",
+  "description": "Run Docker commands within a container environment, including starting the Docker daemon and managing containers.",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/docker",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "docker"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "code-simplifier",
+  "type": "skill",
+  "name": "Code Simplifier",
+  "tagline": "Simplifies and refines code for clarity, consistency, and maintainability while preserving all functionality",
+  "description": "Simplifies and refines code for clarity, consistency, and maintainability while preserving all functionality. Analyzes recently modified code across three dimensions - code reuse, code quality, and efficiency - and provides actionable improvement suggestions.",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/code-simplifier",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "code-simplifier"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "ssh",
+  "type": "skill",
+  "name": "SSH",
+  "tagline": "Establish and manage SSH connections to remote machines, including key generation, configuration, and file transfers",
+  "description": "Establish and manage SSH connections to remote machines, including key generation, configuration, and file transfers.",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/ssh",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "ssh"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "github-skill",
+  "type": "skill",
+  "name": "GitHub",
+  "tagline": "Interact with GitHub repos, pull requests, issues, and workflows using GITHUB_TOKEN and the GitHub CLI",
+  "description": "Interact with GitHub repositories, pull requests, issues, and workflows using the GITHUB_TOKEN environment variable and GitHub CLI.",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/github",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "github"
+    ],
+    "env": [
+      {
+        "name": "GITHUB_TOKEN",
+        "required": true,
+        "description": "GitHub personal access token for API and gh CLI calls",
+        "url": "https://github.com/settings/tokens"
+      }
+    ]
+  }
+}

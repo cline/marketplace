@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "linear-skill",
+  "type": "skill",
+  "name": "Linear",
+  "tagline": "Query issues, update status, create tickets, and manage Linear workflows with the Linear API",
+  "description": "Interact with Linear project management - query issues, update status, create tickets, and manage workflows using the Linear GraphQL API.",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/linear",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "productivity",
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "linear"
+    ],
+    "env": [
+      {
+        "name": "LINEAR_API_KEY",
+        "required": true,
+        "description": "Linear personal API key",
+        "url": "https://linear.app/settings/api"
+      }
+    ]
+  }
+}

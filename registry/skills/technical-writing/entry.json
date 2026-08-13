@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "technical-writing",
+  "type": "skill",
+  "name": "Technical Writing",
+  "tagline": "Guides technical explanations toward flowing, direct, conversational prose",
+  "description": "Guides technical explanations toward flowing, direct, conversational prose.",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/technical-writing",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "research",
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "technical-writing"
+    ]
+  }
+}
