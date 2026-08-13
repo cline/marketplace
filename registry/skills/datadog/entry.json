@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "datadog",
+  "type": "skill",
+  "name": "Datadog",
+  "tagline": "Query and analyze Datadog logs, metrics, APM traces, and monitors using the Datadog API",
+  "description": "Query and analyze Datadog logs, metrics, APM traces, and monitors using the Datadog API.",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/datadog",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "data",
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "datadog"
+    ],
+    "env": [
+      {
+        "name": "DD_API_KEY",
+        "required": true,
+        "description": "Datadog API key",
+        "url": "https://app.datadoghq.com/organization-settings/api-keys"
+      },
+      {
+        "name": "DD_APP_KEY",
+        "required": true,
+        "description": "Datadog application key",
+        "url": "https://app.datadoghq.com/organization-settings/application-keys"
+      }
+    ]
+  }
+}

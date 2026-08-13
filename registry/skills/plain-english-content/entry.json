@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "plain-english-content",
+  "type": "skill",
+  "name": "Plain English Content",
+  "tagline": "Rewrite content in plain English — active voice, front-loaded, accessible prose",
+  "description": "Applies plain English content design principles (GOV.UK style: active voice, front-loaded structure, sentence case, no bold or italics for emphasis) to reports, research write-ups, guidance, documentation, summaries, and public-facing prose.",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/plain-english-content",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "research",
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "plain-english-content"
+    ]
+  }
+}

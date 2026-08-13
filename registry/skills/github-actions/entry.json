@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "github-actions",
+  "type": "skill",
+  "name": "GitHub Actions",
+  "tagline": "Create, debug, and test GitHub Actions workflows and custom actions",
+  "description": "Create, debug, and test GitHub Actions workflows and custom actions.",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/github-actions",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "github-actions"
+    ],
+    "env": [
+      {
+        "name": "GITHUB_TOKEN",
+        "required": true,
+        "description": "GitHub personal access token for API and gh CLI calls",
+        "url": "https://github.com/settings/tokens"
+      }
+    ]
+  }
+}

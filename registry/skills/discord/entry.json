@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "discord",
+  "type": "skill",
+  "name": "Discord",
+  "tagline": "Build and automate Discord integrations (bots, webhooks, slash commands, and REST API workflows)",
+  "description": "Build and automate Discord integrations (bots, webhooks, slash commands, and REST API workflows).",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/discord",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "discord"
+    ],
+    "env": [
+      {
+        "name": "DISCORD_BOT_TOKEN",
+        "required": true,
+        "description": "Discord bot token",
+        "url": "https://discord.com/developers/applications"
+      }
+    ]
+  }
+}

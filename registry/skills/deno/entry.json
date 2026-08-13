@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "deno",
+  "type": "skill",
+  "name": "Deno",
+  "tagline": "Initialize and work with Deno projects — dependencies, tasks, permissions, and built-in tooling",
+  "description": "Initialize and work with Deno projects, add/remove dependencies (JSR and npm), run tasks and scripts with appropriate permissions, and use built-in tooling (fmt/lint/test).",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/deno",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "deno"
+    ]
+  }
+}
