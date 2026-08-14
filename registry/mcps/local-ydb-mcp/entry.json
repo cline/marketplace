@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "local-ydb-mcp",
+  "type": "mcp",
+  "name": "Local YDB MCP",
+  "tagline": "Operate Docker-based local YDB deployments with plan-first safety gates",
+  "description": "Inspect, bootstrap, diagnose, harden, migrate, and upgrade configured local YDB deployments locally or over SSH. Mutating tools return a plan first and execute only when `confirm: true` is supplied.",
+  "author": {
+    "name": "astandrik",
+    "url": "https://github.com/astandrik"
+  },
+  "homepage": "https://local-ydb-toolkit.ydb-qdrant.tech/",
+  "repo": "https://github.com/astandrik/local-ydb-toolkit",
+  "icon": "https://raw.githubusercontent.com/astandrik/local-ydb-toolkit/main/assets/icon.svg",
+  "tags": [
+    "databases",
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "local-ydb",
+      "--",
+      "npx",
+      "--yes",
+      "@astandrik/local-ydb-mcp@0.15.4"
+    ],
+    "env": [
+      {
+        "name": "LOCAL_YDB_TOOLKIT_CONFIG",
+        "required": false,
+        "description": "Absolute path to a local-ydb-toolkit config JSON file"
+      },
+      {
+        "name": "LOCAL_YDB_MCP_CONTENT_FORMAT",
+        "required": false,
+        "description": "Optional response text format: json or toon"
+      }
+    ],
+    "notes": "Requires Node.js 20.19 or newer plus npm/npx. Do not paste credentials into marketplace fields; keep them in local config or password files and pass an absolute config path."
+  }
+}
