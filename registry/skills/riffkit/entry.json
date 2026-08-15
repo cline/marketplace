@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "riffkit",
+  "type": "skill",
+  "name": "Riffkit",
+  "tagline": "Rebuild a short video that already performed into your own product video",
+  "description": "Give one source — a TikTok link, an uploaded video, or an analyzed template — and it riffs that video's formula (hook, pacing, emotional beats) into a new video for your product, with optional digital character, product placement, and 9 output languages. Needs a Riffkit account; rendering consumes paid balance.",
+  "author": {
+    "name": "Riffkit"
+  },
+  "homepage": "https://riffkit.ai",
+  "repo": "https://github.com/riffkit/skill",
+  "tags": [
+    "creative",
+    "sales"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "riffkit/skill",
+      "--skill",
+      "riffkit"
+    ]
+  }
+}
