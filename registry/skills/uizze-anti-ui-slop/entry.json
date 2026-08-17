@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "uizze-anti-ui-slop",
+  "type": "skill",
+  "name": "UIZZE — Stop UI Slop",
+  "tagline": "Stop Cline from shipping the same generic UI again",
+  "description": "A free UI finish-gate workflow for Cline that forces product-specific design contracts, required interaction states, existing design-system reuse, rendered inspection, and a hard pre-ship review instead of accepting interchangeable card grids and happy-path mockups. The optional full UIZZE MCP adds live UI-reference search across 800,000+ real web and iOS screens, validation, audits, and rendered critique.",
+  "author": {
+    "name": "UIZZE",
+    "url": "https://uizze.com"
+  },
+  "homepage": "https://uizze.com",
+  "repo": "https://github.com/uizze/uizze",
+  "tags": ["creative", "software", "research"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["uizze/uizze", "--skill", "anti-ui-slop"]
+  }
+}
