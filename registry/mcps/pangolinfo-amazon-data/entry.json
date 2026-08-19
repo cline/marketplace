@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "pangolinfo-amazon-data",
+  "type": "mcp",
+  "name": "Pangolinfo Amazon Data",
+  "tagline": "Research Amazon products, markets, search trends, and IP risk with 19 live data tools",
+  "description": "The official Pangolinfo Amazon Data MCP gives Cline real-time, structured commerce intelligence without browser automation or proxy maintenance. Its 19 read-only business tools cover Amazon product details, keyword search, reviews, sellers, Best Sellers, New Releases, categories and niche analysis; Amazon Rufus shopping recommendations; Google SERP, AI Overviews, Trends and Maps; and WIPO design-patent and related US litigation-risk research. A Pangolinfo API key is required.",
+  "author": {
+    "name": "Pangolinfo",
+    "url": "https://www.pangolinfo.com/"
+  },
+  "homepage": "https://www.pangolinfo.com/amazon-data-mcp/",
+  "repo": "https://github.com/Pangolin-spg/pangolinfo-mcp",
+  "icon": "./icon.png",
+  "tags": [
+    "data",
+    "research",
+    "business",
+    "marketing"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "pangolinfo-amazon-data",
+      "--transport",
+      "http",
+      "https://mcp.pangolinfo.com/mcp",
+      "--header",
+      "Authorization: Bearer <PANGOLINFO_API_KEY>"
+    ],
+    "notes": "Create a Pangolinfo API key at https://tool.pangolinfo.com, replace <PANGOLINFO_API_KEY> during installation, and keep the key private. Product details and setup help: https://www.pangolinfo.com/amazon-data-mcp/"
+  }
+}
