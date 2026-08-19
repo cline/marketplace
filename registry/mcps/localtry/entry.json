@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "LocalTry AI CRM",
   "tagline": "Run and customize a tenant-isolated CRM from your AI assistant",
-  "description": "A remote OAuth-secured MCP server for operating a LocalTry business workspace. Manage customers, leads, jobs, schedules, estimates, invoices, reviews, documents, marketing, workflows, and tenant-owned workspace pages without exposing another business's data.",
+  "description": "A remote OAuth-secured MCP server for operating a LocalTry business workspace. Manage customers, leads, jobs, schedules, estimates, invoices, reviews, documents, marketing, workflows, and tenant-owned workspace pages without exposing another business's data. A dedicated LocalTry ChatGPT plugin is coming soon.",
   "author": { "name": "LocalTry", "url": "https://localtry.com" },
   "homepage": "https://localtry.com/mcp",
   "repo": "https://github.com/philly88r/localtry-mcp",
