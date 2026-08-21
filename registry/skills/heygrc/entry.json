@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "heygrc",
+  "type": "skill",
+  "name": "heyGRC",
+  "tagline": "Install the heyGRC GitHub App for ISO 27001, SOC 2, GDPR, and EU AI Act PR review",
+  "description": "Setup skill that walks you through installing the heyGRC GitHub App so pull requests get compliance review (ISO 27001, SOC 2, GDPR, EU AI Act) as inline findings, a neutral check run, and a sticky summary. Public repos are free. Reviews run server-side; this skill does not review code locally.",
+  "author": {
+    "name": "Better ISMS"
+  },
+  "homepage": "https://heygrc.com",
+  "repo": "https://github.com/better-isms/heygrc-plugin",
+  "tags": [
+    "security",
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "better-isms/heygrc-plugin",
+      "--skill",
+      "heyGRC Compliance Review"
+    ]
+  }
+}
