@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "jueban-buddhist-companion",
+  "type": "mcp",
+  "name": "Jueban · Buddhist Companion",
+  "tagline": "Search and explain source-backed Buddhist scripture",
+  "description": "Connect Cline to Jueban's anonymous, read-only MCP server. Search traceable Buddhist scripture, verify and explain passages with source text kept separate from modern explanation, find relevant passages for a life situation, and create one-time reading, listening, or viewing practices.",
+  "author": {
+    "name": "AssetGrid LLC",
+    "url": "https://jueban.online/"
+  },
+  "tags": [
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "jueban",
+      "--transport",
+      "http",
+      "https://jueban.online/mcp"
+    ]
+  },
+  "homepage": "https://jueban.online/",
+  "repo": "https://github.com/assetgrid-llc/jueban-buddhist-companion",
+  "license": "Apache-2.0"
+}
