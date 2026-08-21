@@ -21,7 +21,7 @@
     "args": [
       "better-isms/heygrc-plugin",
       "--skill",
-      "heyGRC Compliance Review"
+      "review"
     ]
   }
 }
