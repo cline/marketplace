@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "use-404-directory",
+  "type": "skill",
+  "name": "Use 404.directory",
+  "tagline": "Search official technical docs and discover trusted read-only MCP tools",
+  "description": "An Agent workflow for using the public 404.directory MCP server: search current OpenAI, Microsoft Learn, AWS, and Cloudflare documentation; verify deployments with structured evidence; understand webpages; and discover, evaluate, and safely invoke trusted read-only MCP tools.",
+  "author": {
+    "name": "MM-sheng",
+    "url": "https://github.com/MM-sheng"
+  },
+  "homepage": "https://www.skills.sh/mm-sheng/404-directory/use-404-directory",
+  "repo": "https://github.com/MM-sheng/404-directory",
+  "tags": ["research", "software", "security"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "MM-sheng/404-directory",
+      "--skill",
+      "use-404-directory"
+    ],
+    "notes": "The skill uses the hosted public MCP endpoint at https://404.directory/mcp. No account or API key is required."
+  }
+}
