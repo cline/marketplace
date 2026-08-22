@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "pocket-drives",
+  "type": "mcp",
+  "name": "Pocket Drives",
+  "tagline": "Search luxury, exotic, and EV rentals from independent hosts",
+  "description": "Remote Streamable HTTP MCP for Pocket Drives, a peer-to-peer luxury, exotic, and EV rental marketplace. Search inventory, autocomplete locations, check availability, and get quotes. Independent hosts; PocketList Inc builds the platform. Booking finishes in the iOS app. No auth required.",
+  "author": { "name": "PocketList Inc", "url": "https://pocketdrives.ai" },
+  "homepage": "https://pocketdrives.ai",
+  "repo": "https://github.com/RevList/pocket-drives-mcp",
+  "icon": "https://github.com/RevList.png",
+  "tags": ["business"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["pocket-drives", "--transport", "http", "https://pocketdrives.ai/mcp"],
+    "notes": "Booking finishes in the Pocket Drives iOS app. This server searches, quotes, and browses; it does not book."
+  }
+}
