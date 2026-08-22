@@ -12,6 +12,7 @@
     { "id": "creative", "label": "Creative & Design" },
     { "id": "memory", "label": "Memory & Knowledge" },
     { "id": "security", "label": "Security" },
-    { "id": "databases", "label": "Databases" }
+    { "id": "databases", "label": "Databases" },
+    { "id": "social", "label": "Social & Community" }
   ]
 }
