@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "famulor",
+  "type": "mcp",
+  "name": "Famulor",
+  "tagline": "Operate AI assistants and omnichannel communication workflows",
+  "description": "Build and operate AI voice assistants, review cross-channel conversation history, and manage calls, campaigns, messaging, knowledge, and automations through Famulor's tenant-safe hosted MCP server.",
+  "author": {
+    "name": "BEK Service GmbH",
+    "url": "https://www.famulor.io"
+  },
+  "homepage": "https://www.famulor.io",
+  "repo": "https://github.com/bekservice/Famulor-Skill",
+  "icon": "https://app.famulor.io/famulor-mcp-logo.svg",
+  "tags": [
+    "productivity",
+    "business",
+    "sales",
+    "marketing"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "famulor",
+      "--transport",
+      "http",
+      "https://app.famulor.io/mcp"
+    ],
+    "notes": "Sign in with browser OAuth and authorize the target workspace. No API key is pasted into Cline configuration."
+  }
+}
