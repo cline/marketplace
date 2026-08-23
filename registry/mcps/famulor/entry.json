@@ -3,14 +3,14 @@
   "id": "famulor",
   "type": "mcp",
   "name": "Famulor",
-  "tagline": "Operate AI assistants and omnichannel communication workflows",
-  "description": "Build and operate AI voice assistants, review cross-channel conversation history, and manage calls, campaigns, messaging, knowledge, and automations through Famulor's tenant-safe hosted MCP server.",
+  "tagline": "Review AI assistants and omnichannel conversation history",
+  "description": "Review Famulor assistant configurations, saved versions, available catalogs, and omnichannel call, messaging, and email history through an exact 11-tool read-only profile.",
   "author": {
     "name": "BEK Service GmbH",
     "url": "https://www.famulor.io"
   },
   "homepage": "https://www.famulor.io",
-  "repo": "https://github.com/bekservice/Famulor-Skill",
+  "repo": "https://github.com/bekservice/Famulor-MCP",
   "icon": "https://app.famulor.io/famulor-mcp-logo.svg",
   "tags": [
     "productivity",
@@ -18,7 +18,7 @@
     "sales",
     "marketing"
   ],
-  "license": "MIT",
+  "license": "PROPRIETARY",
   "verified": false,
   "featured": false,
   "install": {
@@ -26,8 +26,8 @@
       "famulor",
       "--transport",
       "http",
-      "https://app.famulor.io/mcp"
+      "https://app.famulor.io/mcp?profile=assistant-history"
     ],
-    "notes": "Sign in with browser OAuth and authorize the target workspace. No API key is pasted into Cline configuration."
+    "notes": "Sign in with browser OAuth and approve assistants:read and calls:read for the target workspace. This profile cannot create, update, delete, send, call, purchase, run campaigns, manage telephony, or access billing."
   }
 }
