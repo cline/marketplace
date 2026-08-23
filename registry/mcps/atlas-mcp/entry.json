@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "atlas-mcp",
+  "type": "mcp",
+  "name": "Atlas Verified",
+  "tagline": "Organic supply chain verification — certification, OFAC, FDA",
+  "description": "Remote Streamable HTTP MCP for Atlas Verified. AI-powered organic supply chain verification: certification, OFAC, and FDA import checks. Requires Authorization header. Official registry: ai.atlasverified/atlas-mcp.",
+  "author": { "name": "Atlas Verified", "url": "https://atlasverified.ai" },
+  "homepage": "https://atlasverified.ai",
+  "repo": "https://github.com/lifeofjer/atlas-mcp",
+  "icon": "https://github.com/lifeofjer.png",
+  "tags": ["business"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["atlas-mcp", "--transport", "http", "https://api.atlasverified.ai/mcp"],
+    "notes": "Requires Authorization header (Bearer API key). Streamable HTTP remote MCP."
+  }
+}
