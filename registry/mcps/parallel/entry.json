@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "parallel",
+  "type": "mcp",
+  "name": "Parallel Search",
+  "tagline": "Web search and page extraction built for AI agents",
+  "description": "Search the web and extract relevant content from URLs with Parallel's hosted MCP server. No API key is required.",
+  "author": {
+    "name": "Parallel",
+    "url": "https://parallel.ai"
+  },
+  "tags": [
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "parallel",
+      "--transport",
+      "http",
+      "https://search.parallel.ai/mcp"
+    ]
+  },
+  "homepage": "https://docs.parallel.ai/integrations/mcp/search-mcp"
+}
