@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "uizze",
+  "type": "mcp",
+  "name": "UIZZE — UI references for coding agents",
+  "tagline": "Search focused UI references when the product needs them",
+  "description": "The authenticated UIZZE MCP gives Cline focused UI reference search and hosted design-material search across 800,000+ real web and iOS screens. Use it alongside the free MIT anti-ui-slop Skill, which runs locally without an account; the Skill and GitHub Action are separate.",
+  "author": {
+    "name": "UIZZE",
+    "url": "https://uizze.com"
+  },
+  "homepage": "https://uizze.com",
+  "repo": "https://github.com/uizze/uizze",
+  "tags": [
+    "creative",
+    "software",
+    "research"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "uizze",
+      "--transport",
+      "http",
+      "https://uizze.com/mcp"
+    ],
+    "notes": "Requires UIZZE authentication. The MCP exposes find_ui_references and find_ui_materials. Install the free Skill separately with npx skills add https://uizze.com --skill anti-ui-slop."
+  },
+  "icon": "https://uizze.com/brand/icons/uizze-web-app-icon-512x512.png"
+}
