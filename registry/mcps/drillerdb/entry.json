@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "drillerdb",
+  "type": "mcp",
+  "name": "DrillerDB",
+  "tagline": "Run drilling operations from Cline with secure access to jobs, customers, schedules, invoices, and well logs",
+  "description": "Connect Cline to your DrillerDB company through the managed first-party MCP server. Use 45 tools to inspect projects, customers, proposals, invoices, schedules, crews, equipment, field reports, and well logs. Every request is OAuth-authenticated, tenant-scoped, rate-limited, and audit-logged; higher-risk writes require human approval in DrillerDB before they run.",
+  "author": {
+    "name": "DrillerDB, LLC",
+    "url": "https://drillerdb.com"
+  },
+  "homepage": "https://drillerdb.com/connectors/mcp",
+  "repo": "https://github.com/CraigVG/drillerdb-mcp",
+  "icon": "https://drillerdb.com/press/drillerdb-logo-icon.png",
+  "tags": ["business", "data", "finance"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "drillerdb",
+      "--transport",
+      "http",
+      "https://mcp.drillerdb.com"
+    ],
+    "notes": "Sign in with your existing DrillerDB account when Cline opens the OAuth authorization flow. Access is limited to your own DrillerDB company and can be revoked at any time."
+  }
+}
