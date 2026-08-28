@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "vestige",
+  "type": "mcp",
+  "name": "Vestige",
+  "tagline": "Local-first Rust MCP memory that answers what-caused-this via causal Backfill",
+  "description": "Vestige is local-first Rust MCP memory for coding agents.\nMost memory systems answer what-is-like-this; Vestige answers what-caused-this via backward-only causal Backfill.\nShared entities are the join key; similarity is excluded from ranking.\n\nAdvertised tools: recall, smart_ingest, backfill. Prefer recall. Do not advertise search (hidden v2.2 alias).\n\nProof: no LLM in the memory path, exact FSRS-6 decay, local-first. Proven on local/synthetic traces. Not a production claim.\n\nLaunch via npx with package vestige-mcp-server version 2.3.0; binary name is vestige-mcp.\nGUIs do not inherit PATH or expand tilde; paste absolute path from which vestige-mcp for global installs.\nLinux note: wait for v2.4.0 before using the global binary on older glibc distros.\nmacOS works with the current package.\n\nPer-project store uses an absolute data-dir path.\nUnknown CLI flags exit with status 1.\n\nPackage page: https://www.npmjs.com/package/vestige-mcp-server\n",
+  "author": {
+    "name": "Sam Valladares",
+    "url": "https://github.com/samvallad33"
+  },
+  "homepage": "https://github.com/samvallad33/vestige",
+  "repo": "https://github.com/samvallad33/vestige",
+  "icon": "./icon.png",
+  "tags": [
+    "memory",
+    "software"
+  ],
+  "license": "AGPL-3.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "vestige",
+      "--",
+      "npx",
+      "-y",
+      "vestige-mcp-server"
+    ],
+    "notes": "Preferred launch uses npx with package vestige-mcp-server. Alternative: paste absolute path from which vestige-mcp into Cline MCP settings. Per-project store uses absolute data-dir. Ubuntu 22.04 and Debian 12: wait for v2.4.0 for the global binary. Proven local/synthetic only. Advertised tools: recall, smart_ingest, backfill."
+  }
+}
