@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "mcp-web-validator",
+  "type": "mcp",
+  "name": "Web Validator by DigestSEO",
+  "tagline": "Validate HTML, CSS, technical SEO, JSON-LD, links, and responsive screenshots",
+  "description": "A local stdio MCP server for developer-facing web quality checks. Validate HTML and CSS, inspect technical SEO and accessibility signals, check JSON-LD syntax and public links, produce combined reports, and capture responsive screenshots for user-authorized pages or local files.",
+  "author": {
+    "name": "Tomi Šeregi",
+    "url": "https://tomiseregi.si"
+  },
+  "homepage": "https://digestseo.com/validator-mcp/",
+  "repo": "https://github.com/AKzar1el/mcp-web-validator",
+  "icon": "https://raw.githubusercontent.com/AKzar1el/mcp-web-validator/main/icon.png",
+  "tags": ["software", "marketing"],
+  "license": "MIT",
+  "verified": false,
+  "install": {
+    "args": ["mcp-web-validator", "--", "npx", "-y", "mcp-web-validator"],
+    "notes": "Requires Node.js 22.12 or newer. No API key is required for the local stdio server."
+  }
+}
