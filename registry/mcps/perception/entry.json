@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "perception",
+  "type": "mcp",
+  "name": "Perception",
+  "tagline": "Real-time digital asset narrative intelligence for AI agents",
+  "description": "Perception gives AI agents access to crypto's narrative record through 31 MCP tools. Search and analyze reporting, topics, entities, sentiment, and market narratives across more than 1,000 curated media sources and 15 years of history.",
+  "author": {
+    "name": "Perception",
+    "url": "https://perception.to"
+  },
+  "homepage": "https://perception.to/integrations/mcp",
+  "tags": [
+    "finance",
+    "data",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "perception",
+      "--transport",
+      "http",
+      "https://mcp.perception.to/mcp"
+    ],
+    "notes": "Perception uses OAuth. Cline will open a browser window to authorize access when connecting."
+  }
+}
