@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "living-stack",
+  "type": "mcp",
+  "name": "Living Stack",
+  "tagline": "Make agent work prove itself before it claims completion.",
+  "description": "A local-first proof and control plane for AI agents: freeze scope and budget before action, bind outcomes to typed evidence, recover from signed checkpoints, and export a cryptographically signed trace. It exposes 14 bounded tools and no arbitrary shell, browser, or network executor.",
+  "author": {
+    "name": "Living Stack",
+    "url": "https://living-stack-mcp.pages.dev/"
+  },
+  "homepage": "https://living-stack-mcp.pages.dev/",
+  "repo": "https://github.com/equinoxaifinance-rgb/living-stack-mcp",
+  "icon": "https://living-stack-mcp.pages.dev/living-stack-icon.png",
+  "tags": [
+    "security",
+    "software",
+    "memory"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "living-stack",
+      "--",
+      "npx",
+      "-y",
+      "github:equinoxaifinance-rgb/living-stack-mcp#v0.3.1-beta.1"
+    ],
+    "notes": "Requires Node.js 22+. State stays local by default; review the public security boundary before first use."
+  }
+}
