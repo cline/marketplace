@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "magic-hour",
+  "type": "mcp",
+  "name": "Magic Hour",
+  "tagline": "Generate and edit images, video, and audio with Magic Hour",
+  "description": "Generate and edit images, video, and audio through Magic Hour's hosted MCP server. It exposes 44 OpenAPI-backed tools plus polling and upload helpers for production media workflows.",
+  "author": {
+    "name": "Magic Hour",
+    "url": "https://magichour.ai"
+  },
+  "homepage": "https://magichour.ai/mcp",
+  "repo": "https://github.com/magichourhq/magic-hour-mcp",
+  "icon": "./icon.png",
+  "tags": ["creative"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "magic-hour",
+      "--transport",
+      "http",
+      "https://mcp.magichour.ai/",
+      "--header",
+      "Authorization: Bearer ${MAGIC_HOUR_API_KEY}"
+    ],
+    "env": [
+      {
+        "name": "MAGIC_HOUR_API_KEY",
+        "required": true,
+        "description": "Magic Hour API key for authenticated tool calls.",
+        "url": "https://magichour.ai/settings/developer"
+      }
+    ],
+    "notes": "Tool discovery is public. Tool calls require a Magic Hour API key. Generation uses credits and returns asynchronous project IDs; use the wait helpers to poll for completed downloads."
+  }
+}
