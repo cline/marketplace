@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "postsyncer",
+  "type": "skill",
+  "name": "PostSyncer",
+  "tagline": "Workflow guide for scheduling social posts with the PostSyncer MCP server",
+  "description": "Teaches the agent the full PostSyncer workflow: discovering workspaces and connected accounts, preparing media, posting rules per platform, threads, first comments, scheduling and repeats, campaigns and labels, comment moderation, and analytics.",
+  "author": {
+    "name": "PostSyncer"
+  },
+  "icon": "./icon.svg",
+  "homepage": "https://github.com/PostSyncer/claude-plugin/tree/main/skills/postsyncer",
+  "repo": "https://github.com/PostSyncer/claude-plugin",
+  "tags": [
+    "marketing",
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "PostSyncer/claude-plugin",
+      "--skill",
+      "postsyncer"
+    ]
+  }
+}
