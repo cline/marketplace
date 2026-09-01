@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "truthbear",
+  "type": "mcp",
+  "name": "Truth Bear (GAUGE)",
+  "tagline": "Verifiable official-source signals with tamper-proof receipts, no API key",
+  "description": "180+ real-time signals from USGS, NOAA, SEC EDGAR, EPA, FRED and more — environment, agriculture, power grid, shipping, and financial filings. Every response includes a record_hash for offline verification. Pay per call in USDC on Base via x402, no API key or signup required.",
+  "author": {
+    "name": "AEML-DS Vanished-Data Exchange",
+    "url": "https://truthbear.co"
+  },
+  "homepage": "https://truthbear.co",
+  "repo": "https://github.com/CHANGCHINFU/mcp-gauge",
+  "tags": ["data", "research", "security"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "truthbear",
+      "--",
+      "npx",
+      "-y",
+      "github:CHANGCHINFU/mcp-gauge"
+    ]
+  }
+}
