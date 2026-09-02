@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "anyapi",
+  "type": "mcp",
+  "name": "AnyAPI",
+  "tagline": "One key for hundreds of scraping and data APIs, paid in USD.",
+  "description": "AnyAPI is a unified marketplace for scraping and data APIs: any API, one wallet, USD, no subscriptions. Reach hundreds of third-party APIs (social media, search results, web data) through one key and one normalized interface; pay per request in real dollars; failed calls are never charged because AnyAPI fails over across providers automatically under one price.\n\nTools: `list_apis`, `search_apis`, `get_api`, `quote_api`, `run_api`, `read_result`, `get_balance`. Every API exposes a normalized input/output JSON Schema, so the agent discovers, inspects, quotes, and runs any of them with the same loop.",
+  "author": {
+    "name": "AnyAPI",
+    "url": "https://getanyapi.com"
+  },
+  "tags": [
+    "data",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "anyapi",
+      "--transport",
+      "http",
+      "https://api.getanyapi.com/mcp",
+      "--header",
+      "Authorization: Bearer ${ANYAPI_API_KEY}"
+    ],
+    "env": [
+      {
+        "name": "ANYAPI_API_KEY",
+        "required": true,
+        "description": "AnyAPI key (aa_live_...). Create one at getanyapi.com/dashboard/keys.",
+        "url": "https://getanyapi.com/dashboard/keys"
+      }
+    ],
+    "notes": "Discovery tools are free to call. `run_api` charges the wallet in USD on success only."
+  },
+  "homepage": "https://getanyapi.com/docs/mcp-server",
+  "repo": "https://github.com/getanyapi-com/skills",
+  "icon": "https://getanyapi.com/icon-512.png",
+  "license": "Apache-2.0"
+}
