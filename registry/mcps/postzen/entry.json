@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "postzen",
+  "type": "mcp",
+  "name": "PostZen",
+  "tagline": "Schedule and publish social media posts across 10 platforms",
+  "description": "PostZen's hosted MCP server lets Cline draft, schedule, queue, and publish posts to X, Instagram, TikTok, LinkedIn, Facebook, YouTube, Threads, Pinterest, Bluesky, and Telegram. It also uploads media, manages recurring posting queues at your best-performing times, connects social accounts, and pulls analytics reports. Sign in with OAuth on first use and choose which profiles to expose; there is no API key to paste.",
+  "author": {
+    "name": "PostZen",
+    "url": "https://www.postzen.dev"
+  },
+  "homepage": "https://docs.postzen.dev/mcp",
+  "icon": "./icon.png",
+  "tags": [
+    "marketing",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "postzen",
+      "--transport",
+      "http",
+      "https://mcp.postzen.dev/mcp"
+    ],
+    "notes": "For headless or CI use, create an API key in the PostZen dashboard (Settings → API keys) and install with `--header \"Authorization: Bearer pzn_...\"` instead of signing in with OAuth."
+  }
+}
