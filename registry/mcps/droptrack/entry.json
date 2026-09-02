@@ -11,7 +11,7 @@
   },
   "homepage": "https://www.droptrack.com/mcp-ai-assistant/",
   "repo": "https://github.com/droptrack/droptrack-ai-integrations",
-  "icon": "https://raw.githubusercontent.com/droptrack/droptrack-ai-integrations/v1.0.0/assets/droptrack-logo.png",
+  "icon": "https://raw.githubusercontent.com/droptrack/droptrack-ai-integrations/3dd86b1fb3af07011768d7879b8b62bc02b4b0af/assets/droptrack-logo.png",
   "tags": ["creative", "marketing", "data"],
   "license": "MIT",
   "verified": false,
