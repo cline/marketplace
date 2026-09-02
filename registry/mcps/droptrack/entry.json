@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "droptrack",
+  "type": "mcp",
+  "name": "DropTrack",
+  "tagline": "Analyze tracks and work with your DropTrack music catalog",
+  "description": "Connect Cline to your DropTrack account through the official remote MCP server. Analyze tracks, search your catalog, inspect audio metadata, work with playlists, and manage customer-facing music-promotion workflows.",
+  "author": {
+    "name": "DropTrack",
+    "url": "https://www.droptrack.com/"
+  },
+  "homepage": "https://www.droptrack.com/mcp-ai-assistant/",
+  "repo": "https://github.com/droptrack/droptrack-ai-integrations",
+  "icon": "https://raw.githubusercontent.com/droptrack/droptrack-ai-integrations/v1.0.0/assets/droptrack-logo.png",
+  "tags": ["creative", "marketing", "data"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "droptrack",
+      "--transport",
+      "http",
+      "https://mcp.droptrack.com/mcp"
+    ],
+    "notes": "Sign in with your DropTrack customer account when Cline opens the OAuth authorization flow."
+  }
+}
