@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "gospelchannel-church-finder",
+  "type": "mcp",
+  "name": "GospelChannel Church Finder",
+  "tagline": "Find Christian churches by worship style, denomination, language, and location",
+  "description": "Read-only remote MCP from GospelChannel, a free global church guide. Search churches near a place or in a named city, filter by worship style (contemporary, gospel, charismatic, traditional), denomination, and service language, and open a full church profile with website, worship music, and recorded service times. Free, no authentication, Streamable HTTP.",
+  "author": {
+    "name": "AC0 AI",
+    "url": "https://ac0.ai"
+  },
+  "homepage": "https://gospelchannel.com",
+  "repo": "https://github.com/Ac0AI/gospelchannel",
+  "icon": "./icon.png",
+  "tags": [
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "gospelchannel-church-finder",
+      "--transport",
+      "http",
+      "https://gospelchannel.com/mcp"
+    ]
+  },
+  "license": "MIT"
+}
