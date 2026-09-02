@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "sauna-guide-quotes",
+  "type": "mcp",
+  "name": "Sauna Guide Quotes",
+  "tagline": "Prepare a US home sauna quote request and submit it only after explicit approval",
+  "description": "Remote MCP from Sauna Guide, an independent home sauna buying guide. The read-only prepare tool validates a project brief (ZIP, project type, heat type, budget, timeline, contact details) and lists what is missing without storing anything. A separate submit tool sends the unchanged brief to Sauna Guide only after the user explicitly approves it. Free, no authentication, Streamable HTTP.",
+  "author": {
+    "name": "AC0 AI",
+    "url": "https://ac0.ai"
+  },
+  "homepage": "https://sauna.guide/integrations/sauna-guide-quotes",
+  "repo": "https://github.com/Ac0AI/ac0-plugins",
+  "icon": "./icon.png",
+  "tags": [
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "sauna-guide-quotes",
+      "--transport",
+      "http",
+      "https://sauna.guide/mcp"
+    ]
+  },
+  "license": "MIT"
+}
