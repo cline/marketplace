@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "html-css-to-image",
+  "type": "mcp",
+  "name": "HTML/CSS to Image",
+  "tagline": "Turn websites and HTML/CSS into images or PDFs",
+  "description": "Capture live website screenshots, render HTML/CSS, or populate reusable templates as images or PDFs through the hosted HTML/CSS to Image MCP server—without managing a browser.",
+  "author": {
+    "name": "HTML/CSS to Image",
+    "url": "https://htmlcsstoimage.com"
+  },
+  "homepage": "https://docs.htmlcsstoimage.com/integrations/mcp/",
+  "repo": "https://github.com/htmlcsstoimage/agent-plugins",
+  "icon": "./icon.svg",
+  "tags": ["creative", "marketing", "software"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["hcti", "--transport", "http", "https://mcp.hcti.io"],
+    "notes": "Connect through the browser-based OAuth flow. An HCTI account and available rendering credits are required."
+  }
+}

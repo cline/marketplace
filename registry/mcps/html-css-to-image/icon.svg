@@ -1,0 +1,9 @@
+<svg height="222" width="222" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd" transform="translate(10 10)">
+    <rect fill="black" height="212" rx="8" stroke="white" stroke-width="10" width="212" x="-5" y="-5"/>
+    <text fill="white" font-family="CourierNewPS-BoldMT, Courier New" font-size="64" font-weight="bold">
+      <tspan x="27.188" y="75">HCTI</tspan>
+      <tspan font-size="85" x="27.488" y="147">API</tspan>
+    </text>
+  </g>
+</svg>
