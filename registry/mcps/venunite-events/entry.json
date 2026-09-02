@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "venunite-events",
+  "type": "mcp",
+  "name": "VenuNite Events",
+  "tagline": "Search source-linked local events by date, location, cost, category, and venue vibe.",
+  "description": "Search source-linked U.S. event listings from independent venues and community calendars. Filter by date, location, distance, cost, category, and venue vibe, then open the original event source.",
+  "author": {
+    "name": "Yggdrasil LLC",
+    "url": "https://venunite.com"
+  },
+  "homepage": "https://venunite.com/developers/mcp",
+  "tags": ["productivity", "data"],
+  "verified": false,
+  "install": {
+    "args": [
+      "venunite-events",
+      "--transport",
+      "http",
+      "https://mcp.venunite.com/v1/mcp/"
+    ]
+  }
+}
