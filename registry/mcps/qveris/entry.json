@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "qveris",
+  "type": "mcp",
+  "name": "QVeris",
+  "tagline": "Discover, inspect, and call thousands of capabilities through one MCP server",
+  "description": "Connect Cline to the QVeris capability network for live data and API actions across research, finance, weather, search, documents, developer tooling, and more. Discover matching capabilities in natural language, inspect schemas, quality signals, latency, and billing details, validate parameters before execution, call the selected capability, and review usage and credit history.",
+  "author": {
+    "name": "QVerisAI",
+    "url": "https://qveris.ai"
+  },
+  "homepage": "https://qveris.ai/hosted-mcp",
+  "repo": "https://github.com/QVerisAI/qveris-agent-toolkit",
+  "icon": "./icon.png",
+  "tags": [
+    "research",
+    "data",
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "qveris",
+      "--transport",
+      "http",
+      "https://mcp.qveris.ai/mcp",
+      "--header",
+      "Authorization: Bearer ${QVERIS_API_KEY}"
+    ],
+    "env": [
+      {
+        "name": "QVERIS_API_KEY",
+        "required": true,
+        "description": "QVeris API key for capability discovery and execution.",
+        "url": "https://qveris.ai/account?page=api-keys"
+      }
+    ],
+    "notes": "Create a QVeris API key, then reconnect the MCP server after installation. Discover is free; capability calls may consume QVeris credits, with pricing shown in tool metadata."
+  }
+}
