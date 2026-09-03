@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "xmemo",
+  "type": "mcp",
+  "name": "XMemo",
+  "tagline": "Persistent memory across agents, tools, and sessions",
+  "description": "XMemo is a user-owned persistent memory layer for AI agents. It lets Cline retain and reuse context across sessions and tools with scoped memory, provenance, permissions, and memory lifecycle controls.",
+  "author": {
+    "name": "XMemo",
+    "url": "https://xmemo.dev"
+  },
+  "homepage": "https://xmemo.dev",
+  "repo": "https://github.com/yonro/memory-os-cli",
+  "license": "MIT",
+  "tags": [
+    "memory",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "xmemo",
+      "--transport",
+      "http",
+      "https://xmemo.dev/mcp"
+    ],
+    "notes": "Authenticate with XMemo when prompted. XMemo supports hosted Remote MCP and OAuth."
+  }
+}
