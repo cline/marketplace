@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "contextstream",
+  "type": "mcp",
+  "name": "ContextStream",
+  "tagline": "Persistent project memory for AI coding agents over hosted MCP",
+  "description": "ContextStream is a remote MCP server that gives Cline durable project memory: indexed repos, docs, decisions, and tools that persist across sessions. Search, recall, and write against the same shared context instead of re-explaining the codebase every chat. Hosted at https://mcp.contextstream.io/mcp. Sign in with OAuth, or set an optional API key for headless use.",
+  "author": {
+    "name": "ContextStream",
+    "url": "https://contextstream.io"
+  },
+  "homepage": "https://contextstream.io",
+  "repo": "https://github.com/contextstream/mcp-server",
+  "icon": "https://contextstream.io/logo.png",
+  "tags": ["software", "memory"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "contextstream",
+      "--transport",
+      "http",
+      "https://mcp.contextstream.io/mcp"
+    ],
+    "env": [
+      {
+        "name": "CONTEXTSTREAM_API_KEY",
+        "required": false,
+        "description": "Optional API key for headless auth. OAuth sign-in works without it.",
+        "url": "https://app.contextstream.io"
+      }
+    ],
+    "notes": "Cline opens an OAuth flow on first connect. Use CONTEXTSTREAM_API_KEY only if you prefer a static key."
+  }
+}
