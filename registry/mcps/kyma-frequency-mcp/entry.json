@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "kyma-frequency-mcp",
+  "type": "mcp",
+  "name": "KYMA Frequency MCP",
+  "tagline": "Search KYMA369's public frequency library and open sets in the free app.",
+  "description": "A remote Streamable HTTP MCP server for discovering KYMA369's public frequency library by keyword, Hz, or wellness intent, then opening user-initiated playback links in the free KYMA app. It provides catalog discovery only and does not provide medical advice, diagnosis, treatment, cure, or prevention claims.",
+  "author": {
+    "name": "KYMA369",
+    "url": "https://kyma369.com"
+  },
+  "homepage": "https://kyma369.com/mcp",
+  "repo": "https://github.com/BCXTRUST/kyma-frequency-mcp",
+  "icon": "https://kyma369.com/assets/kyma369-logo-dFWGsSPm.png",
+  "tags": ["research", "memory"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "kyma-frequencies",
+      "--transport",
+      "http",
+      "https://eaqistzhmblvuxndwfbn.supabase.co/functions/v1/freq-mcp",
+      "--header",
+      "apikey: ${KYMA_MCP_ANON_KEY}",
+      "--header",
+      "Authorization: Bearer ${KYMA_MCP_ANON_KEY}"
+    ],
+    "env": [
+      {
+        "name": "KYMA_MCP_ANON_KEY",
+        "required": true,
+        "description": "KYMA public MCP access key; copy the current published value from the official KYMA MCP documentation.",
+        "url": "https://kyma369.com/mcp"
+      }
+    ],
+    "notes": "Use KYMA's official MCP page for current configuration and public frequency-library scope: https://kyma369.com/mcp"
+  }
+}
