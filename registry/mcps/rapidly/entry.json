@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "Rapidly",
   "tagline": "Test an idea before you build it, inside your AI agent",
-  "description": "Rapidly turns an idea into a Lean Canvas, measurable hypothesis, pass mark and practical Pretotyping experiment. In about five minutes, it returns a build prompt for the smallest test worth running. Your agent builds the test; real customers provide the evidence.",
+  "description": "Test the idea before you build it. Rapidly saves the idea, its Lean Canvas and measurable hypothesis, then saves three to five practical Pretotyping experiments. It recommends the easiest credible first test and generates one build prompt for that recommendation. Your agent builds the test; real customers provide the evidence.",
   "author": {
     "name": "Rapidly",
     "url": "https://www.rapidly.co"
@@ -26,6 +26,6 @@
       "http",
       "https://www.rapidly.co/mcp"
     ],
-    "notes": "Complete the OAuth connection after installation. Start with: Ask Rapidly to generate three ideas for a mobile coffee cart."
+    "notes": "Complete the OAuth connection after installation. Start with: Ask Rapidly for three ideas for [company], focused on [opportunity], and fully test all three in one go."
   }
 }
