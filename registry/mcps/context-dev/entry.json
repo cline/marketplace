@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "context-dev",
+  "type": "mcp",
+  "name": "Context.dev",
+  "tagline": "Live web, company news, and brand data for AI agents",
+  "description": "Search the live web and company news, scrape and crawl sites, extract structured data, parse documents, retrieve brand intelligence, capture screenshots, monitor changes, and process large asynchronous batches.",
+  "author": {
+    "name": "Context.dev",
+    "url": "https://context.dev"
+  },
+  "homepage": "https://context.dev",
+  "icon": "./icon.svg",
+  "tags": [
+    "research",
+    "data",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "context",
+      "--transport",
+      "http",
+      "https://mcp.context.dev/mcp"
+    ],
+    "notes": "Complete Context.dev OAuth when Cline prompts you to authenticate."
+  }
+}
