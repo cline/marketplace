@@ -16,7 +16,7 @@
   "license": "MIT",
   "verified": false,
   "install": {
-    "args": ["mcp-trendpulse", "--", "uvx", "mcp-trendpulse==0.2.12"],
-    "notes": "Requires uv/uvx. Installs the published mcp-trendpulse 0.2.12 release from PyPI; no API keys are required for the community server."
+    "args": ["mcp-trendpulse", "--", "uvx", "mcp-trendpulse==0.2.13"],
+    "notes": "Requires uv/uvx. Installs the published mcp-trendpulse 0.2.13 release from PyPI; no API keys are required for the community server."
   }
 }
