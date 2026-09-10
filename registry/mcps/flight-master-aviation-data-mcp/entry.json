@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "flight-master-aviation-data-mcp",
+  "type": "mcp",
+  "name": "Flight Master Aviation Data MCP",
+  "tagline": "Professional flight status, weather, delay risk, and trajectory data for AI agents",
+  "description": "Official aviation data MCP by Flight Master DAST (航班管家 DAST). Provides flight status, route flight search, onboard experience, future delay and cancellation risk, hourly airport weather forecasts, and real-time or historical flight trajectories through the Model Context Protocol.",
+  "author": {
+    "name": "Flight Master DAST",
+    "url": "https://dast.133.cn/mcp/"
+  },
+  "homepage": "https://dast.133.cn/mcp/",
+  "repo": "https://github.com/flight-master-dast/aviation-data-mcp",
+  "tags": [
+    "data",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "flight-master-dast",
+      "--transport",
+      "http",
+      "https://fly.huoli.com/mcp/dast_mcp",
+      "--header",
+      "Authorization: Bearer <DAST_API_KEY>"
+    ],
+    "notes": "A Flight Master DAST API Key is required. Create one at https://dast.133.cn and replace <DAST_API_KEY> with your key. The server uses Streamable HTTP."
+  }
+}
