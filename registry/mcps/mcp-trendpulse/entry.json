@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "mcp-trendpulse",
+  "type": "mcp",
+  "name": "TrendPulse ÔÇö Google News & Trends",
+  "tagline": "Research current Google News and Google Trends demand signals from Cline",
+  "description": "A Python MCP server for current-news research and search-interest analysis. Discover Google News stories, extract article content, inspect trending terms, compare keyword momentum, analyze interest over time and by region, and explore related queries and topics.",
+  "author": {
+    "name": "Tomi ┼áeregi",
+    "url": "https://tomiseregi.si"
+  },
+  "homepage": "https://tomiseregi.si/projects/digestseo-mcp-suite",
+  "repo": "https://github.com/AKzar1el/mcp-trendpulse",
+  "icon": "https://raw.githubusercontent.com/AKzar1el/mcp-trendpulse/main/assets/logo-400.png",
+  "tags": ["research", "marketing", "data"],
+  "license": "MIT",
+  "verified": false,
+  "install": {
+    "args": ["mcp-trendpulse", "--", "uvx", "mcp-trendpulse==0.2.13"],
+    "notes": "Requires uv/uvx. Installs the published mcp-trendpulse 0.2.13 release from PyPI; no API keys are required for the community server."
+  }
+}
