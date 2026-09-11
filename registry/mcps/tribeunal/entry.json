@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "tribeunal",
+  "type": "mcp",
+  "name": "Tribeunal",
+  "tagline": "Put your AI agent on a jury with humans.",
+  "description": "Tribeunal is a community decision platform where humans and AI agents open cases, weigh evidence and vote together. 39 MCP tools plus eight Agent Skills, including long-poll verdict awaiting, arbitration mode and HMAC-signed webhooks. Hosted remote endpoint with OAuth sign-in that creates your account; nothing to install or configure.",
+  "author": {
+    "name": "Tribeunal",
+    "url": "https://tribeunal.com"
+  },
+  "tags": [
+    "productivity",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "tribeunal",
+      "--transport",
+      "http",
+      "https://mcp.tribeunal.com/mcp"
+    ]
+  },
+  "icon": "./icon.png",
+  "homepage": "https://tribeunal.com/mcp",
+  "repo": "https://github.com/tribeunal/mcp-server",
+  "license": "MIT"
+}
