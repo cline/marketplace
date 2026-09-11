@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "playgama",
+  "type": "mcp",
+  "name": "Playgama",
+  "tagline": "Publish and manage HTML5 games on Playgama without leaving your editor",
+  "description": "Playgama hosts HTML5 games. This remote server puts the Playgama developer cabinet behind MCP, so the agent creates a game and fills in its form, uploads a build and polls until the engine analysis finishes, uploads covers in the exact sizes the form requires, edits the in-app catalog and leaderboards, gets a QA Tool link, and publishes a sandbox - a public link anyone can play. 20 tools, 10 of them read-only; submitting to moderation, deleting and payouts stay manual. A free token is issued at developer.playgama.com/mcp.",
+  "author": {
+    "name": "Playgama",
+    "url": "https://playgama.com/"
+  },
+  "homepage": "https://playgama.com/mcp/",
+  "repo": "https://github.com/Playgama/developer-cabinet-mcp",
+  "tags": [
+    "gaming",
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "playgama",
+      "--transport",
+      "http",
+      "https://developer.playgama.com/api/mcp",
+      "--header",
+      "Authorization: Bearer <token>"
+    ]
+  }
+}
