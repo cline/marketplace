@@ -16,7 +16,7 @@
   "license": "MIT",
   "verified": false,
   "install": {
-    "args": ["god-prompt-mcp", "--", "npx", "-y", "github:AKzar1el/god-prompt-mcp"],
-    "notes": "Requires Node.js 20 or newer and Git. The package intentionally installs from GitHub rather than npm."
+    "args": ["god-prompt-mcp", "--", "npx", "-y", "god-prompt-mcp"],
+    "notes": "Requires Node.js 20 or newer. Installs the published npm package."
   }
 }
