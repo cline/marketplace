@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "uk-taxi-phv-regulatory-decision-layer",
+  "type": "mcp",
+  "name": "UK Taxi PHV Regulatory Decision Layer",
+  "tagline": "Evidence-linked taxi and private-hire licensing preflight for England.",
+  "description": "Deterministic taxi and private-hire regulatory preflight for England. Supports authority-specific licensing decisions and cross-authority comparison, with current official-source evidence, explicit blockers and fail-closed review states.",
+  "author": {
+    "name": "ProjectPermit"
+  },
+  "homepage": "https://uk-taxi-phv-mcp-production.up.railway.app/",
+  "tags": ["business", "security"],
+  "verified": false,
+  "install": {
+    "args": [
+      "uk-taxi-phv-regulatory-decision-layer",
+      "--transport",
+      "http",
+      "https://uk-taxi-phv-mcp-production.up.railway.app/mcp"
+    ]
+  }
+}
