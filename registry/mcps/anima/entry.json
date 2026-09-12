@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "anima",
+  "type": "mcp",
+  "name": "Anima Labs",
+  "tagline": "Agent identity via MCP - email, US phone/SMS, voice, and encrypted vault",
+  "description": "Anima Labs (useanima.sh) gives AI agents a real email inbox, US phone number for SMS, voice calling, and an encrypted vault over remote MCP. Start Free (email + 10 vault creds). Upgrade Starter $19 / Growth $199 for phone/SMS/voice. Not AnimaApp (design-to-code).",
+  "author": { "name": "Anima Labs", "url": "https://useanima.sh" },
+  "homepage": "https://useanima.sh",
+  "repo": "https://github.com/anima-labs-ai/anima-plugin",
+  "icon": "./icon.svg",
+  "tags": ["productivity", "software"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["anima", "--transport", "http", "https://mcp.useanima.sh/mcp", "--header", "Authorization: Bearer ${ANIMA_API_KEY}"],
+    "env": [
+      {
+        "name": "ANIMA_API_KEY",
+        "required": true,
+        "description": "Anima agent API key (ak_...) from console.useanima.sh. OAuth also available at connect.useanima.sh.",
+        "url": "https://console.useanima.sh"
+      }
+    ]
+  }
+}
