@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "england-works-watch",
+  "type": "mcp",
+  "name": "England Works Watch",
+  "tagline": "Evidence-linked Skilled Worker sponsor compliance change-impact decisions for England.",
+  "description": "Deterministic, evidence-linked sponsor-compliance preflight for UK Skilled Worker employers. Covers worker start delays, absence and pay changes, role or work-location changes, stopping sponsorship, sponsor-organisation changes, TUPE, mergers and takeovers, with fail-closed outcomes tied to current official guidance.",
+  "author": {
+    "name": "ProjectPermit"
+  },
+  "homepage": "https://england-works-watch-production.up.railway.app/",
+  "repo": "https://github.com/ChanghuLiu/england-works-watch",
+  "tags": ["business", "security"],
+  "verified": false,
+  "install": {
+    "args": [
+      "england-works-watch",
+      "--transport",
+      "http",
+      "https://england-works-watch-production.up.railway.app/mcp"
+    ]
+  }
+}
