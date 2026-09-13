@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "neither",
+  "type": "mcp",
+  "name": "Neither",
+  "tagline": "Selected company/project context for AI agents via MCP",
+  "description": "Hosted company-context graph exposed as MCP. Agents search and push Decision/Rejected/Constraint memory with source evidence. Stdio server (Node 20+). Primary tested clients: Cursor and Claude Desktop. Community Cline install path via npx.",
+  "author": {
+    "name": "Neither",
+    "url": "https://www.neither.online"
+  },
+  "homepage": "https://www.neither.online/start/?product=dev",
+  "repo": "https://github.com/stonianua/neither-mcp",
+  "license": "MIT",
+  "icon": "icon.png",
+  "tags": ["memory", "software"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "neither",
+      "--",
+      "npx",
+      "-y",
+      "@neitherai/mcp-server@latest"
+    ],
+    "env": [
+      {
+        "name": "NEITHER_API_KEY",
+        "required": true,
+        "description": "Workspace API key from Neither onboarding.",
+        "url": "https://www.neither.online/start/?product=dev"
+      },
+      {
+        "name": "NEITHER_API_BASE",
+        "required": false,
+        "description": "Optional API base URL. Defaults to https://api.neither.online.",
+        "url": "https://api.neither.online"
+      }
+    ],
+    "notes": "Create a workspace key at the homepage link first. Node 20+ required."
+  }
+}
