@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "kleap",
+  "type": "mcp",
+  "name": "Kleap",
+  "tagline": "Build and publish websites, apps, and internal tools with Kleap",
+  "description": "Connect Cline to Kleap's hosted OAuth MCP server to create, inspect, edit, publish, and maintain websites, web apps, dashboards, internal tools, and other web products. Authentication happens through Kleap OAuth in the browser, so no API key is copied into the configuration.",
+  "author": {
+    "name": "Kleap Technologies SA",
+    "url": "https://kleap.co"
+  },
+  "homepage": "https://kleap.co/mcp",
+  "repo": "https://github.com/kleaphq/kleap-grok-plugin",
+  "icon": "./icon.png",
+  "tags": ["software", "business", "marketing"],
+  "license": "MIT",
+  "verified": false,
+  "install": {
+    "args": ["kleap", "--transport", "http", "https://kleap.co/api/mcp"],
+    "notes": "Complete the Kleap OAuth flow in your browser on first use. Start with a read-only project listing before making changes."
+  }
+}
