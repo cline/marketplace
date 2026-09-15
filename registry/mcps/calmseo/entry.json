@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "calmseo",
+  "type": "mcp",
+  "name": "CalmSEO",
+  "tagline": "Search Console data and SEO research for AI agents",
+  "description": "CalmSEO is a hosted SEO MCP server. Google Search Console analytics tools are free and read-only. Credit-based tools provide Google and Bing SERPs, keyword volume and CPC, keyword ideas, ranked keywords, and page audits, with explicit credit confirmation. Connect through OAuth; no local installation or Google API credentials are needed.",
+  "author": {
+    "name": "Monolayer Studio LLC",
+    "url": "https://calmseo.com"
+  },
+  "homepage": "https://calmseo.com",
+  "repo": "https://github.com/noahflk/seo-mcp",
+  "icon": "https://calmseo.com/logo512.png",
+  "tags": [
+    "marketing",
+    "research",
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "calmseo",
+      "--transport",
+      "http",
+      "https://mcp.calmseo.com/mcp"
+    ],
+    "notes": "Sign in to CalmSEO with OAuth, then connect a Google account to use Search Console tools. Research tools require credits."
+  }
+}
