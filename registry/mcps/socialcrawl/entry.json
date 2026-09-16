@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "socialcrawl",
+  "type": "mcp",
+  "name": "SocialCrawl",
+  "tagline": "Live social and web data from 65 platforms for AI agents",
+  "description": "Give AI agents structured, real-time data from 65 social, commerce, review, jobs, finance, and web sources through 575 endpoints, one API key, and one consistent schema. Hosted Streamable HTTP endpoint; discovery and docs tools work without a key.",
+  "author": { "name": "Ridio", "url": "https://www.socialcrawl.dev" },
+  "homepage": "https://www.socialcrawl.dev",
+  "repo": "https://github.com/socialcrawl/mcp",
+  "icon": "https://www.socialcrawl.dev/icon.png",
+  "tags": ["marketing", "research", "data"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "socialcrawl",
+      "--transport",
+      "http",
+      "https://mcp.socialcrawl.dev/mcp",
+      "--header",
+      "Authorization: Bearer ${SOCIALCRAWL_API_KEY}"
+    ],
+    "env": [
+      {
+        "name": "SOCIALCRAWL_API_KEY",
+        "required": true,
+        "description": "SocialCrawl API key (sc_…). 100 free credits on signup.",
+        "url": "https://www.socialcrawl.dev/dashboard"
+      }
+    ]
+  }
+}
