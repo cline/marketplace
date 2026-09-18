@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "scvd-x402-verification",
+  "type": "skill",
+  "name": "SCVD x402 Verification",
+  "tagline": "Inspect x402 endpoints before payment and verify signed receipts afterward",
+  "description": "Task guidance for checking x402 payment endpoints, interpreting free preflight and receipt-conformance results, and verifying retained signed evidence offline. Uses SCVD public HTTP or an existing MCP connection and accepts artifacts from any issuer. Free checks need no account or wallet. Optional paid observations require an explicit spending decision; a passing check does not guarantee delivery.",
+  "author": {
+    "name": "Record Creative Co. LLC",
+    "url": "https://scvd.store"
+  },
+  "homepage": "https://scvd.store/conformance",
+  "repo": "https://github.com/seancrecord/scvd-general-store-repo",
+  "tags": [
+    "software",
+    "finance"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "seancrecord/scvd-general-store-repo",
+      "--skill",
+      "scvd-x402-verification"
+    ],
+    "notes": "Installs only the verification skill from the repository. It works with public HTTPS or an existing https://scvd.store/mcp connection; it does not configure a wallet or authorize payments."
+  }
+}
