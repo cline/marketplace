@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Cork & Curve">
+  <title>Cork & Curve</title>
+  <rect width="64" height="64" rx="14" fill="#722F37"/>
+  <line x1="32" y1="26" x2="32" y2="18" stroke="#F4E9D8" stroke-width="2.4" stroke-linecap="round"/>
+  <g fill="#F4E9D8" stroke="#722F37" stroke-width="1.6">
+    <circle cx="26" cy="30" r="6.6"/>
+    <circle cx="38" cy="30" r="6.6"/>
+    <circle cx="19.5" cy="37" r="6.6"/>
+    <circle cx="32" cy="37" r="6.6"/>
+    <circle cx="44.5" cy="37" r="6.6"/>
+    <circle cx="26" cy="43.5" r="6.6"/>
+    <circle cx="38" cy="43.5" r="6.6"/>
+    <circle cx="32" cy="50" r="6.6"/>
+  </g>
+</svg>

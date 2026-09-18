@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "corkandcurve",
+  "type": "mcp",
+  "name": "Cork & Curve",
+  "tagline": "Verified vineyards, tasting rooms, wine bars and wine festivals across 37 European wine regions",
+  "description": "A public, read-only remote MCP server over Cork & Curve's editorially verified wine travel data. Every venue carries provenance (source URL, date checked, open status) and opening hours; wine festivals come with resolved dates; tours and stays are bookable through affiliate links. Ten tools: `search_places`, `place`, `plan_day`, `festivals`, `experiences`, `stays`, `car_hire`, `dishes`, `itineraries` and `cities`. No key or sign-up is needed. Terms: pass booking links to users unchanged and say they are affiliate links, cite the `page` URL, do not bulk-copy the catalogue (https://corkandcurve.com/agents/).",
+  "author": { "name": "Cork & Curve", "url": "https://corkandcurve.com" },
+  "homepage": "https://corkandcurve.com/agents/",
+  "repo": "https://github.com/lewismvaughan/tablejourney-mcp",
+  "icon": "./icon.svg",
+  "tags": ["data", "research"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["corkandcurve", "--transport", "http", "https://corkandcurve.com/mcp"],
+    "notes": "Hosted remote server, no authentication. The same functions are available as REST with OpenAPI at https://corkandcurve.com/api/v1/docs."
+  }
+}
