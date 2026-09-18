@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "scvd-general-store",
+  "type": "mcp",
+  "name": "SCVD General Store",
+  "tagline": "Free x402 preflight and signed-receipt checks, with optional paid observations",
+  "description": "Remote evidence tools for agentic commerce: inspect an x402 endpoint before payment, check any issuer's signed offers and receipts, and retrieve public observations. Free inspection needs no account or API key. The same server exposes optional paid goods using separately authorized x402 payments. Results state their scope and gaps; they do not guarantee delivery or authorize spending. Task guidance is available as the scvd-x402-verification skill in the source repository.",
+  "author": {
+    "name": "Record Creative Co. LLC",
+    "url": "https://scvd.store"
+  },
+  "homepage": "https://scvd.store/developers",
+  "repo": "https://github.com/seancrecord/scvd-general-store-repo",
+  "tags": [
+    "software",
+    "finance"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "scvd-general-store",
+      "--transport",
+      "http",
+      "https://scvd.store/mcp"
+    ],
+    "notes": "No API key or wallet is needed to connect or use free checks. Paid tools require a separately configured payment client and explicit user authorization; never provide wallet secrets. Optional guidance: cline skill install seancrecord/scvd-general-store-repo --skill scvd-x402-verification"
+  }
+}
