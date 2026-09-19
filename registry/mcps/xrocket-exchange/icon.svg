@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">xRocket Exchange agent icon</title>
+  <desc id="desc">A monochrome rocket with an acid green execution mark.</desc>
+  <rect width="128" height="128" fill="#080A08"/>
+  <path d="M76 20c19 6 31 18 37 37L74 96 37 59c8-20 20-33 39-39Z" fill="#F3F5F0"/>
+  <circle cx="79" cy="49" r="9" fill="#080A08"/>
+  <path d="m43 70-21 7 29 29 7-21" fill="#C7FF4F"/>
+</svg>

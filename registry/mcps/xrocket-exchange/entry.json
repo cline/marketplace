@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "xrocket-exchange",
+  "type": "mcp",
+  "name": "xRocket Exchange MCP",
+  "tagline": "Live xRocket markets plus autonomous-trading setup under one daily limit",
+  "description": "A credential-free hosted MCP for xRocket spot-market snapshots, symbols, tickers, candles, order books, trades, asset rates, fees, and trading onboarding. The remote profile is read-only; users who want an agent to trade generate a local configuration with one operator-set daily value limit. Transfers and withdrawals remain separately disabled unless explicitly enabled.",
+  "author": {
+    "name": "nakazanie-ton",
+    "url": "https://github.com/nakazanie-ton"
+  },
+  "homepage": "https://xrocket-mcp-production.up.railway.app/",
+  "repo": "https://github.com/nakazanie-ton/myrocket",
+  "icon": "./icon.svg",
+  "tags": ["finance", "data"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "xrocket-exchange",
+      "--transport",
+      "http",
+      "https://xrocket-mcp-production.up.railway.app/mcp"
+    ],
+    "notes": "The hosted profile is public and never accepts account credentials. Use its trading setup link or onboarding tool to generate a local testnet-first configuration; never enter an xRocket API token into the remote MCP."
+  }
+}
