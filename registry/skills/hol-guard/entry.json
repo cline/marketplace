@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "hol-guard",
+  "type": "skill",
+  "name": "HOL Guard",
+  "tagline": "Local AI security for risky tools, secrets, prompt injection, and agent supply chain",
+  "description": "Use HOL Guard to protect local AI harnesses before tools run, review approvals and receipts, and scan plugins, skills, MCP servers, and marketplace packages before trust. The skill installs from the maintained HOL Guard plugin repository and guides setup without reading .env files.",
+  "author": { "name": "Hashgraph Online", "url": "https://hol.org" },
+  "homepage": "https://hol.org/guard",
+  "repo": "https://github.com/hashgraph-online/hol-guard-plugin",
+  "tags": ["security", "software"],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["hashgraph-online/hol-guard-plugin", "--skill", "hol-guard"]
+  }
+}
