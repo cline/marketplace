@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "baizhi-agent-toolkit",
+  "type": "mcp",
+  "name": "Baizhi Cloud Agent Toolkit",
+  "tagline": "Search, parse content, work with images, and run cloud tools through one MCP endpoint",
+  "description": "Official Baizhi Cloud Agent Toolkit integration. Access web and image search, webpage and document parsing, image generation and understanding, developer documentation, cloud execution, and specialized queries through one hosted Streamable HTTP MCP endpoint. Requires a Baizhi Cloud account and a personal API key; service usage consumes credits. The linked public repository contains integration manifests and setup documentation, not the hosted backend's source code. Credential setup is currently manual in Cline; installing this entry alone does not authenticate the service.",
+  "author": {
+    "name": "Baizhi Cloud",
+    "url": "https://baizhi.cloud"
+  },
+  "homepage": "https://baizhi.cloud/landing/agent-toolkit",
+  "repo": "https://github.com/chaitin/baizhi-agent-toolkit",
+  "tags": ["research", "software", "creative", "productivity"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "baizhi-agent-toolkit",
+      "--transport",
+      "http",
+      "https://agent-toolkit.app.baizhi.cloud/mcp"
+    ],
+    "env": [
+      {
+        "name": "BAIZHI_API_KEY",
+        "required": true,
+        "description": "Your personal Baizhi Cloud Agent Toolkit API key. Current Cline clients require manual Authorization-header setup; this metadata does not automatically bind an environment variable to a header.",
+        "url": "https://agent-toolkit.app.baizhi.cloud"
+      }
+    ],
+    "notes": "Manual credential setup required. Create a personal API key in Baizhi Cloud Agent Toolkit. In Cline's local MCP settings, add an Authorization header to this server with the value Bearer followed by a space and your key. The current SDK settings shape places headers inside the server's transport object; the legacy flat format places headers alongside url. The generated install command configures only the endpoint, so the server cannot authenticate until this step is complete. Setting BAIZHI_API_KEY alone is not sufficient across current Cline clients. Do not paste the key into chat or an install command. Cline's local MCP header settings are plaintext: keep them private and out of version control. Consult the linked integration documentation for current client setup. Tool calls may consume credits."
+  }
+}
