@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "lila-perimenopause",
+  "type": "skill",
+  "name": "Lila Perimenopause",
+  "tagline": "Evidence-aware perimenopause guidance with clear medical-safety boundaries",
+  "description": "Helps Cline explain perimenopause and menopause symptoms, stages, testing, treatment options, lifestyle approaches, supplements, and appointment preparation using current evidence. Includes explicit boundaries against diagnosis and prescribing, urgent red-flag escalation, and source-quality guidance.",
+  "author": {
+    "name": "Tidalflow Health",
+    "url": "https://getlila.com"
+  },
+  "homepage": "https://github.com/Tidalflow-Health/lila-perimenopause/tree/v0.2.0/skills/perimenopause-guide",
+  "repo": "https://github.com/Tidalflow-Health/lila-perimenopause",
+  "icon": "https://raw.githubusercontent.com/Tidalflow-Health/lila-perimenopause/f0448dc6cd01c7947228da8860aff0708daff391/assets/lila-logo.png",
+  "tags": [
+    "research"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "Tidalflow-Health/lila-perimenopause",
+      "--skill",
+      "perimenopause-guide"
+    ]
+  }
+}
