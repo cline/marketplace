@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "calllint",
+  "type": "mcp",
+  "name": "CallLint",
+  "tagline": "Pre-flight static inspection for MCP servers before they run",
+  "description": "CallLint analyzes MCP server configurations for security and correctness without executing the target. It provides deterministic verdicts backed by evidence, detecting privilege escalation, malformed configurations, and supply chain risks before authority is granted.",
+  "author": {
+    "name": "CallLint Project",
+    "url": "https://calllint.com"
+  },
+  "homepage": "https://calllint.com",
+  "repo": "https://github.com/calllint/calllint",
+  "icon": "./icon.png",
+  "tags": ["security", "software"],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["calllint", "--", "npx", "-y", "calllint-mcp"],
+    "notes": "CallLint inspects MCP configurations statically. No API key required. Run `cline mcp list` after install to verify."
+  }
+}
