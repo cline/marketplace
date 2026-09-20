@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "penny-search",
+  "type": "mcp",
+  "name": "Penny Search",
+  "tagline": "Low-cost live web search for agents, paid per call with x402",
+  "description": "A hosted Streamable HTTP MCP server for current web search. Agents can discover the tool without an API key or subscription and pay only when they execute a search. Penny Search uses x402 on Base and costs $0.004 USDC per search.",
+  "author": {
+    "name": "PennyAPI",
+    "url": "https://pennyregwatch.com"
+  },
+  "homepage": "https://pennyregwatch.com",
+  "repo": "https://github.com/ayoubsalem-spec/PennyAPI",
+  "tags": ["research", "data"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "penny-search",
+      "--transport",
+      "http",
+      "https://pennyapi-production.up.railway.app/mcp"
+    ]
+  }
+}
