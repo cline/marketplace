@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "fanvault",
+  "type": "mcp",
+  "name": "Fanvault",
+  "tagline": "Run your creator storefront through AI",
+  "description": "Manage a Fanvault creator storefront through Cline. Create listings and digital products, publish and schedule content, fulfill orders, review analytics, and handle buyer messages using Fanvault's hosted MCP server.",
+  "author": {
+    "name": "Fanvault",
+    "url": "https://fanvault.shop"
+  },
+  "tags": [
+    "business",
+    "marketing",
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "fanvault",
+      "--transport",
+      "http",
+      "https://fanvault.shop/mcp"
+    ],
+    "notes": "Requires a Fanvault creator account. Authenticate through OAuth when prompted, or configure a scoped personal access token from Fanvault Settings > MCP."
+  },
+  "homepage": "https://fanvault.shop/developers/mcp",
+  "repo": "https://github.com/thefanvault/fanvault-mcp",
+  "icon": "https://raw.githubusercontent.com/thefanvault/fanvault-mcp/main/assets/icon-512.png",
+  "license": "CC-BY-4.0"
+}
