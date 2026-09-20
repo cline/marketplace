@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "opus-growth",
+  "type": "mcp",
+  "name": "Opus Growth",
+  "tagline": "Manage paid ads from Cline with approval-gated actions",
+  "description": "Connect Cline to Google, Meta, Microsoft, TikTok, and LinkedIn Ads through one hosted MCP server. Analyze performance, audit accounts, and prepare or execute changes with explicit user approval.",
+  "author": {
+    "name": "Opus Growth",
+    "url": "https://opus-growth.com"
+  },
+  "homepage": "https://opus-growth.com",
+  "repo": "https://github.com/opusgrowth/Opus-Growth-The-MCP-Connector-for-Ad-Platforms",
+  "icon": "./icon.png",
+  "tags": [
+    "marketing",
+    "data",
+    "business"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "opus-growth",
+      "--transport",
+      "http",
+      "https://mcp.opus-growth.com/mcp"
+    ],
+    "notes": "Sign in with Opus Growth when Cline opens the OAuth authorization flow. Ad account changes require explicit user approval."
+  }
+}
