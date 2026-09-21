@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "tablejourney",
+  "type": "mcp",
+  "name": "TableJourney",
+  "tagline": "Verified restaurants, markets, street food and food festivals in 200+ cities",
+  "description": "A public, read-only remote MCP server over TableJourney's editorially verified food travel data. Every venue carries provenance (source URL, date checked, open status) and opening hours; food festivals come with resolved dates; tours, stays and car hire are bookable through affiliate links. Ten tools: `search_places`, `place`, `plan_day`, `festivals`, `experiences`, `stays`, `car_hire`, `dishes`, `itineraries` and `cities`. No key or sign-up is needed. Terms: pass booking links to users unchanged and say they are affiliate links, cite the `page` URL, do not bulk-copy the catalogue (https://tablejourney.com/agents/#terms).",
+  "author": { "name": "TableJourney", "url": "https://tablejourney.com" },
+  "homepage": "https://tablejourney.com/agents/",
+  "repo": "https://github.com/lewismvaughan/tablejourney-mcp",
+  "icon": "./icon.svg",
+  "tags": ["data", "research"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["tablejourney", "--transport", "http", "https://tablejourney.com/mcp"],
+    "notes": "Hosted remote server, no authentication. The same functions are available as REST with OpenAPI at https://tablejourney.com/api/v1/docs."
+  }
+}
