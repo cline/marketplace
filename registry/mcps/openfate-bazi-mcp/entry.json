@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "openfate-bazi-mcp",
+  "type": "mcp",
+  "name": "OpenFate Bazi MCP",
+  "tagline": "Deterministic BaZi and Four Pillars calculations for AI agents",
+  "description": "Run deterministic BaZi / Four Pillars calculations locally through MCP, including True Solar Time, Ten Gods, Da Yun, lunar-to-solar conversion, reverse Bazi lookup, and Earthly Branch interactions. The server returns structured JSON so agents can separate calendrical calculations from interpretation.",
+  "author": {
+    "name": "OpenFate",
+    "url": "https://openfate.ai"
+  },
+  "homepage": "https://openfate.ai/en/bazi-chart",
+  "repo": "https://github.com/openfate-ai/openfate-mcp",
+  "tags": [
+    "data",
+    "research"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "openfate-bazi-mcp",
+      "--",
+      "npx",
+      "-y",
+      "@openfate/bazi-mcp"
+    ]
+  }
+}
