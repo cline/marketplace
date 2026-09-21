@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "404-directory",
+  "type": "mcp",
+  "name": "404.directory",
+  "tagline": "Search official AI and cloud docs, then discover trusted MCP tools",
+  "description": "A public, read-only remote MCP server for AI agents. Search current official documentation from OpenAI, Microsoft Learn, AWS, and Cloudflare; inspect web pages; and discover tools with transparent trust metadata. No account or API key is required.",
+  "author": {
+    "name": "MM-sheng",
+    "url": "https://github.com/MM-sheng"
+  },
+  "homepage": "https://404.directory",
+  "repo": "https://github.com/MM-sheng/404-directory",
+  "icon": "https://404.directory/favicon.ico",
+  "tags": ["research", "software", "security"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "404-directory",
+      "--transport",
+      "http",
+      "https://404.directory/mcp"
+    ],
+    "notes": "Zero-install hosted endpoint. After connecting, call search_official_docs for official technical sources. To attach a privacy-safe persistent Agent ID for usage history, generate the client-specific configuration at https://404.directory/connect?source=cline."
+  }
+}
