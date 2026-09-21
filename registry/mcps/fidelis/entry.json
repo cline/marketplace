@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "Fidelis Memory",
   "tagline": "Recall original notes from a local-first agent memory store",
-  "description": "Fidelis gives Cline four MCP tools for faithful local memory recall, direct queries, service health, and context-sensitive orientation. Its default retrieval path does not call an LLM.",
+  "description": "Fidelis gives Cline four MCP tools for local-first memory recall, direct queries, service health, and context-sensitive orientation. Its default retrieval path makes no LLM call and returns stored passages verbatim rather than rephrasing them.",
   "author": {
     "name": "Hermes Labs",
     "url": "https://hermes-labs.ai"
@@ -24,11 +24,11 @@
       "--",
       "uvx",
       "--from",
-      "fidelis-memory==0.0.95",
+      "fidelis-memory==0.2.0",
       "fidelis",
       "mcp",
       "serve"
     ],
-    "notes": "Prerequisites: Python 3.10+, uv/uvx, and Ollama with the nomic-embed-text model. Before first use, run `uvx --from fidelis-memory==0.0.95 fidelis init` once to install and start the local Fidelis service. Remove that service with `uvx --from fidelis-memory==0.0.95 fidelis init --uninstall`."
+    "notes": "Prerequisites for memory-backed operations: Python 3.10+, uv/uvx, Ollama, and the nomic-embed-text model. Before first use, run `uvx --from fidelis-memory==0.2.0 fidelis init` once to install and start the local Fidelis service. Remove that service with `uvx --from fidelis-memory==0.2.0 fidelis init --uninstall`."
   }
 }
