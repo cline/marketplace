@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "remcp",
+  "type": "mcp",
+  "name": "ReMCP",
+  "tagline": "Securely connect AI agents to computers you explicitly pair",
+  "description": "ReMCP is a hosted remote MCP bridge for working with real files, terminals, screenshots, search, and processes on computers a user explicitly pairs. It uses MCP OAuth for user authorization and an outbound device agent, so users do not need to expose an inbound port on their computer.",
+  "author": { "name": "Anton Baider", "url": "https://remcp.site" },
+  "homepage": "https://remcp.site",
+  "repo": "https://github.com/getremcp/remcp",
+  "icon": "./icon.png",
+  "tags": ["software", "productivity"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["remcp", "--transport", "http", "https://remcp.site/mcp"],
+    "notes": "Complete the MCP OAuth browser flow, then pair a computer from https://remcp.site/app/connect."
+  }
+}
