@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "adlicio",
+  "type": "mcp",
+  "name": "Adlicio",
+  "tagline": "Real customer language from Reddit, YouTube, TikTok, Amazon reviews and 20+ more sources",
+  "description": "Adlicio gives agents real customer language. Scrape comments and reviews from Reddit, YouTube, Amazon, TikTok, Instagram, Trustpilot, app stores and 20+ other sources, search Reddit and YouTube, pull top-performing TikTok and Instagram videos with their on-screen hooks, find competitor ads from the Meta Ad Library, and build brand and voice-of-customer reports.\n\nAbout 27 tools. The server is hosted, speaks streamable HTTP, and authenticates with OAuth 2.1 and dynamic client registration, so there is no API key to paste. The first call opens a browser sign-in for your Adlicio account.\n\nThe server needs an Adlicio All Access plan. A free account can connect and see the tools, but most tools spend research credits. `search_reddit` and `search_youtube` cost no credits.",
+  "author": {
+    "name": "Adlicio",
+    "url": "https://tryadlicio.com"
+  },
+  "homepage": "https://tryadlicio.com/mcp",
+  "repo": "https://github.com/daniel-ddtech/commentscraper-cli",
+  "icon": "https://raw.githubusercontent.com/daniel-ddtech/commentscraper-cli/main/assets/logo-400.png",
+  "tags": [
+    "research",
+    "marketing",
+    "data"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "adlicio",
+      "--transport",
+      "http",
+      "https://mcp.tryadlicio.com/mcp"
+    ],
+    "notes": "No API key. The first tool call opens a browser sign-in for your Adlicio account."
+  }
+}
