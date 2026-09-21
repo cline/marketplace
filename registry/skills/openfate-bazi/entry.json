@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "openfate-bazi",
+  "type": "skill",
+  "name": "OpenFate Bazi",
+  "tagline": "Deterministic BaZi and Four Pillars calculations for AI agents",
+  "description": "Use OpenFate’s deterministic MCP-backed workflow for BaZi / Four Pillars, True Solar Time, Ten Gods, Da Yun, lunar-to-solar conversion, compatibility, and Earthly Branch interactions. The skill directs agents to calculate with OpenFate tools instead of manually inferring calendrical results, while keeping interpretation non-fated and clearly separated from source data.",
+  "author": {
+    "name": "OpenFate",
+    "url": "https://openfate.ai"
+  },
+  "homepage": "https://openfate.ai/en/bazi",
+  "repo": "https://github.com/openfate-ai/openfate-mcp",
+  "tags": [
+    "data",
+    "research"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "openfate-ai/openfate-mcp",
+      "--skill",
+      "openfate-bazi"
+    ]
+  }
+}
