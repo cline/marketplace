@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "gtdbrain",
+  "type": "mcp",
+  "name": "GTD Brain",
+  "tagline": "Run your Getting Things Done board from Cline",
+  "description": "GTD Brain is a Getting Things Done board with a hosted MCP server. Capture anything to your Inbox without leaving the editor, pull next actions by context (calls, computer, errands, home, or your own set), keep projects and your Waiting For list current, and run a weekly review one list at a time. 16 tools and 4 prompts; the assistant can read, add, edit, move and archive cards, and it never deletes one. Sign in with an email code over OAuth 2.1: no API key, nothing to install. The same board as the GTD Brain web, iOS and Android apps. A new account gets a few free tool actions; ongoing use needs a GTD Brain subscription.",
+  "author": {
+    "name": "Minosin AB",
+    "url": "https://minosin.com"
+  },
+  "homepage": "https://gtdbrain.com/connect?source=cline-marketplace",
+  "repo": "https://github.com/minosin/gtdbrain-claude-plugin",
+  "icon": "https://gtdbrain.com/gtdbrain/icon-512.png",
+  "tags": [
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "gtdbrain",
+      "--transport",
+      "http",
+      "https://mcp.gtdbrain.com/api/gtdbrain/v1/mcp"
+    ]
+  }
+}
