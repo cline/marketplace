@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "invara",
+  "type": "mcp",
+  "name": "INVARA",
+  "tagline": "Verify declared constraints before trusting an AI-built change",
+  "description": "INVARA verifies declared constraints against observable evidence for AI-built software changes. It seals protected paths and runnable completion checks before work, then returns bounded PASS, BLOCK, UNVERIFIABLE, or HUMAN_REVIEW after judging the recorded evidence. Its local stdio MCP server exposes six tools for sealing, judging, listing, logging, chain verification, and replay. It does not prove general software correctness, find bugs automatically, provide a security guarantee, perform cloud verification, or make an authorization decision.",
+  "author": {
+    "name": "MIGARYOS",
+    "url": "https://migaryos.com/invara/"
+  },
+  "homepage": "https://migaryos.com/invara/",
+  "repo": "https://github.com/Jujitae/invara",
+  "icon": "./icon.png",
+  "tags": [
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "invara",
+      "--",
+      "uvx",
+      "--from",
+      "invara==0.3.0",
+      "invara-mcp"
+    ],
+    "notes": "Requires Python 3.12+ and uv/uvx. INVARA verifies declared constraints against observable evidence; it does not prove general software correctness."
+  }
+}
