@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "scholar-mcp",
+  "type": "mcp",
+  "name": "Scholar MCP",
+  "tagline": "Find papers from the idea, then follow the evidence",
+  "description": "A local-first research MCP that searches independent academic sources, resolves duplicate paper identities, reranks the combined evidence pool, follows citations and related work, reads primary PDFs, and maintains an optional research library.",
+  "author": {
+    "name": "Yuxian Li",
+    "url": "https://github.com/Liyux3"
+  },
+  "homepage": "https://github.com/Liyux3/scholar-mcp",
+  "repo": "https://github.com/Liyux3/scholar-mcp",
+  "icon": "./icon.svg",
+  "tags": ["research", "memory"],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "scholar",
+      "--",
+      "uvx",
+      "--from",
+      "scholar-mcp==0.8.4",
+      "scholar-mcp"
+    ]
+  }
+}
