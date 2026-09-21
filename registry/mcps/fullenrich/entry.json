@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "fullenrich",
+  "type": "mcp",
+  "name": "FullEnrich",
+  "tagline": "Find B2B contacts and enrich them with verified emails and phone numbers.",
+  "description": "FullEnrich is a B2B contact enrichment platform. This remote MCP server lets Cline search people and companies, enrich contacts with waterfall email and phone enrichment, and export results. Authentication uses OAuth against your FullEnrich workspace. Search previews are free; enrichment and exports consume FullEnrich credits, so check your balance with `get_credits` before enriching.",
+  "author": {
+    "name": "FullEnrich",
+    "url": "https://fullenrich.com"
+  },
+  "homepage": "https://fullenrich.com/mcp",
+  "repo": "https://github.com/FullEnrich/fullenrich-skills",
+  "icon": "./icon.svg",
+  "tags": [
+    "sales",
+    "data"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "fullenrich",
+      "--transport",
+      "http",
+      "https://mcp.fullenrich.com/mcp"
+    ],
+    "notes": "On first use, Cline opens the FullEnrich OAuth flow; sign in with your FullEnrich workspace account. No API key or manual secret setup is required. Enrichment tools consume paid FullEnrich credits; start with the free `get_credits` call to verify the connection."
+  }
+}
