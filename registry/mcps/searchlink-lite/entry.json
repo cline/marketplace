@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "searchlink-lite",
+  "type": "mcp",
+  "name": "SearchLink Lite",
+  "tagline": "Read-only Google Search Console for Cline",
+  "description": "Local, read-only MCP server for Google Search Console. Site overview with period comparison, search performance by query, page, country, device or date, low-CTR and position 8-20 opportunities, URL inspection, sitemap status, on-page checks and Google ranking update history. Totals come from the date dimension, so they match the Search Console UI.",
+  "author": {
+    "name": "GlobalMatchHub",
+    "url": "https://github.com/GlobalMatchHub"
+  },
+  "icon": "./icon.png",
+  "tags": [
+    "marketing",
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "searchlink-lite",
+      "--",
+      "npx",
+      "-y",
+      "searchlink-lite"
+    ],
+    "env": [
+      {
+        "name": "GOOGLE_APPLICATION_CREDENTIALS",
+        "required": false,
+        "description": "Path to a Google service account key file or gcloud application default credentials that can read your Search Console. Needed for the Search Console tools; page_check and algorithm_updates work without it.",
+        "url": "https://github.com/GlobalMatchHub/searchlink-lite#setup-about-10-minutes"
+      }
+    ]
+  },
+  "homepage": "https://github.com/GlobalMatchHub/searchlink-lite",
+  "repo": "https://github.com/GlobalMatchHub/searchlink-lite",
+  "license": "MIT"
+}
