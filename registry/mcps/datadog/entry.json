@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "datadog",
+  "type": "mcp",
+  "name": "Datadog",
+  "tagline": "Query telemetry and manage your Datadog organization",
+  "description": "Datadog's remote MCP server lets you retrieve telemetry insights across metrics, logs, monitors, and incidents, and manage platform features directly from your AI client. OAuth 2.0 is handled by the client during setup; bearer tokens and API/application key headers are also supported.",
+  "author": {
+    "name": "Datadog",
+    "url": "https://www.datadoghq.com"
+  },
+  "homepage": "https://docs.datadoghq.com/mcp_server/setup/",
+  "tags": [
+    "data",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "datadog",
+      "--transport",
+      "http",
+      "https://mcp.datadoghq.com/v1/mcp"
+    ]
+  }
+}
