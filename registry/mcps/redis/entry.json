@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "redis",
+  "type": "mcp",
+  "name": "Redis",
+  "tagline": "Query and manage Redis data structures",
+  "description": "Redis's official MCP server lets your AI client query and manage keys, hashes, lists, sets, sorted sets, streams, and more in a Redis database using natural language.",
+  "author": {
+    "name": "Redis",
+    "url": "https://redis.io"
+  },
+  "homepage": "https://redis.io",
+  "repo": "https://github.com/redis/mcp-redis",
+  "tags": [
+    "databases"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "redis",
+      "--",
+      "uvx",
+      "--from",
+      "redis-mcp-server@latest",
+      "redis-mcp-server",
+      "--url",
+      "<url>"
+    ],
+    "notes": "Replace <url> with your Redis connection string, for example redis://localhost:6379/0."
+  }
+}
