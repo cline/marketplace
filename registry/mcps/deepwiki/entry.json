@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "deepwiki",
+  "type": "mcp",
+  "name": "DeepWiki",
+  "tagline": "Ask questions about any public GitHub repository",
+  "description": "DeepWiki's remote MCP server answers questions about public GitHub repositories using up-to-date, AI-generated documentation of their code and architecture.",
+  "author": {
+    "name": "Cognition",
+    "url": "https://cognition.ai"
+  },
+  "homepage": "https://docs.devin.ai/work-with-devin/deepwiki-mcp",
+  "tags": [
+    "research",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "deepwiki",
+      "--transport",
+      "http",
+      "https://mcp.deepwiki.com/mcp"
+    ]
+  }
+}
