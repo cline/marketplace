@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "browser-mcp",
+  "type": "mcp",
+  "name": "Browser MCP",
+  "tagline": "Automate your own browser with your existing sessions",
+  "description": "Browser MCP connects your AI client to your real browser through a browser extension, so automations run with your logged-in sessions, cookies, and profile instead of a fresh headless instance.",
+  "author": {
+    "name": "Browser MCP",
+    "url": "https://browsermcp.io"
+  },
+  "homepage": "https://browsermcp.io",
+  "repo": "https://github.com/browsermcp/mcp",
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "browser-mcp",
+      "--",
+      "npx",
+      "-y",
+      "@browsermcp/mcp"
+    ],
+    "notes": "Requires the Browser MCP browser extension installed and connected to your browser; see browsermcp.io."
+  }
+}
