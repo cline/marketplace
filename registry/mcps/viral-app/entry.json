@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "viral-app",
+  "type": "mcp",
+  "name": "viral.app",
+  "tagline": "UGC and creator campaign analytics for TikTok, Instagram, YouTube, Facebook, and Snapchat",
+  "description": "Remote MCP server for viral.app. About 50 tools cover tracked accounts and videos with their analytics, tags and workflows, Creator Hub campaigns and creators, and live account and video lookups. Tools carry read-only and destructive annotations, and tools that spend viral.app credits return a cost quote before running. Sign-in is OAuth 2.1 with dynamic client registration, so no API key is needed; during consent you pick one viral.app organization. Requires a viral.app plan with API access.",
+  "author": { "name": "FMD Labs", "url": "https://viral.app" },
+  "homepage": "https://viral.app",
+  "repo": "https://github.com/fmd-labs/viral-app-agents",
+  "icon": "./icon.svg",
+  "tags": ["data", "marketing"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["viral-app", "--transport", "http", "https://viral.app/api/mcp"],
+    "notes": "Sign in through the browser OAuth flow on first use and pick the viral.app organization to connect. Manage authorized clients at https://viral.app/app/user/settings/security."
+  }
+}
