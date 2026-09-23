@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "kagi-search",
+  "type": "mcp",
+  "name": "Kagi Search",
+  "tagline": "Kagi web search and page extraction tools",
+  "description": "Kagi's hosted MCP server exposes Kagi Search across web, news, videos, podcasts, and images, plus full-page content extraction, through the Kagi API.",
+  "author": {
+    "name": "Kagi",
+    "url": "https://kagi.com"
+  },
+  "repo": "https://github.com/kagisearch/kagimcp",
+  "tags": [
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "kagi-search",
+      "--transport",
+      "http",
+      "https://mcp.kagi.com/mcp",
+      "--header",
+      "Authorization: Bearer <key>"
+    ],
+    "notes": "Replace <key> with your Kagi API key from https://kagi.com/settings?p=api."
+  }
+}
