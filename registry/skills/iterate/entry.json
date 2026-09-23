@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "iterate",
+  "type": "skill",
+  "name": "Iterate",
+  "tagline": "Iterate on a GitHub pull request — drive it through CI, code review, and QA until it is merge-ready",
+  "description": "Iterate on a GitHub pull request — drive it through CI, code review, and QA until it is merge-ready. Poll verification layers with `gh` CLI, diagnose and fix CI failures, address review feedback, retry flaky checks, push fixes, and repeat. The agent is the orchestration loop.",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/iterate",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "software",
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "iterate"
+    ]
+  }
+}

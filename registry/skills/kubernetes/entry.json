@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "kubernetes",
+  "type": "skill",
+  "name": "Kubernetes",
+  "tagline": "Set up and manage local Kubernetes clusters using KIND (Kubernetes IN Docker)",
+  "description": "Set up and manage local Kubernetes clusters using KIND (Kubernetes IN Docker).",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/kubernetes",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "kubernetes"
+    ]
+  }
+}

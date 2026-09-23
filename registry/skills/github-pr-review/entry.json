@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "github-pr-review",
+  "type": "skill",
+  "name": "GitHub PR Review",
+  "tagline": "Post PR review comments using the GitHub API with inline comments, suggestions, and priority labels",
+  "description": "Post PR review comments using the GitHub API with inline comments, suggestions, and priority labels.",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/github-pr-review",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "github-pr-review"
+    ],
+    "env": [
+      {
+        "name": "GITHUB_TOKEN",
+        "required": true,
+        "description": "GitHub personal access token for API and gh CLI calls",
+        "url": "https://github.com/settings/tokens"
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "bitbucket-data-center",
+  "type": "skill",
+  "name": "Bitbucket Data Center",
+  "tagline": "Work with self-hosted Bitbucket Data Center repos, pull requests, and the REST API 1.0",
+  "description": "Bitbucket Data Center (self-hosted Bitbucket Server) specifics — authenticate with BITBUCKET_DATA_CENTER_TOKEN, use the REST API 1.0, PROJECT/repo_slug repositories, scm/ git remotes, and the create_bitbucket_data_center_pr tool.",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/bitbucket-data-center",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "bitbucket-data-center"
+    ],
+    "env": [
+      {
+        "name": "BITBUCKET_DATA_CENTER_TOKEN",
+        "required": true,
+        "description": "Bitbucket Data Center personal access token",
+        "url": "https://confluence.atlassian.com/bitbucketserver/personal-access-tokens-939515499.html"
+      }
+    ]
+  }
+}

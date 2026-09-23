@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "bitbucket-cloud",
+  "type": "skill",
+  "name": "Bitbucket Cloud",
+  "tagline": "Work with Bitbucket Cloud repos, pull requests, and the REST API v2 using BITBUCKET_TOKEN",
+  "description": "Bitbucket Cloud (bitbucket.org) specifics — authenticate with BITBUCKET_TOKEN, use the REST API v2, workspace/repo_slug repositories, and the create_bitbucket_pr tool.",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/bitbucket-cloud",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "bitbucket-cloud"
+    ],
+    "env": [
+      {
+        "name": "BITBUCKET_TOKEN",
+        "required": true,
+        "description": "Bitbucket API token (user:token form)",
+        "url": "https://id.atlassian.com/manage-profile/security/api-tokens"
+      }
+    ]
+  }
+}

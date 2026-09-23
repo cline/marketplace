@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "qa-changes",
+  "type": "skill",
+  "name": "QA Changes",
+  "tagline": "Validate pull request changes by actually running the code, not just reading it",
+  "description": "Structured QA methodology for pull requests: set up the environment, exercise the changed behavior the way a thorough human QA engineer would, and report results.",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/qa-changes",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "qa-changes"
+    ]
+  }
+}

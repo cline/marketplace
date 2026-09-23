@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "swift-linux",
+  "type": "skill",
+  "name": "Swift Linux",
+  "tagline": "Install and configure Swift programming language on Debian Linux for server-side development",
+  "description": "Install and configure Swift programming language on Debian Linux for server-side development.",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/swift-linux",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "swift-linux"
+    ]
+  }
+}

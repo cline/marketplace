@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "agent-memory",
+  "type": "skill",
+  "name": "Agent Memory",
+  "tagline": "Persist and retrieve repository-specific knowledge using AGENTS.md files",
+  "description": "Persist and retrieve repository-specific knowledge using AGENTS.md files.",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/agent-memory",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "memory",
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "agent-memory"
+    ]
+  }
+}

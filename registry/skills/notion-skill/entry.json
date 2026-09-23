@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "notion-skill",
+  "type": "skill",
+  "name": "Notion",
+  "tagline": "Create, search, and update Notion pages/databases using the Notion API",
+  "description": "Create, search, and update Notion pages/databases using the Notion API. Use for documenting work, generating runbooks, and automating knowledge base updates.",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/notion",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "notion"
+    ],
+    "env": [
+      {
+        "name": "NOTION_INTEGRATION_KEY",
+        "required": true,
+        "description": "Notion internal integration secret",
+        "url": "https://www.notion.so/profile/integrations"
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "jupyter",
+  "type": "skill",
+  "name": "Jupyter",
+  "tagline": "Read, modify, execute, and convert Jupyter notebooks programmatically",
+  "description": "Read, modify, execute, and convert Jupyter notebooks programmatically.",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/jupyter",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "software",
+    "data"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "jupyter"
+    ]
+  }
+}

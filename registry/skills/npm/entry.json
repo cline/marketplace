@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "npm",
+  "type": "skill",
+  "name": "npm",
+  "tagline": "Handle npm package installation in non-interactive environments by piping confirmations",
+  "description": "Handle npm package installation in non-interactive environments by piping confirmations.",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/npm",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "npm"
+    ]
+  }
+}

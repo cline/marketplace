@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "release-notes",
+  "type": "skill",
+  "name": "Release Notes",
+  "tagline": "Generate formatted changelogs from git history since the last release tag",
+  "description": "Generate formatted changelogs from git history since the last release tag.",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/release-notes",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "software",
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "release-notes"
+    ]
+  }
+}

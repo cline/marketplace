@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "pdflatex",
+  "type": "skill",
+  "name": "pdfLaTeX",
+  "tagline": "Install and use pdflatex to compile LaTeX documents into PDFs on Linux",
+  "description": "Install and use pdflatex to compile LaTeX documents into PDFs on Linux.",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/pdflatex",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "pdflatex"
+    ]
+  }
+}

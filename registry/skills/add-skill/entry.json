@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "add-skill",
+  "type": "skill",
+  "name": "Add Skill",
+  "tagline": "Import an existing skill from a GitHub repository URL into the current workspace",
+  "description": "Import an existing skill from a GitHub repository URL into the current workspace.",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/add-skill",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "software",
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "add-skill"
+    ]
+  }
+}

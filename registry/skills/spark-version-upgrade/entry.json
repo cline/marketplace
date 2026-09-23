@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "spark-version-upgrade",
+  "type": "skill",
+  "name": "Spark Version Upgrade",
+  "tagline": "Upgrade Apache Spark applications between major versions (2.x→3.x, 3.x→4.x)",
+  "description": "Upgrade Apache Spark applications between major versions (2.x→3.x, 3.x→4.x). Covers build files, deprecated APIs, configuration changes, SQL/DataFrame updates, and test validation.",
+  "author": {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands"
+  },
+  "homepage": "https://github.com/OpenHands/extensions/tree/main/skills/spark-version-upgrade",
+  "repo": "https://github.com/OpenHands/extensions",
+  "tags": [
+    "software",
+    "data"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "OpenHands/extensions",
+      "--skill",
+      "spark-version-upgrade"
+    ]
+  }
+}
