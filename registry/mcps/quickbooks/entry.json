@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "quickbooks",
+  "type": "mcp",
+  "name": "QuickBooks",
+  "tagline": "Query and manage QuickBooks Online company data",
+  "description": "Intuit's official hosted MCP server for QuickBooks Online, operated by Intuit with OAuth sign-in. (The standalone quickbooks-online-mcp-server repo is a local stdio early preview; this remote endpoint is the hosted counterpart.)",
+  "author": {
+    "name": "Intuit",
+    "url": "https://developer.intuit.com"
+  },
+  "repo": "https://github.com/intuit/quickbooks-online-mcp-server",
+  "tags": [
+    "finance",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "quickbooks",
+      "--transport",
+      "http",
+      "https://ai-inc.quickbooks.intuit.com/v1/mcp"
+    ]
+  }
+}
