@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/plugin.schema.json",
+  "id": "clineignore",
+  "type": "plugin",
+  "name": "Clineignore",
+  "tagline": "Block tool access to paths listed in a workspace .clineignore file",
+  "description": "The plugin successor to the legacy extension's built-in `.clineignore` support. Reads a `.clineignore` file at the workspace root (standard `.gitignore` syntax, plus `!include <file>` directives) and registers a `beforeTool` hook that skips `read_files`, `editor`, and `apply_patch` calls targeting ignored paths, and `run_commands` calls where a file-reading command like `cat` or `grep` targets one. Also injects a system prompt rule so the model knows blocked paths are intentional. Edits to `.clineignore` take effect mid session. This is context hygiene, not a security boundary: unrecognized shell commands and `search_codebase` results can still surface ignored content.",
+  "author": {
+    "name": "Cline",
+    "url": "https://cline.bot"
+  },
+  "homepage": "https://github.com/cline/plugins/tree/main/plugins/clineignore",
+  "repo": "https://github.com/cline/plugins/tree/main/plugins/clineignore",
+  "icon": "./icon.svg",
+  "tags": [
+    "security",
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": true,
+  "install": {
+    "args": [
+      "clineignore"
+    ],
+    "notes": "Create a `.clineignore` file at your workspace root using `.gitignore` syntax. Lines like `!include <file>` pull in additional pattern files."
+  }
+}
