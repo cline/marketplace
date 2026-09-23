@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "wealthnow",
+  "type": "mcp",
+  "name": "Wealthnow",
+  "tagline": "Market data, fundamentals and SEC filings for your agent",
+  "description": "A hosted MCP server for market data, fundamentals, SEC filings, insider, 13F and congressional trades, and private markets. Get live quotes and price history for stocks and crypto, pull full financial statements and key metrics, screen stocks and compare peers, and read structured extracts from 10-K, 10-Q and 8-K filings. Sign in with a Wealthnow account over OAuth; the free plan includes 1,000 credits a month. Every tool is read-only. Data and structured signals, not investment advice.",
+  "author": { "name": "Wealthnow", "url": "https://wealthnow.io" },
+  "homepage": "https://wealthnow.io/api",
+  "repo": "https://github.com/Hlobo-dev/wealthnow-mcp",
+  "icon": "./icon.png",
+  "tags": ["finance", "data", "research"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["wealthnow", "--transport", "http", "https://mcp.wealthnow.io/mcp"]
+  }
+}
