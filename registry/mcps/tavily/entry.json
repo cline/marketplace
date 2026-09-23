@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "tavily",
+  "type": "mcp",
+  "name": "Tavily",
+  "tagline": "Web search, extraction, mapping, and crawling built for agents",
+  "description": "Tavily's hosted MCP server provides real-time web search plus page extraction, site mapping, and web crawling tools through the Tavily API.",
+  "author": {
+    "name": "Tavily",
+    "url": "https://www.tavily.com"
+  },
+  "homepage": "https://docs.tavily.com/documentation/mcp",
+  "repo": "https://github.com/tavily-ai/tavily-mcp",
+  "tags": [
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "tavily",
+      "--transport",
+      "http",
+      "https://mcp.tavily.com/mcp/"
+    ],
+    "notes": "OAuth is handled during setup. You can also pass a Tavily API key via the ?tavilyApiKey=<key> query parameter or an Authorization: Bearer <key> header."
+  }
+}
