@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "monday",
+  "type": "mcp",
+  "name": "Monday.com",
+  "tagline": "Manage monday.com boards, items, and workflows",
+  "description": "The monday.com remote MCP server lets your AI client read and update boards, items, docs, and workflows in your monday.com account.",
+  "author": {
+    "name": "monday.com",
+    "url": "https://monday.com"
+  },
+  "homepage": "https://monday.com/w/mcp",
+  "tags": [
+    "productivity",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "monday",
+      "--transport",
+      "http",
+      "https://mcp.monday.com/mcp"
+    ]
+  }
+}
