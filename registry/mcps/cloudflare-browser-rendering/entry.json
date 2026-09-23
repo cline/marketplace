@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "cloudflare-browser-rendering",
+  "type": "mcp",
+  "name": "Cloudflare Browser Rendering",
+  "tagline": "Control headless browsers running on Cloudflare's network",
+  "description": "Cloudflare's Browser Rendering MCP server lets your AI client browse pages, render content, and take screenshots with headless browsers running on Cloudflare's global network.",
+  "author": {
+    "name": "Cloudflare",
+    "url": "https://www.cloudflare.com"
+  },
+  "homepage": "https://developers.cloudflare.com/agents/model-context-protocol/",
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cloudflare-browser-rendering",
+      "--transport",
+      "http",
+      "https://browser.mcp.cloudflare.com/mcp"
+    ]
+  }
+}
