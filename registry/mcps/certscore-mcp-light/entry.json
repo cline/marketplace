@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "certscore-mcp-light",
+  "type": "mcp",
+  "name": "CertScore.ai MCP Light",
+  "tagline": "No-auth public website privacy-risk scans with evidence and limitations",
+  "description": "Scan or reuse a bounded public website review for observed cookies and trackers, CMP and consent controls, privacy-policy and transparency signals, regulatory review context, and HTTPS/TLS observations. Results include evidence references and explicit coverage limitations for human or agentic review; they are not legal advice, certification, or a compliance determination.",
+  "author": {
+    "name": "CertScore.ai, LLC",
+    "url": "https://certscore.ai"
+  },
+  "homepage": "https://certscore.ai/mcp/light",
+  "repo": "https://github.com/ergoveritas1-alt/certscore.ai",
+  "icon": "https://certscore.ai/images/mcp-directory/certscore-mcp-light-cline-400.png",
+  "tags": ["security", "software"],
+  "license": "Proprietary",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "certscore-light",
+      "--transport",
+      "streamable-http",
+      "https://mcp.certscore.ai/mcp/light"
+    ],
+    "notes": "No account, API key, OAuth flow, or headers are required. Keep scan creation under user control and retrieve a completed findings bundle before summarizing results."
+  }
+}
