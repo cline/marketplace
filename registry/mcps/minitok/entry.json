@@ -1,0 +1,51 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "minitok",
+  "type": "mcp",
+  "name": "minitok",
+  "tagline": "Verified repository-aware coding workflows for MCP clients",
+  "description": "minitok exposes repository-aware coding workflow controls to MCP clients. It separates research, planning, implementation, deterministic verification, review, repair, and evidence recording. Local stdio execution is read-only by default; repository-changing scopes require explicit configuration and approval. An active minitok entitlement and configured provider credentials are required for production workflow methods.",
+  "author": {
+    "name": "Flotic LC.",
+    "url": "https://minitok.dev"
+  },
+  "homepage": "https://minitok.dev/docs",
+  "repo": "https://github.com/floticinfo/minitok",
+  "tags": [
+    "software",
+    "productivity",
+    "security"
+  ],
+  "license": "Proprietary",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "minitok",
+      "--",
+      "npx",
+      "-y",
+      "@flotic/minitok@1.4.15",
+      "mcp",
+      "serve"
+    ],
+    "env": [
+      {
+        "name": "MINITOK_MCP_AUTH_TOKEN_FILE",
+        "required": true,
+        "description": "Owner-only runtime token file created by minitok mcp connect."
+      },
+      {
+        "name": "MINITOK_MCP_SCOPES",
+        "required": false,
+        "description": "Explicit scopes; defaults to read. Add write and verify_exec only when intended."
+      },
+      {
+        "name": "MINITOK_SERVER_URL",
+        "required": false,
+        "description": "Optional HTTPS minitok service URL override; defaults to https://api.minitok.dev."
+      }
+    ],
+    "notes": "For first-time setup, install @flotic/minitok@1.4.15 and run minitok mcp setup cline --scopes read. The guided setup opens account sign-in, explains paid-plan activation, refreshes the runtime token, and writes the Cline configuration. Repository-changing scopes require explicit write and verify_exec configuration. npm publication and official MCP Registry publication for 1.4.15 are pending publisher authentication."
+  }
+}

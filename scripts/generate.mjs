@@ -16,8 +16,9 @@ import {
   writeFileSync,
 } from "node:fs";
 import { basename, extname, join, relative } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const root = new URL("..", import.meta.url).pathname;
+const root = fileURLToPath(new URL("..", import.meta.url));
 const registryRoot = join(root, "registry");
 const distRoot = join(root, "dist");
 const tagsPath = join(root, "tags.json");
