@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "email-spam-tester",
+  "type": "mcp",
+  "name": "Email Spam Tester",
+  "tagline": "Test an email for spam and deliverability problems before you send it",
+  "description": "Cline reserves a disposable address, you (or Cline) send the draft to it, and the report comes back with 42 checks: SPF, DKIM and DMARC, 21 blocklists, two spam engines, content, and the Gmail and Yahoo rules for bulk senders. Each finding cites the RFC it rests on, and the report ends with a fix plan. Four tools: `get_test_address`, `wait_for_report`, `get_report`, `get_message_source`. Free, no API key.",
+  "author": {
+    "name": "Serhii Tanichev",
+    "url": "https://email-spam-tester.com/"
+  },
+  "homepage": "https://email-spam-tester.com/",
+  "repo": "https://github.com/serg-tanichev/email-spam-tester-mcp",
+  "icon": "https://email-spam-tester.com/icon-192.png",
+  "tags": [
+    "marketing",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "email-spam-tester",
+      "--transport",
+      "http",
+      "https://email-spam-tester.com/mcp"
+    ]
+  }
+}
