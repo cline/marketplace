@@ -11,7 +11,7 @@
   },
   "homepage": "https://govgazette.com",
   "repo": "https://github.com/mooshee/govgazette-mcp",
-  "icon": "https://raw.githubusercontent.com/mooshee/govgazette-mcp/main/plugin/assets/icon.png",
+  "icon": "https://raw.githubusercontent.com/mooshee/govgazette-mcp/main/plugin/assets/mark-512.png",
   "tags": ["research", "data", "business"],
   "verified": false,
   "featured": false,
