@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "bestprice-shopping",
+  "type": "mcp",
+  "name": "BestPrice Shopping",
+  "tagline": "Shopping decisions, delivered-price comparison, and price history for Greece",
+  "description": "A public read-only MCP server for physical-product shopping in Greece. It provides evidence-backed shopping decisions, grouped-product search, current Greek merchant offer comparison with delivered totals, and price history. No BestPrice account or API key is required.",
+  "author": {
+    "name": "BestPrice.gr",
+    "url": "https://www.bestprice.gr"
+  },
+  "homepage": "https://www.bestprice.gr/mcp",
+  "repo": "https://github.com/TheBestCo/bestprice-mcp",
+  "icon": "https://raw.githubusercontent.com/TheBestCo/bestprice-mcp/main/assets/bestprice-mcp-logo-1024.png",
+  "tags": ["business", "research"],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["bestprice-shopping", "--transport", "http", "https://mcp.bestprice.gr/mcp"]
+  }
+}
