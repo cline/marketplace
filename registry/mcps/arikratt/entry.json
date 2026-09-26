@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "arikratt",
+  "type": "mcp",
+  "name": "Ärikratt",
+  "tagline": "Estonian companies, EMTAK, grants and tenders from public registers.",
+  "description": "Remote Streamable HTTP server for Estonian public registers. Every tool is read-only and stays at company level: revenue, taxes, tax debt, state aid, and licences. It does not return natural-person identifiers, board members, natural-person shareholders, or beneficial owners. Sole proprietors are not shown. Endpoint: https://arikratt.ee/mcp. initialize and tools/list succeed when the Authorization header is omitted. tools/call requires a personal API key in that header. A 14-day trial with 50 successful calls is requested by email at arikratt@r-53.com. Operator: R-53 OÜ (Estonia). Official MCP registry id ee.arikratt/arikratt v1.0.0. The product documentation does not link a public source repository.\n\nTools, from an anonymous tools/list on protocol version 2025-06-18:\n\n- search_companies: Search active legal entities by current or former name or registry code. Use include_inactive for non-active statuses. County aliases accepted; unknown county errors. Opaque cursor pagination. Use this for a short list when you have a name or a code. Use get_company for one code's full card, and find_companies to filter by county, EMTAK, revenue, or employees.\n- get_company: Company profile, latest accounts (or all years via sections), last 8 EMTA quarters, tax debt, aid, licences, announcements, legal-entity owners, peer percentiles, and similar companies. Optional sections add permits, EMTAK activities, EU grants, history, and state contracts. Use check_counterparty when the question is only status, tax debt, a missing report, or insolvency. Use search_companies when you only have a name.\n- check_counterparty: Status, tax debt, last filed report, overdue days, insolvency or liquidation notices, and distress for one registry code. Use this before invoicing. Use get_company for the wider financial card, and risk_signals to scan many companies for one signal.\n- compare_companies: Compare up to four companies for one year: accounts, tax debt, distress, and revenue percentile. Use find_companies to discover codes first, and sector_stats for the industry median rather than named peers.\n- find_companies: Capped company list sorted by revenue descending, filtered by county, EMTAK, revenue, employees, or no current tax debt. County aliases accepted. No personal emails or phone numbers. Use search_companies for a name lookup, and get_company on a code from this list.\n- sector_stats: Sector medians, percentiles, and company counts for one EMTAK. Use region_stats when the question is a county rather than an industry, and compare_companies for named firms.\n- region_stats: County figures, or every county when county is omitted: medians, employment, and aid. Use sector_stats when the question is an EMTAK rather than a place.\n- open_calls: Open funding calls from EIS, PRIA, and KIK. Use procurement_notices for public tenders. This tool does not draft an application.\n- procurement_notices: Public procurement notices with buyer, deadline, and CPV. Title/buyer text uses contains matching. Opaque cursor pagination. Companies and authorities only. Use open_calls for grants and funding calls, not tenders.\n- risk_signals: Companies that currently match one register signal: tax debt, bankruptcy, liquidation, or distress. Each row is a company, not a person. Opaque cursor pagination. Use check_counterparty for one known registry code.",
+  "author": {
+    "name": "R-53 OÜ",
+    "url": "https://arikratt.ee"
+  },
+  "homepage": "https://arikratt.ee/en/mcp",
+  "icon": "https://arikratt.ee/apple-touch-icon.png",
+  "tags": [
+    "business",
+    "finance",
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "arikratt",
+      "--transport",
+      "http",
+      "https://arikratt.ee/mcp",
+      "--header",
+      "Authorization: Bearer ${ARIKRATT_API_KEY}"
+    ],
+    "env": [
+      {
+        "name": "ARIKRATT_API_KEY",
+        "required": true,
+        "description": "Personal API key only, without the Bearer prefix. The install header adds Bearer. Required for tools/call. A 14-day, 50-call trial is requested by email.",
+        "url": "https://arikratt.ee/en/mcp"
+      }
+    ],
+    "notes": "Do not put the key in the URL. An empty or invalid Authorization value is rejected, including on initialize. Omit the header only for anonymous initialize and tools/list."
+  }
+}
