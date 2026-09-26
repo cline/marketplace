@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "reddit-rules-first",
+  "type": "skill",
+  "name": "Reddit Rules First",
+  "tagline": "Post to Reddit the way communities accept it: rules first, one post per community, check what stayed up",
+  "description": "A workflow for agents asked to share, launch or promote something on Reddit: pick communities where the product answers questions people already ask, read each subreddit's rules the day you post (self-promotion limits, promo threads, flair, account minimums), write a fresh post per community, disclose affiliation in the first lines, space posts out, answer comments, and check at 1, 6 and 24 hours whether each post is still up. Works on its own; can use the optional ThreadFox Lite MCP tools from the same repo.",
+  "author": {
+    "name": "ThreadFox (AMF Indiana)",
+    "url": "https://threadfox.vip"
+  },
+  "homepage": "https://github.com/amflimited/threadfox-lite/tree/main/skills/reddit-rules-first",
+  "repo": "https://github.com/amflimited/threadfox-lite",
+  "tags": [
+    "marketing"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "amflimited/threadfox-lite",
+      "--skill",
+      "reddit-rules-first"
+    ]
+  }
+}
