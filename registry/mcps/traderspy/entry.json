@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "traderspy",
+  "type": "mcp",
+  "name": "TraderSpy",
+  "tagline": "Crypto AI signals and whale positions for your agent",
+  "description": "Live crypto futures data for Cline: AI-generated trading signals with entry, target and stop levels plus their realised outcome; whale and elite-trader positioning across Binance, Hyperliquid, Bybit and OKX; prices, candles and 19 technical indicators over up to three timeframes in one call; funding rate and open interest; a market-wide condition screener and an event-study backtest.\n\nAll 17 tools are read-only — the server cannot place, close or modify an order and exposes no withdrawal or transfer tool.",
+  "author": {
+    "name": "TraderSpy",
+    "url": "https://traderspy.app"
+  },
+  "homepage": "https://traderspy.app/mcp",
+  "repo": "https://github.com/target1m/traderspy-mcp",
+  "icon": "https://traderspy.app/favicon.png",
+  "tags": [
+    "finance",
+    "data"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "traderspy",
+      "--transport",
+      "http",
+      "https://mcp.traderspy.app/mcp",
+      "--header",
+      "Authorization: Bearer ${TRADERSPY_API_KEY}"
+    ],
+    "env": [
+      {
+        "name": "TRADERSPY_API_KEY",
+        "required": true,
+        "description": "Personal TraderSpy MCP key, starts with mcp_. Generate one for free at https://traderspy.app/mcp",
+        "url": "https://traderspy.app/mcp"
+      }
+    ],
+    "notes": "Sign in at https://traderspy.app/mcp to generate a key — it is shown once and can be revoked at any time. Free accounts get 300 tool calls per day, premium 5,000."
+  }
+}
