@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "threadfox-lite",
+  "type": "mcp",
+  "name": "ThreadFox Lite",
+  "tagline": "Free, read-only Reddit research: subreddit rules, communities, account standing and post status",
+  "description": "Read-only Reddit tools for planning posts that communities accept. subreddit_rules returns a subreddit's rules, size and description with self-promotion rules flagged; find_communities lists subreddits for a topic with their promotion rules; account_check reports an account's age, karma and whether recent posts are removed or hidden; post_status says whether a post is still live, removed or deleted. It reads through your own signed-in Chrome via Microsoft's Playwright Extension (one-time setup), never posts, votes or changes anything, and needs no Reddit API keys.",
+  "author": {
+    "name": "ThreadFox (AMF Indiana)",
+    "url": "https://threadfox.vip"
+  },
+  "tags": [
+    "marketing",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "threadfox-lite",
+      "--",
+      "uvx",
+      "threadfox-lite"
+    ]
+  },
+  "repo": "https://github.com/amflimited/threadfox-lite",
+  "license": "MIT",
+  "icon": "https://raw.githubusercontent.com/amflimited/threadfox-lite/main/icon.png"
+}
