@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "hydrant",
+  "type": "mcp",
+  "name": "Hydrant",
+  "tagline": "Issue tracking your agents can actually use, with reads first and writes with receipts.",
+  "description": "Track issues, projects and dependencies with your agent in a workspace you control. Connect to Hydrant over Streamable HTTP and authorize access through OAuth. Start with read operations; writes return receipts. The linked repository contains public agent skills and connection documentation, not the hosted service source.",
+  "author": {
+    "name": "Background Craft",
+    "url": "https://hydrant.dev"
+  },
+  "homepage": "https://hydrant.dev",
+  "repo": "https://github.com/Background-Craft/hydrant-skills",
+  "tags": [
+    "productivity",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "hydrant",
+      "--transport",
+      "http",
+      "https://hydrant.dev/api/mcp"
+    ],
+    "notes": "Complete OAuth authorization with your Hydrant account. Verify read access before running an explicitly approved write."
+  },
+  "icon": "./icon.png"
+}
