@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "vardoger",
+  "type": "mcp",
+  "name": "Vardoger",
+  "tagline": "Turn local Cline history into reviewable, reusable working preferences",
+  "description": "Vardoger reads conversation history already stored on the user's machine and exposes an MCP workflow that asks the active Cline model to synthesize reviewable working preferences. It writes a dedicated user-global Cline rule or, when explicitly requested, a project rule. Vardoger has no hosted backend or telemetry; model-side analysis follows the selected model provider's data policy.",
+  "author": {
+    "name": "David Strupl",
+    "url": "https://github.com/dstrupl"
+  },
+  "homepage": "https://github.com/dstrupl/vardoger/tree/main/plugins/cline",
+  "repo": "https://github.com/dstrupl/vardoger",
+  "icon": "https://raw.githubusercontent.com/dstrupl/vardoger/main/assets/logo-400.png",
+  "tags": [
+    "memory",
+    "productivity",
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "vardoger",
+      "--",
+      "uvx",
+      "vardoger",
+      "mcp"
+    ],
+    "env": [
+      {
+        "name": "VARDOGER_MCP_PLATFORM",
+        "required": true,
+        "description": "Set this value to cline so platform-optional Vardoger tools use Cline history and Cline rules by default."
+      }
+    ],
+    "notes": "When prompted for VARDOGER_MCP_PLATFORM, enter cline. Python 3.11 or newer and uvx are required. Vardoger proposes personalization for review before writing it."
+  }
+}
