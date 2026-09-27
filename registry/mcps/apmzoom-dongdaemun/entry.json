@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "apmzoom-dongdaemun",
+  "type": "mcp",
+  "name": "apMZoomAI · Dongdaemun wholesale",
+  "tagline": "Search Dongdaemun (Seoul) wholesale fashion items, new arrivals and stalls",
+  "description": "Search wholesale fashion items listed by stalls in the Dongdaemun market in Seoul, see new arrivals, find stalls by building, floor and stall number, and open each item or stall on apMZoomAI. Works in English, Chinese, Korean, Japanese, Vietnamese, Thai, Indonesian and Malay. Public and read-only: no sign-in or API key, and it never returns prices or merchant contact details.",
+  "author": {
+    "name": "apM Hwashin Co., Ltd."
+  },
+  "tags": [
+    "business",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "apmzoom-dongdaemun",
+      "--transport",
+      "http",
+      "https://www.apmzoom.com/mcp"
+    ]
+  },
+  "repo": "https://github.com/apmleokeo-gif/apmzoom-mcp",
+  "license": "MIT"
+}
