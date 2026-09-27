@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "windsock",
+  "type": "mcp",
+  "name": "Windsock",
+  "tagline": "Aircraft valuations, FAA registry and market data for general aviation",
+  "description": "Remote MCP server with 38 tools: aircraft valuations with confidence bands, FAA registry lookup by tail number, cost of ownership, comparable aircraft, fleet search, airworthiness directives and STCs, market metrics and forecasts, verified value reports and logbook search. Sign in with OAuth on first use, or set a Windsock API key. Free tier available.",
+  "author": {
+    "name": "Windsock",
+    "url": "https://windsock.ai"
+  },
+  "homepage": "https://windsock.ai/mcp",
+  "repo": "https://github.com/team-windsock/windsock-mcp",
+  "icon": "./icon.svg",
+  "tags": ["data", "research", "finance"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["windsock", "--transport", "http", "https://windsock.ai/mcp"],
+    "env": [
+      {
+        "name": "WINDSOCK_API_KEY",
+        "required": false,
+        "description": "Optional Windsock API key (wsk_…) to use instead of OAuth; free tier at windsock.ai/app/integrations",
+        "url": "https://windsock.ai/app/integrations"
+      }
+    ],
+    "notes": "Connects to the hosted Streamable HTTP endpoint. On first tool call you will be asked to sign in to Windsock (OAuth 2.1 with dynamic client registration). Docs: https://windsock.ai/mcp"
+  }
+}
