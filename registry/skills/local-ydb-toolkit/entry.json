@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "local-ydb-toolkit",
+  "type": "skill",
+  "name": "Local YDB Toolkit",
+  "tagline": "Plan and troubleshoot Docker-based local YDB operations safely",
+  "description": "Reusable guidance for diagnosing and operating local YDB deployments, including lifecycle, auth, storage, schema, backup, restore, and upgrade workflows. Without local shell or MCP access, the skill provides instructions and plans without claiming it inspected Docker or YDB.",
+  "author": {
+    "name": "astandrik",
+    "url": "https://github.com/astandrik"
+  },
+  "homepage": "https://local-ydb-toolkit.ydb-qdrant.tech/",
+  "repo": "https://github.com/astandrik/local-ydb-toolkit",
+  "icon": "https://raw.githubusercontent.com/astandrik/local-ydb-toolkit/main/assets/icon.svg",
+  "tags": [
+    "databases",
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "astandrik/local-ydb-toolkit",
+      "--skill",
+      "local-ydb"
+    ],
+    "notes": "The skill provides operational guidance. Tool-backed access to Docker and YDB requires a separately configured shell or MCP server."
+  }
+}
