@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "memoket",
+  "type": "mcp",
+  "name": "Memoket",
+  "tagline": "Search your voice recordings and pull transcripts, summaries & briefs",
+  "description": "Connect your Memoket account over MCP to search your voice recordings and pull transcripts, summaries, and briefs of your meetings and conversations — directly inside Cline. Memoket is the AI voice recorder.",
+  "author": { "name": "Memoket", "url": "https://memoket.ai" },
+  "homepage": "https://memoket.ai",
+  "repo": "https://github.com/memoket/memoket-plugin-cursor",
+  "icon": "./icon.png",
+  "tags": ["productivity", "research", "memory"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["memoket", "--transport", "http", "https://mcp.memoket.ai/mcp"]
+  }
+}
