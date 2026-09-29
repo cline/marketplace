@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "manycp-mcp",
+  "type": "mcp",
+  "name": "ManyCP MCP server",
+  "tagline": "Submit an MCP server to many MCP directories and track each listing from an AI assistant",
+  "description": "The ManyCP MCP server lets an AI assistant submit an MCP server to MCP directories.",
+  "author": {
+    "name": "dayyad",
+    "url": "https://github.com/dayyad"
+  },
+  "homepage": "https://manycp.com",
+  "repo": "https://github.com/dayyad/manycp-mcp",
+  "tags": [
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "manycp-mcp",
+      "--transport",
+      "http",
+      "https://manycp.com/mcp"
+    ],
+    "env": [
+      {
+        "name": "MANYCP_AUTH",
+        "required": true
+      }
+    ]
+  }
+}
