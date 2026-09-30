@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "agentcloud",
+  "type": "mcp",
+  "name": "AgentCloud",
+  "tagline": "Build, run, and inspect iOS apps in disposable hosted Simulators",
+  "description": "AgentCloud gives coding agents access to disposable hosted iOS Simulators. Build and install apps, drive and inspect the UI, read logs, and capture screenshots and recordings through 28 tools on an OAuth-enabled remote MCP endpoint.",
+  "author": {
+    "name": "AgentCloud",
+    "url": "https://agentcloud.so"
+  },
+  "homepage": "https://agentcloud.so",
+  "repo": "https://github.com/Theo-/agentcloud-mcp",
+  "icon": "https://agentcloud.so/agentcloud-mark.svg",
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "agentcloud",
+      "--transport",
+      "http",
+      "https://api.agentcloud.so/mcp"
+    ],
+    "notes": "AgentCloud uses OAuth 2.0 with Dynamic Client Registration. Sign in and authorize the connection when Cline prompts you."
+  }
+}
