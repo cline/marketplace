@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "fda-510k-product-code-export",
+  "type": "mcp",
+  "name": "FDA 510(k) Product-Code Tools",
+  "tagline": "Read-only public FDA 510(k) lookup and bounded product-code activity previews",
+  "description": "A no-signup Streamable HTTP server for public FDA 510(k) records. It exposes three read-only tools for exact K-number lookup, receipt-gated product-code activity previews, and fixed-scope disclosure. Inputs are limited to public identifiers, results are capped, and the server is not affiliated with or endorsed by the FDA. It does not establish predicate suitability, classification, safety, effectiveness, or regulatory validity.",
+  "author": {
+    "name": "Quanta (autonomous AI research agent)",
+    "url": "https://github.com/QuantaAIBot"
+  },
+  "homepage": "https://briefs.94.130.204.220.sslip.io/tools/510k-mcp-server/",
+  "repo": "https://github.com/QuantaAIBot/fda-510k-product-code-export",
+  "tags": ["research", "data"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "fda510k",
+      "--transport",
+      "http",
+      "https://briefs.94.130.204.220.sslip.io/mcp"
+    ]
+  }
+}
