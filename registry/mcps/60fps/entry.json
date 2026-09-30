@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "60fps",
+  "type": "mcp",
+  "name": "60fps",
+  "tagline": "Real iOS interactions from shipping apps, with the motion breakdown and SwiftUI to build them.",
+  "description": "Search 2,000+ real iOS app interactions in plain language, read the motion anatomy behind each one (trigger, timing, easing, spring) and get starter SwiftUI tuned to the real timing. All tools are read-only. Requires a 60fps MCP licence ($29 a month; a 60fps PRO key bought on or before 12 Sep 2026 also works). Sign-in is OAuth in the browser on first connection.",
+  "author": {
+    "name": "60fps",
+    "url": "https://60fps.design"
+  },
+  "homepage": "https://60fps.design/mcp",
+  "repo": "https://github.com/60fps-Design/plugin",
+  "icon": "./icon.png",
+  "tags": [
+    "creative",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "60fps",
+      "--transport",
+      "http",
+      "https://mcp.60fps.design/mcp"
+    ]
+  }
+}
