@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "revamp",
+  "type": "mcp",
+  "name": "Revamp",
+  "tagline": "Create or redesign websites by chatting",
+  "description": "Create a new website, redesign an existing one, or build a web app by describing what you need. Start from an idea or an existing website URL, get a working preview, and refine your project in the same conversation. Revamp handles the implementation so you can focus on the result. Access your existing Revamp projects, follow generation progress, and continue making changes from Cline.",
+  "author": {
+    "name": "Revamp",
+    "url": "https://revamp.dev"
+  },
+  "homepage": "https://revamp.dev",
+  "icon": "https://revamp.dev/favicon.svg",
+  "tags": [
+    "creative",
+    "software",
+    "marketing"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "revamp",
+      "--transport",
+      "http",
+      "https://app.revamp.dev/mcp"
+    ],
+    "notes": "Connect your Revamp account when prompted. Creating and editing projects requires available Revamp credits. No API key or local server is required."
+  }
+}
