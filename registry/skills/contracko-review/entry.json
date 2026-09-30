@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "contracko-review",
+  "type": "skill",
+  "name": "Contracko Review",
+  "tagline": "Review contract dates, risk, comparisons, and portfolio priorities",
+  "description": "Read-oriented workflows for notice and end dates, risk audits, contract comparisons, and portfolio priorities in a Contracko workspace.",
+  "author": {
+    "name": "Contracko",
+    "url": "https://contracko.com"
+  },
+  "homepage": "https://github.com/contracko/contracko-skills/tree/main/skills/contracko-review",
+  "repo": "https://github.com/contracko/contracko-skills",
+  "tags": [
+    "business"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "contracko/contracko-skills",
+      "--skill",
+      "contracko-review"
+    ],
+    "notes": "After installing the skill, connect https://app.contracko.com/mcp through Cline's native MCP settings and complete the user's OAuth consent."
+  }
+}
