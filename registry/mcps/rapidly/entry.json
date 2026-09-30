@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "rapidly",
+  "type": "mcp",
+  "name": "Rapidly",
+  "tagline": "Test an idea before you build it, inside your AI agent",
+  "description": "Test the idea before you build it. Rapidly saves the idea, its Lean Canvas and measurable hypothesis, then saves three to five practical Pretotyping experiments. It recommends the easiest credible first test and generates one build prompt for that recommendation. Your agent builds the test; real customers provide the evidence.",
+  "author": {
+    "name": "Rapidly",
+    "url": "https://www.rapidly.co"
+  },
+  "homepage": "https://www.rapidly.co/rapidly-mcp",
+  "repo": "https://github.com/Exponentially-Platform/Rapidly-MCP",
+  "icon": "https://www.rapidly.co/wp-content/themes/exponentially/assets/images/apple-touch-icon-180.png",
+  "tags": [
+    "business",
+    "productivity",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "rapidly",
+      "--transport",
+      "http",
+      "https://www.rapidly.co/mcp"
+    ],
+    "notes": "Complete the OAuth connection after installation. Start with: Ask Rapidly for three ideas for [company], focused on [opportunity], and fully test all three in one go."
+  }
+}
