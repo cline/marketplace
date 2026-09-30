@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "speclock",
+  "type": "mcp",
+  "name": "SpecLock",
+  "tagline": "Check AI coding actions against explicit project constraints",
+  "description": "SpecLock turns rules from CLAUDE.md, AGENTS.md, and related instruction files into constraints that coding agents can check before changing protected code. Its local-first MCP server provides tools for reviewing planned actions, semantic conflicts, affected files, and patches. MCP use is assisted verification; enable SpecLock's Git or CI enforcement when checks must run independently of the agent.",
+  "author": {
+    "name": "Sandeep Roy",
+    "url": "https://github.com/sgroy10"
+  },
+  "tags": [
+    "software",
+    "security",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "speclock",
+      "--",
+      "npx",
+      "-y",
+      "speclock@5.8.0",
+      "serve"
+    ],
+    "notes": "Run npx speclock@latest protect in a project to extract constraints and add Git-level protection. MCP checks depend on the agent invoking them."
+  },
+  "homepage": "https://sgroy10.github.io/speclock/",
+  "repo": "https://github.com/sgroy10/speclock",
+  "icon": "./icon.svg",
+  "license": "MIT"
+}
