@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "offline-protocol",
+  "type": "mcp",
+  "name": "Offline Protocol",
+  "tagline": "Find Offline Protocol SDK packages, integration guides and project scaffolds",
+  "description": "Runs the Offline Protocol developer MCP server locally from the published @offline-protocol/cli npm package. Cline can list and compare Offline Protocol packages, search workflows, examples and skills, resolve compatible packages, generate an architecture, preview a scaffold, and scaffold or integrate packages into a project on your machine.\n\nNo account or API key is needed for local mode. The server provides package and integration guidance only: it does not discover nearby devices or operate device radios. Requires Node.js 18 or later; the first launch downloads the CLI through npx.",
+  "author": {
+    "name": "Offline Protocol",
+    "url": "https://offlineprotocol.com"
+  },
+  "homepage": "https://www.offlineprotocol.com/docs/tools/overview",
+  "repo": "https://github.com/Offline-Protocol/offline-protocol-agent-plugins",
+  "icon": "./icon.svg",
+  "tags": [
+    "software",
+    "research"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "offline-protocol",
+      "--",
+      "npx",
+      "-y",
+      "@offline-protocol/cli@0.2.6",
+      "mcp",
+      "serve"
+    ],
+    "notes": "Local mode needs no credentials. For the hosted endpoint instead, install with: cline mcp install offline-protocol-hosted --transport http https://mcp.offlineprotocol.com/mcp --header \"Authorization: Bearer <application API key>\" --header \"x-app-id: <application id>\". Hosted mode does not include scaffold_project, integrate_packages or init_project."
+  }
+}
