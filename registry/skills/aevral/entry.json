@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "aevral",
+  "type": "skill",
+  "name": "Aevral",
+  "tagline": "Install the Aevral GitHub App for pull request security review",
+  "description": "Setup skill that walks you through installing the Aevral GitHub App so pull requests get a security review: access control, business logic, injection, XSS, SSRF, path traversal, unsafe deserialization, token and session flaws, and LLM-integration risks, with a suggested fix you apply. Reviews run server-side; this skill does not review code locally. Public repos are free.",
+  "author": {
+    "name": "Better ISMS"
+  },
+  "homepage": "https://aevral.com",
+  "repo": "https://github.com/better-isms/aevral-plugin",
+  "tags": [
+    "security"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "better-isms/aevral-plugin",
+      "--skill",
+      "review"
+    ]
+  }
+}
