@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "search1api",
+  "type": "mcp",
+  "name": "Search1API",
+  "tagline": "Web search, news, crawl and trending for AI agents",
+  "description": "Hosted MCP for web search, news, page crawl, sitemap discovery, and GitHub / Hacker News trends. Connect with OAuth 2.1 or an API key. Search, news, crawl, sitemap and trending each cost 1 credit; new accounts get 100 credits without a card.",
+  "author": {
+    "name": "SuperAgents, LLC",
+    "url": "https://s1.dev"
+  },
+  "homepage": "https://s1.dev/docs/integrations/mcp",
+  "repo": "https://github.com/superagents-lab/search1api-mcp",
+  "icon": "./icon.svg",
+  "tags": ["research", "software"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "search1api",
+      "--transport",
+      "http",
+      "https://mcp.search1api.com/mcp"
+    ],
+    "env": [
+      {
+        "name": "SEARCH1API_API_KEY",
+        "required": false,
+        "description": "Optional API key. Hosted MCP also supports OAuth 2.1 without a key.",
+        "url": "https://app.s1.dev"
+      }
+    ],
+    "notes": "Prefer OAuth: connect https://mcp.search1api.com/mcp and complete the login prompt."
+  }
+}
