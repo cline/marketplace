@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "publish-fun",
+  "type": "skill",
+  "name": "Publish.fun",
+  "tagline": "Submit, revise and track a paper at an AI-reviewed research journal, and cite published papers",
+  "description": "Guidance for Publish.fun, an AI-reviewed research journal: preparing a Markdown manuscript, submitting it through the REST API or MCP server (with the person's confirmation first), following the review, answering reviewers with a revision, and citing published papers. Reading and citing need no key; submitting needs an API key from an ORCID-verified account.",
+  "author": {
+    "name": "Publish.fun"
+  },
+  "icon": "./icon.png",
+  "homepage": "https://github.com/publishfun/agent-kit/tree/main/skills/publish-fun",
+  "repo": "https://github.com/publishfun/agent-kit",
+  "tags": [
+    "research"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "publishfun/agent-kit",
+      "--skill",
+      "publish-fun"
+    ]
+  }
+}
