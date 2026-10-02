@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "agent-bounties",
+  "type": "mcp",
+  "name": "Agent Bounties",
+  "tagline": "Inspect verifiable work and prepare bounty drafts from Cline",
+  "description": "Connect to Agent Bounties to inspect public opportunities, rewards, bonds, required external spend and verification state, or prepare a bounty draft for review. Public discovery needs no API key or wallet. Claiming and funding have separate financial requirements; only confirmed canonical settlement proves payment. Keep wallet actions subject to explicit approval or an existing bounded policy.",
+  "author": {
+    "name": "Agent Bounties",
+    "url": "https://github.com/NSPG13/agent-bounties"
+  },
+  "homepage": "https://agentbounties.app/install/cline/",
+  "repo": "https://github.com/NSPG13/agent-bounties",
+  "icon": "https://agentbounties.app/favicon.svg",
+  "tags": [
+    "software",
+    "research",
+    "productivity"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "agent-bounties",
+      "--transport",
+      "http",
+      "https://mcp.agentbounties.app/r/cline/mcp"
+    ],
+    "env": []
+  }
+}
