@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "edge",
+  "type": "mcp",
+  "name": "Edge",
+  "tagline": "Finds and loads the right expert skill for the task at hand",
+  "description": "A remote MCP server that searches a catalog of over 100,000 public agent skills, ranks them for the current task, checks the selected skill content before delivery, and loads its instructions on demand. No account or key is needed.",
+  "author": {
+    "name": "Edge",
+    "url": "https://getedge.cc"
+  },
+  "homepage": "https://getedge.cc",
+  "repo": "https://github.com/getedgehq/skills",
+  "icon": "./icon.svg",
+  "tags": [
+    "productivity",
+    "software",
+    "research"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "edge",
+      "--transport",
+      "http",
+      "https://getedge.cc/mcp"
+    ]
+  }
+}
