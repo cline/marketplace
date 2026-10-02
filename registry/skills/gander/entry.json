@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "gander",
+  "type": "skill",
+  "name": "Gander",
+  "tagline": "Live review for agent-authored markdown before git",
+  "description": "Gander adds a live review loop for markdown an agent is still writing. Watch the file, leave inline comments in the browser, and invoke the author's agent with agent connect so it picks up comments and keeps iterating on the same link. The author installs the skill; reviewers need only a browser and a sign-in. Configurable Privacy. Docs: https://gander.md/docs/skill. Homepage: https://gander.md",
+  "author": { "name": "Gander", "url": "https://gander.md" },
+  "homepage": "https://gander.md",
+  "repo": "https://github.com/gandermd/gander-skill",
+  "tags": ["software", "productivity"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["gandermd/gander-skill", "--skill", "gander"],
+    "notes": "Requires the gander CLI on PATH for the full watch and comment loop. Docs: https://gander.md/docs/skill"
+  }
+}
