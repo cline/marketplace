@@ -1,0 +1,38 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "publish-fun",
+  "type": "mcp",
+  "name": "Publish.fun",
+  "tagline": "Submit, revise and track papers in an AI-reviewed research journal, and cite published ones",
+  "description": "Publish.fun is an AI-reviewed research journal. Its MCP server lets Cline read the submission guidelines and cite published papers without a key. With an API key from an ORCID-verified account, it can also submit a paper, check its review status, send a revision and upload figures.",
+  "author": {
+    "name": "Publish.fun"
+  },
+  "icon": "./icon.png",
+  "tags": [
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "publish-fun",
+      "--transport",
+      "http",
+      "https://publish.fun/api/mcp",
+      "--header",
+      "Authorization: Bearer ${PUBLISHFUN_API_KEY}"
+    ],
+    "env": [
+      {
+        "name": "PUBLISHFUN_API_KEY",
+        "required": false,
+        "description": "Publish.fun API key from https://publish.fun/dashboard. Needed to submit, revise, check status and upload figures; not needed to read the guidelines or cite papers.",
+        "url": "https://publish.fun/dashboard"
+      }
+    ]
+  },
+  "homepage": "https://publish.fun",
+  "repo": "https://github.com/publishfun/agent-kit",
+  "license": "MIT"
+}
