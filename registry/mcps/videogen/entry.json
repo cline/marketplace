@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "videogen",
+  "type": "mcp",
+  "name": "VideoGen MCP",
+  "tagline": "Create product demos, ecommerce ads, and marketing videos from your AI assistant",
+  "description": "Official VideoGen MCP server for creating and editing videos, images, voiceovers, music, and avatars, remixing projects, and exporting finished videos. Connect to the hosted server using OAuth or your VideoGen API key. [Setup and website](https://videogen.io/videogen-mcp). [Developer documentation](https://docs.videogen.io/libraries/mcp).",
+  "author": {
+    "name": "VideoGen",
+    "url": "https://videogen.io"
+  },
+  "homepage": "https://videogen.io/videogen-mcp",
+  "repo": "https://github.com/video-gen/videogen-mcp",
+  "tags": [
+    "marketing",
+    "creative"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "videogen",
+      "--transport",
+      "http",
+      "https://mcp.videogen.io/mcp"
+    ],
+    "notes": "Authenticate with VideoGen using OAuth after connecting. API-key users and local stdio users can follow https://docs.videogen.io/libraries/mcp."
+  }
+}
