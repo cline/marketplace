@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "graphify",
+  "type": "mcp",
+  "name": "Graphify",
+  "tagline": "Explore codebases, trace dependencies, and recall repository knowledge",
+  "description": "Connect Cline to Graphify’s hosted code knowledge graph. Search indexed repositories for code evidence, trace callers and dependencies, assess change impact, and save or recall repository knowledge. Requires a Graphify account and an indexed repository in a workspace you can access. Results depend on indexing status and account permissions; some memory features depend on your plan.",
+  "author": {
+    "name": "Graphify Labs",
+    "url": "https://graphify.com"
+  },
+  "homepage": "https://graphify.com/mcp",
+  "icon": "./icon.svg",
+  "tags": [
+    "software",
+    "memory"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "graphify",
+      "--transport",
+      "http",
+      "https://api.graphify.com/mcp"
+    ],
+    "notes": "Sign in to Graphify through the browser when prompted for OAuth. Create or select your workspace and index a repository at https://app.graphify.com before querying code. Memory tools can write saved knowledge; approve those actions only when intended."
+  }
+}
