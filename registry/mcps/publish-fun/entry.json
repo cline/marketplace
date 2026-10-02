@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "Publish.fun",
   "tagline": "Submit, revise and track papers in an AI-reviewed research journal, and cite published ones",
-  "description": "Publish.fun is an AI-reviewed research journal. Its MCP server lets Cline read the submission guidelines and cite published papers without a key. With an API key from an ORCID-verified account, it can also submit a paper, check its review status, send a revision and upload figures. Submitting is free.",
+  "description": "Publish.fun is an AI-reviewed research journal. Its MCP server lets Cline read the submission guidelines and cite published papers without a key. With an API key from an ORCID-verified account, it can also submit a paper, check its review status, send a revision and upload figures.",
   "author": {
     "name": "Publish.fun"
   },
