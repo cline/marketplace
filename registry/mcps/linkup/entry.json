@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "linkup",
+  "type": "mcp",
+  "name": "Linkup",
+  "tagline": "Real-time web search and page fetching for AI agents",
+  "description": "Linkup's hosted MCP server gives Cline real-time web search with citable sources, optional domain and date filters, and page fetching that returns clean markdown for any URL. It also exposes a research tool for longer, multi-step web investigations.",
+  "author": {
+    "name": "Linkup",
+    "url": "https://www.linkup.so"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "linkup",
+      "--transport",
+      "http",
+      "https://mcp.linkup.so/mcp",
+      "--header",
+      "Authorization: Bearer ${LINKUP_API_KEY}"
+    ],
+    "env": [
+      {
+        "name": "LINKUP_API_KEY",
+        "required": true,
+        "description": "Linkup API key for web search and page fetching.",
+        "url": "https://app.linkup.so"
+      }
+    ]
+  },
+  "homepage": "https://docs.linkup.so"
+}
