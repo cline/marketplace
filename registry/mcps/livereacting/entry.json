@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "livereacting",
+  "type": "mcp",
+  "name": "LiveReacting",
+  "tagline": "Run 24/7 live streams of pre-recorded videos from your agent",
+  "description": "Run 24/7 live streams of pre-recorded videos from the cloud, or live stream a recorded video at a set time, and multistream to YouTube, Facebook, Twitch and any RTMP destination. Use the LiveReacting MCP server to build streams from your video library, schedule broadcasts, change the playlist while live, and check status and analytics from Cline.\n\nStreaming runs on LiveReacting's servers, so nothing runs on your machine. 30 tools, remote Streamable HTTP server.",
+  "author": { "name": "LiveReacting", "url": "https://www.livereacting.com" },
+  "homepage": "https://www.livereacting.com/mcp",
+  "repo": "https://github.com/LiveReacting/livereacting-mcp",
+  "icon": "https://raw.githubusercontent.com/LiveReacting/livereacting-mcp/main/assets/logo.png",
+  "tags": ["marketing", "creative"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "livereacting",
+      "--transport",
+      "http",
+      "https://mcp.livereacting.com/mcp",
+      "--header",
+      "Authorization: Bearer ${LIVEREACTING_API_KEY}"
+    ],
+    "env": [
+      {
+        "name": "LIVEREACTING_API_KEY",
+        "required": true,
+        "description": "LiveReacting API key, starts with lr_. API access is included with every paid plan.",
+        "url": "https://studio.livereacting.com/developer"
+      }
+    ],
+    "notes": "Create an API key in the Developer section of LiveReacting Studio (https://studio.livereacting.com/developer). Full tool reference: https://developers.livereacting.com/mcp/"
+  }
+}
