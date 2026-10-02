@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "harborrank",
+  "type": "mcp",
+  "name": "HarborRank",
+  "tagline": "Live SEO data for agents: keywords, SERPs, backlinks, audits, Search Console",
+  "description": "Hosted SEO server for AI agents. Tools cover keyword metrics (volume, difficulty, intent, trends), live Google organic and local Maps results, a domain's ranking keywords and backlink overview, rank-tracker reads, crawl-based site audits, and read-only Google Search Console performance and URL inspection. Sign in with OAuth in the browser; no API key. Free plan with 1,000 credits a month; paid plans from $29 a month. Each research tool states its credit cost; Search Console tools use no credits.",
+  "author": {
+    "name": "HarborRank",
+    "url": "https://harborrank.com"
+  },
+  "homepage": "https://harborrank.com/features/mcp",
+  "repo": "https://github.com/winsley-jeune/harborrank-skills",
+  "icon": "./icon.png",
+  "tags": [
+    "marketing",
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "harborrank",
+      "--transport",
+      "http",
+      "https://app.harborrank.com/mcp"
+    ],
+    "notes": "The first tool call opens a browser OAuth login. Create a free account at https://app.harborrank.com/sign-up if you do not have one."
+  }
+}
