@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "ismalicious",
+  "type": "mcp",
+  "name": "isMalicious",
+  "tagline": "Threat intelligence, CVE lookups, and explicit scans of untrusted content",
+  "description": "A stdio MCP server for isMalicious threat intelligence. Check IPs, domains, URLs, MD5/SHA-1/SHA-256 hashes, email addresses and phone numbers; triage batches; find listed lookalike domains; look up CVEs; and check password exposure. Explicit tools scan untrusted text for prompt injection, check links before fetching, and scan an email message for phishing and malware.\n\nThe MIT client connects to the hosted isMalicious API with an API key and secret. API access is subject to the account's plan and quotas. These tools run when called by the agent; installing the server does not automatically intercept other tools or block their results.",
+  "author": { "name": "isMalicious", "url": "https://ismalicious.com" },
+  "homepage": "https://ismalicious.com/mcp",
+  "repo": "https://github.com/hexablob/ismalicious-mcp-server",
+  "icon": "./icon.png",
+  "tags": ["security", "research", "software"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["ismalicious", "--", "npx", "-y", "@ismalicious/mcp-server@0.6.0"],
+    "env": [
+      {
+        "name": "ISMALICIOUS_API_KEY",
+        "required": true,
+        "description": "The API key from your isMalicious account; keep it separate from the API secret.",
+        "url": "https://ismalicious.com/app/account"
+      },
+      {
+        "name": "ISMALICIOUS_API_SECRET",
+        "required": true,
+        "description": "The matching API secret from your isMalicious account. Do not encode the key pair yourself.",
+        "url": "https://ismalicious.com/app/account"
+      }
+    ],
+    "notes": "Requires Node.js 18 or newer. Obtain the matching key and secret at https://ismalicious.com/app/account and configure both environment variables. The npm version is pinned to 0.6.0. Text and email scans send the supplied content to the hosted API; use them only for content you are permitted to share. Scans and API requests use separate quota meters. Setup, tool behavior and quota details: https://ismalicious.com/mcp and https://ismalicious.com/api-docs."
+  }
+}
