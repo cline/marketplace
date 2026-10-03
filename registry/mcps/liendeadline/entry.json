@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "liendeadline",
+  "type": "mcp",
+  "name": "LienDeadline",
+  "tagline": "Mechanics lien and preliminary notice deadlines for construction suppliers.",
+  "description": "US mechanics lien and preliminary notice deadlines for construction material suppliers, with statute-cited lien guides for all 50 states and DC.",
+  "author": { "name": "LienDeadline", "url": "https://liendeadline.com" },
+  "homepage": "https://liendeadline.com",
+  "repo": "https://github.com/LienDeadline/liendeadline-mcp",
+  "icon": "./icon.png",
+  "tags": ["business"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["liendeadline", "--", "npx", "-y", "liendeadline-mcp"],
+    "env": [
+      {
+        "name": "LIENDEADLINE_API_KEY",
+        "required": false,
+        "description": "Optional dedicated customer key for the customer invoice tools; the supplier calculation and state guides need no key."
+      }
+    ],
+    "notes": "Runs locally over stdio and needs Node.js 22 or newer. Only calculate_lien_deadline and list_supported_states need LIENDEADLINE_API_KEY; the other three tools work without it."
+  }
+}
