@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schemas/plugin.schema.json",
+  "id": "brethof-brain-cline",
+  "type": "plugin",
+  "name": "brethof-brain",
+  "tagline": "Long-term memory for Cline: a brief at session start, matching records on every prompt, every turn archived",
+  "description": "Connects Cline to your brethof-brain memory. Each session opens with a brief from your memory, every prompt arrives with the records that bear on it, and every exchange is archived so it can be searched later. The same memory is shared with your other agents (Claude Code, Codex, OpenCode and more). Needs a brethof-brain account (free plan available) and runs `brethof-brain connect` once to save your key; the memory lives on your machine or encrypted in our cloud.",
+  "author": {
+    "name": "Brethof AI",
+    "url": "https://brethof.ai/brain/"
+  },
+  "homepage": "https://brethof.ai/brain/",
+  "repo": "https://github.com/BrethofAI/brethof-brain-client/tree/main/adapters/cline",
+  "tags": [
+    "memory",
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "install": {
+    "args": [
+      "npm:brethof-brain-cline"
+    ]
+  }
+}
