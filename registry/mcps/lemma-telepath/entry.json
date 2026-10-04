@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "lemma-telepath",
+  "type": "mcp",
+  "name": "Lemma Telepath",
+  "tagline": "Your existing Telegram conversations, readable by Cline.",
+  "description": "Telepath connects your own Telegram account to Cline over a hosted MCP server. Not another channel for talking to an assistant through Telegram — it gives Cline the conversations you already have.\n\n- **Search** your whole archive: messages, captions and voice transcripts.\n- **Read** what people sent you — PDFs, spreadsheets, documents, photos — by content, not just by filename.\n- **Reply, edit and react as yourself**, when you leave that capability on.\n- **Notes**: a small markdown store scoped to your account.\n\nIt runs on Telegram's official business-bot API — a bot you add to your own account under Settings → My Account → Chat automation, which is open to every account and needs no Telegram Premium. There is no MTProto user session; nothing logs in as you.\n\nSign-in is OAuth 2.1 with PKCE and dynamic client registration: authorization opens in your browser, you log in with Telegram, and no API key is involved. You choose which chats the bot may see, and every capability is a switch you control from the bot itself.\n\nThe service is hosted and **not end-to-end encrypted** — to search and transcribe for you, our servers process your messages. Each account gets a physically separate database, the disk is encrypted at rest, and `/deletedata` erases everything we hold. The full picture is on our [privacy page](https://telepath.lemma.company/privacy).",
+  "author": {
+    "name": "Lemma",
+    "url": "https://lemma.company"
+  },
+  "homepage": "https://telepath.lemma.company",
+  "repo": "https://github.com/Lemma-Company/telepath-plugin",
+  "icon": "https://telepath.lemma.company/icon-512.png",
+  "license": "MIT",
+  "tags": [
+    "productivity",
+    "memory"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "lemma-telepath",
+      "--transport",
+      "http",
+      "https://telepath.lemma.company/mcp"
+    ],
+    "notes": "Authorization opens in your browser — sign in with Telegram, no API key needed. First add @lemma_telepath_bot in Telegram under Settings → My Account → Chat automation and pick which chats it may access."
+  }
+}
