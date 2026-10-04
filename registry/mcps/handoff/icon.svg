@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- LEFT PILLAR (64px wide) -->
+  <g id="col-left">
+    <!-- Top Cap (Ultraviolet light rim) -->
+    <polygon points="144,114 176,96 208,114 176,132" fill="#8f6bff" stroke="#5d3ec2" stroke-width="1.5" />
+    <!-- Left Dark Face -->
+    <polygon points="144,114 144,380 176,398 176,132" fill="#2d1c6e" stroke="#1d104a" stroke-width="1.5" />
+    <!-- Right Light Face (facing the corridor) -->
+    <polygon points="176,132 176,398 208,380 208,114" fill="#5838c7" stroke="#3b1f9e" stroke-width="1.5" />
+  </g>
+
+  <!-- RIGHT PILLAR (64px wide) -->
+  <g id="col-right">
+    <!-- Top Cap (Ultraviolet light rim) -->
+    <polygon points="304,114 336,96 368,114 336,132" fill="#8f6bff" stroke="#5d3ec2" stroke-width="1.5" />
+    <!-- Left Dark Face (facing the corridor) -->
+    <polygon points="304,114 304,380 336,398 336,132" fill="#4426aa" stroke="#2a1478" stroke-width="1.5" />
+    <!-- Right Light Face -->
+    <polygon points="336,132 336,398 368,380 368,114" fill="#6d4ae0" stroke="#4a2ab8" stroke-width="1.5" />
+  </g>
+
+  <!-- THE HANDOFF CUBE (Suspended rolling data block with Opposite-Color Deep Violet/Midnight Edges for Sharp Light Background Definition) -->
+  <g id="animated-cube">
+    <!-- Horizontal Handoff Trajectory: Left (x:-48) <-> Right (x:+48) -->
+    <animateTransform 
+      attributeName="transform" 
+      type="translate" 
+      values="-48 0; 48 0; -48 0" 
+      keyTimes="0; 0.5; 1" 
+      calcMode="spline" 
+      keySplines="0.45 0 0.25 1; 0.45 0 0.25 1" 
+      dur="3.2s" 
+      repeatCount="indefinite" />
+
+    <!-- Top Cap: Electric Acid Lime with opposite-color (midnight ultraviolet #1e0952) outline -->
+    <polygon points="256,219 288,237 256,255 224,237" fill="#b9f022" stroke="#1e0952" stroke-width="3" stroke-linejoin="round">
+      <animate attributeName="fill" values="#c6f82e;#9ed810;#c6f82e" dur="3.2s" repeatCount="indefinite" />
+    </polygon>
+
+    <!-- Left Face: Rich Acid Lime with opposite-color midnight edge stroke -->
+    <polygon points="224,237 256,255 256,293 224,275" fill="#93d408" stroke="#1e0952" stroke-width="3" stroke-linejoin="round">
+      <animate attributeName="fill" values="#93d408;#6ea303;#93d408" dur="3.2s" repeatCount="indefinite" />
+    </polygon>
+
+    <!-- Right Face: Shaded Acid Lime with opposite-color midnight edge stroke -->
+    <polygon points="256,255 288,237 288,275 256,293" fill="#75ae04" stroke="#1e0952" stroke-width="3" stroke-linejoin="round">
+      <animate attributeName="fill" values="#75ae04;#aae81a;#75ae04" dur="3.2s" repeatCount="indefinite" />
+    </polygon>
+  </g>
+</svg>
