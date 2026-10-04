@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "octotrip-rental-cars",
+  "type": "mcp",
+  "name": "OctoTrip Rental Cars",
+  "tagline": "Real-time rental car search across multiple providers worldwide",
+  "description": "Search and compare rental cars with real-time pricing from multiple providers worldwide. Results are grouped by SIPP car category (economy, compact, SUV, etc.) with the cheapest options in each. Supports one-way rentals, flexible dates, and multiple currencies. Free, no API key needed.",
+  "author": {
+    "name": "OctoTrip",
+    "url": "https://octotrip.app"
+  },
+  "homepage": "https://octotrip.app",
+  "repo": "https://github.com/octotrip/rental-cars",
+  "icon": "https://raw.githubusercontent.com/OctoTrip/rental-cars/main/logo.png",
+  "tags": ["travel"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "octotrip-rental-cars",
+      "--transport",
+      "http",
+      "https://mcp.octotrip.app/rental-cars/mcp"
+    ]
+  }
+}
