@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "convika",
+  "type": "mcp",
+  "name": "Convika",
+  "tagline": "Publish AI-made landing pages on your own domain, with a signup form and visitor stats",
+  "description": "Hosted landing page service. Cline writes the page and saves it to Convika, which returns a private preview link and publishes the page only when you ask, at your-page.convika.com or on your own domain. A page can carry a signup form that keeps every entry, and Cline can read visits, traffic sources, UTM campaigns, button clicks, and signups back to you. Each save is a new version, so a rollback is one call. The server has 37 tools. You can also upload an HTML file or generate a page in the Convika dashboard. Sign-in is OAuth in the browser, with no API key. Free plan: $0, no credit card, 10 pages, 10,000 pageviews a month, 50 form entries a month, and 1 custom domain (a subdomain such as www). Pro is $12 a month.",
+  "author": {
+    "name": "Convika",
+    "url": "https://convika.com"
+  },
+  "homepage": "https://convika.com/docs/",
+  "repo": "https://github.com/tomoyaf/convika-mcp",
+  "icon": "./icon.png",
+  "tags": [
+    "marketing",
+    "creative"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "convika",
+      "--transport",
+      "http",
+      "https://mcp.convika.com/mcp"
+    ],
+    "notes": "A browser window opens so you can sign in to Convika or create a free account."
+  }
+}
