@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "influence",
+  "type": "mcp",
+  "name": "Influence",
+  "tagline": "Plan social campaigns, prepare drafts, schedule approved posts and read Insights.",
+  "description": "Influence is a social media management tool for planning campaigns, writing posts and scheduling content across your connected accounts. Its hosted MCP server uses saved brand context to prepare drafts, check publishing status and read saved account and post results in Insights. Influence IQ helps revise campaign plans, write social drafts and generate images with a confirmed credit quote.\n\nReview the exact post, account and time before approving publication or a schedule change. Review image posts in Influence; use the web editor for videos and galleries.\n\nConnect Instagram, Facebook, LinkedIn, X, Threads, YouTube, TikTok, Pinterest, Bluesky, Mastodon, Nostr and Pixelfed; community channels include Discord, Slack, Telegram and WhatsApp Business. Influence also connects Twitch, Tumblr, DEV.to, Hashnode, WordPress and listmonk. Each channel has its own supported formats and reporting.\n\nThe connector configuration and customer instructions are free under MIT-0. The hosted Influence service uses a paid subscription. Its seven-day trial requires a payment method and starts the selected subscription unless canceled before it ends.\n\n![Influence post editor with channel previews](https://influence.so/images/influence-composer.jpg)\n\n![Influence calendar with scheduled posts](https://influence.so/images/influence-calendar.jpg)\n\nBoth screenshots show an example workspace in the current Influence UI.\n\n[How it works](https://influence.so/how-it-works) · [Customer setup](https://github.com/influence-so/influence-mcp#connection) · [Support](https://influence.so/support)",
+  "author": {
+    "name": "Influence",
+    "url": "https://influence.so"
+  },
+  "homepage": "https://influence.so",
+  "repo": "https://github.com/influence-so/influence-mcp",
+  "icon": "./icon.png",
+  "tags": [
+    "marketing",
+    "productivity",
+    "creative",
+    "data"
+  ],
+  "license": "MIT-0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "influence",
+      "--transport",
+      "http",
+      "https://influence.so/api/mcp",
+      "--header",
+      "Authorization: Bearer <token>"
+    ],
+    "notes": "Create a scoped key with an expiry in Influence Settings → Developer. Install the server with the placeholder, then replace <token> in your private Cline MCP settings with your own key. The placeholder does not authenticate and is not an environment-variable expression. Keep the key out of shell history, chat, screenshots and shared files. Review tools and exact content before approving publishing or scheduling; leave auto-approval off. See https://github.com/influence-so/influence-mcp#connection."
+  }
+}
