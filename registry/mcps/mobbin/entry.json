@@ -12,7 +12,8 @@
   "homepage": "https://docs.mobbin.com/mcp/introduction",
   "tags": [
     "creative",
-    "research"
+    "research",
+    "software"
   ],
   "verified": false,
   "featured": false,
@@ -22,7 +23,6 @@
       "--transport",
       "http",
       "https://api.mobbin.com/mcp"
-    ],
-    "notes": "Requires a Mobbin Pro, Team, or Enterprise plan. On first connection, sign in with your Mobbin account in the browser to authorize access via OAuth. No API key or manual token setup is needed."
+    ]
   }
 }
