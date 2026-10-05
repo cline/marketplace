@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "skilldb",
+  "type": "mcp",
+  "name": "SkillDB Catalog",
+  "tagline": "Find reusable agent skills with public previews and source links",
+  "description": "Search SkillDB's public catalog for reusable AI agent guidance, compare relevant results, and read short previews with source links. The anonymous remote server exposes two read-only tools: skilldb_search and skilldb_get_preview. No SkillDB account or API key is required. Previews are short excerpts, not complete instructions. This connection does not install or execute skills, unlock full content, or access private/team libraries. The linked public repository contains discovery adapters and branding; it does not contain the hosted service or catalog bodies.",
+  "author": {
+    "name": "SkillDB",
+    "url": "https://skilldb.dev"
+  },
+  "homepage": "https://skilldb.dev",
+  "repo": "https://github.com/latentsmurf/skilldb-plugins",
+  "icon": "./icon.png",
+  "tags": ["software", "research", "productivity"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["skilldb-catalog", "--transport", "http", "https://skilldb.dev/api/mcp/catalog"],
+    "notes": "No credentials or environment variables are needed. Confirm that skilldb_search and skilldb_get_preview appear, then ask for skills for a task. Send only non-sensitive task keywords; HTTP request metadata, including IP addresses, is retained for 30 days. See https://skilldb.dev/privacy and https://skilldb.dev/support. Host permission controls apply. The public adapters and included logo are MIT-licensed; remotely served catalog content has separate rights."
+  }
+}
