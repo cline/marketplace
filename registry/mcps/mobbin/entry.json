@@ -3,8 +3,8 @@
   "id": "mobbin",
   "type": "mcp",
   "name": "Mobbin",
-  "tagline": "Search real-world UI screens, user flows, and website sections",
-  "description": "Search Mobbin's design reference library using natural language. Find UI screens, multi-step user flows such as onboarding and checkout, and website sections such as pricing and footers. Results include inline preview images and high-resolution image URLs for design research and implementation.",
+  "tagline": "Find UI & UX design references",
+  "description": "Mobbin is the industry standard in UI & UX design references for mobile apps, web apps, and websites. The platform serves millions of product builders and designers across the world to help them design better digital experiences. Connect Mobbin with Cline to better research and explore UI & UX design ideas.",
   "author": {
     "name": "Mobbin",
     "url": "https://mobbin.com"
