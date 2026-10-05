@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "voidpay-marketplace",
+  "type": "mcp",
+  "verified": false,
+  "name": "Voidpay Marketplace",
+  "tagline": "Discover services and manage owner-approved storefronts; checkout stays in the owner's browser.",
+  "description": "Voidpay Marketplace is a local MCP connector for agents to search a public service catalog and read published storefronts. With an owner-approved, scoped creator grant, it can create and edit drafts, publish or withdraw an exact revision, and recover the original operation after an interruption without automatically sending it again. It can prepare a checkout link tied to a selected published service. The owner reviews and authorizes the purchase in their authenticated browser. This 12-tool connector does not sign transactions, hold wallet keys or buy autonomously. A service listing is descriptive and does not guarantee availability.",
+  "author": {
+    "name": "Voidly",
+    "url": "https://voidly.ai"
+  },
+  "repo": "https://github.com/voidly-ai/pay-mcp",
+  "license": "Apache-2.0",
+  "tags": ["business", "software"],
+  "install": {
+    "args": ["voidpay-marketplace", "--", "npx", "-y", "@voidly/pay-mcp@0.7.2"],
+    "notes": "Requires a trusted Node 20+ host. Discovery is credential-free; creator actions need an owner-approved scoped grant. Checkout stays in the owner's browser."
+  },
+  "homepage": "https://voidly.ai/pay/marketplace"
+}
