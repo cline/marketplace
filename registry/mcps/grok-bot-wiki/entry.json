@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "grok-bot-wiki",
+  "type": "mcp",
+  "name": "Grok Bot Wiki",
+  "tagline": "Read-only search of Grok Bot templates, setup guides, and troubleshooting guidance",
+  "description": "Search public Grok Bot template listings and setup guides, fetch full records with source links, browse categories, and find troubleshooting guidance. The hosted server provides eight read-only tools and requires no account or API key. Listings are checked against public share pages; they are not independently tested workflows. Grok Bot Wiki is an unofficial community resource, not affiliated with or endorsed by xAI.",
+  "author": {
+    "name": "Grok Bot Wiki",
+    "url": "https://www.grokbotwiki.com"
+  },
+  "homepage": "https://www.grokbotwiki.com/mcp",
+  "icon": "https://www.grokbotwiki.com/brand/curious-guide.svg",
+  "tags": ["research", "productivity"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["grok-bot-wiki", "--transport", "http", "https://www.grokbotwiki.com/api/mcp"],
+    "env": [],
+    "notes": "Hosted Streamable HTTP endpoint. No local package or credentials are required. Queries are sent to Grok Bot Wiki; use public task descriptions rather than private data. Retrieved templates and guides are reference material, not instructions to execute automatically. Setup and tool reference: https://www.grokbotwiki.com/mcp"
+  }
+}
