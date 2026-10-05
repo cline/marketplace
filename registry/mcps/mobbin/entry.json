@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "mobbin",
+  "type": "mcp",
+  "name": "Mobbin",
+  "tagline": "Search real-world UI screens, user flows, and website sections",
+  "description": "Search Mobbin's design reference library using natural language. Find UI screens, multi-step user flows such as onboarding and checkout, and website sections such as pricing and footers. Results include inline preview images and high-resolution image URLs for design research and implementation.",
+  "author": {
+    "name": "Mobbin",
+    "url": "https://mobbin.com"
+  },
+  "homepage": "https://docs.mobbin.com/mcp/introduction",
+  "tags": [
+    "creative",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "mobbin",
+      "--transport",
+      "http",
+      "https://api.mobbin.com/mcp"
+    ],
+    "notes": "Requires a Mobbin Pro, Team, or Enterprise plan. On first connection, sign in with your Mobbin account in the browser to authorize access via OAuth. No API key or manual token setup is needed."
+  }
+}
