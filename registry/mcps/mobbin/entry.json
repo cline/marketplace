@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "mobbin",
+  "type": "mcp",
+  "name": "Mobbin",
+  "tagline": "Find UI & UX design references",
+  "description": "Mobbin is the industry standard in UI & UX design references for mobile apps, web apps, and websites. The platform serves millions of product builders and designers across the world to help them design better digital experiences. Connect Mobbin with Cline to better research and explore UI & UX design ideas.",
+  "author": {
+    "name": "Mobbin",
+    "url": "https://mobbin.com"
+  },
+  "homepage": "https://docs.mobbin.com/mcp/introduction",
+  "tags": [
+    "creative",
+    "research",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "mobbin",
+      "--transport",
+      "http",
+      "https://api.mobbin.com/mcp"
+    ]
+  }
+}
