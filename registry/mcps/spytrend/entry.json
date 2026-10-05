@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "spytrend",
+  "type": "mcp",
+  "name": "Spytrend",
+  "tagline": "Facebook/Meta and TikTok ad analytics and competitor ad research, hosted with browser sign-in",
+  "description": "Hosted remote MCP server (Streamable HTTP) for advertising analytics on Facebook/Meta and TikTok. Search ads and creatives, look up the advertisers and websites behind them, and follow rankings of what is newly picking up; Spytrend adds 170M+ new Meta ads a month. Sign in with a Spytrend account in the browser (OAuth), no API key. A free plan is available.",
+  "author": {
+    "name": "Spytrend",
+    "url": "https://spytrend.com/mcp/?utm_source=cline-marketplace&utm_medium=directory&utm_campaign=mcp-launch"
+  },
+  "homepage": "https://spytrend.com/mcp/?utm_source=cline-marketplace&utm_medium=directory&utm_campaign=mcp-launch",
+  "repo": "https://github.com/Spytrend/spytrend-mcp",
+  "icon": "./icon.png",
+  "tags": ["marketing", "data"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["spytrend", "--transport", "http", "https://mcp.spytrend.com/mcp"]
+  }
+}
