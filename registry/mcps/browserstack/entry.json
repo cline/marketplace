@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "browserstack",
+  "type": "mcp",
+  "name": "BrowserStack",
+  "tagline": "Run, debug and manage tests on real browsers and devices from Cline",
+  "description": "BrowserStack's official MCP server connects Cline to the BrowserStack Test Platform. Start a live browser or mobile-app session for manual testing, run Playwright, Selenium or Appium suites on real devices, pull failure logs and AI root-cause analysis for failed sessions, scan pages for accessibility issues with fix suggestions, manage test cases and runs in Test Management, and run Percy visual tests.\n\nThis entry uses the hosted remote server with OAuth, so no credentials go into config. For localhost or VPN-only testing, or file uploads, install the local server instead: `cline mcp install browserstack -- npx -y @browserstack/mcp-server@latest` with `BROWSERSTACK_USERNAME` and `BROWSERSTACK_ACCESS_KEY` set. Requires a BrowserStack account.",
+  "author": {
+    "name": "BrowserStack",
+    "url": "https://www.browserstack.com"
+  },
+  "homepage": "https://www.browserstack.com/docs/browserstack-mcp-server",
+  "repo": "https://github.com/browserstack/mcp-server",
+  "icon": "./icon.png",
+  "tags": ["software"],
+  "license": "AGPL-3.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["browserstack", "--transport", "http", "https://mcp.browserstack.com/mcp"],
+    "notes": "Sign in with your BrowserStack account when prompted. Install guide for agents: https://github.com/browserstack/mcp-server/blob/main/llms-install.md"
+  }
+}
