@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "shareout",
+  "type": "skill",
+  "name": "Shareout",
+  "tagline": "Share agent-made proposals with clients outside your AI workspace.",
+  "description": "Share HTML proposals, reports and interactive prototypes with clients and collaborators outside your AI workspace, including people who do not use AI. Recipients open a browser link without joining your AI team. Grant commenting access separately; your agent can read feedback and revise the work at the same address. The skill guides upload, audience and expiry choices, revisions and review feedback. Requires a Shareout publisher account plus the CLI or a separately configured MCP connection. Integration files are MIT licensed; the independently maintained hosted service has separate terms.",
+  "author": {
+    "name": "Greg Eland",
+    "url": "https://gregeland.com"
+  },
+  "homepage": "https://shareout.io",
+  "repo": "https://github.com/geland/shareout-integrations",
+  "icon": "./icon.svg",
+  "tags": [
+    "productivity",
+    "software",
+    "creative"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "geland/shareout-integrations",
+      "--skill",
+      "shareout"
+    ],
+    "notes": "Connect the CLI or hosted MCP before publishing. Setup: https://shareout.io/agents. Hosted MCP: https://shareout.io/mcp. Signup requires email; MCP authentication uses OAuth. Installation and file-transfer guidance is in the repository README."
+  }
+}
