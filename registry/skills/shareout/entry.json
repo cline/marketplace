@@ -3,8 +3,8 @@
   "id": "shareout",
   "type": "skill",
   "name": "Shareout",
-  "tagline": "Publish HTML deliverables, collect feedback, and revise at the same link.",
-  "description": "Publish HTML reports, software proposals, presentations and interactive walkthroughs with Shareout. The skill guides file upload, audience and expiry choices, stable-link revisions, and review feedback. Requires a Shareout account plus the standalone CLI or a separately configured MCP connection. The skill never passes document bytes through tool arguments. The integration files are MIT licensed; the hosted service has separate terms.",
+  "tagline": "Share agent-made proposals with clients outside your AI workspace.",
+  "description": "Share HTML proposals, reports and interactive prototypes with clients and collaborators outside your AI workspace, including people who do not use AI. Recipients open a browser link without joining your AI team. Grant commenting access separately; your agent can read feedback and revise the work at the same address. The skill guides upload, audience and expiry choices, revisions and review feedback. Requires a Shareout publisher account plus the CLI or a separately configured MCP connection. Integration files are MIT licensed; the independently maintained hosted service has separate terms.",
   "author": {
     "name": "Greg Eland",
     "url": "https://gregeland.com"
