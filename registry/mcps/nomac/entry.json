@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "nomac",
+  "type": "mcp",
+  "name": "NoMac",
+  "tagline": "A real cloud Mac with Xcode for your agent, billed by the minute",
+  "description": "The official NoMac MCP server. Start a full macOS VM with Xcode in about a minute, run builds and tests in the iOS Simulator, read the output, take screenshots and record videos of the screen, move files of up to 2 GB, then stop the Mac, which deletes it. Optional App Store Connect tools upload builds to TestFlight and manage your App Store listing. Prepaid credit at $0.80 an hour, billed by the minute; sign-in is OAuth.",
+  "author": {
+    "name": "NoMac",
+    "url": "https://nomac.app"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "nomac",
+      "--transport",
+      "http",
+      "https://mcp.nomac.app/mcp"
+    ]
+  },
+  "homepage": "https://nomac.app/install",
+  "icon": "https://nomac.app/logo.png"
+}
