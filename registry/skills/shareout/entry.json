@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "shareout",
+  "type": "skill",
+  "name": "Shareout",
+  "tagline": "Publish HTML deliverables, collect feedback, and revise at the same link.",
+  "description": "Publish HTML reports, software proposals, presentations and interactive walkthroughs with Shareout. The skill guides file upload, audience and expiry choices, stable-link revisions, and review feedback. Requires a Shareout account plus the standalone CLI or a separately configured MCP connection. The skill never passes document bytes through tool arguments. The integration files are MIT licensed; the hosted service has separate terms.",
+  "author": {
+    "name": "Greg Eland",
+    "url": "https://gregeland.com"
+  },
+  "homepage": "https://shareout.io",
+  "repo": "https://github.com/geland/shareout-integrations",
+  "icon": "./icon.svg",
+  "tags": [
+    "productivity",
+    "software",
+    "creative"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "geland/shareout-integrations",
+      "--skill",
+      "shareout"
+    ],
+    "notes": "Connect the CLI or hosted MCP before publishing. Setup: https://shareout.io/agents. Hosted MCP: https://shareout.io/mcp. Signup requires email; MCP authentication uses OAuth. Installation and file-transfer guidance is in the repository README."
+  }
+}
