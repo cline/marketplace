@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "maqami-travel",
+  "type": "mcp",
+  "name": "MAQAMI Travel",
+  "tagline": "Search 3M+ hotels and flights, check out on book.maqami.co",
+  "description": "Official MAQAMI MCP server for hotel and flight booking: search live rates across 3M+ hotels, get hotel details, then send a secure checkout link on book.maqami.co. Hosted Streamable HTTP endpoint, no API key.",
+  "author": { "name": "MAQAMI", "url": "https://maqami.co" },
+  "homepage": "https://maqami.co",
+  "repo": "https://github.com/negm17111995/mcp-server",
+  "icon": "./icon.png",
+  "tags": ["travel"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["maqami-travel", "--transport", "http", "https://mcp.maqami.co/"]
+  }
+}
