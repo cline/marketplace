@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "electrogen",
+  "type": "mcp",
+  "name": "ElectroGen",
+  "tagline": "Turn a text brief into a buildable electronics blueprint",
+  "description": "ElectroGen turns a plain-language idea into a buildable electronics project: component BOM with real marketplace parts, wiring, firmware, engineering checks, and prototype renders for Arduino, ESP32, Raspberry Pi and generic platforms. This remote server exposes five read-only tools: describe_platform, get_capabilities, list_public_projects (community blueprint gallery), get_component_products (component marketplace), and list_news_posts. No authentication required.",
+  "author": {
+    "name": "ElectroGen",
+    "url": "https://electrogen.org"
+  },
+  "tags": [
+    "software",
+    "creative"
+  ],
+  "verified": false,
+  "featured": false,
+  "icon": "icon.png",
+  "install": {
+    "args": [
+      "electrogen",
+      "--transport",
+      "http",
+      "https://electrogen.org/api/mcp"
+    ]
+  },
+  "homepage": "https://electrogen.org",
+  "repo": "https://github.com/homezloco/electrogen-mcp"
+}
