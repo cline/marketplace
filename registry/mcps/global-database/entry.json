@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "global-database",
+  "type": "mcp",
+  "name": "Global Database",
+  "tagline": "Company intelligence, financials, ownership and official registry KYB checks",
+  "description": "Access company profiles, financials, ownership and group structures, officers, official registry KYB checks, business contacts and prospecting through Global Database's hosted MCP server. Connect over Streamable HTTP and sign in with a Global Database account using browser-based OAuth; no API key needs to be pasted into the client. API access and account credits are required, and a free trial is available through sign-in.",
+  "author": {
+    "name": "Global Database",
+    "url": "https://github.com/global-database"
+  },
+  "homepage": "https://api.globaldatabase.com/docs/v2/#mcp-server",
+  "repo": "https://github.com/global-database/mcp-server",
+  "icon": "https://mcp.globaldatabase.com/static/logo.png",
+  "tags": ["business", "data", "sales", "finance"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["global-database", "--transport", "http", "https://mcp.globaldatabase.com/mcp"],
+    "env": []
+  }
+}
