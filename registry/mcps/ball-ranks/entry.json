@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "ball-ranks",
+  "type": "mcp",
+  "name": "Ball Ranks",
+  "tagline": "Bring NFL and NBA fantasy rankings into Cline",
+  "description": "Retrieve read-only weekly, season, and player rankings plus player projections for fantasy football and fantasy basketball. The default connection uses anonymous Model Zero access.",
+  "author": {
+    "name": "Ball Ranks",
+    "url": "https://ballranks.com"
+  },
+  "homepage": "https://ballranks.com/developers",
+  "icon": "https://ballranks.com/images/ball-ranks-mark.svg",
+  "tags": [
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "ball-ranks",
+      "--transport",
+      "http",
+      "https://ballranks.com/api/mcp"
+    ],
+    "notes": "Anonymous Model Zero access is limited to 10 requests per day. Create an API key for higher Model Zero limits; Model One requires Premium. See the developer documentation for Bearer authentication."
+  }
+}
