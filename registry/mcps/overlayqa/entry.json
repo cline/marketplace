@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "overlayqa",
+  "type": "mcp",
+  "name": "OverlayQA",
+  "tagline": "Run accessibility, contrast, and design token audits and file QA issues from your AI coding tool.",
+  "description": "MCP server for WCAG accessibility and color-contrast audits plus QA issue tracking in Claude Code, Cursor, and Windsurf.",
+  "author": {
+    "name": "OverlayQA",
+    "url": "https://overlayqa.com"
+  },
+  "homepage": "https://overlayqa.com/mcp",
+  "repo": "https://github.com/OverlayQA/mcp",
+  "icon": "./icon.svg",
+  "tags": [
+    "software",
+    "creative"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "overlayqa",
+      "--",
+      "npx",
+      "-y",
+      "@overlayqa/mcp"
+    ]
+  }
+}
