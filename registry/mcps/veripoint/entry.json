@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "veripoint",
+  "type": "mcp",
+  "name": "Veripoint",
+  "tagline": "Company financial research with evidence and saved workspace reports.",
+  "description": "Research private and public company financials, inspect supporting evidence and retrieve saved workspace reports. The hosted Veripoint MCP service exposes research_company, list_reports, get_report and get_usage over Streamable HTTP with OAuth. A completed analysis consumes a workspace search; reading saved reports and checking usage do not. Financial coverage varies by company, jurisdiction and reporting period. Requires an authorized Veripoint workspace.",
+  "author": {
+    "name": "Veripoint",
+    "url": "https://veripoint.ai"
+  },
+  "homepage": "https://veripoint.ai/api-docs/mcp-setup",
+  "repo": "https://github.com/sens663/veripoint-mcp",
+  "icon": "https://veripoint.ai/logo-512.png",
+  "tags": [
+    "finance",
+    "research",
+    "data",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "veripoint",
+      "--transport",
+      "http",
+      "https://veripoint.sens663.chatgpt.site/mcp"
+    ],
+    "notes": "Create or sign in to a Veripoint workspace, link an active workspace key at https://veripoint.sens663.chatgpt.site/mcp-link, then authorize OAuth in your client. Setup: https://veripoint.ai/api-docs/mcp-setup. No credentials are included in the listing."
+  }
+}
