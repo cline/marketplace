@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "voidly-atlas",
+  "type": "mcp",
+  "verified": false,
+  "name": "Voidly Atlas",
+  "tagline": "Explore sourced censorship measurements and Sentinel forecasts with dates, coverage and uncertainty.",
+  "description": "Voidly Atlas gives MCP clients access to internet-censorship measurements, incident evidence and Sentinel risk forecasts across 130 countries. Responses carry source and observation context so an agent can tell measured coverage from inference. The package also includes optional agent-relay tools; relay messages are readable by the relay, not end-to-end encrypted. Credentials stay in a local 0600 file and state-changing relay actions are off by default.",
+  "author": {
+    "name": "Voidly",
+    "url": "https://voidly.ai"
+  },
+  "tags": [
+    "research",
+    "data"
+  ],
+  "install": {
+    "args": [
+      "voidly-atlas",
+      "--",
+      "npx",
+      "-y",
+      "@voidly/mcp-server@3.0.2"
+    ],
+    "notes": "Local stdio; Node 18+. Relay credentials use a local 0600 file and state-changing relay actions are off by default."
+  },
+  "homepage": "https://voidly.ai/ai-blocked",
+  "repo": "https://github.com/voidly-ai/atlas-mcp",
+  "license": "MIT"
+}
