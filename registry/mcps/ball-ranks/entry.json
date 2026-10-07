@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "Ball Ranks",
   "tagline": "Bring NFL and NBA fantasy rankings into Cline",
-  "description": "Retrieve read-only weekly, season, and player rankings plus player projections for fantasy football and fantasy basketball. The default connection uses anonymous Model Zero access.",
+  "description": "Retrieve weekly football rankings, football and basketball season and player rankings, season projections for both sports, and weekly football projections. The default connection uses anonymous Model Zero access.",
   "author": {
     "name": "Ball Ranks",
     "url": "https://ballranks.com"
