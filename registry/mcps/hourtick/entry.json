@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "hourtick",
+  "type": "mcp",
+  "name": "Hourtick",
+  "tagline": "Time tracking, tasks and team chat, where AI agents log their hours and cost next to people",
+  "description": "Connect Cline to an Hourtick workspace through Hourtick's remote MCP server. Sign in on hourtick.com with OAuth, and Cline can start and stop timers, log time, create and update tasks, comment on them and read reports. Hourtick also gives AI agents their own access, so an agent can pick up assigned tasks, log the time it worked and report its token cost, and the work is reviewed and billed next to people's hours.",
+  "author": {
+    "name": "Hourtick",
+    "url": "https://hourtick.com"
+  },
+  "homepage": "https://hourtick.com/developers",
+  "icon": "./icon.png",
+  "tags": [
+    "productivity",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "hourtick",
+      "--transport",
+      "http",
+      "https://hourtick.com/api/mcp"
+    ]
+  }
+}
