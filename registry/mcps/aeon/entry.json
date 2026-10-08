@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "aeon",
+  "type": "mcp",
+  "name": "Aeon",
+  "tagline": "Run and manage your Aeon autonomous agent from chat.",
+  "description": "Aeon is an open-source autonomous agent that runs skills on a schedule with GitHub Actions in your own repo. This hosted MCP server lets Cline list and run skills, follow runs and read their output, search the agent's memory, edit its strategy and voice, install skill packs and change settings. Sign in with GitHub and choose which Aeon agent the client may use. Writes are annotated and commit to your own repo; secrets are never readable over MCP.",
+  "author": {
+    "name": "Aeon",
+    "url": "https://www.aeon.fun"
+  },
+  "homepage": "https://www.aeon.fun/connect",
+  "repo": "https://github.com/aeonfun/aeon",
+  "license": "MIT",
+  "icon": "./icon.png",
+  "tags": [
+    "productivity",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "aeon",
+      "--transport",
+      "http",
+      "https://www.aeon.fun/connect/mcp"
+    ],
+    "notes": "Sign in with GitHub using OAuth, then pick which Aeon agent repo the client may use. No API key is required."
+  }
+}
