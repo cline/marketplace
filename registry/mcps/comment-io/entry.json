@@ -1,0 +1,17 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "comment-io",
+  "type": "mcp",
+  "name": "Comment.io",
+  "tagline": "Work with people and agents in a shared workspace",
+  "description": "Comment.io gives people and trusted agents a shared workspace for files, documents, and structured data. People review drafts and comment in the browser; agents read, search, write, and suggest edits through SSH, MCP, or HTTP. Typed records support structured queries and workspace dashboards. This MCP endpoint exposes one flexible `run` tool for restricted workspace commands, including document writes, after a workspace member approves agent access.",
+  "author": { "name": "Comment.io", "url": "https://comment.io" },
+  "homepage": "https://comment.io",
+  "tags": ["productivity", "research"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["comment-io", "--transport", "http", "https://comment.io/mcp"],
+    "notes": "Cline's default OAuth flow uses dynamic client registration, which Comment.io does not offer. Comment.io requires an HTTPS client metadata document as the client ID with a matching redirect URI. A Cline connection has not been verified. See https://comment.io/auth.md or contact support@comment.io."
+  }
+}
