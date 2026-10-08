@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "comms-by-osis",
+  "type": "mcp",
+  "name": "Comms by Osis",
+  "tagline": "Give AI agents iMessage, RCS, and SMS for sales and customer conversations.",
+  "description": "Connect to your Comms workspace to read conversations, draft replies, and send iMessage, RCS, or SMS when requested. Use it for sales follow-up, appointment confirmations, and customer replies. This entry uses the focused inbox endpoint with eight read/send tools. A Comms account and OAuth authorization are required. Sending depends on a connected line, channel availability, workspace entitlements, and granted permissions. Confirm the recipient, sending line, and exact text before sending. Message submission is not proof of recipient delivery.",
+  "author": {
+    "name": "Osis AI LLC",
+    "url": "https://osis.co"
+  },
+  "homepage": "https://docs.osis.co/guides/mcp",
+  "repo": "https://github.com/Osis-AI-LLC/comms-plugins",
+  "icon": "./icon.svg",
+  "tags": [
+    "sales",
+    "business",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "comms",
+      "--transport",
+      "http",
+      "https://comms.osis.co/api/v1/comms/mcp/inbox"
+    ],
+    "notes": "Sign in to Comms in the OAuth window and select the workspace and scopes you intend to authorize. No API key is bundled. Review support, privacy, and terms at https://comms.osis.co/contact, https://comms.osis.co/privacy, and https://comms.osis.co/terms."
+  }
+}

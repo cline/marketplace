@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#0057FF"/>
+  <!-- The mark is 4x4 cells. At scale 10 it measures 40px, so (64-40)/2 = 12
+       centres it. It used to be scale(4) at translate(16,16) — a 16px glyph
+       sitting in the upper-left quadrant of a 64px tile, which read as an
+       empty blue square in a browser tab. -->
+  <g fill="#FFFFFF" transform="translate(12,12) scale(10)">
+    <rect x="2" y="0" width="1" height="1"/>
+    <rect x="1" y="1" width="1" height="1"/>
+    <rect x="3" y="1" width="1" height="1"/>
+    <rect x="0" y="2" width="1" height="1"/>
+    <rect x="2" y="2" width="1" height="1"/>
+    <rect x="1" y="3" width="1" height="1"/>
+  </g>
+</svg>
