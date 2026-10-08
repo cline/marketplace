@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "openkrill-seo-audit",
+  "type": "mcp",
+  "name": "SEO Audit by OpenKrill",
+  "tagline": "Audit a site for SEO problems and for how likely AI search is to cite it",
+  "description": "A hosted, keyless MCP server that audits a live website. It crawls the pages itself and reports technical and on-page SEO problems: titles, descriptions, headings, canonical tags, structured data and broken internal links. It also scores how likely ChatGPT, Perplexity or Google AI Overviews are to cite a page, checks llms.txt and AI instructions files, drafts an llms.txt from the site's own pages, and checks local-business readiness for AI answers. Handy right after you deploy a site or a docs page. Read-only.",
+  "author": { "name": "OpenKrill", "url": "https://tools.openkrill.app" },
+  "homepage": "https://tools.openkrill.app/integrations/seo-audit/claude",
+  "icon": "./icon.svg",
+  "tags": ["marketing"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["openkrill-seo-audit", "--transport", "http", "https://seoaudit.openkrill.app/mcp"],
+    "notes": "No API key and no sign-up. Try: \"Audit example.com for SEO problems\" or \"Does example.com publish an llms.txt?\""
+  }
+}
