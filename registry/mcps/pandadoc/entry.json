@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "pandadoc",
+  "type": "mcp",
+  "name": "PandaDoc",
+  "tagline": "Create, manage, and send documents for electronic signature.",
+  "description": "PandaDoc's hosted MCP server lets Cline search documents and templates, retrieve document details, create documents from templates, manage recipients, track document status, and send documents for electronic signature. Sign in with your PandaDoc account to work with documents in your workspace.",
+  "author": {
+    "name": "PandaDoc",
+    "url": "https://www.pandadoc.com"
+  },
+  "homepage": "https://developers.pandadoc.com/docs/how-to-use-the-pandadoc-mcp-server",
+  "repo": "https://github.com/PandaDoc/mcp-server-guide",
+  "icon": "./icon.png",
+  "tags": [
+    "productivity",
+    "business",
+    "sales"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "pandadoc",
+      "--transport",
+      "http",
+      "https://mcp.pandadoc.com/v1/mcp"
+    ],
+    "notes": "Sign in with your PandaDoc account using OAuth, then select the workspace you want to connect. No API key is required."
+  }
+}
