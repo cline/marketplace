@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "terminal-use",
+  "type": "mcp",
+  "name": "terminal-use",
+  "tagline": "Lets AI agents drive a real terminal: type, press keys, click, read the screen, take screenshots.",
+  "description": "An MCP server that lets an AI agent use a real terminal the way a person does: type, press keys, click, read the screen, take a screenshot.",
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "terminal-use",
+      "--",
+      "npx",
+      "-y",
+      "terminal-use"
+    ]
+  },
+  "repo": "https://github.com/computer-agent-labs/terminal-use",
+  "license": "MIT"
+}
