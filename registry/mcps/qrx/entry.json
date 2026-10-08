@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "qrx",
+  "type": "mcp",
+  "name": "QRX",
+  "tagline": "Art QR codes that always scan, made from a prompt and a link",
+  "description": "QRX turns a text prompt and a link into a branded, print-ready QR code. Each code is checked to decode before it is returned and points at a hosted qrx.to short link. Cline can start a code, wait for the image, list your codes, re-point a code's link, check your daily allowance and list the available styles. Generation is asynchronous and usually takes under a minute. Free accounts get 42 codes a day.",
+  "author": {
+    "name": "QRX",
+    "url": "https://qrx.codes"
+  },
+  "homepage": "https://qrx.codes/developers/mcp",
+  "repo": "https://github.com/qrxcodes/qrx-mcp",
+  "icon": "./icon.svg",
+  "tags": [
+    "creative",
+    "marketing"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "qrx",
+      "--transport",
+      "http",
+      "https://qrx.codes/mcp",
+      "--header",
+      "Authorization: Bearer ${QRX_API_KEY}"
+    ],
+    "env": [
+      {
+        "name": "QRX_API_KEY",
+        "required": true,
+        "description": "QRX API key (starts with qrx_).",
+        "url": "https://qrx.codes/developers/keys"
+      }
+    ]
+  }
+}
