@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "openkrill-mail-check",
+  "type": "mcp",
+  "name": "Domain Mail Check",
+  "tagline": "Check SPF, DKIM, DMARC and whether Gmail and Outlook will accept a domain's mail",
+  "description": "A hosted, keyless MCP server for email deliverability. Pass a domain and it reads the live DNS: SPF, DKIM, DMARC, MX and CAA records, the mail provider, and the domain's registrar and expiry date. It also scores whether a new sending domain is ready for outreach and explains why Gmail or Outlook may reject or spam-folder its mail. Useful when you ship an app that sends transactional mail, or set up a new domain. Read-only: it never changes DNS or sends mail.",
+  "author": { "name": "OpenKrill", "url": "https://tools.openkrill.app" },
+  "homepage": "https://tools.openkrill.app/answers/mailcheck",
+  "icon": "./icon.svg",
+  "tags": ["security", "marketing"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["openkrill-mail-check", "--transport", "http", "https://mailcheck.openkrill.app/mcp"],
+    "notes": "No API key and no sign-up. Try: \"Is DMARC set up for example.com?\" or \"Will Gmail accept mail from example.com?\""
+  }
+}
