@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "civicdataforge",
+  "type": "mcp",
+  "name": "CivicDataForge",
+  "tagline": "Official government records for agents, with source links",
+  "description": "Government evidence for agents: US short-term-rental permits, property violations, HHS-OIG exclusions, EPA ECHO and the Norwegian company register, each result with source links. Tool discovery works without a key; record lookups run on your own Apify token (sent as the X-Apify-Token header) and are billed to your Apify account.",
+  "author": {
+    "name": "equinoxaifinance-rgb"
+  },
+  "tags": [
+    "research",
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "civicdataforge",
+      "--transport",
+      "http",
+      "https://civicdataforge.pages.dev/mcp",
+      "--header",
+      "X-Apify-Token: <your-apify-token>"
+    ]
+  },
+  "homepage": "https://github.com/equinoxaifinance-rgb/civicdataforge-mcp",
+  "repo": "https://github.com/equinoxaifinance-rgb/civicdataforge-mcp"
+}
