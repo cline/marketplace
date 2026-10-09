@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "rook",
+  "type": "skill",
+  "name": "Rook CLI",
+  "tagline": "Test how your AI agents behave across workflows, tools and actions, before they ship",
+  "description": "Teaches the agent to use Rook CLI, TestMu AI's command-line tool for Agent Assurance, to test, red-team or regression-check an AI agent you own. Rook CLI reads your codebase or requirements docs to work out what the agent does, writes functional, non-functional and adversarial scenarios, invokes the real agent, and grades every criterion against observed evidence: files that changed, artifacts produced, and tool calls checked against the agent's declared tools. There are three verdicts, Pass, Fail and Unable to Verify, and the third is reported apart from the pass rate. Requires the rook CLI (brew install lambdatest/rook/rook or npm install -g @testmuai/rook) and a TestMu AI account. Pre-alpha.",
+  "author": {
+    "name": "TestMu AI",
+    "url": "https://www.testmuai.com"
+  },
+  "homepage": "https://www.testmuai.com/rook-cli/",
+  "repo": "https://github.com/LambdaTest/rook",
+  "tags": ["software", "security"],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["LambdaTest/rook", "--skill", "rook"],
+    "notes": "The skill is not the CLI, so install rook as well. The first time you start rook it signs you in through the browser. Runs spend Agent Assurance credits on your TestMu AI account."
+  }
+}
