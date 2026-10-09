@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "dodopayments-api",
+  "type": "mcp",
+  "name": "Dodo Payments API",
+  "tagline": "Work with payments, subscriptions, customers, products, refunds and licenses in Dodo Payments",
+  "description": "Official remote MCP server for the Dodo Payments API. Cline can query and manage your Dodo Payments account in test or live mode: payments, subscriptions, customers, products, refunds, license keys and usage-based billing. Sign-in is OAuth in the browser on first use (choose test or live mode and approve), so no API key is stored in your Cline config.",
+  "author": {
+    "name": "Dodo Payments",
+    "url": "https://dodopayments.com"
+  },
+  "homepage": "https://docs.dodopayments.com/developer-resources/mcp-server",
+  "icon": "https://raw.githubusercontent.com/dodopayments/dodo-agent-plugin/8616a7c353a2b678936643544ec932d59cf45e4a/assets/icon.svg",
+  "tags": [
+    "finance",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "dodopayments-api",
+      "--transport",
+      "http",
+      "https://mcp.dodopayments.com/mcp"
+    ]
+  }
+}

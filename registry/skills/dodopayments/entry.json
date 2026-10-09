@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "dodopayments",
+  "type": "skill",
+  "name": "Dodo Payments",
+  "tagline": "18 official skills for integrating Dodo Payments checkout, subscriptions, webhooks and billing",
+  "description": "The official Dodo Payments agent skills: checkout, subscriptions, mobile checkout, webhooks, framework adapters, usage-based billing, credits, license keys, products, discounts, localized pricing, customers, refunds and disputes, BillingSDK, Better Auth, testing and go-live, best practices, and MCP server usage. Installs all 18 skills from the dodopayments/dodo-agent-plugin repo. Pair with the Dodo Payments API and Dodo Payments Knowledge MCP servers.",
+  "author": {
+    "name": "Dodo Payments",
+    "url": "https://dodopayments.com"
+  },
+  "homepage": "https://docs.dodopayments.com/developer-resources/agent-skills",
+  "repo": "https://github.com/dodopayments/dodo-agent-plugin",
+  "icon": "https://raw.githubusercontent.com/dodopayments/dodo-agent-plugin/8616a7c353a2b678936643544ec932d59cf45e4a/assets/icon.svg",
+  "tags": [
+    "finance",
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "dodopayments/dodo-agent-plugin"
+    ]
+  }
+}

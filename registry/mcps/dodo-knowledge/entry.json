@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "dodo-knowledge",
+  "type": "mcp",
+  "name": "Dodo Payments Knowledge",
+  "tagline": "Search the current Dodo Payments documentation, API reference and SDK docs",
+  "description": "Official Dodo Payments documentation MCP server. Gives Cline semantic search over the Dodo Payments guides, API reference, SDK docs and BillingSDK, so integration code follows the current docs. No account, API key or sign-in required.",
+  "author": {
+    "name": "Dodo Payments",
+    "url": "https://dodopayments.com"
+  },
+  "homepage": "https://docs.dodopayments.com/developer-resources/mcp-server",
+  "icon": "https://raw.githubusercontent.com/dodopayments/dodo-agent-plugin/8616a7c353a2b678936643544ec932d59cf45e4a/assets/icon.svg",
+  "tags": [
+    "finance",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "dodo-knowledge",
+      "--transport",
+      "http",
+      "https://knowledge.dodopayments.com/mcp"
+    ]
+  }
+}
