@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "agend-sh",
+  "type": "mcp",
+  "name": "agend-sh",
+  "tagline": "Give Cline a persistent Linux workspace with interactive terminals and live previews.",
+  "description": "Agend connects Cline to persistent, isolated Linux environments backed by Firecracker microVMs. Run shell commands and background tasks, drive REPLs and terminal apps through a PTY, transfer files, and share services through public HTTPS previews. Interactive terminal responses report input-wait events, helping an agent decide when to send its next input.\n\nThe local stdio server is included in the MIT-licensed [Agend CLI](https://github.com/agend-sh/cli); commands execute in your remote Agend environment. An [Agend account](https://agend.sh/account?signup=1) and available environment quota are required. See [pricing and trial limits](https://agend.sh/pricing).",
+  "author": {
+    "name": "Agend",
+    "url": "https://agend.sh"
+  },
+  "homepage": "https://agend.sh",
+  "repo": "https://github.com/agend-sh/cli",
+  "icon": "./icon.svg",
+  "license": "MIT",
+  "tags": ["software", "productivity"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["agend-sh", "--", "agend", "mcp"],
+    "notes": "Install the Agend CLI using its README quick start, then run `agend login` in the same OS and user account as Cline. The server reads the CLI's saved credentials; no API key belongs in the install command. Make sure `agend` is on Cline's PATH, and select or create an environment within your account quota. The catalog command registers a stdio server in Cline CLI. For the Cline VS Code extension, use `agend config cline` instead, then reload its MCP integration. Installation and account setup: https://github.com/agend-sh/cli#quick-start"
+  }
+}
