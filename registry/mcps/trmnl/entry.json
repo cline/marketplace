@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "trmnl",
+  "type": "mcp",
+  "name": "TRMNL",
+  "tagline": "Run your TRMNL ePaper displays",
+  "description": "Check on your TRMNL ePaper displays, plan their playlists, and build new screens from your own data. Sign in with your TRMNL account (OAuth) and choose what Cline may do.",
+  "icon": "./icon.png",
+  "author": {
+    "name": "TRMNL"
+  },
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "trmnl",
+      "--transport",
+      "http",
+      "https://trmnl.com/mcp"
+    ]
+  },
+  "homepage": "https://help.trmnl.com/en/articles/17432548-mcp-server"
+}
