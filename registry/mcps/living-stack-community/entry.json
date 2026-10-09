@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "living-stack-community",
+  "type": "mcp",
+  "name": "Living Stack Community",
+  "tagline": "Make your agent prove what it did, with a local ledger",
+  "description": "Free, Apache-2.0, local-only MCP server with seven tools: open a scoped session, authorize a bounded action, record typed evidence, check a claim against the recorded outcome, and close with a tamper-evident local ledger. No network calls or telemetry. Requires Node.js 22+.",
+  "author": {
+    "name": "equinoxaifinance-rgb"
+  },
+  "tags": [
+    "software",
+    "security"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "living-stack",
+      "--",
+      "npx",
+      "-y",
+      "github:equinoxaifinance-rgb/living-stack-community"
+    ]
+  },
+  "homepage": "https://github.com/equinoxaifinance-rgb/living-stack-community",
+  "repo": "https://github.com/equinoxaifinance-rgb/living-stack-community"
+}
