@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "browser-cloud",
+  "type": "skill",
+  "name": "Browser Cloud by TestMu AI",
+  "tagline": "Give your AI agents real cloud browsers",
+  "description": "Teaches the agent to use TestMu AI Browser Cloud: real Chrome sessions in the cloud for AI agents, with built-in parallelism, session persistence (cookies, local storage and login state), a tunnel to localhost or staging, and video, network and console logs for every session. The skill writes TypeScript that starts a session and drives it with Puppeteer, Playwright or Selenium. Requires a TestMu AI account.",
+  "author": {
+    "name": "TestMu AI",
+    "url": "https://www.testmuai.com"
+  },
+  "homepage": "https://www.testmuai.com/browser-cloud/",
+  "repo": "https://github.com/LambdaTest/browser-cloud-skills",
+  "tags": [
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "LambdaTest/browser-cloud-skills",
+      "--skill",
+      "browser-cloud"
+    ],
+    "env": [
+      {
+        "name": "LT_USERNAME",
+        "required": true,
+        "description": "Your TestMu AI username. The Browser Cloud SDK reads credentials only from these environment variables.",
+        "url": "https://accounts.lambdatest.com/detail/profile"
+      },
+      {
+        "name": "LT_ACCESS_KEY",
+        "required": true,
+        "description": "Your TestMu AI access key.",
+        "url": "https://accounts.lambdatest.com/detail/profile"
+      }
+    ],
+    "notes": "The skill writes TypeScript against the @testmuai/browser-cloud SDK. Set LT_USERNAME and LT_ACCESS_KEY before running the code it generates."
+  }
+}
