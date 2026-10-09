@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "kane-cli",
+  "type": "skill",
+  "name": "Kane CLI by TestMu AI",
+  "tagline": "Verify any browser flow from your terminal in natural language",
+  "description": "Kane CLI by TestMu AI is a deterministic browser agent for developers, AI coding agents and CI/CD pipelines. This skill teaches the agent to use it for any task that needs a real browser: describe a flow in natural language and kane-cli drives real Chrome, returning a pass or fail with a replayable .evidence pack and typed exit codes (0 pass, 1 fail, 2 auth or setup error, 3 timeout). It also covers agent mode with NDJSON output, designing requirement-linked test suites from a PRD or spec, and native Android or iOS app tests on an emulator or simulator. Requires the kane-cli CLI (npm install -g @testmuai/kane-cli, with Node.js 18+ and Google Chrome) and a TestMu AI account.",
+  "author": {
+    "name": "TestMu AI",
+    "url": "https://www.testmuai.com"
+  },
+  "homepage": "https://www.testmuai.com/kane-cli/",
+  "repo": "https://github.com/LambdaTest/kane-cli",
+  "tags": ["software"],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["LambdaTest/kane-cli", "--skill", "kane-cli"],
+    "notes": "The skill is not the CLI, so install kane-cli as well and run kane-cli login once."
+  }
+}
