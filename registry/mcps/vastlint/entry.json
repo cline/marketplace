@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "vastlint",
+  "type": "mcp",
+  "name": "VASTlint",
+  "tagline": "Validate VAST, VMAP, and DAAST ad tags against IAB specs",
+  "description": "Hosted MCP for IAB VAST, VMAP, and DAAST tag validation. Public tools (validate_vast, validate_vast_url, inspect_vast, list_rules, explain_rule, fix_vast) require no auth. Paste XML or pass a live tag URL. Returns rule IDs, severities, XPath locations, and spec references.",
+  "author": {
+    "name": "aleksUIX",
+    "url": "https://github.com/aleksUIX"
+  },
+  "homepage": "https://vastlint.org/docs/mcp/",
+  "repo": "https://github.com/aleksUIX/vastlint",
+  "icon": "https://vastlint.org/openai/logo-512.png",
+  "tags": ["marketing", "software"],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "vastlint",
+      "--transport",
+      "http",
+      "https://vastlint.org/mcp"
+    ],
+    "notes": "Public tools need no login. Auth none."
+  }
+}
