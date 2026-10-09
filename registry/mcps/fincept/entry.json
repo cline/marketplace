@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "fincept",
+  "type": "mcp",
+  "name": "Fincept MCP",
+  "tagline": "Hosted MCP for Fincept Terminal: market data, economics, filings, backtests and 15 quant engines.",
+  "description": "Hosted MCP server for Fincept Terminal with 440 platform tools and 15 quant engines: market quotes, OHLCV candles, option chains, futures curves, fundamentals and symbol search; global economic series and SEC filings; news, sentiment and alternative data; portfolio analytics, screeners and strategy backtests; the Fincept Paper trading account (no real money); and engines for statistics, forecasting, GARCH volatility, panel econometrics, technical indicators, regimes, copulas, portfolio optimisation and fixed-income/derivatives pricing. Sign in once through the browser with OAuth 2.1. Requires the paid Exclusive Pro plan.",
+  "author": {
+    "name": "Fincept Corporation",
+    "url": "https://fincept.in"
+  },
+  "tags": [
+    "finance",
+    "data",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "fincept",
+      "--transport",
+      "http",
+      "https://enterprise.fincept.in/mcp"
+    ]
+  },
+  "homepage": "https://docs.fincept.in",
+  "repo": "https://github.com/Fincept-Corporation/fincept-mcp-docs",
+  "icon": "https://raw.githubusercontent.com/Fincept-Corporation/fincept-mcp-docs/main/assets/logo.png"
+}
