@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "prooffetch",
+  "type": "mcp",
+  "name": "ProofFetch",
+  "tagline": "Check a URL before your agent reads it, then get cited text",
+  "description": "ProofFetch gives agents a free URL preflight (content hashes and prompt-injection indicators) and paid, paragraph-addressable page text with citations. The preflight needs no key. Hosted remote server, built and run by the ProofFetch author.",
+  "author": {
+    "name": "equinoxaifinance-rgb"
+  },
+  "tags": [
+    "research",
+    "security"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "proof-fetch",
+      "--transport",
+      "http",
+      "https://proof-fetch-agent-api.neoaethel.workers.dev/mcp"
+    ]
+  },
+  "homepage": "https://proof-fetch-agent-api.neoaethel.workers.dev",
+  "repo": "https://github.com/equinoxaifinance-rgb/proof-fetch-docs",
+  "icon": "./icon.png"
+}
