@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "var2",
+  "type": "mcp",
+  "name": "VAR2",
+  "tagline": "Create images, videos, music, voice, and 3D assets",
+  "description": "VAR2 provides creative generation tools for images, videos, music, voice, and 3D assets through a remote MCP server. A VAR2 account and OAuth authorization are required. Generation uses paid VAR2 credits.",
+  "author": {
+    "name": "VAR2",
+    "url": "https://www.var2.ai"
+  },
+  "homepage": "https://www.var2.ai/mcp",
+  "tags": ["creative"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["var2", "--transport", "http", "https://www.var2.ai/api/mcp"],
+    "notes": "Authorize with your VAR2 account using OAuth after installation. Generation uses paid VAR2 credits. See https://www.var2.ai/mcp for setup guidance."
+  }
+}
