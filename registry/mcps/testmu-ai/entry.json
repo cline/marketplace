@@ -2,7 +2,7 @@
   "$schema": "../../../schemas/mcp.schema.json",
   "id": "testmu-ai",
   "type": "mcp",
-  "name": "TestMu AI",
+  "name": "TestMu AI MCP Server",
   "tagline": "Run, debug and triage tests on TestMu AI from Cline",
   "description": "TestMu AI's hosted MCP server (TestMu AI was formerly LambdaTest) connects Cline to your test runs. Generate HyperExecute YAML and runner commands, triage automation failures from command, network and console logs, get natural-language summaries of SmartUI visual diffs, run accessibility audits on hosted URLs or local React apps, and work with test cases and runs in Test Manager.\n\nThe server is hosted and remote, so there is nothing to install or self-host, and sign-in is OAuth in the browser, so no API key goes into config. Requires a TestMu AI account.",
   "author": {
