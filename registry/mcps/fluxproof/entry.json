@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "fluxproof",
+  "type": "mcp",
+  "name": "FluxProof",
+  "tagline": "Change monitoring for public web pages, with evidence",
+  "description": "FluxProof watches public web pages and reports each change with evidence: content hashes, diffs and signed webhooks. Listing tools needs no key; scheduled monitors need a paid pass. Hosted remote server, built and run by the FluxProof author.",
+  "author": {
+    "name": "equinoxaifinance-rgb"
+  },
+  "tags": [
+    "research",
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "fluxproof",
+      "--transport",
+      "http",
+      "https://fluxproof.neoaethel.workers.dev/mcp"
+    ]
+  },
+  "homepage": "https://fluxproof.neoaethel.workers.dev",
+  "repo": "https://github.com/equinoxaifinance-rgb/fluxproof-agent-card",
+  "icon": "./icon.png"
+}
