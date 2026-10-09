@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#0a0a0a"/>
+  <text x="80" y="370" font-family="'Courier New', 'Liberation Mono', monospace" font-size="320" font-weight="700" letter-spacing="-10">
+    <tspan fill="#22c55e">$</tspan><tspan fill="#e8e8e8">a</tspan>
+  </text>
+</svg>
