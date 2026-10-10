@@ -1,0 +1,29 @@
+{
+  "author": {
+    "name": "AIHOT",
+    "url": "https://aihot.news"
+  },
+  "tags": [
+    "research"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "aihot-mcp",
+  "type": "mcp",
+  "name": "AIHOT MCP",
+  "tagline": "Read Chinese AI news, hot topics and daily, weekly or monthly briefs",
+  "description": "Official read-only MCP endpoint for AIHOT, a Chinese-language AI news aggregator. Eight tools provide selected news, search over recent items, hot topics, story timelines, daily/weekly/monthly briefs, and Codex reset information. Connect directly over Streamable HTTP without an account or API key. Summaries include source links; verify claims against original sources. The code is MIT licensed; hosted news content follows https://aihot.news/terms.",
+  "homepage": "https://aihot.news/agent?tab=mcp",
+  "repo": "https://github.com/KKKKhazix/AIHOT",
+  "install": {
+    "args": [
+      "aihot",
+      "--transport",
+      "http",
+      "https://aihot.news/api/mcp"
+    ],
+    "notes": "No sign-in or API key is required. Hosted content permits personal noncommercial and organizational internal reading; external commercial use or bulk republication requires written permission. See https://aihot.news/terms."
+  }
+}
