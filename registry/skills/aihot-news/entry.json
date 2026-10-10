@@ -1,0 +1,28 @@
+{
+  "author": {
+    "name": "AIHOT",
+    "url": "https://aihot.news"
+  },
+  "tags": [
+    "research"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "aihot-news",
+  "type": "skill",
+  "name": "AIHOT News",
+  "tagline": "Query AIHOT news and briefs through its public read-only HTTP API",
+  "description": "The official AIHOT skill provides instructions for reading Chinese AI news, recent search results, hot topics, story timelines and daily/weekly/monthly briefs via curl. It reads the public HTTP API directly, requires curl, and does not require an API key or MCP installation. AIHOT is a news aggregator, not a publisher of original reporting. Canonical skill source: https://github.com/KKKKhazix/khazix-skills/tree/main/aihot. The skill files are MIT licensed; hosted content follows https://aihot.news/terms.",
+  "homepage": "https://aihot.news/aihot-skill/README.md",
+  "repo": "https://github.com/KKKKhazix/khazix-skills",
+  "install": {
+    "args": [
+      "KKKKhazix/khazix-skills",
+      "--skill",
+      "aihot"
+    ],
+    "notes": "Requires curl. No account or API key is required. Preserve original-source links when citing results. Hosted content is subject to https://aihot.news/terms."
+  }
+}
