@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "sf-intelligence",
+  "type": "mcp",
+  "name": "sf-intelligence",
+  "tagline": "Ask your AI what breaks before you change Salesforce. Offline, read-only, cited answers.",
+  "description": "Ask Cline questions about your Salesforce org (can I delete this field? what runs when an Opportunity is saved? is this deployment risky?) and get answers cited from the org's real metadata. The server reads a local `org-kb` vault that the `sfi` CLI builds from your org; it is read-only, runs offline and needs no API keys. Try it first with the bundled demo org, no Salesforce login needed: `npx -y sf-intelligence demo`. Source-available under MIT with Commons Clause. Not affiliated with Salesforce.",
+  "author": {
+    "name": "Pranav Nagrecha",
+    "url": "https://github.com/PranavNagrecha"
+  },
+  "homepage": "https://sfi.auditforce.cloud",
+  "repo": "https://github.com/PranavNagrecha/Salesforce-Intelligence",
+  "icon": "./icon.png",
+  "tags": ["software", "data"],
+  "license": "MIT with Commons Clause",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["sf-intelligence", "--", "npx", "-y", "sf-intelligence", "mcp"],
+    "env": [
+      {
+        "name": "SFI_VAULT",
+        "required": true,
+        "description": "Absolute path to the org-kb vault built by `sfi init` + `sfi refresh`, e.g. /Users/you/my-sfdx-project/org-kb. Without it the server starts in setup mode and only reports what it looked for.",
+        "url": "https://sfi.auditforce.cloud"
+      }
+    ],
+    "notes": "Requires Node.js 20+. Build a vault once inside your Salesforce DX project with `npx -y sf-intelligence init --target-org <alias>` then `npx -y sf-intelligence refresh` (uses your authenticated Salesforce CLI). No org yet? Use `npx -y sf-intelligence demo` instead of `mcp` to serve a synthetic demo org."
+  }
+}
