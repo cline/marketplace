@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "FluxProof",
   "tagline": "Change monitoring for public web pages, with evidence",
-  "description": "FluxProof watches public web pages and reports each change with evidence: content hashes, diffs and signed webhooks. Listing tools needs no key; scheduled monitors need a paid pass. Hosted remote server, built and run by the FluxProof author.",
+  "description": "FluxProof watches public web pages and reports each change with evidence: content hashes, diffs and signed webhooks. Listing tools needs no key; creating a monitor needs a free or paid key. Hosted remote server, built and run by the FluxProof author.",
   "author": {
     "name": "equinoxaifinance-rgb"
   },
