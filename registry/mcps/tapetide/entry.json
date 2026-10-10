@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "tapetide",
+  "type": "mcp",
+  "name": "Tapetide",
+  "tagline": "Research, screen and track about 8,200 NSE and BSE listed Indian stocks",
+  "description": "Indian stock market research for Cline: live quotes, quarterly and annual financials, shareholding, a 326-ratio fundamental screener, technical screens, analyst ratings, FII/DII flows, end-of-day index option chains with IV, parsed company filings, IPOs and your Tapetide portfolio and watchlist. 55 tools covering about 8,200 NSE and BSE listed companies. Free plan included. Research data, not investment advice.",
+  "author": {
+    "name": "Tapetide",
+    "url": "https://tapetide.com"
+  },
+  "homepage": "https://tapetide.com/mcp",
+  "repo": "https://github.com/Tapetide-hq/nse-bse-indian-stock-market-data-mcp",
+  "icon": "./icon.png",
+  "license": "MIT",
+  "tags": [
+    "finance",
+    "data",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "tapetide",
+      "--",
+      "npx",
+      "-y",
+      "tapetide-mcp"
+    ],
+    "env": [
+      {
+        "name": "TAPETIDE_TOKEN",
+        "required": true,
+        "description": "Free personal access token",
+        "url": "https://tapetide.com/settings/tokens"
+      }
+    ]
+  }
+}
