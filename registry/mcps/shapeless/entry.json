@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "shapeless",
+  "type": "mcp",
+  "name": "ShapelessAI",
+  "tagline": "Draft, schedule and publish social posts from Cline",
+  "description": "ShapelessAI is an AI social media team: draft posts, carousels and short videos, schedule them, and publish to LinkedIn, X, Instagram, TikTok, YouTube, Facebook, Threads and Bluesky. Every draft waits for approval, and the tools that publish are marked as such. Remote MCP server over streamable HTTP; sign in with OAuth, or send an API key as a Bearer header.",
+  "author": {
+    "name": "ShapelessAI",
+    "url": "https://shapelessai.com"
+  },
+  "tags": [
+    "marketing",
+    "creative"
+  ],
+  "icon": "./icon.png",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "shapeless",
+      "--transport",
+      "http",
+      "https://shapelessai.com/mcp"
+    ]
+  },
+  "homepage": "https://shapelessai.com",
+  "repo": "https://github.com/FirstClassTree/shapelessai"
+}
