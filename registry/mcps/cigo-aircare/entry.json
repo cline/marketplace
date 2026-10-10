@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "cigo-aircare",
+  "type": "mcp",
+  "name": "Cigo Aircare & Carsafe",
+  "tagline": "Look up HVAC filter specifications, compare power consumption, and find compatible Carsafe cabin filters.",
+  "description": "Cigo's hosted MCP server provides FFU and BFU HVAC filter dimensions, published performance information, and airflow/power comparisons through get_hvac_filter_info. It also offers vehicle-and-year cabin filter matching with purchase links (search_carsafe) and regional weather/air-quality guidance (check_environment). Published measurements have specific test conditions; power comparisons are not guaranteed electricity-bill savings.\n\nTwo optional tools write data: set_crm_lifecycle stores a hashed user identifier, vehicle/driving details, and a suggested replacement date; submit_b2b_inquiry stores company/contact details and an inquiry for business follow-up. Ask the user for confirmation before either write tool and explain which details will be sent. CRM registration does not itself send email or SMS reminders.\n\nThe service supports remote Streamable HTTP without an API key. Contact: cigo240920@gmail.com.",
+  "author": {
+    "name": "Cigo",
+    "url": "https://github.com/cigo240920"
+  },
+  "homepage": "https://github.com/cigo240920/Cigo-MCP-system",
+  "repo": "https://github.com/cigo240920/Cigo-MCP-system",
+  "tags": ["business", "sales", "data"],
+  "verified": false,
+  "install": {
+    "args": ["cigo-aircare", "--transport", "http", "https://cigo-mcp-system-wzoy.onrender.com/mcp/"],
+    "notes": "No API key or local server setup is required. Start with get_hvac_filter_info using filter_type=all, FFU, or BFU. Review the write-tool data handling in the description before submitting contact or vehicle details."
+  }
+}
