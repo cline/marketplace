@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "reach-google-business-profile",
+  "type": "mcp",
+  "name": "Reach Google Business Profile MCP",
+  "tagline": "Manage Google Business Profile reviews, posts and profile updates through Reach by Locus.",
+  "description": "Reach by Locus is a hosted Google Business Profile MCP server for local businesses. Read business listing data, reviews, performance, tracked local rankings and competitor information. Draft review replies and Google posts, preview profile improvements, and publish only after approval of the exact text or change.\n\nConnect using Streamable HTTP and browser OAuth with your own Reach account. Connect your Google Business Profile in Reach for connected data and management. Available tools depend on account features and connection state. No API key or shared reviewer credentials are included. The hosted backend remains private.\n\nOptional workflow skills are available at https://github.com/LocusIntelligence-DauAgency/reach-skills. The skills and manifests have an MIT distribution license; that license does not extend to the hosted Reach service.",
+  "author": {
+    "name": "Reach by Locus",
+    "url": "https://reach.locus-intelligence.com"
+  },
+  "homepage": "https://reach.locus-intelligence.com/google-business-profile-mcp",
+  "repo": "https://github.com/LocusIntelligence-DauAgency/reach-skills",
+  "tags": [
+    "marketing",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "reach",
+      "--transport",
+      "http",
+      "https://reach.locus-intelligence.com/api/mcp"
+    ],
+    "notes": "Authenticate with your own Reach account through the browser OAuth flow. Connect Google Business Profile in Reach before managing connected profiles. Public changes require exact approval."
+  }
+}
