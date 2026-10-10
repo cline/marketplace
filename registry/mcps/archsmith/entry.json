@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "archsmith",
+  "type": "mcp",
+  "name": "ArchSmith",
+  "tagline": "Render and validate consistent SVG architecture diagrams from a governed JSON IR.",
+  "description": "ArchSmith is a deterministic architecture-diagram renderer. Its MCP server lets agents read the live schema and governed registries, validate diagram IR, and render SVG without embedding an LLM or exposing per-diagram styling controls.",
+  "author": {
+    "name": "Ayesh Almeida",
+    "url": "https://github.com/ayeshLK"
+  },
+  "homepage": "https://github.com/ayeshLK/archsmith",
+  "repo": "https://github.com/ayeshLK/archsmith",
+  "icon": "./icon.svg",
+  "tags": [
+    "software",
+    "creative"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "archsmith",
+      "--",
+      "npx",
+      "-y",
+      "@archsmith/mcp-server"
+    ]
+  }
+}
