@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "datacircle",
+  "type": "mcp",
+  "name": "Datacircle",
+  "tagline": "Query your favorite B2B data APIs through us. Same request, same price, no markup.",
+  "description": "Datacircle is a data co-op. Query your favorite B2B data APIs through us. Same request, same price, no markup. Right now we have 3 live LinkedIn profile APIs that we trust: Up2Data, HarvestAPI and Fetchin. Every morning, you get the flat file of your data plus everyone else's.\n\nThe first time, your client signs you in with your Datacircle email (OAuth). Or send your API key as a Bearer token.\n\nSign up at datacircle.dev with your work email: a $5 credit, that's 2,105 LinkedIn profiles at $2.375 per 1,000.",
+  "author": {
+    "name": "Datacircle"
+  },
+  "tags": [
+    "data",
+    "sales"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "datacircle",
+      "--transport",
+      "http",
+      "https://api.datacircle.dev/mcp"
+    ]
+  },
+  "homepage": "https://datacircle.dev",
+  "icon": "https://datacircle.dev/favicon.png"
+}
