@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "kitsuvo",
+  "type": "mcp",
+  "name": "Kitsuvo",
+  "tagline": "Browse websites and inspect local site-detection evidence",
+  "description": "Connect Cline to your own Kitsuvo browser using OAuth and Streamable HTTP. Browse, snapshot pages, and inspect site-detection evidence. Requires Kitsuvo installed on Windows or macOS and an explicitly connected local browser; the relay cannot browse while your computer is disconnected. Sensitive sign-in pages are refused. See the setup guide before authorizing.",
+  "author": {
+    "name": "Kitsuvo",
+    "url": "https://kitsuvo.com"
+  },
+  "homepage": "https://kitsuvo.com/integrations",
+  "repo": "https://github.com/leancoderkavy/kitsuvo-integrations",
+  "icon": "./icon.png",
+  "tags": [
+    "software",
+    "research",
+    "security"
+  ],
+  "license": "Kitsuvo Integration License",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "kitsuvo",
+      "--transport",
+      "http",
+      "https://kitsuvo-mcp-relay.fly.dev/mcp"
+    ],
+    "notes": "Install Kitsuvo and start the local cloud connector first. https://github.com/leancoderkavy/kitsuvo-integrations/blob/main/docs/quickstart/cloud-relay.md explains CONNECT and per-client APPROVE. Connection state is ephemeral; reauthorize after relay restart."
+  }
+}
