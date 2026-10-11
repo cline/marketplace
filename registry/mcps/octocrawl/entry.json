@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "octocrawl",
+  "type": "mcp",
+  "name": "Octocrawl",
+  "tagline": "Read web pages as Markdown or JSON, with an Evidence Record for every answer",
+  "description": "Octocrawl reads the web for agents. `scrape` returns a page as Markdown, JSON, links or HTML, and `map` lists a site's URLs. Every answer carries an Evidence Record: the final URL, HTTP status, robots.txt decision and hashes of what was read. A page that is blocked, empty or not the page asked for comes back as such, with the reason, instead of as made-up content.\n\nThis entry connects to hosted Octocrawl: no account or API key, 20 pages a day per address, reset at 00:00 UTC. The same open-source server runs on your own computer with every tool (crawl, batch scrape, saved logins, Monitor) and no daily limit; see the setup page.",
+  "author": {
+    "name": "Octocrawl",
+    "url": "https://octocrawl.dev/?utm_source=cline&utm_medium=listing"
+  },
+  "homepage": "https://octocrawl.dev/docs/connect-mcp/?utm_source=cline&utm_medium=listing",
+  "repo": "https://github.com/77777R7/Octocrawl",
+  "icon": "./icon.png",
+  "tags": [
+    "research",
+    "data"
+  ],
+  "license": "AGPL-3.0-only",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "octocrawl",
+      "--transport",
+      "http",
+      "https://mcp.octocrawl.dev/mcp"
+    ],
+    "notes": "No key is needed. A key (a higher daily allowance and, when the key allows it, the browser lane) goes in an Authorization: Bearer header. To run every tool locally with no daily limit, start `npx octocrawl serve` (Node.js 22.13+) and install the stdio server instead: `cline mcp install octocrawl -- npx -y @octocrawl/mcp`."
+  }
+}
