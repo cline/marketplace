@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "flowra",
+  "type": "mcp",
+  "name": "Flowra",
+  "tagline": "One MCP server for your apps' tools, custom tools, and hosted agents",
+  "description": "One MCP server for your apps' tools and your own custom tools, plus hosted AI agents and workflows with approval gates and a run ledger. Remote server with OAuth sign-in.",
+  "author": {
+    "name": "Flowra",
+    "url": "https://flowra.dev"
+  },
+  "icon": "https://flowra.dev/icons/logo.svg",
+  "tags": [
+    "productivity",
+    "business"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "flowra",
+      "--transport",
+      "http",
+      "https://mcp.flowra.dev/mcp"
+    ]
+  },
+  "homepage": "https://flowra.dev",
+  "repo": "https://github.com/flowradev/flowra-cursor-plugin"
+}
