@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "blawgy",
+  "type": "mcp",
+  "name": "Blawgy",
+  "tagline": "Research, write and publish SEO blog posts on your site",
+  "description": "Blawgy writes and publishes SEO articles to WordPress, Shopify, Webflow, Wix, Framer, Ghost and Duda. This remote server lets Cline read Search Console traffic, run keyword research, manage the content plan, write, update and publish. OAuth sign-in or an API key. Paid Blawgy plan required.",
+  "author": {
+    "name": "Blawgy",
+    "url": "https://blawgy.com"
+  },
+  "homepage": "https://blawgy.com/mcp",
+  "repo": "https://github.com/adamgusky/blawgy-mcp",
+  "icon": "./icon.png",
+  "license": "MIT",
+  "tags": [
+    "marketing",
+    "business",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "blawgy",
+      "--transport",
+      "http",
+      "https://app.blawgy.com/mcp"
+    ],
+    "env": [
+      {
+        "name": "BLAWGY_API_KEY",
+        "required": false,
+        "description": "Optional. API key from Settings, AI agents, for use instead of OAuth sign-in.",
+        "url": "https://app.blawgy.com/settings"
+      }
+    ]
+  }
+}
