@@ -1,0 +1,38 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "toolyour",
+  "type": "mcp",
+  "name": "ToolYour",
+  "tagline": "Remote MCP: plan → run → verify SEO, security, and ship-gate",
+  "description": "ToolYour is a remote MCP server for AI agents. Plan work, run SEO/security/ship-gate playbooks, and verify until checks pass. Same API key and monthly credit quota as the ToolYour REST API. Free tier: 500 credits/month. Docs: https://www.toolyour.com/developers/mcp",
+  "author": {
+    "name": "ToolYour",
+    "url": "https://www.toolyour.com"
+  },
+  "tags": ["software", "marketing", "security"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "toolyour",
+      "--transport",
+      "http",
+      "https://api.toolyour.com/mcp",
+      "--header",
+      "X-Api-Key: ${TOOLYOUR_API_KEY}"
+    ],
+    "env": [
+      {
+        "name": "TOOLYOUR_API_KEY",
+        "required": true,
+        "description": "ToolYour API key from the dashboard (prefix ty_)",
+        "url": "https://www.toolyour.com/dashboard/api-keys"
+      }
+    ],
+    "notes": "Create a free API key at https://www.toolyour.com/dashboard/api-keys, then connect with X-Api-Key. Setup guide: https://www.toolyour.com/developers/mcp"
+  },
+  "homepage": "https://www.toolyour.com/developers/mcp",
+  "repo": "https://github.com/ToolYour/toolyour-cursor-plugin",
+  "icon": "https://www.toolyour.com/logo-icon.png",
+  "license": "Proprietary"
+}
