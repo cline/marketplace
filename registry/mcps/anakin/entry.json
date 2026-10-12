@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "anakin",
+  "type": "mcp",
+  "name": "Anakin",
+  "tagline": "Live web data: scrape, crawl, search, research and pre-built actions on 1,000+ sites",
+  "description": "Anakin's hosted MCP server gives Cline live web data with 22 tools. Scrape a page to clean markdown or structured JSON, map and crawl whole sites, run AI web search and multi-source deep research, and use Wire, a catalog of pre-built, tested actions on over 1,000 websites (search Amazon, read a LinkedIn profile, list Zillow homes). It can also monitor pages for changes, compare what ChatGPT, Gemini and Google AI Overview answer to the same question, and drive a real cloud browser through multi-step tasks. Signs in with your Anakin account over OAuth, so there is no API key to copy; new accounts get 300 free credits.",
+  "author": {
+    "name": "Anakin"
+  },
+  "homepage": "https://anakin.io",
+  "repo": "https://github.com/Anakin-Inc/agent-skills",
+  "icon": "./icon.svg",
+  "tags": [
+    "research",
+    "data"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "anakin",
+      "--transport",
+      "http",
+      "https://mcp.anakin.io/mcp"
+    ]
+  }
+}
