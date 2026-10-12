@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "certscore-mcp-light",
+  "type": "mcp",
+  "name": "CertScore.ai MCP Light",
+  "tagline": "No-auth public website privacy-risk scans with evidence and limitations",
+  "description": "CertScore.ai MCP Light v0.2.26 is a hosted, no-auth Streamable HTTP server for bounded public website privacy-risk reviews. It exposes four tools: certscore_scan_site starts a scan or reuses an eligible recent result; certscore_get_scan_status follows scan progress; certscore_get_scan_bundle retrieves canonical findings and supporting evidence; and certscore_get_report_evidence_page retrieves focused or paginated report evidence. Reviews cover observed cookies and trackers, CMP and consent controls, privacy-policy and transparency signals, regulatory review context, and HTTPS/TLS observations. Results include evidence references and explicit coverage limitations for human or agentic review; they are not legal advice, certification, or a compliance determination.",
+  "author": {
+    "name": "CertScore.ai, LLC",
+    "url": "https://certscore.ai"
+  },
+  "homepage": "https://certscore.ai/mcp/light",
+  "repo": "https://github.com/ergoveritas1-alt/certscore.ai",
+  "icon": "https://certscore.ai/images/mcp-directory/certscore-mcp-light-cline-400.png",
+  "tags": ["security", "software"],
+  "license": "Proprietary",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "certscore-light",
+      "--transport",
+      "streamable-http",
+      "https://mcp.certscore.ai/mcp/light"
+    ],
+    "notes": "Connect directly to https://mcp.certscore.ai/mcp/light using Streamable HTTP. No account, API key, OAuth flow, Authorization header, or local executable is required. Hosted release: 0.2.26; official MCP Registry identity: ai.certscore/mcp-light. Keep scan creation under user control, honor returned polling guidance, retrieve the completed findings bundle, and use certscore_get_report_evidence_page for focused or paginated evidence. Scoped daily and rolling usage limits apply; see https://certscore.ai/developers/mcp#light-usage-limits."
+  }
+}
