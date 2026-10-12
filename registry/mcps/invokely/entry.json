@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "invokely",
+  "type": "mcp",
+  "name": "Invokely",
+  "tagline": "Official statistics for AI agents and developers.",
+  "description": "Query official statistics through Invokely's hosted MCP service. Search indicators, resolve places, retrieve values and time series, compare places, and rank places. Each returned value includes its unit, period, and official source citation. The linked public MIT repository contains a separate local stdio adapter; it does not include the hosted service backend.",
+  "author": {
+    "name": "Invokely",
+    "url": "https://invokely.ai"
+  },
+  "homepage": "https://invokely.ai/docs",
+  "repo": "https://github.com/estevecastells/invokely-mcp-connector",
+  "tags": ["data", "research"],
+  "license": "MIT for the linked local stdio adapter",
+  "verified": false,
+  "install": {
+    "args": [
+      "invokely",
+      "--transport",
+      "http",
+      "https://invokely.ai/mcp/trial"
+    ],
+    "notes": "This anonymous trial endpoint allows 25 calls per day per IP and does not require an API key."
+  }
+}
