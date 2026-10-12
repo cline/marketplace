@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "agentflow",
+  "type": "skill",
+  "name": "Agentflow",
+  "tagline": "Fan out work to many agents via a workflow script \u2014 pooled subagents with journaled results and resume",
+  "description": "Script-driven multi-agent orchestration: an agent writes a .mjs workflow, agentflow runs it as pooled fresh-context subprocess agents across devin/claude/codex/opencode and direct-API adapters with journaling, resume, and caching.",
+  "author": {
+    "name": "Luke Kimball"
+  },
+  "homepage": "https://github.com/duketopceo/agentflow/tree/main/skills/agentflow",
+  "repo": "https://github.com/duketopceo/agentflow",
+  "tags": [
+    "software",
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "duketopceo/agentflow",
+      "--skill",
+      "agentflow"
+    ]
+  }
+}
