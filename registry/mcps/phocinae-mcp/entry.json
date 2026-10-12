@@ -1,0 +1,45 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "phocinae-mcp",
+  "type": "mcp",
+  "name": "Phocinae",
+  "tagline": "Local fail-closed command approval and typed decisions, with no cloud round trip",
+  "description": "A local decision layer for coding agents, backed by the 144.3M-parameter Phocinae-Largha-150M-v1 model running on your own machine. Exposes four tools: `gate` decides whether a shell command may run (allow / deny / ask), `classify` sorts a state into one of your labels, `route` picks one tool from a candidate menu, and `score` rates a state on criteria you supply.\n\n`gate` is the one most agents want. A deterministic offline table settles the clear cases in milliseconds, and only the grey zone reaches the model. Every failure path is fail-closed: if the decision service is unreachable, a gate call returns `deny` with a reason rather than allowing the command. Nothing is sent to a remote service.\n\nThe model is not a chat model. It answers typed questions in one forward pass and produces no generated text, so it is not a replacement for your main model - it is a cheap local filter in front of it.\n\nInstall the server first, then start it:\n\n```bash\npip install phocinae-mcp phocinae-server\nphocinae-server            # serves 127.0.0.1:8155\n```\n\nThe MCP server itself is pure standard library and needs no separate runtime beyond Python 3.8+.",
+  "author": {
+    "name": "Phocinae",
+    "url": "https://github.com/Phocinae"
+  },
+  "homepage": "https://github.com/Phocinae/phocinae-mcp",
+  "repo": "https://github.com/Phocinae/phocinae-mcp",
+  "license": "Apache-2.0",
+  "tags": [
+    "security",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "phocinae",
+      "--",
+      "python3",
+      "-m",
+      "phocinae_mcp",
+      "--server",
+      "http://127.0.0.1:8155"
+    ],
+    "env": [
+      {
+        "name": "PHOCINAE_MCP_SERVER",
+        "required": false,
+        "description": "Override the decision-service address (default http://127.0.0.1:8155). Equivalent to --server."
+      },
+      {
+        "name": "PHOCINAE_MCP_L1_ENABLED",
+        "required": false,
+        "description": "Set to 1 to let grey-zone commands reach the local model. Leave unset to keep the gate entirely on the deterministic table, which is the documented default because the 150M weights are not calibrated for the command-approval domain."
+      }
+    ],
+    "notes": "Requires `pip install phocinae-mcp` first; on Windows use `python` or `py -3` instead of `python3`. Start `phocinae-server` for the model-backed tools; without it, `gate` still decides the clear cases offline and fails closed on the rest."
+  }
+}
