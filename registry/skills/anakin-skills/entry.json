@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "anakin-skills",
+  "type": "skill",
+  "name": "Anakin Skills",
+  "tagline": "Skills for using Anakin's web data tools: scraping, research, Wire actions, monitors and browser tasks",
+  "description": "Five skills that teach Cline when and how to use Anakin's tools: anakin-web-data (scrape, map, crawl), anakin-research (search, deep research, AI answer-engine comparison), anakin-wire (pre-built actions on 1,000+ websites), anakin-monitoring (scheduled change detection with alerts) and anakin-browser (AI-driven cloud browser tasks and saved logins). Use them with the Anakin MCP server.",
+  "author": {
+    "name": "Anakin"
+  },
+  "homepage": "https://github.com/Anakin-Inc/agent-skills",
+  "repo": "https://github.com/Anakin-Inc/agent-skills",
+  "icon": "./icon.svg",
+  "tags": [
+    "research",
+    "data"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "Anakin-Inc/agent-skills"
+    ]
+  }
+}
