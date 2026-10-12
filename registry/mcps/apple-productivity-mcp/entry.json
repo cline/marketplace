@@ -1,0 +1,49 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "apple-productivity-mcp",
+  "type": "mcp",
+  "name": "Apple Productivity MCP",
+  "tagline": "Run local Apple app, document, file, and media workflows on macOS.",
+  "description": "A local macOS stdio MCP server with 133 typed tools across 17 groups: Mail, Calendar, Reminders, Notes, Contacts, Pages, Numbers, Keynote, TextEdit, Safari, Music, Photos, Messages, Finder, files, system discovery, and Shortcuts. Runs through Apple's automation interfaces without a hosted service or Apple API key. Supports app-group filtering and a read-only mode. Generic file operations require configured allowed roots, and running Shortcuts requires an explicit allowlist. Writes affect real app data and may sync through iCloud. Apple scripting coverage is limited; live iWork verification is not yet available. See the repository's tool reference and verification notes for exact coverage.",
+  "author": {
+    "name": "gambadio",
+    "url": "https://github.com/gambadio"
+  },
+  "homepage": "https://github.com/gambadio/apple-productivity-mcp#readme",
+  "repo": "https://github.com/gambadio/apple-productivity-mcp",
+  "tags": ["productivity", "creative"],
+  "license": "MIT",
+  "verified": false,
+  "install": {
+    "args": [
+      "apple-productivity-mcp",
+      "--",
+      "npx",
+      "-y",
+      "@gambadio/apple-productivity-mcp@3.0.0"
+    ],
+    "env": [
+      {
+        "name": "APPLE_MCP_READ_ONLY",
+        "required": false,
+        "description": "Set to true to expose only read-only tools. The default is false."
+      },
+      {
+        "name": "APPLE_MCP_ENABLED_GROUPS",
+        "required": false,
+        "description": "Optional comma-separated app groups, for example mail,calendar,reminders. All groups are exposed by default."
+      },
+      {
+        "name": "APPLE_MCP_FILE_ROOTS",
+        "required": false,
+        "description": "JSON array of existing absolute directories for generic file tools, Finder reveal, Mail attachment saving, and Shortcut file input. Empty by default; these operations require explicit roots."
+      },
+      {
+        "name": "APPLE_MCP_SHORTCUTS",
+        "required": false,
+        "description": "JSON array of Shortcut names or identifiers allowed to run. Shortcut execution is unavailable when the allowlist is empty."
+      }
+    ],
+    "notes": "macOS only; requires Node.js 20 or newer and the Apple apps used by each workflow. Grant macOS Automation permission to the launching client for the selected apps when requested. Some locations also need Files & Folders access. Run locally on the Mac, not in a Linux container or remote host. App writes may sync to other devices. Allowed file roots constrain the generic file tools, not the native Apple apps. Full tool schemas, installation instructions, and app-specific verification limits are in the repository README and docs."
+  }
+}
