@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "chatway",
+  "type": "mcp",
+  "name": "Chatway Live Chat",
+  "tagline": "Manage live chats, customer replies, and support tickets with AI",
+  "description": "Connect Cline to Chatway, an AI-powered live chat and customer support platform. Search and summarize customer conversations, draft and send replies, assign conversations to team members, add private notes, resolve support tickets, update contacts, and search your knowledge base. Connect securely using OAuth with workspace-controlled permissions. No API keys or local installation required.",
+  "author": {
+    "name": "Chatway",
+    "url": "https://chatway.app"
+  },
+  "homepage": "https://chatway.app",
+  "repo": "https://github.com/Chatway-app/chatway-mcp-server",
+  "icon": "https://raw.githubusercontent.com/Chatway-app/chatway-mcp-server/main/assets/chatway-logo-400.png",
+  "tags": [
+    "business",
+    "productivity",
+    "sales"
+  ],
+  "verified": false,
+  "install": {
+    "args": [
+      "chatway",
+      "--transport",
+      "http",
+      "https://mcp.chatway.app/mcp"
+    ],
+    "notes": "Sign in with your Chatway workspace owner or admin account using OAuth and approve the requested permissions. No API key is required."
+  }
+}
