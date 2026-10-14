@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "powmcp-ssl-certificate-check",
+  "type": "mcp",
+  "name": "PowMCP SSL Certificate Check",
+  "tagline": "Inspect the certificate and TLS versions served by a public endpoint",
+  "description": "Inspect the certificate and TLS protocol versions served by one resolved endpoint of a public host. The check reports the certificate subject, issuer, hostname coverage and validity dates, plus supported protocol versions. It does not verify the full trust chain, revocation, cipher suites, or every node of a load-balanced service.",
+  "author": {
+    "name": "PowMCP",
+    "url": "https://powmcp.com/"
+  },
+  "homepage": "https://powmcp.com/apps/ssl-certificate-check/",
+  "icon": "https://powmcp.com/images/logo/favicon/favicon-256.png",
+  "tags": ["security", "software"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["powmcp-ssl-certificate-check", "--transport", "http", "https://powmcp.com/ssl-certificate-check/mcp"],
+    "notes": "Guest access is available without credentials; usage limits apply. Optional PowMCP account linking has not yet been verified in Cline."
+  }
+}
