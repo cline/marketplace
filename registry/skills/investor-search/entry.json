@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "investor-search",
+  "type": "skill",
+  "name": "Investor Search",
+  "tagline": "Build a sourced list of a market's investors, with an honest word on coverage",
+  "description": "Name a country or market and get back its investors — family offices, VCs, PE firms and angels — where every field carries the page it came from. Separates real investors from the advisers who sell to them, never merges two firms without proof, counts family offices as two numbers (proven and likely) instead of one flattering one, keeps its files so a second run continues instead of repeating, and delivers a single Excel file. Needs three things from the session: web search, page fetch, and a shell. Use for investor research, deal sourcing, fundraising prospect lists, LP and family-office lead generation, or filling gaps in a list you already have.",
+  "author": {
+    "name": "BCP partners GmbH",
+    "url": "https://www.bcpp.io"
+  },
+  "homepage": "https://github.com/verun-ai/investor-search",
+  "repo": "https://github.com/verun-ai/investor-search",
+  "tags": ["finance", "research", "data"],
+  "license": "MIT-0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["verun-ai/investor-search"]
+  }
+}
