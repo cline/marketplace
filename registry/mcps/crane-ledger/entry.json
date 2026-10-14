@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "crane-ledger",
+  "type": "mcp",
+  "name": "Crane Ledger",
+  "tagline": "Headless double-entry ledger. 90 MCP tools. OAuth 2.1 or API key.",
+  "description": "Crane Ledger is a headless double-entry ledger of record over Streamable HTTP at https://api.craneledger.ai/mcp.\n\n90 MCP tools for accounts, journals, invoices, bills, reports, and draft/approve writes. Includes purchase_credits, start_x402_credit_purchase, complete_x402_credit_purchase, get_credit_balance, and get_credit_packages.\n\nAuth is OAuth 2.1 (discover via GET https://api.craneledger.ai/.well-known/oauth-protected-resource, DCR at https://auth.craneledger.ai/register, consent at https://craneledger.ai/oauth/consent, scopes ledger:read ledger:write ledger:admin) or a Bearer ha_live_ / ha_test_ API key. Org scope comes from the token or key. 500 free credits at https://craneledger.ai/auth/signin.",
+  "author": {
+    "name": "Crane X1 LLC",
+    "url": "https://craneledger.ai"
+  },
+  "homepage": "https://craneledger.ai",
+  "tags": ["finance", "business"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "crane-ledger",
+      "--transport",
+      "http",
+      "https://api.craneledger.ai/mcp"
+    ],
+    "notes": "OAuth 2.1 is preferred (no pre-shared key). API-key clients can pass --header \"Authorization: Bearer ha_live_...\" or ha_test_.... Credits tools stay: purchase_credits and x402 top-up."
+  }
+}
