@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "sanctionskit-developer",
+  "type": "mcp",
+  "name": "SanctionsKit Developer MCP",
+  "tagline": "Documentation, request validation and synthetic tests for sanctions API integrations.",
+  "description": "Use SanctionsKit documentation, API schema lookup and request validation while building an integration. These tools are public and do not submit a screening. Account tools require OAuth or a supported sandbox API key and use invented inputs only; a sandbox screening consumes allowance and saves evidence under the workspace retention policy. The MCP does not run production screening. The linked repository contains plugin and configuration files, not the hosted service implementation.",
+  "author": {
+    "name": "SanctionsKit",
+    "url": "https://www.sanctionskit.com/"
+  },
+  "homepage": "https://www.sanctionskit.com/resources/mcp",
+  "repo": "https://github.com/SanctionsKit/sanctions-kit-mcp-plugin",
+  "tags": [
+    "software",
+    "data"
+  ],
+  "verified": false,
+  "install": {
+    "args": [
+      "sanctionskit-developer",
+      "--transport",
+      "http",
+      "https://www.sanctionskit.com/mcp"
+    ],
+    "notes": "Documentation, schema lookup and request validation work without signing in. Enable account tools only when intentionally testing invented sandbox inputs; they may save evidence and create a review case. Production uses a separate server-side REST API integration."
+  }
+}
