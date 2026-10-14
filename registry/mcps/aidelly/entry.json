@@ -1,0 +1,16 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "aidelly",
+  "type": "mcp",
+  "name": "Aidelly",
+  "tagline": "Create, schedule, approve, and analyze social media content",
+  "description": "Aidelly is an agent-operated social media platform for agencies. Create and manage content, schedule posts, route approvals, and analyze performance across 11 connected networks.",
+  "author": { "name": "Aidelly", "url": "https://aidelly.ai" },
+  "tags": ["marketing", "business"],
+  "verified": false,
+  "featured": false,
+  "install": { "args": ["aidelly", "--transport", "http", "https://app.aidelly.ai/api/mcp/public-api"] },
+  "homepage": "https://aidelly.ai",
+  "repo": "https://github.com/Aidelly/claude-plugin",
+  "license": "MIT"
+}
