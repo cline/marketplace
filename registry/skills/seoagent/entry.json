@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "seoagent",
+  "type": "skill",
+  "name": "SEOAgent",
+  "tagline": "The SEO engine for coding agents",
+  "description": "SEOAgent gives Claude Code, Cursor, and Codex the tools to grow organic traffic without publishing AI slop. The free Skill audits the site and builds or improves SEO pages in the repo; optional Autopilot cloud uses Google Search Console plus keyword research and queues updates you approve.",
+  "author": {
+    "name": "Baxter Inc",
+    "url": "https://seoagent.com"
+  },
+  "homepage": "https://seoagent.com",
+  "repo": "https://github.com/Baxter-Inc/seoagent-npm",
+  "tags": [
+    "marketing",
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "Baxter-Inc/seoagent-npm",
+      "--skill",
+      "seoagent"
+    ],
+    "notes": "Or: npm install -g @seoagent-official/seoagent && seoagent init. Claude plugin: /plugin marketplace add Baxter-Inc/seoagent-npm then /plugin install seoagent-cli-bootstrap@seoagent-official"
+  }
+}
