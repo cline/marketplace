@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "mcp-gsc",
+  "type": "mcp",
+  "name": "Google Search Console by DigestSEO",
+  "tagline": "Search Console analytics, indexing, sitemaps, and SEO workflows through MCP",
+  "description": "Connect Cline to Google Search Console through a hosted OAuth MCP endpoint. Query clicks, impressions, CTR and position, inspect URL indexing and sitemap health, compare periods, surface SEO opportunities, and use explicit write operations when needed. The project is open source and self-hostable.",
+  "author": {
+    "name": "Tomi Šeregi",
+    "url": "https://tomiseregi.si"
+  },
+  "homepage": "https://digestseo.com/gsc-mcp/",
+  "repo": "https://github.com/AKzar1el/mcp-gsc",
+  "icon": "https://raw.githubusercontent.com/AKzar1el/mcp-gsc/main/assets/logo-400.png",
+  "tags": ["marketing", "data"],
+  "license": "MIT",
+  "verified": false,
+  "install": {
+    "args": ["mcp-gsc", "--transport", "http", "https://mcp-gsc.digestseo.com/mcp"],
+    "notes": "Uses Google OAuth. Review write-capable Search Console operations before approving changes."
+  }
+}
