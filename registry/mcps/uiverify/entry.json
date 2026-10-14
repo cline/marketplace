@@ -1,0 +1,38 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "uiverify",
+  "type": "mcp",
+  "name": "UI Verify",
+  "tagline": "Visual regression testing for coding agents",
+  "description": "UI Verify lets Cline check what its change did to the UI while it works. The remote MCP server lists builds, shows which Storybook stories, Playwright tests or Vitest browser-mode tests changed, opens the diffs, and accepts new baselines. An AI judge labels each visual change as intended, a regression, or flake, and every pull request is checked again before merge. Free plan: 10,000 snapshots a month, no credit card. Open-source projects get 50,000 a month free.",
+  "author": {
+    "name": "UI Verify",
+    "url": "https://uiverify.ai"
+  },
+  "homepage": "https://uiverify.ai/docs/triage-with-your-agent",
+  "repo": "https://github.com/uiverify/uiverify",
+  "icon": "./icon.png",
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "uiverify",
+      "--transport",
+      "http",
+      "https://uiverify.ai/api/mcp",
+      "--header",
+      "Authorization: Bearer ${UIVERIFY_API_KEY}"
+    ],
+    "env": [
+      {
+        "name": "UIVERIFY_API_KEY",
+        "required": true,
+        "description": "A UI Verify project API key. Sign up at uiverify.ai, create a project, and copy its API key.",
+        "url": "https://uiverify.ai/docs/triage-with-your-agent"
+      }
+    ]
+  }
+}
