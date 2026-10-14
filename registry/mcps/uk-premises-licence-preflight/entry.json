@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "uk-premises-licence-preflight",
+  "type": "mcp",
+  "name": "UK Premises Licence Preflight",
+  "tagline": "Evidence-first premises-licensing preflight under the Licensing Act 2003.",
+  "description": "Deterministic premises-licensing preflight for England under the Licensing Act 2003. Helps agents assess whether activities may require a premises licence, inspect local-policy constraints, check evidence freshness and compare requirements across supported authorities.",
+  "author": {
+    "name": "ProjectPermit"
+  },
+  "homepage": "https://uk-premises-licence-mcp-production.up.railway.app/",
+  "tags": ["business", "security"],
+  "verified": false,
+  "install": {
+    "args": [
+      "uk-premises-licence-preflight",
+      "--transport",
+      "http",
+      "https://uk-premises-licence-mcp-production.up.railway.app/mcp"
+    ]
+  }
+}

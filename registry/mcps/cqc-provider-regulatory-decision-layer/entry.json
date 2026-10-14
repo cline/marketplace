@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "cqc-provider-regulatory-decision-layer",
+  "type": "mcp",
+  "name": "CQC Provider Regulatory Decision Layer",
+  "tagline": "Evidence-linked CQC registration and regulatory preflight decisions for England.",
+  "description": "Deterministic, machine-readable CQC provider regulatory preflight for England, covering registration scope, locations, provider structure, required documents, application readiness, registration changes and statutory notifications with official-source evidence and fail-closed review states.",
+  "author": {
+    "name": "ProjectPermit"
+  },
+  "homepage": "https://cqc-provider-mcp-production.up.railway.app/",
+  "tags": ["business", "security"],
+  "verified": false,
+  "install": {
+    "args": [
+      "cqc-provider-regulatory-decision-layer",
+      "--transport",
+      "http",
+      "https://cqc-provider-mcp-production.up.railway.app/mcp"
+    ]
+  }
+}
