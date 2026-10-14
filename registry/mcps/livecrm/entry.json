@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "livecrm",
+  "type": "mcp",
+  "name": "LiveCRM",
+  "tagline": "Deduplicate, normalize, enrich and update Salesforce and HubSpot, with every write audited and reversible",
+  "description": "A hosted MCP server for Salesforce and HubSpot. Thirty-six tools only read, answering from LiveCRM's own mirror of your CRM: count and look up records, find duplicates, check readiness, read the audit trail. Thirty change records, each behind a named permission you grant: merge duplicates, standardize field values, enrich from your data provider, assign owners, flag job changes, create records, mass update, and run multi-step plans on a schedule. Every write is recorded with its before and after values and can be reversed.\n\nRequires a LiveCRM account connected to Salesforce or HubSpot. Sign in with OAuth when you connect; new companies can start a free trial at https://livecrm.ai/trial.",
+  "author": { "name": "LiveCRM", "url": "https://livecrm.ai" },
+  "homepage": "https://livecrm.ai/mcp",
+  "repo": "https://github.com/Livecrm/livecrm-mcp",
+  "icon": "./icon.png",
+  "tags": ["sales", "data", "business"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["livecrm", "--transport", "http", "https://api.livecrm.ai/mcp"]
+  }
+}
