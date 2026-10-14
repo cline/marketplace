@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "samedaydesk",
+  "type": "mcp",
+  "name": "SameDayDesk",
+  "tagline": "22 credential-free machine tools for web extraction and agent commerce",
+  "description": "Remote MCP server exposing SameDayDesk's live machine-services gateway: public web extraction and reading, company and wallet enrichment, repository security scanning, JSON-LD generation, AI-search audits, Morpho risk analysis, agent-service search and seller audits, transaction evidence on Base, Ethereum, and Solana, and wallet-policy conformance checks. No account or API key is required to list tools. Paid actions are priced per call via the x402 / MPP machine-payment protocols and are never invoked by installing this server.",
+  "author": { "name": "SameDayDesk", "url": "https://samedaydesk.com" },
+  "homepage": "https://agents.samedaydesk.com",
+  "repo": "https://github.com/epistemedeus/x402-data-gateway-skills",
+  "tags": ["software", "data", "business"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["samedaydesk", "--transport", "http", "https://agents.samedaydesk.com/mcp"],
+    "notes": "tools/list is credential-free. Individual paid tools settle exact USDC via x402/MPP only when called."
+  }
+}
