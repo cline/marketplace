@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "pexafy",
+  "type": "mcp",
+  "name": "Pexafy Stock Photos",
+  "tagline": "Search millions of free-to-use stock photos by description or by image, with licence and credit for each result",
+  "description": "Semantic stock photo search over Pexafy's own index of millions of free-to-use photographs from Unsplash, Pexels, Pixabay and other libraries. Search by description in any language or by visual similarity to a reference image, then retrieve any result as an image file. Every photo comes with its photographer, source, licence and a ready-to-use credit line. Read-only, with no API key required to get started.",
+  "author": {
+    "name": "Pexafy",
+    "url": "https://pexafy.com"
+  },
+  "homepage": "https://pexafy.com/mcp/",
+  "repo": "https://github.com/Pexafy/pexafy-mcp",
+  "icon": "./icon.svg",
+  "tags": [
+    "creative",
+    "marketing",
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "pexafy",
+      "--transport",
+      "http",
+      "https://mcp.pexafy.com/mcp"
+    ]
+  }
+}
