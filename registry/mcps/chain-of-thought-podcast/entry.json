@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "chain-of-thought-podcast",
+  "type": "mcp",
+  "name": "Chain of Thought Podcast Archive",
+  "tagline": "Search and cite what AI practitioners said on the Chain of Thought podcast",
+  "description": "Read-only search over the Chain of Thought podcast's transcripts and episodes: interviews with engineers, founders and operators shipping AI in production. Four tools: search transcripts, search episodes, get an episode, and get a transcript excerpt. Every result links to the episode page so the agent can cite it. No login or API key.",
+  "author": {
+    "name": "Conor Bronsdon"
+  },
+  "homepage": "https://chainofthought.show/for-agents/",
+  "repo": "https://github.com/conorbronsdon/chain-of-thought-podcast-mcp",
+  "license": "MIT",
+  "tags": [
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "chain-of-thought-podcast",
+      "--transport",
+      "http",
+      "https://mcp.chainofthought.show/mcp"
+    ]
+  }
+}
