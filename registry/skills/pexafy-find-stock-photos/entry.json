@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "pexafy-find-stock-photos",
+  "type": "skill",
+  "name": "Find Stock Photos with Pexafy",
+  "tagline": "Guidance for finding, choosing and crediting free stock photos with the Pexafy Stock Photos MCP server",
+  "description": "Usage guidance for the Pexafy Stock Photos MCP server: when a request calls for real photographs, which search to run (by description, by reference image or by a Pexafy photo), how to write effective searches and shape filters, and how to deliver each photo with its licence and credit line. Requires the Pexafy Stock Photos MCP server.",
+  "author": {
+    "name": "Pexafy",
+    "url": "https://pexafy.com"
+  },
+  "homepage": "https://github.com/Pexafy/pexafy-mcp/tree/main/skills/find-stock-photos",
+  "repo": "https://github.com/Pexafy/pexafy-mcp",
+  "icon": "./icon.svg",
+  "tags": [
+    "creative",
+    "marketing"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "Pexafy/pexafy-mcp",
+      "--skill",
+      "find-stock-photos"
+    ]
+  }
+}
