@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "garchi-cms",
+  "type": "mcp",
+  "name": "Garchi CMS",
+  "tagline": "Manage structured website and application content through MCP",
+  "description": "Garchi CMS is a hosted headless CMS that lets AI agents and applications create, update and manage structured website and application content through MCP. The remote MCP server uses Streamable HTTP and OAuth with Dynamic Client Registration.",
+  "author": {
+    "name": "LumenHarbor Digital Solutions Limited",
+    "url": "https://lumenharbor.co.uk"
+  },
+  "homepage": "https://garchi.co.uk/mcp-docs",
+  "repo": "https://github.com/lumenharbor/garchi-cms-skills",
+  "icon": "./icon.png",
+  "tags": [
+    "productivity",
+    "software",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "garchi-cms",
+      "--transport",
+      "http",
+      "https://garchi.co.uk/mcp-oauth"
+    ]
+  }
+}
