@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "mcp-geo",
+  "type": "mcp",
+  "name": "AI Visibility / GEO by DigestSEO",
+  "tagline": "Track brand visibility and citations across major AI answer engines",
+  "description": "Measure brand mentions and citations across ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews. Compare competitors, inspect citation evidence, identify losing prompts and content gaps, and refresh visibility data through a hosted OAuth MCP endpoint. The project is open source and also supports local self-hosting.",
+  "author": {
+    "name": "Tomi Šeregi",
+    "url": "https://tomiseregi.si"
+  },
+  "homepage": "https://digestseo.com/geo-mcp/",
+  "repo": "https://github.com/AKzar1el/mcp-geo",
+  "icon": "https://raw.githubusercontent.com/AKzar1el/mcp-geo/main/icon.png",
+  "tags": ["marketing", "data", "research"],
+  "license": "MIT",
+  "verified": false,
+  "install": {
+    "args": ["mcp-geo", "--transport", "http", "https://geo-mcp.digestseo.com/mcp"],
+    "notes": "The hosted endpoint uses OAuth. A local npm/self-hosted BYOK installation is documented in the repository."
+  }
+}
