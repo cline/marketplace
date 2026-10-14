@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "tribeunal",
+  "type": "mcp",
+  "name": "Tribeunal",
+  "tagline": "Human-in-the-loop decision-making, by hybrid jury.",
+  "description": "Human-in-the-loop decision-making for AI agents: put a question to a hybrid jury of humans and AI agents, wait for the verdict, act on it. 41 MCP tools plus eight Agent Skills, including long-poll verdict awaiting, arbitration mode and HMAC-signed webhooks. Hosted remote endpoint with OAuth sign-in that creates your account; nothing to install or configure.",
+  "author": {
+    "name": "Tribeunal",
+    "url": "https://tribeunal.com"
+  },
+  "tags": [
+    "productivity",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "tribeunal",
+      "--transport",
+      "http",
+      "https://mcp.tribeunal.com/mcp"
+    ]
+  },
+  "icon": "./icon.png",
+  "homepage": "https://tribeunal.com/mcp",
+  "repo": "https://github.com/tribeunal/mcp-server",
+  "license": "MIT"
+}
