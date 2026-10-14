@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "formasty",
+  "type": "mcp",
+  "name": "Formasty",
+  "tagline": "Build and operate forms, quizzes, surveys, and response workflows from Cline.",
+  "description": "Formasty's official hosted MCP server lets Cline create, edit, validate, publish, and inspect forms and quizzes; configure logic, scoring, themes, integrations, and webhooks; and manage submissions and exports with authenticated workspace permissions.",
+  "author": {
+    "name": "Formasty",
+    "url": "https://formasty.com"
+  },
+  "homepage": "https://formasty.com",
+  "repo": "https://github.com/QuantumCoderSys/formasty-mcp",
+  "icon": "./icon.png",
+  "tags": ["productivity", "marketing", "business", "sales"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "formasty",
+      "--transport",
+      "http",
+      "https://app.formasty.com/api/mcp"
+    ],
+    "notes": "Complete the Formasty OAuth flow after installation. Keep write and delete tools subject to user approval."
+  }
+}
