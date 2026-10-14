@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "ilovevideoeditor",
+  "type": "mcp",
+  "name": "iLoveVideoEditor",
+  "tagline": "Render real MP4 videos from JSON scene definitions or 249 motion-design templates",
+  "description": "iLoveVideoEditor lets agents render production-quality MP4 videos: list motion-design templates, fill in template variables, submit JSON-to-MP4 render jobs, poll render status, and get signed download URLs. Deterministic and template-driven output with real text, images, captions, effects, and transitions — built for agent-generated marketing, social, and product videos.",
+  "author": { "name": "iLoveVideoEditor", "url": "https://ilovevideoeditor.com" },
+  "homepage": "https://ilovevideoeditor.com/docs/api",
+  "repo": "https://github.com/ilovevideoeditor/mcp-server",
+  "icon": "https://ilovevideoeditor.com/logo-512.png",
+  "tags": ["creative", "marketing"],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["ilovevideoeditor", "--", "npx", "-y", "@ilovevideoeditor/mcp-server"],
+    "env": [
+      {
+        "name": "VF_API_KEY",
+        "required": true,
+        "description": "iLoveVideoEditor API key (free tier available)",
+        "url": "https://ilovevideoeditor.com/dashboard/account/api"
+      }
+    ],
+    "notes": "Renders are asynchronous jobs: submit with ilovevideoeditor_render_template or ilovevideoeditor_render_json, poll ilovevideoeditor_get_render_status until completed, then call ilovevideoeditor_get_download_url for the MP4."
+  }
+}
