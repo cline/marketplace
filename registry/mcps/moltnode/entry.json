@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "moltnode",
+  "type": "mcp",
+  "name": "MoltNode by Chord",
+  "tagline": "Hosted no-key MCP: read 31 blockchains over JSON-RPC, get DEX swap quotes and unsigned transactions via Chord.",
+  "description": "A hosted MCP server over Streamable HTTP with no API key, no signup and no auth. `list_chains`, `rpc_call`, `get_block_number` and `get_balance` read 31 blockchains over JSON-RPC (Ethereum, Base, Arbitrum, Solana, Monad, BNB Chain, Avalanche, Sui and more). `chord_find_token` and `chord_swap_quote` return a best-route DEX swap quote with the unsigned transaction, the approval and a simulation from the taker wallet, via Chord (getchord.xyz) on Base, Monad, BNB Chain, Avalanche, Robinhood Chain and Arc. `send_raw_transaction` broadcasts a transaction the agent signed. Non-custodial: the agent signs with its own key.",
+  "author": { "name": "MoltNode / Chord", "url": "https://moltnode.ag" },
+  "homepage": "https://moltnode.ag/agents",
+  "repo": "https://github.com/tuantqse90/moltnode-mcp",
+  "icon": "./icon.png",
+  "tags": ["finance", "data"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["moltnode", "--transport", "http", "https://moltnode.ag/mcp"]
+  }
+}
