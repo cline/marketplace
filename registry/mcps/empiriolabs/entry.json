@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "empiriolabs",
+  "type": "mcp",
+  "name": "EmpirioLabs AI",
+  "tagline": "Every EmpirioLabs model and platform feature as tools: chat, media, search, jobs, GPU Cloud, agents.",
+  "description": "Every EmpirioLabs model and platform feature as tools: chat, media, search, jobs, GPU Cloud, agents. The remote server connects over Streamable HTTP and signs in with your EmpirioLabs AI account (OAuth). Documentation: https://docs.empiriolabs.ai/mcp",
+  "author": {
+    "name": "EmpirioLabs AI",
+    "url": "https://empiriolabs.ai"
+  },
+  "homepage": "https://docs.empiriolabs.ai/mcp",
+  "repo": "https://github.com/EmpirioLabs-AI/mcp",
+  "icon": "https://empiriolabs.ai/images/icon-dark-512.png",
+  "tags": [
+    "software",
+    "creative",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "empiriolabs",
+      "--transport",
+      "http",
+      "https://mcp.empiriolabs.ai/mcp"
+    ]
+  }
+}
