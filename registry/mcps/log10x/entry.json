@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "Log10x",
   "tagline": "Rank log patterns by volume and cost",
-  "description": "Ranks log patterns by volume and cost and plans an action for each pattern: compact on Splunk and self-managed Elasticsearch, tier down or offload to S3 on other platforms. Runs locally over stdio; no log data reaches log10x. Without an API key it runs read-only against a public demo dataset.",
+  "description": "Ranks log patterns by volume and cost and plans compact (Splunk, self-managed Elasticsearch), tier down or offload to S3 for the excess over each cap. Runs locally over stdio; no log data reaches log10x. Without an API key it runs read-only against a public demo dataset.",
   "author": {
     "name": "Log10x",
     "url": "https://www.log10x.com"
