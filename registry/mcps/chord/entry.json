@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "chord",
+  "type": "mcp",
+  "name": "Chord",
+  "tagline": "Hosted no-key MCP: DEX swap quotes and unsigned txs on 7 EVM chains, token boards, candles, wallet PnL, smart money.",
+  "description": "A hosted MCP server over Streamable HTTP with 17 tools. No API key for data (about 60 requests a minute); only `chord_ask` needs a key. `chord_quote` and `chord_swap_tx` return a best-route DEX swap quote and the unsigned swap transaction, with the approval and a simulation from the taker wallet, on 7 EVM chains (Base, Monad, BNB Chain, Avalanche, Arbitrum, Robinhood Chain and Arc). `chord_overview`, `chord_tokens`, `chord_search`, `chord_token`, `chord_trades`, `chord_candles`, `chord_wallet`, `chord_wallet_trades`, `chord_smart_money`, `chord_holders`, `chord_lp_pools` and `chord_lp_positions` read market data: token boards, prices, candles, trades, wallet PnL, smart money, holders and LP pools (Solana data read-only). `chord_chains` and `chord_status` list what each chain supports and its live health. `chord_ask` asks Chord's analyst a question in plain language. Non-custodial: the agent signs with its own key.",
+  "author": { "name": "Chord", "url": "https://getchord.xyz" },
+  "homepage": "https://getchord.xyz/docs/agents/mcp/",
+  "repo": "https://github.com/getchordlabs/chord",
+  "icon": "./icon.png",
+  "tags": ["finance", "data"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["chord", "--transport", "http", "https://api.getchord.xyz/v1/mcp"]
+  }
+}
