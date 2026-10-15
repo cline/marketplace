@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "specstream",
+  "type": "mcp",
+  "name": "SpecStream",
+  "tagline": "Finished lists from the live web, every row with its source",
+  "description": "Ask in plain words for companies, people, products and more. SpecStream reads the live web and hands back the finished list, every row with its source, priced per match. You see the price and approve a maximum before anything runs.",
+  "author": {
+    "name": "SpecStream",
+    "url": "https://specstream.ai"
+  },
+  "homepage": "https://specstream.ai/docs/mcp",
+  "repo": "https://github.com/Specstreamai/specstream-tools",
+  "icon": "./icon.png",
+  "tags": [
+    "data",
+    "research",
+    "sales"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "specstream",
+      "--transport",
+      "http",
+      "https://api.specstream.ai/mcp"
+    ]
+  }
+}
