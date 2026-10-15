@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "docsy",
+  "type": "mcp",
+  "name": "Docsy",
+  "tagline": "Read versioned library documentation with verifiable source links.",
+  "description": "Docsy is a free, hosted Streamable HTTP MCP server for developer documentation. Resolve package and framework library IDs, retrieve focused version-specific documentation and code examples, list indexed versions, search public documentation, and fetch results by stable ID. Five read-only tools are available without an API key. The public GitHub repository contains the MIT-licensed client plugin; the hosted crawler and indexing backend remain managed rather than open source.",
+  "author": {
+    "name": "getremcp",
+    "url": "https://github.com/getremcp"
+  },
+  "homepage": "https://docsy.remcp.site",
+  "repo": "https://github.com/getremcp/docsy-plugin",
+  "icon": "./icon.png",
+  "tags": ["software", "research"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["docsy", "--transport", "http", "https://docsy.remcp.site/mcp/registry"],
+    "env": [],
+    "notes": "Public read-only MCP service. No authentication or local runtime required."
+  }
+}
