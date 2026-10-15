@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "gcat",
+  "type": "mcp",
+  "name": "Liquid Compute GPU Test",
+  "tagline": "Run GPU acceptance tests (DCGM, GEMM, HBM/PCIe bandwidth, NCCL) on NVIDIA GPU nodes you administer.",
+  "description": "Run GPU acceptance tests on NVIDIA GPU nodes you administer. Liquid Compute connects over SSH from its own servers and runs NVIDIA DCGM diagnostics, a CUTLASS GEMM benchmark, HBM and PCIe bandwidth tests and NCCL all-reduce, then reports each measurement against the GPU profile's thresholds (A10, H100, H200, B200, B300; single nodes and 2- or 4-node RDMA clusters). Nothing is installed on the node: you add one `authorized_keys` line and remove it afterwards. Adding nodes and starting a test require your explicit confirmation, enforced by the server. Free; requires a Liquid Compute account.",
+  "author": {
+    "name": "Liquid Compute",
+    "url": "https://liquidcompute.com"
+  },
+  "homepage": "https://liquidcompute.com/gpu-test",
+  "repo": "https://github.com/Liquid-Compute/gcat",
+  "icon": "https://raw.githubusercontent.com/Liquid-Compute/gcat/main/assets/icon.png",
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "gcat",
+      "--transport",
+      "http",
+      "https://api.liquidcompute.co/mcp"
+    ],
+    "notes": "Uses OAuth. Sign in with your Liquid Compute account when prompted (create one at https://liquidcompute.com)."
+  }
+}
