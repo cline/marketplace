@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "mrscraper",
+  "type": "mcp",
+  "name": "MrScraper",
+  "tagline": "Scrape web pages to HTML, Markdown or screenshots, and run Google searches",
+  "description": "MrScraper's hosted MCP server gives Cline three read-only tools. `scraperAPI` fetches a page URL and returns its HTML, Markdown, a screenshot, or a combination, with optional browser rendering, proxy country, wait-for-selector and retries; the response also reports the target page's HTTP status. `webSearch` runs a Google search for a query or a Google search URL and returns the organic results as JSON, or the raw results page as HTML. `status` shows your plan, token usage and remaining tokens.\n\nThe server uses Streamable HTTP and signs you in with your MrScraper account through OAuth 2.1 with PKCE, so there is no API key to copy. A MrScraper account is required, and scraping uses tokens from your plan. The server is open source (MIT) and can also run locally as the `@mrscraper/mcp` npm package.",
+  "author": {
+    "name": "MrScraper",
+    "url": "https://mrscraper.com"
+  },
+  "homepage": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+  "repo": "https://github.com/mrscraper-com/mrscraper-mcp",
+  "icon": "./icon.svg",
+  "tags": [
+    "research",
+    "data"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "mrscraper",
+      "--transport",
+      "http",
+      "https://mcp.mrscraper.com/mcp"
+    ],
+    "notes": "Sign in to your MrScraper account with OAuth in your browser: in the Cline extension, click Authenticate on the MrScraper server in the MCP Servers panel after installing; with the CLI, choose OAuth when the install wizard asks how to authenticate, or run `cline mcp` later and pick Authorize OAuth. To use an API key instead, create one at https://app.mrscraper.com/api-tokens and add `--header \"Authorization: Bearer <your-api-key>\"` to the end of the install command. Keep the URL exactly as shown, including `/mcp`."
+  }
+}
