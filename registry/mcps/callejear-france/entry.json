@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "callejear-france",
+  "type": "mcp",
+  "name": "Callejear France",
+  "tagline": "Search French streets and compare IRIS-level amenities and commune-level risk codes.",
+  "description": "Search French communes and street records, retrieve IRIS-level BPE amenity counts and commune-level GASPAR codes, and compare 2–5 streets with five read-only tools. Snapshot: 2,192,808 street records across 101 departments. Missing values and unavailable source dates remain explicit; these are not walking-radius counts or parcel-level risk assessments. Free without an account or API key; 30 tool calls/minute and 100/day per origin, with 1,000/day globally.",
+  "homepage": "https://callejear.fr/mcp/",
+  "author": {
+    "name": "Callejear",
+    "url": "https://callejear.fr/"
+  },
+  "tags": [
+    "data",
+    "research"
+  ],
+  "verified": false,
+  "install": {
+    "args": [
+      "callejear-france",
+      "--transport",
+      "http",
+      "https://callejear.fr/api/mcp"
+    ],
+    "notes": "Read-only hosted server; no account, API key or environment variables. See https://callejear.fr/mcp/ for coverage and quota details."
+  }
+}
