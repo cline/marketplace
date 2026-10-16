@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "mystreetdata-usa",
+  "type": "mcp",
+  "name": "MyStreetData USA",
+  "tagline": "Search US streets and retrieve sourced walkability, SNAP retailer and EV station context.",
+  "description": "Free, read-only hosted MCP covering 1,334,459 street records in 241 areas across 8 US states. Five tools expose coverage, prefix search, context and comparisons. EPA walkability is block-group context assigned by centroid; SNAP/AFDC counts are state-bounded observations, not live availability. Unknown values remain null. The public repository contains connection metadata, not server source.",
+  "homepage": "https://mystreetdata.com/mcp/",
+  "author": {
+    "name": "MyStreetData",
+    "url": "https://mystreetdata.com/"
+  },
+  "tags": [
+    "data",
+    "research"
+  ],
+  "verified": false,
+  "install": {
+    "args": [
+      "mystreetdata-usa",
+      "--transport",
+      "http",
+      "https://mystreetdata.com/api/mcp"
+    ],
+    "notes": "No account or API key. Limits: 30 calls/minute and 100/day per origin, 1,000/day globally. Native clients only; browser-hosted cross-origin clients are unsupported. Start with mystreetdata_get_coverage. Not nationwide coverage."
+  }
+}
