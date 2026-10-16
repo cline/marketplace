@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "words-into-music",
+  "type": "mcp",
+  "name": "Words into Music",
+  "tagline": "Generate songs from prompts or lyrics with your existing account credits",
+  "description": "Connect to the hosted Words into Music service through OAuth to check credits, prepare a song, start generation, check progress, and read your private song library. Generation uses existing account credits and limits. Public signup is available. The linked repository contains public setup metadata and documentation only; the hosted application implementation is private.",
+  "author": {
+    "name": "Words into Music",
+    "url": "https://wordsintomusic.com/"
+  },
+  "homepage": "https://wordsintomusic.com/mcp/",
+  "repo": "https://github.com/constantinginga/words-into-music-mcp",
+  "icon": "./icon.png",
+  "tags": [
+    "creative"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "words-into-music",
+      "--transport",
+      "http",
+      "https://mcp.wordsintomusic.com/mcp"
+    ],
+    "notes": "Complete OAuth sign-in in a compatible client. No manual API key or local package is required. Prepare the brief and confirm its one-credit cost before starting generation. A free account has one song total across the website and all connected clients. Setup: https://wordsintomusic.com/blog/mcp-setup-guide/"
+  }
+}
