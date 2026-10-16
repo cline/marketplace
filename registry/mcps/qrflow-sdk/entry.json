@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "qrflow-sdk",
+  "type": "mcp",
+  "name": "QRFLOW.codes",
+  "tagline": "Lets an AI assistant create dynamic QR codes that can change after printing",
+  "description": "QRFLOW.codes lets an AI assistant create QR codes through its MCP server.",
+  "author": {
+    "name": "nativecodeapps",
+    "url": "https://github.com/nativecodeapps"
+  },
+  "homepage": "https://qrflow.codes/developers",
+  "repo": "https://github.com/nativecodeapps/qrflow-sdk",
+  "tags": [
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "qrflow-sdk",
+      "--transport",
+      "http",
+      "https://qrflow.codes/mcp"
+    ]
+  }
+}
