@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "streamkap",
+  "type": "mcp",
+  "name": "Streamkap",
+  "tagline": "Build, monitor, and troubleshoot real-time CDC pipelines",
+  "description": "Streamkap streams changes from databases such as PostgreSQL, MySQL, and MongoDB into Snowflake, Databricks, BigQuery, ClickHouse, and more. This official hosted MCP server lets Cline check pipeline health, build pipelines, diagnose lag, and triage dead-letter queues. Sign in with your Streamkap account on first use.",
+  "author": {
+    "name": "Streamkap",
+    "url": "https://streamkap.com"
+  },
+  "tags": [
+    "data",
+    "databases"
+  ],
+  "icon": "./icon.svg",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "streamkap",
+      "--transport",
+      "http",
+      "https://mcp.streamkap.com/mcp"
+    ]
+  },
+  "homepage": "https://docs.streamkap.com/mcp-server",
+  "repo": "https://github.com/streamkap-com/streamkap-mcp"
+}
