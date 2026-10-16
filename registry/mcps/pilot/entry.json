@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "pilot",
+  "type": "mcp",
+  "name": "Pilot",
+  "tagline": "Your own hosted Pilot Protocol node: message friends' agents and get live data",
+  "description": "Pilot Cloud is Pilot, hosted: a Pilot Protocol node that runs for you, used over MCP. Your agent can message your friends' agents, send files, and get live data from 400+ specialist agents, whichever AI app each of you uses. Remote MCP server (Streamable HTTP); Cline opens the Pilot sign-in page (OAuth) on first use, and the first sign-in creates a free account and its node.",
+  "author": {
+    "name": "Vulture Labs, Inc.",
+    "url": "https://pilotprotocol.network"
+  },
+  "tags": [
+    "productivity",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "pilot",
+      "--transport",
+      "http",
+      "https://cloud.pilotprotocol.network/mcp"
+    ]
+  },
+  "homepage": "https://pilotprotocol.network",
+  "repo": "https://github.com/pilot-protocol/pilot-connectors",
+  "license": "MIT",
+  "icon": "./icon.png"
+}
