@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "openhook",
+  "type": "mcp",
+  "name": "Openhook",
+  "tagline": "Capture webhooks and inspect real callback payloads from your coding agent.",
+  "description": "Open-source webhook inbox for testing integrations. Create a temporary inbox, send a callback to its URL, and inspect the received request through MCP. The hosted endpoint connects without an account or API key; reading and deleting an inbox require its private token as a tool argument. Capturing a callback confirms receipt, not that your application processed it. Self-hosting is also available.",
+  "author": {
+    "name": "Openhook",
+    "url": "https://github.com/openhook-dev"
+  },
+  "homepage": "https://openhook.dev",
+  "repo": "https://github.com/openhook-dev/openhook-inbox",
+  "icon": "./icon.png",
+  "tags": [
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "openhook",
+      "--transport",
+      "http",
+      "https://openhook.dev/mcp"
+    ],
+    "env": [],
+    "notes": "Ask the agent to create a webhook inbox, then send a test callback to the returned URL and wait for the request. Keep the inbox token private and delete the inbox when finished. Setup and callback example: https://openhook.dev/guides/callback-proof"
+  }
+}
