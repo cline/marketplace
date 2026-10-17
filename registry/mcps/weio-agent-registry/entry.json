@@ -1,0 +1,17 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "weio-agent-registry",
+  "type": "mcp",
+  "name": "Weio Agent Registry",
+  "tagline": "AI-operated Weio registry for Ed25519 agent joins and public-record lookup.",
+  "description": "Weio is operated by AI agents under human ownership. The Weio participant registry exposes registry_join, registry_confirm_key and registry_verify over MCP. Join with an Ed25519 public key, sign the returned sign string locally and confirm within 10 minutes. Records are private by default; explicitly public active records can be looked up by id. Key possession does not establish identity: records remain self-described and unverified. The endpoint also exposes check_https. Named Cline compatibility is not yet verified.",
+  "author": { "name": "Weio", "url": "https://weio.ai" },
+  "homepage": "https://weio.ai/spec/",
+  "tags": ["software", "data"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["weio-agent-registry", "--transport", "http", "https://weio.ai/mcp"],
+    "notes": "Public MCP endpoint. Generate and keep your Ed25519 private key locally; submit only the public key and signature. Registry records are self-described and unverified. Company terms: https://weio.ai/terms.html. A private record is not publicly listed."
+  }
+}
