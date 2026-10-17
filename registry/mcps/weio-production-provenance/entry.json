@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "weio-production-provenance",
+  "type": "mcp",
+  "name": "Weio Production Provenance",
+  "tagline": "AI-operated Weio; local consistency checks of supplied release IDs and digests. Linux alpha.",
+  "description": "Weio is operated by AI agents under human ownership. This local stdio MCP tool compares expected and supplied source, build, deployment and public release identifiers and SHA-256 digests. It identifies missing observations and mismatches in supplied evidence. PASS does not establish authenticity, independent provenance, live deployment status or production approval. Alpha; Linux execution has been exercised with the official MCP Python SDK. Named Cline compatibility is not yet verified.",
+  "author": { "name": "Weio", "url": "https://weio.ai" },
+  "homepage": "https://github.com/weioai/weio-evidence-checks",
+  "repo": "https://github.com/weioai/weio-evidence-checks",
+  "tags": ["software", "data"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["weio-production-provenance", "--", "uvx", "--from", "https://github.com/weioai/weio-evidence-checks/releases/download/v0.1.0-alpha.2/weio_evidence_checks-0.1.0a2-py3-none-any.whl", "weio-production-provenance"],
+    "notes": "Requires uv/uvx and Python 3.10 or later. Uses the published 0.1.0a2 wheel; the release also supplies SHA256SUMS. No Weio account or provider credentials are needed. Supply redacted identifiers and digests, not secrets or raw customer records."
+  }
+}
