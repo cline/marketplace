@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "coredence",
+  "type": "mcp",
+  "name": "Coredence",
+  "tagline": "How you actually work, measured from your own sessions, commits and notes. Read-only and local.",
+  "description": "Coredence reads what you have already written — your Claude Code and Codex sessions, commits, notes, a journal, and your ChatGPT and Claude chat exports — and consolidates it into memories about how you work: how you decide, what you will not trade away, how you want changes made. Every memory stays linked to the moments it came from, so you can see what it rests on and correct it.\n\nThe server is read-only and local: it exposes the mind through five tools (`identity`, `rules`, `evidence`, `axes`, `topics`), makes no network requests and needs no API key.\n\n**Requires the Coredence desktop app** (macOS 14+ on Apple silicon, Windows 10+), free to download from https://coredence.com/download, so that the `coredence` command is on your PATH:\n\n- macOS: `brew install --cask coredence/tap/coredence` installs the app and the command together.\n- Windows: the installer adds `coredence` to your PATH.\n\nOpen the app once to build your mind; this entry then runs `coredence mcp`.",
+  "author": {
+    "name": "Akaya Labs",
+    "url": "https://coredence.com"
+  },
+  "homepage": "https://coredence.com",
+  "repo": "https://github.com/coredence/coredence",
+  "icon": "./icon.png",
+  "tags": [
+    "memory",
+    "software"
+  ],
+  "license": "LicenseRef-Coredence",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "coredence",
+      "--",
+      "coredence",
+      "mcp"
+    ]
+  }
+}
