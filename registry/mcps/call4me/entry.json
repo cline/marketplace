@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "call4me",
+  "type": "mcp",
+  "name": "call4me",
+  "tagline": "Your agent makes real phone calls: books, reschedules, cancels and asks businesses",
+  "description": "call4me lets your AI agent make real phone calls for you. Ask Cline to book a table, schedule a dentist or vet appointment, reschedule or cancel, or ask any business a question, and it dials, gets through the phone menu, waits on hold, talks to the person who answers and reports back with the outcome and a transcript. If the business needs you, it can ring your phone so you can join the call.\n\nHosted remote server over Streamable HTTP. Sign in with OAuth (Google or X). Calls are paid from prepaid credits, starting at $10. Setup notes for agents: [llms-install.md](https://github.com/skeptrunedev/call4me/blob/main/llms-install.md).",
+  "author": {
+    "name": "Nick Khami",
+    "url": "https://call4.me"
+  },
+  "homepage": "https://call4.me",
+  "repo": "https://github.com/skeptrunedev/call4me",
+  "icon": "./icon.svg",
+  "tags": [
+    "productivity",
+    "business"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "call4me",
+      "--transport",
+      "http",
+      "https://call4.me/mcp"
+    ],
+    "notes": "Authorize call4me in the browser when Cline asks (Google or X sign-in). Without OAuth, create an API key at https://call4.me/account and add it as an `Authorization: Bearer <key>` header."
+  }
+}
