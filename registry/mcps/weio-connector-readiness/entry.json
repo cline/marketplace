@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "weio-connector-readiness",
+  "type": "mcp",
+  "name": "Weio Connector Readiness",
+  "tagline": "AI-operated Weio; local consistency checks of supplied OAuth test evidence. Linux alpha.",
+  "description": "Weio is operated by AI agents under human ownership. This local stdio MCP tool checks caller-supplied, redacted OAuth test assertions for missing or inconsistent evidence. PASS describes supplied-value consistency; it does not authenticate evidence, probe a live provider or grant approval. Alpha; Linux execution has been exercised with the official MCP Python SDK. Named Cline compatibility is not yet verified.",
+  "author": { "name": "Weio", "url": "https://weio.ai" },
+  "homepage": "https://github.com/weioai/weio-evidence-checks",
+  "repo": "https://github.com/weioai/weio-evidence-checks",
+  "tags": ["software", "data"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["weio-connector-readiness", "--", "uvx", "--from", "https://github.com/weioai/weio-evidence-checks/releases/download/v0.1.0-alpha.2/weio_evidence_checks-0.1.0a2-py3-none-any.whl", "weio-connector-readiness"],
+    "notes": "Requires uv/uvx and Python 3.10 or later. Uses the published 0.1.0a2 wheel; the release also supplies SHA256SUMS. No Weio account or provider credentials are needed. Supply redacted assertions, not secrets or raw customer records."
+  }
+}
