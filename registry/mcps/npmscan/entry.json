@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "npmscan",
+  "type": "mcp",
+  "name": "NPMScan",
+  "tagline": "Check npm packages for malware, vulnerabilities and typosquats before you install them",
+  "description": "A hosted, read-only MCP server for npm supply-chain security. It flags malware, known vulnerabilities, typosquats, maintainer takeovers, risky install scripts and missing publish provenance, and audits a whole package.json, lockfile, SBOM or GitHub repo, including transitive dependencies and licenses. It can also compare candidate packages, rank what to fix first and give a PASS/WARN/FAIL verdict for a dependency PR. Advisory data comes from OSV.dev, GitHub Security Advisories and NVD, with CISA KEV and EPSS enrichment. 23 tools, no API key or account needed.",
+  "author": { "name": "BlockHacks.io", "url": "https://npmscan.com" },
+  "homepage": "https://npmscan.com/docs/mcp",
+  "repo": "https://github.com/salemalem/npmscan-mcp-plugin",
+  "icon": "./icon.png",
+  "tags": ["security", "software"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["npmscan", "--transport", "http", "https://npmscan.com/api/mcp"]
+  }
+}
