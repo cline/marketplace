@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "enhanciar",
+  "type": "mcp",
+  "name": "Enhanciar",
+  "tagline": "Ask your company brain from Cline, with a source link on every answer",
+  "description": "Hosted company-brain MCP server. It answers questions from a team's Slack, Gmail, Notion, Drive, Jira, Linear and GitHub with a link to every source, and drafts tickets, replies or docs that wait for a person to approve them. Needs an Enhanciar API key (paid plans).",
+  "author": {
+    "name": "Enhanciar"
+  },
+  "tags": [
+    "productivity",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "enhanciar",
+      "--transport",
+      "http",
+      "https://enhanciar.in/enhanciar/mcp/",
+      "--header",
+      "Authorization: Bearer <ENHANCIAR_API_KEY>"
+    ]
+  },
+  "homepage": "https://enhanciar.in",
+  "repo": "https://github.com/enhanciar/enhanciar-mcp",
+  "license": "MIT"
+}
