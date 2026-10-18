@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "nws-weather",
+  "type": "mcp",
+  "name": "NWS Weather",
+  "tagline": "US National Weather Service alerts and forecasts",
+  "description": "A remote MCP server over US National Weather Service data. `get-alerts` returns every active alert for a two-letter state code with event, area, severity and the official instruction; `get-forecast` returns the next five forecast periods for a latitude/longitude. Both tools are read-only. Free `initialize` and `tools/list`; each tool call is paid per call in USDC on Base over x402.",
+  "author": {
+    "name": "Thx93"
+  },
+  "homepage": "https://github.com/Thx93/mcp-weather-server",
+  "repo": "https://github.com/Thx93/mcp-weather-server",
+  "tags": ["data"],
+  "license": "ISC",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["nws-weather", "--transport", "http", "https://agent-evidence-api.thx93.workers.dev/weather/mcp"],
+    "notes": "US locations only. Discovery is free (initialize, tools/list); a get-alerts or get-forecast call answers HTTP 402 with the price and the x402 payment requirements, paid in USDC on Base. No account or API key. The same server also runs locally over stdio from the repository (npm install && npm run build)."
+  }
+}
