@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../schemas/plugin.schema.json",
+  "id": "jev-browser",
+  "type": "plugin",
+  "name": "Jev Browser",
+  "tagline": "Fast browser goal execution with Jev through Vercel AI Gateway",
+  "description": "Gives the agent an isolated Playwright Chromium browser and delegates bounded browser goals to `typesafe-ai/jev` through Vercel AI Gateway. `jev_run` takes a URL and a goal, observes the DOM, picks one offered action per step in a fast loop, and returns before/after screenshots plus a JSONL trace. Includes manual `jev_actions`, console and network logs, a localhost live viewer, optional video recording, a navigation allowlist, and an injected safety rule that stops for consequential actions. Chromium is downloaded automatically on first load.",
+  "author": {
+    "name": "Cline",
+    "url": "https://cline.bot"
+  },
+  "homepage": "https://github.com/cline/plugins/tree/main/plugins/jev-browser",
+  "repo": "https://github.com/cline/plugins/tree/main/plugins/jev-browser",
+  "icon": "./icon.svg",
+  "tags": [
+    "software",
+    "research"
+  ],
+  "license": "Apache-2.0",
+  "verified": true,
+  "featured": true,
+  "install": {
+    "args": [
+      "jev-browser"
+    ],
+    "env": [
+      {
+        "name": "AI_GATEWAY_API_KEY",
+        "required": true,
+        "description": "Vercel AI Gateway key used for Jev evaluations and the text helper model. Can also be set as gateway.apiKey in ~/.cline/plugins/cline-jev-browser.config.json.",
+        "url": "https://vercel.com/docs/ai-gateway"
+      },
+      {
+        "name": "JEV_TEXT_MODEL",
+        "required": false,
+        "description": "Optional Gateway text model ID used to generate typed field values. Defaults to google/gemini-2.5-flash-lite."
+      }
+    ],
+    "notes": "Restart Cline after installing. On Linux, Chromium needs system browser libraries and a working sandbox (unprivileged user namespaces)."
+  }
+}
