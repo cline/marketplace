@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "muslim-prayer-reminder-mcp",
+  "type": "mcp",
+  "name": "Muslim Prayer Reminder MCP",
+  "tagline": "Calculated Muslim prayer times and next-prayer countdowns inside an AI assistant",
+  "description": "A free, MIT-licensed MCP server for calculated Muslim prayer times by location, time zone, and regional method. Supports daily timetables, configurable Asr conventions, high-latitude handling, and the next prayer with a countdown. The open-source server can run locally in Cline using npm.",
+  "repo": "https://github.com/tareq7/muslim-prayer-mcp",
+  "tags": ["productivity"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "muslim-prayer-reminder",
+      "--",
+      "npx",
+      "-y",
+      "muslim-prayer-mcp"
+    ]
+  }
+}
