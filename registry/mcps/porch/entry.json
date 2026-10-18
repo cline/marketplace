@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "porch",
+  "type": "mcp",
+  "name": "Porch",
+  "tagline": "Public URLs for AI agents to catch webhooks, OAuth redirects, job callbacks and approval clicks.",
+  "description": "Agents run on laptops, in sandboxes and in CI, where nothing outside can reach them. Porch is the address they can be reached at.",
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "porch",
+      "--transport",
+      "http",
+      "https://porch.okibi.ai/mcp"
+    ]
+  },
+  "homepage": "https://porch.okibi.ai",
+  "license": "MIT"
+}
