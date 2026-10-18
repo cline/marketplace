@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "viafrei",
+  "type": "mcp",
+  "name": "ViaFrei",
+  "tagline": "Live German traffic, rail, parking, EV charging and weather, no API key",
+  "description": "Live German traffic, rail, parking, EV charging, fuel, address and weather data for AI assistants, from official open sources (Autobahn GmbH, Mobilithek, DELFI, Deutsche Bahn, DWD, OpenStreetMap, BKG, Länder and cities). Read-only, 22 tools, answers in German and English. No API key, no sign-up. Every answer names its source and licence.",
+  "author": {
+    "name": "Sergii Mavrov",
+    "url": "https://viafrei.de"
+  },
+  "tags": [
+    "data",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "viafrei",
+      "--transport",
+      "http",
+      "https://mcp.viafrei.de/mcp"
+    ]
+  },
+  "homepage": "https://viafrei.de",
+  "repo": "https://github.com/mavrovde/viafrei-mcp",
+  "license": "Apache-2.0",
+  "icon": "./icon.png"
+}
