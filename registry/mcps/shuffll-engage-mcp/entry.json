@@ -1,0 +1,32 @@
+{
+  "name": "Shuffll Engage",
+  "tagline": "Personalized video at scale",
+  "author": {
+    "name": "Shuffll",
+    "url": "https://shuffll.com"
+  },
+  "homepage": "https://engage.shuffll.com",
+  "repo": "https://github.com/shuffll/shuffll-engage-agent-kit",
+  "icon": "https://raw.githubusercontent.com/shuffll/shuffll-engage-agent-kit/7e90f5cc9840b88069cdf1b08370e4fef5dddef5/assets/icon.png",
+  "tags": [
+    "creative",
+    "marketing",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "shuffll-engage-mcp",
+  "type": "mcp",
+  "description": "Create personalized video campaigns based on customer interests, behaviors, and audience segments through Shuffll Engage API and MCP. In an authorized workspace, inspect templates and results, develop creative briefs and storyboards, edit drafts, and review previews. Tool availability follows the connected organization permissions. Hosted service access and generation require the applicable Shuffll plan and allowance; delivery requires separately configured channels and authorization.",
+  "license": "Proprietary",
+  "install": {
+    "args": [
+      "shuffll-engage",
+      "--transport",
+      "http",
+      "https://engage.shuffll.com/mcp"
+    ],
+    "notes": "Authorize the remote server through OAuth and select an eligible Shuffll workspace. Connecting does not generate or send a campaign. The hosted service is commercial; only the public agent-kit instructions and manifests are MIT licensed. Documentation: https://api-docs.shuffll.com/engage"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Shuffll Engage",
+  "tagline": "Personalized video at scale",
+  "author": {
+    "name": "Shuffll",
+    "url": "https://shuffll.com"
+  },
+  "homepage": "https://engage.shuffll.com",
+  "repo": "https://github.com/shuffll/shuffll-engage-agent-kit",
+  "icon": "https://raw.githubusercontent.com/shuffll/shuffll-engage-agent-kit/7e90f5cc9840b88069cdf1b08370e4fef5dddef5/assets/icon.png",
+  "tags": [
+    "creative",
+    "marketing",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "shuffll-engage-skill",
+  "type": "skill",
+  "description": "Portable workflow guidance for Shuffll Engage campaigns, templates, creative journeys, previews, recipient segments, generation jobs, results, and analytics through its MCP or API. Includes creative references for paired actor speech, music, captions, supported native transitions and editable artwork. The skill directs the agent to inspect current capabilities, permissions and operation state before changes or retries.",
+  "license": "MIT",
+  "install": {
+    "args": [
+      "shuffll/shuffll-engage-agent-kit",
+      "--skill",
+      "shuffll-engage"
+    ],
+    "notes": "Current reviewed source is public agent kit v0.2.2 (7e90f5cc9840b88069cdf1b08370e4fef5dddef5). This installs instructions; configure the Shuffll Engage remote MCP separately for service access. The MIT license covers the public skill files, not the hosted service or API usage."
+  }
+}
