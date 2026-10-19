@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "zero-to-hundred",
+  "type": "mcp",
+  "name": "Zero to Hundred",
+  "tagline": "Find software and prepare a listing for software you built.",
+  "description": "Search live software listings on Zero to Hundred by keyword and return public descriptions, USD license prices, tech stacks and listing links. Public search needs no account. An optional scoped Personal Access Token enables six Builder tools to read owned listings, create and edit unpublished drafts, and request and confirm source archive uploads after explicit ownership confirmation. The published stdio package exposes seven tools. Source review and publication continue on the website.",
+  "author": {
+    "name": "Zero to Hundred",
+    "url": "https://zerotohundred.ai"
+  },
+  "tags": ["software", "productivity"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["zero-to-hundred", "--", "npx", "-y", "@zerotohundred/mcp-server@0.3.2"],
+    "env": [
+      {
+        "name": "Z2H_API_KEY",
+        "required": false,
+        "description": "Optional Personal Access Token. Owned reads require listings:read; draft edits and source uploads require listings:write. Omit for public search.",
+        "url": "https://zerotohundred.ai/account/developers"
+      }
+    ],
+    "notes": "Create an account and generate a scoped token on the website only if using Builder tools. Keep the token in the client environment, then restart the server. Local setup: https://zerotohundred.ai/docs/integrations#mcp. The interactive marketplace panel and public comparison tool are available through the separate hosted server, not this stdio package."
+  },
+  "homepage": "https://zerotohundred.ai/docs/integrations",
+  "icon": "https://zerotohundred.ai/brand/connector-icon.png"
+}
