@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "nano-banana-acedatacloud",
+  "type": "mcp",
+  "name": "Nano Banana by Ace Data Cloud",
+  "tagline": "Nano Banana image generation, editing and task retrieval through Ace Data Cloud.",
+  "description": "Nano Banana tools provided by Ace Data Cloud, with your own Ace account. Install the existing remote MCP server, then authorize OAuth or configure your own API Token as described in the guide. Generation and editing may be charged; query the same task ID for pending results. This is an Ace-maintained integration, not a third-party official connector.",
+  "author": {
+    "name": "Ace Data Cloud",
+    "url": "https://acedata.cloud"
+  },
+  "homepage": "https://github.com/AceDataCloud/NanoBananaMCP/blob/70f383925b69b5144e69eeea0e63fef71eb91213/docs/cline.md",
+  "repo": "https://github.com/AceDataCloud/NanoBananaMCP",
+  "icon": "./icon.png",
+  "tags": [
+    "creative"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "nano-banana-acedatacloud",
+      "--transport",
+      "http",
+      "https://nanobanana.mcp.acedata.cloud/mcp"
+    ],
+    "notes": "After installation, open the Cline MCP manager and authorize the server through OAuth. Alternatively, follow the guide to register/sign in to Ace, open Applications → General application, copy or create a dedicated API Token, and add one Authorization: Bearer header in your private user MCP settings. Do not use both fixed headers and OAuth. Check current service pricing and balance before generating. Guide: https://github.com/AceDataCloud/NanoBananaMCP/blob/70f383925b69b5144e69eeea0e63fef71eb91213/docs/cline.md"
+  }
+}
