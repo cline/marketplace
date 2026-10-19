@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "vidova",
+  "type": "mcp",
+  "name": "Vidova",
+  "tagline": "Edit videos on a real timeline, generate clips, music and voice, and render",
+  "description": "Vidova is an agentic video editor. Cline can open your projects, read and patch the timeline, cut by transcript, track faces, generate video, images, music, speech and sound effects, check the film, and render a finished video. Sign in with your Vidova account through OAuth on first connect.",
+  "author": {
+    "name": "Vidova",
+    "url": "https://vidova.ai"
+  },
+  "homepage": "https://vidova.ai",
+  "icon": "https://vidova.ai/android-chrome-512x512.png",
+  "tags": [
+    "creative",
+    "marketing"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "vidova",
+      "--transport",
+      "http",
+      "https://mcp.vidova.ai/mcp"
+    ]
+  },
+  "repo": "https://github.com/youneslaaroussi/vidova-skills",
+  "license": "MIT"
+}
