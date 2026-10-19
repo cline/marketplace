@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "dreamtune",
+  "type": "mcp",
+  "name": "Dreamtune",
+  "tagline": "Run models, use tools and manage GPU compute from your agent.",
+  "description": "Connect Cline to Dreamtune for model requests, tool runs, GPU compute, prompt management and request logs through one workspace. The local MCP adapter requires Node.js 22.20.0 or later and a scoped Dreamtune workspace API key. Paid operations use prepaid workspace credit. The MIT license applies to the SDK adapter; Dreamtune is a hosted service.",
+  "author": {
+    "name": "Dreamtune",
+    "url": "https://dreamtunelabs.com"
+  },
+  "homepage": "https://docs.dreamtunelabs.com/connect/local-mcp",
+  "tags": ["software", "research"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["dreamtune", "--", "npx", "-y", "--package=@dreamtune/sdk@0.1.2", "dreamtune", "mcp"],
+    "env": [
+      {
+        "name": "DREAMTUNE_API_KEY",
+        "required": true,
+        "description": "Workspace API key with the scopes needed for your enabled operations.",
+        "url": "https://docs.dreamtunelabs.com/connect/local-mcp"
+      },
+      {
+        "name": "DREAMTUNE_API_ORIGIN",
+        "required": true,
+        "description": "Set to https://api.dreamtunelabs.com for the hosted service."
+      },
+      {
+        "name": "DREAMTUNE_REQUEST_TIMEOUT_MS",
+        "required": true,
+        "description": "Set to 120000 for the documented hosted setup."
+      }
+    ],
+    "notes": "Install Node.js 22.20.0 or later, configure all three environment variables and fund your workspace before paid operations. See the linked setup guide for API-key scopes."
+  }
+}
