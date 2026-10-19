@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "spacefast",
+  "type": "mcp",
+  "name": "Spacefast",
+  "tagline": "Publish and share what you build with Cline",
+  "description": "Turn what you build into a website, dashboard, report, or small web tool you can share. Publish from the conversation, choose who can open it, connect your own domain, and restore earlier versions. Hosted by Automattic; sign in with OAuth, no API key needed.",
+  "author": {
+    "name": "Automattic"
+  },
+  "homepage": "https://spacefast.com",
+  "repo": "https://github.com/spacefast/mcp",
+  "icon": "https://spacefast.com/app-icon-512x512.png",
+  "tags": [
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "spacefast",
+      "--transport",
+      "http",
+      "https://mcp.spacefast.com"
+    ]
+  }
+}
