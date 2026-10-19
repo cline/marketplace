@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "suno-acedatacloud",
+  "type": "mcp",
+  "name": "Suno by Ace Data Cloud",
+  "tagline": "Music generation, lyrics and same-task audio retrieval through Ace Data Cloud.",
+  "description": "Suno tools provided by Ace Data Cloud, with your own Ace account. Install the existing remote MCP server, then authorize OAuth or configure your own API Token as described in the guide. Generation and editing may be charged; query the same task ID for pending results. This is an Ace-maintained integration, not a third-party official connector.",
+  "author": {
+    "name": "Ace Data Cloud",
+    "url": "https://acedata.cloud"
+  },
+  "homepage": "https://github.com/AceDataCloud/SunoMCP/blob/1994aa7332a077c33eb6aaafa6d9a0497233f643/docs/cline.md",
+  "repo": "https://github.com/AceDataCloud/SunoMCP",
+  "icon": "./icon.png",
+  "tags": [
+    "creative"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "suno-acedatacloud",
+      "--transport",
+      "http",
+      "https://suno.mcp.acedata.cloud/mcp"
+    ],
+    "notes": "After installation, open the Cline MCP manager and authorize the server through OAuth. Alternatively, follow the guide to register/sign in to Ace, open Applications → General application, copy or create a dedicated API Token, and add one Authorization: Bearer header in your private user MCP settings. Do not use both fixed headers and OAuth. Check current service pricing and balance before generating. Guide: https://github.com/AceDataCloud/SunoMCP/blob/1994aa7332a077c33eb6aaafa6d9a0497233f643/docs/cline.md"
+  }
+}
