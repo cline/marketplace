@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "easygerber",
+  "type": "mcp",
+  "name": "EasyGerber",
+  "tagline": "AI PCB design, layout, and routing",
+  "description": "Design PCBs from circuit requirements or firmware pin assignments using published catalog components. Edit schematics, generate placement and routing, inspect previews and layout checks, and export manufacturing files and editable boards. Start with one guest board before signup; saved account boards require OAuth.",
+  "author": {
+    "name": "EasyGerber",
+    "url": "https://www.easygerber.com/"
+  },
+  "homepage": "https://www.easygerber.com/",
+  "repo": "https://github.com/EasyGerber/easygerber-agent-plugin",
+  "icon": "./icon.png",
+  "tags": [
+    "creative",
+    "software"
+  ],
+  "license": "Proprietary",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "easygerber",
+      "--transport",
+      "http",
+      "https://www.easygerber.com/api/mcp"
+    ],
+    "notes": "Connect to the hosted service; no local server build or API key is required for guest connection. Guest access supports one board per session. Saved account boards require OAuth. The hosted service is proprietary; the public integration repository is MIT-licensed."
+  }
+}
