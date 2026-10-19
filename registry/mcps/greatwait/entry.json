@@ -1,0 +1,17 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "greatwait",
+  "type": "mcp",
+  "name": "GreatWait",
+  "tagline": "Reliable webhook scheduling for your agent, your app, and you!",
+  "description": "Schedule one-off or recurring HTTPS callbacks, inspect delivery history, and cancel scheduled work through GreatWait's remote MCP server.",
+  "homepage": "https://greatwait.dev/",
+  "icon": "https://greatwait.dev/brand/icon-on-dark.svg",
+  "tags": ["software", "productivity"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["greatwait", "--transport", "http", "https://api.greatwait.dev/mcp"],
+    "notes": "A GreatWait account is required. Authorize through OAuth and choose the project the connection can access. Review the requested permissions before approving. Setup and access details: https://docs.greatwait.dev/guides/mcp"
+  }
+}
