@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "sourcey",
+  "type": "mcp",
+  "name": "Sourcey",
+  "tagline": "Research agent-ready services with evidence and current offer details",
+  "description": "Use Sourcey to search and compare service offers, inspect supporting evidence and changes, check readiness, and find the service details needed before an integration. Its hosted MCP exposes eight read-only research and preparation tools; no purchase is made by installing it.",
+  "author": { "name": "Sourcey", "url": "https://sourcey.com" },
+  "homepage": "https://sourcey.com/mcp",
+  "repo": "https://github.com/sourcey/mcp-server",
+  "icon": "./icon.png",
+  "tags": ["research", "software", "business"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["sourcey", "--transport", "http", "https://mcp.sourcey.com/mcp"],
+    "notes": "Use the hosted endpoint for current Sourcey data. The linked repository also documents the optional npm bridge and documentation workflow."
+  }
+}
