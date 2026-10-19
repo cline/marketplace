@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "nitrosend",
+  "type": "mcp",
+  "name": "Nitrosend",
+  "tagline": "Work with email campaigns, audiences, flows, and analytics from Cline",
+  "description": "Connect Cline to Nitrosend's hosted MCP to build and inspect branded email campaigns, automation flows, templates, audiences, and performance. Sign in with the account that owns the brand and review any send or account change before authorizing it. The linked open-source repository documents the optional local bridge; this entry installs the hosted OAuth endpoint.",
+  "author": { "name": "Nitrosend", "url": "https://nitrosend.com" },
+  "homepage": "https://docs.nitrosend.com/mcp",
+  "repo": "https://github.com/nitrosend/mcp",
+  "icon": "./icon.png",
+  "tags": ["marketing", "business", "productivity"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["nitrosend", "--transport", "http", "https://api.nitrosend.com/mcp"],
+    "notes": "The hosted endpoint requires Nitrosend OAuth. Complete sign-in for the account and brand you intend to use."
+  }
+}
