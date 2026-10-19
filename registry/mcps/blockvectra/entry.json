@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "BlockVectra",
   "tagline": "Multi-chain EVM JSON-RPC and indexed data for developers and AI agents",
-  "description": "A remote MCP server for BlockVectra's multi-chain EVM JSON-RPC and indexed Data API, for developers and AI agents. The documentation, chain list, pricing and status tools need no API key, and `rpc_call` can use a chain's keyless public endpoint where one is available. Data API and account tools require a BlockVectra API key, sent as an `x-api-key` header.",
+  "description": "A remote MCP server for BlockVectra's multi-chain EVM JSON-RPC and indexed Data API, for developers and AI agents. This catalog command configures keyless access to documentation, chain discovery, pricing and status, plus RPC methods permitted by each chain's public policy. It does not configure an API key or authenticated request headers. Data API, account tools and keyed RPC require the user's own API key configured separately as a private `x-api-key` HTTP header; see the repository setup guide.",
   "author": { "name": "BlockVectra", "url": "https://blockvectra.com/en/" },
   "homepage": "https://blockvectra.com/en/?ref=dir-cline-marketplace",
   "repo": "https://github.com/blockvectra/mcp",
@@ -14,14 +14,6 @@
   "verified": false,
   "featured": false,
   "install": {
-    "args": ["blockvectra", "--transport", "http", "https://docs.blockvectra.com/mcp"],
-    "env": [
-      {
-        "name": "BLOCKVECTRA_API_KEY",
-        "required": false,
-        "description": "Optional BlockVectra API key, passed as an x-api-key header. Needed only for Data API and account tools.",
-        "url": "https://docs.blockvectra.com/en/quickstart/"
-      }
-    ]
+    "args": ["blockvectra", "--transport", "http", "https://docs.blockvectra.com/mcp"]
   }
 }
