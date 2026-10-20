@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "isearchfrom",
+  "type": "mcp",
+  "name": "iSearchFrom",
+  "tagline": "Free SEO tools for AI agents: Google results from any location, plus rank, ad and AI visibility.",
+  "description": "See Google the way a searcher in any country, city, language and device sees it. Run live localized searches, build location search links, and ask questions about your saved results with read-only SQL, all on the free plan. Paid plans add rank, ad, Google Maps, marketplace and AI visibility tracking. Sign in once in the browser (OAuth), so there is no API key to manage.",
+  "author": {
+    "name": "iSearchFrom",
+    "url": "https://isearchfrom.com"
+  },
+  "tags": [
+    "marketing",
+    "research",
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "isearchfrom",
+      "--transport",
+      "http",
+      "https://api.isearchfrom.com/mcp"
+    ],
+    "notes": "Opens a browser sign-in on first use. A free iSearchFrom account works."
+  },
+  "homepage": "https://isearchfrom.com/features/mcp-server",
+  "icon": "https://isearchfrom.com/android-chrome-512x512.png"
+}
