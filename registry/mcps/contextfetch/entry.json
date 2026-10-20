@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "contextfetch",
+  "type": "mcp",
+  "name": "ContextFetch",
+  "tagline": "Web search and any page as LLM-ready Markdown, with only the passages relevant to the query.",
+  "description": "ContextFetch gives Cline web search and page reading in one call. Results come back as clean Markdown with tables kept, pruned to the passages relevant to the query by a cross-encoder. Tools: search, extract a URL, find similar pages, research (several sub-queries ranked into one evidence pack, quoted verbatim), deep research, extractive answer with citations, crawl a site, map a site's URLs, balance, auto-reload and a free-key tool. Works with no key (25 requests per day per IP); `contextfetch_get_free_key` issues a free key with 2,500 searches.",
+  "author": { "name": "ContextFetch", "url": "https://contextfetch.dev" },
+  "homepage": "https://contextfetch.dev/products/mcp",
+  "icon": "./icon.png",
+  "license": "MIT",
+  "tags": ["research"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["contextfetch", "--", "npx", "-y", "@contextfetch/mcp"],
+    "env": [
+      {
+        "name": "CONTEXTFETCH_API_KEY",
+        "required": false,
+        "description": "Optional API key. Leave unset for the free keyless tier (25 requests per day per IP).",
+        "url": "https://contextfetch.dev/pricing"
+      }
+    ],
+    "notes": "No key needed to start. Remote alternative: `cline mcp install contextfetch --transport http https://api.contextfetch.dev/mcp` (send a key as the `x-api-key` header)."
+  }
+}
