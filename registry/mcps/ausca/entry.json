@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "ausca",
+  "type": "mcp",
+  "name": "Ausca",
+  "tagline": "Discover metered agent services and inspect exact payment terms",
+  "description": "Discover Ausca services, inspect offers and invocation state, and manage bounded browser and inbox resources through its hosted MCP. Paid invocations use x402 and require explicit payment authority in an x402-capable client; installing this entry does not settle a payment. Service SKILL.md files document each job's inputs, limits, and lifecycle.",
+  "author": { "name": "Ausca", "url": "https://ausca.com" },
+  "homepage": "https://ausca.com/docs/mcp/",
+  "repo": "https://github.com/auscahq/ausca-plugin",
+  "icon": "./icon.png",
+  "tags": ["software", "business", "productivity"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["ausca", "--transport", "http", "https://ausca.com/mcp"],
+    "notes": "Discovery is free. For paid calls, follow Ausca's x402 guide and approve the live amount with a payment-capable client."
+  }
+}
