@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "multi-calendar",
+  "type": "mcp",
+  "name": "Multi Calendar",
+  "tagline": "Outlook and Google calendars",
+  "description": "Your Outlook.com, Hotmail, Microsoft 365 and Google calendars in Cline - many accounts at once, one search for free time across all of them. Read, create, move and cancel events, answer invitations, make booking links, booking pages and group polls. No copy kept.",
+  "author": {
+    "name": "Lumman",
+    "url": "https://lumman.co"
+  },
+  "homepage": "https://lumman.co/mcp/multi-calendar",
+  "repo": "https://github.com/lumman-lab/multi-calendar",
+  "icon": "https://lumman.co/icon-512.png",
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "multi-calendar",
+      "--transport",
+      "http",
+      "https://calendar.lumman.co/mcp"
+    ]
+  }
+}
