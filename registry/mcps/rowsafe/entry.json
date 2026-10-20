@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "rowsafe",
+  "type": "mcp",
+  "name": "RowSafe",
+  "tagline": "PostgreSQL health, diagnostics and configured backup and recovery workflows",
+  "description": "Connect to RowSafe’s remote MCP server to inspect PostgreSQL health and diagnostics, review configured backup status, and work with supported recovery workflows. Backup and recovery operations depend on configured database protection, permissions and explicit tool inputs. The published MCP source is Apache-2.0.",
+  "author": {
+    "name": "RowSafe",
+    "url": "https://rowsafe.sh"
+  },
+  "homepage": "https://rowsafe.sh",
+  "repo": "https://github.com/rowsafe/rowsafe",
+  "tags": [
+    "databases"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "rowsafe",
+      "--transport",
+      "http",
+      "https://api.rowsafe.sh/mcp"
+    ],
+    "notes": "Uses the remote HTTP endpoint with OAuth 2.1 authorization. Review tool permissions before authorizing database operations. Setup and supported tools: https://rowsafe.sh/docs/reference/mcp"
+  }
+}
