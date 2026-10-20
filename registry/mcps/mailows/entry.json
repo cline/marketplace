@@ -1,0 +1,17 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "mailows",
+  "type": "mcp",
+  "name": "Mailows",
+  "tagline": "Give your agent its own email inbox",
+  "description": "Mailows is email hosting for people and AI agents. This remote MCP server lets an agent list, read and send mail (with attachments) from its own Mailows inbox. Access uses OAuth 2.1 with PKCE: you pick which agent inboxes to grant, and each grant can be revoked at any time. Free plan available.",
+  "author": { "name": "Mailows", "url": "https://www.mailows.com" },
+  "homepage": "https://www.mailows.com/mcp-manual",
+  "icon": "./icon.png",
+  "tags": ["productivity", "business"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["mailows", "--transport", "http", "https://mcp.mailows.com/mcp"]
+  }
+}
