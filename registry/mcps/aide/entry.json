@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "aide",
+  "type": "mcp",
+  "name": "Aide",
+  "tagline": "AI customer service platform: search knowledge, look up orders, read and reply to conversations.",
+  "description": "Work in Aide as yourself, within your role: search the knowledge base, look up Shopify orders, read, reply to and update helpdesk conversations, refund or cancel orders within your account's approval limits, and read support analytics. Sign in with your Aide account (OAuth); no API key needed.",
+  "author": {
+    "name": "Aide",
+    "url": "https://aide.app"
+  },
+  "homepage": "https://aide.app/mcp",
+  "repo": "https://github.com/aideapp/aide-mcp",
+  "icon": "https://aide.app/logo.png",
+  "tags": [
+    "business",
+    "productivity"
+  ],
+  "license": "PROPRIETARY",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "aide",
+      "--transport",
+      "http",
+      "https://app-api.aide.app/mcp"
+    ]
+  }
+}
