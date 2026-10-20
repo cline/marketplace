@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "cloady",
+  "type": "mcp",
+  "name": "Cloady",
+  "tagline": "Deploy apps and databases, inspect logs, and manage cloud resources.",
+  "description": "Connect Cline to Cloady to inspect workspaces, applications, deployments, logs, metrics, and database templates, and manage hosting resources through the hosted MCP server. Sign in with a Cloady account through OAuth and choose the narrowest scope needed for your task. Review the target workspace and any charges before approving resource changes.",
+  "author": {
+    "name": "Cloady",
+    "url": "https://cloady.com"
+  },
+  "homepage": "https://cloady.com",
+  "repo": "https://github.com/Cloady/cloady-mcp",
+  "icon": "https://raw.githubusercontent.com/Cloady/cloady-mcp/main/plugin/assets/logo.png",
+  "tags": ["software", "databases"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["cloady", "--transport", "http", "https://cloady.com/api/mcp"],
+    "notes": "Authenticate with Cloady through OAuth. Access depends on the selected scope and workspace role; an account-level connection may cover multiple workspaces. The connector is free, while hosted resources follow Cloady's pricing. Tool results are shared with your AI client. Privacy: https://cloady.com/privacy. Support: hello@cloady.com."
+  }
+}
