@@ -7,7 +7,7 @@
   "description": "A remote MCP server for OceanToken, a pay-as-you-go API for models from many labs. Your agent can search the model catalog by type, capability and price, estimate what a request will cost before it runs, generate images, video and voice-overs, transcribe audio into transcripts or SRT/VTT subtitles, and hand a sub-task to another model. Usage is billed to your prepaid OceanToken balance.\n\nTools: `search_models`, `get_model`, `estimate_cost`, `generate_image`, `create_video`, `get_job`, `generate_speech`, `transcribe_audio`, `ask_model`, `upload_file`, `get_account`.",
   "author": { "name": "OceanToken", "url": "https://oceantoken.ai" },
   "homepage": "https://oceantoken.ai",
-  "repo": "https://github.com/NextFormAI/oceantoken-plugins",
+  "repo": "https://github.com/OceanTokenAI/oceantoken-plugins",
   "icon": "./icon.svg",
   "tags": ["creative", "software"],
   "license": "MIT",
