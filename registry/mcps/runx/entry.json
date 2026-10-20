@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "runx",
+  "type": "mcp",
+  "name": "Runx",
+  "tagline": "Find governed agent skills and inspect their authority before running them",
+  "description": "Search the Runx skill registry and read a skill's full manifest, publisher, trust signals, requested authority, version, and exact install command. This hosted MCP is a read-only discovery surface; skill execution happens through the open-source Runx runtime.",
+  "author": { "name": "Runx", "url": "https://runx.ai" },
+  "homepage": "https://runx.ai/docs/mcp",
+  "repo": "https://github.com/runxhq/runx-plugin",
+  "icon": "./icon.png",
+  "tags": ["software", "security", "productivity"],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["runx", "--transport", "http", "https://api.runx.ai/mcp"],
+    "notes": "Read-only registry tools. Install and execute a chosen skill with the Runx runtime after reviewing its authority."
+  }
+}
