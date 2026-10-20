@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "vibe-monitor",
+  "type": "mcp",
+  "name": "Vibe Monitor",
+  "tagline": "Local architecture advice and evolution checkpoints for AI coding agents",
+  "description": "A local stdio MCP observer that collects structural evidence and project-evolution signals, helping coding agents decide what to change now, what to leave alone, and when to reassess. Analysis does not rewrite project source or upload source files, diffs, prompts, project paths, or secrets to Vibe Monitor servers. Bounded pseudonymous telemetry defaults on; opting out pauses Free architecture analysis. The Apache-2.0 client uses a separate proprietary Cloud policy/scoring service. Findings are advisory.",
+  "author": {
+    "name": "tubban1",
+    "url": "https://github.com/tubban1"
+  },
+  "homepage": "https://vibe.fde.fan",
+  "repo": "https://github.com/tubban1/vibe-monitor",
+  "tags": [
+    "software",
+    "productivity"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "vibe-monitor",
+      "--",
+      "npx",
+      "-y",
+      "--registry=https://registry.npmjs.org",
+      "@vibe-monitor/setup@latest",
+      "mcp"
+    ],
+    "notes": "Requires Node.js 22+. This command registers the stdio server. For installer-managed Agent instructions and setup verification, see https://github.com/tubban1/vibe-monitor/blob/main/docs/INSTALL.md. Installation can update Agent/MCP settings. Telemetry controls and the Free analysis opt-out behavior are documented in the repository."
+  }
+}
