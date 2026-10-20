@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "ipgeolocation-io-mcp",
+  "type": "mcp",
+  "name": "IPGeolocation.io",
+  "tagline": "IP geolocation and intelligence for Cline",
+  "description": "The official IPGeolocation.io MCP server provides 17 tools for IP geolocation, company information, ASN and network data, IP security (VPN, proxy, Tor, bot, hosting and spam detection), abuse contacts, time zones, astronomy, currency data and user-agent parsing.\n\nIt runs over stdio and requires Node.js 22 or later. Bulk tools accept up to 250 inputs by default, and get_cached_result retrieves pages from large cached results without another API call. Tool access and API credits depend on your IPGeolocation.io plan.",
+  "author": {
+    "name": "IPGeolocation.io",
+    "url": "https://ipgeolocation.io"
+  },
+  "homepage": "https://ipgeolocation.io/integrations/ipgeolocation-io-mcp",
+  "repo": "https://github.com/IPGeolocation/ipgeolocation-io-mcp",
+  "icon": "./icon.png",
+  "tags": [
+    "data",
+    "security",
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "ipgeolocation",
+      "--",
+      "npx",
+      "-y",
+      "ipgeolocation-io-mcp@latest"
+    ],
+    "env": [
+      {
+        "name": "IPGEOLOCATION_API_KEY",
+        "required": true,
+        "description": "Required for all IPGeolocation.io API tools except get_my_ip. The server can start without a key.",
+        "url": "https://app.ipgeolocation.io/signup"
+      }
+    ],
+    "notes": "Requires Node.js 22 or later. Configure IPGEOLOCATION_API_KEY in your Cline MCP settings; get_my_ip works without a key."
+  }
+}
