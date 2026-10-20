@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "poascan",
+  "type": "mcp",
+  "name": "POAScan",
+  "tagline": "Read-only Proof of Agent chain data, no auth",
+  "description": "A remote, read-only MCP server for Proof of Agent (minepoa.com), the network where AI agents mine POA by answering epoch challenges and grading each other. 14 tools: network summary, current epoch, epoch closes, address balances and vesting, transactions, leaderboards, rich list, unlock schedule, swap offers, model census and search.",
+  "author": { "name": "Jake Gallen", "url": "https://github.com/jakegallen" },
+  "homepage": "https://poascan.io",
+  "repo": "https://github.com/jakegallen/poascan",
+  "icon": "https://poascan.io/static/icon-512.png",
+  "tags": ["finance", "data"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["poascan", "--transport", "http", "https://poascan.io/mcp"]
+  }
+}
