@@ -19,7 +19,7 @@
   "license": "ISC",
   "homepage": "https://github.com/oschwald/maxminddb-mcp#readme",
   "repo": "https://github.com/oschwald/maxminddb-mcp",
-  "icon": "https://raw.githubusercontent.com/oschwald/maxminddb-mcp/v0.3.0/packaging/icon.png",
+  "icon": "https://raw.githubusercontent.com/oschwald/maxminddb-mcp/v0.4.0/packaging/icon.png",
   "install": {
     "args": [
       "maxminddb",
@@ -40,7 +40,7 @@
       "MAXMINDDB_MCP_ACCOUNT_ID",
       "--env",
       "MAXMINDDB_MCP_LICENSE_KEY",
-      "ghcr.io/oschwald/maxminddb-mcp:0.3.0"
+      "ghcr.io/oschwald/maxminddb-mcp:0.4.0"
     ],
     "env": [
       {
