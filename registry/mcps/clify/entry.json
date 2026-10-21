@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "clify",
+  "type": "mcp",
+  "name": "Clify",
+  "tagline": "Read-only JSON APIs and hosted MCP for 135 public websites",
+  "description": "Clify provides a no-auth hosted MCP and JSON API for public websites, with 1,619 live-verified read-only commands behind compact discovery and run tools.",
+  "author": { "name": "Touko Ursin", "url": "https://github.com/ToukoUrsin" },
+  "homepage": "https://clify-dev.netlify.app",
+  "repo": "https://github.com/ToukoUrsin/clify",
+  "icon": "https://clify-dev.netlify.app/favicon.ico",
+  "tags": ["research", "data", "software"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["clify", "--transport", "http", "https://bold-cloud-h4u6s.run.mcp-use.com/mcp"]
+  }
+}
