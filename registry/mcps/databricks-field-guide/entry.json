@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "databricks-field-guide",
+  "type": "mcp",
+  "name": "Databricks Field Guide",
+  "tagline": "Databricks answers with working code, from TechFabric's engineers",
+  "description": "Search and read TechFabric's Databricks Field Guide from Cline: chapters on building, running and paying for Databricks, runnable SQL, Python and CLI examples with the explanation around them, and a feed of recent Databricks changes. Each result links to the chapter and the docs.databricks.com pages it cites.\n\nTools: `search_guide`, `get_chapter`, `get_code_examples`, `whats_new`, `list_chapters`. Public, read-only, no sign-in or API key. Listed in the official MCP Registry as `com.techfabric.databricks/field-guide`.",
+  "author": {
+    "name": "TechFabric",
+    "url": "https://www.techfabric.com"
+  },
+  "homepage": "https://databricks.techfabric.com",
+  "icon": "./icon.png",
+  "tags": [
+    "data",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "databricks-field-guide",
+      "--transport",
+      "http",
+      "https://databricks.techfabric.com/mcp"
+    ]
+  }
+}
