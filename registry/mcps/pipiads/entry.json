@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "pipiads",
+  "type": "mcp",
+  "name": "PipiAds",
+  "tagline": "Research TikTok and Facebook ads, products, stores, and competitors",
+  "description": "PipiAds MCP Server provides 73 tools for advertising intelligence across TikTok, Facebook, Meta Ad Library, and TikTok Shop. Search ads and products, analyze advertisers and stores, track campaigns, and search by image. Requires Node.js 20+ and a PipiAds API key.",
+  "author": {
+    "name": "PipiAds",
+    "url": "https://www.pipiads.com/"
+  },
+  "homepage": "https://www.pipiads.com/",
+  "tags": ["marketing", "research", "data"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["pipiads", "--", "npx", "-y", "pipiads-mcp-server@1.0.4"],
+    "env": [
+      {
+        "name": "PIPIADS_API_KEY",
+        "required": true,
+        "description": "PipiAds API key",
+        "url": "https://www.pipispy.com/"
+      }
+    ],
+    "notes": "Requires Node.js 20+. API calls consume PipiAds credits."
+  }
+}
