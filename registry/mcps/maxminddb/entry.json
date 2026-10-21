@@ -1,0 +1,61 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "maxminddb",
+  "type": "mcp",
+  "name": "MaxMindDB",
+  "tagline": "Look up IP geolocation and ASN data in local MaxMind DB files",
+  "description": "Query local MaxMind DB files for IP geolocation, autonomous system information, and filtered network analysis. Supports database downloads and automatic updates. This is an unofficial integration, not a MaxMind product. Requires Docker and your own MaxMind account and license key. No databases are bundled.",
+  "author": {
+    "name": "Gregory J. Oschwald",
+    "url": "https://github.com/oschwald"
+  },
+  "tags": [
+    "data",
+    "databases",
+    "security"
+  ],
+  "verified": false,
+  "featured": false,
+  "license": "ISC",
+  "homepage": "https://github.com/oschwald/maxminddb-mcp#readme",
+  "repo": "https://github.com/oschwald/maxminddb-mcp",
+  "icon": "https://raw.githubusercontent.com/oschwald/maxminddb-mcp/v0.4.0/packaging/icon.png",
+  "install": {
+    "args": [
+      "maxminddb",
+      "--",
+      "docker",
+      "run",
+      "--rm",
+      "-i",
+      "--mount",
+      "type=volume,source=maxminddb-mcp-data,target=/data",
+      "--env",
+      "MAXMINDDB_MCP_CONFIG=",
+      "--env",
+      "MAXMINDDB_MCP_DOWNLOAD_ENABLED=true",
+      "--env",
+      "MAXMINDDB_MCP_DATABASE_DIR=/data",
+      "--env",
+      "MAXMINDDB_MCP_ACCOUNT_ID",
+      "--env",
+      "MAXMINDDB_MCP_LICENSE_KEY",
+      "ghcr.io/oschwald/maxminddb-mcp:0.4.0"
+    ],
+    "env": [
+      {
+        "name": "MAXMINDDB_MCP_ACCOUNT_ID",
+        "required": true,
+        "description": "Your numeric MaxMind account ID.",
+        "url": "https://www.maxmind.com/en/accounts/current/license-key"
+      },
+      {
+        "name": "MAXMINDDB_MCP_LICENSE_KEY",
+        "required": true,
+        "description": "MaxMind license key with database download access.",
+        "url": "https://www.maxmind.com/en/accounts/current/license-key"
+      }
+    ],
+    "notes": "Requires a running Docker engine. Downloads GeoLite2-City and GeoLite2-ASN into the persistent maxminddb-mcp-data volume. Pass the listed variables to the MCP process environment. Ask the assistant to call list_databases to check the initial download status. Lookups run locally. The upstream README also documents using existing MMDB files without MaxMind credentials."
+  }
+}
