@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "mubboo-flights-search",
+  "type": "mcp",
+  "name": "Mubboo Flights Search",
+  "tagline": "Prepare flight comparisons faster: find airports, check trip inputs and create search links.",
+  "description": "Mubboo Flights helps travellers compare travel options and find better value. This free remote MCP server reduces flight-search setup with three tools: find_airports resolves airport choices; prepare_flight_search validates trip details and creates a Mubboo flight-search link; get_service_info explains available tools, product links and service limitations. No account, API key or local package is required.\n\nThe MCP does not return live fares, availability, schedules or baggage quotes, and cannot make bookings or process payments. Open the prepared search link to compare flight options, then choose a booking provider. The wider Mubboo website also offers hotels, cars, tours, tickets and travel planning, but those are not inventory-search tools in this MCP.",
+  "author": {
+    "name": "Mubboo LLC",
+    "url": "https://mubboo.flights"
+  },
+  "homepage": "https://mubboo.flights/mcp",
+  "icon": "https://mubboo.flights/mubboo-flights-favicon-512.png",
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "mubboo-flights-search",
+      "--transport",
+      "http",
+      "https://mubboo.flights/api/mcp"
+    ],
+    "notes": "Streamable HTTP; no authentication or API key. Ask to find an airport or prepare a flight comparison link. Search preparation is not a fare or availability quote. Documentation: https://mubboo.flights/mcp"
+  }
+}
