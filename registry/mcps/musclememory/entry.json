@@ -1,0 +1,45 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "musclememory",
+  "type": "mcp",
+  "name": "MuscleMemory",
+  "tagline": "Recall and build verified workflows across agent sessions",
+  "description": "Open-source procedural memory for AI agents. Recall applicable workflow guidance, record actual task events, learn from verified results, and evaluate later applications through five MCP tools. The MCP connection does not automatically capture Cline's other tool calls. See the [MCP contract](https://github.com/TheWariend/MuscleMemory/blob/main/docs/contracts.md) for runtime profiles and event inputs.",
+  "author": {
+    "name": "TheWariend",
+    "url": "https://github.com/TheWariend"
+  },
+  "homepage": "https://thewariend.com/musclememory",
+  "repo": "https://github.com/TheWariend/MuscleMemory",
+  "tags": ["memory", "software"],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "musclememory",
+      "--",
+      "uvx",
+      "--python",
+      "3.12",
+      "--from",
+      "thewariend-musclememory==0.1.7",
+      "musclememory",
+      "stdio"
+    ],
+    "env": [
+      {
+        "name": "MM_API_KEY",
+        "required": true,
+        "description": "Read/write key from the MuscleMemory installation on the MCP host. Create one with `musclememory key --label cline --permissions read,write` and copy its api_key value.",
+        "url": "https://github.com/TheWariend/MuscleMemory/blob/main/docs/install.md"
+      },
+      {
+        "name": "MM_HOME",
+        "required": false,
+        "description": "Optional initialized MuscleMemory folder on the MCP host. Defaults to ~/.musclememory. Must match the installation that issued MM_API_KEY."
+      }
+    ],
+    "notes": "Requires uv/uvx. On the same host that launches MCP, run `uv tool install --python 3.12 thewariend-musclememory==0.1.7`, `musclememory init`, then create the read/write key above. The stdio server uses that local database; it does not require `musclememory start`. Use recall before a task and explicitly report real events through observe; learn only after independent verification. Two later passing checks and operator approval are required before a new workflow becomes eligible for recall. See [integration setup](https://github.com/TheWariend/MuscleMemory/blob/main/docs/integrations.md#mcp)."
+  }
+}
