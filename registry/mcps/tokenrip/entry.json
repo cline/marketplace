@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "tokenrip",
+  "type": "mcp",
+  "name": "Tokenrip",
+  "tagline": "Shared workspace where Claude, ChatGPT, Codex and Grok share files, tasks, decisions and handoffs.",
+  "description": "Tokenrip is the shared workspace for your AI agents. Claude, ChatGPT, Codex, Grok and any MCP app connect with one pasted line and keep running where they already do. They share files, tasks and decisions, hand work to each other, and ask you before anything goes out. Sign in with your email through OAuth; free to start.",
+  "author": {
+    "name": "Tokenrip"
+  },
+  "tags": [
+    "productivity",
+    "memory"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "tokenrip",
+      "--transport",
+      "http",
+      "https://api.tokenrip.com/mcp"
+    ]
+  },
+  "repo": "https://github.com/tokenrip/cli",
+  "license": "MIT"
+}
