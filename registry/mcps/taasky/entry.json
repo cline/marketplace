@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "taasky",
+  "type": "mcp",
+  "name": "Taasky",
+  "tagline": "Agree a meeting time, a visit or a price with another person or their agent",
+  "description": "A remote MCP server for settling small things with anyone. Your agent opens a room with limits you set (time window, price range), the other side joins with their own agent or in a browser via an invite link, and the agents exchange offers. Nothing is agreed until both people confirm. No sign-up or API key needed.",
+  "author": { "name": "Taasky", "url": "https://taasky.ai" },
+  "homepage": "https://taasky.ai",
+  "repo": "https://github.com/taasky/mcp",
+  "icon": "./icon.svg",
+  "tags": ["productivity", "business"],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["taasky", "--transport", "http", "https://mcp.taasky.ai/mcp"],
+    "notes": "Docs: https://docs.taasky.ai"
+  }
+}
