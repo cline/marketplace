@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "datawebot",
+  "type": "mcp",
+  "name": "datawebot",
+  "tagline": "Product search and seller prices across online shops worldwide, plus Amazon and Shopify extraction.",
+  "description": "A hosted remote MCP server for ecommerce product data. `search_products` searches online shops worldwide (queries in local languages) and returns title, price, shop, rating, reviews, image, condition, link and retrieval time. `get_product_offers` returns each seller's price, total with shipping, delivery note and a direct link. Extraction jobs (`list_job_blueprints`, `submit_job`, `get_job`, `get_results`) cover search results, catalogue and product pages on Amazon in 10 countries and 1,100+ Shopify stores. Sign in with OAuth 2.0 (email approval, no password); scripts can send `Authorization: Bearer <API key>` from the dashboard instead. Free daily search allowance plus 200 free trial credits for extraction jobs.",
+  "author": { "name": "datawebot", "url": "https://www.datawebot.com" },
+  "homepage": "https://www.datawebot.com/docs/agents",
+  "repo": "https://github.com/datawebot/datawebot-mcp",
+  "icon": "./icon.png",
+  "tags": ["data", "research"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["datawebot", "--transport", "http", "https://mcp.datawebot.com/mcp"]
+  }
+}
