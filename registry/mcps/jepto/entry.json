@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "jepto",
+  "type": "mcp",
+  "name": "Jepto",
+  "tagline": "Live Google Ads, GA4, Search Console, Meta Ads and Google Business Profile data",
+  "description": "Ask about campaigns, KPIs and budgets in plain English and get answers from live Google Ads, Google Analytics 4, Search Console, Meta Ads, Microsoft Ads, LinkedIn Ads, TikTok Ads and Google Business Profile data, across every client in your Jepto account. Sign in with your Jepto login; changes to KPIs, budgets and ad campaigns are previewed and only applied after you confirm.",
+  "author": {
+    "name": "Jepto"
+  },
+  "tags": [
+    "data",
+    "marketing"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "jepto",
+      "--transport",
+      "http",
+      "https://mcp.jepto.com"
+    ]
+  },
+  "icon": "./icon.png",
+  "homepage": "https://www.jepto.com/integration/mcp",
+  "repo": "https://github.com/jepto/mcp",
+  "license": "MIT"
+}
