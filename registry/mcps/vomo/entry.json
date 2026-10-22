@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "vomo",
+  "type": "mcp",
+  "name": "VOMO",
+  "tagline": "Find and read your VOMO meeting notes and transcripts",
+  "description": "Connect your existing VOMO account to list and search saved meeting notes and read their summaries or original transcripts. Uses the hosted VOMO MCP server with OAuth sign-in and the notes:read scope. Read-only: no recording, uploads, note editing, deletion, or purchases.",
+  "author": { "name": "VOMO", "url": "https://vomo.ai" },
+  "homepage": "https://vomo.ai/cli",
+  "repo": "https://github.com/Vomo-ai/vomo-connector",
+  "icon": "https://vomo.ai/icons/vomo-app-icon.svg",
+  "tags": ["productivity", "memory", "research"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["vomo", "--transport", "http", "https://mcp.vomo.ai/mcp"],
+    "notes": "Sign in to an existing VOMO account and authorize read-only access. Saved VOMO notes are required. Documentation: https://vomo.ai/cli"
+  }
+}
