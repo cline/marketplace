@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "inkroom",
+  "type": "mcp",
+  "name": "InkRoom",
+  "author": {
+    "name": "InkRoom",
+    "url": "https://inkroom.ai"
+  },
+  "icon": "https://raw.githubusercontent.com/InkRoom-AI/inkroom-client/main/cursor/assets/logo.svg",
+  "tags": [
+    "creative",
+    "marketing"
+  ],
+  "verified": false,
+  "featured": false,
+  "tagline": "Generate and edit AI images with cost previews and original-image recovery",
+  "description": "Hosted InkRoom MCP for image generation, reference-image editing, server-managed batches, model comparison and image processing. Requires each user's own InkRoom account and Bearer MCP Token. Generation is charged to that user's credits under their saved authorization; quotes, approval, original receipts and settlement remain visible. The repository path provides client setup documentation, not hosted server source.",
+  "homepage": "https://inkroom.ai/mcp-server",
+  "repo": "https://github.com/InkRoom-AI/inkroom-client/tree/main/cline",
+  "install": {
+    "args": [
+      "inkroom",
+      "--transport",
+      "http",
+      "https://mcp.inkroom.ai",
+      "--header",
+      "Authorization: Bearer ${INKROOM_MCP_TOKEN}"
+    ],
+    "env": [
+      {
+        "name": "INKROOM_MCP_TOKEN",
+        "required": true,
+        "description": "Your personal InkRoom MCP Token, without the Bearer prefix. Never use a shared publisher Token.",
+        "url": "https://inkroom.ai/mcp-server"
+      }
+    ],
+    "notes": "Use your own Token privately in the Authorization header. Preserve existing MCP configuration. Verify tool discovery and a read-only help call; installation does not grant image credits. Do not paste a literal ${INKROOM_MCP_TOKEN} into settings: substitute it through your private environment or configure it in Cline. See the repository README for the explicit streamableHttp configuration."
+  }
+}

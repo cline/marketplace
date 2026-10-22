@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "inkroom-skill",
+  "type": "skill",
+  "name": "InkRoom",
+  "author": {
+    "name": "InkRoom",
+    "url": "https://inkroom.ai"
+  },
+  "icon": "https://raw.githubusercontent.com/InkRoom-AI/inkroom-client/main/cursor/assets/logo.svg",
+  "tags": [
+    "creative",
+    "marketing"
+  ],
+  "verified": false,
+  "featured": false,
+  "tagline": "Guide InkRoom image workflows, authorized batches and complete original delivery",
+  "description": "Companion Skill for the connected InkRoom MCP: preserve prompts, models and reference images; preview costs; follow spending authorization; resume original batches and verify complete original-image delivery. Requires an independently configured InkRoom MCP connection and the user's own account/Token. No local binary or Go build required.",
+  "homepage": "https://inkroom.ai/skill-server",
+  "repo": "https://github.com/InkRoom-AI/inkroom-client/tree/main/cline/skills/inkroom",
+  "license": "MIT",
+  "install": {
+    "args": [
+      "https://github.com/InkRoom-AI/inkroom-client/tree/main/cline/skills/inkroom"
+    ],
+    "notes": "Install only this nested MCP-native Skill. Connect InkRoom MCP separately using your own Token. Do not import the repository-root standalone Go-client Skill or execute generation during installation."
+  }
+}
