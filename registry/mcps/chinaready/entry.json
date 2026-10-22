@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "chinaready",
+  "type": "mcp",
+  "name": "Chinaready",
+  "tagline": "Cited answers on launching software in Mainland China",
+  "description": "Read-only search over chinaready.co — practical guides on China market entry: ICP filing and the B25 license threshold, app-store publishing, China cloud regions, payments, and compliance. Hybrid keyword + vector retrieval; every result carries an absolute source URL so answers can be checked.",
+  "author": {
+    "name": "Chinaready",
+    "url": "https://chinaready.co"
+  },
+  "homepage": "https://chinaready.co/docs/api/",
+  "repo": "https://github.com/chinaready/mcp",
+  "tags": [
+    "research",
+    "business"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "install": {
+    "args": [
+      "chinaready",
+      "--transport",
+      "http",
+      "https://mcp.chinaready.co/mcp"
+    ]
+  },
+  "icon": "./icon.png"
+}
