@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "orano",
+  "type": "mcp",
+  "name": "ORANO Personal Context",
+  "tagline": "Read-only access to your own ORANO library, for your own AI agent.",
+  "description": "Personal, read-only MCP server for ORANO. It exposes your own ORANO library (saved projects, context, pending handoffs and memory facts) as tools so your own AI agent can use it.\n\nTools: `list_projects`, `get_project`, `get_project_context`, `get_pending_handoffs`, `search_library`, `get_memory_facts`.\n\nRemote streamable-HTTP endpoint. Authentication is a per-user Bearer key (scope `orano:read`) provisioned in the ORANO app; there is no OAuth. Read-only: nothing in your library can be changed through this server.\n\nDocs: https://oranoai.com/mcp",
+  "author": {
+    "name": "ORANO",
+    "url": "https://oranoai.com"
+  },
+  "homepage": "https://oranoai.com/mcp",
+  "repo": "https://github.com/infotik/orano-mcp-server",
+  "icon": "./icon.png",
+  "tags": [
+    "memory",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "orano",
+      "--transport",
+      "http",
+      "https://orano-ai-backend-1037939693300.us-central1.run.app/mcp/",
+      "--header",
+      "Authorization: Bearer <token>"
+    ],
+    "notes": "Replace <token> with your personal ORANO key (scope orano:read), provisioned in the ORANO app. Setup details: https://oranoai.com/mcp"
+  }
+}
