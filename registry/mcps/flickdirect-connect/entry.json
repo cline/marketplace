@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "flickdirect-connect",
+  "type": "mcp",
+  "name": "FlickDirect Connect: Movie MCP Server",
+  "tagline": "Free movie and TV facts, entertainment news, reviews, podcasts and deals, with source links.",
+  "description": "FlickDirect’s free, read-only remote MCP server searches its Movie Database (FDMD) and published entertainment and cinema-industry coverage. Find movie and TV facts, country-specific release dates and ratings when available, news including CinemaCon, reviews, trivia, video transcript matches, podcasts, streaming and soundtrack links, and daily deals. Results provide brief previews or summaries and links to the original pages, not full articles, reviews, transcripts or third-party photographs. Connect is FlickDirect’s proprietary implementation of the open Model Context Protocol standard. No FlickDirect account, API key or subscription is required; your AI application’s own plan and usage rules still apply.",
+  "author": {
+    "name": "FlickDirect Inc.",
+    "url": "https://flickdirect.com/"
+  },
+  "homepage": "https://flickdirect.com/connect.aspx",
+  "repo": "https://github.com/nrose101/flickdirect-movie-mcp-server",
+  "icon": "https://raw.githubusercontent.com/nrose101/flickdirect-movie-mcp-server/master/assets/logo.png",
+  "tags": [
+    "research",
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "flickdirect-connect",
+      "--transport",
+      "http",
+      "https://connect.flickdirect.com/mcp"
+    ],
+    "notes": "Uses Streamable HTTP without authentication. Ask for a title and release year to distinguish similarly named films. Follow and cite FlickDirect source links. The linked repository contains public plugin metadata and setup guidance, not the proprietary service implementation."
+  }
+}
