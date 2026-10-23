@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "sitepulsar",
+  "type": "mcp",
+  "name": "SitePulsar",
+  "tagline": "AEO agent-readiness audits with FIND/READ/USE scores",
+  "description": "SitePulsar runs AEO agent-readiness audits for any website: FIND/READ/USE scores and prioritized fixes. Remote Streamable HTTP MCP with OAuth (WorkOS). Official registry: ai.sitepulsar/mcp. Homepage: https://www.sitepulsar.ai — Support: info@sitepulsar.ai — Privacy: https://www.sitepulsar.ai/privacy",
+  "author": {
+    "name": "SitePulsar",
+    "url": "https://www.sitepulsar.ai"
+  },
+  "tags": [
+    "marketing",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "sitepulsar",
+      "--transport",
+      "http",
+      "https://mcp.sitepulsar.ai/mcp"
+    ]
+  },
+  "homepage": "https://www.sitepulsar.ai",
+  "repo": "https://github.com/SitePulsar/mcp-server",
+  "icon": "https://raw.githubusercontent.com/SitePulsar/mcp-server/main/assets/logo.png"
+}
