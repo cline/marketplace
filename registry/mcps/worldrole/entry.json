@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "worldrole",
+  "type": "mcp",
+  "name": "WorldRole",
+  "tagline": "Find remote and overseas jobs with source links and eligibility checks, free within daily limits.",
+  "description": "WorldRole helps agents search remote and overseas job opportunities, retrieve job details, research companies, and check location or visa requirements against source links. This entry connects to the hosted Streamable HTTP MCP endpoint. Guest access requires no account, API key, or payment and includes 20 distinct jobs per network per UTC day; a free account includes 50. Request and response-size limits also apply. Optional account features can retain a career profile. The hosted endpoint does not send applications or emails; the separately installable local companion provides additional public sources and application workflows. AI client or model charges are separate from WorldRole's free service.",
+  "author": {
+    "name": "WorldRole",
+    "url": "https://github.com/zzn199216"
+  },
+  "homepage": "https://worldrole.work",
+  "repo": "https://github.com/zzn199216/worldrole-mcp",
+  "icon": "./icon.svg",
+  "tags": ["productivity", "research"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["worldrole", "--transport", "http", "https://mcp.worldrole.work/mcp"],
+    "notes": "Start anonymously with no authorization header. Ask WorldRole to check usage and search for jobs using public job keywords. Verify eligibility and availability on the original listing. Reuse an existing authenticated connection when applicable; never include a private key in shared configuration. Installation, free quotas, privacy and optional local tools are documented in the repository."
+  }
+}
