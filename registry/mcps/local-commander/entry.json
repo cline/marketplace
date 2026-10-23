@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "local-commander",
+  "type": "mcp",
+  "name": "Local Commander",
+  "tagline": "Give your AI hands on every computer you own. One chat, all your machines — even from your phone.",
+  "description": "Your AI already knows how to fix it. Local Commander lets it actually do it — on every computer you own.\n\nAsk ChatGPT, Claude or Cursor to find out why the office server is crawling, update every PC in the house, sort out your mom's laptop from another city, or ship the site from your work machine while you're on a train. One chat, all your machines. No remote desktop, no VPN, no walking from screen to screen.\n\nYou decide what each computer allows, and you can cut any of them off in a second.\n\nRequires a Local Commander account and the agent on each computer (`npx local-commander-agent@latest`); sign-in uses OAuth 2.0 in the browser.",
+  "author": {
+    "name": "Peter Mamrukov",
+    "url": "https://localcmd.app"
+  },
+  "homepage": "https://localcmd.app",
+  "repo": "https://github.com/netbka/local-commander-plugins",
+  "icon": "./icon.png",
+  "tags": [
+    "software",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "local-commander",
+      "--transport",
+      "http",
+      "https://localcmd.app/mcp"
+    ]
+  }
+}
