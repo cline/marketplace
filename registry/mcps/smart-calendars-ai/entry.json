@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "smart-calendars-ai",
+  "type": "mcp",
+  "name": "Smart Calendars AI",
+  "tagline": "Create and update subscription calendars from your AI assistant.",
+  "description": "A hosted MCP service for creating, reading, and revising Smart Calendars AI feeds. Turn schedules reviewed with your assistant into subscription calendars for Apple Calendar, Google Calendar, or Outlook. OAuth access is limited to Smart Calendars AI feeds and events. Free and paid usage allowances follow your Smart Calendars AI plan.",
+  "author": {
+    "name": "Smart Calendars AI",
+    "url": "https://www.smartcalendars.ai"
+  },
+  "homepage": "https://www.smartcalendars.ai/en/mcp",
+  "icon": "https://www.smartcalendars.ai/images/appicon-web.svg",
+  "tags": [
+    "productivity"
+  ],
+  "license": "Proprietary",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "smart-calendars-ai",
+      "--transport",
+      "http",
+      "https://api.smartcalendars.ai/mcp"
+    ],
+    "notes": "Authorize your Smart Calendars AI account through OAuth when prompted. No API key or local server installation is needed. Setup guide: https://www.smartcalendars.ai/en/mcp"
+  }
+}
