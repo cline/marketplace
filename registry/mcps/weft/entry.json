@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "weft",
+  "type": "mcp",
+  "name": "Weft",
+  "tagline": "One board for every AI you use: agents claim tasks and finish with proof you accept or return",
+  "description": "Weft is a task board shared by every AI client you use. Cline claims a task with a lease so no other agent duplicates it, reports progress while it works, asks you only what only you can decide, and finishes with a receipt (artifacts you can check and what it did not do) that you accept or send back. Projects, sprints and a 30-day trash are included. Hosted remote server with OAuth sign-in; free plan available.",
+  "author": {
+    "name": "Weft"
+  },
+  "tags": [
+    "productivity",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "icon": "./icon.png",
+  "install": {
+    "args": [
+      "weft",
+      "--transport",
+      "http",
+      "https://letsweft.com/api/mcp"
+    ]
+  },
+  "homepage": "https://letsweft.com/cline"
+}
