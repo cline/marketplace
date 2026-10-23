@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "ux3-product-design-harness",
+  "type": "skill",
+  "name": "UX3 Product Design Harness",
+  "tagline": "Give your AI agent a product judgment layer before the next build.",
+  "description": "For product leaders, founders, designers and engineering teams deciding what to build next. Review a feature, workflow, experiment, launch or feedback signal across User Flow, Evidence Flow and Business Flow. Produce a continue, verify or stop_reframe verdict with the weakest lane, evidence gaps and an explicit execution boundary. Use Quick Gate for a small reversible decision, Standard Gate for a feature or workflow, or UX3 Council for deeper review. The complete MIT-licensed skill includes schemas, decision rules, templates, Python validators, worked examples and diagrams. Validators check structure and internal consistency; they do not prove supplied evidence is true or replace accountable human judgment. Uses the team's existing agent and model permissions. Optional external evidence retrieval requires user/host authorization; no fixed publisher service or API key is configured by this skill. To discuss adoption in your team's product workflow, connect with the author: https://www.linkedin.com/in/cis2042/.",
+  "author": {
+    "name": "CIS2042",
+    "url": "https://github.com/cis2042"
+  },
+  "homepage": "https://cis2042.github.io/ux3-product-design-harness/",
+  "repo": "https://github.com/cis2042/ux3-product-design-harness",
+  "icon": "https://raw.githubusercontent.com/cis2042/ux3-product-design-harness/48965c6b501f61ebbb8130c9c2e4f9af08922b9f/assets/ux3-logo.svg",
+  "tags": ["productivity", "business", "creative", "research"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["cis2042/ux3-product-design-harness", "--skill", "product-design-harness"],
+    "notes": "Free open-source skill. Keep the complete skill folder, including resources and LICENSE. Local validators require Python 3 and jsonschema; the user's chosen agent/model may have separate inference costs. No MCP server or hosted UX3 service is required."
+  }
+}
