@@ -3,8 +3,8 @@
   "id": "magic-hour",
   "type": "mcp",
   "name": "Magic Hour",
-  "tagline": "Generate and edit images, video, and audio with Magic Hour",
-  "description": "Generate and edit images, video, and audio through Magic Hour's hosted MCP server. It exposes 44 OpenAPI-backed tools plus polling and upload helpers for production media workflows.",
+  "tagline": "Create and edit images and video with Magic Hour.",
+  "description": "Connect Cline to Magic Hour for AI image and video creation and editing, project status, uploads, and finished-media downloads. Tool calls require a Magic Hour API key. Generation spends Magic Hour credits; check account access and obtain approval before generation.",
   "author": {
     "name": "Magic Hour",
     "url": "https://magichour.ai"
@@ -22,16 +22,9 @@
       "http",
       "https://mcp.magichour.ai/",
       "--header",
-      "Authorization: Bearer ${MAGIC_HOUR_API_KEY}"
+      "Authorization: Bearer <magic_hour_api_key>"
     ],
-    "env": [
-      {
-        "name": "MAGIC_HOUR_API_KEY",
-        "required": true,
-        "description": "Magic Hour API key for authenticated tool calls.",
-        "url": "https://magichour.ai/settings/developer"
-      }
-    ],
-    "notes": "Tool discovery is public. Tool calls require a Magic Hour API key. Generation uses credits and returns asynchronous project IDs; use the wait helpers to poll for completed downloads."
-  }
+    "notes": "Replace <magic_hour_api_key> with your own key from https://magichour.ai/developer?tab=api-keys in the installation wizard or MCP settings before calling tools. Keep the key private. Call account_retrieve to verify API access before spending credits. Save returned project IDs and use the matching wait_for_*_project tool to retrieve completed media."
+  },
+  "license": "Apache-2.0"
 }
