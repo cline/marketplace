@@ -3,8 +3,8 @@
   "id": "local-commander",
   "type": "mcp",
   "name": "Local Commander",
-  "tagline": "Work on approved projects on your Windows computers: read files and Git, run the checks you approve.",
-  "description": "Local Commander connects Cline and other MCP clients to Windows 11 computers you own. Your AI can read approved project files and Git state, run the checks and commands you authorize, and check local services. Your workspace at localcmd.app shows which computer ran each request and how it ended.\n\nOnce you approve a computer and connect your AI, it can do what your Windows account can do; you can limit it to folders, block commands or switch it off at any time. Requires a Local Commander account and the agent paired on the Windows PC (`npx local-commander-agent@latest`). Sign-in uses OAuth 2.0 in the browser.\n\nFree: unlimited runs on up to 5 computers. Team pack: 10 more computers for $15 a month.",
+  "tagline": "Give your AI hands on every computer you own. One chat, all your machines — even from your phone.",
+  "description": "Your AI already knows how to fix it. Local Commander lets it actually do it — on every computer you own.\n\nAsk ChatGPT, Claude or Cursor to find out why the office server is crawling, update every PC in the house, sort out your mom's laptop from another city, or ship the site from your work machine while you're on a train. One chat, all your machines. No remote desktop, no VPN, no walking from screen to screen.\n\nYou decide what each computer allows, and you can cut any of them off in a second.\n\nRequires a Local Commander account and the agent on each computer (`npx local-commander-agent@latest`); sign-in uses OAuth 2.0 in the browser.",
   "author": {
     "name": "Peter Mamrukov",
     "url": "https://localcmd.app"
