@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "instabids",
+  "type": "mcp",
+  "name": "InstaBids",
+  "tagline": "Get written bids for home jobs from contractors, from inside your AI assistant.",
+  "description": "InstaBids is an AI-run marketplace for homeowners and property managers: describe a home job once, by chat or through your own AI assistant, and add photos; contractors bid in writing on the same scope; you choose who gets your number. Homeowners anywhere in the US can post a job; once you send it, InstaBids finds contractors to bid on it.",
+  "author": {
+    "name": "InstaBids",
+    "url": "https://instabids.ai"
+  },
+  "tags": [
+    "productivity",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "instabids",
+      "--transport",
+      "http",
+      "https://instabids.ai/api/agent/mcp"
+    ],
+    "notes": "Hosted remote MCP server (Streamable HTTP, OAuth 2.1); nothing to install locally. On first use, press Authenticate and sign in with your InstaBids account. The assistant can help prepare a job and read your own jobs and bids; only you can send a request to contractors."
+  },
+  "homepage": "https://instabids.ai/developers",
+  "repo": "https://github.com/Instabidsai/instabids-claude-plugin",
+  "icon": "https://raw.githubusercontent.com/Instabidsai/instabids-claude-plugin/main/logo-400.png"
+}
