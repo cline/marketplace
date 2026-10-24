@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "sqlite-mcp-sidecar",
+  "type": "mcp",
+  "name": "SQLite MCP Sidecar",
+  "tagline": "Guarded agent access to a live SQLite database",
+  "description": "A self-hosted MCP sidecar (Docker, Streamable HTTP) for one SQLite database that another application owns. Read-only by default; structured writes need a filter and a row limit that counts cascades; DDL, ATTACH and PRAGMA are blocked by the SQLite authorizer; online backups. Run the container first (see the README), then install with the URL and token of your deployment.",
+  "author": {
+    "name": "xakpc",
+    "url": "https://github.com/xakpc"
+  },
+  "tags": [
+    "databases",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "sqlite-sidecar",
+      "--transport",
+      "http",
+      "http://localhost:8080/db/mcp",
+      "--header",
+      "Authorization: Bearer <SQLITE_SIDECAR_TOKEN>"
+    ]
+  },
+  "homepage": "https://github.com/xakpc/sqlite-mcp-sidecar",
+  "repo": "https://github.com/xakpc/sqlite-mcp-sidecar",
+  "license": "Apache-2.0"
+}
