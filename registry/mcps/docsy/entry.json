@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "docsy",
+  "type": "mcp",
+  "name": "Docsy",
+  "tagline": "Source-linked, version-specific developer docs for coding agents",
+  "description": "Docsy is a hosted MCP service with five read-only tools for resolving libraries, finding exact release versions and retrieving focused developer documentation with original source citations. Remote OAuth 2.1 authorization is required for the MCP endpoint.",
+  "author": {
+    "name": "getremcp",
+    "url": "https://github.com/getremcp"
+  },
+  "homepage": "https://docsy.remcp.site",
+  "repo": "https://github.com/getremcp/docsy-plugin",
+  "icon": "./icon.png",
+  "tags": [
+    "software",
+    "research"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "docsy",
+      "--transport",
+      "http",
+      "https://docsy.remcp.site/mcp/registry"
+    ]
+  }
+}
