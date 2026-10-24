@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "3dsellers",
+  "type": "mcp",
+  "name": "3Dsellers",
+  "tagline": "Manage eBay, Amazon, Walmart, Etsy, Shopify and TikTok Shop listings, orders, inventory and bulk edits with 150+ tools.",
+  "description": "Hosted MCP server for ecommerce sellers. Search and create products, publish listings, update inventory and prices, manage orders, run bulk edits and CSV imports, and answer buyer messages through your 3Dsellers account. Sign in with OAuth, no eBay developer account needed.",
+  "author": {
+    "name": "3Dsellers",
+    "url": "https://www.3dsellers.com"
+  },
+  "homepage": "https://www.3dsellers.com/channel-integration/3dsellers-mcp",
+  "repo": "https://github.com/3dsellers/ebay-mcp-server",
+  "icon": "https://raw.githubusercontent.com/3dsellers/ebay-mcp-server/main/assets/logo.png",
+  "tags": [
+    "business",
+    "sales"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "3dsellers",
+      "--transport",
+      "http",
+      "https://api.3dsellers.com/mcp"
+    ]
+  }
+}
