@@ -1,0 +1,17 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "mcp-canary",
+  "type": "mcp",
+  "name": "MCP Canary",
+  "tagline": "Inspect any remote MCP server without calling its tools",
+  "description": "A remote, read-only MCP server that connects to any public MCP endpoint and reports its transport (Streamable HTTP or legacy SSE), protocol version, server info, tools with input and output schemas, and a side-effect class per tool from its MCP hints. Target problems come back as stable failure codes. No tool on the target is ever called. A second tool returns the plans and prices of MCP Canary, the synthetic monitoring service behind it.",
+  "author": { "name": "MCP Canary", "url": "https://mcpcanary.com" },
+  "homepage": "https://mcpcanary.com",
+  "icon": "./icon.svg",
+  "tags": ["software"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["mcp-canary", "--transport", "http", "https://api.mcpcanary.com/mcp"]
+  }
+}
