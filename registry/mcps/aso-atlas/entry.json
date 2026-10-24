@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "aso-atlas",
+  "type": "mcp",
+  "name": "ASO Atlas",
+  "tagline": "App Store and Google Play keyword research and rank tracking",
+  "description": "Research App Store and Google Play keywords with Apple-reported search popularity and a difficulty score, track your apps' rankings in 59 storefronts, find keyword gaps against competitors, read App Store Connect and Play Console performance, and set up in-app feedback and onboarding analytics in your app's code.",
+  "author": {
+    "name": "ASO Atlas",
+    "url": "https://asoatlas.com"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "marketing",
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "asoatlas",
+      "--transport",
+      "http",
+      "https://asoatlas.com/mcp"
+    ]
+  },
+  "homepage": "https://asoatlas.com",
+  "repo": "https://github.com/asoatlas/mcp",
+  "license": "MIT"
+}
