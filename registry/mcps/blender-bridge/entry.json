@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "blender-bridge",
+  "type": "mcp",
+  "name": "Blender Bridge",
+  "tagline": "Create, inspect and refine Blender scenes from Cline, with viewport feedback.",
+  "description": "Create and refine editable 3D scenes in Blender from Cline. Use Blender Python for modeling, Geometry Nodes, materials, lighting and animation; inspect the scene and viewport, render images and export models or project files. Connect with OAuth to Blender Bridge Desktop on your Windows 10/11 x64 computer running Blender 4.2+. Cline can run on another device. Requires active Blender Bridge access; a 7-day trial is available. AI service access is separate.",
+  "author": {
+    "name": "Blender Bridge",
+    "url": "https://blenderbridge.com/?utm_source=cline"
+  },
+  "homepage": "https://blenderbridge.com/?utm_source=cline",
+  "repo": "https://github.com/Blender-Bridge/blender-bridge",
+  "icon": "https://raw.githubusercontent.com/Blender-Bridge/blender-bridge/main/assets/logo.png",
+  "tags": ["creative"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["blender-bridge", "--transport", "http", "https://mcp.blenderbridge.com/mcp"],
+    "notes": "On your receiving Windows computer, install Blender Bridge Desktop, configure Blender 4.2 or newer and sign in with active access. Authorize this connection through OAuth and choose that computer if asked. Start with a read-only scene inspection. A 7-day trial is available; AI service access is separate."
+  }
+}
