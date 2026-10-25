@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "ship-com",
+  "type": "mcp",
+  "name": "Ship.com",
+  "tagline": "Shipping rates, order management and tracking through a hosted MCP connection.",
+  "description": "Hosted Ship.com MCP connection for shipping rates, order management and tracking.\n\nMCP rating and label purchasing support U.S. domestic shipments, from a U.S. ship-from address to U.S. addresses. Shipments requiring customs forms—including international, APO/FPO/DPO, and U.S. territories—are handled through the Ship.com web app. International shipping support from a U.S. ship-from address is coming soon.\n\nRequires a Ship.com account and the user's own access token. This Cline configuration uses Streamable HTTP with an Authorization header, not OAuth. Ship.com OAuth is documented only for supported Claude clients and does not offer label purchasing; compatible access-token connections may provide it, subject to account and plan entitlements. Purchasing and other consequential actions require explicit user approval.\n\nThe linked repository contains metadata and setup documentation, not the hosted service implementation. Authenticated Cline installation and business operations have not been tested for this entry.",
+  "author": {
+    "name": "Ship.com",
+    "url": "https://www.ship.com"
+  },
+  "homepage": "https://www.ship.com/api/mcp",
+  "repo": "https://github.com/AtlasGrunch/ship-com-mcp",
+  "tags": [
+    "business",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "ship-com",
+      "--transport",
+      "http",
+      "https://app.ship.com/mcp",
+      "--header",
+      "Authorization: Bearer <SHIP_COM_ACCESS_TOKEN>"
+    ],
+    "notes": "Configuration template only: <SHIP_COM_ACCESS_TOKEN> is a literal placeholder, not automatic environment-variable substitution. Before connecting, replace it in your local Cline MCP settings with your own Ship.com access token from Settings > API Integration. Keep the token private; do not put it in issues, PRs or shared files. This entry does not use OAuth. Review enabled tools and approve consequential actions explicitly. Authenticated installation has not been tested."
+  }
+}
