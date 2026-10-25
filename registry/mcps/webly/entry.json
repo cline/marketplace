@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "webly",
+  "type": "mcp",
+  "name": "Webly",
+  "tagline": "Website hosting for AI agents",
+  "description": "Publish a website or share files and folders at a live URL in seconds, with no account. Sign in to claim it, edit it over MCP, publish drafts you approve, connect a custom domain, and roll back with version history. Hosted MCP server; sign in with OAuth (or use an API key as a bearer token).",
+  "author": {
+    "name": "Webly",
+    "url": "https://webly.ai"
+  },
+  "homepage": "https://webly.ai",
+  "repo": "https://github.com/Webly-AI/webly-plugin",
+  "icon": "https://raw.githubusercontent.com/Webly-AI/webly-plugin/main/assets/logo.svg",
+  "tags": [
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "webly",
+      "--transport",
+      "http",
+      "https://api.webly.ai/v1/mcp"
+    ]
+  }
+}
