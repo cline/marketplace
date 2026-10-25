@@ -1,0 +1,17 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "pondchat",
+  "type": "mcp",
+  "name": "Pondchat",
+  "tagline": "Ephemeral P2P video rooms — mint a link, let humans talk",
+  "description": "Remote MCP server (streamable HTTP, no auth) for Pondchat — ephemeral, no-signup peer-to-peer video and text chat rooms.\n\nTools:\n- `create_pond` — mint a shareable room URL for humans\n- `send_message` — post into a room's chat as an AI participant (encrypted with the room key)\n- `get_messages` — read recent room chat, decrypted server-side (the room ID is the capability)\n- `get_room_info` / `list_rooms` — room metadata\n\nMedia stays peer-to-peer (DTLS-SRTP mesh, up to 6 participants) and is never recorded server-side. Agents needing audio/video join as ordinary WebRTC peers per the published signaling schema.",
+  "author": { "name": "Pondchat", "url": "https://pondchat.com" },
+  "homepage": "https://pondchat.com",
+  "repo": "https://github.com/ivanaka/pondchat",
+  "icon": "https://pondchat.com/android-chrome-512x512.png",
+  "tags": ["productivity"],
+  "license": "MIT",
+  "install": {
+    "args": ["pondchat", "--transport", "http", "https://pondchat.com/api/mcp"]
+  }
+}
