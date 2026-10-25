@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "hirepulse-agent-gateway",
+  "type": "mcp",
+  "name": "HirePulse Agent Gateway",
+  "tagline": "Company intelligence, commerce evidence and agent utilities",
+  "description": "26 remote MCP tools. Company profiles combine tech stack, hiring intent, Google Ads and public contacts with breakout_summary growth signals ($0.03 USDC). Five free calls/day per IP; eligible Base wallets or business emails can claim 25 trial calls. Free sandbox: example.com. Paid calls use x402 v2 on Base over HTTP or payment-capable MCP clients.",
+  "homepage": "https://gethirepulse.xyz/",
+  "tags": [
+    "data",
+    "business",
+    "sales",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "hirepulse-agent-gateway",
+      "--transport",
+      "http",
+      "https://gethirepulse.xyz/mcp"
+    ],
+    "notes": "Remote Streamable HTTP MCP: https://gethirepulse.xyz/mcp. Focused profiles: ?profile=b2b (8 tools) and ?profile=commerce (11 tools). Free sandbox: example.com. Paid calls require an x402-capable client; listing tools requires no payment."
+  }
+}
