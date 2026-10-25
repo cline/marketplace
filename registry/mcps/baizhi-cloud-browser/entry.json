@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "baizhi-cloud-browser",
+  "type": "mcp",
+  "name": "Baizhi Cloud Browser",
+  "tagline": "On-demand cloud browser sessions for coding agents.",
+  "description": "Baizhi Cloud Browser (CapyBrowser) provides on-demand cloud browser sessions for coding agents. This MCP connection manages sessions and CDP access; a compatible CDP client performs page actions. Sessions may incur charges: check current prices, explicitly stop sessions you create, and check resource release and billing afterward. Disconnecting a client does not end the remote session.",
+  "author": {
+    "name": "ctcbyzx",
+    "url": "https://github.com/ctcbyzx"
+  },
+  "homepage": "https://capybrowser.app.baizhi.cloud/docs/installation.md",
+  "repo": "https://github.com/chaitin/baizhi-cloud-browser",
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "baizhi-cloud-browser",
+      "--transport",
+      "http",
+      "https://capybrowser.app.baizhi.cloud/mcp",
+      "--header",
+      "Authorization: Bearer <API_KEY>"
+    ],
+    "notes": "Replace <API_KEY> in Cline's private MCP settings before connecting. The setup guide explains CDP page clients and session cleanup."
+  }
+}
