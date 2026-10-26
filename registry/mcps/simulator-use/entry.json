@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "simulator-use",
+  "type": "mcp",
+  "name": "simulator-use",
+  "tagline": "Build, read and tap the iOS Simulator from Cline",
+  "description": "Builds and runs your Xcode project on the iOS Simulator, reads the screen as compact text (one line per element, with its label, id and position), taps and types by label, and runs XCTest and XCUITest case by case. Also the app's logs and crashes, permission prompts and screen recordings. Runs on a Mac with Xcode; free and open source.",
+  "author": {
+    "name": "NoMac",
+    "url": "https://nomac.app"
+  },
+  "homepage": "https://simulator-use.dev",
+  "repo": "https://github.com/NoMac-app/simulator-use",
+  "tags": [
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "simulator-use",
+      "--",
+      "npx",
+      "-y",
+      "simulator-use",
+      "mcp"
+    ]
+  }
+}
