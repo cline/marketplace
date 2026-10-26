@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "scrapingbee-cli",
+  "type": "skill",
+  "name": "ScrapingBee CLI",
+  "tagline": "Scrape pages, search the web, crawl sites and batch hundreds of URLs with the ScrapingBee CLI",
+  "description": "Teaches Cline when and how to use the ScrapingBee CLI: fetch any web page as markdown, text, HTML or a screenshot (JavaScript rendering, CAPTCHAs and anti-bot blocking handled), run Google, Amazon, Walmart and YouTube searches that return JSON, extract fields in plain English, batch hundreds of URLs from a file or CSV, crawl a whole site with URL filters, write results to disk, and keep credit spend low. Needs `scrapingbee-cli` installed (`uv tool install scrapingbee-cli` or `pip install scrapingbee-cli`) and a ScrapingBee API key.",
+  "author": {
+    "name": "ScrapingBee",
+    "url": "https://www.scrapingbee.com"
+  },
+  "homepage": "https://www.scrapingbee.com/documentation/cli/",
+  "repo": "https://github.com/ScrapingBee/scrapingbee-cli",
+  "icon": "./icon.png",
+  "tags": [
+    "research",
+    "data"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "ScrapingBee/scrapingbee-cli",
+      "--skill",
+      "scrapingbee-cli"
+    ]
+  }
+}
