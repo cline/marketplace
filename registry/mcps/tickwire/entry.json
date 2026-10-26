@@ -1,0 +1,17 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "tickwire",
+  "type": "mcp",
+  "name": "Tickwire",
+  "tagline": "MetaTrader 4 and 5 accounts for AI agents",
+  "description": "Read and trade MetaTrader 4 and 5 accounts with any broker: positions, orders, quotes, candles, history and an audit log. Every order is idempotent, every result is applied, rejected or unknown, and you choose Look only or Look and trade when you sign in.",
+  "author": { "name": "Tickwire Labs", "url": "https://tickwire.io" },
+  "homepage": "https://tickwire.io/metatrader-mcp-server/",
+  "repo": "https://github.com/Desmath3/metatrader-mcp",
+  "tags": ["finance"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["tickwire", "--transport", "http", "https://api.tickwire.io/mcp"]
+  }
+}
