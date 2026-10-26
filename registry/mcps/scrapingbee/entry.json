@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "scrapingbee",
+  "type": "mcp",
+  "name": "ScrapingBee",
+  "tagline": "Fetch any web page, search the web and get Google, Amazon, Walmart and YouTube data as JSON",
+  "description": "Connect Cline to the ScrapingBee MCP server. 18 tools: fetch any page as text, markdown, HTML or a screenshot (JavaScript rendering, CAPTCHAs and anti-bot blocking handled), extract structured data from a page, and get clean JSON from Google search, Amazon, Walmart, YouTube, ChatGPT and Gemini. Needs a ScrapingBee API key; a free trial key comes with sign-up.",
+  "author": {
+    "name": "ScrapingBee",
+    "url": "https://www.scrapingbee.com"
+  },
+  "homepage": "https://mcp.scrapingbee.com/",
+  "repo": "https://github.com/ScrapingBee/mcp-server",
+  "icon": "./icon.png",
+  "tags": [
+    "research",
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "scrapingbee",
+      "--transport",
+      "http",
+      "https://mcp.scrapingbee.com/mcp",
+      "--header",
+      "Authorization: Bearer ${SCRAPINGBEE_API_KEY}"
+    ],
+    "env": [
+      {
+        "name": "SCRAPINGBEE_API_KEY",
+        "required": true,
+        "description": "Your ScrapingBee API key.",
+        "url": "https://app.scrapingbee.com/account/register"
+      }
+    ]
+  }
+}
