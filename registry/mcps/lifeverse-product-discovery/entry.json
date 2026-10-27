@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "lifeverse-product-discovery",
+  "type": "mcp",
+  "name": "LifeVerse Product Discovery",
+  "tagline": "Discover ready-to-use LifeVerse AI products",
+  "description": "Discover, search, inspect, and recommend 11 public LifeVerse AI products and interactive experiences through four read-only tools. The hosted server requires no account or API key.",
+  "author": {
+    "name": "LifeVerse",
+    "url": "https://lifeverse.gufreelancer.com/"
+  },
+  "homepage": "https://lifeverse.gufreelancer.com/mcp",
+  "repo": "https://github.com/lifeversegu/lifeverse-mcp",
+  "license": "MIT",
+  "tags": [
+    "research",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "lifeverse",
+      "--transport",
+      "http",
+      "https://lifeverse.gufreelancer.com/api/mcp"
+    ]
+  }
+}
