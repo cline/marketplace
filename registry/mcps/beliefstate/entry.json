@@ -1,0 +1,17 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "beliefstate",
+  "type": "mcp",
+  "name": "BeliefState",
+  "tagline": "Find cited investor theses, investment risks, catalysts and research changes.",
+  "description": "Connect your BeliefState account to retrieve attributed investor theses, risks, catalysts, research changes and publication-based outcomes. Results preserve source links, dates, historical cutoffs and coverage limits. Account research uses your plan allowance or prepaid balance. Compatible wallet clients can use the separate x402 endpoint documented in the quickstart.",
+  "author": { "name": "BeliefState", "url": "https://beliefstate.ai" },
+  "homepage": "https://beliefstate.ai",
+  "repo": "https://github.com/Antcolombo/beliefstate-agent-integrations",
+  "tags": ["finance", "research", "data"],
+  "verified": false,
+  "install": {
+    "args": ["beliefstate", "--transport", "http", "https://beliefstate.ai/mcp"],
+    "notes": "Complete BeliefState OAuth in your MCP client. Account setup, pricing and optional wallet access: https://beliefstate.ai/agent-quickstart.md."
+  }
+}
