@@ -1,0 +1,17 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "groundrules",
+  "type": "mcp",
+  "name": "GroundRules",
+  "tagline": "The original text of US federal and state law, with its source and date",
+  "description": "A free remote MCP server for US law. Give it an address and it names the governments that make law there; search the US Code, the CFR and the statutes of all 50 states, DC and Guam by topic or citation; read a section word for word with its official source, current-through date and a stale flag when the publisher has moved on. It never summarizes or interprets the law and is not legal advice. No account or API key.",
+  "author": { "name": "agentlookups.ai", "url": "https://agentlookups.ai" },
+  "homepage": "https://agentlookups.ai/docs/groundrules/",
+  "icon": "./icon.svg",
+  "tags": ["research", "data"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["groundrules", "--transport", "http", "https://law.agentlookups.ai/mcp"]
+  }
+}
