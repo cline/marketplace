@@ -9,7 +9,7 @@
     "name": "Flaghand",
     "url": "https://flaghand.com"
   },
-  "homepage": "https://flaghand.com",
+  "homepage": "https://flaghand.com/?utm_source=mcp-directory&utm_medium=referral&utm_campaign=flaghand_launch_nov2026&utm_content=cline",
   "icon": "https://flaghand.com/assets/icon.svg",
   "tags": [
     "productivity",
@@ -22,7 +22,7 @@
       "flaghand",
       "--transport",
       "http",
-      "https://app.flaghand.com/mcp"
+      "https://app.flaghand.com/mcp/via/cline"
     ],
     "notes": "Remote Streamable HTTP with OAuth; no API key or local server required. Start at https://flaghand.com/llms.txt for agent-led sign-up and the human subscription step. In Cline, authorize Flaghand: the owner signs in with a passkey, chooses a workspace and allows access. Then call getMe to confirm the workspace. Agent access can draft and request approval, but cannot approve, schedule or publish. Manage or revoke access in Flaghand Settings > Agents. Docs: https://app.flaghand.com/docs/agents. Support: support@flaghand.com. Operated by Trellisbyte LLC."
   }
