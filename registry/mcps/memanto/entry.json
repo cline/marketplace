@@ -1,0 +1,45 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "memanto",
+  "type": "mcp",
+  "name": "Memanto Memory",
+  "tagline": "Persistent typed semantic memory for AI agents across Cline and your other MCP clients",
+  "description": "Memanto is a Memory Agent that gives Cline persistent, typed semantic memory across sessions and across every MCP client sharing the same memory estate (Claude Code, Cursor, Windsurf, Copilot, Goose, and custom agents). Exposes 7 memory tools (`remember`, `batch_remember`, `recall`, `recall_recent`, `recall_as_of`, `recall_changed_since`, and `answer` for grounded RAG over stored memories), plus 4 optional agent management tools (`create_agent`, `list_agents`, `get_agent`, `delete_agent`) when `MEMANTO_EXPOSE_ADMIN=true`.\n\nSupports 13 memory categories (`fact`, `preference`, `decision`, `goal`, `instruction`, `learning`, etc.) with automatic caller source attribution, temporal queries, and sub-90ms information-theoretic retrieval with zero indexing lag. Free tier includes 100,000 operations/month with no credit card required.\n\nDocs: https://docs.memanto.ai",
+  "author": {
+    "name": "Moorcheh AI",
+    "url": "https://www.memanto.ai"
+  },
+  "homepage": "https://www.memanto.ai",
+  "repo": "https://github.com/moorcheh-ai/memanto/tree/main/integrations/mcp",
+  "icon": "./icon.png",
+  "tags": [
+    "memory",
+    "software",
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "memanto",
+      "--",
+      "uvx",
+      "memanto-mcp"
+    ],
+    "env": [
+      {
+        "name": "MOORCHEH_API_KEY",
+        "required": true,
+        "description": "Moorcheh API key for persistent semantic memory (free tier: 100K ops/month).",
+        "url": "https://console.moorcheh.ai/api-keys"
+      },
+      {
+        "name": "MEMANTO_DEFAULT_AGENT_ID",
+        "required": false,
+        "description": "Default memory namespace (for example cline-assistant)."
+      }
+    ],
+    "notes": "Runs `memanto-mcp` via `uvx` (Python 3.10+). Alternatively, install with `pip install memanto-mcp` and follow `llms-install.md` in the repository."
+  }
+}
