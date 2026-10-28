@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "govgazette",
+  "type": "mcp",
+  "name": "GovGazette",
+  "tagline": "Research federal contracts with dated source links",
+  "description": "Search federal contracting opportunities, research awards and vendors, and review exclusion evidence with dated official-source links over Streamable HTTP. Exposes 17 MCP tools (`check_exclusions`, `create_saved_search`, `delete_saved_search`, `delete_saved_search_workspace`, `detail`, `document`, `exclusion_changes`, `exclusion_context`, `explain_match`, `freshness`, `get_saved_search_events`, `list_saved_searches`, `research_opportunity`, `rotate_saved_search_feed`, `search`, `search_exclusions`, `search_opportunities`). Built by Moosh Works (https://mooshworks.com).",
+  "author": {
+    "name": "Daniel Hallman",
+    "url": "https://mooshworks.com"
+  },
+  "homepage": "https://govgazette.com",
+  "repo": "https://github.com/mooshee/govgazette-mcp",
+  "icon": "https://raw.githubusercontent.com/mooshee/govgazette-mcp/main/plugin/assets/mark-512.png",
+  "tags": [
+    "research",
+    "data",
+    "business"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "govgazette",
+      "--transport",
+      "http",
+      "https://govgazette.com/mcp"
+    ],
+    "notes": "Public research works without a key. Private saved-search actions require a GovGazette workspace key."
+  }
+}
