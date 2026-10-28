@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "awaken",
+  "type": "mcp",
+  "name": "Awaken Tax",
+  "tagline": "Crypto tax accounting: review and fix transactions, cost basis, gains and income in Awaken Tax.",
+  "description": "Awaken Tax is crypto tax software for DeFi, NFTs, perps and memecoins. Its hosted MCP server lets Cline work directly in your Awaken workspace:\n\n- Search and review transactions from your connected wallets and exchanges, with transfers, fees and ledger entries\n- Label, split, merge and correct transactions, with edit history and undo\n- Investigate missing or implausible cost basis and trace an asset's tax lots\n- Summarize realized gains and losses, income, top P&L assets and performance by chain\n- Check portfolio value and positions\n- Reconcile 1099-DA forms against your records\n- Generate tax reports and CSV exports\n\nWrite tools only run when you grant read + write access. Cline connects with an Awaken API key (Settings -> API Keys; Dolphin or Whale plan).",
+  "author": {
+    "name": "Awaken",
+    "url": "https://awaken.tax"
+  },
+  "homepage": "https://awaken.tax/docs/agents",
+  "repo": "https://github.com/awakentax/plugin",
+  "icon": "https://awaken.tax/512.png",
+  "tags": [
+    "finance"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "awaken",
+      "--transport",
+      "http",
+      "https://mcp.awaken.tax/mcp",
+      "--header",
+      "Authorization: Bearer <portfolioId>:<apiKey>"
+    ],
+    "notes": "Replace <portfolioId>:<apiKey> with your Awaken portfolio ID and API key, joined by a colon. Create the key in Awaken under Settings -> API Keys, which also shows the portfolio ID. API keys need an Awaken Dolphin or Whale plan."
+  }
+}
