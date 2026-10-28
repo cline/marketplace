@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "gisdb",
+  "type": "mcp",
+  "name": "GISDB",
+  "tagline": "County property records, owner portfolios, and CSV lead delivery",
+  "description": "Search county property records, inspect owner-name portfolios, discover geographic directory products, save lead searches, and manage account-inbox CSV lead delivery over Streamable HTTP. Exposes 15 MCP tools (`gisdb_search_catalog`, `gisdb_get_metadata`, `gisdb_search_records`, `gisdb_guide_search`, `gisdb_start_search`, `gisdb_continue_search`, `gisdb_get_search`, `gisdb_save_search`, `gisdb_list_saved_searches`, `gisdb_create_checkout`, `gisdb_get_order`, `gisdb_open_billing_portal`, `gisdb_cancel_subscription`, `gisdb_get_lead_updates`, `gisdb_set_lead_updates`). Built by Moosh Works (https://mooshworks.com).",
+  "author": {
+    "name": "Daniel Hallman",
+    "url": "https://mooshworks.com"
+  },
+  "homepage": "https://gisdb.io",
+  "repo": "https://github.com/mooshee/gisdb-mcp",
+  "icon": "https://gisdb.io/assets/stickers/sticker_topography.png",
+  "tags": [
+    "research",
+    "data",
+    "sales"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "gisdb",
+      "--transport",
+      "http",
+      "https://gisdb.io/mcp"
+    ],
+    "notes": "Public catalog discovery, product metadata, county record lookups, and guided lead search require no account or API key. Saving workflows, managing subscriptions, and reading CSV deliveries require GISDB OAuth 2.1 sign-in."
+  }
+}
