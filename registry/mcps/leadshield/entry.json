@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "leadshield",
+  "type": "mcp",
+  "name": "LeadShield Contact Form & B2B Solicitation Blocker",
+  "tagline": "2-stage contact form spam and B2B cold-pitch solicitation blocker",
+  "description": "Block contact form spam, SEO cold pitches, and B2B solicitations across GoHighLevel (GHL), WordPress, HubSpot, and custom websites over Streamable HTTP. Combines $0.00 Stage 0 deterministic bot drops with Stage 1 calibrated buyer-intent classification, server-side per-site country/phone/URL policies, and weekly blocked-spam reports. Exposes 5 tools (`leadshield_screen_submission`, `leadshield_get_blocked_spam_report`, `leadshield_get_spam_policy`, `leadshield_configure_spam_policy`, and `leadshield_generate_guard_embed`). Built by Moosh Works (https://mooshworks.com).",
+  "author": {
+    "name": "Daniel Hallman",
+    "url": "https://mooshworks.com"
+  },
+  "homepage": "https://ghlagencymcp.com/use-cases/ghl-contact-form-spam-blocker",
+  "repo": "https://github.com/mooshee/leadshield-mcp",
+  "icon": "https://rankandrent-leads.hallmanlab.workers.dev/icon-512.png",
+  "tags": [
+    "productivity",
+    "business",
+    "marketing"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "leadshield",
+      "--transport",
+      "http",
+      "https://rankandrent-leads.hallmanlab.workers.dev/mcp"
+    ],
+    "notes": "Connects over Streamable HTTP (`https://rankandrent-leads.hallmanlab.workers.dev/mcp`); read-only screening, policy inspection, dry-run policy preview, and guard.js embed generation work immediately without an API key."
+  }
+}
