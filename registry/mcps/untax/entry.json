@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "untax",
+  "type": "mcp",
+  "name": "Untax",
+  "tagline": "Property assessment research, VA lookups, and veteran review PDFs",
+  "description": "Search retained county property assessments, recheck tax-reduction routes, look up official VA facilities and forms, and generate free private Veteran REVIEW/DRAFT PDFs over Streamable HTTP. Exposes 20 MCP tools (`suggest_addresses`, `get_property_assessment`, `recheck_property_opportunities`, `get_owner_workspace`, `get_owner_review_details`, `find_va_facilities`, `get_va_facility`, `find_va_forms`, `get_va_form`, `start_va_connection`, `get_va_connection`, `disconnect_va_connection`, `review_veteran_requirements`, `generate_veteran_packet`, `get_microtransactions_catalog`, `audit_microtransaction`, `get_appeal_lifecycle`, `start_tax_sandbox`, `get_tax_sandbox_order`, `complete_tax_sandbox_order`). Built by Moosh Works (https://mooshworks.com).",
+  "author": {
+    "name": "Daniel Hallman",
+    "url": "https://mooshworks.com"
+  },
+  "homepage": "https://untax.io",
+  "repo": "https://github.com/mooshee/untax-mcp",
+  "icon": "https://untax.io/assets/stickers/sticker_sledgehammer.png",
+  "tags": [
+    "research",
+    "data",
+    "finance"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "untax",
+      "--transport",
+      "http",
+      "https://untax.io/mcp"
+    ],
+    "notes": "Public property assessment research and VA facility/form lookups require no account or API key. Private owner reviews, VA verification connections, and test sandbox orders require Untax OAuth 2.1 sign-in."
+  }
+}
