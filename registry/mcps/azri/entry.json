@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "azri",
+  "type": "mcp",
+  "name": "Azri Flashcards",
+  "tagline": "Save flashcards from your AI chats to Azri, the FSRS spaced repetition app for iPhone and iPad.",
+  "description": "The Azri Connector is the remote MCP server for [Azri](https://azri.app), a spaced repetition (FSRS) flashcard app for iPhone and iPad. It can list and search your decks and cards, create decks, and save up to 50 cards per request, skipping cards already in the deck. New cards land in your Azri decks, ready to review. It can't edit or delete anything.\n\nSign-in is OAuth with Sign in with Apple, with no API key to paste. Requires an Azri account with an active Pro subscription. Setup and FAQ: https://azri.app/mcp/. Privacy: https://azri.app/privacy#azri-connector.",
+  "author": {
+    "name": "Azri",
+    "url": "https://azri.app"
+  },
+  "homepage": "https://azri.app/mcp/",
+  "icon": "https://mcp.azri.app/icon-512.png",
+  "tags": [
+    "productivity",
+    "memory"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "azri",
+      "--transport",
+      "http",
+      "https://mcp.azri.app/v1/mcp"
+    ]
+  }
+}
