@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "pressmark",
+  "type": "mcp",
+  "name": "Pressmark",
+  "tagline": "Sub-25ms vector PDF synthesis for invoices, contracts, and leases",
+  "description": "Generate vector PDF invoices, estimates, receipts, contracts, NDAs, and 50-state statutory real estate agreements in sub-25ms with 1-scan vector QR payment links. Exposes 6 MCP tools (`generate_document`, `preview_document`, `convert_document`, `record_payment`, `calculate_totals`, `get_pricing`). Built by Moosh Works (https://mooshworks.com).",
+  "author": {
+    "name": "Daniel Hallman",
+    "url": "https://mooshworks.com"
+  },
+  "homepage": "https://pressmark.dev",
+  "repo": "https://github.com/mooshee/pressmark",
+  "icon": "https://pressmark.dev/static/icon-512.png",
+  "tags": [
+    "productivity",
+    "business",
+    "finance"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "pressmark",
+      "--transport",
+      "http",
+      "https://pressmark.dev/mcp"
+    ],
+    "notes": "Connects over Streamable HTTP without an API key, or run locally via `pressmark --stdio`."
+  }
+}
