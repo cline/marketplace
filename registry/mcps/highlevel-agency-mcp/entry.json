@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "highlevel-agency-mcp",
+  "type": "mcp",
+  "name": "HighLevel Agency & Builder MCP",
+  "tagline": "GoHighLevel agency snapshots, funnels, DNS/SSL, workflows, and LC Phone",
+  "description": "Automate GoHighLevel (GHL) agency and builder operations over Streamable HTTP: sub-account snapshot diffs, funnel and website sync, custom domain DNS and SSL onboarding, workflows, IVRs, custom values, LC Phone wallet audits, and user role governance. Exposes 13 public discovery and flagship tools (`ghl_snapshot_diff_audit`, `ghl_site_builder_sync`, `ghl_domain_ssl_onboard`, `ghl_workflow_ivr_builder`, `ghl_custom_values_audit`, `ghl_phone_wallet_audit`, `ghl_user_role_governance`, plus 6 onboarding and catalog tools). Built by Moosh Works (https://mooshworks.com).",
+  "author": {
+    "name": "Daniel Hallman",
+    "url": "https://mooshworks.com"
+  },
+  "homepage": "https://ghlagencymcp.com",
+  "repo": "https://github.com/mooshee/highlevel-agency-mcp",
+  "icon": "https://ghlagencymcp.com/icon-512.png",
+  "tags": [
+    "productivity",
+    "business",
+    "marketing"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "highlevel-agency-mcp",
+      "--transport",
+      "http",
+      "https://ghlagencymcp.com/mcp"
+    ],
+    "notes": "Connects over Streamable HTTP (`https://ghlagencymcp.com/mcp`); onboarding and catalog exploration work without an API key, and workspace operations support OAuth 2.1 with PKCE or a Private Integration Token."
+  }
+}
