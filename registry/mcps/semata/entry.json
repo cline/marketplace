@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "semata",
+  "type": "mcp",
+  "name": "Semata",
+  "tagline": "Review roles and candidates in your Semata hiring workspace",
+  "description": "Screen CVs against role criteria, review ranked candidates and screening reports, record notes and reviews, and prepare sourcing searches from your AI assistant. Requires an existing Semata account. Sign in with OAuth; access follows your Semata workspace permissions. Hiring decisions remain with a human reviewer.",
+  "author": {
+    "name": "Semata",
+    "url": "https://semata.ai"
+  },
+  "homepage": "https://app.semata.ai/published/semata-mcp-connector",
+  "icon": "https://app.semata.ai/web-app-manifest-512x512.png",
+  "tags": [
+    "business",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "semata",
+      "--transport",
+      "http",
+      "https://app.semata.ai/api/mcp"
+    ],
+    "notes": "Requires a Semata account. Authorize the connection with OAuth using your own account. Review changes that affect candidates before approving tool calls. Setup and support: https://app.semata.ai/published/semata-mcp-connector"
+  }
+}
