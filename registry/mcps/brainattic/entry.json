@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "brainattic",
+  "type": "mcp",
+  "name": "Brainattic",
+  "tagline": "Governed, persistent knowledge for AI coding agents",
+  "description": "Brainattic is an EU-hosted knowledge base that connects AI agents to trusted organizational knowledge through MCP. It supports hybrid semantic and keyword search, document retrieval, versioned documentation, and permission-controlled creation and editing. Users sign in with their Brainattic account through OAuth 2.1 (PKCE and Dynamic Client Registration). No local server installation or API key is needed.",
+  "author": {
+    "name": "Finite Software Systems Ltd.",
+    "url": "https://finite-soft.com"
+  },
+  "homepage": "https://brainattic.ai",
+  "tags": ["productivity", "research", "data"],
+  "verified": false,
+  "install": {
+    "args": [
+      "brainattic",
+      "--transport",
+      "http",
+      "https://app.brainattic.ai/api/mcp"
+    ]
+  }
+}
