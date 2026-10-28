@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "funnellingo",
+  "type": "skill",
+  "name": "FunnelLingo",
+  "tagline": "Review website translations and prepare approved updates.",
+  "description": "A skill for inspecting website translations, reviewing changes, and preparing approved updates with FunnelLingo. Human-approved translations stay locked, and visitor form entries stay out of translation. Requires an active FunnelLingo installation and administrator access. [Setup](https://funnellingo.com/agents) · [Version 0.2.0 release notes](https://github.com/mooshee/funnellingo-mcp/releases/tag/v0.2.0). Built by [Moosh Works](https://mooshworks.com).",
+  "author": {
+    "name": "Moosh Works",
+    "url": "https://mooshworks.com"
+  },
+  "homepage": "https://funnellingo.com/agents",
+  "repo": "https://github.com/mooshee/funnellingo-mcp",
+  "icon": "https://raw.githubusercontent.com/mooshee/funnellingo-mcp/v0.2.0/assets/logo.png",
+  "tags": ["marketing", "productivity"],
+  "license": "MIT-0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["https://github.com/mooshee/funnellingo-mcp/tree/v0.2.0", "--skill", "funnellingo"],
+    "notes": "Installs the public consumer skill. Connect FunnelLingo separately through a compatible MCP host and OAuth; this skill does not include credentials. See the setup guide for protocol and callback requirements."
+  }
+}
