@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "transcriptfetch",
+  "type": "mcp",
+  "name": "TranscriptFetch",
+  "tagline": "Transcripts from YouTube, TikTok and Instagram",
+  "description": "Fetch transcripts from YouTube, TikTok and Instagram videos, with timestamps. Search videos and list whole channels and playlists; videos without captions are transcribed from their audio. Sign in with OAuth for a free account with 50 credits a month.",
+  "author": {
+    "name": "TranscriptFetch"
+  },
+  "tags": [
+    "research",
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "icon": "./icon.svg",
+  "install": {
+    "args": [
+      "transcriptfetch",
+      "--transport",
+      "http",
+      "https://transcriptfetch.com/mcp"
+    ]
+  },
+  "homepage": "https://transcriptfetch.com/docs/mcp",
+  "repo": "https://github.com/TranscriptFetch/youtube-tiktok-instagram-transcript-mcp"
+}
