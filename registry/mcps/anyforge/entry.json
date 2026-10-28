@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "anyforge",
+  "type": "mcp",
+  "name": "AnyForge",
+  "tagline": "Drive governed agentic engineering in AnyForge from your coding agent",
+  "description": "Dispatch and steer AnyForge engineering crews, drive Code Studio sessions, review and approve human-in-the-loop gates, and manage programs, initiatives and work items without leaving your editor. Requires an AnyForge account. Sign in with OAuth; the connection acts as you and its scopes are capped by your AnyForge role.",
+  "author": {
+    "name": "AnyForge",
+    "url": "https://anyforge.ai"
+  },
+  "homepage": "https://anyforge.ai/docs?page=mcp-server",
+  "icon": "https://anyforge.ai/brand/logo-bolt-icon.png",
+  "tags": [
+    "software",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "anyforge",
+      "--transport",
+      "http",
+      "https://crew.anyforge.ai/api/mcp"
+    ],
+    "notes": "Requires an AnyForge account. Authorize the connection with OAuth using your own account; no API key is needed. Tools that change data or approve gates are annotated for confirmation. Setup and support: https://anyforge.ai/docs?page=mcp-server"
+  }
+}
