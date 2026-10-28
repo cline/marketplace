@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "odin",
+  "type": "mcp",
+  "name": "Odin",
+  "tagline": "Read Odin security findings and remediation, link fix pull requests and track retests.",
+  "description": "Read Odin security findings and remediation, link fix pull requests and track retests.",
+  "author": {
+    "name": "Borg Research",
+    "url": "https://www.borghq.io/"
+  },
+  "homepage": "https://www.borghq.io/",
+  "icon": "./icon.png",
+  "tags": [
+    "security",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "odin",
+      "--transport",
+      "http",
+      "https://odin.borghq.io/api/mcp"
+    ]
+  }
+}
