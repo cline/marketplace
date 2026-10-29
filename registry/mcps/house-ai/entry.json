@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "house-ai",
+  "type": "mcp",
+  "name": "House AI",
+  "tagline": "Redesign any room from a photo",
+  "description": "AI interior and exterior design. Share a photo of a room, a house or a yard, pick one of 100+ styles, and get a photorealistic redesign of that same space. Also preview wall paint and flooring, empty or virtually stage a room, and find real furniture and decor to match. Sign in with a House AI account; designs use House AI credits.",
+  "author": {
+    "name": "House AI"
+  },
+  "tags": [
+    "creative"
+  ],
+  "verified": false,
+  "featured": false,
+  "icon": "./icon.png",
+  "install": {
+    "args": [
+      "house-ai",
+      "--transport",
+      "http",
+      "https://mcp.houseaiapp.com/mcp"
+    ]
+  },
+  "repo": "https://github.com/Apex-Byte-Technologies/house-ai-mcp",
+  "license": "MIT"
+}
