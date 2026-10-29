@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "cubi-estate",
+  "type": "mcp",
+  "name": "Cubi Estate",
+  "tagline": "Search live property listings for sale and rent across Europe",
+  "description": "Read-only European property search: natural-language search and structured filters over more than 2 million active sale and rental listings, full listing details with links to the original source, and day-by-day market statistics. No account or API key needed.",
+  "author": {
+    "name": "Cubi Estate"
+  },
+  "tags": [
+    "data",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cubi-estate",
+      "--transport",
+      "http",
+      "https://mcp.cubi.estate/mcp"
+    ]
+  },
+  "homepage": "https://www.cubi.estate",
+  "icon": "https://www.cubi.estate/icon.png"
+}
