@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "steadyscrape-jobs-data",
+  "type": "mcp",
+  "name": "SteadyScrape Jobs Data",
+  "tagline": "Live job postings from company career sites and remote jobs by eligible country.",
+  "description": "Remote MCP server with live job data for AI agents. Search open jobs straight from company applicant tracking systems (Greenhouse, Lever, Ashby, Workday, BambooHR, Workable and more), pull every job on a specific company board, and find remote jobs filtered by the countries and time zones a candidate can work from. Runs on Apify through the Apify MCP gateway; you need an Apify API token and pay Apify usage.",
+  "author": { "name": "SteadyScrape", "url": "https://github.com/steadyscrape" },
+  "tags": ["data", "research", "business"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "steadyscrape-jobs-data",
+      "--transport",
+      "http",
+      "https://mcp.apify.com/?tools=steady-scrape/ats-job-feed,steady-scrape/career-jobs-search,steady-scrape/remote-jobs-api",
+      "--header",
+      "Authorization: Bearer <APIFY_TOKEN>"
+    ],
+    "env": [
+      { "name": "APIFY_TOKEN", "required": true, "description": "Apify API token.", "url": "https://console.apify.com/settings/integrations" }
+    ]
+  },
+  "homepage": "https://github.com/steadyscrape/jobs-data-mcp",
+  "repo": "https://github.com/steadyscrape/jobs-data-mcp",
+  "license": "MIT"
+}
