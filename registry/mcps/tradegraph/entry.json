@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "tradegraph",
+  "type": "mcp",
+  "name": "TradeGraph",
+  "tagline": "Export sales for consumer brands: markets, buyers, follow-ups and shelf prices.",
+  "description": "TradeGraph is a free remote MCP server for consumer-goods makers who sell abroad (cosmetics, food, supplements, lifestyle). Ask in plain words and it answers from UN Comtrade trade statistics and anonymized reply data from real export emails sent through RINDA.\n\n- **Start here:** `gtm_plan` returns an export plan for a product: which markets first, which buyer types reply, how many follow-ups to send, what to check before selling, and a first-email draft.\n- **Markets and buyers:** `market_picks`, `buyer_targets`, `country_brief`, `export_rank`, `market_scan`.\n- **Outreach:** `outreach_playbook`, `reply_pace`.\n- **Before you sell:** `blind_spots` (certifications, registrations, extra duties), `price_ladder` (FOB to shelf price), `find_item` (HS code from a product name).\n- **Channels and content:** `channel_plan`, `image_studio`, `video_studio`.\n\nNo sign-up or API key. Without an account TradeGraph never spends money; an optional account adds prepaid live data calls.",
+  "author": {
+    "name": "GRINDA AI (RINDA)",
+    "url": "https://www.rinda.ai/en"
+  },
+  "homepage": "https://tradegraph.rinda.ai/?lang=en",
+  "icon": "https://tradegraph.rinda.ai/tradegraph-app-icon-512.png",
+  "tags": [
+    "sales",
+    "marketing",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "tradegraph",
+      "--transport",
+      "http",
+      "https://tradegraph.rinda.ai/mcp"
+    ],
+    "notes": "Try asking: \"Where should we export our sunscreen first?\" or \"Which buyer types reply most in Vietnam?\""
+  }
+}
