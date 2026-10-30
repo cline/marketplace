@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "entry",
+  "type": "mcp",
+  "name": "Entry",
+  "tagline": "Read and update your Entry personal page and drafts, with your approval",
+  "description": "Hosted remote MCP server for Entry (https://entry.fyi), a personal page and writing tool. Cline can read your profile and drafts, create and edit drafts, propose profile changes and request publication. Nothing goes public until you approve it in Entry. Sign in with OAuth; no API key.",
+  "author": {
+    "name": "Entry",
+    "url": "https://entry.fyi"
+  },
+  "homepage": "https://entry.fyi",
+  "repo": "https://github.com/entry-fyi/mcp",
+  "tags": [
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "entry",
+      "--transport",
+      "http",
+      "https://entry.fyi/mcp"
+    ],
+    "notes": "After install, sign in to Entry in your browser when Cline asks, then choose which Entries to share."
+  }
+}
