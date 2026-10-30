@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "tasarim-ai-catalog",
+  "type": "mcp",
+  "name": "tasarim.ai AI Catalog",
+  "tagline": "Find AI design tools, compare catalog records, and inspect stored evidence and limitations.",
+  "description": "Find AI design tools, compare catalog records, and inspect stored evidence and limitations.",
+  "author": {
+    "name": "tasarim.ai",
+    "url": "https://tasarim.ai"
+  },
+  "homepage": "https://tasarim.ai/en/mcp",
+  "tags": [
+    "creative",
+    "productivity"
+  ],
+  "verified": false,
+  "install": {
+    "args": [
+      "tasarim-ai-catalog",
+      "--transport",
+      "http",
+      "https://tasarim.ai/api/mcp"
+    ]
+  }
+}
