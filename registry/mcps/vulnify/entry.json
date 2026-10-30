@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "vulnify",
+  "type": "mcp",
+  "name": "Vulnify",
+  "tagline": "Runtime authorization for AI agent actions",
+  "description": "Vulnify is a runtime authorization layer for AI agents: every agent action gets ALLOW, REVIEW or BLOCK in real time, with an audit trail. Connect Cline over remote MCP (OAuth sign-in) to check risky tool calls before they run and route REVIEW decisions to a human for approval.",
+  "author": {
+    "name": "Vulnify"
+  },
+  "tags": [
+    "security",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "icon": "./icon.png",
+  "install": {
+    "args": [
+      "vulnify",
+      "--transport",
+      "http",
+      "https://mcp.vulnify.io/mcp"
+    ]
+  },
+  "homepage": "https://docs.vulnify.io",
+  "repo": "https://github.com/vulnify/vulnify-mcp",
+  "license": "MIT"
+}
