@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "beep-rent",
+  "type": "mcp",
+  "name": "BEEP.rent",
+  "tagline": "Search and book rental cars in Poland; agent developers can earn commission with partner API keys.",
+  "description": "BEEP.rent's first-party remote MCP server searches and compares rental cars in Poland, reads full offer prices, deposits and policies, prepares checkouts, and supports booking and reservation management. Pickups are in Poland; prices are in PLN. Payments are completed on beep.rent.\n\nPublic search and offer tools work without an API key. Account-linked tools use BEEP ID OAuth. Booking, cancellation and extension tools require the user's explicit authorization as described by each tool.\n\nAgent developers can join the BEEP Partner Programme and use a partner API key for attribution. The standard commission is 10% of the net rental value of eligible completed and settled rentals, excluding VAT and deposits, subject to programme terms. See https://beep.rent/pl-pl/program-partnerski/agenci-ai/ and https://beep.rent/pl-pl/regulamin-programu-partnerskiego/.",
+  "author": {
+    "name": "BEEP Rent Sp. z o.o.",
+    "url": "https://beep.rent/"
+  },
+  "homepage": "https://beep.rent/en-pl/ai-agents/",
+  "repo": "https://github.com/beep-rent/beep-agent-api",
+  "icon": "https://beep.rent/icons/favicon-512x512.png",
+  "tags": ["business", "sales"],
+  "verified": false,
+  "install": {
+    "args": ["beep-rent", "--transport", "http", "https://mcp.beep.rent/mcp"],
+    "notes": "Connects directly over Streamable HTTP. Public search needs no API key. For partner attribution, configure an Authorization: Bearer <your-partner-api-key> header in your client. Account-linked reservation tools require BEEP ID sign-in. Setup: https://beep.rent/en-pl/ai-agents/"
+  }
+}
