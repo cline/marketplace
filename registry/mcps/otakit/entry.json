@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "otakit",
+  "type": "mcp",
+  "name": "OtaKit",
+  "tagline": "Ship over-the-air updates for Capacitor apps",
+  "description": "The official OtaKit MCP server. Inspect apps, bundles and releases, prepare and publish a release to an exact channel after you approve it, control staged rollouts, read rollout health from client-reported events, and revert. Sign-in is OAuth 2.1 with per-tool scopes; organization API keys also work.",
+  "author": {
+    "name": "OtaKit",
+    "url": "https://otakit.app"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "otakit",
+      "--transport",
+      "http",
+      "https://console.otakit.app/mcp"
+    ]
+  },
+  "homepage": "https://otakit.app/docs/agents",
+  "repo": "https://github.com/OtaKit/otakit",
+  "icon": "https://www.otakit.app/logo.png",
+  "license": "MIT"
+}
