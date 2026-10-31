@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "handbookhub",
+  "type": "mcp",
+  "name": "HandbookHub",
+  "tagline": "Search employee handbooks and read saved policies with source links.",
+  "description": "Connect to HandbookHub's hosted MCP service to list authorized handbooks, browse page structures, search policies, and read source pages. Four read-only tools use scoped, revocable bearer tokens. Requires eligible HandbookHub access and an organization-owner-created API token. The integration files are MIT licensed; the hosted application is proprietary. Setup: https://handbookhub.com/mcp",
+  "author": { "name": "HandbookHub", "url": "https://handbookhub.com" },
+  "homepage": "https://handbookhub.com/mcp",
+  "repo": "https://github.com/veryayskiy/handbookhub-mcp",
+  "icon": "./icon.png",
+  "tags": ["business", "memory", "productivity"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "handbookhub",
+      "--transport",
+      "http",
+      "https://api.handbookhub.com/mcp",
+      "--header",
+      "Authorization: Bearer YOUR_API_TOKEN"
+    ],
+    "notes": "Replace YOUR_API_TOKEN with your own token in local client settings. Create it in HandbookHub Settings > API access as the organization owner, selecting allowed handbooks and expiry. Requires Starter/Growth access, an active subscription trial, or the included two-week Growth bonus. No OAuth. See https://handbookhub.com/mcp."
+  }
+}
