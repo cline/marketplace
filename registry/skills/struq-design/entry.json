@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "struq-design",
+  "type": "skill",
+  "name": "Struq Design",
+  "tagline": "Build cinematic, Awwwards-level marketing sites instead of templates",
+  "description": "A design skill for Next.js and Vite: two-face light typography, curated palettes, Lenis smooth scroll on one GSAP clock, SplitText, DrawSVG and MorphSVG, pinned showpieces, full-screen route transitions and React Three Fiber moments. Ask for a site and the skill drives the layout, type, colour and motion decisions, then verifies the build.",
+  "author": {
+    "name": "Struq",
+    "url": "https://struq.nl"
+  },
+  "homepage": "https://struq.nl/skill",
+  "repo": "https://github.com/struqnl/struq-design",
+  "icon": "./icon.svg",
+  "tags": [
+    "creative",
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "struqnl/struq-design",
+      "--skill",
+      "struq"
+    ]
+  }
+}

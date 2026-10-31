@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <style>
+    .bottom { fill: #e4572e; opacity: 0.9; }
+    .center { fill: #221d15; }
+    .top { fill: #221d15; opacity: 0.7; }
+    @media (prefers-color-scheme: dark) {
+      .bottom { fill: #ff6b3d; }
+      .center { fill: #f2ecdf; }
+      .top { fill: #f2ecdf; }
+    }
+  </style>
+  <rect class="bottom" x="18" y="60" width="64" height="18" rx="9" />
+  <rect class="center" x="26" y="41" width="48" height="18" rx="9" />
+  <rect class="top" x="34" y="22" width="32" height="18" rx="9" />
+</svg>
