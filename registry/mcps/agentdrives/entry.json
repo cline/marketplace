@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "agentdrives",
+  "type": "mcp",
+  "name": "AgentDrives",
+  "tagline": "Find software an agent can sign up for and use on its own, with levels from real test drives.",
+  "description": "AgentDrives is an independent lab. Our agent signs up for software products, uses them and tries to pay, and we publish how far it got. Ask for a task in plain words and get the products that fit, each with its level (0 to 5), what our agent got done and where it stopped. Read-only, no key needed.",
+  "author": {
+    "name": "AgentDrives",
+    "url": "https://agentdrives.com"
+  },
+  "homepage": "https://agentdrives.com/data#mcp",
+  "icon": "https://agentdrives.com/logo.png",
+  "tags": [
+    "research",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "agentdrives",
+      "--transport",
+      "http",
+      "https://agentdrives.com/api/mcp"
+    ]
+  }
+}
