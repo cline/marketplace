@@ -24,7 +24,7 @@
       "--header",
       "Authorization: Bearer <magic_hour_api_key>"
     ],
-    "notes": "Replace <magic_hour_api_key> with your own key from https://magichour.ai/developer?tab=api-keys in the installation wizard or MCP settings before calling tools. Keep the key private. Call account_retrieve to verify API access before spending credits. Save returned project IDs and use the matching wait_for_*_project tool to retrieve completed media."
+    "notes": "Replace <magic_hour_api_key> with your own key from https://magichour.ai/developer?tab=api-keys in the installation wizard or MCP settings before calling tools. Keep the key private. Call get_account_info to verify API access before spending credits. Save returned project IDs and use the matching wait_for_*_project tool to retrieve completed media."
   },
   "license": "Apache-2.0"
 }
