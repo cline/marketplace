@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "mobbin-skills",
+  "type": "skill",
+  "name": "Mobbin",
+  "tagline": "Search real app and website UI on Mobbin before you design or build",
+  "description": "Official Mobbin skills that guide agents to search Mobbin's UI screens, flows and website sections through the Mobbin MCP server, redesign screens from real references, and build reference boards. Pair with the Mobbin MCP entry.",
+  "author": {
+    "name": "Mobbin",
+    "url": "https://mobbin.com"
+  },
+  "homepage": "https://docs.mobbin.com/mcp/introduction",
+  "repo": "https://github.com/mobbin/skills",
+  "tags": [
+    "creative",
+    "research",
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "mobbin/skills"
+    ]
+  }
+}
