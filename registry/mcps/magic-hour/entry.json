@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "magic-hour",
+  "type": "mcp",
+  "name": "Magic Hour",
+  "tagline": "Create and edit images and video with Magic Hour.",
+  "description": "Connect Cline to Magic Hour for AI image and video creation and editing, project status, uploads, and finished-media downloads. Tool calls require a Magic Hour API key. Generation spends Magic Hour credits; check account access and obtain approval before generation.",
+  "author": {
+    "name": "Magic Hour",
+    "url": "https://magichour.ai"
+  },
+  "homepage": "https://magichour.ai/mcp",
+  "repo": "https://github.com/magichourhq/magic-hour-mcp",
+  "icon": "./icon.png",
+  "tags": ["creative"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "magic-hour",
+      "--transport",
+      "http",
+      "https://mcp.magichour.ai/",
+      "--header",
+      "Authorization: Bearer <magic_hour_api_key>"
+    ],
+    "notes": "Replace <magic_hour_api_key> with your own key from https://magichour.ai/developer?tab=api-keys in the installation wizard or MCP settings before calling tools. Keep the key private. Call get_account_info to verify API access before spending credits. Save returned project IDs and use the matching wait_for_*_project tool to retrieve completed media."
+  },
+  "license": "Apache-2.0"
+}
