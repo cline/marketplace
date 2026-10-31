@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "alphai",
+  "type": "mcp",
+  "name": "AlphAI",
+  "tagline": "Financial news for AI agents and trading bots",
+  "description": "Pre-analyzed financial news and SEC insider data. Every story carries per-ticker impact, a category and a 1-10 relevance score, so an agent filters before it reads. Full-text news search, stories across publishers, 8-K and 6-K earnings reads, Form 4 insider trades, the US macro calendar and news alerts. Hosted, OAuth sign-in, free tier (20 requests/min, 100/day, no card).",
+  "author": { "name": "AlphAI", "url": "https://alphai.io" },
+  "homepage": "https://alphai.io/mcp",
+  "repo": "https://github.com/makeev/alphai-mcp",
+  "icon": "./icon.svg",
+  "tags": ["finance", "data", "research"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["alphai", "--transport", "http", "https://mcp.alphai.io/mcp"]
+  }
+}
