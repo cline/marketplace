@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "hyperresearch-answers",
+  "type": "mcp",
+  "name": "Hyperresearch Answers",
+  "tagline": "One search tool for agents: 4 web engines and about 45 data sources, with quote-checked answers",
+  "description": "Every search provider has gaps. Hyperresearch Answers layers four web search engines with about 45 structured sources (company filings, statistics agencies, scholarly indexes, books, government records) into one MCP server.\n\n- **ask**: one question, a short answer checked word for word against quotes from its sources, or `not_found` instead of a guess.\n- **get_answer**: collects a pending answer by id (free).\n- **search**: ranked sources with verbatim passages, no synthesis.\n\nSign in with a Hyperresearch account on first use. Calls are paid from prepaid credit; new accounts get free credit.",
+  "author": {
+    "name": "Hyperresearch",
+    "url": "https://hyperresearch.ai"
+  },
+  "tags": [
+    "research",
+    "data"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "hyperresearch-answers",
+      "--transport",
+      "http",
+      "https://answers.hyperresearch.ai/mcp"
+    ],
+    "notes": "The first tool call opens a browser sign-in. For headless use, create an API key at https://console.hyperresearch.ai/#/keys and add --header \"Authorization: Bearer <YOUR_API_KEY>\"."
+  },
+  "homepage": "https://hyperresearch.ai/answers",
+  "repo": "https://github.com/jordan-gibbs/hyperresearch-answers",
+  "icon": "./icon.png"
+}
