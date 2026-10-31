@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "veridu",
+  "type": "mcp",
+  "name": "Veridu",
+  "tagline": "Verify Cline's code change before you commit it",
+  "description": "Veridu checks a code change before it is committed. Cline sends the diff and the changed files with verify_change; independent reviewers check it and return pass, review or block, with findings that give the file, line, severity and evidence. Follow-up checks after a fix say which findings persist and which are new. Also reviews GitHub pull requests. Sign in with OAuth; the free plan includes up to 20 reviews a month.",
+  "author": {
+    "name": "Veridu",
+    "url": "https://veridu.io"
+  },
+  "tags": [
+    "software",
+    "security"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "veridu",
+      "--transport",
+      "http",
+      "https://api.veridu.io/mcp"
+    ]
+  },
+  "homepage": "https://veridu.io",
+  "repo": "https://github.com/michaelw-pr/veridu-plugin",
+  "license": "MIT"
+}
