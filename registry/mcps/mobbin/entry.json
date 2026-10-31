@@ -10,11 +10,13 @@
     "url": "https://mobbin.com"
   },
   "homepage": "https://docs.mobbin.com/mcp/introduction",
+  "repo": "https://github.com/mobbin/skills",
   "tags": [
     "creative",
     "research",
     "software"
   ],
+  "license": "MIT",
   "verified": false,
   "featured": false,
   "install": {
