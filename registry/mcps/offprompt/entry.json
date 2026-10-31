@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "offprompt",
+  "type": "mcp",
+  "name": "offprompt",
+  "tagline": "Hand Cline an API key without the key entering the chat",
+  "description": "When a task needs an API key, a token or a password, Cline calls offprompt instead of asking you to paste it into the chat. A page opens in your browser on `127.0.0.1`, checks each value as you paste it against what offprompt knows of the provider's keys, and writes it into the project's `.env` or another file. Cline gets back the key names and a four-emoji fingerprint, never the values, so they stay out of the model's context and the transcript.\n\nNo account or API key of its own. MIT licensed, and it collects no telemetry.",
+  "author": {
+    "name": "offprompt",
+    "url": "https://offprompt.dev"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "security",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "offprompt",
+      "--",
+      "npx",
+      "-y",
+      "offprompt",
+      "mcp"
+    ],
+    "notes": "Needs Node.js 22 or later. In the VS Code extension, add `\"cwd\"` with your project's absolute path next to `command` in offprompt's entry in `cline_mcp_settings.json`: Cline names no project to the servers it starts, and offprompt writes only inside one. The Cline CLI starts the server in the folder it runs in and needs no `cwd`."
+  },
+  "homepage": "https://offprompt.dev",
+  "repo": "https://github.com/offprompt/offprompt",
+  "license": "MIT"
+}
