@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "struq",
+  "type": "mcp",
+  "name": "Struq",
+  "tagline": "Cinematic, award-winning web design for coding agents",
+  "description": "Struq picks a design direction from a short brief and hands Cline an ordered build plan for an Awwwards-level marketing site: a curated palette, a typography pairing, the project shell, a GSAP and Lenis motion system, and a spec for every section. Also audits React and Tailwind projects without reading their source. OAuth sign-in; free accounts get direction advice and the audit, Pro unlocks the full build line and the design library.",
+  "author": {
+    "name": "Struq",
+    "url": "https://struq.nl"
+  },
+  "homepage": "https://struq.nl",
+  "icon": "./icon.svg",
+  "tags": [
+    "creative",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "struq",
+      "--transport",
+      "http",
+      "https://struq.nl/api/mcp"
+    ]
+  }
+}
