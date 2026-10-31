@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "leadfast",
+  "type": "mcp",
+  "name": "LeadFast",
+  "tagline": "Find relevant Reddit threads for your product.",
+  "description": "Research your website, read relevant Reddit threads and manage product settings and alerts through your assistant. Each change requires approval. Login and payments stay on secure external pages. LeadFast never acts on Reddit. Setup opens up to 5 threads. Ordinary features require a trial or subscription.",
+  "author": {
+    "name": "Idle Pilot LLC",
+    "url": "https://leadfast.vip/about"
+  },
+  "homepage": "https://leadfast.vip/agents",
+  "repo": "https://github.com/cpienovi/leadfast-mcp",
+  "icon": "./icon.svg",
+  "tags": [
+    "marketing",
+    "sales",
+    "research"
+  ],
+  "verified": false,
+  "install": {
+    "args": [
+      "leadfast",
+      "--transport",
+      "http",
+      "https://leadfast.vip/mcp"
+    ],
+    "notes": "Connect with OAuth. Sign in or create an account on LeadFast. Read-only scopes are the default. Approve the specific scopes and each preview for changes."
+  }
+}
