@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "mondovo",
+  "type": "mcp",
+  "name": "Mondovo",
+  "tagline": "Build and publish professional websites from chat",
+  "description": "Build, edit, and publish professional websites in your Mondovo account from a conversation. Create designs from a business brief, refine pages and styling, and manage published sites through OAuth.",
+  "author": {
+    "name": "Mondovo",
+    "url": "https://mondovo.com"
+  },
+  "tags": [
+    "business",
+    "creative"
+  ],
+  "icon": "./icon.png",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "mondovo",
+      "--transport",
+      "http",
+      "https://app.mondovo.com/api/mcp/sites"
+    ]
+  },
+  "homepage": "https://app.mondovo.com/connectors",
+  "repo": "https://github.com/Mondovo/claude-plugin",
+  "license": "MIT"
+}
