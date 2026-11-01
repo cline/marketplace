@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "sequenzy-email-marketing",
+  "author": {
+    "name": "Sequenzy"
+  },
+  "tags": [
+    "marketing",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "homepage": "https://www.sequenzy.com",
+  "license": "MIT",
+  "type": "skill",
+  "name": "Sequenzy Email Marketing",
+  "tagline": "Use Sequenzy email marketing workflows from an AI agent",
+  "description": "First-party operating guide for Sequenzy subscribers, segments, campaigns, sequences, templates, transactional email and delivery analytics through its CLI, API and MCP. Includes reference documentation for supported workflows and permissions.",
+  "install": {
+    "args": [
+      "Sequenzy/skills",
+      "--skill",
+      "sequenzy-email-marketing"
+    ]
+  },
+  "repo": "https://github.com/Sequenzy/skills"
+}

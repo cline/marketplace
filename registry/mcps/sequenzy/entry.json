@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "sequenzy",
+  "author": {
+    "name": "Sequenzy"
+  },
+  "tags": [
+    "marketing",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "homepage": "https://www.sequenzy.com",
+  "license": "MIT",
+  "type": "mcp",
+  "name": "Sequenzy",
+  "tagline": "Operate email marketing through Sequenzy\u2019s hosted MCP server",
+  "description": "Manage subscribers, campaigns, automations and templates, send transactional email, and inspect delivery analytics. Connect to the hosted Streamable HTTP endpoint with your own Sequenzy account using OAuth. Tools can change account data and send real email.",
+  "install": {
+    "args": [
+      "sequenzy",
+      "--transport",
+      "http",
+      "https://api.sequenzy.com/v1/mcp"
+    ]
+  },
+  "repo": "https://github.com/Sequenzy/mcp"
+}
