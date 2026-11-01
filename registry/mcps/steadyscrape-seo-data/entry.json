@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "steadyscrape-seo-data",
+  "type": "mcp",
+  "name": "SteadyScrape SEO Data",
+  "tagline": "Keyword volume, live SERP ranks, backlinks, domain traffic and Google Trends for AI agents.",
+  "description": "Remote MCP server with live SEO data: keyword search volume and difficulty, live Google SERP positions, domain traffic estimates, keywords a domain ranks for, backlinks, Google Trends and YouTube search. Hosted on Apify; you need an Apify API token and pay per tool call through Apify.",
+  "author": { "name": "SteadyScrape", "url": "https://github.com/steadyscrape" },
+  "tags": ["marketing", "research", "data"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "steadyscrape-seo-data",
+      "--transport",
+      "http",
+      "https://steady-scrape-1--seo-data-mcp-server.apify.actor/mcp",
+      "--header",
+      "Authorization: Bearer <APIFY_TOKEN>"
+    ],
+    "env": [
+      { "name": "APIFY_TOKEN", "required": true, "description": "Apify API token.", "url": "https://console.apify.com/settings/integrations" }
+    ]
+  },
+  "homepage": "https://github.com/steadyscrape/seo-data-mcp",
+  "repo": "https://github.com/steadyscrape/seo-data-mcp",
+  "license": "MIT"
+}
