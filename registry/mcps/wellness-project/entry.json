@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "wellness-project",
+  "type": "mcp",
+  "name": "Wellness Project",
+  "tagline": "Connect your health, workouts, nutrition, sleep, and wearable data to Cline.",
+  "description": "Wellness Project is a hosted remote MCP server for a user's own health and fitness data. It connects workouts, nutrition, sleep, recovery, body metrics, goals, labs, and wearable sources in one place. Read data, explore trends, and log updates with an AI assistant. Uses Streamable HTTP and browser-based OAuth 2.1 with Dynamic Client Registration; no local server, API key, or client secret is needed. A Wellness Project account is required.",
+  "author": {
+    "name": "Wellness Project",
+    "url": "https://wellnessproject.ai"
+  },
+  "homepage": "https://wellnessproject.ai",
+  "repo": "https://github.com/turnnoblindeye/wellness-project-mcp",
+  "icon": "https://wellnessproject.ai/images/brand/mcp-icon-512.png",
+  "tags": [
+    "data",
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "wellness-project",
+      "--transport",
+      "http",
+      "https://wellnessproject.ai/api/mcp"
+    ],
+    "notes": "After adding the server, complete browser-based OAuth authorization with your Wellness Project account. Connect your health sources in Wellness Project under Settings → Devices. Setup instructions: https://github.com/turnnoblindeye/wellness-project-mcp/blob/main/llms-install.md"
+  }
+}
