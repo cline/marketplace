@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "dmd-costs",
+  "type": "mcp",
+  "name": "DMD Costs legal costs tools",
+  "tagline": "Free legal costs tools for England and Wales: CPR deadlines, Part 36, court fees and interest",
+  "description": "A remote MCP server from DMD Costs, law costs draftsmen in England. Free, read-only legal costs tools for England and Wales: CPR deadlines, detailed assessment, Part 36, fixed costs, court fees, interest on costs and judgments, limitation and more (39 tools). Each answer names the rule it applies and links to the page that explains it. Remote Streamable HTTP endpoint, no account or API key.",
+  "author": {
+    "name": "DMD Costs",
+    "url": "https://www.dmdcosts.co.uk"
+  },
+  "homepage": "https://www.dmdcosts.co.uk/legal-costs-help",
+  "repo": "https://github.com/Ments123/dmd-costs-mcp",
+  "icon": "https://raw.githubusercontent.com/Ments123/dmd-costs-mcp/main/icon.png",
+  "tags": [
+    "research",
+    "business"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "install": {
+    "args": [
+      "dmd-costs",
+      "--transport",
+      "http",
+      "https://www.dmdcosts.co.uk/mcp"
+    ]
+  }
+}
