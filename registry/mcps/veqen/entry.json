@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "veqen",
+  "type": "mcp",
+  "name": "Veqen",
+  "tagline": "Cost monitoring and protection for AI.",
+  "description": "See who spent every AI dollar: work and coding agents per person and team, product inference per customer, protection incidents and bill checks. Ask Cline where spending went, inspect provider key metadata and incidents, compare model prices, and prepare chargeback and the month-end close. Connect your Veqen account for private organization data; public price comparisons need no account. Work and coding agents are free for up to 3 people; product inference is free up to $1,000 in monthly AI spend. Authorized users can set budgets, record bills and credits, update prices, approve month-end records or invite teammates. Confirm changes before applying them. Account roles and plan limits apply. Provider-key shut-off is available only with the required role and provider permission. Destructive actions require confirmation, and organizations can require approval from a second person. SDK budget blocking is not a guaranteed cap; estimates are separate from invoices. Setup: https://veqen-app.com/docs/mcp. Public prices: https://veqen-app.com/mcp/prices. Start free: https://veqen-app.com/signup?utm_source=cline&utm_medium=directory&utm_campaign=launch-v1",
+  "author": {
+    "name": "Keyveve",
+    "url": "https://github.com/Keyveve"
+  },
+  "homepage": "https://veqen-app.com/docs/mcp",
+  "repo": "https://github.com/Keyveve/veqen-sdks",
+  "tags": [
+    "finance",
+    "data",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "veqen",
+      "--transport",
+      "http",
+      "https://veqen-app.com/mcp"
+    ],
+    "notes": "Sign in, select your organization, and review consent. For public model prices only, connect to https://veqen-app.com/mcp/prices instead. Never put provider admin keys or personal data into prompts or tags."
+  }
+}
