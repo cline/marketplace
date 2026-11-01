@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "aggregate",
+  "type": "mcp",
+  "name": "Aggregate",
+  "tagline": "Every company's cash, runway, invoices and payroll in one ledger your AI can read.",
+  "description": "Aggregate keeps one or more companies' money, plus a private Personal space, in one double-entry ledger built from banks and cards (Plaid, Mercury, Brex, Ramp, Wise), payments (Stripe, Square, Shopify), accounting (QuickBooks, Xero) and payroll. Ask about cash, burn, runway, receivables, recurring spend and monthly close, with numbers from fixed definitions and missing data reported as unknown, never zero.\n\nIt's read-only to your banks, Stripe and other providers; it can't move money. Anything your AI records (cash sales, paper bills, corrections) is labeled and can be undone for 30 days, and closing books always waits for a person. You choose which companies and kinds of data each connection sees, and can pause or revoke it any time.\n\nHosted at app.aggregate.finance (sign in with OAuth when Cline connects). Open source (AGPL-3.0).",
+  "author": {
+    "name": "Aggregate",
+    "url": "https://aggregate.finance"
+  },
+  "homepage": "https://aggregate.finance",
+  "icon": "https://app.aggregate.finance/favicon.svg",
+  "tags": [
+    "finance",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "aggregate",
+      "--transport",
+      "http",
+      "https://app.aggregate.finance/mcp"
+    ]
+  },
+  "repo": "https://github.com/Izzy-Gottz/aggregate-finance",
+  "license": "AGPL-3.0-only"
+}
