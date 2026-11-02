@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "narva",
+  "type": "mcp",
+  "name": "Narva",
+  "tagline": "Faceless YouTube videos and Shorts from a topic or a script",
+  "description": "Make faceless YouTube videos and Shorts from a topic, a script or a voiceover: script, AI narration in 32 languages, AI visuals in 12 styles, archive footage, animated maps and charts, word-synced captions, music and thumbnails. Edit in plain words, cut Shorts from long videos and publish or schedule them to your YouTube channel.",
+  "author": {
+    "name": "Narva",
+    "url": "https://narva.app"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "creative",
+    "marketing"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "narva",
+      "--transport",
+      "http",
+      "https://narva.app/mcp"
+    ]
+  },
+  "homepage": "https://narva.app",
+  "repo": "https://github.com/Negmus/narva-mcp",
+  "license": "MIT"
+}
