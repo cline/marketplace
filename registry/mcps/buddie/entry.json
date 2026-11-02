@@ -24,7 +24,7 @@
       "buddie",
       "--",
       "uvx",
-      "buddie@2.0.5",
+      "buddie@2.0.8",
       "serve"
     ],
     "env": [
@@ -35,6 +35,6 @@
         "url": "https://github.com/settings/personal-access-tokens"
       }
     ],
-    "notes": "Requires uv and Python 3.11 or newer. The first start downloads the package; if Cline reports an initialize timeout on that first start, retry once (or run `uvx buddie@2.0.5 --version` beforehand). `snap` and `verify_report` fetch the URLs a report cites and write snapshots to ./.verbatim (or $VERBATIM_STORE). Privacy: https://github.com/tsyyan/buddie/blob/v2.0.5/PRIVACY.md"
+    "notes": "Requires uv and Python 3.11 or newer. The first start downloads the package; if Cline reports an initialize timeout on that first start, retry once (or run `uvx buddie@2.0.8 --version` beforehand). `snap` and `verify_report` fetch the URLs a report cites and write snapshots to ./.verbatim (or $VERBATIM_STORE). Privacy: https://github.com/tsyyan/buddie/blob/v2.0.8/PRIVACY.md"
   }
 }
