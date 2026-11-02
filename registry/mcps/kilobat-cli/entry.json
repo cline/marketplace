@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "kilobat-cli",
+  "type": "mcp",
+  "name": "Kilobat CLI",
+  "tagline": "Local macOS network diagnostics for agents.",
+  "description": "Kilobat CLI provides Wi-Fi, DNS and host-connection diagnostics through a local stdio MCP server. The CLI is GPL-3.0-only; the separate Kilobat desktop app is proprietary. Some Wi-Fi information requires the desktop app and Location permission, and system-changing actions may require authorization.",
+  "author": {
+    "name": "Philip Seifi",
+    "url": "https://github.com/seifip"
+  },
+  "homepage": "https://kilobat.app",
+  "repo": "https://github.com/seifip/kilobat-cli",
+  "tags": [
+    "software"
+  ],
+  "license": "GPL-3.0-only",
+  "verified": false,
+  "install": {
+    "args": [
+      "kilobat",
+      "--",
+      "kilobat",
+      "mcp"
+    ],
+    "notes": "macOS 14 or later. Install the CLI first with `brew install seifip/kilobat/kilobat`; this source build requires Xcode 16 or newer. Then run this command in a terminal to open the Cline MCP setup wizard."
+  }
+}
