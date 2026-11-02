@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "watchr",
+  "type": "mcp",
+  "name": "Watchr",
+  "tagline": "Bring competitive intelligence from Watchr into Cline",
+  "description": "Connect Cline to your Watchr workspace to search monitored brands, validated insights, and reports. Watchr collects signals from competitor websites, ads, social posts, and news. Authorized OAuth administrators can preview and apply bounded workspace changes; personal API keys remain read-only.",
+  "author": {
+    "name": "Watchr",
+    "url": "https://www.watchr.ai"
+  },
+  "homepage": "https://www.watchr.ai",
+  "repo": "https://github.com/getwatchr/watchr-mcp",
+  "tags": [
+    "marketing",
+    "research",
+    "sales"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "watchr",
+      "--transport",
+      "http",
+      "https://mcp.watchr.ai/mcp"
+    ],
+    "notes": "Sign in with Watchr OAuth when prompted. Workspace access and write actions depend on your Watchr permissions."
+  }
+}
