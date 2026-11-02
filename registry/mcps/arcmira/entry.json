@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "arcmira",
+  "type": "mcp",
+  "name": "Arcmira: YouTube Transcript Search",
+  "tagline": "Find quotes in YouTube videos and podcasts and jump to the timestamp.",
+  "description": "Search indexed YouTube transcripts for a phrase or topic. Get the passage and a timestamped source link, or look up speaker appearances, sponsors and recommendations. [API documentation](https://arcmira.com/docs).",
+  "author": { "name": "Arcmira", "url": "https://arcmira.com" },
+  "homepage": "https://arcmira.com",
+  "repo": "https://github.com/arcmira/mcp",
+  "icon": "https://mcp.arcmira.com/icon.png",
+  "tags": ["research", "data", "creative"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["arcmira", "--transport", "http", "https://mcp.arcmira.com/mcp"],
+    "notes": "Sign in to your Arcmira account with OAuth. Setup guide: https://arcmira.com/docs/mcp-server"
+  }
+}
