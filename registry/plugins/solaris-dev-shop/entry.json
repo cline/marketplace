@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/plugin.schema.json",
+  "id": "solaris-dev-shop",
+  "type": "plugin",
+  "name": "Solaris DevShop",
+  "tagline": "Chief of Staff coordination and 61 specialist workflows in one plugin.",
+  "description": "Bundles a Chief of Staff coordinator and 61 specialist workflows for engineering, QA, security, data, design and delivery. The bounded solaris_intake tool returns an accountable role assignment; specialist workflows include contained local delivery, recovery and evidence tools. The full skill bodies and resources ship together in the package. No Docker installation, background service or repository/account access grant is triggered by skill loading.",
+  "author": {
+    "name": "Solaris Technologies",
+    "url": "https://solaristek.com"
+  },
+  "homepage": "https://github.com/Shaisolaris/solaris-dev-shop-cline",
+  "repo": "https://github.com/Shaisolaris/solaris-dev-shop-cline",
+  "tags": [
+    "software",
+    "productivity",
+    "security"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "solaris-dev-shop"
+    ],
+    "notes": "Includes Chief of Staff and 61 specialist skills. Local workflow scripts require their documented runtimes and the host permission checks."
+  }
+}

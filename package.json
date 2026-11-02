@@ -6,6 +6,6 @@
   "scripts": {
     "validate": "node scripts/generate.mjs --check",
     "generate": "node scripts/generate.mjs",
-    "build": "node scripts/generate.mjs"
+    "build": "node init && node scripts/generate.mjs"
   }
 }
