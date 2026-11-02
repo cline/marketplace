@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "sofya",
+  "type": "mcp",
+  "name": "Sofya",
+  "tagline": "Web search, page fetch, extraction and deep research for agents",
+  "description": "Web tools for AI agents. Search the web and get full page content instead of snippets, fetch URLs as clean markdown (PDFs and Office documents included), extract specific information from a page with a prompt, and run multi-source research that returns a cited report. Hosted remote server; sign in with OAuth, or pass a Sofya API key as a Bearer token.",
+  "author": {
+    "name": "Sofya",
+    "url": "https://sofya.co"
+  },
+  "homepage": "https://sofya.co/docs",
+  "repo": "https://github.com/sofya-co/sofya-mcp",
+  "icon": "./icon.png",
+  "tags": [
+    "research"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "sofya",
+      "--transport",
+      "http",
+      "https://mcp.sofya.co/mcp"
+    ],
+    "notes": "Sign in with your Sofya account when prompted (OAuth). To use an API key instead, add --header \"Authorization: Bearer <SOFYA_API_KEY>\". New accounts get free monthly credits."
+  }
+}
