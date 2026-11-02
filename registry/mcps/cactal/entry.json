@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "cactal",
+  "type": "mcp",
+  "name": "Cactal",
+  "tagline": "Build, publish and update websites from Cline: pages, CMS content, forms and domains.",
+  "description": "Cactal is a website platform for people and AI agents. Connect it and Cline can create a website, write its pages, publish it on a free Cactal address and keep it up to date: CMS content, forms and their submissions, images and custom domains. Every edit keeps a version that can be restored, and tools that publish, change the live site or delete are marked destructive. Sign in with OAuth 2.1 when Cline asks; no API key to paste. A Cactal account is free; a site on your own domain needs Pro ($25 a month). Docs: https://cactal.ai/docs/agents/mcp",
+  "author": {
+    "name": "Cactal",
+    "url": "https://cactal.ai"
+  },
+  "homepage": "https://cactal.ai/docs/agents/mcp",
+  "icon": "./icon.png",
+  "tags": [
+    "software",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cactal",
+      "--transport",
+      "http",
+      "https://api.cactal.ai/v1/mcp"
+    ]
+  }
+}
