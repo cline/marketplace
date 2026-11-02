@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "aiagentcycle",
+  "type": "mcp",
+  "name": "AIAgentCycle",
+  "tagline": "Sourced facts on Dutch n8n automation, AI agents and integrations.",
+  "description": "Public read-only MCP server for sourced AIAgentCycle information in Dutch and English, including integrations, services, indicative prices, case studies, knowledge-base articles and public contact routes.",
+  "author": {
+    "name": "AIAgentCycle"
+  },
+  "repo": "https://github.com/aiagentcycle/aiagentcycle-mcp",
+  "homepage": "https://aiagentcycle.com/nl/koppelingen/mcp/",
+  "icon": "https://mcp.aiagentcycle.com/icon-512.png",
+  "tags": ["business", "productivity", "software"],
+  "verified": false,
+  "featured": false,
+  "license": "MIT",
+  "install": {
+    "args": [
+      "aiagentcycle",
+      "--transport",
+      "http",
+      "https://mcp.aiagentcycle.com/mcp"
+    ]
+  }
+}
