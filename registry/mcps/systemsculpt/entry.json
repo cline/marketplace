@@ -7,9 +7,9 @@
   "description": "SystemSculpt is an AI plugin for Obsidian. This hosted MCP server lets an agent work with a person's SystemSculpt account over OAuth: plan, credits, usage, billing links, gifts, sign-in sessions and server-side captures, each behind its own permission. It reads and changes data on SystemSculpt's servers only and has no access to the local vault. Hosted AI and capture processing go through SystemSculpt's server and its model providers.",
   "author": {
     "name": "SystemSculpt",
-    "url": "https://systemsculpt.com"
+    "url": "https://systemsculpt.com/?utm_source=mcp-directory&utm_medium=referral&utm_campaign=evergreen&utm_content=cline"
   },
-  "homepage": "https://systemsculpt.com/obsidian-ai-plugin-docs/agents",
+  "homepage": "https://systemsculpt.com/obsidian-ai-plugin-docs/agents?utm_source=mcp-directory&utm_medium=referral&utm_campaign=evergreen&utm_content=cline",
   "icon": "https://systemsculpt.com/images/brand/logo-512.png",
   "tags": [
     "productivity"
