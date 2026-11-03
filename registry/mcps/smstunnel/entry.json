@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "smstunnel",
+  "type": "mcp",
+  "name": "SMSTunnel",
+  "tagline": "Send texts from your own Android phone and your own number, with your OK before each one",
+  "description": "SMSTunnel lets Cline send texts (SMS) from your own Android phone, from your own number. The SMSTunnel app on the phone sends each text from its own SIM, so people see a number they know and can reply.\n\n- **send_sms**: one text to one number; for several people, Cline shows you the whole list first and sends one text per person.\n- **send_sign_in_code**: a sign-in or verification code (4 to 10 digits), from a separate allowance.\n- **get_message_status**: pending, sent, delivered, failed or unconfirmed.\n- **list_phones** and **get_usage**: your phones, which are online, and what is left today.\n- **list_received_texts**: texts your phone received, only if you turn it on.\n- **find_contact**: a number by a name you saved in SMSTunnel, only if you turn it on.\n\nCline shows you the number and the words before anything is sent, never resends a failed text on its own, and treats received texts as information, never as instructions.",
+  "author": {
+    "name": "SMSTunnel",
+    "url": "https://smstunnel.io"
+  },
+  "homepage": "https://smstunnel.io/integrations/mcp/",
+  "repo": "https://github.com/narcisbodea/smstunnel-mcp",
+  "icon": "./icon.png",
+  "license": "MIT",
+  "tags": ["productivity", "business"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["smstunnel", "--", "npx", "-y", "@narcisbodea/smstunnel-mcp"],
+    "env": [
+      {
+        "name": "SMSTUNNEL_API_KEY",
+        "required": true,
+        "description": "Your SMSTunnel key: in the SMSTunnel dashboard, Apps → Add an app.",
+        "url": "https://dashboard.smstunnel.io/apps"
+      },
+      {
+        "name": "SMSTUNNEL_DEFAULT_COUNTRY_CODE",
+        "required": false,
+        "description": "Optional, for example +40 or 1: completes numbers written without + or 00."
+      }
+    ],
+    "notes": "First install the SMSTunnel app from Google Play on your Android phone and sign in: https://play.google.com/store/apps/details?id=io.smstunnel.app"
+  }
+}
