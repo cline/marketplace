@@ -9,10 +9,13 @@
     "name": "Yuxian Li",
     "url": "https://github.com/Liyux3"
   },
-  "homepage": "https://github.com/Liyux3/scholar-mcp",
+  "homepage": "https://liyux3.github.io/scholar-mcp/",
   "repo": "https://github.com/Liyux3/scholar-mcp",
   "icon": "./icon.svg",
-  "tags": ["research", "memory"],
+  "tags": [
+    "research",
+    "memory"
+  ],
   "license": "Apache-2.0",
   "verified": false,
   "featured": false,
@@ -21,8 +24,12 @@
       "scholar",
       "--",
       "uvx",
+      "--python",
+      "3.12",
+      "--find-links",
+      "https://github.com/Liyux3/scholar-mcp/releases/download/v0.9.0/wheel-index.html",
       "--from",
-      "scholar-mcp==0.8.4",
+      "scholar-mcp[rerank]==0.9.0",
       "scholar-mcp"
     ]
   }
