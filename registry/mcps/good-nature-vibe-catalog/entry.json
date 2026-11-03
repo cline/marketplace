@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "good-nature-vibe-catalog",
+  "type": "mcp",
+  "name": "Good Nature Vibe Catalog",
+  "tagline": "Read-only product catalog and knowledge search with no checkout.",
+  "description": "Public MCP server for searching the Good Nature Vibe product catalog and knowledge base through six read-only tools. It has no login, cart, checkout, orders, payments or transaction functions.",
+  "author": {
+    "name": "Good Nature Vibe",
+    "url": "https://goodnaturevibe.com"
+  },
+  "repo": "https://github.com/aiagentcycle/gnv-catalog-mcp",
+  "homepage": "https://goodnaturevibe.com",
+  "icon": "https://catalog-mcp.goodnaturevibe.com/icon-192.png",
+  "tags": ["business", "research", "data"],
+  "verified": false,
+  "featured": false,
+  "license": "MIT",
+  "install": {
+    "args": [
+      "good-nature-vibe-catalog",
+      "--transport",
+      "http",
+      "https://catalog-mcp.goodnaturevibe.com/mcp"
+    ]
+  }
+}
