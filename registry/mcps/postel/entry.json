@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "postel",
+  "type": "mcp",
+  "name": "Postel",
+  "tagline": "Turn viral posts in your niche into your own, then schedule them",
+  "description": "Postel's hosted MCP server finds posts that are going viral in your niche, writes your version in your own voice, and schedules or publishes it to X (Twitter), LinkedIn, Bluesky and Mastodon after you approve.\n\n- `search-viral-tweets` works without an account\n- 17 tools: drafts, threads, media from URLs, LinkedIn first comments, up to 25 posts per call, scheduling and publishing\n- Posts go through each network's official API; it doesn't read feeds or messages, and it doesn't like, reply or follow\n\nSign-in is OAuth 2.1 on first use, or an API key from Postel (Settings > API Keys) sent as `Authorization: Bearer pstl_...`. Scheduling and publishing need a paid Postel plan or trial.",
+  "author": {
+    "name": "Postel",
+    "url": "https://www.postel.app"
+  },
+  "homepage": "https://www.postel.app/postel-mcp-server?utm_source=cline&utm_medium=listing&utm_campaign=agent-distribution",
+  "repo": "https://github.com/robinfaraj/postel-mcp",
+  "icon": "./icon.png",
+  "tags": [
+    "marketing",
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "postel",
+      "--transport",
+      "http",
+      "https://www.postel.app/api/mcp"
+    ],
+    "notes": "Cline opens Postel's sign-in page the first time a tool needs your account. Connect your networks in Postel under Settings > Channels before your first post."
+  }
+}
