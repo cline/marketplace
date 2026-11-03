@@ -25,6 +25,6 @@
       "http",
       "https://mcp.sofya.co/mcp"
     ],
-    "notes": "Sign in with your Sofya account when prompted (OAuth). To use an API key instead, add --header \"Authorization: Bearer <SOFYA_API_KEY>\". New accounts get free monthly credits."
+    "notes": "Sign in with your Sofya account when prompted (OAuth). To use an API key instead, add --header \"Authorization: Bearer <SOFYA_API_KEY>\". Eligible GitHub accounts get free monthly credits."
   }
 }
