@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "moneycoach",
+  "type": "mcp",
+  "name": "MoneyCoach",
+  "tagline": "Explore your personal finances with MoneyCoach",
+  "description": "Connect your MoneyCoach account to access 12 read-only finance tools. Requires the MoneyCoach app, an account with cloud access, and Premium Max. Sign in and authorize access through OAuth.",
+  "author": {
+    "name": "MoneyCoach",
+    "url": "https://moneycoach.ai"
+  },
+  "homepage": "https://moneycoach.ai",
+  "icon": "https://moneycoach.ai/images/moneycoach-icon.png",
+  "tags": [
+    "finance"
+  ],
+  "verified": false,
+  "install": {
+    "args": [
+      "moneycoach",
+      "--transport",
+      "http",
+      "https://mcp.moneycoach.ai/mcp"
+    ]
+  }
+}
