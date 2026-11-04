@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "memocore",
+  "type": "mcp",
+  "name": "Memocore",
+  "tagline": "Cloud memory for AI agents and teams — save, search, recall.",
+  "description": "Memocore is cloud memory for AI agents and teams. Your agent saves decisions, project details and how your team works, then finds them again in the next chat. The same memory is available in Claude, ChatGPT, Cursor and any other AI tool connected to your account, and a team can share one memory across all its agents.\n\nThe server is hosted by Memocore, so there is nothing to install or run.",
+  "author": { "name": "Memocore", "url": "https://memocore.ai" },
+  "homepage": "https://memocore.ai",
+  "repo": "https://github.com/ANLTD/memocore-mcp",
+  "icon": "./icon.svg",
+  "tags": ["memory", "productivity"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["memocore", "--transport", "http", "https://memocore.ai/mcp"],
+    "notes": "No API keys to paste: Cline opens the Memocore sign-in page when it connects. A Memocore account is required. The free plan is enough to start, and you can sign up during the first sign-in."
+  }
+}
