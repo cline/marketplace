@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "arcmira-find-quotes",
+  "type": "skill",
+  "name": "Find timestamped quotes with Arcmira",
+  "tagline": "Find a quote in indexed YouTube and podcast transcripts, then open the recording at the matching timestamp.",
+  "description": "Search for a phrase or topic, check the surrounding transcript lines and return a quote with its source link. Use the timestamps to review a clip before editing. Requires the [Arcmira MCP connection](https://arcmira.com/docs/mcp-server) and an Arcmira account. [API documentation](https://arcmira.com/docs).",
+  "author": { "name": "Arcmira", "url": "https://arcmira.com" },
+  "homepage": "https://arcmira.com",
+  "repo": "https://github.com/arcmira/mcp",
+  "icon": "https://mcp.arcmira.com/icon.png",
+  "tags": ["research", "creative"],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["arcmira/mcp", "--skill", "find-quotes"]
+  }
+}
