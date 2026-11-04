@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "wpbay",
+  "type": "mcp",
+  "name": "WPBay",
+  "tagline": "Find and compare WordPress plugins, themes and WooCommerce extensions.",
+  "description": "Search WPBay for WordPress plugins, themes, scripts and services. Retrieve product details and compare products by listed prices, compatibility, licensing, ratings and maintenance information. Helps developers find existing solutions while building websites. Public, read-only access with no account or API key required.",
+  "author": {
+    "name": "WPBay",
+    "url": "https://wpbay.com/"
+  },
+  "homepage": "https://wpbay.com/wpbays-mcp-server-documentation/",
+  "tags": ["software", "research"],
+  "verified": false,
+  "install": {
+    "args": [
+      "wpbay",
+      "--transport",
+      "http",
+      "https://mcp.wpbay.com/mcp"
+    ],
+    "notes": "Uses Streamable HTTP without authentication. Tools: search_wordpress_software, get_wordpress_product, compare_wordpress_products."
+  }
+}
