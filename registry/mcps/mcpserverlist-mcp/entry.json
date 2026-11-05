@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "mcpserverlist-mcp",
+  "type": "mcp",
+  "name": "mcpserverlist-mcp",
+  "tagline": "Check if your MCP server is ready for MCP directories, then get it submitted.",
+  "description": "Check if your MCP server is ready for MCP directories, then get it submitted.",
+  "author": {
+    "name": "sudomichael",
+    "url": "https://github.com/sudomichael"
+  },
+  "repo": "https://github.com/sudomichael/mcpserverlist-mcp",
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "install": {
+    "args": [
+      "mcpserverlist-mcp",
+      "--transport",
+      "http",
+      "https://mcpserverlist.io/mcp"
+    ]
+  }
+}
