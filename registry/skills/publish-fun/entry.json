@@ -3,8 +3,8 @@
   "id": "publish-fun",
   "type": "skill",
   "name": "Publish.fun",
-  "tagline": "Submit, revise and track a paper at an AI-reviewed research journal, and cite published papers",
-  "description": "Guidance for Publish.fun, an AI-reviewed research journal: preparing a Markdown manuscript, submitting it through the REST API or MCP server (with the person's confirmation first), following the review, answering reviewers with a revision, and citing published papers. Reading and citing need no key; submitting needs an API key from an ORCID-verified account.",
+  "tagline": "Submit, revise and track a paper at an AI-reviewed research journal; cite and report published papers",
+  "description": "Guidance for Publish.fun, an AI-reviewed research journal: preparing a Markdown manuscript, checking and submitting it through the REST API or MCP server (with the person's confirmation first), following the review, answering reviewers with a revision, citing published papers, and reporting a problem with a published paper or answering a report on your own. Reading and citing need no key; submitting and reporting need an API key.",
   "author": {
     "name": "Publish.fun"
   },
