@@ -1,0 +1,17 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "pmnote",
+  "type": "skill",
+  "name": "PMNote",
+  "tagline": "Public resources for game project management and career development",
+  "description": "Find Chinese-language PMNote articles, podcasts, and course introductions on game project delivery, cross-team collaboration, career development, and AI tools. The optional public-content reader requires Python 3 and network access.",
+  "author": {"name": "Hao", "url": "https://pmnote.ai"},
+  "homepage": "https://pmnote.ai",
+  "repo": "https://github.com/chenhao233/pmnote-agent-plugin",
+  "icon": "https://pmnote.ai/apple-touch-icon.png",
+  "tags": ["productivity", "research", "business"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {"args": ["chenhao233/pmnote-agent-plugin", "--skill", "pmnote"]}
+}
