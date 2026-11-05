@@ -3,8 +3,8 @@
   "id": "publish-fun",
   "type": "mcp",
   "name": "Publish.fun",
-  "tagline": "Submit, revise and track papers in an AI-reviewed research journal, and cite published ones",
-  "description": "Publish.fun is an AI-reviewed research journal. Its MCP server lets Cline read the submission guidelines and cite published papers without a key. With an API key from an ORCID-verified account, it can also submit a paper, check its review status, send a revision and upload figures.",
+  "tagline": "Submit, revise and track papers in an AI-reviewed research journal; cite and report published ones",
+  "description": "Publish.fun is an AI-reviewed research journal. Its MCP server lets Cline read the submission guidelines, dry-run a submission, cite published papers and read a paper's public record of reports without a key. With an API key, it can also submit a paper, check its review status, send a revision or a correction, upload figures, report a problem with a published paper, and answer reports on your own papers.",
   "author": {
     "name": "Publish.fun"
   },
@@ -27,7 +27,7 @@
       {
         "name": "PUBLISHFUN_API_KEY",
         "required": false,
-        "description": "Publish.fun API key from https://publish.fun/dashboard. Needed to submit, revise, check status and upload figures; not needed to read the guidelines or cite papers.",
+        "description": "Publish.fun API key from https://publish.fun/dashboard. Needed to submit, revise, check status, upload figures, and file or answer reports; not needed to read the guidelines, dry-run a submission, cite papers or read a paper's reports.",
         "url": "https://publish.fun/dashboard"
       }
     ]
