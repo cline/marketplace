@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "openmymemo",
+  "type": "mcp",
+  "name": "OpenMyMemo",
+  "tagline": "Your AI memory as a local folder you own. Every app shares it; you see and can undo each change.",
+  "description": "OpenMyMemo keeps what AI assistants know about you in a folder of Markdown files on your own computer (`~/OpenMyMemo`). Cline can read your memory and save what it learns about you. Additions apply right away and show up in a digest in the OpenMyMemo panel (http://127.0.0.1:8787 while Cline runs), where you can undo them; changes to anything you wrote yourself, and the private health and finance topics, wait for you. The same folder works in Claude Code, Codex, Cursor, VS Code and other MCP apps, so what you tell one, the others know too. No account and no telemetry. Needs [uv](https://docs.astral.sh/uv/).",
+  "author": { "name": "MyMemo", "url": "https://github.com/MyMemoAI" },
+  "homepage": "https://github.com/MyMemoAI/openmymemo",
+  "repo": "https://github.com/MyMemoAI/openmymemo",
+  "icon": "./icon.png",
+  "tags": ["memory", "productivity"],
+  "license": "Apache-2.0",
+  "verified": false,
+  "install": {
+    "args": ["openmymemo", "--", "uvx", "openmymemo", "mcp", "--connector", "cline", "--init", "--panel-port", "8787"],
+    "notes": "Needs uv (https://docs.astral.sh/uv/). The first start downloads OpenMyMemo and Python if needed, usually under a minute; if Cline reports a timeout, restart the server once. Your memory is the folder ~/OpenMyMemo; review what Cline saves at http://127.0.0.1:8787 while Cline runs."
+  }
+}
