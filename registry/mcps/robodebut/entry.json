@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "robodebut",
+  "type": "mcp",
+  "name": "RoboDebut",
+  "tagline": "Submit websites and startups to RoboDebut for manual review.",
+  "description": "Submit websites and startups to RoboDebut through submit_project after the user authorizes submission. Read submission_instructions for the current rules. Ordinary submissions require a visible followed RoboDebut homepage badge and a private maker contact email. An operator reviews each proposal before publication. RoboDebut is affiliated with LinkBunny.",
+  "author": {
+    "name": "RoboDebut",
+    "url": "https://robodebut.com"
+  },
+  "homepage": "https://robodebut.com",
+  "tags": [
+    "marketing",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "robodebut",
+      "--transport",
+      "http",
+      "https://robodebut.com/api/mcp"
+    ],
+    "notes": "Read https://robodebut.com/llms.txt before submitting. This endpoint uses anonymous, stateless Streamable HTTP. Protocol checks used the official TypeScript SDK 2.4.0; Cline runtime acceptance has not been tested."
+  }
+}
