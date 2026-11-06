@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "imagera",
+  "type": "mcp",
+  "name": "Imagera",
+  "tagline": "Generate and edit images, video, voice and music from Cline",
+  "description": "Remote MCP server for image, video, voice, music and 3D generation and editing on an Imagera account (OAuth sign-in, no API key in config). Every billable tool states its credit cost, and a free estimate_cost tool returns the exact cost of a request before anything runs. Skills tools run multi-step jobs such as product photo sets, storyboards and consistent characters.",
+  "author": {
+    "name": "Imagera"
+  },
+  "homepage": "https://imagera.ai/mcp",
+  "icon": "./icon.svg",
+  "tags": [
+    "creative"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "imagera",
+      "--transport",
+      "http",
+      "https://mcp.imagera.ai/mcp"
+    ]
+  },
+  "repo": "https://github.com/alexadams6ix/imagera-skills",
+  "license": "MIT"
+}

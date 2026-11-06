@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "imagera-skills",
+  "type": "skill",
+  "name": "Imagera skills",
+  "tagline": "37 skills for media jobs run through the Imagera MCP server",
+  "description": "Agent skills for multi-step media jobs on Imagera: product listing photo sets, ad variations, UGC reviews, photo-to-reel, storyboard to shots, Character, Object and Location IDs that keep a subject consistent, and a base skill for any single image, clip, voiceover or track. Each skill runs through the Imagera MCP server (add it with the Imagera MCP entry) and quotes the credit cost before it starts.",
+  "author": {
+    "name": "Imagera"
+  },
+  "homepage": "https://imagera.ai/skills",
+  "repo": "https://github.com/alexadams6ix/imagera-skills",
+  "icon": "./icon.svg",
+  "tags": [
+    "creative",
+    "marketing"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "alexadams6ix/imagera-skills"
+    ]
+  }
+}
