@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "gsc-magic",
+  "type": "mcp",
+  "name": "GSC Magic",
+  "tagline": "Google Search Console, Bing and GA4 data with ready-made SEO reports.",
+  "description": "Hosted MCP server for your own Google Search Console, Bing Webmaster Tools, Google Analytics 4, IndexNow and Core Web Vitals data. Besides raw search analytics, URL inspection and sitemaps, it has finished SEO reports: quick wins, traffic drops, content decay, cannibalization, CTR outliers, brand vs non-brand, index health and Google vs Bing. Sign in with OAuth; free plan available.",
+  "author": {
+    "name": "GSC Magic",
+    "url": "https://gscmagic.com"
+  },
+  "tags": [
+    "marketing",
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "icon": "./icon.png",
+  "install": {
+    "args": [
+      "gsc-magic",
+      "--transport",
+      "http",
+      "https://mcp.gscmagic.com/mcp"
+    ]
+  },
+  "homepage": "https://gscmagic.com",
+  "repo": "https://github.com/lumizone/gsc-magic-agent-plugin",
+  "license": "MIT"
+}
