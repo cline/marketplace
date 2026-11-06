@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "jobspipe",
+  "type": "mcp",
+  "name": "JobsPipe",
+  "tagline": "Search live job postings across 30+ ATS feeds and job boards",
+  "description": "Hosted MCP for JobsPipe: search live, normalized job postings from 30+ ATS feeds and job boards, list sources and pricing, and search Upwork jobs. Remote streamable HTTP endpoint with OAuth or API key auth.",
+  "author": {
+    "name": "JobsPipe",
+    "url": "https://jobspipe.dev"
+  },
+  "tags": [
+    "business",
+    "sales",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "jobspipe",
+      "--transport",
+      "http",
+      "https://mcp.jobspipe.dev/mcp"
+    ],
+    "env": [
+      {
+        "name": "JOBSPIPE_API_KEY",
+        "required": false,
+        "description": "Optional JobsPipe API key (Bearer) for authenticated job-search results. Free tier available.",
+        "url": "https://jobspipe.dev/signup"
+      }
+    ]
+  },
+  "homepage": "https://jobspipe.dev",
+  "repo": "https://github.com/jobspipe/mcp"
+}
