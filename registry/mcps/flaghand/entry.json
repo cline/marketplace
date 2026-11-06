@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "flaghand",
+  "type": "mcp",
+  "name": "Flaghand",
+  "tagline": "Agents draft and schedule future social posts over MCP; immediate posting needs your passkey.",
+  "description": "Flaghand is a publishing desk for people and their AI agents. Agents draft X and LinkedIn posts, upload media, check and manage future schedules through its API, CLI or MCP server without a per-post passkey. Only the owner approves or posts immediately, with a passkey over the exact snapshot. X read-back compares normalized text, media count and available alt text, not link targets or media bytes. LinkedIn supports personal profiles, not company pages.",
+  "author": {
+    "name": "Flaghand",
+    "url": "https://flaghand.com"
+  },
+  "homepage": "https://flaghand.com/?utm_source=mcp-directory&utm_medium=referral&utm_campaign=flaghand_launch_nov2026&utm_content=cline",
+  "icon": "https://flaghand.com/assets/icon.svg",
+  "tags": [
+    "productivity",
+    "marketing"
+  ],
+  "license": "PROPRIETARY",
+  "verified": false,
+  "install": {
+    "args": [
+      "flaghand",
+      "--transport",
+      "http",
+      "https://app.flaghand.com/mcp/via/cline"
+    ],
+    "notes": "Remote Streamable HTTP with OAuth; no API key or local server required. Start at https://flaghand.com/llms.txt for agent-led sign-up. In Cline, authorize Flaghand: the owner signs in, chooses a workspace and allows access. Call getMe to confirm the workspace. Agents can draft, check, request approval and manage future schedules, but cannot approve or post immediately. Posts have permanent workspace-local post_number values; read the current rev before editing. Manage or revoke access in Flaghand Settings > Agents. Docs: https://app.flaghand.com/docs/agents. Support: support@flaghand.com. Operated by Trellisbyte LLC."
+  }
+}
