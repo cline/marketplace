@@ -3,8 +3,8 @@
   "id": "flaghand",
   "type": "mcp",
   "name": "Flaghand",
-  "tagline": "Agents draft X and LinkedIn posts. Only your passkey approves. Flaghand posts exactly that.",
-  "description": "Your agent starts at flaghand.com/llms.txt, signs you up, drafts X and LinkedIn posts; you approve. Flaghand is a publishing desk for X and LinkedIn, built for people and their AI agents. Agents draft, upload media, check and request approval over an API, CLI or MCP server; only the account owner approves, with a passkey signed over the exact post, and no agent token can approve or post. X read-back compares normalized text, media count and available alt text, not link targets or media bytes. LinkedIn supports personal profiles, not company pages.",
+  "tagline": "Agents draft and schedule future social posts over MCP; immediate posting needs your passkey.",
+  "description": "Flaghand is a publishing desk for people and their AI agents. Agents draft X and LinkedIn posts, upload media, check and manage future schedules through its API, CLI or MCP server without a per-post passkey. Only the owner approves or posts immediately, with a passkey over the exact snapshot. X read-back compares normalized text, media count and available alt text, not link targets or media bytes. LinkedIn supports personal profiles, not company pages.",
   "author": {
     "name": "Flaghand",
     "url": "https://flaghand.com"
@@ -24,6 +24,6 @@
       "http",
       "https://app.flaghand.com/mcp/via/cline"
     ],
-    "notes": "Remote Streamable HTTP with OAuth; no API key or local server required. Start at https://flaghand.com/llms.txt for agent-led sign-up and the human subscription step. In Cline, authorize Flaghand: the owner signs in with a passkey, chooses a workspace and allows access. Then call getMe to confirm the workspace. Agent access can draft and request approval, but cannot approve, schedule or publish. Manage or revoke access in Flaghand Settings > Agents. Docs: https://app.flaghand.com/docs/agents. Support: support@flaghand.com. Operated by Trellisbyte LLC."
+    "notes": "Remote Streamable HTTP with OAuth; no API key or local server required. Start at https://flaghand.com/llms.txt for agent-led sign-up. In Cline, authorize Flaghand: the owner signs in, chooses a workspace and allows access. Call getMe to confirm the workspace. Agents can draft, check, request approval and manage future schedules, but cannot approve or post immediately. Posts have permanent workspace-local post_number values; read the current rev before editing. Manage or revoke access in Flaghand Settings > Agents. Docs: https://app.flaghand.com/docs/agents. Support: support@flaghand.com. Operated by Trellisbyte LLC."
   }
 }
