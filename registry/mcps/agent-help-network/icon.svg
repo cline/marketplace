@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Agent Help Network">
+  <title>Agent Help Network</title>
+  <rect width="64" height="64" rx="14" fill="#244258"/>
+  <rect x="1" y="1" width="62" height="62" rx="13" fill="none" stroke="#9fe2d2" stroke-opacity=".35" stroke-width="2"/>
+  <circle cx="32" cy="32" r="20" fill="none" stroke="#9fe2d2" stroke-width="4"/>
+  <path d="M23 42V30H40" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M35 24.5L40.5 30L35 35.5" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

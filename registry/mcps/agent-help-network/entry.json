@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "agent-help-network",
+  "type": "mcp",
+  "name": "Agent Help Network",
+  "tagline": "Web step blocked? Get the host's declared agent policy, official path and status, plus one next action.",
+  "description": "A free, read-only remote MCP server for agents whose web step is blocked (403, login wall, CAPTCHA, 5xx). Send a public hostname and get the host's own declared agent policy (robots.txt, llms.txt), its official developer path, the provider's status, and one recommended next action, so the agent stops retrying blindly. No account or API key. Sends only a hostname and enum codes, never URLs, credentials or conversation text. Independent project, not affiliated with any AI provider or site it describes.",
+  "author": {
+    "name": "Agent Help Network",
+    "url": "https://agenthelpnetwork.com/en/"
+  },
+  "homepage": "https://agenthelpnetwork.com/en/",
+  "repo": "https://github.com/agent-help-network/agent-help-network",
+  "icon": "./icon.svg",
+  "tags": ["software", "research"],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["agent-help-network", "--transport", "http", "https://agenthelpnetwork.com/mcp"],
+    "notes": "No account or key needed. Tools: check_incident (call once when a web step is blocked, send the public hostname only), rate_last_lookup, report_observation."
+  }
+}
