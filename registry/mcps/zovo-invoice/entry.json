@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "zovo-invoice",
+  "type": "mcp",
+  "name": "Zovo Invoice",
+  "tagline": "Create and manage VAT invoices with business profiles and PDF export",
+  "description": "Generate VAT-compliant invoices from a business profile, line items and clients, with PDF export. Hosted remote MCP server (streamable HTTP) with a focused tool set; runs at https://mcp.zovo.one/mcp/invoice. A free access token can be minted at https://mcp.zovo.one/mcp/connect and passed as an Authorization: Bearer header for tool calls; listing tools works anonymously. Source: https://github.com/theluckystrike/mcp-servers. Also available on npm as @theluckystrike/mcp-invoice.",
+  "author": {
+    "name": "theluckystrike"
+  },
+  "tags": [
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "zovo-invoice",
+      "--transport",
+      "http",
+      "https://mcp.zovo.one/mcp/invoice"
+    ]
+  },
+  "homepage": "https://mcp.zovo.one",
+  "repo": "https://github.com/theluckystrike/mcp-servers"
+}

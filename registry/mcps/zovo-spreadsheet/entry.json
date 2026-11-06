@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "zovo-spreadsheet",
+  "type": "mcp",
+  "name": "Zovo Spreadsheet",
+  "tagline": "Create and edit Excel spreadsheets",
+  "description": "Create, read and edit .xlsx workbooks with sheets, formulas and cell data. Hosted remote MCP server (streamable HTTP) with a focused tool set; runs at https://mcp.zovo.one/mcp/spreadsheet. A free access token can be minted at https://mcp.zovo.one/mcp/connect and passed as an Authorization: Bearer header for tool calls; listing tools works anonymously. Source: https://github.com/theluckystrike/mcp-servers. Also available on npm as @theluckystrike/mcp-spreadsheet.",
+  "author": {
+    "name": "theluckystrike"
+  },
+  "tags": [
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "zovo-spreadsheet",
+      "--transport",
+      "http",
+      "https://mcp.zovo.one/mcp/spreadsheet"
+    ]
+  },
+  "homepage": "https://mcp.zovo.one",
+  "repo": "https://github.com/theluckystrike/mcp-servers"
+}
