@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "zovo-time-tracker",
+  "type": "mcp",
+  "name": "Zovo Time Tracker",
+  "tagline": "Track time entries, projects and billable hours",
+  "description": "Log, query and summarize time entries across projects and clients, with billable-hour reporting. Hosted remote MCP server (streamable HTTP) with a focused tool set; runs at https://mcp.zovo.one/mcp/time-tracker. A free access token can be minted at https://mcp.zovo.one/mcp/connect and passed as an Authorization: Bearer header for tool calls; listing tools works anonymously. Source: https://github.com/theluckystrike/mcp-servers. Also available on npm as @theluckystrike/mcp-time-tracker.",
+  "author": {
+    "name": "theluckystrike"
+  },
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "zovo-time-tracker",
+      "--transport",
+      "http",
+      "https://mcp.zovo.one/mcp/time-tracker"
+    ]
+  },
+  "homepage": "https://mcp.zovo.one",
+  "repo": "https://github.com/theluckystrike/mcp-servers"
+}

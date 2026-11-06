@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "zovo-pdf",
+  "type": "mcp",
+  "name": "Zovo PDF",
+  "tagline": "Create and manipulate PDF files",
+  "description": "Create PDFs from content, merge and split documents, and extract text. Hosted remote MCP server (streamable HTTP) with a focused tool set; runs at https://mcp.zovo.one/mcp/pdf. A free access token can be minted at https://mcp.zovo.one/mcp/connect and passed as an Authorization: Bearer header for tool calls; listing tools works anonymously. Source: https://github.com/theluckystrike/mcp-servers. Also available on npm as @theluckystrike/mcp-pdf.",
+  "author": {
+    "name": "theluckystrike"
+  },
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "zovo-pdf",
+      "--transport",
+      "http",
+      "https://mcp.zovo.one/mcp/pdf"
+    ]
+  },
+  "homepage": "https://mcp.zovo.one",
+  "repo": "https://github.com/theluckystrike/mcp-servers"
+}

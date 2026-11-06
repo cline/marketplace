@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "zovo-expense-tracker",
+  "type": "mcp",
+  "name": "Zovo Expense Tracker",
+  "tagline": "Log and categorize expenses and spending summaries",
+  "description": "Record expenses by category, query spending and produce budget summaries. Hosted remote MCP server (streamable HTTP) with a focused tool set; runs at https://mcp.zovo.one/mcp/expense-tracker. A free access token can be minted at https://mcp.zovo.one/mcp/connect and passed as an Authorization: Bearer header for tool calls; listing tools works anonymously. Source: https://github.com/theluckystrike/mcp-servers. Also available on npm as @theluckystrike/mcp-expense-tracker.",
+  "author": {
+    "name": "theluckystrike"
+  },
+  "tags": [
+    "finance"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "zovo-expense-tracker",
+      "--transport",
+      "http",
+      "https://mcp.zovo.one/mcp/expense-tracker"
+    ]
+  },
+  "homepage": "https://mcp.zovo.one",
+  "repo": "https://github.com/theluckystrike/mcp-servers"
+}

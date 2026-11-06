@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "zovo-docx",
+  "type": "mcp",
+  "name": "Zovo DOCX",
+  "tagline": "Create and edit Word documents",
+  "description": "Create, read and edit .docx documents including paragraphs, tables and styling. Hosted remote MCP server (streamable HTTP) with a focused tool set; runs at https://mcp.zovo.one/mcp/docx. A free access token can be minted at https://mcp.zovo.one/mcp/connect and passed as an Authorization: Bearer header for tool calls; listing tools works anonymously. Source: https://github.com/theluckystrike/mcp-servers. Also available on npm as @theluckystrike/mcp-docx.",
+  "author": {
+    "name": "theluckystrike"
+  },
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "zovo-docx",
+      "--transport",
+      "http",
+      "https://mcp.zovo.one/mcp/docx"
+    ]
+  },
+  "homepage": "https://mcp.zovo.one",
+  "repo": "https://github.com/theluckystrike/mcp-servers"
+}
