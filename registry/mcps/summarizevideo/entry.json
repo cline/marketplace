@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "summarizevideo",
+  "type": "mcp",
+  "name": "SummarizeVideo.ai",
+  "tagline": "Summarize public video URLs and read their transcripts",
+  "description": "Use SummarizeVideo.ai over Streamable HTTP to start a video summary, check its state, and read the finished Markdown summary or source transcript. This Cline install requires a SummarizeVideo.ai account and your own scoped agent key, sent as a Bearer token in the Authorization header. Claude on the web can also connect with OAuth sign-in. New summaries use the account allowance: two free summaries per rolling 24 hours, or remaining Founding Pass credits. Read-only keys omit summarize_video. Read the setup at https://summarizevideo.ai/mcp-server",
+  "homepage": "https://summarizevideo.ai/mcp-server",
+  "tags": ["research", "productivity"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "summarizevideo",
+      "--transport",
+      "http",
+      "https://mcp.summarizevideo.ai/mcp",
+      "--header",
+      "Authorization: Bearer <YOUR_AGENT_KEY>"
+    ],
+    "notes": "Create your own scoped agent key at https://summarizevideo.ai/agent-keys. Replace <YOUR_AGENT_KEY> in your local client configuration before connecting. The placeholder is not a working credential. Never paste a key into a public listing or committed configuration. Keys can expire or be revoked. This listing does not provide automatic secret interpolation; see the setup documentation."
+  }
+}
