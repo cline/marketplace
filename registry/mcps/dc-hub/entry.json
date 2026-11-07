@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "dc-hub",
+  "type": "mcp",
+  "name": "DC Hub",
+  "tagline": "Live data center, power, grid, fiber and deal data for AI agents and site selection.",
+  "description": "DC Hub is the live data layer for data-center site selection. Its Data Center Power Index (DCPI) is a daily score of where data centers can get grid power, across 300+ markets. The remote server exposes 94 MCP tools covering markets, power and grid, ISO interconnection queues and electricity prices; answers carry an as-of timestamp and a citation line. Free to start, no key needed for the free tier.",
+  "author": {
+    "name": "DC Hub",
+    "url": "https://dchub.cloud/connect?utm_source=cline-marketplace&utm_medium=listing&utm_campaign=directories"
+  },
+  "homepage": "https://dchub.cloud/connect?utm_source=cline-marketplace&utm_medium=listing&utm_campaign=directories",
+  "repo": "https://github.com/azmartone67/dchub-mcp-server",
+  "license": "MIT",
+  "tags": [
+    "data",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "dc-hub",
+      "--transport",
+      "http",
+      "https://dchub.cloud/mcp"
+    ]
+  }
+}
