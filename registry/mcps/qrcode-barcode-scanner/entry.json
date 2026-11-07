@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "qrcode-barcode-scanner",
+  "type": "mcp",
+  "name": "QR Code & Barcode Scanner",
+  "tagline": "Read QR codes and barcodes locally from image bytes with one Rust-backed scanner.",
+  "description": "Use QR Code AI's local scanner to inspect a label, verify a QR design or read QR and Code 128 values from the same image. The pinned MCP adapter 0.2.1 uses scanner engine 0.11.0 and exposes scan_image, which accepts base64 image bytes and returns decoded text, symbology, base64 payload bytes and detection positions in a JSON report. Choose fast, frame or full scanning profiles. Image decoding runs locally. QR Code AI also plans a [QR code image scanner](https://qrcode-ai.com/en-US/qr-code-scanner) and a [barcode image scanner](https://qrcode-ai.com/en-US/barcode-scanner) for browser workflows.",
+  "author": {
+    "name": "QR Code AI",
+    "url": "https://qrcode-ai.com/"
+  },
+  "homepage": "https://qrcode-ai.com/",
+  "repo": "https://github.com/qrcode-ai-com/qrcode-barcode-scanner/tree/main/integrations/mcp",
+  "icon": "https://raw.githubusercontent.com/qrcode-ai-com/qrcode-barcode-scanner/c6e4db67c6a07b5778243eb14d42060bd0a070de/docs/logo.svg",
+  "tags": ["software", "data", "creative"],
+  "license": "AGPL-3.0-or-later",
+  "verified": false,
+  "install": {
+    "args": [
+      "qrcode-barcode-scanner",
+      "--yes",
+      "--",
+      "npx",
+      "--yes",
+      "--ignore-scripts",
+      "@qrcode-ai-com/qrcode-barcode-scanner-mcp@0.2.1"
+    ],
+    "notes": "Requires Node.js 22.19+ on the 22 line, or Node.js 24+. Supply canonical base64 image bytes through imageBase64. See the linked MCP README for scan_image arguments, supported native platforms, input limits and the packaged report schema. Treat decoded URLs and text as untrusted data."
+  }
+}
