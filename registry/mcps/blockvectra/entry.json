@@ -2,9 +2,9 @@
   "$schema": "../../../schemas/mcp.schema.json",
   "id": "blockvectra",
   "type": "mcp",
-  "name": "BlockVectra",
-  "tagline": "Multi-chain EVM JSON-RPC and indexed data for developers and AI agents",
-  "description": "A remote MCP server for BlockVectra's multi-chain EVM JSON-RPC and indexed Data API, for developers and AI agents. This catalog command configures keyless access to documentation, chain discovery, pricing and status, plus RPC methods permitted by each chain's public policy. It does not configure an API key or authenticated request headers. Data API, account tools and keyed RPC require the user's own API key configured separately as a private `x-api-key` HTTP header; see the repository setup guide.",
+  "name": "BlockVectra Docs",
+  "tagline": "Search and read RPC and Data API documentation without an account or API key",
+  "description": "Search and read BlockVectra RPC and Data API documentation over Streamable HTTP with search_docs and read_doc. No BlockVectra account or API key is required. For RPC calls, indexed data and account tools, see the separate full-server setup in the repository.",
   "author": { "name": "BlockVectra", "url": "https://blockvectra.com/en/" },
   "homepage": "https://blockvectra.com/en/?ref=dir-cline-marketplace",
   "repo": "https://github.com/blockvectra/mcp",
@@ -14,6 +14,6 @@
   "verified": false,
   "featured": false,
   "install": {
-    "args": ["blockvectra", "--transport", "http", "https://docs.blockvectra.com/mcp"]
+    "args": ["blockvectra", "--transport", "http", "https://docs.blockvectra.com/mcp/docs"]
   }
 }
