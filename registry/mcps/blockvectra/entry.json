@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "blockvectra",
+  "type": "mcp",
+  "name": "BlockVectra Docs",
+  "tagline": "Search and read RPC and Data API documentation without an account or API key",
+  "description": "Search and read BlockVectra RPC and Data API documentation over Streamable HTTP with search_docs and read_doc. No BlockVectra account or API key is required. For RPC calls, indexed data and account tools, see the separate full-server setup in the repository.",
+  "author": { "name": "BlockVectra", "url": "https://blockvectra.com/en/" },
+  "homepage": "https://blockvectra.com/en/?ref=dir-cline-marketplace",
+  "repo": "https://github.com/blockvectra/mcp",
+  "icon": "./icon.png",
+  "tags": ["software", "data"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["blockvectra", "--transport", "http", "https://docs.blockvectra.com/mcp/docs"]
+  }
+}
