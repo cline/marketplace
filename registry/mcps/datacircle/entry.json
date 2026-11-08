@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "datacircle",
+  "type": "mcp",
+  "name": "Datacircle",
+  "tagline": "Find the best GTM APIs.",
+  "description": "Our MCP server is open to anyone, with no key. It answers from the sheet. list_apis lists the GTM APIs on it, and search_plans finds their plans by API, provider or price. Each plan comes with its score, and the best come first, as on the sheet.",
+  "author": {
+    "name": "Datacircle"
+  },
+  "tags": [
+    "data",
+    "sales"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "datacircle",
+      "--transport",
+      "http",
+      "https://api.datacircle.dev/mcp"
+    ]
+  },
+  "homepage": "https://datacircle.dev",
+  "icon": "https://datacircle.dev/favicon.png"
+}
