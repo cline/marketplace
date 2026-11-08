@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "presentr-analyze",
+  "type": "mcp",
+  "name": "Presentr Analyze",
+  "tagline": "Translate and re-time subtitles, read text aloud and dub media",
+  "description": "Presentr Analyze turns media and documents into deliverables: transcripts and captions, subtitles re-timed against the audio or translated into other languages, text read aloud as audio, dubbed video, and text pulled out of scanned PDFs and photos. Jobs that cost credits return a quote you confirm first. Sign in with OAuth.",
+  "author": {
+    "name": "Presentr",
+    "url": "https://analyze.presentr.me"
+  },
+  "tags": [
+    "creative",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "presentr-analyze",
+      "--transport",
+      "http",
+      "https://analyze.presentr.me/api/mcp"
+    ]
+  },
+  "homepage": "https://analyze.presentr.me/developer/agents",
+  "repo": "https://github.com/michaelw-pr/presentr-analyze-mcp",
+  "license": "MIT"
+}
