@@ -21,8 +21,11 @@
       "npx",
       "-y",
       "github:equinoxaifinance-rgb/living-stack-community"
-    ]
+    ],
+    "notes": "Requires Node.js 22+. Runs locally over stdio; sessions and the ledger stay on your machine. No API key needed."
   },
   "homepage": "https://github.com/equinoxaifinance-rgb/living-stack-community",
-  "repo": "https://github.com/equinoxaifinance-rgb/living-stack-community"
+  "repo": "https://github.com/equinoxaifinance-rgb/living-stack-community",
+  "icon": "./icon.png",
+  "license": "Apache-2.0"
 }
