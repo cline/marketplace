@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "granek-signal",
+  "type": "mcp",
+  "name": "Granek Signal",
+  "tagline": "Find companies with a reason to buy, and who to write to",
+  "description": "B2B prospecting for agents: search companies where a buying trigger just happened (hiring, tenders, new executives, expansion), read sourced company dossiers and decision makers, create customer profiles and signals, and manage lead lists. Paid runs show the cost first. Signs in with OAuth in the browser, no key to paste.",
+  "author": {
+    "name": "Granek"
+  },
+  "tags": [
+    "sales"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "granek-signal",
+      "--transport",
+      "http",
+      "https://signal.granek.agency/mcp"
+    ]
+  },
+  "homepage": "https://signal.granek.agency"
+}
