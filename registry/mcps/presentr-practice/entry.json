@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "presentr-practice",
+  "type": "mcp",
+  "name": "Presentr Practice",
+  "tagline": "Prepare a spoken mock interview for a specific job",
+  "description": "Tell Cline the job you're interviewing for (and the company or job posting, if you have them) and Presentr Practice prepares a spoken mock interview for that role, returning a link to start it in your browser. The interview runs by voice or text, in English or Spanish, and ends with a scored review: an overall score, a score per skill and coaching notes. No sign-in needed to connect.",
+  "author": {
+    "name": "Presentr",
+    "url": "https://practice.presentr.me"
+  },
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "presentr-practice",
+      "--transport",
+      "http",
+      "https://practice.presentr.me/api/mcp/practice"
+    ]
+  },
+  "homepage": "https://practice.presentr.me"
+}
