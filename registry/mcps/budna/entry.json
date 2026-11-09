@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "budna",
+  "type": "mcp",
+  "name": "Budna",
+  "tagline": "Find and compare new and pre-owned items",
+  "description": "Discover new and pre-owned items on Budna that fit your needs and budget. Compare options, check condition and compatibility, and plan pickup or delivery before you decide. Search public listings in Sweden and Norway, inspect listing details and attributes, and browse categories and shipping reference rates. The hosted public connection is read-only and requires no account or API key. It cannot bid, buy, reserve items, contact sellers, or change marketplace data.",
+  "author": {
+    "name": "Budna Marketplace AB",
+    "url": "https://budna.se"
+  },
+  "homepage": "https://budna.se",
+  "repo": "https://github.com/budna-marketplace/mcp",
+  "icon": "https://raw.githubusercontent.com/budna-marketplace/plugins/68a46a4746ecf828f017be747892c7fe6398f05f/assets/icon.png",
+  "tags": ["research", "productivity"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["budna", "--transport", "http", "https://api.budna.se/mcp"],
+    "notes": "Choose no authentication for this public endpoint. Current inventory can be empty; verify listing claims, availability, and complete delivered costs before making a purchase decision."
+  }
+}
