@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "GetMattered",
   "tagline": "Find matched jobs and apply on the employer's own hiring system, with a resume tailored to each role",
-  "description": "Hosted MCP server for job seekers. Find jobs matched to your resume, score your resume against a posting, tailor the resume and cover letter for each role, and apply on the employer's own hiring system across 30+ hiring systems, including Workday, Greenhouse, Lever and iCIMS. Send each application automatically or hold it for your approval, track which employers confirmed receipt, read and answer employer emails, manage follow-ups, and prepare for interviews. 40 tools. Sign in once with OAuth; no API key.",
+  "description": "Hosted MCP server for job seekers. Find jobs matched to your resume, score your resume against a posting, tailor the resume and cover letter for each role, and apply on the employer's own hiring system across 30+ hiring systems, including Workday, Greenhouse, Lever and iCIMS. Send each application automatically or hold it for your approval, track which employers confirmed receipt, read and answer employer emails, manage follow-ups, and prepare for interviews. Sign in once with OAuth; no API key.",
   "author": {
     "name": "GetMattered",
     "url": "https://getmattered.com/"
