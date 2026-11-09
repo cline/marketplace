@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "agentmemory-skills",
+  "type": "skill",
+  "name": "AgentMemory Skills",
+  "tagline": "Recall, remember, hand off, and learn from project context",
+  "description": "Installs 17 AgentMemory skills for saving and recalling knowledge, session handoffs, lessons, history, and configuration guidance. The bundle is pinned to the 0.9.33 source release.",
+  "author": {
+    "name": "Rohit Ghumare",
+    "url": "https://github.com/rohitg00"
+  },
+  "homepage": "https://agent-memory.dev",
+  "repo": "https://github.com/rohitg00/agentmemory",
+  "icon": "./icon.svg",
+  "tags": [
+    "memory",
+    "software",
+    "productivity"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "https://github.com/rohitg00/agentmemory/tree/28ffc538b81b265e2f649354ed9f88b0c12ae414/plugin/skills",
+      "--skill",
+      "*",
+      "--global"
+    ],
+    "notes": "Installs all 17 skills at user scope for use across projects. Requires Node.js 22.20 or newer for the skills installer. Memory workflows use the AgentMemory MCP server. Install the companion MCP entry and start `npx -y @agentmemory/agentmemory@0.9.33` separately for the complete tool set. These instruction files do not install automatic capture hooks; prompts and tool activity are captured only when a supported hook integration is installed separately."
+  }
+}

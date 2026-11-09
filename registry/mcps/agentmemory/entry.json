@@ -1,0 +1,45 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "agentmemory",
+  "type": "mcp",
+  "name": "AgentMemory",
+  "tagline": "Persistent project memory across coding sessions",
+  "description": "Save decisions, lessons, and project context, then retrieve them in later coding sessions. The AgentMemory daemon provides 54 MCP tools with local keyword recall that requires no API key.",
+  "author": {
+    "name": "Rohit Ghumare",
+    "url": "https://github.com/rohitg00"
+  },
+  "homepage": "https://agent-memory.dev",
+  "repo": "https://github.com/rohitg00/agentmemory",
+  "icon": "./icon.svg",
+  "tags": [
+    "memory",
+    "software",
+    "productivity"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "agentmemory",
+      "--",
+      "npx",
+      "-y",
+      "@agentmemory/mcp@0.9.33"
+    ],
+    "env": [
+      {
+        "name": "AGENTMEMORY_URL",
+        "required": false,
+        "description": "AgentMemory server URL; defaults to http://localhost:3111."
+      },
+      {
+        "name": "AGENTMEMORY_SECRET",
+        "required": false,
+        "description": "Server authentication secret when not using automatic local credential discovery."
+      }
+    ],
+    "notes": "Requires Node.js 20 or newer. Start the full daemon separately with `npx -y @agentmemory/agentmemory@0.9.33`; the default endpoint is http://localhost:3111. Without a reachable daemon, the MCP package provides a reduced seven-tool local fallback. Loopback connections discover the local daemon credential automatically; remote servers require HTTPS and AGENTMEMORY_SECRET. With the daemon running, saved content goes to that server; optional model and embedding providers process data only when configured."
+  }
+}
