@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "presentr-analyze",
+  "type": "mcp",
+  "name": "Presentr Analyze",
+  "tagline": "Read text aloud in 48 languages, transcribe audio, extract PDF text, dub video",
+  "description": "Text to speech and media work from Cline: read text aloud as an MP3 in 48 languages (stock voices or your own), transcribe audio and video, pull text out of PDFs, scans and photos (and translate it), translate and re-time subtitles against the audio, and dub audio or video into another language. Cline can upload local files; jobs that cost credits return a quote you confirm first. Sign in with OAuth.",
+  "author": {
+    "name": "Presentr",
+    "url": "https://analyze.presentr.me"
+  },
+  "tags": [
+    "creative",
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "presentr-analyze",
+      "--transport",
+      "http",
+      "https://analyze.presentr.me/api/mcp"
+    ]
+  },
+  "homepage": "https://analyze.presentr.me/developer/agents",
+  "repo": "https://github.com/michaelw-pr/presentr-analyze-mcp",
+  "license": "MIT"
+}
