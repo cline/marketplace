@@ -26,7 +26,7 @@
       "--",
       "npx",
       "-y",
-      "@agentmemory/mcp@0.9.31"
+      "@agentmemory/mcp@0.9.33"
     ],
     "env": [
       {
@@ -40,6 +40,6 @@
         "description": "Server authentication secret when not using automatic local credential discovery."
       }
     ],
-    "notes": "Requires Node.js 20 or newer. Start the full daemon separately with `npx -y @agentmemory/agentmemory@0.9.31`; the default endpoint is http://localhost:3111. Without a reachable daemon, the MCP package provides a reduced seven-tool local fallback. Loopback connections discover the local daemon credential automatically; remote servers require HTTPS and AGENTMEMORY_SECRET. With the daemon running, saved content goes to that server; optional model and embedding providers process data only when configured."
+    "notes": "Requires Node.js 20 or newer. Start the full daemon separately with `npx -y @agentmemory/agentmemory@0.9.33`; the default endpoint is http://localhost:3111. Without a reachable daemon, the MCP package provides a reduced seven-tool local fallback. Loopback connections discover the local daemon credential automatically; remote servers require HTTPS and AGENTMEMORY_SECRET. With the daemon running, saved content goes to that server; optional model and embedding providers process data only when configured."
   }
 }
