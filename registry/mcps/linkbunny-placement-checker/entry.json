@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "linkbunny-placement-checker",
+  "type": "mcp",
+  "name": "LinkBunny Placement Checker",
+  "tagline": "Check one public page for an expected backlink and its nofollow status.",
+  "description": "Checks fetched HTML for one expected destination URL and reports matching links, anchor text, rel tokens, nofollow status, HTTP status, redirects and the declared canonical. Free, with no account or token. It does not run JavaScript, crawl a site, edit pages, or determine indexing or rankings.",
+  "author": {
+    "name": "LinkBunny",
+    "url": "https://getlinkbunny.com"
+  },
+  "homepage": "https://getlinkbunny.com/tools/backlink-placement-checker?ref=cline-marketplace",
+  "tags": ["marketing"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "linkbunny-placement-checker",
+      "--transport",
+      "http",
+      "https://mcp.getlinkbunny.com/mcp"
+    ],
+    "notes": "No authentication required. Supply only public HTTPS URLs without tokens, signed parameters or personal data. A missing fetched-HTML match does not prove the rendered page has no link. Cline runtime acceptance has not been verified."
+  }
+}
