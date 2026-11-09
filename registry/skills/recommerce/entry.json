@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "recommerce",
+  "type": "skill",
+  "name": "Recommerce by Budna",
+  "tagline": "Compare listings and plan purchases, kits and pickup",
+  "description": "Six portable Recommerce skills for comparing marketplace listings and preparing a purchase: Buy compares suitable listings and complete costs; Kits plans compatible setups within one budget; Inspect prepares item-specific checks; Collect assesses transport and access; Keep compares repair with replacement; and Second Look reassesses an earlier recommendation. The skills separate seller claims from verified evidence and unresolved condition. They do not contact sellers, reserve items, bid, or purchase.",
+  "author": {
+    "name": "Budna Marketplace AB",
+    "url": "https://budna.se"
+  },
+  "homepage": "https://github.com/budna-marketplace/recommerce",
+  "repo": "https://github.com/budna-marketplace/recommerce",
+  "icon": "https://raw.githubusercontent.com/budna-marketplace/plugins/68a46a4746ecf828f017be747892c7fe6398f05f/assets/icon.png",
+  "tags": ["research", "productivity"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["budna-marketplace/recommerce"],
+    "notes": "Select the skills you want in the installer. Each skill works with supplied evidence and available read-only tools; Budna MCP is optional and installed separately."
+  }
+}
