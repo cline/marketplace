@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "warden-mcp",
+  "type": "mcp",
+  "name": "Warden MCP",
+  "tagline": "Find tokens, quote swaps and trade onchain, within limits you set",
+  "description": "Warden MCP lets AI agents find tokens, quote swaps and trade onchain on Base, BNB Chain, Robinhood Chain, Arc and Solana, within limits you set. Market tools need no key. Wallet tools use sign-in.",
+  "author": { "name": "Warden Protocol", "url": "https://wardenprotocol.org" },
+  "homepage": "https://tokens.wardenprotocol.org",
+  "repo": "https://github.com/warden-protocol/warden-mcp",
+  "icon": "./icon.png",
+  "tags": ["finance"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["warden-mcp", "--transport", "http", "https://tokens.wardenprotocol.org/mcp"]
+  }
+}
