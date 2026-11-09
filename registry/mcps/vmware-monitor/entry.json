@@ -25,9 +25,9 @@
       "--",
       "uvx",
       "--from",
-      "vmware-monitor==2.6.0",
+      "vmware-monitor==2.6.1",
       "vmware-monitor-mcp"
     ],
-    "notes": "Configure local targets and credentials using the repository README. vCenter must be reachable from the machine running Cline. This installation launches the published 2.6.0 package locally, not a hosted VMware service."
+    "notes": "Configure local targets and credentials using the repository README. vCenter must be reachable from the machine running Cline. This installation launches the published 2.6.1 package locally, not a hosted VMware service."
   }
 }
