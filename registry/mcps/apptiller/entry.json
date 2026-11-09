@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "apptiller",
+  "type": "mcp",
+  "name": "Apptiller",
+  "tagline": "App Store growth data: downloads, search ranks, AI answers, ads and revenue",
+  "description": "A remote MCP server that gives the model your App Store apps' growth data from one account: App Store Connect downloads and sales, the App Store funnel, search ranks, listing changes, how often AI answers name your app, Apple Ads, Meta and Google Ads, attribution and RevenueCat revenue. Sign in with OAuth when a tool first needs your account; a few public tools work without signing in.",
+  "author": { "name": "GPT Genius Lab", "url": "https://apptiller.com" },
+  "homepage": "https://apptiller.com/features/claude-chatgpt-connector",
+  "repo": "https://github.com/GPT-Genius-Lab/apptiller-mcp",
+  "icon": "./icon.svg",
+  "tags": ["marketing", "data", "business"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["apptiller", "--transport", "http", "https://mcp.apptiller.com/mcp"],
+    "notes": "Cline opens Apptiller's sign-in (Google or email) the first time a tool needs your account. No API key is needed."
+  }
+}
