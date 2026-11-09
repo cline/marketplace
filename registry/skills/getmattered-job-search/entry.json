@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "getmattered-job-search",
+  "type": "skill",
+  "name": "GetMattered job search skills",
+  "tagline": "Ready-made job search workflows: find matches, tailor, apply, review, track, follow up and prepare",
+  "description": "Skills that drive the GetMattered MCP server: map a request to the right tools, set up a job search, find matching jobs, tailor a resume for a job, write a cover letter, apply to a job, review and send held applications, track applications, prepare for an interview, translate a resume, build an editable resume document, handle recruiter replies, follow up on applications and manage saved searches.",
+  "author": {
+    "name": "GetMattered",
+    "url": "https://getmattered.com/"
+  },
+  "homepage": "https://getmattered.com/mcps",
+  "repo": "https://github.com/getmattered/getmattered-mcp",
+  "icon": "./icon.png",
+  "tags": [
+    "productivity",
+    "business"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "getmattered/getmattered-mcp"
+    ]
+  }
+}
