@@ -25,9 +25,9 @@
       "--",
       "uvx",
       "--from",
-      "vmware-aiops==2.4.4",
+      "vmware-aiops==2.4.6",
       "vmware-aiops-mcp"
     ],
-    "notes": "Configure local targets and credentials using the repository README. vCenter must be reachable from the machine running Cline. This installation launches the published 2.4.4 package locally, not a hosted VMware service."
+    "notes": "Configure local targets and credentials using the repository README. vCenter must be reachable from the machine running Cline. This installation launches the published 2.4.6 package locally, not a hosted VMware service."
   }
 }
