@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "socialdatax-hongguo",
+  "type": "mcp",
+  "name": "SocialDataX 红果 Hongguo MCP",
+  "tagline": "Hongguo short drama search, series details, reviews, comments and episode download links.",
+  "description": "Hosted, read-only access to Hongguo short dramas through 12 tools: search, series details and episode lists, series reviews and replies, video comments and replies, episode download links and the shared account balance tool. Business calls require your own SocialDataX API Key and consume credits; account balance queries are free. No weekly or historical ranking tools. The linked public repository contains connection documentation and examples; the hosted implementation remains private.",
+  "author": {
+    "name": "SocialDataX",
+    "url": "https://socialdatax.com"
+  },
+  "homepage": "https://socialdatax.com/ai?from=cline",
+  "repo": "https://github.com/DevinChen2014/hongguo-mcp",
+  "icon": "./icon.png",
+  "tags": [
+    "research",
+    "data",
+    "marketing"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "socialdatax-hongguo",
+      "--transport",
+      "http",
+      "https://mcp.socialdatax.com/hongguo/mcp",
+      "--header",
+      "Authorization: Bearer <SOCIALDATAX_API_KEY>"
+    ],
+    "env": [
+      {
+        "name": "SOCIALDATAX_API_KEY",
+        "required": true,
+        "description": "Your own SocialDataX API Key; business calls consume credits.",
+        "url": "https://socialdatax.com/ai?from=cline"
+      }
+    ],
+    "notes": "Before connecting, replace <SOCIALDATAX_API_KEY> in the Authorization header with your own key from the linked setup page. install.env documents the credential requirement; do not assume it substitutes the static header automatically. The installer warns while a placeholder is still present. Never share your real key with directory reviewers. Anonymous discovery does not authorize business calls. Episode share-link downloads currently support novelquickapp.com manju links. Follow tool descriptions for pagination, ID types, temporary download URLs and local FFmpeg decryption."
+  }
+}
