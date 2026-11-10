@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "vmware-monitor",
+  "type": "mcp",
+  "name": "VMware Monitor",
+  "tagline": "Read-only VMware infrastructure monitoring",
+  "description": "Read-only VMware vCenter and ESXi monitoring with 33 MCP tools for inventory, alarms, events, health triage, and object investigation. All exposed tools are read-only; it has no infrastructure mutation tools. Runs locally over stdio; customers retain private connectivity and credentials for their own vCenter. Requires Python 3.10+ and uv/uvx. Configure the server following the linked repository README before use.",
+  "author": {
+    "name": "VMware Skills",
+    "url": "https://github.com/vmware-skills"
+  },
+  "repo": "https://github.com/vmware-skills/VMware-Monitor",
+  "homepage": "https://github.com/vmware-skills/VMware-Monitor#readme",
+  "icon": "icon.png",
+  "tags": [
+    "software",
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "vmware-monitor",
+      "--",
+      "uvx",
+      "--from",
+      "vmware-monitor==2.6.2",
+      "vmware-monitor-mcp"
+    ],
+    "notes": "Configure local targets and credentials using the repository README. vCenter must be reachable from the machine running Cline. This installation launches the published 2.6.2 package locally, not a hosted VMware service."
+  }
+}
