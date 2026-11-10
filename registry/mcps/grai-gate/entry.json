@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "grai-gate",
+  "type": "mcp",
+  "name": "grai Cadence Gate",
+  "tagline": "Deterministic cadence gate for AI-written drafts",
+  "description": "Scores a draft for sentence-length variance, contrastive negation, epiphany openers and structural slop, then returns the score, the CV and the failed rules. The scorer runs offline with no API key and no network request. The seal tools issue and verify signed client records through grai.page over HTTPS.\n\nTools: `grai_score_draft`, `grai_issue_agency_seal`, `grai_verify_seal`. Requires Python 3.9 or newer; installs with uvx.",
+  "author": { "name": "grai", "url": "https://grai.page" },
+  "homepage": "https://grai.page",
+  "repo": "https://github.com/adrianpeticila/grai",
+  "icon": "./icon.svg",
+  "tags": ["software", "productivity"],
+  "license": "MIT",
+  "verified": false,
+  "install": {
+    "args": ["grai-gate", "--", "uvx", "--from", "grai-mcp", "grai-gate-mcp"]
+  }
+}
