@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "api-indonesia",
+  "type": "mcp",
+  "name": "API Indonesia",
+  "tagline": "Indonesian public data: regions, postal codes, holidays, prayer times, BMKG",
+  "description": "API Indonesia is one REST API and remote MCP server for Indonesian public data from official sources, so an agent stops guessing about places, dates, institutions and regulations.\n\n30 API products, including:\n\n- Regions (`wilayah`): 38 provinces, 514 regencies and cities, 7,285 districts, 83,762 villages and kelurahan, with Kemendagri codes and GeoJSON boundaries\n- Postal codes (`kode pos`) mapped per village\n- National holidays and joint leave (`cuti bersama`), Hijri dates\n- Prayer times per regency and city\n- BMKG earthquakes, weather and early warnings, plus air quality\n- Schools by NPSN, universities, hospitals\n- Bank Indonesia exchange rates, minimum wage (UMP) for all 38 provinces, food prices\n- NIK and NPWP format checks, QRIS parsing, rupiah formatting and `terbilang`\n- Halal (BPJPH), BPOM, DJKI trademarks, OJK lists, Transjakarta, KBBI, Al-Quran, Alkitab\n\nAuth is OAuth 2.1 (dynamic client registration + PKCE S256), so `cline mcp install` opens an API Indonesia sign-in page. An API Indonesia key as a Bearer token also works if you prefer a static header. Every tool is a read-only lookup, a format check or a calculator; nothing changes state in your account.\n\nPricing: 3,000 free credits on sign-up, no card. A successful request costs 2 credits (Rp2) and failed requests are not billed.",
+  "author": { "name": "Khaisa Studio", "url": "https://apiindonesia.id" },
+  "homepage": "https://apiindonesia.id",
+  "repo": "https://github.com/khmuhtadin/api-indonesia-examples",
+  "icon": "./icon.svg",
+  "tags": ["data", "research"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["api-indonesia", "--transport", "http", "https://mcp.apiindonesia.id/mcp"],
+    "env": [
+      {
+        "name": "API_INDONESIA_KEY",
+        "required": false,
+        "description": "Optional API Indonesia key (`aip_live_...`), if you would rather send a Bearer token than sign in with OAuth.",
+        "url": "https://dashboard.apiindonesia.id"
+      }
+    ],
+    "notes": "Cline opens an API Indonesia sign-in page to approve access. The 3,000 sign-up credits cover 1,500 successful requests and failed requests are not billed. Docs: https://docs.apiindonesia.id"
+  }
+}
