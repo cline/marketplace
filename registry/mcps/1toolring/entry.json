@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "1toolring",
+  "type": "mcp",
+  "name": "1ToolRing",
+  "tagline": "One key for thousands of pay-per-call tools: search, maps, prices, market data",
+  "description": "1ToolRing gives an agent one key and one prepaid balance for thousands of pay-per-call tools from third-party providers: live web search, keyword and SEO data, maps and places, shopping prices, stocks, crypto and FX, web pages, images and more.\n\nThe price of a run is shown before it is charged, and failed runs are never charged. There is no subscription: sign up, verify your email for a starter balance, then top up from as little as $1 by card.\n\nTools exposed over MCP:\n\n- `discover_tools` (free) - search the catalogue by what you want to do\n- `inspect_tool` (free) - read a tool's input schema and current price\n- `run_tool` (paid) - execute a tool, with the price returned first\n- `get_tool_run` (free) - poll a run's status and result\n\nAuth is OAuth 2.1 (dynamic client registration + PKCE), so `cline mcp install` opens a 1ToolRing sign-in page. A 1ToolRing API key as a Bearer token also works if you prefer a static header.",
+  "author": { "name": "Khaisa Studio", "url": "https://1toolring.com" },
+  "homepage": "https://1toolring.com",
+  "repo": "https://github.com/khmuhtadin/1toolring-mcp",
+  "icon": "./icon.svg",
+  "tags": ["research", "data"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["1toolring", "--transport", "http", "https://mcp.1toolring.com/mcp"],
+    "env": [
+      {
+        "name": "ONETOOLRING_API_KEY",
+        "required": false,
+        "description": "Optional 1ToolRing API key, if you would rather send a Bearer token than sign in with OAuth.",
+        "url": "https://app.1toolring.com"
+      }
+    ],
+    "notes": "Cline opens a 1ToolRing sign-in page to approve access. Free tools (discover_tools, inspect_tool, get_tool_run) work without spending anything; run_tool shows its price before it runs. Docs: https://docs.1toolring.com/overview/"
+  }
+}
