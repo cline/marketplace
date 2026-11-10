@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <title>1ToolRing</title>
+  <defs>
+    <mask id="r1-ring" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+      <rect width="64" height="64" fill="#fff"/>
+      <path d="M15 32a17 17 0 0 1 34 0z" transform="rotate(-20 32 32)" fill="#000"/>
+    </mask>
+    <mask id="r1-one" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+      <rect width="64" height="64" fill="#fff"/>
+      <path d="M32 18h6v21h-6V25l-6.2 3.7v-5.9z" fill="#000"/>
+    </mask>
+  </defs>
+  <circle cx="32" cy="32" r="17" fill="#0e0e10" mask="url(#r1-one)"/>
+  <ellipse cx="32" cy="32" rx="29" ry="10.5" transform="rotate(-20 32 32)" stroke="#2448ff" stroke-width="5" mask="url(#r1-ring)"/>
+</svg>
