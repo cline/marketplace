@@ -1,0 +1,16 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "romeoseo",
+  "type": "mcp",
+  "name": "RomeoSEO",
+  "tagline": "Access your SEO plan and Google results from Cline",
+  "description": "Connect a RomeoSEO account to see your websites, SEO plan, keyword research and Google Search Console reports. With See and work access, start research and tasks, manage the plan, and send finished articles as drafts or pull requests. Sign-in and approval are required; work does not go live automatically.",
+  "author": { "name": "RomeoSEO", "url": "https://romeoseo.com" },
+  "homepage": "https://romeoseo.com/mcp",
+  "tags": ["marketing", "research", "data"],
+  "verified": false,
+  "install": {
+    "args": ["romeoseo", "--transport", "http", "https://app.romeoseo.com/mcp"],
+    "notes": "Sign in to RomeoSEO and approve the connection. Choose See only or See and work access."
+  }
+}
