@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "romeoseo-skills",
+  "type": "skill",
+  "name": "RomeoSEO Skills",
+  "tagline": "Free skills for SEO, AI search visibility and content",
+  "description": "A collection of free, open-source agent skills covering SEO research, technical audits, content, AI search visibility and publishing workflows. Each skill provides a practical workflow and can be used without a RomeoSEO account.",
+  "author": { "name": "RomeoSEO", "url": "https://romeoseo.com" },
+  "homepage": "https://romeoseo.com/skills",
+  "repo": "https://github.com/RomeoSEO/seo-skills",
+  "tags": ["marketing", "research"],
+  "license": "MIT",
+  "verified": false,
+  "install": { "args": ["RomeoSEO/seo-skills"] }
+}
