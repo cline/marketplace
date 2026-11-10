@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "partsforagents-advice",
+  "type": "mcp",
+  "name": "partsforagents CAD advice",
+  "tagline": "Free manufacturing guidance for agents preparing exact-CAD prototype requests.",
+  "description": "Free, sourced guidance on fits, materials and manufacturing for agents working on CAD. This public connection exposes three read tools for advice, service status and production capabilities, plus a feedback-submission tool that writes only with explicit consent. It does not upload CAD or place orders.\n\nFor an owner-authorized design, the separate [CAD-to-print walkthrough](https://partsforagents.com/guides/cad-to-print) explains how to preserve the exact file, units, quantity and specification in a nonbinding manufacturing request. No upfront payment is required; an exact reviewed offer and payment instructions come later. A request is not a confirmed order or reserved capacity.",
+  "author": {
+    "name": "partsforagents",
+    "url": "https://partsforagents.com"
+  },
+  "homepage": "https://partsforagents.com/docs",
+  "repo": "https://github.com/KanishkVashisht/printrelay-agent-kit",
+  "tags": ["creative", "research"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "partsforagents-advice",
+      "--transport",
+      "http",
+      "https://partsforagents.com/api/advice/mcp"
+    ],
+    "notes": "No account, API key or CAD upload is needed for the three read tools. Start with get_manufacturing_advice. submit_agent_feedback is a separate consented write; do not include private CAD, personal information or secrets. Private CAD intake and job tracking require the separately documented authenticated workflow."
+  }
+}
