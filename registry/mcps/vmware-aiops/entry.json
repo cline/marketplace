@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "vmware-aiops",
+  "type": "mcp",
+  "name": "VMware AIops",
+  "tagline": "Manage VMware virtual machines and infrastructure",
+  "description": "VMware vCenter and ESXi operations with 61 MCP tools for VM lifecycle, provisioning, snapshots, guest execution, and cluster operations. Write operations remain subject to vCenter RBAC, local Policy, audit logging, and the preview/confirm gates implemented by the server. Runs locally over stdio; customers retain private connectivity and credentials for their own vCenter. Requires Python 3.10+ and uv/uvx. Configure the server following the linked repository README before use.",
+  "author": {
+    "name": "VMware Skills",
+    "url": "https://github.com/vmware-skills"
+  },
+  "repo": "https://github.com/vmware-skills/VMware-AIops",
+  "homepage": "https://github.com/vmware-skills/VMware-AIops#readme",
+  "icon": "icon.png",
+  "tags": [
+    "software",
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "vmware-aiops",
+      "--",
+      "uvx",
+      "--from",
+      "vmware-aiops==2.5.0",
+      "vmware-aiops-mcp"
+    ],
+    "notes": "Configure local targets and credentials using the repository README. vCenter must be reachable from the machine running Cline. This installation launches the published 2.5.0 package locally, not a hosted VMware service."
+  }
+}
