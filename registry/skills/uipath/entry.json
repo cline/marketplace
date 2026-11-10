@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "uipath",
+  "type": "skill",
+  "name": "UiPath",
+  "tagline": "Build, validate, deploy and operate UiPath automations, agents and apps from Cline",
+  "description": "UiPath skills for building, validating, deploying, and operating UiPath automations, agents, coded apps, and platform resources. Covers RPA workflows, Maestro flows, case management and BPMN processes, coded and low-code agents, coded apps, solutions, and Orchestrator / Integration Service / Data Fabric resources through the `uip` CLI.",
+  "author": {
+    "name": "UiPath",
+    "url": "https://www.uipath.com"
+  },
+  "homepage": "https://github.com/UiPath/skills",
+  "repo": "https://github.com/UiPath/skills",
+  "icon": "./icon.png",
+  "tags": [
+    "software",
+    "productivity",
+    "business"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "UiPath/skills"
+    ],
+    "notes": "Requires the UiPath CLI (`uip`) and `uip login` to a UiPath Automation Cloud tenant."
+  }
+}
