@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "clipugc",
+  "type": "mcp",
+  "name": "ClipUGC",
+  "tagline": "Make UGC videos for your app with AI influencers",
+  "description": "Create an AI influencer from one sentence, generate more looks of the same face, turn them into short clips, and merge a clip with your app screen recording and a hook line into a ready-to-post vertical video for TikTok, Reels and Shorts. Hosted remote server with OAuth sign-in. Uses ClipUGC credits, with free credits to start.",
+  "author": {
+    "name": "ClipUGC",
+    "url": "https://clipugc.com"
+  },
+  "homepage": "https://clipugc.com",
+  "tags": [
+    "marketing",
+    "creative"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "clipugc",
+      "--transport",
+      "http",
+      "https://clipugc.com/mcp"
+    ]
+  },
+  "repo": "https://github.com/clipugc/ClipUGC-CLI",
+  "license": "MIT"
+}
