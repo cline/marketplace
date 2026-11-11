@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "reliant-forge",
+  "type": "mcp",
+  "name": "Reliant Forge",
+  "tagline": "Deploy a site or app with no account, and lint and generate forge projects",
+  "description": "The MCP server of forge, an open-source Go + React framework and CLI. Its 14 tools deploy a static site or app with no account (a live URL plus a claim link; an unclaimed deploy goes offline after 72 hours), explain a forge error and the next command, list what forge and the project already have, load forge's playbooks, and run forge lint and forge generate.",
+  "author": {
+    "name": "Reliant Labs",
+    "url": "https://reliantlabs.io"
+  },
+  "homepage": "https://reliantlabs.io/products/forge",
+  "repo": "https://github.com/reliant-labs/forge",
+  "license": "Apache-2.0",
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "reliant-forge",
+      "--",
+      "npx",
+      "-y",
+      "@reliantlabs/forge@1.3.0",
+      "mcp"
+    ]
+  }
+}
