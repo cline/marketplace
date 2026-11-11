@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "isto-intents",
+  "type": "mcp",
+  "name": "Isto Intents",
+  "tagline": "Ask a local listing portal to keep looking for a used car or home; the user confirms there.",
+  "description": "Isto Intents lets an AI assistant ask an independent local listing portal to keep looking for a used car or a home that is not on offer today. The portal watches its national market and e-mails the person what fits — after the person confirms on the portal's own page. The assistant never passes a name, an e-mail address or a phone number.",
+  "author": {
+    "name": "Isto Intents",
+    "url": "https://istointents.com"
+  },
+  "homepage": "https://istointents.com/assistants/",
+  "repo": "https://github.com/istointents/isto-intents-mcp",
+  "icon": "https://istointents.org/brand/ikona-512.png",
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "isto-intents",
+      "--transport",
+      "http",
+      "https://istointents.com/mcp"
+    ]
+  }
+}
