@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "govisit-toolkit",
+  "type": "skill",
+  "name": "GoVisit Agent Skills",
+  "tagline": "Install 22 read-only skills for travel place and destination discovery",
+  "description": "The GoVisit Toolkit contains 22 Agent Skills for searching published destinations and places and reading travel details, activities, categories, collections, statistics, and documentation. Each skill includes a JSON contract and calls GoVisit's public read-only HTTP tools without an API key. The public repository is the canonical source for all 22 skills.",
+  "author": {
+    "name": "GoVisit.ai",
+    "url": "https://govisit.ai"
+  },
+  "homepage": "https://govisit.ai/en/docs/developers/agent-skills/overview",
+  "repo": "https://github.com/inhotel-io/govisit-toolkit",
+  "tags": ["research", "data"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["inhotel-io/govisit-toolkit"]
+  }
+}
