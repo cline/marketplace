@@ -1,0 +1,17 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "aihackr",
+  "type": "mcp",
+  "name": "AIHackr",
+  "tagline": "Read public webpages and crawl documentation sites",
+  "description": "Convert public URLs to Markdown or HTML, discover links, extract structured JSON, and run bounded crawls. Connect an AIHackr account with OAuth. Tool calls use AIHackr workspace credits.",
+  "author": { "name": "Big Apple Digital LLC", "url": "https://aihackr.com" },
+  "homepage": "https://aihackr.com/docs/mcp",
+  "repo": "https://github.com/biserd/aihackr-mcp",
+  "tags": ["software", "research"],
+  "license": "AGPL-3.0-or-later",
+  "verified": false,
+  "install": {
+    "args": ["aihackr", "--transport", "http", "https://aihackr.com/mcp"]
+  }
+}
