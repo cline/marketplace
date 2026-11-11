@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "govisit-tools",
+  "type": "mcp",
+  "name": "GoVisit Tools",
+  "tagline": "Explore published travel destinations and places through 22 read-only tools",
+  "description": "Use GoVisit's hosted Streamable HTTP MCP server to search destinations and places and read published travel details, activities, categories, collections, statistics, and documentation. The 22 tools are read-only and do not require a GoVisit API key. See the official MCP guide for setup and usage.",
+  "author": {
+    "name": "GoVisit.ai",
+    "url": "https://govisit.ai"
+  },
+  "homepage": "https://govisit.ai/en/docs/developers/mcp/overview",
+  "tags": ["research", "data"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["govisit-tools", "--transport", "http", "https://govisit.ai/mcp"]
+  }
+}
