@@ -19,6 +19,8 @@
       "sagemath",
       "--",
       "uvx",
+      "--python",
+      "3.12",
       "--from",
       "sagemath-mcp[passagemath]",
       "sagemath-mcp"
