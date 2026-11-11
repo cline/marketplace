@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "telemio",
+  "type": "mcp",
+  "name": "Telemio",
+  "tagline": "Investigate production telemetry from your coding agent",
+  "description": "Hosted, authenticated observability MCP for querying workspace telemetry, inspecting runtimes and dashboards, and retrieving integration setup guidance.",
+  "author": {
+    "name": "WunderCorp",
+    "url": "https://telemio.sh"
+  },
+  "homepage": "https://telemio.sh/mcp-server",
+  "repo": "https://github.com/wundercorp/telemio-mcp",
+  "tags": [
+    "software",
+    "data"
+  ],
+  "license": "Proprietary",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "telemio",
+      "--transport",
+      "http",
+      "https://mcp.telemio.sh/mcp"
+    ]
+  }
+}
