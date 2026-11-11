@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "Mnemoverse Memory",
   "tagline": "Hosted long-term memory for AI agents, shared across Cline and your other MCP clients",
-  "description": "Mnemoverse is a hosted memory engine for AI agents, reached over MCP. `memory_write` saves a memory and `memory_read` finds it again by a natural-language query, so what an agent stores from Cline is there in Claude Code, Cursor, VS Code or ChatGPT on the same account. Rating a recalled memory as helpful or misleading re-ranks what comes back next. Several agents can work from one memory through shared rooms (beta).\n\nSign-in is OAuth in the browser with your Mnemoverse account, so there is no key to paste. The free plan includes 1,000 queries a day and needs no credit card.\n\nDocs: https://mnemoverse.com/docs/api/remote-mcp-server",
+  "description": "Mnemoverse is a hosted memory engine for AI agents, reached over MCP. `memory_write` saves a memory and `memory_read` finds it again by a natural-language query, so what an agent stores from Cline is there in Claude Code, Cursor, VS Code or ChatGPT on the same account. Rating a recalled memory as helpful or misleading re-ranks what comes back next. Several agents can work from one memory through shared rooms.\n\nSign-in is OAuth in the browser with your Mnemoverse account, so there is no key to paste. The free plan includes 1,000 queries a day and needs no credit card.\n\nDocs: https://mnemoverse.com/docs/api/remote-mcp-server",
   "author": {
     "name": "Mnemoverse",
     "url": "https://mnemoverse.com"
