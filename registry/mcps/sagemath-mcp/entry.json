@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "sagemath-mcp",
+  "type": "mcp",
+  "name": "SageMath MCP",
+  "tagline": "Sandboxed SageMath for exact and symbolic mathematics",
+  "description": "40 tools over a sandboxed SageMath session that persists between calls: calculus, number theory, linear algebra, graphs, groups, elliptic curves, plotting, and verify_claim to re-check a stated result. Runs locally through uvx; the first launch downloads about 1 GB of Sage wheels (passagemath). macOS and Linux. An independent project by XBP Europe, not affiliated with the SageMath developers.",
+  "author": {
+    "name": "XBP Europe"
+  },
+  "tags": [
+    "research",
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "sagemath",
+      "--",
+      "uvx",
+      "--python",
+      "3.12",
+      "--from",
+      "sagemath-mcp[passagemath]",
+      "sagemath-mcp"
+    ]
+  },
+  "icon": "./icon.png",
+  "homepage": "https://github.com/XBP-Europe/sagemath-mcp",
+  "repo": "https://github.com/XBP-Europe/sagemath-mcp"
+}
