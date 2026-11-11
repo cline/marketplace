@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "knowdrive",
+  "type": "mcp",
+  "name": "KnowDrive",
+  "tagline": "Private, multimodal knowledge store with cited, provenance-backed search",
+  "description": "Hosted knowledge store for agents. Ingest documents, images, audio and video, then hybrid-search them and get back exact, cited fragments (source file, version, byte range or timestamp) instead of re-reading whole files. Sign in with OAuth on first use; the free tier needs no card.",
+  "author": {
+    "name": "Recourse Software Inc.",
+    "url": "https://knowdrive.ai"
+  },
+  "homepage": "https://knowdrive.ai/docs",
+  "repo": "https://github.com/Recourse-Software-Inc/knowdrive-mcp",
+  "icon": "./icon.png",
+  "tags": [
+    "memory",
+    "research",
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "knowdrive",
+      "--transport",
+      "http",
+      "https://knowdrive.ai/api/v1/mcp"
+    ]
+  }
+}
