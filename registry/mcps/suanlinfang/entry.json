@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "suanlinfang",
+  "type": "mcp",
+  "name": "算邻坊AI能力 SuanLinFang",
+  "tagline": "Speech-to-Text, TTS, OCR and LLM decision tools via one remote MCP server",
+  "description": "Multi-capability remote MCP server (Streamable HTTP) from SuanLinFang (算邻坊), a GPU compute sharing platform. 11 tools: speech-to-text (long audio + hotword correction), text-to-speech (21 voices, long-text async tasks), OCR (images & PDF documents, standard/accurate tiers), and calibrated LLM decision scoring. Bring your own key — register at suanlinfang.cn to get an API key with free trial credit.",
+  "author": {
+    "name": "SuanLinFang",
+    "url": "https://suanlinfang.cn"
+  },
+  "homepage": "https://suanlinfang.cn",
+  "icon": "./icon.svg",
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "suanlinfang",
+      "--transport",
+      "http",
+      "https://suanlinfang.cn/mcp",
+      "--header",
+      "X-SLF-Api-Key: <YOUR_SLF_API_KEY>"
+    ],
+    "notes": "Replace <YOUR_SLF_API_KEY> with your API key. Get one (with free trial credit) at https://suanlinfang.cn/consume-web/api-keys.html"
+  }
+}
