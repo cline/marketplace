@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "toolbox-pod",
+  "type": "mcp",
+  "name": "Toolbox POD",
+  "tagline": "Design custom shirts and hoodies, see mockups, and order prints",
+  "description": "Official hosted MCP server from Toolbox POD, a print-on-demand shop in Utah. Create shirt and hoodie designs, show them on mockups in the colors you choose, price an order, prepare it with a checkout link, and follow it to tracking. Remote server with OAuth sign-in: after installing, authorize it from Cline's MCP menu. Ships to US addresses only.",
+  "author": {
+    "name": "Toolbox POD"
+  },
+  "icon": "./icon.png",
+  "tags": [
+    "creative",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "toolbox-pod",
+      "--transport",
+      "http",
+      "https://mcp.toolboxpod.com/mcp"
+    ]
+  },
+  "homepage": "https://toolboxpod.com",
+  "repo": "https://github.com/Toolbox-POD/toolbox-pod-mcp"
+}
