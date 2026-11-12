@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "phonedriver",
+  "type": "mcp",
+  "name": "phonedriver",
+  "tagline": "Let Cline see and control Android and iOS phones",
+  "description": "An open-source MCP server and CLI for driving Android phones, emulators, the iOS Simulator and iPhones. The screen arrives as a short numbered text list, every tap, type and swipe returns only what changed, and a tap on Pay or Place order is held until the human approves it. Local stdio, no telemetry.",
+  "author": {
+    "name": "Hridya Agrawal",
+    "url": "https://github.com/hridaya423"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "icon": "./icon.svg",
+  "install": {
+    "args": [
+      "phonedriver",
+      "--",
+      "npx",
+      "-y",
+      "phonedriver",
+      "mcp"
+    ]
+  },
+  "repo": "https://github.com/hridaya423/phonedriver",
+  "homepage": "https://phonedriver.dev",
+  "license": "AGPL-3.0-only"
+}
