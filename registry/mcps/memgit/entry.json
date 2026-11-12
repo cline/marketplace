@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "memgit",
+  "type": "mcp",
+  "name": "memgit",
+  "tagline": "Versioned memory shared by Cline, Claude Code, Cursor and Codex on every machine",
+  "description": "memgit gives every MCP host one memory store. It imports Claude Code's own memory files, keeps every change as a checkpoint with diff and rollback, ranks recall with BM25, and syncs end-to-end encrypted between machines when sync is turned on. Local stdio server; needs Python 3.11+.",
+  "author": {
+    "name": "code4161",
+    "url": "https://memgit.dev"
+  },
+  "tags": [
+    "memory",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "memgit",
+      "--",
+      "npx",
+      "-y",
+      "memgit-mcp@0.16.0"
+    ]
+  },
+  "homepage": "https://memgit.dev",
+  "repo": "https://github.com/code4161/memgit",
+  "license": "MIT"
+}
