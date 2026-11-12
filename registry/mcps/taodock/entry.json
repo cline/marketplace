@@ -1,0 +1,54 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "taodock",
+  "type": "mcp",
+  "name": "TaoDock AI Image & Video",
+  "tagline": "Generate AI images and videos with TaoDock models from Cline",
+  "description": "Discover the models authorized for your TaoDock API key, generate images, start asynchronous video jobs, check their status, and download completed media. The MCP server runs locally over stdio, sends generation requests to the TaoDock HTTPS API, consumes TaoDock quota, and writes generated media to your computer.",
+  "author": {
+    "name": "TaoDock",
+    "url": "https://taodock.com"
+  },
+  "homepage": "https://taodock.com",
+  "repo": "https://github.com/taodock-api/taodock-mcp",
+  "icon": "./icon.png",
+  "tags": [
+    "creative"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "taodock",
+      "--",
+      "npx",
+      "-y",
+      "@taodock-ai/mcp-server@0.2.0"
+    ],
+    "env": [
+      {
+        "name": "TAODOCK_API_KEY",
+        "required": true,
+        "description": "TaoDock API key used to discover authorized models and perform generation requests.",
+        "url": "https://taodock.com/keys"
+      },
+      {
+        "name": "TAODOCK_BASE_URL",
+        "required": false,
+        "description": "Optional trusted HTTPS API base URL override. The API key and request inputs are sent to this endpoint."
+      },
+      {
+        "name": "TAODOCK_OUTPUT_DIR",
+        "required": false,
+        "description": "Directory for generated images and videos. An absolute path is recommended."
+      },
+      {
+        "name": "TAODOCK_LOCALE",
+        "required": false,
+        "description": "Error message language: en or zh."
+      }
+    ],
+    "notes": "Requires Node.js 20.11 or later. Image and video generation consumes TaoDock quota. Generated media is stored locally and is not deleted automatically. See the repository PRIVACY.md for data-handling details."
+  }
+}
