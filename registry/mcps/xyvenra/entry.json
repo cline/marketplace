@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "xyvenra",
+  "type": "mcp",
+  "name": "Xyvenra",
+  "tagline": "Build Cloud, Data, Studio, and Mobile projects through Xyvenra's remote MCP server.",
+  "description": "Connect to Xyvenra over Streamable HTTP at https://xyvenra.com/api/mcp. After signing in with OAuth 2.1, agents can create and list Cloud, Data, Studio, and Mobile projects, deploy or export work, manage environment variables, and work with Data tables, records, and private files.\n\nAuthentication is OAuth-first (no static Authorization header). A human-minted platform API key from https://xyvenra.com/app/keys is a manual fallback only. This listing does not cover unprovisioned Data features such as app-user auth, public storage, Realtime, or Edge Functions.",
+  "author": {
+    "name": "Ouroboros Apps",
+    "url": "https://xyvenra.com"
+  },
+  "tags": [
+    "software",
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "xyvenra",
+      "--transport",
+      "http",
+      "https://xyvenra.com/api/mcp"
+    ],
+    "notes": "OAuth 2.1 starts in the client. If you prefer an API key, mint a xyv_plat_ platform key at https://xyvenra.com/app/keys and add it as a Bearer token yourself. Do not put a static Authorization header in the install command."
+  },
+  "homepage": "https://xyvenra.com",
+  "icon": "https://xyvenra.com/icon.svg"
+}
