@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "skrap",
+  "type": "mcp",
+  "name": "Skrap.ai",
+  "tagline": "Verify emails, find verified work emails and search B2B leads",
+  "description": "Skrap.ai's hosted MCP server. Ask in plain language and Cline can:\n\n- verify an email address (valid, risky, invalid or unknown), one at a time or as a bulk job of up to 5,000 addresses\n- find a person's verified work email from their name and company, one at a time or in bulk\n- search people and companies by title, company, location and other filters, then get a lead's verified email\n- look up company details, save leads to your Skrap.ai lists and check your remaining credits\n\nEvery tool states its credit cost. Invalid, unknown and not-found results use no credits. Sign in with your Skrap.ai account over OAuth on first use (a free account includes 100 one-time credits). Setup guide: https://skrap.ai/mcp",
+  "author": {
+    "name": "Skrap.ai",
+    "url": "https://skrap.ai"
+  },
+  "homepage": "https://skrap.ai/mcp",
+  "icon": "./icon.svg",
+  "tags": [
+    "sales",
+    "marketing",
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "skrap",
+      "--transport",
+      "http",
+      "https://mcp.skrap.ai/mcp"
+    ],
+    "notes": "Cline opens a browser window on first use: sign in with your Skrap.ai account to authorise access. You can revoke it any time in Skrap.ai under Settings → API keys & MCP."
+  }
+}
