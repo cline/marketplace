@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "printandmailcompany",
+  "type": "mcp",
+  "name": "Print and Mail Company",
+  "tagline": "Print and post real paper letters, including registered mail, to any country.",
+  "description": "Print and Mail Company prints real paper letters and posts them worldwide: upload a PDF or compose a letter from text, check the exact price, and send it by standard or registered mail with tracking. Price quotes, destinations and the PDF margin check work without an account; sending signs in with OAuth and is paid from prepaid credit.",
+  "author": {
+    "name": "Print and Mail Company"
+  },
+  "tags": [
+    "productivity",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "printandmailcompany",
+      "--transport",
+      "http",
+      "https://printandmailcompany.com/mcp"
+    ]
+  },
+  "homepage": "https://printandmailcompany.com/en/ai-assistants",
+  "repo": "https://github.com/Printandmailcompany/connector",
+  "icon": "https://printandmailcompany.com/icon.svg",
+  "license": "PROPRIETARY"
+}
