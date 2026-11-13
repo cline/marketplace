@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "csv-contract-preflight",
+  "type": "mcp",
+  "name": "CSV Contract Preflight MCP",
+  "tagline": "Inspect CSV contract rules, then buy a $0.01 validation report.",
+  "description": "Linux/Python3.11+ local stdio engineering preview. Twelve tools cover free offer/template inspection, explicit contract review and acceptance, and separately authorized Apify report purchase/retrieval. Completed pass and findings reports each cost$0.01 using the buyer's own eligible Apify account; custom proposal generation uses the caller's own model. Native limits:20,000 UTF-8 CSV bytes,500 data records,64 columns and8,000 contract bytes. Supports string/integer fields, required values, exact header order and literal string/composite keys. No repair, import authorization or source-truth guarantee. Offer metadata is a static reference, not a live quote. See the linked README for privacy, recovery and platform limitations.",
+  "author": {
+    "name": "CSV Contract Preflight contributors"
+  },
+  "homepage": "https://apify.com/satisfied_laptop/csv-contract-preflight",
+  "repo": "https://github.com/anytine123/csv-contract-preflight-mcp",
+  "icon": "./icon.png",
+  "tags": [
+    "data",
+    "business"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "csv-contract-preflight",
+      "--",
+      "uvx",
+      "--from",
+      "git+https://github.com/anytine123/csv-contract-preflight-mcp.git@a9f0f05d17b0173af8e5e91160148d8a4184cfd8",
+      "csv-contract-preflight-mcp"
+    ],
+    "env": [
+      {
+        "name": "APIFY_TOKEN",
+        "required": false,
+        "description": "Your own eligible Apify buyer token for buyer-profile drafts and paid reports; omit for free offer/template inspection.",
+        "url": "https://console.apify.com/account/integrations"
+      }
+    ],
+    "notes": "Requires Linux, Python3.11+, uv and Git. Installs immutable public0.4 source. Free inspection needs no token. Configure an optional buyer token privately through your client before authorized buyer operations; do not put it in tool arguments. Report purchases and model/provider costs are separate. Preserve private operation state for uncertain-start recovery. No Windows/macOS compatibility is claimed."
+  }
+}
