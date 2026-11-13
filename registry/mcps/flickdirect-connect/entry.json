@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "flickdirect-connect",
+  "type": "mcp",
+  "name": "FlickDirect Movie MCP Server",
+  "tagline": "Movie MCP server for facts, news, reviews, podcasts and videos, with original source links.",
+  "description": "FlickDirect Inc\u2019s free, read-only movie MCP server provides movie and TV facts, available country-specific dates/ratings, trivia, brief quote excerpts, news, reviews, interviews and eligible stored transcripts. Live service 1.5.9 supports recent uploads from three published YouTube channels and bounded FlickRadio archive discovery. Healthy video-feed results remain available if another channel times out, with incomplete coverage reported. Streaming, soundtrack/player and app destinations retain their supplied parameters; Connect does not perform checkout. Retailer listings and daily deals are no longer supported. Bounded longer-title fallback preserves original title words and requested year/media filters. Responses provide bounded source information and original page links, not full articles/reviews/transcripts or photographs. The advertised tools are search_flickdirect_content and get_flickdirect_movie_details. Cached search_fdmd and get_fdmd_movie calls remain compatible at the same endpoint. No FlickDirect account or API key is required; host application requirements and tool selection still apply.",
+  "author": {
+    "name": "FlickDirect Inc",
+    "url": "https://flickdirect.com/"
+  },
+  "homepage": "https://flickdirect.com/connect.aspx",
+  "repo": "https://github.com/nrose101/flickdirect-movie-mcp-server",
+  "icon": "https://raw.githubusercontent.com/nrose101/flickdirect-movie-mcp-server/master/assets/logo.png",
+  "tags": [
+    "research",
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "flickdirect-connect",
+      "--transport",
+      "http",
+      "https://connect.flickdirect.com/mcp"
+    ],
+    "notes": "Uses Streamable HTTP without authentication. Ask for a title and release year to distinguish similarly named films. Follow and cite FlickDirect source links. The linked repository contains public plugin metadata and setup guidance, not the proprietary service implementation."
+  }
+}
