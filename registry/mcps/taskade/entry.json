@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "taskade",
+  "type": "mcp",
+  "name": "Taskade",
+  "tagline": "Manage Taskade projects, tasks, AI agents and automations",
+  "description": "Taskade: projects, tasks, AI agents and automations. Remote server with OAuth. This official Taskade MCP integration is installable through Cline and needs a paid Taskade plan.",
+  "author": {
+    "name": "Taskade",
+    "url": "https://www.taskade.com"
+  },
+  "icon": "./icon.png",
+  "tags": [
+    "productivity",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "taskade",
+      "--transport",
+      "http",
+      "https://www.taskade.com/mcp"
+    ]
+  },
+  "homepage": "https://www.taskade.com/docs/mcp",
+  "repo": "https://github.com/taskade/mcp"
+}
