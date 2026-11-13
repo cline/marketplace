@@ -9,14 +9,22 @@
     "name": "Systra Tools",
     "url": "https://systra.tools"
   },
-  "tags": ["creative", "software"],
+  "tags": [
+    "creative",
+    "software"
+  ],
   "license": "MIT",
   "verified": false,
   "featured": false,
   "install": {
-    "args": ["systra-tools", "--transport", "http", "https://systra.tools/api/mcp"],
-    "notes": "Free components work without a key. To access Premium components, create a key at https://systra.tools/mcp."
+    "args": [
+      "systra-tools",
+      "--transport",
+      "http",
+      "https://systra.tools/api/mcp"
+    ],
+    "notes": "Free components work without a key. To access Premium components, create a key at https://systra.tools/mcp?utm_source=cline&utm_medium=referral&utm_campaign=mcp_directory."
   },
-  "homepage": "https://systra.tools/mcp",
+  "homepage": "https://systra.tools/mcp?utm_source=cline&utm_medium=referral&utm_campaign=mcp_directory",
   "repo": "https://github.com/systra-tools/systra-tools-plugin"
 }
