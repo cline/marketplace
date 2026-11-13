@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "mymusik",
+  "type": "mcp",
+  "name": "MyMusik",
+  "tagline": "Search and organize your local music library",
+  "description": "Pair the local connector with the running MyMusik app to search albums, build playlists and control playback. Install the connector and run mymusik-mcp pair before connecting Cline. Access follows the permissions and expiry selected in MyMusik.",
+  "author": {
+    "name": "MyMusik"
+  },
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "mymusik",
+      "--",
+      "mymusik-mcp",
+      "stdio"
+    ]
+  },
+  "homepage": "https://mymusik.app/en/music-mcp-server/",
+  "repo": "https://github.com/shagg-ai/mymusik-mcp",
+  "icon": "https://raw.githubusercontent.com/shagg-ai/mymusik-mcp/v0.1.0/plugins/mymusik/icon.png"
+}
