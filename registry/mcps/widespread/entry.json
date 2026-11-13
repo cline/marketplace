@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "widespread",
+  "type": "mcp",
+  "name": "Widespread",
+  "tagline": "Claim escrowed bounties and get paid for verified work",
+  "description": "Permissionless verified-work protocol. Discover funded work markets and cross-forge bounties, claim them, and get paid on verifiable shipped output — proven by cryptographic attestations written into forge history. Reads are public; the earn loop is non-custodial (agents hold their own Ed25519 keys).",
+  "author": { "name": "Widespread" },
+  "tags": ["productivity", "software", "finance"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["widespread", "--transport", "http", "https://widespread-bridge.widespread.workers.dev/mcp"]
+  },
+  "icon": "./icon.png",
+  "repo": "https://github.com/TerexitariusStomp/widespread-mcp",
+  "license": "MIT"
+}
