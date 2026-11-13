@@ -3,6 +3,7 @@
   "id": "browserless",
   "type": "mcp",
   "name": "Browserless",
+  "icon": "./icon.svg",
   "tagline": "Cloud browser automation for AI agents, with stealth, proxies, and CAPTCHA solving",
   "description": "Browserless gives Cline hosted browser automation with stealth features, configurable proxies, and CAPTCHA-solving capabilities. Search the web, scrape and crawl websites, extract structured data, and interact with pages without installing a local browser. A Browserless account is required; a free plan is available.",
   "author": {
