@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "clickhouse-loom",
+  "type": "mcp",
+  "name": "ClickHouse Loom",
+  "tagline": "Self-hosted memory, document search and a code index for coding agents",
+  "description": "A self-hosted MCP server on ClickHouse. Agents save and search memories shared across sessions and tools, search documents, and query a code index of your repositories (definitions, callers, impact). Memories about code stay linked to the code they name as it moves or changes. Runs on your machine with Docker Compose: install it first with the steps in https://github.com/ClickHouse/loom/blob/main/llms-install.md, then add this entry.",
+  "author": {
+    "name": "ClickHouse",
+    "url": "https://clickhouse.com"
+  },
+  "homepage": "https://clickhouse.github.io/loom/",
+  "repo": "https://github.com/ClickHouse/loom",
+  "icon": "./icon.svg",
+  "tags": [
+    "memory",
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "clickhouse-loom",
+      "--transport",
+      "http",
+      "http://localhost:7777/mcp?toolset=coding"
+    ]
+  }
+}
