@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "systra-tools",
+  "type": "mcp",
+  "name": "Systra Tools",
+  "tagline": "Production-ready React and Tailwind UI for coding agents",
+  "description": "Systra Tools gives AI coding agents a growing library of production-ready React and Tailwind UI sections, elements and templates. Search for components and pull implementation code directly into your workflow. Free components work without an API key; optional Premium access unlocks the wider library.",
+  "author": {
+    "name": "Systra Tools",
+    "url": "https://systra.tools"
+  },
+  "tags": [
+    "creative",
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "systra-tools",
+      "--transport",
+      "http",
+      "https://systra.tools/api/mcp"
+    ],
+    "notes": "Free components work without a key. To access Premium components, create a key at https://systra.tools/mcp?utm_source=cline&utm_medium=referral&utm_campaign=mcp_directory."
+  },
+  "homepage": "https://systra.tools/mcp?utm_source=cline&utm_medium=referral&utm_campaign=mcp_directory",
+  "repo": "https://github.com/systra-tools/systra-tools-plugin"
+}
