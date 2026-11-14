@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "cassette-publish",
+  "type": "mcp",
+  "name": "Cassette Publish",
+  "tagline": "Publish browser games to Cassette from a coding agent",
+  "description": "Publish and manage browser games on Cassette through a hosted Streamable HTTP MCP server at https://cassette.gg/mcp/publish. OAuth sign-in and human approval are required. Documentation: https://cassette.gg/agents/guide.md. The server is vendor-hosted; its implementation is not public source.",
+  "author": { "name": "Cassette", "url": "https://cassette.gg" },
+  "homepage": "https://cassette.gg/agents/guide.md",
+  "icon": "https://cassette.gg/icon-512.png",
+  "tags": ["software", "creative"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["cassette-publish", "--transport", "http", "https://cassette.gg/mcp/publish"],
+    "notes": "Sign in and approve the client on Cassette when prompted."
+  }
+}
