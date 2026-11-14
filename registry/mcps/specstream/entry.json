@@ -3,8 +3,8 @@
   "id": "specstream",
   "type": "mcp",
   "name": "SpecStream",
-  "tagline": "Finished lists from the live web, every row with its source",
-  "description": "Ask in plain words for companies, people, products and more. SpecStream reads the live web and hands back the finished list, every row with its source, priced per match. You see the price and approve a maximum before anything runs.",
+  "tagline": "Live web search, page reading and structured rows, each value with its source",
+  "description": "The live web data engine for agents. Search the live web, read pages (HTML, PDF, Word, Excel) and get structured rows for a request in plain words, every value with its source URL. A paid run shows its price, and you approve a maximum before it starts.",
   "author": {
     "name": "SpecStream",
     "url": "https://specstream.ai"
