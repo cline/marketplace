@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "kling-ai-global",
+  "type": "mcp",
+  "name": "Kling AI (Global)",
+  "tagline": "Create images and videos with the official Kling AI MCP service",
+  "description": "Connect to the hosted Kling AI Global MCP service for image and video generation workflows. Sign in with a Global account using OAuth. Generation consumes paid personal-workspace credits; Global and China accounts, credits, and tasks are separate. Available models and parameters depend on the authenticated account. The linked GitHub repository contains a client plugin and Skills, not the hosted server source.",
+  "author": { "name": "Kling AI", "url": "https://kling.ai/" },
+  "homepage": "https://kling.ai/app/mcp/guide",
+  "repo": "https://github.com/klingai-tech/claude-plugin",
+  "tags": ["creative"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["kling-ai-global", "--transport", "http", "https://kling.ai/mcp/plugin"],
+    "notes": "After installation, complete OAuth for your Global Kling account. Confirm generation settings before submitting a paid task."
+  }
+}
