@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "skillporter",
+  "type": "mcp",
+  "name": "Skillporter",
+  "tagline": "Audit, scan and sync AI agent skills across 19 harnesses.",
+  "description": "Read-only MCP server for workspace-level agent-skill hygiene. Exposes nine tools: `skillporter_diagnose` (broken symlinks, SHA-256 content drift between harness copies, duplicate loading), `skillporter_detect` (which harnesses are active), `skillporter_scan` (static supply-chain scan: embedded secrets, prompt-injection overrides, hidden Unicode, curl-pipe-shell, reverse shells, symlink escapes), `skillporter_inspect`, and `skillporter_matrix` (the 19-harness compatibility matrix). Write tools (`add`, `install`, `sync`, `remove`) are listed but return an error unless the server is started with `--allow-writes`. Tool arguments are treated as untrusted and confined to the workspace root. Speaks JSON-RPC 2.0 over stdio, MCP protocol version 2024-11-05. Python 3.9+, zero runtime dependencies, MIT.",
+  "author": {
+    "name": "Shanmukh Dheekonda",
+    "url": "https://github.com/Shanmukh-l33t"
+  },
+  "tags": [
+    "software",
+    "security"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "skillporter",
+      "--",
+      "npx",
+      "-y",
+      "@shanmukhdheekonda/skillporter",
+      "mcp"
+    ]
+  },
+  "homepage": "https://www.skillporter.dev",
+  "repo": "https://github.com/Shanmukh-l33t/skillporter",
+  "license": "MIT"
+}
