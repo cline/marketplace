@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "specstream",
+  "type": "mcp",
+  "name": "SpecStream",
+  "tagline": "Live web search, page reading and structured rows, each value with its source",
+  "description": "The live web data engine for agents. Search the live web, read pages (HTML, PDF, Word, Excel) and get structured rows for a request in plain words, every value with its source URL. A paid run shows its price, and you approve a maximum before it starts.",
+  "author": {
+    "name": "SpecStream",
+    "url": "https://specstream.ai"
+  },
+  "homepage": "https://specstream.ai/docs/mcp",
+  "repo": "https://github.com/specstream/specstream-tools",
+  "icon": "./icon.png",
+  "tags": [
+    "data",
+    "research",
+    "sales"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "specstream",
+      "--transport",
+      "http",
+      "https://api.specstream.ai/mcp"
+    ]
+  }
+}
