@@ -10,7 +10,7 @@
     "url": "https://specstream.ai"
   },
   "homepage": "https://specstream.ai/docs/mcp",
-  "repo": "https://github.com/Specstreamai/specstream-tools",
+  "repo": "https://github.com/specstream/specstream-tools",
   "icon": "./icon.png",
   "tags": [
     "data",
