@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "qrdx",
+  "type": "mcp",
+  "name": "QRdx",
+  "tagline": "Design QR codes and barcodes with a scan check",
+  "description": "A remote MCP server that designs QR codes for links, Wi-Fi, contacts, email, SMS, locations and bank payments, scores how well each design scans, adjusts the style until the score is Great, and returns SVG, PNG and a playground link. It also checks and renders barcodes such as EAN-13, UPC-A, Code 128, Data Matrix, PDF417 and Aztec. No API key is needed; a QRdx API key only adds saving themes and barcodes to a workspace.",
+  "author": {
+    "name": "QRdx",
+    "url": "https://qrdx.dev"
+  },
+  "homepage": "https://qrdx.dev/mcp",
+  "repo": "https://github.com/qrdxinc/qrdx",
+  "icon": "https://qrdx.dev/favicon.svg",
+  "tags": [
+    "creative",
+    "software"
+  ],
+  "license": "AGPL-3.0-or-later",
+  "verified": false,
+  "install": {
+    "args": [
+      "qrdx",
+      "--transport",
+      "http",
+      "https://mcp.qrdx.dev/mcp"
+    ]
+  }
+}
