@@ -1,0 +1,17 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "cassette-find",
+  "type": "mcp",
+  "name": "Cassette Game Finder",
+  "tagline": "Find browser games to play on Cassette",
+  "description": "Search browser games, read game details, find similar games, and list genres. This read-only server needs no account or API key. Connect over Streamable HTTP at https://cassette.gg/mcp. Documentation: https://cassette.gg/agents/find-a-game.md. The server is vendor-hosted; its implementation is not public source.",
+  "author": { "name": "Cassette", "url": "https://cassette.gg" },
+  "homepage": "https://cassette.gg/agents/find-a-game.md",
+  "icon": "https://cassette.gg/icon-512.png",
+  "tags": ["creative"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["cassette-find", "--transport", "http", "https://cassette.gg/mcp"]
+  }
+}
