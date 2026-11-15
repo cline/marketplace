@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "easyrender-image-to-3d",
+  "type": "skill",
+  "name": "easyrender image to 3D",
+  "tagline": "Turn a product photo into a textured GLB, with a preview before spending credits",
+  "description": "Agent skill for the easyrender photo-to-3D MCP. The agent shows a free preview, states the credit cost, and only starts a paid build after approval. Suitable for individual products and furniture; not dimensionally accurate CAD, room reconstruction, or photogrammetry.",
+  "author": { "name": "easyrender", "url": "https://easyrender.ai" },
+  "homepage": "https://easyrender.ai/mcp",
+  "repo": "https://github.com/easyrenderai/easyrender-image-to-3d",
+  "icon": "https://easyrender.ai/icon.svg",
+  "tags": ["creative"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["easyrenderai/easyrender-image-to-3d"]
+  }
+}

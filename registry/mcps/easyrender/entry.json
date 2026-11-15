@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "easyrender",
+  "type": "mcp",
+  "name": "easyrender",
+  "tagline": "Remote image-to-3D MCP: preview a product photo, then build a textured GLB with account credits",
+  "description": "A hosted Streamable HTTP MCP at https://easyrender.ai/api/mcp. OAuth-capable clients can sign in at the endpoint. An optional API key can be supplied as a Bearer token. Tools cover preview, credit balance, and a paid textured GLB build. Not dimensionally accurate CAD, room reconstruction, or photogrammetry.",
+  "author": { "name": "easyrender", "url": "https://easyrender.ai" },
+  "homepage": "https://easyrender.ai/mcp",
+  "repo": "https://github.com/easyrenderai/easyrender.ai",
+  "icon": "https://easyrender.ai/icon.svg",
+  "tags": ["creative"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["easyrender", "--transport", "http", "https://easyrender.ai/api/mcp"],
+    "env": [
+      {
+        "name": "EASYRENDER_API_KEY",
+        "required": false,
+        "description": "Optional API key as a Bearer token. OAuth-capable clients can sign in at the endpoint instead.",
+        "url": "https://easyrender.ai/mcp#connect"
+      }
+    ]
+  }
+}
