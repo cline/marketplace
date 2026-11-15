@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "soley",
+  "type": "mcp",
+  "name": "Sóley: Iceland Travel",
+  "tagline": "Book licensed Icelandic tours and stays, with live Iceland roads, weather, aurora and buses.",
+  "description": "Sóley connects AI assistants to licensed tour, activity and accommodation operators in Iceland. An assistant can search operators, read cancellation policies, check availability, quote prices in ISK and the traveller's currency, and reserve each leg of a trip. The traveller confirms with an email code and pays the operator directly through one payment link. Live Iceland data comes with it: roads, weather, aurora, earthquakes, buses and flights.\n\nHosted remote server (streamable HTTP) with OAuth 2.1 and dynamic client registration. No account, password or API key is needed; `get_about_soley` and `search_licensed_operators` work before authorization.",
+  "author": {
+    "name": "Sóley",
+    "url": "https://soley.travel"
+  },
+  "homepage": "https://soley.travel/en/docs/mcp",
+  "repo": "https://github.com/RagnarAgustsson/soley-mcp",
+  "icon": "./icon.png",
+  "tags": [
+    "travel"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "soley",
+      "--transport",
+      "http",
+      "https://api.soley.travel/mcp"
+    ],
+    "notes": "A browser window opens for OAuth authorization on first use. If it does not, run `cline mcp` and choose Authorize OAuth for soley."
+  }
+}
