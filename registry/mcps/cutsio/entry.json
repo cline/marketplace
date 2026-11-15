@@ -1,0 +1,17 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "cutsio",
+  "type": "mcp",
+  "name": "Cutsio",
+  "tagline": "Search and organize a Cutsio video workspace.",
+  "description": "Search a Cutsio workspace by keyword or natural language, find exact moments in transcripts, read asset metadata, list assets by folder or collection, check plan usage, and organize assets into folders. OAuth-scoped to the signed-in user's workspace.",
+  "author": { "name": "Cutsio", "url": "https://cutsio.com" },
+  "homepage": "https://cutsio.com/mcp",
+  "repo": "https://github.com/rish405/cutsio-mcp",
+  "icon": "./icon.png",
+  "tags": ["productivity", "creative"],
+  "verified": false,
+  "install": {
+    "args": ["cutsio", "--transport", "http", "https://studio.cutsio.com/mcp"]
+  }
+}
