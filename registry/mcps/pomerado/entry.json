@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "pomerado",
+  "type": "mcp",
+  "name": "Pomerado",
+  "tagline": "Do tasks on websites with tools built for each site. Search travel, shop, check orders and bills, and fill in forms.",
+  "description": "Pomerado is a hosted MCP server that does tasks on websites. It searches flights, hotels and rentals, books and reserves, shops and compares prices, checks orders, bills and account pages, and fills in forms. Each task runs as a ready-made tool built for one site. When a site has no tool yet, Pomerado builds one, tests it and reuses it. Read tools and write tools are separate and carry MCP tool annotations. Tasks on your own accounts use logins you save on Pomerado's protected pages, so passwords never pass through the chat. Connect to https://mcp.pomerado.ai/mcp and sign in with OAuth (Google, GitHub or email). Docs are at https://docs.pomerado.ai.",
+  "author": {
+    "name": "Pomerado",
+    "url": "https://pomerado.ai"
+  },
+  "homepage": "https://docs.pomerado.ai",
+  "icon": "./icon.svg",
+  "tags": [
+    "productivity",
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "pomerado",
+      "--transport",
+      "http",
+      "https://mcp.pomerado.ai/mcp"
+    ]
+  }
+}
