@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "saas-custom-domains",
+  "type": "mcp",
+  "name": "SaaS Custom Domains",
+  "tagline": "Add custom domains with automatic SSL for your SaaS customers, check DNS and see traffic.",
+  "description": "Manage your customers' custom domains from Cline. Add a domain and get the DNS records your customer needs, find out why a domain isn't live yet, purge the cache, set up redirects and rate limit rules, and see traffic for each domain with the Domain Analytics add-on. The 26 tools take hostnames, not IDs, and the delete tools are marked destructive. This official SaaS Custom Domains MCP server is remote, so there's nothing to install or run locally.",
+  "author": {
+    "name": "SaaS Custom Domains",
+    "url": "https://saascustomdomains.com"
+  },
+  "tags": [
+    "software"
+  ],
+  "icon": "./icon.svg",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "saas-custom-domains",
+      "--transport",
+      "http",
+      "https://mcp.saascustomdomains.com/mcp"
+    ],
+    "notes": "Cline asks you to sign in to your SaaS Custom Domains account the first time it connects. In VS Code, click Authenticate next to the server. You can also send an API token as an `Authorization: Bearer <token>` header; create one under Settings → API."
+  },
+  "homepage": "https://saascustomdomains.com/mcp",
+  "repo": "https://github.com/saas-custom-domains/skills"
+}
