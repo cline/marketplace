@@ -3,8 +3,8 @@
   "id": "isto-intents",
   "type": "mcp",
   "name": "Isto Intents",
-  "tagline": "Ask a local listing portal to keep looking for a used car or home; the user confirms there.",
-  "description": "Isto Intents lets an AI assistant ask an independent local listing portal to keep looking for a used car or a home that is not on offer today. The portal watches its national market and e-mails the person what fits — after the person confirms on the portal's own page. The assistant never passes a name, an e-mail address or a phone number.",
+  "tagline": "Private standing purchase intents: a portal watches used-car and home listings (SK/CZ), notifies you.",
+  "description": "Isto Intents is a private intent exchange for used cars and homes — standing purchase intents. A person tells their AI assistant once what they want; a listing portal in their country watches used-car and home listings and e-mails them when a matching offer appears. Today it works in Slovakia and Czechia, and Isto Intents is listed in ChatGPT's app directory since 13 November 2026. The person confirms on the portal's own page before anything is watched; the assistant never passes a name, an e-mail address or a phone number.",
   "author": {
     "name": "Isto Intents",
     "url": "https://istointents.com"
