@@ -3,8 +3,8 @@
   "id": "harborrank",
   "type": "mcp",
   "name": "HarborRank",
-  "tagline": "Live SEO data for agents: keywords, SERPs, backlinks, audits, Search Console",
-  "description": "Hosted SEO server for AI agents. Tools cover keyword metrics (volume, difficulty, intent, trends), live Google organic and local Maps results, a domain's ranking keywords and backlink overview, rank-tracker reads, crawl-based site audits, and read-only Google Search Console performance and URL inspection. Sign in with OAuth in the browser; no API key. Free plan with 1,000 credits a month; paid plans from $29 a month. Each research tool states its credit cost; Search Console tools use no credits.",
+  "tagline": "Live SEO data for agents: keywords, SERPs, Maps rank grids, backlinks, audits, Search Console",
+  "description": "Hosted SEO server for AI agents with 53 tools: keyword metrics (volume, difficulty, intent, trends), live Google results with People Also Ask and AI Overviews, Google Maps results and local rank grids, a domain's ranking keywords and backlinks, rank tracking with competitor positions, crawl-based site audits and real-user Core Web Vitals, AI visibility for a brand, and read-only Google Search Console and Google Analytics. Sign in with OAuth in the browser; no API key. New accounts start with a 7-day free trial.",
   "author": {
     "name": "HarborRank",
     "url": "https://harborrank.com"
@@ -25,6 +25,6 @@
       "http",
       "https://app.harborrank.com/mcp"
     ],
-    "notes": "The first tool call opens a browser OAuth login. Create a free account at https://app.harborrank.com/sign-up if you do not have one."
+    "notes": "The first tool call opens a browser OAuth login. New accounts start a 7-day free trial at https://app.harborrank.com/sign-up."
   }
 }
