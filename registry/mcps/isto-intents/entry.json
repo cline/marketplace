@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "isto-intents",
+  "type": "mcp",
+  "name": "Isto Intents",
+  "tagline": "Private standing purchase intents: a portal watches used-car and home listings (SK/CZ), notifies you.",
+  "description": "Isto Intents is a private intent exchange for used cars and homes — standing purchase intents. A person tells their AI assistant once what they want; a listing portal in their country watches used-car and home listings and e-mails them when a matching offer appears. Today it works in Slovakia and Czechia, and Isto Intents is listed in ChatGPT's app directory since 13 November 2026. The person confirms on the portal's own page before anything is watched; the assistant never passes a name, an e-mail address or a phone number.",
+  "author": {
+    "name": "Isto Intents",
+    "url": "https://istointents.com"
+  },
+  "homepage": "https://istointents.com/assistants/",
+  "repo": "https://github.com/istointents/isto-intents-mcp",
+  "icon": "https://istointents.org/brand/ikona-512.png",
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "isto-intents",
+      "--transport",
+      "http",
+      "https://istointents.com/mcp"
+    ]
+  }
+}
