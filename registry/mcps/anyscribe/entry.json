@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "anyscribe",
+  "type": "mcp",
+  "name": "AnyScribe",
+  "tagline": "Search and read your AnyScribe transcripts, and send links to your iPhone to transcribe.",
+  "description": "Official remote MCP server for AnyScribe, an iPhone and iPad transcription app. Search and read your transcripts of videos, podcasts, lectures and voice memos, with their summaries, translations and highlights; list transcriptions, folders and highlights; and send YouTube, TikTok or Instagram links to your iPhone to transcribe and follow their progress. Library tools are read-only. Sign in with your Apple ID through OAuth; no API key needed.",
+  "author": { "name": "AnyScribe", "url": "https://www.anyscribe.app" },
+  "homepage": "https://www.anyscribe.app/mcp",
+  "repo": "https://github.com/KELiON/anyscribe-mcp",
+  "icon": "https://www.anyscribe.app/icon-512.png",
+  "tags": ["productivity", "research"],
+  "license": "PROPRIETARY",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["anyscribe", "--transport", "http", "https://mcp.anyscribe.app"]
+  }
+}
