@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "search-console-mcp",
+  "type": "mcp",
+  "name": "search-console-mcp",
+  "tagline": "Google Search Console for any MCP client - 30-second login, no Google Cloud project. Read-only.",
+  "description": "Google Search Console for any MCP client - 30-second login, no Google Cloud project. Read-only.",
+  "author": {
+    "name": "sudomichael",
+    "url": "https://github.com/sudomichael"
+  },
+  "repo": "https://github.com/sudomichael/search-console-mcp",
+  "tags": [
+    "research"
+  ],
+  "verified": false,
+  "install": {
+    "args": [
+      "search-console-mcp",
+      "--",
+      "npx",
+      "-y",
+      "search-console-mcp-server@0.2.3"
+    ]
+  }
+}
