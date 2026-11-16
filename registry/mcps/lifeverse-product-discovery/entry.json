@@ -23,7 +23,7 @@
       "lifeverse",
       "--transport",
       "http",
-      "https://lifeverse.gufreelancer.com/api/mcp"
+      "https://lifeverse.gufreelancer.com/api/mcp?source=mcp-directory"
     ]
   }
 }
