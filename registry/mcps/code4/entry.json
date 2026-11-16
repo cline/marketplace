@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "code4",
+  "type": "mcp",
+  "name": "Code4",
+  "tagline": "Work with Code4 issues, code reviews, pipelines, deployments and team knowledge",
+  "description": "Hosted MCP server for [Code4](https://code4.space), a software development platform for teams: issues and boards, git hosting and code review, CI/CD pipelines, deployments, documents, chat and calls.\n\nCline works with your issues, code reviews, repositories, pipelines, deployments and documents, and searches what your team discussed and decided in chat, issues, reviews, documents, call transcripts and commit messages. Source code is searched with full-text search and symbol lookup.\n\nSign-in is OAuth 2.1 with your Code4 account (Dynamic Client Registration and PKCE), so there is no API key to paste. The assistant gets exactly your permissions. Tools carry MCP annotations: read-only tools are marked `readOnlyHint`, tools that deploy, merge, delete or change secrets are marked `destructiveHint`.",
+  "author": {
+    "name": "Code4",
+    "url": "https://code4.space"
+  },
+  "homepage": "https://github.com/code4-space/mcp#readme",
+  "repo": "https://github.com/code4-space/mcp",
+  "icon": "./icon.svg",
+  "tags": [
+    "software",
+    "productivity",
+    "memory"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "c4",
+      "--transport",
+      "http",
+      "https://mcp.code4.space/mcp"
+    ],
+    "notes": "On first use, sign in with your Code4 account in the browser and approve access. You need a Code4 account in at least one organization: https://code4.space/signup"
+  }
+}
