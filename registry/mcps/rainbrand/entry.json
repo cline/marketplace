@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "rainbrand",
+  "type": "mcp",
+  "name": "Rainbrand",
+  "tagline": "The brand layer for agents.",
+  "description": "Rainbrand is the brand layer for agents. It turns a brand’s identity, guidance, and assets into shared context that agents and products can use. That context evolves with the brand, alongside the tools where it is created and managed.\n\nStarting with websites, social media, and files, Rainbrand develops and maintains versioned brand context. Through MCP or the API, connected agents and products can retrieve and update that context, then apply it to images, websites, slides, video, copy, and other brand work.\n\nWe’re an ai infra company making brand as operable as software.",
+  "author": {
+    "name": "Rainbrand",
+    "url": "https://www.rainbrand.com"
+  },
+  "homepage": "https://www.rainbrand.com",
+  "icon": "https://www.rainbrand.com/logos/rainbrand-app-icon-light-512.png",
+  "tags": [
+    "creative",
+    "marketing"
+  ],
+  "verified": false,
+  "install": {
+    "args": [
+      "rainbrand",
+      "--transport",
+      "http",
+      "https://mcp.rainbrand.com/mcp"
+    ],
+    "notes": "Sign in to your Rainbrand account in the browser when prompted. Setup guide: https://docs.rainbrand.com/mcp/getting-started"
+  }
+}
