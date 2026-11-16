@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "avs-indexer",
+  "type": "mcp",
+  "name": "AVS Indexer",
+  "tagline": "Submit backlinks and new pages for search engine indexing",
+  "description": "A hosted MCP server for URL indexing. Submit up to 5,000 URLs at a time for normal or instant indexing, check the cost and your credit balance first, and drip-feed a submission over 2 to 30 days. Every URL is checked before it is sent: pages that return 404, carry noindex, are blocked by robots.txt or point their canonical elsewhere are skipped and refunded. Track each submission and see which URLs were sent, which were skipped and why. Tools: submit_urls, estimate_cost, get_balance, list_batches, get_batch, stop_drip. New accounts get 50 free credits.",
+  "author": {
+    "name": "Asia Virtual Solutions",
+    "url": "https://asiavirtualsolutions.com"
+  },
+  "homepage": "https://index.asiavirtualsolutions.com",
+  "repo": "https://github.com/royalmice/avs-indexer-mcp",
+  "icon": "./icon.svg",
+  "tags": [
+    "marketing"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "avs-indexer",
+      "--transport",
+      "http",
+      "https://index.asiavirtualsolutions.com/mcp"
+    ],
+    "notes": "Sign in with your AVS Indexer account (OAuth) and click Allow. Untick Submit URLs on the Allow screen for read-only access. You can also use an API key from your dashboard: add --header \"Authorization: Bearer <key>\" to the install command."
+  }
+}
