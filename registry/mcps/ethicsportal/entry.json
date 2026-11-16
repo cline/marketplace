@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "ethicsportal",
+  "type": "mcp",
+  "name": "EthicsPortal",
+  "tagline": "Set up and run an EU whistleblowing channel",
+  "description": "EthicsPortal is whistleblower software for EU organisations under Directive 2019/1937. This official MCP server creates the organisation, configures its whistleblowing channel, invites case handlers, and reads report status and deadlines. Report content is never available through the server. Sign-in uses OAuth.",
+  "author": {
+    "name": "EthicsPortal"
+  },
+  "icon": "./icon.svg",
+  "tags": [
+    "business",
+    "security"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "ethicsportal",
+      "--transport",
+      "http",
+      "https://secure.ethicsportal.eu/mcp"
+    ]
+  },
+  "homepage": "https://ethicsportal.eu/ai-assistant/"
+}

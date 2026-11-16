@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <style>
+    .bg { fill: #004494 }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #4073AF }
+    }
+  </style>
+  <rect class="bg" width="100" height="100" rx="12"/>
+  <g transform="translate(12,0)">
+    <path d="M36,50 L57,38 A24,24 0 1,0 57,62 Z M36,38 a4,4 0 0,1 8,0 a4,4 0 0,1 -8,0 Z" fill="#fff" fill-rule="evenodd"/>
+    <polygon points="64,42 64,58 47,50" fill="#fff"/>
+  </g>
+</svg>
