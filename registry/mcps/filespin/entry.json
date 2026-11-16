@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "filespin",
+  "type": "mcp",
+  "name": "FileSpin",
+  "tagline": "Connect Cline to your FileSpin media library",
+  "description": "Search, upload, edit, transform and share images, videos and documents in FileSpin digital asset management: metadata, tags and collections, social sizes and watermarks, AI image edits, video transcodes, branded share pages, and FileSpin's developer docs and API reference. OAuth sign-in with a FileSpin account (free trial at filespin.io).",
+  "author": {
+    "name": "FileSpin",
+    "url": "https://filespin.io"
+  },
+  "homepage": "https://developers.filespin.io/api-reference/tools/mcp-server/",
+  "repo": "https://github.com/FileSpin-io/filespin-agent-plugin",
+  "license": "MIT",
+  "tags": [
+    "creative",
+    "marketing"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "filespin",
+      "--transport",
+      "http",
+      "https://mcp.filespin.io/mcp"
+    ]
+  }
+}
