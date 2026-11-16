@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../schemas/plugin.schema.json",
+  "id": "adspirer",
+  "type": "plugin",
+  "name": "Adspirer",
+  "tagline": "Adspirer advertising MCP server plus 14 skills for Google, Meta, TikTok, LinkedIn and Amazon ads",
+  "description": "Registers Adspirer's official hosted MCP server and bundles 14 Adspirer skills in one install: account setup, performance reviews, wasted-spend optimization, campaign launch, ad creative, and one playbook each for Google Ads, Meta Ads, TikTok Ads, LinkedIn Ads, Amazon Ads and ChatGPT Ads. Bundles MCP and skills only. Changes need the user's approval and new campaigns are created paused. Sign-in is browser OAuth with an Adspirer account; there is no API key to configure.",
+  "author": { "name": "Adspirer", "url": "https://www.adspirer.com" },
+  "homepage": "https://github.com/Adspirer/adspirer-cline/tree/main/plugins/adspirer",
+  "repo": "https://github.com/Adspirer/adspirer-cline",
+  "icon": "./icon.svg",
+  "tags": ["marketing", "data"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["https://github.com/Adspirer/adspirer-cline"],
+    "notes": "Cline opens Adspirer's OAuth sign-in in the browser on first connect. Connect ad accounts at https://adspirer.ai/connections. An Adspirer account is required."
+  }
+}

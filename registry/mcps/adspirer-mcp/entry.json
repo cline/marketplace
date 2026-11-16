@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "adspirer-mcp",
+  "type": "mcp",
+  "name": "Adspirer",
+  "tagline": "Analyze, launch and optimize ad campaigns on Google, Meta, TikTok, LinkedIn and Amazon",
+  "description": "Adspirer's official hosted MCP server for advertising. Read campaign performance, find wasted spend, research keywords and competitor ads, audit conversion tracking, and create or update campaigns on Google Ads, Meta Ads, TikTok Ads, LinkedIn Ads, Amazon Ads and ChatGPT Ads. Changes need the user's approval and new campaigns are created paused. Sign-in is browser OAuth with an Adspirer account; there is no API key to configure.",
+  "author": { "name": "Adspirer", "url": "https://www.adspirer.com" },
+  "homepage": "https://www.adspirer.com/docs",
+  "repo": "https://github.com/Adspirer/adspirer-cline",
+  "icon": "./icon.svg",
+  "tags": ["marketing", "data"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["adspirer", "--transport", "http", "https://mcp.adspirer.com/mcp"],
+    "notes": "Cline opens Adspirer's OAuth sign-in in the browser on first connect. Connect ad accounts at https://adspirer.ai/connections. An Adspirer account is required."
+  }
+}

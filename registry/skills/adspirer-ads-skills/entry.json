@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "adspirer-ads-skills",
+  "type": "skill",
+  "name": "Adspirer Ads Skills",
+  "tagline": "Paid-media playbooks for the Adspirer MCP server: launch, optimize, review and write ads",
+  "description": "14 skills that teach Cline to run paid media through the Adspirer MCP server: the tool-call contract, campaign launch, wasted-spend optimization, cross-platform performance reviews, ad creative, brand workspace setup, and platform guides for Google, Meta, TikTok, LinkedIn, Amazon and ChatGPT Ads. Includes the approval rules: read before writing, confirm every change, create campaigns paused. Install the Adspirer MCP server as well.",
+  "author": { "name": "Adspirer", "url": "https://www.adspirer.com" },
+  "homepage": "https://github.com/Adspirer/adspirer-cline#skills",
+  "repo": "https://github.com/Adspirer/adspirer-cline",
+  "icon": "./icon.svg",
+  "tags": ["marketing", "business"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["Adspirer/adspirer-cline"]
+  }
+}
