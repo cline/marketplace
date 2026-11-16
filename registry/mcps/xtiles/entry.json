@@ -1,0 +1,17 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "xtiles",
+  "type": "mcp",
+  "name": "xTiles",
+  "tagline": "Turn AI chats into xTiles projects, notes and tasks",
+  "description": "Connect Cline to your xTiles visual workspace. Save plans and research to pages, create and update tasks with due dates and assignees, add notes to your daily planner, and pull any project back into the chat with its current state, decisions and open tasks. Hosted remote server with OAuth sign-in; nothing to install.",
+  "author": { "name": "xTiles", "url": "https://xtiles.app" },
+  "homepage": "https://xtiles.app",
+  "icon": "./icon.png",
+  "tags": ["productivity", "memory"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["xtiles", "--transport", "http", "https://mcp.xtiles.app/mcp"]
+  }
+}
