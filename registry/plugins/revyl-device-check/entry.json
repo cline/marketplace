@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/plugin.schema.json",
+  "id": "revyl-device-check",
+  "type": "plugin",
+  "name": "Revyl Device Check",
+  "tagline": "Offers a Revyl cloud device check after Cline pushes a mobile app branch",
+  "description": "Adds one hook. After Cline runs `git push` or `gh pr create` successfully, it asks Cline to offer once to check the pushed commit on a Revyl cloud iOS or Android device, through the Revyl MCP server's list_apps, list_builds, get_build and start_device_session tools. The plugin starts nothing itself and has no dependencies.",
+  "author": {
+    "name": "Revyl",
+    "url": "https://revyl.com"
+  },
+  "homepage": "https://docs.revyl.com/agents/mcp",
+  "repo": "https://github.com/RevylAI/revyl-cli/tree/main/plugins/revyl-cline",
+  "icon": "./icon.svg",
+  "tags": [
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "https://github.com/RevylAI/revyl-cli/blob/82df41609175719b9f21e540c98262c7b9cd699e/plugins/revyl-cline/revyl-device-check.ts"
+    ],
+    "notes": "Install the Revyl MCP server and sign in, so Cline has the tools the offer names. Start a new task after installing."
+  }
+}
