@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "kling-ai-china-plugin",
+  "type": "mcp",
+  "name": "Kling AI China Plugin",
+  "tagline": "Create images and videos with Kling AI from Cline.",
+  "description": "Official Kling AI China MCP service for image and video generation. Connects through Kling OAuth; generation consumes credits in the China Kling account.",
+  "author": {
+    "name": "KLING AI",
+    "url": "https://klingai.com"
+  },
+  "homepage": "https://klingai.com/app/mcp/guide",
+  "repo": "https://github.com/klingai-tech/claude-plugin-cn",
+  "icon": "https://www.google.com/s2/favicons?domain=klingai.com&sz=64",
+  "tags": [
+    "creative",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "kling-ai-china-plugin",
+      "--transport",
+      "http",
+      "https://klingai.com/mcp/plugin"
+    ]
+  }
+}
