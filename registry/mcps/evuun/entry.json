@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "evuun",
+  "type": "mcp",
+  "name": "EVUUN",
+  "tagline": "Real-world bookings, confirmed for your agent",
+  "description": "EVUUN is the layer where an AI agent's intent becomes a real-world transaction. When your agent says it's done, it's done: a named provider has confirmed, the price and terms are locked, and money moves only within what you approve.\n\nAsk for a hotel stay, a table at a restaurant, a local experience, a guide for the day, a curated plan from an independent host, or a flight. EVUUN finds the options, shows you the evidence and the terms, and holds the one you choose. Where a place has no online booking, EVUUN contacts it for you and brings back a confirmed offer.\n\nYou review and approve on a hosted page you control. Afterwards, your agent can follow up on every arrangement: changes, cancellations, refunds and receipts all stay in one place.",
+  "author": {
+    "name": "Monolithos, LLC",
+    "url": "https://evuun.com"
+  },
+  "homepage": "https://evuun.com",
+  "repo": "https://github.com/silas-zhen/evuun",
+  "icon": "./icon.png",
+  "tags": [
+    "productivity",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "evuun",
+      "--transport",
+      "http",
+      "https://evuun.com/mcp"
+    ],
+    "notes": "Connect to the hosted Streamable HTTP endpoint and authorize with your EVUUN account through OAuth. Review prices, terms and payment on the hosted approval page. Connection documentation: https://evuun.com/docs/ . Publisher contact: silas@monolithos.ai."
+  }
+}
