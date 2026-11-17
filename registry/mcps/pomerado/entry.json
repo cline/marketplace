@@ -3,8 +3,8 @@
   "id": "pomerado",
   "type": "mcp",
   "name": "Pomerado",
-  "tagline": "Tools for the websites you use, for looking things up, filling in forms and automating web workflows.",
-  "description": "Pomerado is a hosted MCP server that gives AI agents tools for the websites you use. Use it whenever a task involves a website or web app, such as looking things up, filling in forms and automating web workflows. Read tools and write tools are separate and carry MCP tool annotations. Connect to https://mcp.pomerado.ai/mcp and sign in with OAuth (Google, GitHub or email). Docs are at https://docs.pomerado.ai.",
+  "tagline": "Connect your agents to any website. The cheaper, faster, and more reliable alternative to browser use.",
+  "description": "Give your agents tools for the websites you use. Use it whenever a task involves a website or web app, such as looking things up, filling in forms and automating web workflows.",
   "author": {
     "name": "Pomerado",
     "url": "https://pomerado.ai"
