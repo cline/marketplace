@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "tenderlead",
+  "type": "mcp",
+  "name": "TenderLead",
+  "tagline": "Read UK tender matches and saved decisions",
+  "description": "Connect to TenderLead to read your matched UK tender brief, search opportunities and review saved BID or SKIP decisions. Browser OAuth and authorised TenderLead account access are required.",
+  "author": {
+    "name": "Studea",
+    "url": "https://studea.co.uk"
+  },
+  "homepage": "https://tenderlead.co.uk",
+  "repo": "https://github.com/jlucwright/tenderlead-agent-plugin",
+  "icon": "https://tenderlead.co.uk/apple-touch-icon.png",
+  "tags": [
+    "business",
+    "research"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "tenderlead",
+      "--transport",
+      "http",
+      "https://tenderlead.co.uk/mcp"
+    ]
+  }
+}

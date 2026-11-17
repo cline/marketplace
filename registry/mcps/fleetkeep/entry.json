@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "fleetkeep",
+  "type": "mcp",
+  "name": "Fleetkeep",
+  "tagline": "Review fleet actions, vehicles and maintenance",
+  "description": "Connect to Fleetkeep to review fleet actions, find vehicles and inspect maintenance dates and reminder history. Browser OAuth and authorised Fleetkeep account access are required.",
+  "author": {
+    "name": "Studea",
+    "url": "https://studea.co.uk"
+  },
+  "homepage": "https://fleetkeep.co.uk",
+  "repo": "https://github.com/jlucwright/fleetkeep-agent-plugin",
+  "icon": "https://fleetkeep.co.uk/favicon.png",
+  "tags": [
+    "business",
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "fleetkeep",
+      "--transport",
+      "http",
+      "https://fleetkeep.co.uk/mcp"
+    ]
+  }
+}
