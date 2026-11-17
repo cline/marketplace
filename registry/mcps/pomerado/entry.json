@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "pomerado",
+  "type": "mcp",
+  "name": "Pomerado",
+  "tagline": "Connect your agents to any website. The cheaper, faster, and more reliable alternative to browser use.",
+  "description": "Give your agents tools for the websites you use. Pomerado turns any website into an API or MCP, so it's cheaper, faster and more reliable than driving a browser. Use it whenever a task involves a website or web app, such as looking things up, filling in forms and automating web workflows.",
+  "author": {
+    "name": "Pomerado",
+    "url": "https://pomerado.ai"
+  },
+  "homepage": "https://docs.pomerado.ai",
+  "icon": "./icon.svg",
+  "tags": [
+    "productivity",
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "pomerado",
+      "--transport",
+      "http",
+      "https://mcp.pomerado.ai/mcp"
+    ]
+  }
+}
