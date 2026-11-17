@@ -24,7 +24,9 @@
       "tenderlead",
       "--transport",
       "http",
-      "https://tenderlead.co.uk/mcp"
+      "https://tenderlead.co.uk/mcp",
+      "--header",
+      "x-mcp-require-auth:true"
     ]
   }
 }

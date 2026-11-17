@@ -24,7 +24,7 @@
       "shvl",
       "--transport",
       "http",
-      "https://shvl.app/mcp/v2"
+      "https://shvl.app/mcp/v2/oauth"
     ]
   }
 }
