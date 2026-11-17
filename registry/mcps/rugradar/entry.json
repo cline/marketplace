@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "rugradar",
+  "type": "mcp",
+  "name": "RugRadar",
+  "tagline": "Read-only rug and scam checks for Solana tokens, wallets and links",
+  "description": "A remote MCP server that checks any Solana token (mint address, pump.fun or DexScreener link, or $TICKER) for rug-pull and scam risk: a 0-100 score with red flags such as mint/freeze authority, holder concentration, dev launch history, linked insider wallets, LP lock and a honeypot sell test, plus a link to the full report. It also scans public wallets and checks links for wallet-drainer patterns. It never needs a wallet connection, signature, private key or seed phrase. The free tier needs no key.",
+  "author": { "name": "RugRadar", "url": "https://rugradar-bgcm.onrender.com" },
+  "homepage": "https://rugradar-bgcm.onrender.com/agents",
+  "repo": "https://github.com/HOBSTER6615/rugradar-mcp",
+  "icon": "./icon.png",
+  "tags": ["security", "finance"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["rugradar", "--transport", "http", "https://rugradar-bgcm.onrender.com/mcp"]
+  }
+}
