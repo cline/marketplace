@@ -24,7 +24,9 @@
       "fleetkeep",
       "--transport",
       "http",
-      "https://fleetkeep.co.uk/mcp"
+      "https://fleetkeep.co.uk/mcp",
+      "--header",
+      "x-mcp-require-auth:true"
     ]
   }
 }
