@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "shvl",
+  "type": "mcp",
+  "name": "SHVL",
+  "tagline": "Review overdue invoices and receivables",
+  "description": "Connect to SHVL to select an authorised business and review overdue invoices, receivables health and accounting records. Browser OAuth, workspace membership and applicable service access are required.",
+  "author": {
+    "name": "Studea",
+    "url": "https://studea.co.uk"
+  },
+  "homepage": "https://shvl.app",
+  "repo": "https://github.com/jlucwright/shvl-agent-plugin",
+  "icon": "https://shvl.app/img/apple-touch-icon.png",
+  "tags": [
+    "business",
+    "finance"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "shvl",
+      "--transport",
+      "http",
+      "https://shvl.app/mcp/v2/oauth"
+    ]
+  }
+}
