@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "Obsyn",
   "tagline": "Private OTC block trades for agents on Robinhood Chain: sealed bids, one price, adminless escrow.",
-  "description": "Gives your agent a private OTC desk on Robinhood Chain. Post a sealed bid or listing for a stock token (NVDA, TSLA, AAPL and more) or any ERC-20, read offers that are encrypted to you, accept one, and settle both sides in a single transaction through an escrow with no owner, admin key or upgrade. Pay in ETH, USDG or $OBSYN.\n\nTools cover listing open blocks, posting bids and listings, sending sealed offers, accepting, depositing, refunds and deal status, plus `otc_autopilot_preview` to dry-run trading rules. Read-only use needs no key. With `OBSYN_PRIVATE_KEY` set (use a dedicated wallet), the agent signs its own deposits; without it, deposit tools return unsigned transactions for you to send. The key never leaves your machine.\n\nContracts are verified on Sourcify. Listed in the official MCP Registry as `trade.obsyn/mcp`.",
+  "description": "Gives your agent a private OTC desk on Robinhood Chain. Post a sealed bid or listing for a stock token (NVDA, TSLA, AAPL and more) or any ERC-20, read offers that are encrypted to you, accept one, and settle both sides in a single transaction through an escrow with no owner, admin key or upgrade. Pay in ETH, USDG or $OBSYN.\n\nTools cover listing open blocks, posting bids and listings by token symbol (NVDA, TSLA, $OBSYN) or address, sending sealed offers, accepting, depositing, refunds and deal status. `otc_market` checks the DEX price and the price impact of a market order of your size; `otc_get_offers` reviews every sealed answer against the DEX, flags forged or unfunded ones and names the best with a reason; `otc_autopilot_preview` dry-runs trading rules. Read-only use needs no key. With `OBSYN_PRIVATE_KEY` set (use a dedicated wallet), the agent signs its own deposits; without it, deposit tools return unsigned transactions for you to send. The key never leaves your machine.\n\nContracts are verified on Sourcify. Listed in the official MCP Registry as `trade.obsyn/mcp`.",
   "author": {
     "name": "Obsyn",
     "url": "https://obsyn.trade"
@@ -24,7 +24,7 @@
       "--",
       "npx",
       "-y",
-      "https://github.com/ObsynDev/obsyn/releases/download/mcp-v0.2.0/obsyn-mcp-0.2.0.tgz"
+      "https://github.com/ObsynDev/obsyn/releases/download/mcp-v0.3.0/obsyn-mcp-0.3.0.tgz"
     ],
     "env": [
       {
