@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "aimlapi",
+  "type": "mcp",
+  "name": "AI/ML API",
+  "tagline": "Find, compare and run AI models and Agent Tools from one hosted MCP server.",
+  "description": "Find and compare AI models, run chat, embeddings, image, video and audio generation, and call Agent Tools such as web search and page extraction. This hosted endpoint signs in to an AI/ML API account via OAuth. Model calls and tool runs are billed to the account balance; model lookups and account checks are free.",
+  "author": {
+    "name": "AI/ML API",
+    "url": "https://aimlapi.com"
+  },
+  "homepage": "https://docs.aimlapi.com/quickstart/mcp",
+  "tags": ["software", "creative", "research"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["aimlapi", "--transport", "http", "https://mcp.aimlapi.com/mcp"],
+    "notes": "Approve the AI/ML API OAuth sign-in in your browser. To use an API key instead, send it as the header `Authorization: Bearer <key>` (keys: https://aimlapi.com/app/keys). Setup guide: https://docs.aimlapi.com/quickstart/mcp"
+  }
+}
