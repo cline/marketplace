@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "flstudio-mcp",
+  "type": "mcp",
+  "name": "FL Studio MCP",
+  "tagline": "Mix, route and compose inside FL Studio from plain-language requests",
+  "description": "Drives FL Studio 2025 through its scripting API. Mix Doctor scans the whole mix and proposes fixes, plus gain staging, calibrated EQ, compression, reverb and delay, plugin parameters, routing and buses, and writing melodies, chords and step patterns. Every change is snapshotted and reversible. Needs FL Studio on Windows or macOS and the one-time controller and virtual MIDI port setup from the README.",
+  "author": {
+    "name": "Rosa Synthesiz",
+    "url": "https://github.com/rosasynthesiz"
+  },
+  "homepage": "https://github.com/rosasynthesiz/flstudio-mcp",
+  "repo": "https://github.com/rosasynthesiz/flstudio-mcp",
+  "tags": ["creative"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["fl-studio", "--", "uvx", "--from", "git+https://github.com/rosasynthesiz/flstudio-mcp", "fl-studio-mcp"],
+    "env": [
+      {
+        "name": "FLSTUDIO_MCP_TRANSPORT",
+        "required": false,
+        "description": "Set to tcp to route through the fl-studio-mcp-daemon bridge (recommended). Leave unset to open the MIDI ports directly."
+      }
+    ]
+  }
+}
