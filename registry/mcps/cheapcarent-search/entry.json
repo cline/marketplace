@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "cheapcarent-search",
+  "type": "mcp",
+  "name": "CheapCarRent search",
+  "tagline": "Search live car rental offers from local rental companies.",
+  "description": "Read-only remote MCP server for CheapCarRent. Tools: list_locations (pickup cities and airports) and search_cars (live offers). Covers 15,000 pickup points in 46 countries. Streamable HTTP at https://cheapcarent.com/mcp, no authentication. The server does not book, take payment, or accept personal data. Official MCP Registry: com.cheapcarent/search v1.0.2. Docs: https://cheapcarent.com/developers.",
+  "author": {
+    "name": "CheapCarRent",
+    "url": "https://cheapcarent.com"
+  },
+  "homepage": "https://cheapcarent.com/developers",
+  "repo": "https://github.com/aleksandrjefimov4-crypto/cheapcarent-mcp",
+  "icon": "https://cheapcarent.com/apps/cheapcarent-app.png",
+  "license": "MIT",
+  "tags": [
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cheapcarent-search",
+      "--transport",
+      "http",
+      "https://cheapcarent.com/mcp"
+    ]
+  }
+}
