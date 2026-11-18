@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "obsyn",
+  "type": "mcp",
+  "name": "Obsyn",
+  "tagline": "Private OTC block trades for agents on Robinhood Chain: sealed bids, one price, adminless escrow.",
+  "description": "Gives your agent a private OTC desk on Robinhood Chain. Post a sealed bid or listing for a stock token (NVDA, TSLA, AAPL and more) or any ERC-20, read offers that are encrypted to you, accept one, and settle both sides in a single transaction through an escrow with no owner, admin key or upgrade. Pay in ETH, USDG or $OBSYN.\n\nTools cover listing open blocks, posting bids and listings, sending sealed offers, accepting, depositing, refunds and deal status, plus `otc_autopilot_preview` to dry-run trading rules. Read-only use needs no key. With `OBSYN_PRIVATE_KEY` set (use a dedicated wallet), the agent signs its own deposits; without it, deposit tools return unsigned transactions for you to send. The key never leaves your machine.\n\nContracts are verified on Sourcify. Listed in the official MCP Registry as `trade.obsyn/mcp`.",
+  "author": {
+    "name": "Obsyn",
+    "url": "https://obsyn.trade"
+  },
+  "homepage": "https://obsyn.trade/developers",
+  "repo": "https://github.com/ObsynDev/obsyn",
+  "icon": "./icon.png",
+  "license": "MIT",
+  "tags": [
+    "finance"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "obsyn",
+      "--",
+      "npx",
+      "-y",
+      "https://github.com/ObsynDev/obsyn/releases/download/mcp-v0.2.0/obsyn-mcp-0.2.0.tgz"
+    ],
+    "env": [
+      {
+        "name": "OBSYN_PRIVATE_KEY",
+        "required": false,
+        "description": "Optional. A dedicated wallet's key so the agent can sign its own deposits and refunds. Without it, those tools return unsigned transactions.",
+        "url": "https://obsyn.trade/developers"
+      },
+      {
+        "name": "OBSYN_RPC_URL",
+        "required": false,
+        "description": "Optional Robinhood Chain RPC, e.g. https://robinhood-rpc.publicnode.com, if the default is blocked on your network."
+      }
+    ],
+    "notes": "Needs Node 20 or newer. Positions and bids are kept in ~/.obsyn/state.json; back it up. Trades settle on-chain and are final."
+  }
+}
