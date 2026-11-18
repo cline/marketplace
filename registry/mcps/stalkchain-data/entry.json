@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "stalkchain-data",
+  "type": "mcp",
+  "name": "StalkChain Data",
+  "tagline": "Research crypto traders, wallets, and on-chain activity.",
+  "description": "Query tracked trader wallets, positions, and PnL, token holders and buy/sell flow, and on-chain research data. This hosted endpoint requires sign-in to a StalkChain Data account via OAuth. Metered tools use account credits. The directory endpoint excludes trading and fund movement.",
+  "author": {
+    "name": "StalkChain",
+    "url": "https://stalkchain.com"
+  },
+  "homepage": "https://stalkchain.com/mcp",
+  "repo": "https://github.com/StalkChain/fomo-mcp-api",
+  "tags": ["finance", "data", "research"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["stalkchain-data", "--transport", "http", "https://data.stalkchain.com/mcp/directory"],
+    "notes": "Approve the StalkChain OAuth sign-in in your browser. See https://data.stalkchain.com/docs/guides/getting-started for account and setup details."
+  }
+}
