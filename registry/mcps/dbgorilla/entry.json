@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "dbgorilla",
+  "type": "mcp",
+  "name": "DBGorilla",
+  "tagline": "Evidence from your SQL Server, PostgreSQL, MySQL and Cassandra databases: workload, activity, plans and clone tests.",
+  "description": "DBGorilla gives your AI assistant evidence from your production databases instead of guesses. Connect DBGorilla once to SQL Server, PostgreSQL, MySQL or Apache Cassandra, on your own servers or managed (Amazon RDS, Amazon Aurora, Azure SQL Database, Azure Database for PostgreSQL, Cloud SQL, AlloyDB, Instaclustr), and the assistant can read what DBGorilla has collected: topology (schemas, tables, indexes, settings and how they changed), workload (which queries cost the most, and what changed between two periods), session activity and blocking, system metrics, past investigation reports and open recommendations.\n\nWhen a question needs more than stored data, two tools go further. One reads the current query plan from your live SQL Server, PostgreSQL or MySQL database without running the statement. The other tests a change, such as a new index or a different setting, on a throwaway clone of your database built from your schema and statistics, so you see the effect before you ship it.\n\nTypical uses:\n- Find why a query got slower this week and what changed.\n- See who is blocking whom during a lock pile-up.\n- See which tables and indexes changed between two schema snapshots.\n- Test whether an index helps, on a clone, before creating it in production.\n\nThis listing uses a read-only set of tools: every tool in it is marked read-only.\n\nRequires a DBGorilla account with at least one connected database. Sign in with your DBGorilla account when you first connect.",
+  "author": {
+    "name": "DBGorilla",
+    "url": "https://www.dbgorilla.com"
+  },
+  "homepage": "https://www.dbgorilla.com/docs/integrations/mcp-client/",
+  "icon": "./icon.png",
+  "tags": [
+    "databases",
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "dbgorilla",
+      "--transport",
+      "http",
+      "https://app.dbgorilla.com/mcp/readonly"
+    ],
+    "notes": "Signs in with OAuth on first use. Requires a DBGorilla account with a connected database."
+  }
+}
