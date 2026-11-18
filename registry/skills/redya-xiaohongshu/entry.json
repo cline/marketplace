@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "redya-xiaohongshu",
+  "type": "skill",
+  "name": "小红书图文与实况图·红鸦 AI",
+  "tagline": "Draft Xiaohongshu posts, create product images, and make Live Photos",
+  "description": "Use RedYA to draft titles, captions, and images from a topic, reference post, or product brief. Review the outline before image generation, and turn still images into Live Photos when needed. The skill is free to install. Some RedYA API operations consume credits.",
+  "author": {
+    "name": "RedYA AI",
+    "url": "https://github.com/rnthking"
+  },
+  "homepage": "https://github.com/rnthking/redya-skills/tree/main/skill/redya-xiaohongshu",
+  "repo": "https://github.com/rnthking/redya-skills",
+  "tags": ["marketing", "creative"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["rnthking/redya-skills", "--skill", "redya-xiaohongshu"],
+    "env": [
+      {
+        "name": "REDYA_API_KEY",
+        "required": true,
+        "description": "API key from your own RedYA account",
+        "url": "https://hy.ithinkai.cn"
+      }
+    ]
+  }
+}
