@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "dc-hub",
+  "type": "mcp",
+  "name": "DC Hub",
+  "tagline": "The orchestration layer for data center and energy intelligence. Call execute_plan first.",
+  "description": "DC Hub: the orchestration layer for data center and energy intelligence. One server for data center and energy intelligence: facilities, colocation, power and grid, interconnection queues, electricity and gas prices, fiber and site selection. Call execute_plan first: it chains the right tools and returns one dated, cited answer. Includes the Data Center Power Index (DCPI), a daily score of where data centers can get grid power. 97 tools over remote Streamable HTTP; DCHUB_API_KEY is optional.",
+  "author": {
+    "name": "DC Hub",
+    "url": "https://dchub.cloud/connect?utm_source=cline-marketplace&utm_medium=listing&utm_campaign=directories"
+  },
+  "homepage": "https://dchub.cloud/connect?utm_source=cline-marketplace&utm_medium=listing&utm_campaign=directories",
+  "repo": "https://github.com/azmartone67/dchub-mcp-server",
+  "license": "MIT",
+  "tags": [
+    "data",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "dc-hub",
+      "--transport",
+      "http",
+      "https://dchub.cloud/mcp?via=directory&src=cline"
+    ]
+  }
+}
