@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "travaso",
+  "type": "mcp",
+  "name": "Travaso Hotel Booking",
+  "tagline": "Quote hotel stays and create traveler-approved card checkout links.",
+  "description": "A hosted Streamable HTTP MCP server for hotel quotes, hosted card checkout links, and booking status. Start with a free key; quotes need destination, dates, and party size. Collect the lead traveler's details after they select a rate and approve checkout. The traveler enters card details in hosted Stripe Checkout.\n\nAgent earnings are a share of positive booking margin on eligible stays, not a percentage of the hotel booking total. Monthly and annual memberships are optional and offer higher earnings and usage allowances. Payment and hotel confirmation are separate states; private confirmation goes to the lead traveler after supplier confirmation. Supplier sandbox end-to-end verification is still pending. See the [public client examples](https://github.com/Tarzelf/travaso-agent-examples) for quote-only Python and MCP configuration examples.",
+  "author": {
+    "name": "Travaso",
+    "url": "https://elitetravelsales.com"
+  },
+  "homepage": "https://elitetravelsales.com/hotel-booking-mcp?utm_source=cline&utm_medium=directory&utm_campaign=cline-2026-11",
+  "icon": "https://elitetravelsales.com/travaso-mark.svg",
+  "tags": ["business", "research"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "travaso",
+      "--transport",
+      "http",
+      "https://elitetravelsales.com/api/backend/mcp",
+      "--header",
+      "Authorization: Bearer <token>"
+    ],
+    "notes": "Get your own free agent key at https://elitetravelsales.com/tokens?utm_source=cline&utm_medium=directory&utm_campaign=cline-2026-11 . Replace <token> in the installation command with that key before running it. Keep the key out of repositories and shared chat. A subscription is not required to create hotel checkout links. Review the selected rate and cancellation terms with the traveler before checkout."
+  }
+}
