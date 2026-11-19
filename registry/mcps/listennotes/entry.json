@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "listennotes",
+  "type": "mcp",
+  "name": "Podcast Search by Listen Notes",
+  "tagline": "Search podcasts, research guests, and discover PR leads",
+  "description": "Search podcasts and episodes, research guest interviews, find available producer contacts, and check podcast descriptions for mentions of a person, brand, or topic. The hosted, read-only Listen Notes MCP server uses OAuth to connect a Podcast API account. Podcast API requests use the selected app's existing plan and billing; some fields and endpoints require PRO or ENTERPRISE access.",
+  "author": { "name": "Listen Notes, Inc.", "url": "https://www.listennotes.com/" },
+  "homepage": "https://www.listennotes.com/api/mcp/",
+  "repo": "https://github.com/PodcastAPI/skills",
+  "icon": "https://raw.githubusercontent.com/PodcastAPI/skills/main/plugins/podcast-search-cursor/assets/logo.png",
+  "tags": ["research", "marketing", "data"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["ListenNotes", "--transport", "http", "https://mcp.listennotes.com/mcp/"],
+    "notes": "At the Authentication prompt, choose OAuth. At the OAuth client ID prompt, leave it empty and press Enter for dynamic registration. Sign in to Listen Notes and select a Podcast API app when prompted. MCP is free; Podcast API usage follows the selected app's plan and billing."
+  }
+}
