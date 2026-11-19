@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "reunion-india-real-estate",
+  "type": "mcp",
+  "name": "Reunion India Real Estate",
+  "tagline": "Source-backed India real-estate regulatory search and verification",
+  "description": "A free, read-only remote MCP server for searching and verifying official India real-estate regulatory references with source provenance. Current tools cover RERA circulars and notices, official portal and process references, QPR/project-bank material, and reviewed stamp-duty and registration-charge references.",
+  "author": {
+    "name": "Reunion",
+    "url": "https://reunionhq.in"
+  },
+  "homepage": "https://reunionhq.in/mcp",
+  "tags": ["research", "data"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "reunion-india-real-estate",
+      "--transport",
+      "http",
+      "https://mcp.reunionhq.in/mcp"
+    ],
+    "notes": "No authentication is required. The server is read-only and returns source provenance for indexed official references."
+  }
+}
