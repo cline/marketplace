@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "xainvault",
+  "type": "mcp",
+  "name": "Xainvault",
+  "tagline": "Govern AI skills: scan, approve and distribute only approved versions via MCP",
+  "description": "Xainvault is AI skill governance for teams. Discover skills in the marketplace or bring your own. Skills start as a private Draft. Xainvault scans the exact package (secrets, prompt injection, unsafe execution), applies company policy, and Team and Enterprise versions need human approval before they become Ready. Agents receive only granted Ready releases through this remote MCP server. Personal Vaults are free; Team is free up to 5 seats. Docs: https://xainvault.com/docs/connect-agents",
+  "author": {
+    "name": "Xainvault",
+    "url": "https://xainvault.com"
+  },
+  "homepage": "https://xainvault.com",
+  "icon": "./icon.svg",
+  "tags": [
+    "security",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "xainvault",
+      "--transport",
+      "http",
+      "https://xainvault.com/mcp",
+      "--header",
+      "X-API-Key: <your xv_key_ access key>"
+    ],
+    "notes": "Create an access key in your Xainvault vault (https://xainvault.com/docs/connect-agents) and use the full xv_key_ value. Listed in the official MCP Registry as com.xainvault/xainvault."
+  }
+}
