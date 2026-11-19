@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "relaticle",
+  "type": "mcp",
+  "name": "Relaticle",
+  "tagline": "Open-source CRM your AI agents can read and update",
+  "description": "Open-source CRM your AI agents can read and update: companies, people, opportunities, tasks and notes. REST API, self-hosted or cloud.",
+  "author": {
+    "name": "Relaticle",
+    "url": "https://relaticle.com"
+  },
+  "homepage": "https://relaticle.com/developers/mcp",
+  "repo": "https://github.com/relaticle/relaticle",
+  "icon": "./icon.svg",
+  "tags": [
+    "sales",
+    "business"
+  ],
+  "license": "AGPL-3.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "relaticle",
+      "--transport",
+      "http",
+      "https://mcp.relaticle.com"
+    ]
+  }
+}
