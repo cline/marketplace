@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "affogato",
+  "type": "mcp",
+  "name": "Affogato",
+  "tagline": "Generate AI images, videos and audio from your agent.",
+  "description": "Affogato provides a remote MCP server for AI image, video and audio generation, including speech, lipsync, talking heads, headshots, virtual try-on and product photography. Discover models, estimate credit costs, submit generations and check their status. Connect over Streamable HTTP and authorize an Affogato workspace using OAuth. Generations use paid workspace credits; new credit top-ups require an existing subscription. The linked public repository contains integration documentation and plugins; the hosted backend source is private.",
+  "author": {
+    "name": "Affogato.ai",
+    "url": "https://affogato.ai"
+  },
+  "homepage": "https://affogato.ai/mcp",
+  "repo": "https://github.com/affogato-ai/skills",
+  "icon": "https://affogato.ai/icon-512.png",
+  "tags": [
+    "creative",
+    "marketing"
+  ],
+  "license": "Proprietary hosted service; public integration repository MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "affogato",
+      "--transport",
+      "http",
+      "https://api.affogato.ai/mcp"
+    ],
+    "env": [],
+    "notes": "Sign in with OAuth and select your Affogato workspace. Generations consume paid workspace credits. Setup: https://affogato.ai/mcp"
+  }
+}
