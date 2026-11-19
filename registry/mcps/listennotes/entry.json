@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schemas/mcp.schema.json",
-  "id": "listen-notes",
+  "id": "listennotes",
   "type": "mcp",
   "name": "Podcast Search by Listen Notes",
   "tagline": "Search podcasts, research guests, and discover PR leads",
