@@ -13,7 +13,7 @@
   "verified": false,
   "featured": false,
   "install": {
-    "args": ["listen-notes", "--transport", "http", "https://mcp.listennotes.com/mcp/"],
+    "args": ["ListenNotes", "--transport", "http", "https://mcp.listennotes.com/mcp/"],
     "notes": "Choose OAuth and leave the OAuth client ID blank so Cline can register automatically. Sign in to Listen Notes and select a Podcast API app when prompted. MCP is free; Podcast API usage follows the selected app's plan and billing."
   }
 }
