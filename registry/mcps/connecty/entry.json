@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "connecty",
+  "type": "mcp",
+  "name": "Connecty",
+  "tagline": "Ask your AI how your websites are doing: daily checks for up to 5 sites, plus a free status page.",
+  "description": "Ask your AI assistant how your websites are doing. Connecty gives individuals and small businesses a free public status page with daily checks for up to five websites. Without signing in, Cline can read any Connecty status page and explain what Connecty is. After you connect your account (OAuth 2.1), it can list your sites, share your status page link, report which sites were down at the latest daily check or changed in the last 7 days, and add or remove sites.",
+  "author": {
+    "name": "Connecty",
+    "url": "https://connecty.nl/en/ai-assistant?utm_source=cline&utm_medium=directory"
+  },
+  "homepage": "https://connecty.nl/en/ai-assistant?utm_source=cline&utm_medium=directory",
+  "icon": "./icon.svg",
+  "tags": [
+    "productivity",
+    "software",
+    "business"
+  ],
+  "verified": false,
+  "install": {
+    "args": [
+      "connecty",
+      "--transport",
+      "http",
+      "https://connecty.nl/mcp"
+    ],
+    "notes": "Public tools work without signing in. Account tools ask you to sign in with a magic link and approve access."
+  }
+}
