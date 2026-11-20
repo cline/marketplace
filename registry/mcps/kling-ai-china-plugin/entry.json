@@ -4,12 +4,12 @@
   "type": "mcp",
   "name": "Kling AI China Plugin",
   "tagline": "Generate images and videos through Kling AI China MCP",
-  "description": "Official Kling AI China remote MCP with browser OAuth. Generation uses credits from the authorized China account; China and Global accounts, credits, and tasks are separate. For the official npm plugin bundle and standalone CLI, see https://www.npmjs.com/package/@klingai/plugin-cn and https://www.npmjs.com/package/@klingai/cli-cn. Setup guide: https://kling.ai/app/mcp/guide. Kling Image 4.0 is live in Kling Creative Studio and via API; MCP model availability must be checked in the live tool discovery.",
+  "description": "Official Kling AI China remote MCP with browser OAuth. Generation uses credits from the authorized China account; China and Global accounts, credits, and tasks are separate. For the official npm plugin bundle and standalone CLI, see https://www.npmjs.com/package/@klingai/plugin-cn and https://www.npmjs.com/package/@klingai/cli-cn. Setup guide: https://klingai.com/app/mcp/guide. Kling Image 4.0 is live in Kling Creative Studio and via API; MCP model availability must be checked in the live tool discovery.",
   "author": {
     "name": "Kling AI",
     "url": "https://klingai.com"
   },
-  "homepage": "https://kling.ai/app/mcp/guide",
+  "homepage": "https://klingai.com/app/mcp/guide",
   "repo": "https://github.com/klingai-tech/claude-plugin-cn",
   "tags": ["creative"],
   "verified": false,
