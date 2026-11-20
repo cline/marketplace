@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "shapers",
+  "type": "mcp",
+  "name": "Shapers",
+  "tagline": "Find engineers and scientists through their public work.",
+  "description": "Search by role or project, explore similar repositories, and inspect profiles with linked evidence from code, papers, and other public work.",
+  "author": {
+    "name": "Shapers",
+    "url": "https://shapers.si"
+  },
+  "homepage": "https://shapers.si",
+  "icon": "./icon.svg",
+  "tags": [
+    "software",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "shapers",
+      "--transport",
+      "http",
+      "https://mcp.shapers.si/mcp"
+    ],
+    "env": [
+      {
+        "name": "SHAPERS_API_KEY",
+        "required": false,
+        "description": "Your Shapers workspace API key for key-based access.",
+        "url": "https://shapers.si/docs/mcp"
+      }
+    ],
+    "notes": "For key-based access, configure the X-API-Key header on the Shapers connection with your workspace API key. See https://shapers.si/docs/mcp for tool inputs and credit costs."
+  }
+}
