@@ -3,8 +3,8 @@
   "id": "redya-xiaohongshu",
   "type": "skill",
   "name": "小红书图文与实况图·红鸦 AI",
-  "tagline": "Draft Xiaohongshu posts, create product images, and make Live Photos",
-  "description": "Use RedYA to draft titles, captions, and images from a topic, reference post, or product brief. Review the outline before image generation, and turn still images into Live Photos when needed. The skill is free to install. Some RedYA API operations consume credits.",
+  "tagline": "Create Xiaohongshu posts, adapt references, and make Live Photos",
+  "description": "Create illustrated posts, product posts, adaptations of reference posts, and Live Photos. Choose an outline or direct generation, check sensitive wording, and hand drafts to the publishing editor. Ask “怎么用” for seven examples without an API key. Some RedYA API operations consume credits.",
   "author": {
     "name": "RedYA AI",
     "url": "https://github.com/rnthking"
