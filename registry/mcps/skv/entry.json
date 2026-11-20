@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "skv",
+  "type": "mcp",
+  "name": "SKV",
+  "tagline": "Hosted memory for AI agents, with event ids and a server-issued seal",
+  "description": "A hosted MCP memory server by Deniz Chavdarov.\n\nAdd SKV as an MCP server in Cline (do not open the endpoint in a browser — a normal GET returns 406). Use the https URL only.\n\nWhat to try: save a fact in one chat, start a new chat, and ask for the memory event id plus the seal the server issued. Do not let the model draw a seal itself.\n\n- Homepage: https://skv.network\n- Connect guide: https://skv.network/connect\n- Free private key: https://skv.network/profile\n- Shared demo, wiped daily (put nothing private there): https://skv.network/mcp/k/demo/\n\nLimits: it is hosted and run by one person. Self-hosting docs are not ready. The Chrome extension is still a beta zip, not a Chrome Web Store listing. There is no public user count.",
+  "author": {
+    "name": "Deniz Chavdarov",
+    "url": "https://skv.network"
+  },
+  "homepage": "https://skv.network",
+  "repo": "https://github.com/skv-neteork/Skv.network",
+  "icon": "./icon.png",
+  "tags": [
+    "memory"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "install": {
+    "args": [
+      "skv",
+      "--transport",
+      "http",
+      "https://skv.network/mcp",
+      "--header",
+      "Authorization: Bearer ${SKV_API_KEY}"
+    ],
+    "env": [
+      {
+        "name": "SKV_API_KEY",
+        "required": true,
+        "description": "Free API key from your SKV profile. Do not use the shared daily-wiped demo for private facts.",
+        "url": "https://skv.network/profile"
+      }
+    ],
+    "notes": "Add SKV as an MCP server in Cline, not by opening the URL in a browser. Get a free key at https://skv.network/profile. A shared demo is at https://skv.network/mcp/k/demo/ — it is wiped daily; put nothing private there. Use https only."
+  }
+}
