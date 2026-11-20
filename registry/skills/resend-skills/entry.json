@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "resend-skills",
+  "type": "skill",
+  "name": "Resend Skills",
+  "tagline": "Agent skills for sending and receiving email with Resend",
+  "description": "Official Resend agent skills: the Resend API and SDKs, the Resend CLI, React Email, agent email inboxes, and email deliverability best practices.",
+  "author": {
+    "name": "Resend",
+    "url": "https://resend.com"
+  },
+  "homepage": "https://resend.com/docs/resend-skill",
+  "repo": "https://github.com/resend/resend-skills",
+  "tags": [
+    "marketing",
+    "software"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "resend/resend-skills"
+    ]
+  }
+}
