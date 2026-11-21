@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "acemusic-acedatacloud",
+  "type": "mcp",
+  "name": "ACE Music by Ace Data Cloud",
+  "tagline": "Create songs and lyrics, import reference audio, and retrieve original tasks.",
+  "description": "Create songs from an idea or custom lyrics, import an MP3, cover a track, or blend two compatible tracks. Connect your Ace Data Cloud application with ACE Music access. Audio creation, reference imports and writing lyrics may incur charges. Save the task ID to retrieve the original result.",
+  "author": {
+    "name": "Ace Data Cloud",
+    "url": "https://acedata.cloud"
+  },
+  "homepage": "https://platform.acedata.cloud/documents/mcp-acemusic",
+  "repo": "https://github.com/AceDataCloud/AceMusicMCP",
+  "icon": "https://cdn.acedata.cloud/acemusic-icon-52deddfc87b9.png",
+  "tags": [
+    "creative"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "acemusic-acedatacloud",
+      "--transport",
+      "http",
+      "https://acemusic.mcp.acedata.cloud/mcp"
+    ],
+    "notes": "After installing, authorize the hosted server with OAuth in the Cline MCP manager. You may also configure one Authorization: Bearer header with an ACE Music application API key in private user settings. Get your application key at https://platform.acedata.cloud/console/applications. See https://platform.acedata.cloud/documents/mcp-acemusic for setup and task recovery."
+  }
+}
