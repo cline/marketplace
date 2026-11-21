@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "foundrole",
+  "type": "mcp",
+  "name": "Jobs by FoundRole",
+  "tagline": "Find jobs on employer career pages and track your applications.",
+  "description": "Search openings by role, location, and remote work options. Compare postings, review available pay and visa sponsorship information, and save jobs to your application tracker. Set follow-up reminders and email alerts.",
+  "author": {
+    "name": "FoundRole",
+    "url": "https://www.foundrole.com"
+  },
+  "homepage": "https://www.foundrole.com/ai-search-mcp",
+  "repo": "https://github.com/foundrole/jobs-mcp-proxy",
+  "icon": "https://raw.githubusercontent.com/foundrole/jobs-mcp-proxy/v1.2.3/assets/logo-400.png",
+  "tags": [
+    "productivity",
+    "research"
+  ],
+  "verified": false,
+  "install": {
+    "args": [
+      "foundrole",
+      "--transport",
+      "http",
+      "https://www.foundrole.com/mcp"
+    ],
+    "notes": "Sign in with a free FoundRole account in your browser and approve the connection."
+  }
+}
