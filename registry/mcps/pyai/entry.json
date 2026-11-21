@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "pyai",
+  "type": "mcp",
+  "name": "PyAI Voice AI",
+  "tagline": "Transcribe recordings, turn text into speech, and build website voice assistants.",
+  "description": "Find the PyAI workflow for a speech task in Cline. Transcribe a recording, generate spoken audio from text, build an interruptible website voice assistant, or look up existing call summaries.",
+  "author": {
+    "name": "PyAI",
+    "url": "https://pyai.com"
+  },
+  "homepage": "https://pyai.com/mcp",
+  "repo": "https://github.com/atomsai/pyai-plugin",
+  "icon": "https://raw.githubusercontent.com/atomsai/pyai-plugin/main/assets/logo-400.png",
+  "tags": ["software", "creative", "business"],
+  "verified": false,
+  "install": {
+    "args": ["pyai", "--transport", "http", "https://api.pyai.com/mcp"],
+    "notes": "Discover tools before signing in. For project operations, sign in through PyAI, then call whoami to verify the selected project, environment, and billing context before submitting audio or generating speech."
+  }
+}
