@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "robowrite",
+  "type": "mcp",
+  "name": "RoboWrite",
+  "tagline": "Turn keyword and competitor research into on-brand SEO and GEO content briefs.",
+  "description": "Plan search content using your brand voice, audience profiles and saved research. Review briefs and recover saved Markdown drafts from your RoboWrite workspace. Workspace access requires OAuth. Cline CLI 3.0.75 discovers the tools but reports authorization before sign-in completes. For an existing connection, edit its saved settings in Cline. A noninteractive reinstall can replace them.",
+  "author": { "name": "M Powered Ventures LLC", "url": "https://www.robowrite.ai" },
+  "homepage": "https://www.robowrite.ai/guides/robowrite-mcp",
+  "repo": "https://github.com/RoboAdApp/robowrite-plugin",
+  "icon": "https://www.robowrite.ai/logos/robowrite-r.svg",
+  "tags": ["marketing", "research", "productivity"],
+  "license": "MIT",
+  "verified": false,
+  "install": {
+    "args": ["robowrite", "--transport", "http", "https://mcp.robowrite.ai/mcp"]
+  }
+}
