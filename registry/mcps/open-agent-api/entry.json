@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "open-agent-api",
+  "type": "mcp",
+  "name": "Open Agent API",
+  "tagline": "Discover and call agents on a self-hosted Open Agent API gateway.",
+  "description": "Local stdio bridge for listing published agents, starting authorized tasks, and reading results or artifacts from a gateway you operate. The bridge does not grant approvals.",
+  "author": {
+    "name": "Open Agent API contributors"
+  },
+  "tags": ["software"],
+  "verified": false,
+  "homepage": "https://github.com/jiangxingfan1-coder/Open-Agent-API",
+  "install": {
+    "args": ["open-agent-api", "--", "oaa", "mcp"],
+    "env": [
+      {
+        "name": "OAA_GATEWAY_URL",
+        "required": false,
+        "description": "Your gateway origin, without /v1. Defaults to http://127.0.0.1:8787."
+      },
+      {
+        "name": "OAA_TOKEN_FILE",
+        "required": true,
+        "description": "Absolute path to a file with a scoped gateway token. Use a read-only token to start."
+      }
+    ],
+    "notes": "Install the Open Agent API CLI and put oaa on PATH. Start your gateway separately, then set these variables in transport.env for this entry in the Cline CLI MCP settings. Do not put the token itself in the command or configuration."
+  }
+}
