@@ -3,8 +3,8 @@
   "id": "kling-ai-global-plugin",
   "type": "mcp",
   "name": "Kling AI Global Plugin",
-  "tagline": "Generate images and videos through Kling AI Global MCP",
-  "description": "Official Kling AI Global remote MCP with browser OAuth. Generation uses credits from the authorized Global account; Global and China accounts, credits, and tasks are separate. For the official npm plugin bundle and standalone CLI, see https://www.npmjs.com/package/@klingai/plugin-global and https://www.npmjs.com/package/@klingai/cli-global. Setup guide: https://kling.ai/app/mcp/guide. Kling Image 4.0 is live in Kling Creative Studio and via API; MCP model availability must be checked in the live tool discovery.",
+  "tagline": "Official Kling MCP with 4K video and optional HDR where available",
+  "description": "Official Kling AI Global remote MCP with browser OAuth. Kling 4.0 supports native 4K video and optional 10-bit HDR at 1080p or 4K when available in live MCP tools; HDR uses additional Global account credits. Generate images and videos, manage Elements, use motion control, and track tasks. Global and China accounts, credits, and tasks are separate. Official npm Plugin: https://www.npmjs.com/package/@klingai/plugin-global ; CLI: https://www.npmjs.com/package/@klingai/cli-global . Setup: https://kling.ai/app/mcp/guide . Kling Image 4.0 is live in Kling Creative Studio and via API; confirm its availability through live tool discovery.",
   "author": {
     "name": "Kling AI",
     "url": "https://kling.ai"
@@ -15,6 +15,6 @@
   "verified": false,
   "install": {
     "args": ["kling-ai-global-plugin", "--transport", "http", "https://kling.ai/mcp/plugin"],
-    "notes": "Authenticate with a Kling Global account. Image or video generation consumes that account's credits."
+    "notes": "Authenticate with a Kling Global account. Image or video generation consumes that account's credits. Kling 4.0 HDR may incur additional usage charges and requires live account/tool support."
   }
 }
