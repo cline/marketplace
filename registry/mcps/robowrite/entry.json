@@ -8,7 +8,7 @@
   "author": { "name": "M Powered Ventures LLC", "url": "https://www.robowrite.ai" },
   "homepage": "https://www.robowrite.ai/guides/robowrite-mcp",
   "repo": "https://github.com/RoboAdApp/robowrite-plugin",
-  "icon": "https://www.robowrite.ai/logos/robowrite-r.svg",
+  "icon": "https://www.robowrite.ai/icon.png",
   "tags": ["marketing", "research", "productivity"],
   "license": "MIT",
   "verified": false,
