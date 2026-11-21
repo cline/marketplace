@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "RoboWrite",
   "tagline": "Turn keyword and competitor research into on-brand SEO and GEO content briefs.",
-  "description": "Plan search content using your brand voice, audience profiles and saved research. Review briefs and recover saved Markdown drafts from your RoboWrite workspace. Workspace access requires OAuth. Cline CLI 3.0.75 discovers the tools but reports authorization before sign-in completes. For an existing connection, edit its saved settings in Cline. A noninteractive reinstall can replace them.",
+  "description": "Plan search content using your brand voice, audience profiles and saved research. Review briefs and recover saved Markdown drafts from your RoboWrite workspace. Workspace access requires OAuth. Cline CLI 3.0.75 discovers the tools but can report authorization before sign-in completes.",
   "author": { "name": "M Powered Ventures LLC", "url": "https://www.robowrite.ai" },
   "homepage": "https://www.robowrite.ai/guides/robowrite-mcp",
   "repo": "https://github.com/RoboAdApp/robowrite-plugin",
@@ -13,6 +13,7 @@
   "license": "MIT",
   "verified": false,
   "install": {
-    "args": ["robowrite", "--transport", "http", "https://mcp.robowrite.ai/mcp"]
+    "args": ["robowrite", "--transport", "http", "https://mcp.robowrite.ai/mcp"],
+    "notes": "For an existing connection, open `cline mcp` and choose Authorize OAuth. If you use Edit server, re-enter the server URL and any configured public OAuth client ID. Leaving the ID blank removes it. A noninteractive reinstall can also replace these settings. Protected workspace access is still awaiting verification in a released Cline client."
   }
 }
