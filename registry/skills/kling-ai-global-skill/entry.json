@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "kling-ai-global-skill",
+  "type": "skill",
+  "name": "Kling AI CLI Skill",
+  "tagline": "Use Kling's official CLI for image and video workflows in Cline",
+  "description": "Official Kling AI CLI Skill for prompt planning, image and video workflows, reusable Elements, motion control, and task tracking. Pair it with the region-matching official CLI package and OAuth MCP connection: `@klingai/cli-global` for Global or `@klingai/cli-cn` for China. Generation consumes credits from the signed-in regional account.",
+  "author": {
+    "name": "Kling AI",
+    "url": "https://kling.ai"
+  },
+  "homepage": "https://kling.ai/app/mcp/guide",
+  "repo": "https://github.com/klingai-tech/skills",
+  "icon": "https://raw.githubusercontent.com/klingai-tech/claude-plugin/main/assets/kling-logo.png",
+  "tags": ["creative", "software"],
+  "verified": false,
+  "install": {
+    "args": ["klingai-tech/skills"],
+    "notes": "Install this skill with `cline skill install klingai-tech/skills` (the repo also documents `npx skills add klingai-tech/skills`). Install the matching npm CLI separately: `@klingai/cli-global` for Global or `@klingai/cli-cn` for China. Then complete OAuth with the same region's Kling account. Generation uses that account's credits."
+  }
+}
