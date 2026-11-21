@@ -2,7 +2,7 @@
   "$schema": "../../../schemas/mcp.schema.json",
   "id": "foundrole",
   "type": "mcp",
-  "name": "Jobs by FoundRole",
+  "name": "Jobs by Foundrole",
   "tagline": "Find jobs on employer career pages and track your applications.",
   "description": "Search openings by role, location, and remote work options. Compare postings, review available pay and visa sponsorship information, and save jobs to your application tracker. Set follow-up reminders and email alerts.",
   "author": {
