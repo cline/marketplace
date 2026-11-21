@@ -3,8 +3,8 @@
   "id": "suanlinfang",
   "type": "mcp",
   "name": "算邻坊AI能力 SuanLinFang",
-  "tagline": "Speech-to-Text, TTS, OCR and LLM decision tools via one remote MCP server",
-  "description": "Multi-capability remote MCP server (Streamable HTTP) from SuanLinFang (算邻坊), a GPU compute sharing platform. 11 tools: speech-to-text (long audio + hotword correction), text-to-speech (21 voices, long-text async tasks), OCR (images & PDF documents, standard/accurate tiers), and calibrated LLM decision scoring. Bring your own key — register at suanlinfang.cn to get an API key with free trial credit.",
+  "tagline": "Image generation, speech-to-text and text-to-speech via one remote MCP server",
+  "description": "Multi-capability remote MCP server (Streamable HTTP) from SuanLinFang (算邻坊), a GPU compute sharing platform. 12 tools: image generation & editing (text-to-image and image-to-image in a single call, billed per image, failures not billed), speech-to-text (long audio + hotword correction), text-to-speech (21 voices, long-text async tasks), and OCR for whole scanned PDF documents (standard/accurate tiers). Bring your own key — register at suanlinfang.cn to get an API key with free trial credit.",
   "author": {
     "name": "SuanLinFang",
     "url": "https://suanlinfang.cn"
