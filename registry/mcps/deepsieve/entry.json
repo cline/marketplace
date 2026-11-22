@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "deepsieve",
+  "type": "mcp",
+  "name": "DeepSieve",
+  "tagline": "Deep research that returns a sourced dataset, re-verified on your schedule",
+  "description": "DeepSieve turns a question into a structured dataset: you approve the schema, it researches the public web, and monitored reports are re-verified on your schedule with change history. A second, independent AI scores each finding so you get to set the trust bar. Connect over remote MCP with OAuth sign-in.",
+  "author": {
+    "name": "DeepSieve",
+    "url": "https://deepsieve.ai"
+  },
+  "homepage": "https://deepsieve.ai",
+  "icon": "./icon.png",
+  "tags": [
+    "research",
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "deepsieve",
+      "--transport",
+      "http",
+      "https://deepsieve.ai/mcp"
+    ],
+    "notes": "Sign in with your DeepSieve account in the browser when prompted. No API key needed."
+  },
+  "license": "Proprietary"
+}
