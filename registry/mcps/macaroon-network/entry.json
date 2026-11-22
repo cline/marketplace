@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "macaroon-network",
+  "type": "mcp",
+  "name": "Macaroon Network",
+  "tagline": "Discover verifiable services and inspect acceptance conditions before execution.",
+  "description": "Connect to the public Streamable HTTP MCP endpoint to list categories, search digital services and inspect inputs, source, price and declared acceptance conditions. Discovery requires no API key or wallet. Applicable paid routes use x402 with USDC on Base; execution is outside the free walkthrough.",
+  "author": {
+    "name": "Macaroon Network",
+    "url": "https://macaroonnetwork.com"
+  },
+  "homepage": "https://macaroonnetwork.com/developers",
+  "repo": "https://github.com/kevmoz/macaroonnetwork-mcp",
+  "tags": [
+    "research",
+    "data",
+    "software"
+  ],
+  "verified": false,
+  "install": {
+    "args": [
+      "macaroon-network",
+      "--transport",
+      "http",
+      "https://api.macaroonnetwork.com/mcp"
+    ],
+    "notes": "Start with macaroons_categories or macaroons_search. Inspect the selected service contract before choosing whether to execute."
+  }
+}
