@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "linkonda",
+  "type": "mcp",
+  "name": "Linkonda",
+  "tagline": "Create and manage Linkonda short links from an AI assistant, with no per-visitor tracking.",
+  "description": "Create and manage Linkonda short links; shortening works without an API key. When a short link is followed, Linkonda counts the click and records nothing about the visitor.",
+  "author": { "name": "Linkonda", "url": "https://linkonda.com" },
+  "homepage": "https://linkonda.com/solutions/mcp-server",
+  "repo": "https://github.com/Verano-DE/linkonda-mcp",
+  "icon": "https://linkonda.com/android-chrome-512x512.png",
+  "tags": ["marketing"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["linkonda", "--", "npx", "-y", "@veranoapp/linkonda-mcp"],
+    "env": [{ "name": "LINKONDA_API_KEY", "required": false }]
+  }
+}
