@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "browserpair",
+  "type": "mcp",
+  "name": "BrowserPair",
+  "tagline": "Use your signed-in Chrome with user permissions and verified results",
+  "description": "BrowserPair connects Cline to the user's own signed-in Chrome via Streamable HTTP MCP. Read page content, navigate, fill forms, and verify authorized actions. OAuth 2.1/PKCE, user-controlled browser grants and permissions apply. Requires a BrowserPair account and the paired Chrome extension. Details: https://docs.browserpair.com/connect-ai-app.",
+  "author": {
+    "name": "BrowserPair",
+    "url": "https://browserpair.com"
+  },
+  "homepage": "https://browserpair.com",
+  "repo": "https://github.com/BrowserPair/browserpair-integrations",
+  "license": "MIT",
+  "tags": [
+    "productivity",
+    "research",
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "browserpair",
+      "--transport",
+      "http",
+      "https://mcp.browserpair.com/mcp"
+    ],
+    "notes": "Connect with BrowserPair OAuth in Cline, pair Chrome via the BrowserPair extension, select the authorized browser and run browser_list. Sensitive actions still require appropriate permissions. Privacy: https://browserpair.com/privacy."
+  }
+}
