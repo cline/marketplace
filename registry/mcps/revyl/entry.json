@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "revyl",
+  "type": "mcp",
+  "name": "Revyl",
+  "tagline": "Cloud iOS and Android devices, browsers and Atlas app maps for testing your app from Cline",
+  "description": "Revyl's hosted MCP server lets Cline open Atlas, Revyl's map of your app's screens and flows, find apps and pull-request builds, run and write end-to-end tests, and start, drive, screenshot and stop cloud iOS and Android devices, web browsers and Mac computers.\n\nIt uses OAuth: on first use Cline opens Revyl's sign-in, where you pick an organization. No API key or local install is needed. Device sessions and explorations use your organization's device time, so ask for one explicitly. Setup guide: https://docs.revyl.com/agents/mcp",
+  "author": {
+    "name": "Revyl",
+    "url": "https://revyl.com"
+  },
+  "homepage": "https://docs.revyl.com/agents/mcp",
+  "icon": "./icon.svg",
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "revyl",
+      "--transport",
+      "http",
+      "https://backend.revyl.ai/api/v1/mcp"
+    ],
+    "notes": "Cline opens your browser to sign in to Revyl the first time it connects. Choose the organization whose apps you want to use. Device sessions and explorations use your organization's device time."
+  }
+}
