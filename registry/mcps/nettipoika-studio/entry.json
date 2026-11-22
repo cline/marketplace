@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "nettipoika-studio",
+  "type": "mcp",
+  "name": "Nettipoika Studio",
+  "tagline": "Build, preview and publish websites on managed EU hosting",
+  "description": "Create, edit, preview and publish websites and small web apps from Cline: static sites, Go and Django with PostgreSQL, HTTPS, drafts with a private preview, version history and rollback on managed hosting in Europe. OAuth sign-in with scoped, revocable access. Needs a Nettipoika Studio subscription; the first 60 days are free.",
+  "author": {
+    "name": "Nettipoika",
+    "url": "https://studio.nettipoika.fi/en/"
+  },
+  "tags": [
+    "software",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "nettipoika-studio",
+      "--transport",
+      "http",
+      "https://studio.nettipoika.fi/mcp"
+    ],
+    "notes": "Sign in to Nettipoika Studio in the browser when Cline asks. You approve the access and its permissions there and can revoke them at any time."
+  },
+  "homepage": "https://studio.nettipoika.fi/en/for-agents",
+  "license": "Proprietary"
+}
