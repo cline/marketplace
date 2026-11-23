@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "vidcrawl",
+  "type": "mcp",
+  "name": "VidCrawl",
+  "tagline": "Extract video transcripts, storyboard frames, and structured insights for AI agents",
+  "description": "Remote and local MCP server for extracting clean timestamped Markdown transcripts, visual storyboard contact sheets, targeted HD frames, and structured agent insights from YouTube, TikTok, Instagram, and X videos.",
+  "author": {
+    "name": "Arco Labs",
+    "url": "https://vidcrawl.com"
+  },
+  "homepage": "https://vidcrawl.com/mcp",
+  "icon": "./icon.png",
+  "tags": [
+    "research",
+    "data",
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "vidcrawl",
+      "--",
+      "npx",
+      "-y",
+      "@vidcrawl/mcp",
+      "mcp"
+    ],
+    "env": [
+      {
+        "name": "VIDCRAWL_API_KEY",
+        "required": true,
+        "description": "VidCrawl API key (100 free credits on signup, no card required). Or connect directly via hosted HTTP at https://vidcrawl.com/mcp.",
+        "url": "https://vidcrawl.com/dashboard"
+      }
+    ],
+    "notes": "Hosted Streamable HTTP is also available at https://vidcrawl.com/mcp with header `Authorization: Bearer $VIDCRAWL_API_KEY`."
+  }
+}
