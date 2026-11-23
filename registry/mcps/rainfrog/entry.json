@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "rainfrog",
+  "type": "mcp",
+  "name": "Rainfrog",
+  "tagline": "Create on-brand image and video campaigns in Rainfrog Studio.",
+  "description": "Manage creative assets and projects, reuse characters and products, generate campaign images, and run image and video studio workflows. This remote MCP server uses Rainfrog OAuth. Connecting has no separate fee; generation uses the account's Rainfrog plan and credits.",
+  "author": {
+    "name": "Rainfrog",
+    "url": "https://www.rainfrog.ai"
+  },
+  "tags": [
+    "creative",
+    "marketing"
+  ],
+  "verified": false,
+  "install": {
+    "args": [
+      "rainfrog",
+      "--transport",
+      "http",
+      "https://mcp.rainfrog.ai/mcp"
+    ]
+  },
+  "homepage": "https://www.rainfrog.ai/mcp",
+  "icon": "https://www.rainfrog.ai/icon-512.png"
+}
