@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "sports-odds-api",
+  "type": "mcp",
+  "name": "Sports Odds API (BetRivers, Unibet & 22 more books)",
+  "tagline": "Live odds from 24 Kambi-powered sportsbooks in one call, with best price per outcome.",
+  "description": "Live odds from 24 Kambi-powered sportsbooks in one call — BetRivers (12 US states + Ontario), Unibet, Paf, Svenska Spel, ATG. One row per game with every book's price and the best price per outcome. Pay per call, no subscription.\n\nStreamable HTTP endpoint hosted by Apify. Auth: Apify OAuth, or an Apify API token as a Bearer token.\n\n- Store: https://apify.com/publicrecords/sports-odds-api\n- MCP: https://mcp.apify.com?tools=publicrecords/sports-odds-api\n\nDisclosure: I maintain this Actor.",
+  "author": {
+    "name": "publicrecords",
+    "url": "https://apify.com/publicrecords"
+  },
+  "tags": [
+    "data",
+    "finance"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "sports-odds-api",
+      "--transport",
+      "http",
+      "https://mcp.apify.com?tools=publicrecords/sports-odds-api"
+    ],
+    "env": [
+      {
+        "name": "APIFY_TOKEN",
+        "required": false,
+        "description": "Optional Apify API token if not using Apify OAuth.",
+        "url": "https://console.apify.com/account/integrations"
+      }
+    ]
+  },
+  "homepage": "https://apify.com/publicrecords/sports-odds-api",
+  "repo": "https://github.com/GeminiGeorge22/sports-odds-mcp",
+  "license": "MIT"
+}
