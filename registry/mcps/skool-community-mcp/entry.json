@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "skool-community-mcp",
+  "type": "mcp",
+  "name": "Skool Community Scraper",
+  "tagline": "Search Skool communities by keyword: members, price, rating, estimated revenue, and daily growth.",
+  "description": "Search Skool communities by keyword. Members, price, rating and estimated monthly revenue for each, plus daily growth tracking.\n\nStreamable HTTP endpoint hosted by Apify. Auth: Apify OAuth, or an Apify API token as a Bearer token.\n\n- Store: https://apify.com/publicrecords/skool-community-growth-tracker\n- MCP: https://mcp.apify.com?tools=publicrecords/skool-community-growth-tracker\n\nDisclosure: I maintain this Actor.",
+  "author": {
+    "name": "publicrecords",
+    "url": "https://apify.com/publicrecords"
+  },
+  "tags": [
+    "data",
+    "search"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "skool-community-mcp",
+      "--transport",
+      "http",
+      "https://mcp.apify.com?tools=publicrecords/skool-community-growth-tracker"
+    ],
+    "env": [
+      {
+        "name": "APIFY_TOKEN",
+        "required": false,
+        "description": "Optional Apify API token if not using Apify OAuth.",
+        "url": "https://console.apify.com/account/integrations"
+      }
+    ]
+  },
+  "homepage": "https://apify.com/publicrecords/skool-community-growth-tracker",
+  "repo": "https://github.com/GeminiGeorge22/publicrecords-mcp/tree/main/servers/skool-community-mcp",
+  "license": "MIT"
+}
