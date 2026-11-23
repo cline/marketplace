@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "pepys-transcribe",
+  "type": "mcp",
+  "name": "Pepys Transcribe",
+  "tagline": "Turn audio and video into timestamped transcripts",
+  "description": "Transcribe audio, video, and podcast episodes, search timestamped transcripts, and export SRT or VTT captions. Sign in with Pepys OAuth.",
+  "author": {
+    "name": "Pepys",
+    "url": "https://pepys.co"
+  },
+  "homepage": "https://pepys.co/mcp",
+  "repo": "https://github.com/ankurmans/pepys-mcp",
+  "icon": "https://raw.githubusercontent.com/ankurmans/pepys-mcp/main/logo.png",
+  "tags": [
+    "productivity",
+    "research"
+  ],
+  "install": {
+    "args": [
+      "pepys-transcribe",
+      "--transport",
+      "http",
+      "https://pepys.co/api/mcp"
+    ]
+  }
+}
