@@ -1,0 +1,17 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "kling-ai-china",
+  "type": "mcp",
+  "name": "Kling AI China",
+  "tagline": "Create and manage AI images and videos with Kling from Cline.",
+  "description": "Official Kling AI China MCP server for image and video generation, Elements, and task status. It uses a hosted OAuth-protected Streamable HTTP endpoint; generation uses credits from the signed-in China Kling account. No local server or API key is required.",
+  "author": { "name": "Kling AI", "url": "https://klingai.com/" },
+  "homepage": "https://klingai.com/",
+  "repo": "https://github.com/klingai-tech/claude-plugin-cn",
+  "tags": ["creative"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["kling-ai-china", "--transport", "http", "https://klingai.com/mcp/plugin"]
+  }
+}
