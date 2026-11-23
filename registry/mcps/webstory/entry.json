@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "webstory",
+  "type": "mcp",
+  "name": "Webstory",
+  "tagline": "Build and edit Webstory story drafts, share reels, and read numbers, comments and orders",
+  "description": "Webstory makes story websites for brands and shops: full-screen reels of video, photos and designs, with buttons, products and forms, that open like a social story on any phone. With Webstory connected, see your stories and how each one is doing (visitors, visits, how far people watched, button taps), make draft stories, add reels, change captions, titles and buttons, find and replace words, bring in photos and videos, make preview and share links, and read comments, chats and orders. Edits go to drafts: a story doesn't go live without a person's OK in Webstory. The assistant works in one workspace, never does more than the person's team role allows, and every change can be undone in Settings → Activity for 30 days. Needs a Webstory account. Docs: https://docs.webstoryapp.com/agents",
+  "author": {
+    "name": "Webstory",
+    "url": "https://getwebstory.com"
+  },
+  "homepage": "https://docs.webstoryapp.com/agents",
+  "repo": "https://github.com/WebStory-App/webstory-mcp",
+  "icon": "https://raw.githubusercontent.com/WebStory-App/webstory-mcp/main/assets/logo.png",
+  "tags": [
+    "marketing",
+    "creative"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "webstory",
+      "--transport",
+      "http",
+      "https://webstoryapp.com/mcp"
+    ],
+    "notes": "Sign in with your Webstory account when Cline opens the browser (OAuth 2.1 with PKCE, no API key), then choose the workspace and what the assistant may do. Disconnect any time in Settings → AI agents. Privacy: https://getwebstory.com/privacy#ai-agents"
+  }
+}
