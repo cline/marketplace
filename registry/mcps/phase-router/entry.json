@@ -1,0 +1,38 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "phase-router",
+  "type": "mcp",
+  "name": "Phase Router",
+  "tagline": "Call about 400 AI models through one API key, with the price of every call",
+  "description": "Phase Router MCP server: an OpenAI-compatible model router with about 400 models (open LLMs, embedding and rerank models) behind one API key. Tools to list models, quote the price before a call, run chat and embeddings, and fetch the signed receipt of each call.",
+  "author": {
+    "name": "Phase",
+    "url": "https://router.phase.xyz"
+  },
+  "tags": [
+    "software"
+  ],
+  "verified": false,
+  "featured": false,
+  "icon": "./icon.svg",
+  "install": {
+    "args": [
+      "phase-router",
+      "--transport",
+      "http",
+      "https://mcp.ai.phase.xyz/mcp",
+      "--header",
+      "Authorization: Bearer ${PHASE_API_KEY}"
+    ],
+    "env": [
+      {
+        "name": "PHASE_API_KEY",
+        "required": true,
+        "description": "Phase Router API key.",
+        "url": "https://router.phase.xyz"
+      }
+    ]
+  },
+  "homepage": "https://router.phase.xyz",
+  "repo": "https://github.com/devcells/phase-router-skills"
+}
