@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "vertov",
+  "type": "mcp",
+  "name": "Vertov",
+  "tagline": "Give your agent the context in a screen recording",
+  "description": "Search Vertov screen recordings, read timestamped transcripts and briefs, and upload recordings to get share links. Sign in to your Vertov workspace with OAuth.",
+  "author": {
+    "name": "Vertov",
+    "url": "https://vertov.app"
+  },
+  "homepage": "https://vertov.app/docs/mcp",
+  "tags": [
+    "productivity"
+  ],
+  "verified": false,
+  "install": {
+    "args": [
+      "vertov",
+      "--transport",
+      "http",
+      "https://vertov.app/mcp"
+    ],
+    "notes": "Sign in with your Vertov account when prompted."
+  }
+}
