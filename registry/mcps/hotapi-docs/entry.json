@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "hotapi-docs",
+  "type": "mcp",
+  "name": "HotAPI Docs",
+  "tagline": "Read-only documentation and OpenAPI schema search for HotAPI multimodal APIs",
+  "description": "Read-only remote MCP server for HotAPI developer documentation. Search integration guides, model endpoint contracts, async task lifecycle docs, webhook verification rules, and inspect exact OpenAPI operation schemas with zero API key required.",
+  "author": {
+    "name": "HotAPI",
+    "url": "https://hotapi.ai/en"
+  },
+  "homepage": "https://hotapi.ai/en/mcp",
+  "repo": "https://github.com/Dikese411980/hotapi-skill",
+  "icon": "./icon.svg",
+  "tags": [
+    "software",
+    "research"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "hotapi-docs",
+      "--transport",
+      "http",
+      "https://hotapi.ai/mcp"
+    ]
+  }
+}
