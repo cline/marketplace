@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "lockdocs",
+  "type": "mcp",
+  "name": "lockdocs",
+  "tagline": "Exact-version library docs from your lockfile — local, offline, no rate limits or API keys.",
+  "description": "Local Rust MCP server (`@sylphx/lockdocs`) that reads your project's lockfiles (npm, pnpm, Yarn, Bun, uv, Poetry, Pipfile, Cargo, Go) and answers from the docs, READMEs, changelogs, and API declarations (`.d.ts`, Python docstrings/stubs, rustdoc, Go doc) of the exact dependency versions installed — including private and internal packages. Uses hybrid BM25 + local embedding retrieval with token-budgeted, `file:line`-cited answers and no API key or query quota. Exposes three MCP tools: `resolve` (inspect pinned versions and doc sources), `docs` (search installed library docs and pinned upstream release-tag docs), and `api` (exact symbol signatures, overloads, and doc comments).",
+  "author": {
+    "name": "Sylphx",
+    "url": "https://sylphx.com"
+  },
+  "homepage": "https://lockdocs.sylphx.com",
+  "repo": "https://github.com/SylphxAI/lockdocs",
+  "icon": "./icon.svg",
+  "tags": [
+    "software",
+    "research"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "lockdocs",
+      "--",
+      "npx",
+      "-y",
+      "@sylphx/lockdocs",
+      "mcp"
+    ],
+    "notes": "Requires Node.js 18+. Runs locally over stdio with no API key or account required. Automatically resolves your workspace's lockfiles; set LOCKDOCS_OFFLINE=1 to prohibit all network requests."
+  }
+}
