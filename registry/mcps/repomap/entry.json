@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "repomap",
+  "type": "mcp",
+  "name": "repomap",
+  "tagline": "A local map of your codebase for AI agents: code graph, hybrid search, call paths, and change impact.",
+  "description": "Fast local Rust MCP server (`@sylphx/repomap`) that builds a tree-sitter code graph, resolved import and call graph, PageRank centrality, Louvain module clusters, and hybrid BM25 + local embedding search across 14+ languages with no API key or vector database required. Exposes six MCP tools: `map` (architecture overview, modules, central files, and focused outlines), `search` (hybrid keyword, symbol, and semantic search with `file:line` ranges), `context` (symbol source, callers, callees, subtypes, and tests), `trace` (shortest call paths and call trees), `impact` (blast radius, callers by depth, and affected tests for symbols or `git diff`), and `db` (read-only schema and query mapping from migrations, ORMs, or live databases).",
+  "author": {
+    "name": "Sylphx",
+    "url": "https://sylphx.com"
+  },
+  "homepage": "https://sylphxai.github.io/repomap/",
+  "repo": "https://github.com/SylphxAI/repomap",
+  "icon": "./icon.svg",
+  "tags": [
+    "software",
+    "databases"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "repomap",
+      "--",
+      "npx",
+      "-y",
+      "@sylphx/repomap",
+      "mcp"
+    ],
+    "notes": "Requires Node.js 18+. Runs locally over stdio with no API key required. Automatically indexes your workspace root; set REPOMAP_EMBED=0 to skip the one-time local embedding model download and use keyword search only."
+  }
+}
