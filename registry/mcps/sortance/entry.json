@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "sortance",
+  "type": "mcp",
+  "name": "Sortance",
+  "tagline": "Validate email addresses at signup",
+  "description": "Sortance checks email addresses before you accept a signup or lead: disposable domains, missing mail servers, typo domains and made-up addresses, plus your own block and allow rules. verify_email returns a send, challenge, hold or drop recommendation with a score; check_email is a free domain-level pre-filter. Signs in with OAuth.",
+  "author": {
+    "name": "Sortance",
+    "url": "https://sortance.com"
+  },
+  "tags": [
+    "security",
+    "sales",
+    "marketing"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "sortance",
+      "--transport",
+      "http",
+      "https://api.sortance.com/mcp"
+    ]
+  }
+}
