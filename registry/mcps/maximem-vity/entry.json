@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "maximem-vity",
+  "type": "mcp",
+  "name": "Maximem Vity",
+  "tagline": "Personal AI memory shared across your AI tools",
+  "description": "Vity remembers your context, preferences, projects and past conversations, and shares that memory across ChatGPT, Claude, Gemini, Cursor, Claude Code, Codex and other MCP clients. It can import past chat history. Hosted remote MCP server with OAuth 2.1 sign-in; memory tools (recall, store, forget, profile) are listed after sign-in.",
+  "author": { "name": "Maximem", "url": "https://www.maximem.ai" },
+  "homepage": "https://www.maximem.ai/vity",
+  "icon": "./icon.svg",
+  "tags": ["memory", "productivity"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["maximem-vity", "--transport", "http", "https://vity-mcp.maximem.ai/mcp"],
+    "notes": "Sign in when prompted (OAuth 2.1 with PKCE). Docs: https://docs.maximem.ai/vity/mcp/overview"
+  }
+}
