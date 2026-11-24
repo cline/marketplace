@@ -1,0 +1,17 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "mcp-readiness",
+  "type": "mcp",
+  "name": "MCP Readiness",
+  "tagline": "Free remote MCP scanner for OAuth, annotations, Origin/CORS, and token cost per turn.",
+  "description": "Free scanner for remote MCP servers: checks OAuth discovery, tool annotations, Origin/CORS and estimates tool-list token cost per agent turn. Web scan, README badge, GitHub Action, and an MCP tool.",
+  "author": { "name": "Om3rr", "url": "https://github.com/Om3rr" },
+  "homepage": "https://mcp.pacerai.fit/?utm_source=cline&utm_medium=directory&utm_campaign=mcp-readiness-14d",
+  "repo": "https://github.com/Om3rr/mcp-readiness-check",
+  "tags": ["software", "security"],
+  "license": "MIT",
+  "verified": false,
+  "install": {
+    "args": ["mcp-readiness", "--transport", "http", "https://mcp.pacerai.fit/mcp"]
+  }
+}
