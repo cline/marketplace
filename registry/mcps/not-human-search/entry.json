@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "not-human-search",
+  "type": "mcp",
+  "name": "Not Human Search",
+  "tagline": "Discover websites and APIs for agents.",
+  "description": "Search indexed websites and APIs, inspect their agent-readiness signals, and retrieve site details through a hosted MCP endpoint. Search and site details are public.",
+  "author": {
+    "name": "Not Human Search",
+    "url": "https://nothumansearch.ai"
+  },
+  "homepage": "https://nothumansearch.ai",
+  "repo": "https://github.com/unitedideas/nothumansearch",
+  "tags": ["software", "research"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["not-human-search", "--transport", "http", "https://nothumansearch.ai/mcp"]
+  }
+}
