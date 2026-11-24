@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "cueston",
+  "type": "mcp",
+  "name": "Cueston",
+  "tagline": "Build, publish and measure product tours, tooltips, banners and surveys in your SaaS app",
+  "description": "Cueston is in-app guidance for SaaS web apps. With Cueston connected, build, preview, publish and measure product tours, tooltips, banners, onboarding checklists, surveys and announcements and read product analytics, plus Cueston's AI sales demo agent. 76 tools and 5 prompts (announce_feature, onboard_new_users, fix_broken_targets, run_nps_survey, explain_visibility). Free plan with public sign-up. Docs: https://cueston.com/docs/mcp",
+  "author": {
+    "name": "Cueston",
+    "url": "https://cueston.com"
+  },
+  "homepage": "https://cueston.com/docs/mcp",
+  "repo": "https://github.com/andreycretsu/cueston-mcp",
+  "icon": "https://cueston.com/icon-512.png",
+  "license": "MIT",
+  "tags": [
+    "productivity",
+    "marketing",
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cueston",
+      "--transport",
+      "http",
+      "https://app.cueston.com/api/mcp"
+    ],
+    "notes": "Sign in with your Cueston account when Cline opens the browser (OAuth 2.1 with PKCE and dynamic client registration, no API key). Scopes: mcp:read, mcp:write, mcp:publish. Privacy: https://app.cueston.com/privacy"
+  }
+}
