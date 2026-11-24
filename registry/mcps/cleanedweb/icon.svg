@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" color="#245CFF" role="img" aria-label="CleanedWeb favicon">
+  <title>CleanedWeb favicon</title>
+  <rect width="32" height="32" rx="7" fill="#FFFFFF" />
+  <g transform="translate(1 4) scale(0.0511) translate(-149 -276)">
+    <path
+      d="M512 276C360 276 238 360 153 500C149 506 149 518 153 524C238 664 360 748 512 748A236 236 0 0 1 512 276Z"
+      fill="currentColor"
+    />
+    <g
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <g stroke-width="40">
+        <circle cx="512" cy="512" r="224" />
+        <path d="M512 288C438 350 402 426 402 512C402 598 438 674 512 736" />
+        <path d="M512 288C586 350 622 426 622 512C622 598 586 674 512 736" />
+        <path d="M308 446C370 423 440 411 512 411C584 411 654 423 716 446" />
+        <path d="M308 578C370 601 440 613 512 613C584 613 654 601 716 578" />
+      </g>
+    </g>
+  </g>
+</svg>

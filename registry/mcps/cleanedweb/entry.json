@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "cleanedweb",
+  "type": "mcp",
+  "name": "CleanedWeb",
+  "tagline": "Maintained APIs that return structured records from public websites",
+  "description": "Find and run maintained REST APIs for public websites: job boards, marketplaces, app stores, package registries, research databases and more. find_api and get_api search the catalog and show each API's inputs and record fields; run_api returns records with a record limit; request_source asks for a site that is not listed yet. Remote server with OAuth sign-in in the browser; searching is free and runs are paid per accepted record.",
+  "author": {
+    "name": "CleanedWeb",
+    "url": "https://cleanedweb.com"
+  },
+  "tags": [
+    "data",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "cleanedweb",
+      "--transport",
+      "http",
+      "https://api.cleanedweb.com/mcp?profile=catalog"
+    ]
+  },
+  "homepage": "https://cleanedweb.com/docs/mcp/?utm_source=cline&utm_medium=marketplace",
+  "repo": "https://github.com/cleanedweb/cleanedweb-mcp",
+  "license": "MIT"
+}
