@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "anymd",
+  "type": "mcp",
+  "name": "anymd",
+  "tagline": "Convert PDF, Office, EPUB, HTML, images (OCR), and audio/video into clean Markdown locally — no API key.",
+  "description": "Fast local Rust MCP server (`@sylphx/anymd`) that turns PDF, Word (.docx), PowerPoint (.pptx), Excel (.xlsx/.xls/.ods), CSV/TSV, EPUB, HTML and web URLs, images (OCR), and audio/video (metadata, subtitles, local transcripts) into clean, token-lean Markdown with page citation anchors. Runs locally on your machine with no API key required. Exposes four MCP tools: `outline` (heading tree navigation), `read` (paginated Markdown conversion with token budgets and cursors), `search` (literal and BM25-ranked search across files, folders, and URLs), and `inspect` (page rendering, region extraction, OCR, structure JSON, and document comparison).",
+  "author": {
+    "name": "Sylphx",
+    "url": "https://sylphx.com"
+  },
+  "homepage": "https://anymd.sylphx.com",
+  "repo": "https://github.com/SylphxAI/anymd",
+  "icon": "./icon.svg",
+  "tags": [
+    "research",
+    "productivity",
+    "data"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "anymd",
+      "--",
+      "npx",
+      "-y",
+      "@sylphx/anymd",
+      "mcp"
+    ],
+    "notes": "Requires Node.js 18+. Runs locally over stdio with no API key required. Optionally pass --allow-dir=/path/to/docs (or set MCP_PDF_ALLOWED_DIRS) to confine file access to specific directories."
+  }
+}
