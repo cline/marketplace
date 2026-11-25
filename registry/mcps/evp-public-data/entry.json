@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "evp-public-data",
+  "type": "mcp",
+  "name": "EVP Public Data",
+  "tagline": "Curated public data extraction for marketplaces, government data, filings, trials, and research.",
+  "description": "EVP Public Data gives Cline 11 focused extraction tools covering WordPress plugins, Zapier apps, Atlassian Marketplace apps, VS Code extensions, Apple Podcasts charts, Steam games, Grants.gov, USAspending, ClinicalTrials.gov, and SEC EDGAR. Results are clean JSON records with source links. Each call is capped at 25 records to keep costs predictable. The server is published in the Official MCP Registry as `io.github.intius/evp-public-data-mcp`.",
+  "author": {
+    "name": "EVP Labs",
+    "url": "https://intius.github.io/evp-labs-data-extractors/"
+  },
+  "homepage": "https://intius.github.io/evp-labs-data-extractors/mcp/",
+  "repo": "https://github.com/intius/evp-public-data-mcp",
+  "icon": "https://raw.githubusercontent.com/intius/evp-public-data-mcp/main/icon.png",
+  "tags": [
+    "data",
+    "research"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "evp-public-data",
+      "--",
+      "npx",
+      "-y",
+      "github:intius/evp-public-data-mcp#v0.1.0"
+    ],
+    "env": [
+      {
+        "name": "APIFY_TOKEN",
+        "required": true,
+        "description": "Apify API token used to run the underlying public data extraction Actors.",
+        "url": "https://console.apify.com/account/integrations"
+      }
+    ],
+    "notes": "The server starts without a token for tool discovery. APIFY_TOKEN is required only when extraction tools are called. Start with small result requests because the underlying Actors are pay per result."
+  }
+}
+
