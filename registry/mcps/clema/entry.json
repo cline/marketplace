@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "clema",
+  "type": "mcp",
+  "name": "Clema",
+  "tagline": "Higher-ed IR data requests plus IPEDS and College Scorecard SQL",
+  "description": "Clema is an AI analyst for institutional research (IR) and institutional effectiveness teams in U.S. higher education. Its MCP server lets Cline work the IR data request queue (account_details, tickets_list, ticket_details, create_ticket, update_ticket_settings) and query the public IPEDS and College Scorecard datasets with read-only SQL (data_tables, data_dictionary_search, institution_search, data_query). Hosted remote server maintained by Clema, Streamable HTTP with OAuth 2.1 sign-in in the browser, nothing to install. Requires a paid Clema plan; a free trial is available at https://app.clema.ai/sign-up. Docs: https://clema.ai/docs/mcp",
+  "author": {
+    "name": "Clema",
+    "url": "https://clema.ai"
+  },
+  "homepage": "https://clema.ai/docs/mcp",
+  "repo": "https://github.com/wilsonbright/clema-mcp",
+  "icon": "./icon.svg",
+  "tags": [
+    "data",
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "clema",
+      "--transport",
+      "http",
+      "https://mcp.clema.ai/mcp"
+    ]
+  }
+}
