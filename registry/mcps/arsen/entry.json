@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "arsen",
+  "type": "mcp",
+  "name": "Arsen MCP",
+  "tagline": "Explore social-engineering simulation results and awareness-training data.",
+  "description": "Connect Cline to Arsen's hosted MCP server to query simulation results and awareness-training data available to your Arsen account. Uses Streamable HTTP with OAuth sign-in and requires an Arsen account with organization access.",
+  "author": {
+    "name": "Arsen",
+    "url": "https://arsen.co"
+  },
+  "homepage": "https://arsen.co/en/mcp",
+  "repo": "https://github.com/arsen-cybersecurity/arsen-mcp-server",
+  "icon": "https://raw.githubusercontent.com/arsen-cybersecurity/arsen-mcp-server/main/assets/arsen-mark.svg",
+  "tags": [
+    "security",
+    "data"
+  ],
+  "verified": false,
+  "install": {
+    "args": [
+      "arsen",
+      "--transport",
+      "http",
+      "https://api.arsen.co/mcp"
+    ],
+    "notes": "Complete Arsen OAuth sign-in when prompted. An Arsen account with organization access is required."
+  }
+}
