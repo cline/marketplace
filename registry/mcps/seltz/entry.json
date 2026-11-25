@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "seltz",
+  "type": "mcp",
+  "name": "Seltz",
+  "tagline": "Source-backed web search, news, company and people lookups, and page fetch",
+  "description": "Seltz's hosted MCP server gives Cline source-backed results from the public web: general search, news, company profiles, public people profiles, SEC financial reports, and Wikipedia. When you already have a URL, it fetches the page as Markdown. Sign in through the Seltz Console with OAuth; new accounts receive free request credit.",
+  "author": { "name": "Seltz", "url": "https://seltz.ai?utm_source=cline&utm_medium=integration&utm_campaign=marketplace" },
+  "homepage": "https://docs.seltz.ai/mcp-server?utm_source=cline&utm_medium=integration&utm_campaign=marketplace",
+  "repo": "https://github.com/seltz-ai/seltz-cline-plugin",
+  "icon": "./icon.svg",
+  "tags": ["research"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["seltz", "--transport", "http", "https://mcp.seltz.ai/mcp"]
+  }
+}
