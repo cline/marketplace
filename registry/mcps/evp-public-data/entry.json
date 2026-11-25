@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "EVP Public Data",
   "tagline": "Curated public data extraction for marketplaces, government data, filings, trials, and research.",
-  "description": "EVP Public Data gives Cline 11 focused extraction tools covering WordPress plugins, Zapier apps, Atlassian Marketplace apps, VS Code extensions, Apple Podcasts charts, Steam games, Grants.gov, USAspending, ClinicalTrials.gov, and SEC EDGAR. Results are clean JSON records with source links. Each call is capped at 25 records to keep costs predictable. The server is published in the Official MCP Registry as `io.github.intius/evp-public-data-mcp`.",
+  "description": "EVP Public Data gives Cline a curated hosted MCP endpoint with focused extraction tools covering WordPress plugins, Zapier apps, Atlassian Marketplace apps, VS Code extensions, Apple Podcasts charts, Steam games, Grants.gov, USAspending, ClinicalTrials.gov, and SEC EDGAR. Results are structured Apify dataset records with source links. The related local MCP server is published in the Official MCP Registry as `io.github.intius/evp-public-data-mcp`.",
   "author": {
     "name": "EVP Labs",
     "url": "https://intius.github.io/evp-labs-data-extractors/"
@@ -22,10 +22,11 @@
   "install": {
     "args": [
       "evp-public-data",
-      "--",
-      "npx",
-      "-y",
-      "github:intius/evp-public-data-mcp#v0.1.0"
+      "--transport",
+      "http",
+      "https://mcp.apify.com/?tools=evpp/wordpress-plugin-directory,evpp/zapier-app-directory,evpp/atlassian-marketplace,evpp/vscode-marketplace,evpp/apple-podcasts-charts,evpp/steam-game-intel,evpp/grants-gov,evpp/usaspending,evpp/clinicaltrials-gov,evpp/sec-edgar-filings",
+      "--header",
+      "Authorization: Bearer ${APIFY_TOKEN}"
     ],
     "env": [
       {
@@ -35,7 +36,6 @@
         "url": "https://console.apify.com/account/integrations"
       }
     ],
-    "notes": "The server starts without a token for tool discovery. APIFY_TOKEN is required only when extraction tools are called. Start with small result requests because the underlying Actors are pay per result."
+    "notes": "The hosted endpoint exposes the ten curated Actor tools plus Apify run and dataset helper tools. Start with small result requests because the underlying Actors are pay per result. A token-free local MCPB package is also available for tool discovery in the source repository release."
   }
 }
-
