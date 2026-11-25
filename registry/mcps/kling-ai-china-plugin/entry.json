@@ -4,7 +4,7 @@
   "type": "mcp",
   "name": "Kling AI China Plugin",
   "tagline": "Official Kling MCP with 4K video and optional HDR where available",
-  "description": "Official Kling AI China remote MCP with browser OAuth. Kling 4.0 supports native 4K video and optional 10-bit HDR at 1080p or 4K when available in live MCP tools; HDR uses additional China account credits. Generate images and videos, manage Elements, use motion control, and track tasks. China and Global accounts, credits, and tasks are separate. Official npm Plugin: https://www.npmjs.com/package/@klingai/plugin-cn ; CLI: https://www.npmjs.com/package/@klingai/cli-cn . Setup: https://klingai.com/app/mcp/guide . Kling Image 4.0 is live in Kling Creative Studio and via API; confirm its availability through live tool discovery.",
+  "description": "Official Kling AI China remote MCP with browser OAuth. Kling 4.0 supports native 4K video and optional 10-bit HDR at 1080p or 4K when available in live MCP tools; HDR uses additional China account credits. Generate images and videos, manage Elements, use motion control, and track tasks. China and Global accounts, credits, and tasks are separate. Official npm Plugin: https://www.npmjs.com/package/@klingai/plugin-cn ; CLI: https://www.npmjs.com/package/@klingai/cli-cn . Setup: https://klingai.com/app/mcp/guide . Live OAuth MCP tool discovery exposes Kling Image 4.0 for text-to-image and reference-image editing, including single-image and related-image series generation.",
   "author": {
     "name": "Kling AI",
     "url": "https://klingai.com"
