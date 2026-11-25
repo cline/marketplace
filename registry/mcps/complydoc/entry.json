@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "complydoc",
+  "type": "mcp",
+  "name": "complydoc",
+  "tagline": "Open documents with personal details masked and hidden instructions removed",
+  "description": "A local MCP server that opens PDFs, Word files, spreadsheets and scans from folders you share. IBANs, tax numbers, emails and phone numbers are masked before the model reads them, and hidden text such as white-on-white prompt injections is taken out. Everything runs on your machine.",
+  "author": { "name": "complydoc", "url": "https://complydoc.io" },
+  "homepage": "https://complydoc.io",
+  "repo": "https://github.com/complydoc/complydoc",
+  "icon": "https://raw.githubusercontent.com/complydoc/complydoc/main/mcpb/icon.png",
+  "tags": ["security", "research"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["complydoc", "--", "uvx", "complydoc", "mcp"]
+  }
+}
