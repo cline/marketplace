@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "pdfbookmarks",
+  "type": "mcp",
+  "name": "PDFBookmarks",
+  "tagline": "Add nested PDF bookmarks and clickable tables of contents locally",
+  "description": "Inspect PDF outlines, render selected pages for a vision-capable agent, plan page mappings, and save a new PDF with verified destinations. This server uses local stdio. In Cline, append --root and your absolute PDF folder to the installed server arguments. On a cold npm download, set the server timeout to 45 seconds if needed.",
+  "author": {
+    "name": "PDFBookmarks",
+    "url": "https://pdfbookmarks.com"
+  },
+  "homepage": "https://pdfbookmarks.com/ai-tools",
+  "repo": "https://github.com/Yuikij/pdfbookmarks-ai",
+  "tags": ["productivity", "research"],
+  "license": "MIT",
+  "verified": false,
+  "install": {
+    "args": [
+      "pdfbookmarks",
+      "--",
+      "npx",
+      "--yes",
+      "https://github.com/Yuikij/pdfbookmarks-ai/releases/download/v0.1.1/pdfbookmarks-mcp-0.1.1.tgz",
+      "serve"
+    ]
+  }
+}
