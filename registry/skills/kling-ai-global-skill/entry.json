@@ -3,8 +3,8 @@
   "id": "kling-ai-global-skill",
   "type": "skill",
   "name": "Kling AI CLI Skill",
-  "tagline": "Use Kling's official CLI for image and video workflows in Cline",
-  "description": "Official Kling AI CLI Skill for prompt planning, image and video workflows, reusable Elements, motion control, and task tracking. Pair it with the region-matching official CLI package and OAuth MCP connection: `@klingai/cli-global` for Global or `@klingai/cli-cn` for China. Generation consumes credits from the signed-in regional account.",
+  "tagline": "Use Kling Image 4.0 and the official CLI in Cline",
+  "description": "Official Kling AI CLI Skill for prompt planning and image/video workflows, reusable Elements, motion control, and task tracking. For image generation, it prefers Kling Image 4.0 when the live tool list confirms availability and fit. Pair it with the matching CLI package and OAuth MCP connection: `@klingai/cli-global` for Global or `@klingai/cli-cn` for China. Generation consumes credits from the signed-in regional account.",
   "author": {
     "name": "Kling AI",
     "url": "https://kling.ai"
