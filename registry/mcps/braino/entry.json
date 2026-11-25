@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "braino",
+  "type": "mcp",
+  "name": "Braino",
+  "tagline": "Shared, governed knowledge for teams and AI agents",
+  "description": "Search, brief, read, and maintain your team's decisions, rules, evidence, and work history with provenance. The hosted Braino MCP server uses OAuth and only exposes workspaces and collections granted to the connection.",
+  "author": {
+    "name": "Braino",
+    "url": "https://braino.dev"
+  },
+  "tags": [
+    "productivity",
+    "memory",
+    "business"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "braino",
+      "--transport",
+      "http",
+      "https://braino.dev/mcp"
+    ],
+    "notes": "Complete the browser OAuth flow, then call braino_whoami to review the workspaces and collections granted to Cline."
+  },
+  "homepage": "https://braino.dev",
+  "repo": "https://github.com/BrainoInc/braino",
+  "icon": "./icon.png",
+  "license": "MPL-2.0"
+}
