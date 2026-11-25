@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "pdf-bookmarks",
+  "type": "skill",
+  "name": "PDF Bookmarks",
+  "tagline": "Add nested bookmarks and clickable tables of contents to local PDFs",
+  "description": "Guide an agent through inspecting a PDF outline, reading scan images, checking printed page numbers against physical pages, and saving a verified copy with nested bookmarks or a clickable table of contents.",
+  "author": {
+    "name": "PDFBookmarks",
+    "url": "https://pdfbookmarks.com"
+  },
+  "homepage": "https://pdfbookmarks.com/ai-tools",
+  "repo": "https://github.com/Yuikij/pdfbookmarks-ai",
+  "tags": ["productivity", "research"],
+  "license": "MIT",
+  "verified": false,
+  "install": {
+    "args": ["Yuikij/pdfbookmarks-ai", "--skill", "pdf-bookmarks"]
+  }
+}
