@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "govisit-get-statistics",
+  "type": "skill",
+  "name": "GoVisit Get Statistics",
+  "tagline": "Read GoVisit catalog coverage counts with observation dates.",
+  "description": "Use when an agent needs exact GoVisit catalog coverage counts for the physical World or a selected Destination, with observation dates and provenance. Public GoVisit data use is governed by the GoVisit Data Use License.",
+  "author": {
+    "name": "inHotel Sàrl",
+    "url": "https://govisit.ai"
+  },
+  "homepage": "https://govisit.ai/en/docs/developers/agent-skills/overview",
+  "repo": "https://github.com/inhotel-io/govisit-toolkit",
+  "tags": [
+    "data",
+    "business"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "inhotel-io/govisit-toolkit",
+      "--skill",
+      "govisit-get-statistics"
+    ]
+  }
+}

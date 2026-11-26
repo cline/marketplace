@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "govisit-get-place-visit-facts",
+  "type": "skill",
+  "name": "GoVisit Get Place Visit Facts",
+  "tagline": "Read normalized visit facts for a selected place.",
+  "description": "Read compact, normalized visit facts for the selected place. Use when an agent needs this published GoVisit evidence through HTTP for an integration or travel decision. Public GoVisit data use is governed by the GoVisit Data Use License.",
+  "author": {
+    "name": "inHotel Sàrl",
+    "url": "https://govisit.ai"
+  },
+  "homepage": "https://govisit.ai/en/docs/developers/agent-skills/overview",
+  "repo": "https://github.com/inhotel-io/govisit-toolkit",
+  "tags": [
+    "research",
+    "data"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "inhotel-io/govisit-toolkit",
+      "--skill",
+      "govisit-get-place-visit-facts"
+    ]
+  }
+}
