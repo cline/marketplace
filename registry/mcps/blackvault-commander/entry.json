@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "blackvault-commander",
+  "type": "mcp",
+  "name": "BlackVault Commander",
+  "tagline": "Connect Cline to your authorized computers using account-scoped remote tools.",
+  "description": "Connect to your paired computers through BlackVault Commander. Check device status, monthly usage and approved diagnostics, and request supported Windows operations within your granted permissions. Requires a BlackVault account and a paired device for device operations. OAuth sign-in is required; device and operation permissions remain enforced by BlackVault. Local approval applies where required.",
+  "author": {
+    "name": "Liquidity Labs Studio",
+    "url": "https://liquiditylabsstudio.com"
+  },
+  "homepage": "https://commander.liquiditylabsstudio.com",
+  "icon": "./icon.png",
+  "tags": [
+    "productivity",
+    "software",
+    "security"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "blackvault-commander",
+      "--transport",
+      "http",
+      "https://commander.liquiditylabsstudio.com/mcp"
+    ],
+    "notes": "Complete BlackVault OAuth sign-in and authorize only the permissions you need. Pair your own computer in the BlackVault control center before requesting device operations."
+  }
+}
