@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "taplio-for-linkedin",
+  "type": "mcp",
+  "name": "Taplio for LinkedIn",
+  "tagline": "Find leads, write, schedule and analyze LinkedIn posts, find inspiration, comment, like and connect.",
+  "description": "Official remote MCP server for Taplio, the LinkedIn growth platform. Work on your LinkedIn presence from Cline through your Taplio account: draft, schedule and publish posts, browse your posts and read their analytics, search inspiration from other creators, find posts to comment on and comments to reply to, like posts, send connection requests, and search Taplio's lead database for prospects (Pro plan). Sign-in uses OAuth 2.1 in the browser, no API key needed.",
+  "author": {
+    "name": "Taplio",
+    "url": "https://taplio.com"
+  },
+  "homepage": "https://taplio.com/taplio-linkedin-mcp",
+  "repo": "https://github.com/TaplioOfficial/taplio-linkedin-mcp",
+  "icon": "./icon.png",
+  "tags": [
+    "marketing",
+    "sales"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "taplio-for-linkedin",
+      "--transport",
+      "http",
+      "https://mcp.taplio.com/"
+    ],
+    "notes": "Requires a Taplio account. Cline opens the Taplio sign-in page in your browser on first connection (OAuth 2.1, scope taplio:mcp)."
+  }
+}
