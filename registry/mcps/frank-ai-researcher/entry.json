@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "frank-ai-researcher",
+  "type": "mcp",
+  "name": "Frank AI Researcher",
+  "tagline": "Frank is an AI user researcher that runs short voice interviews.",
+  "description": "Frank is an AI user researcher that runs short voice interviews. Create studies, invite your own customers, and read the transcripts from an MCP client. Works with ChatGPT, Claude, Grok and Muse, plus other MCP clients that support remote servers with OAuth. Free plan: 60 voice minutes a month, no card required. WhatsApp and video interviews: Coming soon. MCP is included on every plan, including Free.",
+  "author": {
+    "name": "Frank",
+    "url": "https://www.hifrank.ai"
+  },
+  "tags": [
+    "research"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "frank-ai-researcher",
+      "--transport",
+      "http",
+      "https://api.hifrank.ai/mcp"
+    ],
+    "notes": "Sign in to your Frank account when prompted (OAuth 2.1 with PKCE). No API key. Official registry name: ai.hifrank/frank."
+  },
+  "homepage": "https://www.hifrank.ai",
+  "repo": "https://github.com/nar-vardanyan/frank-mcp",
+  "icon": "https://raw.githubusercontent.com/nar-vardanyan/frank-mcp/main/assets/logo.png",
+  "license": "MIT"
+}
