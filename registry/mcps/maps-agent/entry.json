@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "maps-agent",
+  "type": "mcp",
+  "name": "Maps Agent",
+  "tagline": "Find Google Business Profile guides, local SEO research and practical answers.",
+  "description": "Find guides, studies and definitions about Google Business Profile and local SEO. Use sources on reviews, categories and Google Maps rankings, and request a public profile audit where available.",
+  "author": {
+    "name": "Maps Agent",
+    "url": "https://maps-agent.com"
+  },
+  "homepage": "https://maps-agent.com",
+  "repo": "https://github.com/maps-agent/mcp",
+  "icon": "./icon.png",
+  "tags": [
+    "marketing"
+  ],
+  "license": "MIT",
+  "install": {
+    "args": [
+      "maps-agent",
+      "--transport",
+      "http",
+      "https://maps-agent.com/mcp"
+    ]
+  },
+  "verified": false,
+  "featured": false
+}
