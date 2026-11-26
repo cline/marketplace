@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "sulihuli",
+  "type": "mcp",
+  "name": "SuliHuli",
+  "tagline": "Compare EV specs, range, charging and prices with sources and dates.",
+  "description": "Find and compare electric vehicles by range, charging, battery, market price and category ranking. Figures carry a source and date. Verified figures are marked and conflicting sources remain visible.",
+  "author": {
+    "name": "SuliHuli",
+    "url": "https://sulihuli.com"
+  },
+  "homepage": "https://sulihuli.com",
+  "repo": "https://github.com/sulihuli/mcp",
+  "icon": "./icon.png",
+  "tags": [
+    "data"
+  ],
+  "license": "MIT",
+  "install": {
+    "args": [
+      "sulihuli",
+      "--transport",
+      "http",
+      "https://sulihuli.com/api/mcp"
+    ]
+  },
+  "verified": false,
+  "featured": false
+}
