@@ -19,14 +19,6 @@
       "--transport",
       "http",
       "https://mcp.exa.ai/mcp"
-    ],
-    "env": [
-      {
-        "name": "EXA_API_KEY",
-        "required": true,
-        "description": "Exa API key for hosted or local search access.",
-        "url": "https://exa.ai"
-      }
     ]
   },
   "homepage": "https://exa.ai/docs/reference/exa-mcp"
