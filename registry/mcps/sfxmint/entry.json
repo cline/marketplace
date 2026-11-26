@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "sfxmint",
+  "type": "mcp",
+  "name": "SFXMint",
+  "tagline": "Free CC0 sound effects for games and apps, found by event, set or description",
+  "description": "Find sound effects for a game or app from Cline: ask by event (button-click, coin, error), take a whole set (UI, platformer, RPG), or search by description with duration, loop and format requirements. Library sounds are CC0 with no attribution, as WAV or MP3. Search works without an account; downloads take a free API key from sfxmint.com/key (3 sounds a day). Sounds the library lacks can be made with paid credits after the user agrees.",
+  "author": {
+    "name": "SFXMint",
+    "url": "https://sfxmint.com"
+  },
+  "tags": [
+    "creative",
+    "software"
+  ],
+  "icon": "./icon.png",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "sfxmint",
+      "--transport",
+      "http",
+      "https://sfxmint.com/mcp?ref=cline"
+    ]
+  },
+  "homepage": "https://sfxmint.com/api/docs",
+  "repo": "https://github.com/sfxmint/sfxmint-mcp",
+  "license": "CC0-1.0"
+}
