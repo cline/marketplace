@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "govisit-get-destination-section",
+  "type": "skill",
+  "name": "GoVisit Get Destination Section",
+  "tagline": "Read one published section of a destination.",
+  "description": "Read one published section of the selected destination. Use when an agent needs this published GoVisit evidence through HTTP for an integration or travel decision. Public GoVisit data use is governed by the GoVisit Data Use License.",
+  "author": {
+    "name": "inHotel Sàrl",
+    "url": "https://govisit.ai"
+  },
+  "homepage": "https://govisit.ai/en/docs/developers/agent-skills/overview",
+  "repo": "https://github.com/inhotel-io/govisit-toolkit",
+  "tags": [
+    "research",
+    "data"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "inhotel-io/govisit-toolkit",
+      "--skill",
+      "govisit-get-destination-section"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "govisit-get-collection-overview",
+  "type": "skill",
+  "name": "GoVisit Get Collection Overview",
+  "tagline": "Read published overviews of destination collection pages.",
+  "description": "Read the published overview for the selected destination collection page. Use when an agent needs this published GoVisit evidence through HTTP for an integration or travel decision. Public GoVisit data use is governed by the GoVisit Data Use License.",
+  "author": {
+    "name": "inHotel Sàrl",
+    "url": "https://govisit.ai"
+  },
+  "homepage": "https://govisit.ai/en/docs/developers/agent-skills/overview",
+  "repo": "https://github.com/inhotel-io/govisit-toolkit",
+  "tags": [
+    "research",
+    "data"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "inhotel-io/govisit-toolkit",
+      "--skill",
+      "govisit-get-collection-overview"
+    ]
+  }
+}

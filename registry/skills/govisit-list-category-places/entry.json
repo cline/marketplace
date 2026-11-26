@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "govisit-list-category-places",
+  "type": "skill",
+  "name": "GoVisit List Category Places",
+  "tagline": "Filter place cards shown on a destination category page.",
+  "description": "Filter the published place cards shown on the selected destination category page. Use when an agent needs this published GoVisit evidence through HTTP for an integration or travel decision. Public GoVisit data use is governed by the GoVisit Data Use License.",
+  "author": {
+    "name": "inHotel Sàrl",
+    "url": "https://govisit.ai"
+  },
+  "homepage": "https://govisit.ai/en/docs/developers/agent-skills/overview",
+  "repo": "https://github.com/inhotel-io/govisit-toolkit",
+  "tags": [
+    "research",
+    "data"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "inhotel-io/govisit-toolkit",
+      "--skill",
+      "govisit-list-category-places"
+    ]
+  }
+}
