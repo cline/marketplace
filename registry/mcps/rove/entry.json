@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "description": "Rove is a supervised browser for AI agents: the agent drives a real Chromium browser through the MCP server, and a human can watch live through a one-time viewer link, take exclusive control, and hand it back \u2014 the agent re-reads the page before acting again. Cline users building or debugging anything web-facing get browser automation their agent can be supervised on, instead of an unsupervised headless session. Rove is already published on the official MCP Registry as io.github.noncelogic/rove with a hosted remote endpoint, and ships as the npm package @roveapi/mcp.",
+  "id": "rove",
+  "install": {
+    "args": [
+      "rove",
+      "--transport",
+      "http",
+      "https://api.roveapi.com/mcp"
+    ]
+  },
+  "name": "Rove",
+  "tagline": "Supervised browser for AI agents \u2014 a human can watch live, take control, and hand it back.",
+  "tags": [
+    "software",
+    "productivity"
+  ],
+  "type": "mcp",
+  "verified": false,
+  "author": {
+    "name": "NonceLogic",
+    "url": "https://noncelogic.com"
+  },
+  "homepage": "https://roveapi.com",
+  "icon": "./icon.png"
+}
