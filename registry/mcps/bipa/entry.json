@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "bipa",
+  "type": "mcp",
+  "name": "Bipa",
+  "tagline": "Read your Bipa account, receive Pix and request payments with your permissions.",
+  "description": "Official Bipa personal-account MCP for eligible customers in Brazil. Read balances, transactions, portfolio and account data, generate Pix receiving codes, and request Pix or boleto payments. Ordinary payments wait for approval in Bipa. Preauthorized trusted-contact Pix can execute immediately within existing limits with its separate permission and explicit confirmation. The personal MCP does not trade, convert assets, place orders or move savings.",
+  "author": {
+    "name": "Bipa",
+    "url": "https://bipa.app"
+  },
+  "homepage": "https://agents.bipa.app/docs/claude",
+  "repo": "https://github.com/bipa-app/grok-plugin",
+  "icon": "./icon.png",
+  "tags": [
+    "finance",
+    "productivity"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "bipa",
+      "--transport",
+      "http",
+      "https://mcp.bipa.app/mcp"
+    ],
+    "notes": "Requires an eligible Bipa account and OAuth authorization on Bipa-owned pages. Grant only the permissions needed. Never paste credentials or identity documents into chat. Fresh Cline OAuth and in-app compatibility remain unverified; hosted fictional tests are not client-specific approval."
+  }
+}
