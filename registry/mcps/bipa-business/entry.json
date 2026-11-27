@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "bipa-business",
+  "type": "mcp",
+  "name": "Bipa Business",
+  "tagline": "Manage company cash, collections and payment requests with your permissions.",
+  "description": "Official Bipa Business MCP for eligible companies in Brazil. Authorized members can read balances, statements, payment requests, collections, payables and documents; create Pix charges and payment links; and organize records. Outgoing Pix and boleto requests await member confirmation and company approval in Bipa Business; no MCP tool approves them. Conversions, accepted target orders and savings movements can execute immediately with separate permissions and explicit confirmation.",
+  "author": {
+    "name": "Bipa",
+    "url": "https://bipa.app"
+  },
+  "homepage": "https://agents.bipa.app/docs/business",
+  "repo": "https://github.com/bipa-app/bipa-business-plugin",
+  "icon": "./icon.png",
+  "tags": [
+    "finance",
+    "business"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "bipa-business",
+      "--transport",
+      "http",
+      "https://mcp.bipa.app/business/connector/mcp"
+    ],
+    "notes": "Requires an eligible Bipa Business account and an authorized member. OAuth scopes and current company permissions constrain access. Never paste credentials or identity documents into chat. Fresh Cline OAuth and in-app compatibility remain unverified; the latest DCR attempt timed out and hosted fictional tests used an existing public client."
+  }
+}
