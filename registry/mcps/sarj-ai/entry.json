@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "sarj-ai",
+  "type": "mcp",
+  "name": "Sarj AI",
+  "tagline": "Review AI call history, transcripts, outcomes and analytics",
+  "description": "Connect Cline to [Sarj AI](https://sarj.ai), a platform for Arabic and English AI voice calls. Find recent calls, filter by status and date, inspect call details, read available transcripts, and review post-call analysis from your connected organization.\n\nThe hosted MCP server uses Streamable HTTP and OAuth; no local server is required. Call reads require `calls:read`. The production server also advertises call-management tools that require `calls:write`. Review the requested scopes and client tool approvals before authorizing. Transcript and analysis availability depends on call completion, processing and your organization's features.\n\nSee the [setup guide](https://platform-docs.sarj.ai/mcp-server), [client configurations](https://github.com/sarj-ai/mcp-integrations), and [synthetic walkthrough](https://drive.google.com/file/d/18fJpJIpPXIR2hOazZafatvEQFmsXpv7P/view). [Support](https://sarj.ai/contact) · [Privacy](https://sarj.ai/privacy) · [Terms](https://sarj.ai/terms).",
+  "author": { "name": "Sarj AI", "url": "https://sarj.ai" },
+  "homepage": "https://sarj.ai",
+  "repo": "https://github.com/sarj-ai/mcp-integrations",
+  "icon": "./icon.png",
+  "tags": ["data", "business", "productivity"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["sarj-ai", "--transport", "http", "https://platform-api.sarj.ai/api/v1/mcp"],
+    "notes": "Requires an existing Sarj account with access to an organization. Complete OAuth and review the requested permissions. Sarj's current OAuth flow requires an account role that can create API credentials; ask your organization administrator if authorization is denied. The MIT license covers the public client configuration and documentation; hosted service access is governed by Sarj's terms."
+  }
+}
