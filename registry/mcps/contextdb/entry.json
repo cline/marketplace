@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "contextdb",
+  "type": "mcp",
+  "name": "ContextDB",
+  "tagline": "Persistent customer memory, context continuity, and pre-action evidence checks",
+  "description": "Hosted Streamable HTTP MCP server for AI agents. Load pinned working blocks, session notes, durable customer facts, and entity relations with get_context, update memories with lineage via remember/evolve, and gate consequential actions with slot-scoped recall_for_action (act, ask, abstain). Authenticates via OAuth 2.1 + PKCE.",
+  "author": {
+    "name": "ContextDB",
+    "url": "https://contextdb.ai"
+  },
+  "homepage": "https://contextdb.ai/mcp",
+  "repo": "https://github.com/atomsai/contextdb-mcp-plugin",
+  "icon": "./icon.svg",
+  "tags": [
+    "memory",
+    "databases",
+    "software"
+  ],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "contextdb",
+      "--transport",
+      "http",
+      "https://api.contextdb.ai/mcp"
+    ]
+  }
+}
