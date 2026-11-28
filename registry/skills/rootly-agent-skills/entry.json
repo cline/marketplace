@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schemas/skill.schema.json",
+  "id": "rootly-agent-skills",
+  "type": "skill",
+  "name": "Rootly Agent Skills",
+  "tagline": "Seven skills for incident response, on-call, and deploy readiness",
+  "description": "Investigate incidents, triage alerts, assess deploy readiness and service health, look up on-call coverage, and draft incident updates and retrospectives. The skills use evidence from the Rootly MCP server.",
+  "author": { "name": "Rootly", "url": "https://rootly.com" },
+  "repo": "https://github.com/rootlyhq/agent-skills",
+  "tags": ["software", "productivity"],
+  "license": "Apache-2.0",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["rootlyhq/agent-skills"],
+    "notes": "Connect the Rootly MCP server and sign in to use these skills with live Rootly data. For read-only access, use the hosted URL https://mcp.rootly.com/mcp?toolsets=all&readonly=true."
+  }
+}
