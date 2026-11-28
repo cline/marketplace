@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="contextdb-favicon-title contextdb-favicon-description" shape-rendering="geometricPrecision">
+  <title id="contextdb-favicon-title">ContextDB Transaction Ledger favicon</title>
+  <desc id="contextdb-favicon-description">A white pixel-fitted angular open C-shaped ledger with two horizontal record lines and a detached mint square on a stable dark graphite rounded tile.</desc>
+  <rect fill="#0b0e0d" width="16" height="16" rx="3"/>
+  <path fill="#ffffff" d="M12 2H5L2 5v6l3 3h7v-3H7L5 9V7l2-2h5V2Z"/>
+  <rect fill="#ffffff" x="7" y="7" width="4" height="1"/>
+  <rect fill="#ffffff" x="7" y="9" width="3" height="1"/>
+  <rect fill="#20d99a" x="12" y="7" width="3" height="3"/>
+</svg>
