@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "saascity",
+  "type": "mcp",
+  "name": "SaaSCity",
+  "tagline": "Audit launch readiness, query 1,600+ startup directories by DR, and verify live backlinks",
+  "description": "Keyless remote Streamable HTTP MCP server for SaaSCity (https://saascity.io). Run a 16-point static HTML pre-launch readiness audit, filter 1,600+ startup and AI directories by live Ahrefs Domain Rating (DR), link type, and pricing, check whether live directory pages render a followed backlink, run SaaS metric calculators (ARR, churn, NRR, Rule of 40), and search live SaaSCity launches. No API key or account required for read-only tools.",
+  "author": {
+    "name": "SaaSCity",
+    "url": "https://saascity.io"
+  },
+  "homepage": "https://saascity.io/mcp",
+  "icon": "https://saascity.io/apple-touch-icon.png",
+  "tags": [
+    "marketing",
+    "research",
+    "data"
+  ],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "saascity",
+      "--transport",
+      "http",
+      "https://saascity.io/api/mcp"
+    ]
+  }
+}
