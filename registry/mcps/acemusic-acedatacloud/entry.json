@@ -2,7 +2,7 @@
   "$schema": "../../../schemas/mcp.schema.json",
   "id": "acemusic-acedatacloud",
   "type": "mcp",
-  "name": "ACE Music by Ace Data Cloud",
+  "name": "ACE Music",
   "tagline": "Create songs and lyrics, import reference audio, and retrieve original tasks.",
   "description": "Create songs from an idea or custom lyrics, import an MP3, cover a track, or blend two compatible tracks. Connect your Ace Data Cloud application with ACE Music access. Audio creation, reference imports and writing lyrics may incur charges. Save the task ID to retrieve the original result.",
   "author": {
