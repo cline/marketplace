@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "geomacro",
+  "type": "mcp",
+  "name": "Geomacro",
+  "tagline": "Global geopolitical, macro/FX and critical-minerals intelligence",
+  "description": "A remote MCP server for structured geopolitical, macro/FX and critical-minerals intelligence. Tool discovery is public; paid intelligence tools require the canonical Geomacro x402 payment flow. Unavailable or unqualified requests must remain non-chargeable. Geomacro is read-only and never authorizes financial execution.",
+  "author": {
+    "name": "Geomacro",
+    "url": "https://geomacro.live"
+  },
+  "homepage": "https://geomacro.live",
+  "repo": "https://github.com/blocknine0/geomacro",
+  "tags": ["research", "data", "finance"],
+  "license": "Proprietary",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["geomacro", "--transport", "http", "https://geomacro.live/api/mcp"],
+    "notes": "Connects to the remote Geomacro MCP endpoint (https://geomacro.live/api/mcp). Tool discovery and verify_risk_object are free; paid intelligence tools require an x402-capable MCP client."
+  }
+}
