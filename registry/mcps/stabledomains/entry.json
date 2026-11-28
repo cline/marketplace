@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "stabledomains",
+  "type": "mcp",
+  "name": "StableDomains",
+  "tagline": "Check domain availability, live TLD pricing, WHOIS/RDAP, DNS and name suggestions",
+  "description": "A remote Streamable HTTP MCP server with 11 public domain lookup tools and no authentication required. Check domain availability, live TLD pricing, name suggestions, drop radar, valuation, WHOIS/RDAP, DNS and email checks, and domain history. Built for AI agents and developers.",
+  "author": {
+    "name": "StableDomains",
+    "url": "https://stabledomains.net"
+  },
+  "homepage": "https://stabledomains.net",
+  "repo": "https://github.com/ethancain5530/stabledomains-mcp",
+  "icon": "https://stabledomains.net/icon.png",
+  "tags": [
+    "software",
+    "data"
+  ],
+  "license": "MIT",
+  "verified": false,
+  "install": {
+    "args": [
+      "stabledomains",
+      "--transport",
+      "http",
+      "https://stabledomains.net/api/mcp/discover"
+    ]
+  }
+}
